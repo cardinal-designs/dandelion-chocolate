@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Define a function to handle the attribute change event
   document.addEventListener("click", function () {
-    if (document.querySelector(".checkoutMethodContainer").classList.contains("shipping")) {
+    if (document.querySelector(".checkoutMethodContainer")?.classList.contains("shipping")) {
       document.querySelectorAll(".cart__summer-shipping").forEach( elm => {
         elm.style.display = "block";  
       })            
