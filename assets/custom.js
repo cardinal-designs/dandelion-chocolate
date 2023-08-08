@@ -158,57 +158,52 @@ var flickityNav = new Flickity(navCarousel, {
 // Accordion 
 const accordionContainer = document.querySelector("dl.accordion-list");
 const duration = 300;
-if(accordionContainer){
-  accordionContainer.addEventListener("click", function (event) {
-    if (!event.target.matches("dt")) return;
-    const activeDt = accordionContainer.querySelector("dt.active");
-    const clickedDt = event.target;
-    const content = clickedDt.nextElementSibling;
-    if (clickedDt !== activeDt) {
-        if (activeDt) {
-            activeDt.classList.remove("active");
-            activeDt.nextElementSibling.style.display = "none";
-        }
 
-        clickedDt.classList.add("active");
-        content.style.display = "block";
-        slideDown(content, duration);
-    } else {
-        clickedDt.classList.remove("active");
-        content.style.display = "none";
-        slideUp(content, duration);
-    }
-  });
-}
+accordionContainer.addEventListener("click", function (event) {
+  if (!event.target.matches("dt")) return;
 
-function slideDown(element, duration) {
-  element.style.transition = `height ${duration}ms`;
-  element.style.overflow = "hidden";
-  element.style.height = "0";
+  const activeDt = accordionContainer.querySelector("dt.active");
+  const clickedDt = event.target;
+  const content = clickedDt.nextElementSibling;
+
+  if (!clickedDt.classList.contains("active")) {
+      if (activeDt) {
+          activeDt.classList.remove("active");
+          slideUp(activeDt.nextElementSibling);
+      }
+
+      clickedDt.classList.add("active");
+      slideDown(content);
+  } else {
+      clickedDt.classList.remove("active");
+      slideUp(content);
+  }
+});
+
+function slideDown(element) {
+  element.style.maxHeight = "0";
+  element.style.transition = `max-height ${duration}ms ease-in-out`;
 
   element.style.display = "block";
-  element.offsetHeight; // Trigger layout
-  element.style.height = element.scrollHeight + "px";
+  element.style.maxHeight = element.scrollHeight + "px";
 
   setTimeout(() => {
-      element.style.removeProperty("height");
-      element.style.removeProperty("overflow");
+      element.style.removeProperty("max-height");
+      element.style.removeProperty("transition");
   }, duration);
 }
 
-function slideUp(element, duration) {
-  element.style.transition = `height ${duration}ms`;
-  element.style.overflow = "hidden";
-  element.style.height = element.scrollHeight + "px";
+function slideUp(element) {
+  element.style.maxHeight = element.scrollHeight + "px";
+  element.style.transition = `max-height ${duration}ms ease-in-out`;
 
   setTimeout(() => {
-      element.style.height = "0";
-      element.style.overflow = "hidden";
+      element.style.maxHeight = "0";
   }, 10);
 
   setTimeout(() => {
-      element.style.removeProperty("height");
-      element.style.removeProperty("overflow");
+      element.style.removeProperty("max-height");
+      element.style.removeProperty("transition");
       element.style.removeProperty("display");
   }, duration);
 }
