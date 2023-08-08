@@ -1374,7 +1374,7 @@ dl.accordion-list {
 .product dl.accordion-list dt {
   text-transform: uppercase;
   border-top: 1px solid #333;
-  padding: 10px 5px;
+  padding: 13px 5px 7px;
   letter-spacing: 1px;
   font-size: 13px;
   font-family: Saa Series F D !important;
