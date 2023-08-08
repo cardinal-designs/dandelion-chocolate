@@ -1225,6 +1225,13 @@
         flex: 0 0 100%;
         max-width: 100%; } }
 
+#Product-Slider-Thumbanils {
+  display: flex !important;
+}
+
+.hide__slider_arrows .flickity-button {
+  display: none;
+}
 
 .product-images .flickity-button {
   visibility: hidden;
@@ -1503,5 +1510,5 @@ dl.accordion-list dd {
   .thb-product-detail .product-title {
     text-align: left;
   }
-  
+
 }
