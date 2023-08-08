@@ -1475,7 +1475,8 @@ dl.accordion-list dd {
   }
 
   #Product-Slider-Thumbanils .product-images__slide {
-    width: calc(20% - 7px);
+    width: 100%;
+    max-width: 98px;
   }
 
   .add_to_cart_holder {
