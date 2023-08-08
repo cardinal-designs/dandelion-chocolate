@@ -151,5 +151,64 @@ var flickityNav = new Flickity(navCarousel, {
   prevNextButtons: true,
   contain: true,
   wrapAround: true,
+  cellAlign: 'left',
   pageDots: false
 });
+
+// Accordion 
+const accordionContainer = document.querySelector("dl.accordion-list");
+const duration = 300;
+if(accordionContainer){
+  accordionContainer.addEventListener("click", function (event) {
+    if (!event.target.matches("dt")) return;
+    const activeDt = accordionContainer.querySelector("dt.active");
+    const clickedDt = event.target;
+    const content = clickedDt.nextElementSibling;
+    if (clickedDt !== activeDt) {
+        if (activeDt) {
+            activeDt.classList.remove("active");
+            activeDt.nextElementSibling.style.display = "none";
+        }
+
+        clickedDt.classList.add("active");
+        content.style.display = "block";
+        slideDown(content, duration);
+    } else {
+        clickedDt.classList.remove("active");
+        content.style.display = "none";
+        slideUp(content, duration);
+    }
+  });
+}
+
+function slideDown(element, duration) {
+  element.style.transition = `height ${duration}ms`;
+  element.style.overflow = "hidden";
+  element.style.height = "0";
+
+  element.style.display = "block";
+  element.offsetHeight; // Trigger layout
+  element.style.height = element.scrollHeight + "px";
+
+  setTimeout(() => {
+      element.style.removeProperty("height");
+      element.style.removeProperty("overflow");
+  }, duration);
+}
+
+function slideUp(element, duration) {
+  element.style.transition = `height ${duration}ms`;
+  element.style.overflow = "hidden";
+  element.style.height = element.scrollHeight + "px";
+
+  setTimeout(() => {
+      element.style.height = "0";
+      element.style.overflow = "hidden";
+  }, 10);
+
+  setTimeout(() => {
+      element.style.removeProperty("height");
+      element.style.removeProperty("overflow");
+      element.style.removeProperty("display");
+  }, duration);
+}
