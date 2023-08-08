@@ -158,14 +158,14 @@ var flickityNav = new Flickity(navCarousel, {
 // Accordion 
 $( document ).ready(function() {
   var accordionContainer = $("dl.accordion-list");
-var duration = 300;
-accordionContainer.on("click", "dt:not(.active)", function () {
-  accordionContainer.find("dt.active").removeClass("active");
-  accordionContainer.find("dd").slideUp(duration);
-  $(this).addClass("active").next("dd").slideDown(duration);
-});
-
-accordionContainer.on("click", "dt.active", function () {
-  $(this).removeClass("active").next("dd").slideUp(duration);
-});
+  var duration = 300;
+  accordionContainer.on("click", "dt:not(.active)", function () {
+    accordionContainer.find("dt.active").removeClass("active");
+    accordionContainer.find("dd").slideUp(duration);
+    $(this).addClass("active").next("dd").slideDown(duration);
+  });
+  
+  accordionContainer.on("click", "dt.active", function () {
+    $(this).removeClass("active").next("dd").slideUp(duration);
+  });
 }); 
