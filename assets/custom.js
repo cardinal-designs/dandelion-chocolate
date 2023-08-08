@@ -138,6 +138,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var elem = document.querySelector('.carousel-main');
   var flkty = new Flickity(elem);
+
+  var flickityContainer_main = document.querySelector(".carousel-main");
+  var flickityItems_main = document.querySelectorAll(".product-images__slide");
+
+  if (flickityItems_main.length <= 5) {
+    
+  }
   
   var flickityContainer = document.querySelector(".carousel-nav");
   var flickityItems = document.querySelectorAll(".product-images__slide");
