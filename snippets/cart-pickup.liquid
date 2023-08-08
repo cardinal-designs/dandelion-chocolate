@@ -1,0 +1,31 @@
+{% assign hasPickupItems = false %}
+{% assign hasShippingItems = false %}
+{% assign deliveryItems = '' %}
+
+{% for item in cart.items %}
+  {% if item.product.tags contains "pickup" or item.product.tags contains "delivery" %}
+    {% assign hasPickupItems = true %}
+    {% assign deliveryItems = deliveryItems | append: item.product.title | append: ', ' %}
+  {% else %}
+    {% assign hasShippingItems = true %}
+  {% endif %}
+{% endfor %}
+
+
+{% assign hasPickupAndShippingItems = false %}
+{% assign isPickupOrder = false %}
+{% if hasPickupItems and hasShippingItems %}
+  {% assign hasPickupAndShippingItems = true %}
+{% endif %}
+
+{% if hasPickupItems %}
+  {% unless hasShippingItems %}
+    {% assign isPickupOrder = true %}
+  {% endunless %}
+{% endif %}
+
+{% if hasShippingItems %}
+  {% unless hasPickupItems %}
+    {% assign isShippingOrder = true %}
+  {% endunless %}
+{% endif %}

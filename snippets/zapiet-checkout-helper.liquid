@@ -1,0 +1,32 @@
+{% assign is_pickup_order = false %}
+{% assign is_delivery_or_pickup_order = false %}
+{% if checkout.attributes %}
+  {% if checkout.attributes['Checkout-Method'] == 'pickup' %}
+    {% assign is_pickup_order = true %}
+  {% endif %}
+  {% for attribute in checkout.attributes %}        
+    {% if attribute.first == 'Delivery-Date' or attribute.first == 'Pickup-Date' %}
+      {% assign is_delivery_or_pickup_order = true %}
+    {% endif %}
+  {% endfor %}    
+{% endif %}
+{% if is_delivery_or_pickup_order %}
+  {% assign scheduled_date = checkout.attributes.Delivery-Date | default: checkout.attributes.Pickup-Date %}
+  {% assign scheduled_time = checkout.attributes.Delivery-Time | default: checkout.attributes.Pickup-Time %}
+  {% assign now_ts = 'now' | date: '%s' | plus: 0 %}
+  {% assign scheduled_time = scheduled_time | slice: 0, 8 %}
+  {% assign scheduled_dt = scheduled_date | append: " " | append: scheduled_time %}
+  {% assign scheduled_ts = scheduled_dt | date: '%s' | minus: 3600 | plus: 60 %}
+  {% comment %} raw_scheduled = {{scheduled_dt}}, scheduled_dt: {{ scheduled_ts | date: "%Y-%m-%d %H:%M" }}, now = {{ now_ts | date: "%Y-%m-%d %H:%M" }} {% endcomment %}
+  {% if scheduled_ts < now_ts %}
+    {% unless checkout.order_id %}
+    <script>
+    alert("Sorry, the delivery or pickup time is no longer available, please select a new one.");
+    window.location = '/cart';
+    </script>
+    {% endunless %}
+  {% endif %}
+
+{% endif %}
+<script>window.is_delivery_or_pickup_order = {{ is_delivery_or_pickup_order }}</script>
+<script>window.is_pickup_order = {{ is_pickup_order }}</script>   

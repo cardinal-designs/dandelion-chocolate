@@ -1,0 +1,169 @@
+{%- if product_card_product and product_card_product != empty -%}
+{% liquid
+  assign products_hover_images = settings.products_hover_images
+  assign products_hover_images_count = settings.products_hover_images_count
+  assign product_aspect_ratio = settings.product_aspect_ratio
+  assign featured_media = product_card_product.featured_media
+  assign ratio = 1
+  assign sizes = '375x375,770x770'
+
+  if featured_media.media_type != 'image'
+    assign featured_media = featured_media.preview_image
+  endif
+  if product_aspect_ratio == 'adapt'
+    assign ratio = featured_media.aspect_ratio
+    assign sizes = '375x0,770x0'
+  elsif product_aspect_ratio == 'portrait'
+    assign ratio = 1 | divided_by: 1.25
+    assign sizes = '375x350,770x700'
+  elsif product_aspect_ratio == 'landscape'
+    assign ratio = 1 | divided_by: 0.75
+    assign sizes = '375x250,770x500'
+  endif
+  assign product_content_alignment = settings.product_content_alignment
+-%}
+  
+<product-card class="product-card text-{{ product_content_alignment }}">
+  <figure class="product-featured-image {% if products_hover_images and product_card_product.images.size > 1 and products_hover_images_count > 0 %}thb-hover{% endif %}">
+    {% render 'product-card-badge', product_card_product: product_card_product %}
+    <a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-featured-image-link aspect-ratio aspect-ratio--{{ settings.product_aspect_ratio }}" style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;">
+      {%- if products_hover_images and product_card_product.images.size > 1 -%}
+        {%- for i in (1..products_hover_images_count) -%}
+					{%- if product_card_product.images[i] -%}
+	          {%- render 'responsive-image', class: 'product-secondary-image', image: product_card_product.images[i], sizes: sizes -%}
+		      {%- endif -%}
+        {%- endfor %}
+      {%- endif -%}
+			{%- if featured_media -%}
+      	{%- render 'responsive-image', class: 'product-primary-image', image: featured_media, sizes: sizes -%}
+			{%- else -%}
+				<div class="thb-placeholder">
+					{{ 'product-1' | placeholder_svg_tag }}
+				</div>
+			{%- endif -%}
+
+          {% unless quickviewFeaturedCol == 'true' %}
+             {%- if settings.enable_quick_view -%}
+                <button class="product-card-quickview" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+                    <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+                    <span>{{ 'products.product.quick_view' | t }}</span>
+                </button>
+             {%- endif -%}
+          {% endunless %}
+      
+        {% if quickview_cartbutton == 'quick_view' %}
+          <button class="product-card-quickview" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+              <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+              <span>{{ 'products.product.quick_view' | t }}</span>
+          </button>
+        {% endif %}
+      
+			{%- if products_hover_images and product_card_product.images.size > 1 and settings.products_hover_dots -%}
+				<ul class="product-secondary-images-nav">
+        {%- for i in (1..products_hover_images_count) -%}
+					{%- if product_card_product.images[i] -%}
+          <li></li>
+					{%- endif -%}
+        {%- endfor %}
+				</ul>
+      {%- endif -%}
+    </a>
+    {% if quickview_cartbutton == 'addtocart' %}
+        <product-form class="product-form {% if hide_cta_mobile == true %}hide-mobile{% endif %}" data-section="{{ section.id }}--{{ product_card_product.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
+          <div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
+            {% render 'svg-icons' with 'thb-error' %}
+            <span class="product-form__error-message"></span>
+          </div>
+          {%- form 'product', product_card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+            <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
+           
+            {%- if gift_card_recipient_feature_active -%}
+              {%- render 'gift-card-recipient-form', product: product_card_product, form: form, section: section -%}
+            {%- endif -%}
+            <div class="product-add-to-cart-container">
+                <div class="form-notification error" style="display:none;"></div>
+              <div class="add_to_cart_holder">
+                {%- if block.settings.show_quantity_selector -%}
+                    <div id="quantity-{{ section.id }}" {{ block.shopify_attributes }}>
+                     <quantity-selector class="quantity">
+                        <button class="minus" type="button" aria-label="{{ 'products.product.quantity.decrease' | t: product_card_product: product_card_product.title | escape }}">
+                            {% render 'svg-icons' with 'minus' %}
+                        </button>
+                       <input
+                          type="number"
+                          id="Quantity-{{ section.id }}"
+                          name="quantity"
+                          class="qty"
+                          value="{{ product_card_product.selected_or_first_available_variant.quantity_rule.min }}"
+                          min="{{ product_card_product.selected_or_first_available_variant.quantity_rule.min }}"
+                          {% if product_card_product.selected_or_first_available_variant.quantity_rule.max != null %}
+                          max="{{ product_card_product.selected_or_first_available_variant.quantity_rule.max }}"
+                          {% endif %}
+                          step="{{ product_card_product.selected_or_first_available_variant.quantity_rule.increment }}"
+                          form="{{ product_form_id }}"
+                          aria-label="{{ 'products.product.quantity.input_label' | t: product_card_product: product_card_product.title | escape }}"
+                        >
+                      <button class="plus" type="button" aria-label="{{ 'products.product.quantity.increase' | t: product_card_product: product_card_product.title | escape }}">{% render 'svg-icons' with 'plus' %}</button>
+                      </quantity-selector>
+                    </div>
+                    {%- endif -%}
+                    {% assign hide_cta_mobile = hide_cta_mobile %}
+                    <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button button outline {% unless product_card_product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                      <span class="single-add-to-cart-button--text">
+                      {%- if product_card_product.selected_or_first_available_variant.available -%}
+                        {{ 'products.product.add_to_cart' | t }}
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- endif -%}
+                      </span>
+                      <span class="loading-overlay">
+                          {% render 'svg-icons' with 'thb-loading' %}
+                      </span>
+                    </button>
+              </div>
+            </div>
+          {%- endform -%}
+        </product-form>
+     {% endif %}
+  </figure>
+  <div class="product-card-info">
+    {%- if settings.show_products_vendor -%}
+      <div class="product-card-vendor sh1"><a href="{{ product_card_product.vendor | url_for_vendor }}" title="{{ product_card_product.vendor | escape }}">{{ product_card_product.vendor }}</a></div>
+    {%- endif -%}
+    <a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-card-title h3">{{ product_card_product.title }}</a>
+    {% if product_card_product.metafields.custom.short_description != blank and show_description %}
+      <div class="product__description body">{{ product_card_product.metafields.custom.short_description }}</div>
+    {% endif %}
+    {% render 'product-price', product: product_card_product, show_compare_price: show_compare_price %}
+    {% render 'product-card-swatch', product: product_card_product, sizes: sizes %}
+    {%- if settings.show_products_rating and product_card_product.metafields.reviews.rating.value != blank -%}
+      <div class="star-rating" style="--star-rating: {{ product_card_product.metafields.reviews.rating.value.rating }};"></div>
+    {%- endif -%}
+  </div>
+</product-card>
+{%- else -%}
+<product-card class="product-card">
+  <figure class="product-featured-image {% if settings.products_hover_images %}thb-hover{% endif %}">
+    <a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-featured-image-link aspect-ratio aspect-ratio--{{ settings.product_aspect_ratio }}" style="--padding-bottom: {{ 1 | divided_by: 1 | times: 100 }}%;">
+      <div class="thb-placeholder">
+        {{ 'product-1' | placeholder_svg_tag }}
+      </div>
+      <button class="product-card-quickview" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+        <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+        <span>{{ 'products.product.quick_view' | t }}</span>
+      </button>
+    </a>
+  </figure>
+  <div class="product-card-info">
+    <div class="product-card-vendor sh1"><a href="#" title="{{ 'onboarding.product_vendor' | t }}">{{ 'onboarding.product_vendor' | t }}</a></div>
+    <a href="#" title="{{ product_card_product.title | escape }}" class="product-card-title h3">{{ 'onboarding.product_title' | t }}</a>
+    {% if product_card_product.metafields.custom.short_description != blank %}
+      <div class="product__description body">{{ product_card_product.metafields.custom.short_description }}</div>
+    {% endif %}
+    {% render 'product-price', product: product_card_product, show_compare_price: show_compare_price %}
+    {%- if settings.show_products_rating and product_card_product.metafields.reviews.rating.value != blank -%}
+      <div class="star-rating" style="--star-rating: 5;"></div>
+    {%- endif -%}
+  </div>
+</product-card>
+{%- endif -%}

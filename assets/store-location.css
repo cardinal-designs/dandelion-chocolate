@@ -1,0 +1,216 @@
+.store__location--wrapper .heading {
+  font-family: 'Saa Series F D';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+}
+
+.store__location--wrap {
+  display: flex;
+  column-gap: 47px;
+}
+
+.store__location--wrapper .placeholder_svg_tag {
+  border: 1px solid #ccc;
+}
+
+.store__location--wrapper .content__right .placeholder_svg_tag {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.location__blocks {
+  border-bottom: 1px solid #333333;
+  padding: 7px 0;
+}
+
+.location__blocks:last-child {
+  border: none;
+}
+
+.location__blocks--inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.location__blocks--inner p {
+  margin: 0;
+}
+
+.location__blocks--inner:last-child {
+  border-bottom: none;
+}
+
+.location__image {
+  position: relative;
+  width: 124px;
+}
+
+.location__image.placeholder {
+  padding-bottom: 12.211%;
+}
+
+.store__location--wrapper .content__left {
+  flex: 0 1 50.4%;
+}
+
+.store__location--wrapper .content__left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store__location--wrapper .content__right {
+  flex: 0 1 49.6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 104px;
+}
+
+.location__name,
+.location__name p {
+  font-family: Garamond Premiere Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: normal;
+}
+
+.location__blocks:hover .location__name {
+  color: #AC5121 !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.location__timings {
+  font-family: Garamond Premiere Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.location__timings span {
+  display: flex;
+  align-items: center;
+}
+
+.location__timings .closed:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: #AC5121;
+}
+
+.location__timings .opened:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: block;
+  background: #038F2B;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.store__location--wrapper .link {
+  font-family: 'Saa Series F D';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.15em;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: #AC5121;
+  margin: 16px 0 0;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .store__location--wrapper .link {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1439px) {
+
+  .store__location--wrapper .content__right {
+    padding: 32px 30px 0;
+    padding-right: 30px;  
+  }
+
+  .store__location--wrap {
+    column-gap: 30px;
+  }
+
+  .store__location--wrapper .content__right {
+    padding: 0 30px;
+  }
+  
+}
+
+@media screen and (max-width: 1067px) { 
+
+  .store__location--wrap {
+    column-gap: 30px;
+  }
+  
+  .location__image {
+    width: 70px;
+  }
+
+  .location__timings {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .location__name, .location__name p {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+}
+
+@media screen and (max-width: 767px) { 
+
+  .location__blocks {
+    padding: 22px 0;
+  }
+
+  .store__location--wrapper .content__left {
+    padding: 0 16px;
+  }
+
+  .store__location--wrapper .heading {
+    margin-bottom: 21px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .store__location--wrap {
+    display: block;
+  }
+
+  .location__image {
+    width: 60px;
+  }
+
+  .store__location--wrapper .content__right {
+    padding: 10px 16px 0;
+  }
+  
+}
+
+
+
+

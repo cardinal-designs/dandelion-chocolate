@@ -1,0 +1,245 @@
+{{- 'hero-quadrant.css' | asset_url | stylesheet_tag -}}
+
+{%- liquid
+  assign disable_top_spacing = section.settings.disable_top_spacing
+  assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+%}
+
+<section id="section--{{ section.id }}" class="hero__quadrant--wrapper">
+  <div class="section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %} hero__quadrant--inner">
+
+    <div class="image__items--wrap">
+      {% for block in section.blocks %}
+        <div class="image__block--items">
+          <div class="hide-mobile image__wrap">
+            {% if block.settings.image != blank %}
+              {{ block.settings.image | image_url:width:original | image_tag }}
+            {% else %}
+              {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+            {% endif %}
+          </div>
+          <div class="hide-desktop image__wrap">
+            {%- if block.settings.mobile_image != blank -%}
+              {{ block.settings.mobile_image | image_url:width:original | image_tag }}
+            {% elsif block.settings.image != blank %}
+              {{ block.settings.image | image_url:width:original | image_tag }}
+            {% else %}
+              {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder_svg_tag'   }}
+            {%- endif -%}
+          </div>
+          {% if block.settings.text != blank %}
+            <div class="image__block--content desktop-{{ block.settings.desktop_text_position }} mobile-{{ block.settings.mobile_text_position }}">
+              <a href="{{ block.settings.link }}">{{ block.settings.text }}</a>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="hero__block--content">
+      <h3 class="heading" style="color:{{ section.settings.heading_color }};">{{ section.settings.heading | newline_to_br }}</h3>
+      <p class="subheading" style="color:{{ section.settings.subheading_color }};">{{ section.settings.subheading }}</p>
+    </div>
+  </div>
+</section>
+
+{% style %}
+
+  #section--{{ section.id }} .image__block--items a {
+    color: {{ section.settings.text_color }};
+  }
+
+  #section--{{ section.id }} .image__block--items:hover a {
+    color: {{ section.settings.text_hover_color }};
+  }
+
+  #section--{{ section.id }} .image__wrap:before {
+    background: {{ section.settings.overlay_color }};
+    opacity: {{ section.settings.overlay_opacity }}%;
+  }
+  
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Hero Quadrant",
+  "settings": [
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#33383C"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading",
+      "default": "#33383C"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color on image"
+    },
+    {
+      "type": "color",
+      "id": "text_hover_color",
+      "label": "Text Hover Color on image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "2800 x 650 .jpg recommended."
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image (optional)",
+      "info": "375 x 650 .jpg recommended."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Subheading"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#1C1C1C"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Overlay opacity",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "Remove top spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "Remove bottom spacing"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "2800 x 650 .jpg recommended."
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile image (optional)",
+          "info": "375 x 650 .jpg recommended."
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_position",
+          "label": "Desktop Text Position",
+          "options": [
+            {
+              "value": "top-left",
+              "label": "Top Left"
+            },
+            {
+              "value": "top-right",
+              "label": "Top Right"
+            },
+            {
+              "value": "bottom-left",
+              "label": "Bottom Left"
+            },
+            {
+              "value": "bottom-right",
+              "label": "Bottom Right"
+            }
+          ],
+          "default": "top-left"
+        },
+        {
+          "type": "select",
+          "id": "mobile_text_position",
+          "label": "Mobile Text Position",
+          "options": [
+            {
+              "value": "top-left",
+              "label": "Top Left"
+            },
+            {
+              "value": "top-right",
+              "label": "Top Right"
+            },
+            {
+              "value": "bottom-left",
+              "label": "Bottom Left"
+            },
+            {
+              "value": "bottom-right",
+              "label": "Bottom Right"
+            }
+          ],
+          "default": "top-left"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Hero Quadrant",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

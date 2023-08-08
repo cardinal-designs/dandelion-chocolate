@@ -1,0 +1,132 @@
+<full-menu class="full-menu">
+  <ul class="thb-full-menu" role="menubar">
+    {%- for link in menu.links -%}
+    {%- liquid
+        assign parent_index = forloop.index
+        assign has_sub_menu = false
+        assign has_mega_menu = false
+        assign mega_menu_block_index = false
+
+        if link.links.size > 0
+            assign has_sub_menu = true
+        endif
+        for block in blocks
+            assign position = block.settings.position | plus: 0
+        if position == parent_index
+                assign has_mega_menu = true
+                assign mega_menu_block_index = forloop.index0
+            endif
+        endfor
+      -%}
+      <li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if has_mega_menu %} menu-item-has-megamenu{% endif %}{% if link.active %} active{% endif %}" {% if has_sub_menu %}data-item-title="{{ link.title | escape }}"{% endif %}>
+        <a href="{{ link.url }}" class="navigation__link" title="{{ link.title | escape }}"{%- if link.active %} aria-current="page"{% endif -%}>
+                {{- link.title -}}
+                {%- if has_sub_menu -%}{%- render 'svg-icons' with 'thb-dropdown-bottom' -%}{%- endif -%}
+            </a>
+        {%- if has_sub_menu == true and has_mega_menu == false -%}
+            <ul class="sub-menu" tabindex="-1">
+            {%- for l in link.links -%}
+                        {%- liquid
+                            assign has_sub_menu = false
+                            assign has_mega_menu = false
+                            if l.links.size > 0
+                                assign has_sub_menu = true
+                            endif
+
+                        -%}
+                <li class="{%- if l.active %}active{% endif %}{% if has_sub_menu %} menu-item-has-children{%- endif -%}" role="none" {% if has_sub_menu %}data-item-title="{{ l.title | escape }}"{% endif %}>
+                  <a href="{{ l.url }}" class="navigation__link" title="{{ l.title | escape }}" role="menuitem">
+                                {{- l.title -}}
+                                {%- if has_sub_menu -%}{%- render 'svg-icons' with 'thb-dropdown-right' -%}{%- endif -%}
+                            </a>
+                            {%- if has_sub_menu -%}
+                                <ul class="sub-menu" role="menu">
+                                    {%- for sub_link in l.links -%}
+                                        <li class="{%- if sub_link.active %} active{% endif %}" role="none">
+                                            <a href="{{ sub_link.url }}" class="navigation__link" title="{{ sub_link.title | escape }}" role="menuitem">{{- sub_link.title -}}</a>
+                                        </li>
+                                    {%- endfor -%}
+                                </ul>
+                            {%- endif -%}
+                </li>
+                    {%- endfor -%}
+            </ul>
+        {%- endif -%}
+        {%- if has_sub_menu == true and has_mega_menu == true -%}
+          {%- liquid
+            assign mega_menu_block = blocks[mega_menu_block_index]
+          -%}
+          {% if mega_menu_block.type == 'custom_megamenu' %}
+            <div class="sub-menu mega-menu-container Custom_SubMenu--Section" tabindex="-1">
+              <div class="Custom_SubMenu--Wrapper">
+                <div class="Sub_Menu-Left">
+                  <div class="Sub_Menu-Top">
+                    <h5 class="Sub_Menu-Heading sh0 uppercase">{{ mega_menu_block.settings.title }}</h5>
+                  </div>
+                  <div class="Sub_Menu-Bottom">
+                    <a href="{{ mega_menu_block.settings.button_url }}" class="btn btn--gold full--width">{{ mega_menu_block.settings.button_label }}</a>
+                    <h6 class="sub__menu-shipping--text sh3 uppercase mb-0 mt-18">{{ mega_menu_block.settings.shipping_text }}</h6>
+                  </div>
+                </div>
+                <ul class="Sub_Menu-Columns" tabindex="-1">
+                  {%- for colLink in link.links -%}
+                   {% assign collectionFeatured = colLink.object %}
+                    <li class="pl-10 pr-10 mt-15{% if colLink.active %} active{% endif %}" role="none">
+                      {%- if colLink.type contains 'collection_link' -%}
+                        <a href="{{ colLink.url }}">
+                            <img src="{{ collectionFeatured.image | img_url: '450x' }}">
+                        </a>
+                      {%- endif -%}
+                      <a href="{{ colLink.url }}" title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          {% else %}
+            <div class="sub-menu mega-menu-container" tabindex="-1">
+              <ul class="mega-menu-columns" tabindex="-1">
+                {%- for l in link.links -%}
+                  <li class="{% if l.active %} active{% endif %}" role="none">
+                    <a href="{{ l.url }}" title="{{ l.title | escape }}" class="mega-menu-columns__heading" role="menuitem">{{ l.title }}</a>
+                      {%- if l.links.size > 0 -%}
+                        <ul role="menu">
+                          {%- for sub_link in l.links -%}
+                            <li class="{% if sub_link.active %} active{% endif %}" role="none">
+                              <a href="{{ sub_link.url }}" title="{{ sub_link.title | escape }}" role="menuitem">{{ sub_link.title }}</a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                  </li>
+                {%- endfor -%}
+              </ul>
+              {%- if mega_menu_block.settings.promo_1_image -%}
+                <div class="mega-menu-promotion">
+                  {%- if mega_menu_block.settings.promo_1_link -%}<a href="{{ mega_menu_block.settings.promo_1_link }}" target="_blank">{%- endif -%}
+                    {%- render 'responsive-image', image: mega_menu_block.settings.promo_1_image, sizes: '670x0' -%}
+                  {%- if mega_menu_block.settings.promo_1_link -%}</a>{%- endif -%}
+                  <div class="mega-menu-promotion--cover">
+                    {%- if mega_menu_block.settings.promo_1_heading -%}<p class="heading-font">{{ mega_menu_block.settings.promo_1_heading }}</p>{%- endif -%}
+                    {%- if mega_menu_block.settings.promo_1_link_label -%}<a href="{{ mega_menu_block.settings.promo_1_link }}" target="_blank" class="text-button white">{{ mega_menu_block.settings.promo_1_link_label }}</a>{%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if mega_menu_block.settings.promo_2_image -%}
+                <div class="mega-menu-promotion">
+                  {%- if mega_menu_block.settings.promo_2_link -%}<a href="{{ mega_menu_block.settings.promo_2_link }}" target="_blank">{%- endif -%}
+                    {%- render 'responsive-image', image: mega_menu_block.settings.promo_2_image, sizes: '670x0' -%}
+                  {%- if mega_menu_block.settings.promo_2_link -%}</a>{%- endif -%}
+                  <div class="mega-menu-promotion--cover">
+                    {%- if mega_menu_block.settings.promo_2_heading -%}<p class="heading-font">{{ mega_menu_block.settings.promo_2_heading }}</p>{%- endif -%}
+                    {%- if mega_menu_block.settings.promo_2_link_label -%}<a href="{{ mega_menu_block.settings.promo_2_link }}" target="_blank" class="text-button white">{{ mega_menu_block.settings.promo_2_link_label }}</a>{%- endif -%}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          {% endif %}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</full-menu>

@@ -1,0 +1,219 @@
+.shg-btn,.submit-button {
+  font-family: Saa Series F D !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  text-align: center !important;
+  letter-spacing: .15em !important;
+  text-transform: uppercase !important;
+  padding: 16px 45px 11px !important;
+  border-radius: 0 !important;
+} 
+
+.template-product .yml-component .yml-button-link{
+  font-family: Saa Series F D !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  letter-spacing: .15em !important;
+  text-transform: uppercase !important;
+  padding: 22px 11px 16px !important;
+  background-color: #ffc600;
+  border-radius: 6px !important;
+  max-width: 200px !important;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  color: #000;
+}
+
+.shogun-root {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin-left: auto;
+  width: 100%;
+  margin-right: auto;
+}
+
+.page-content-width {
+  max-width: 100%; 
+}
+
+.header__wrapper.row .columns,
+.content__page .row .columns {
+  padding: 0;
+}
+
+.content__page .row {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item__box--wrapper {
+  overflow: hidden;
+}
+
+.cta__btn {
+  display: none !important;
+}
+
+.contact-button .shg-btn {
+  font-family: Saa Series !important;
+  padding: 10px 20px !important;
+  text-transform: lowercase !important;
+}
+
+.thb-product-detail strong,
+.thb-product-detail b,
+.shogun-root b,
+.shogun-root strong {
+  font-weight: 700;
+}
+
+#main-content {
+  overflow: hidden;
+}
+
+.shogun-override-product-overlay .shg-box-content {
+  background: white;
+  opacity: 0;
+  -webkit-transition: background-color .2s ease-in, opacity .2s ease-in; 
+  transition: background-color .2s ease-in, opacity .2s ease-in;
+ }
+
+.shogun-override-product-overlay .shg-box-content:hover {
+  background-color: white;
+  opacity: .9;
+  -webkit-transition: background-color .2s ease-in, opacity .2s ease-in; 
+  transition: background-color .2s ease-in, opacity .2s ease-in; 
+}
+
+.shg-box-content p span {
+  font-family: inherit !important;
+}
+
+body{
+  font-family: Garamond;
+}
+
+.how-it-works-columns .shg-rich-text > div {
+  padding: 0 !important;
+}
+
+.how-it-works-columns .shg-rich-text > div p {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1;
+}
+
+/* .shg-box-content h1 *,
+.shg-box-content h2 *,
+.shg-box-content h3 *,
+.shg-box-content h4 *,
+.shg-box-content h5 *,
+.shg-box-content h6 * {
+  font-family: inherit !important;
+} */
+
+/* =========== bar-icons start =========== */
+html body {
+  color: #333;  
+}
+
+body .bar-icons p {
+  margin-top: 10px !important;
+  font-size: 10px !important;
+  line-height: normal !important;
+}
+
+body .howitworks-num span {
+  line-height: normal;
+}
+
+.howitworks-header {
+  margin-bottom: 50px !important;
+}
+
+body .howitworks-num {
+  margin-top: -15px;
+}
+
+body .flavors {
+  color: #A78B4C;
+}
+
+@media screen and (max-width:1067px) {
+  
+  .howitworks-num span {
+    font-size: 50px !important;
+  }
+
+  .howitworks-num, .howitworks-copy {
+    text-align: left !important;
+  }
+  
+}
+
+@media screen and (max-width:767px) {
+  
+  body .bar-icons {
+    grid-template-columns: repeat(5, 20%) !important;
+  }
+  
+  body .bar-icons div {
+    margin-bottom: 10px;
+  }
+
+  .howitworks-num, .howitworks-copy {
+    text-align: center !important;
+  }
+  
+}
+
+/* =========== bar-icons end =========== */
+
+/* =========== bar-info start =========== */
+
+.bar-info .card__percentage {
+  font-size: 14px;
+  padding-top: 5px;
+  color: #333;
+}
+
+.bar-info .card__origin {
+  font-size:16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333;
+}
+
+.bar-info .card__country {
+  color: #b76a23;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.bar-info .card__tasting_notes {
+  overflow: hidden;
+  font-size:16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+body .included-product__single .card__name {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.steps .step-text,
+.ingredients .ingredients-legend-row,
+.ingredient-header, .step-header {
+  font-family: Garamond Premiere Pro !important;
+}
+
+/* =========== bar-info end =========== */
+

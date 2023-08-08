@@ -1,0 +1,23 @@
+<div class="side-panel-inner" id="mobile-drawer-search">
+  <div class="side-panel-header">
+    <div>
+      <form role="search" method="get" class="searchform" action="{{ routes.search_url }}">
+        <fieldset>
+          <input id="side-panel-search-input" type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
+        </fieldset>
+      </form>
+      <button class="" id="search-results-submit">{%- render 'svg-icons' with 'search-v2' -%}</button>
+    </div>
+  </div>
+  {%- if settings.predictive_search_enabled -%}
+  <div class="side-panel-content side-panel-content--has-tabs"></div>
+  {%- endif -%}
+  
+</div>
+
+<link rel="stylesheet" href="{{ 'product-grid.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>
+  {{ 'product-grid.css' | asset_url | stylesheet_tag }}
+  {{ 'predictive-search.css' | asset_url | stylesheet_tag }}
+</noscript>

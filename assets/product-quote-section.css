@@ -1,0 +1,93 @@
+.product__quote--section {
+  padding: 80px 0;
+  border-top: 1px solid #666666;
+}
+
+.product__quote--section .product__area {
+  width: 55%;
+  padding: 0 27px;
+}
+
+.product__quote--section .product__area .product__image {
+  margin-bottom: 15px;
+}
+
+.product__quote--section  .quote__area {
+  width: 45%;
+  padding: 0 27px;
+}
+
+.product__quote--section .row {
+  margin: 0 -27px;
+  max-width: initial;
+  padding: 0;
+}
+
+.product__quote--section .quote__area .quote__column--inr {
+  padding: 73px 50px;
+  height: 100%;
+}
+
+.product__quote--section .quote__area .quote__column--inr .publisher {
+  display: block;
+}
+
+.product__quote--section .product__area .h5 {
+  margin: 0 0 8px;
+  color: var(--charcoal-black);
+}
+
+.product__quote--section .product__area .h5 a {
+  color: var(--charcoal-black);
+}
+
+.product__quote--section .product__area .body-2 {
+  color: var(--charcoal-black);
+}
+
+.product__quote--section .product__area .body-2 p {
+  margin-bottom: 12px;
+}
+
+.product__quote--section .quote__area .cursive {
+  color: var(--white);
+}
+
+@media screen and (max-width: 1200px) {
+
+  .product__quote--section .quote__area .quote__column--inr {
+    padding: 60px 30px;
+  }
+  
+}
+
+@media screen and (max-width: 1067px) {
+
+  .product__quote--section .row {
+    margin: 0;
+  }
+  
+  .product__quote--section .product__area {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .product__quote--section .quote__area {
+    width: 100%;
+    padding: 0;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+
+  .product__quote--section {
+    padding: 50px 0;
+  }
+  
+  .product__quote--section .quote__area .quote__column--inr {
+    padding: 40px 25px;
+  }
+  
+}

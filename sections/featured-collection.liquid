@@ -1,0 +1,541 @@
+{{ 'featured-collection.css' | asset_url | stylesheet_tag }}
+{{ 'product-grid.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign section_heading = section.settings.heading
+  assign section_description = section.settings.description
+  assign full_width = section.settings.full_width
+  assign display_type = section.settings.display_type
+  assign mobile_display_type = section.settings.mobile_display_type
+  assign columns_desktop = section.settings.columns_desktop
+  assign featured_collection = section.settings.collection
+  assign show_view_all = section.settings.show_view_all  
+  assign mobile_swipe = section.settings.mobile_swipe
+  assign show_progress_bar = section.settings.show_progress_bar
+  assign product_limit = section.settings.product_limit
+  assign hide_cta_mobile = section.settings.hide_cta_mobile
+
+  if featured_collection.all_products_count > product_limit
+    assign more_in_collection = true
+  endif
+
+  if show_view_all and more_in_collection
+    assign section_heading_button = featured_collection
+  endif
+-%}
+
+{% capture Quote %}
+  <div class="single__columns">
+    <div class="quote__column" style="background-color: {{ section.settings.quote_bg_color }}; {% if section.settings.quote_border_color %}border: 1px solid {{ section.settings.quote_border_color }};{% endif %}">
+      <div class="quote__column--inr" style="color: {{ section.settings.quote_text_color }}">
+        <div class="quote">{{ section.settings.quote }}</div>
+        <span class="publisher">{{ section.settings.author }}</span>
+      </div>
+    </div>
+  </div>
+{% endcapture %}
+
+<div id="{{ section.settings.section_id }}" class="featured__collection{% if mobile_swipe %} swipe__on--mobile{% endif %}" style="background-color: {{ section.settings.section_bg }}">
+  <div class="wrapper{% if full_width %} full-width-row{% endif %}">
+    <div class="small-12 columns">
+      {%- if section_heading != blank or section_description != blank -%}
+        <div class="section-header">
+          {%- if section_heading -%}
+            <h2 class="section__title h2">{{ section_heading }}</h2>
+          {%- endif -%}
+          {%- if section_description != blank -%}
+            <div class="section__description body">
+              {{ section_description }}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {% comment %} DESKTOP VIEW {% endcomment %}
+      
+      <div class="featured__collection--inner display-type--{{ display_type }} layout__type--{{ display_type }} hide-mobile">
+        
+        <div id="product-grid-{{ section.id }}" 
+          class="products row {{ display_type  }}"
+          data-desktop-count="{{ columns_desktop }}" 
+          {% if section.settings.quote_enable == true %}data-quote="true"{% endif %} 
+          different-column="{{ section.settings.different_column_grid_layout }}"
+          >
+          
+          {%- if display_type == 'grid' -%}
+            {%- if featured_collection != blank -%}
+              {%- if section.settings.show_all_products == false -%}
+                {%- for product in featured_collection.products limit: columns_desktop -%}
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
+                  <div class="single__columns">
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                  </div>
+                {%- endfor -%}
+              {%- else -%}
+                {%- for product in featured_collection.products limit: 50 -%}
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
+                  <div class="single__columns">
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                  </div>
+                {%- endfor -%}                
+              {%- endif -%}
+              {% if section.settings.quote_enable == true %}
+                {% if section.settings.quote != blank or section.settings.author != blank %}
+                  {{ Quote }}
+                {% endif %}
+              {% endif %}
+            {%- else -%}
+              {%- for i in (1..columns_desktop) -%}
+                <div class="single__columns">
+                  {% render 'product-card', hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc %}
+                </div>
+              {%- endfor -%}
+              {% if section.settings.quote_enable == true %}
+                {% if section.settings.quote != blank or section.settings.author != blank %}
+                    {{ Quote }}
+                {% endif %}
+              {% endif %}
+            {%- endif -%}
+            
+          {%- else -%}
+          
+            {%- if featured_collection != blank -%}
+              {%- if section.settings.show_all_products == false -%}
+                {%- for product in featured_collection.products limit: product_limit -%}
+                  <div class="carousel__slide">
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                  </div>
+                {%- endfor -%}
+              {%- else -%}
+                {%- for product in featured_collection.products limit: 50 -%}
+                  <div class="carousel__slide">
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                  </div>
+                {%- endfor -%}      
+              {%- endif -%}
+            {%- else -%}
+              {%- for i in (1..product_limit) -%}
+                <div class="carousel__slide">
+                  {% render 'product-card', hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc %}
+                </div>
+              {%- endfor -%}
+            {%- endif -%}
+            <div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+            <div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+          {%- endif -%}
+        </div>
+        {%- if display_type == 'carousel' and show_progress_bar -%}
+          <div class="flickity-progress">
+            <div class="flickity-progress--bar"></div>
+          </div>
+        {%- endif -%}
+      </div>
+
+      {% comment %} MOBILE VIEW {% endcomment %}
+
+      <div class="featured__collection--inner display-type--{{ mobile_display_type }} layout__type--{{ mobile_display_type }} hide-desktop">
+        
+        <div id="product-grid-{{ section.id }}" 
+          class="products row {{ mobile_display_type }}"
+          data-desktop-count="{{ columns_desktop }}" 
+          {% if section.settings.quote_enable == true %}data-quote="true"{% endif %} 
+          different-column="{{ section.settings.different_column_grid_layout }}"
+          >
+          
+          {%- if mobile_display_type == 'grid' -%}
+            {%- if featured_collection != blank -%}
+              {%- if section.settings.show_all_products == false -%}
+                {%- for product in featured_collection.products limit: columns_desktop -%}
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
+                  <div class="single__columns">
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                  </div>
+                {%- endfor -%}
+              {%- else -%}
+                {%- for product in featured_collection.products limit: 50 -%}
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
+                  <div class="single__columns">
+                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                  </div>
+                {%- endfor -%}                
+              {%- endif -%}
+              {% if section.settings.quote_enable == true %}
+                {% if section.settings.quote != blank or section.settings.author != blank %}
+                  {{ Quote }}
+                {% endif %}
+              {% endif %}
+            {%- else -%}
+              {%- for i in (1..columns_desktop) -%}
+                <div class="single__columns">
+                  {% render 'product-card',hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc %}
+                </div>
+              {%- endfor -%}
+              {% if section.settings.quote_enable == true %}
+                {% if section.settings.quote != blank or section.settings.author != blank %}
+                    {{ Quote }}
+                {% endif %}
+              {% endif %}
+            {%- endif -%}
+            
+          {%- else -%}
+          
+            {%- if featured_collection != blank -%}
+              {%- if section.settings.show_all_products == false -%}
+                {%- for product in featured_collection.products limit: product_limit -%}
+                  <div class="carousel__slide">
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
+                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                  </div>
+                {%- endfor -%}
+              {%- else -%}
+                {%- for product in featured_collection.products limit: 50 -%}
+                  <div class="carousel__slide">
+                  {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
+                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                  </div>
+                {%- endfor -%}      
+              {%- endif -%}
+            {%- else -%}
+              {%- for i in (1..product_limit) -%}
+                <div class="carousel__slide">
+                  {% render 'product-card',hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc %}
+                </div>
+              {%- endfor -%}
+            {%- endif -%}
+            <div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+            <div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+          {%- endif -%}
+        </div>
+        {%- if mobile_display_type == 'carousel' and show_progress_bar -%}
+          <div class="flickity-progress">
+            <div class="flickity-progress--bar"></div>
+          </div>
+        {%- endif -%}
+      </div>
+
+      {% if show_view_all %}
+        <div class="featured__collection--button">
+          <a class="btn btn--outline" href="{{ section_heading_button.url }}">{{ 'sections.featured_collection.shop_collection' | t: collection: section_heading_button.title }}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Featured collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Featured Collection"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Describe your featured collection here</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Make section full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_cta_mobile",
+      "label": "Hide CTA button for Mobile",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Collection"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_short_product_desc",
+      "label": "Show product description",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_compare_at_price",
+      "label": "Show compare at price",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_all_products",
+      "label": "Show all products",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Slider/Grid"
+    },
+    {
+      "type": "select",
+      "id": "display_type",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "carousel",
+          "label": "Carousel"
+        }
+      ],
+      "default": "grid",
+      "label": "Destkop Display type"
+    },
+    {
+      "type": "select",
+      "id": "mobile_display_type",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "carousel",
+          "label": "Carousel"
+        }
+      ],
+      "default": "grid",
+      "label": "Mobile Display type"
+    },
+    {
+      "type": "header",
+      "content": "Grid"
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        }
+      ],
+      "default": "2",
+      "label": "Number of columns on desktop"
+    },
+    {
+      "type": "select",
+      "id": "different_column_grid_layout",
+      "options": [
+        {
+          "value": "2/4",
+          "label": "2/4"
+        },
+        {
+          "value": "3/3",
+          "label": "3/3"
+        },
+        {
+          "value": "4/3",
+          "label": "4/3"
+        },
+        {
+          "value": "3/4",
+          "label": "3/4"
+        }
+      ],
+      "default": "2/4",
+      "label": "Six/Seven Column Grid Layout",
+      "info": "This feature is only work if column is selected at 6 and 7."
+    },
+    {
+      "type": "checkbox",
+      "id": "quote_enable",
+      "default": false,
+      "label": "Enable Quote"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_swipe",
+      "default": true,
+      "label": "Enable swipe on mobile"
+    },
+    {
+      "type": "select",
+      "id": "quickview_cartbutton",
+      "options": [
+        {
+          "value": "quick_view",
+          "label": "Quick View"
+        },
+        {
+          "value": "addtocart",
+          "label": "Add To Cart"
+        }
+      ],
+      "default": "quick_view",
+      "label": "Select Button"
+    },
+    {
+      "type": "header",
+      "content": "Carousel"
+    },
+    {
+      "type": "select",
+      "id": "product_limit",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        },
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "11",
+          "label": "11"
+        },
+        {
+          "value": "12",
+          "label": "12"
+        }
+      ],
+      "default": "2",
+      "label": "Maximum products to show"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_progress_bar",
+      "label": "Show progress bar",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": true,
+      "label": "Enable \"View all\" button if collection has more products than shown"
+    },
+    {
+      "type": "header",
+      "content": "Quote"
+    },
+    {
+      "type": "richtext",
+      "id": "quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "author",
+      "label": "Author"
+    },
+    {
+      "type": "color_background",
+      "id": "quote_bg_color",
+      "label": "Quote BG Color",
+      "default": "#a09b86"
+    },
+    {
+      "type": "color",
+      "id": "quote_text_color",
+      "label": "Quote Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color_background",
+      "id": "quote_border_color",
+      "label": "Quote Border Color",
+      "default": "#a09b86"
+    },
+    {
+      "type": "header",
+      "content": "Section Style"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section BG Color",
+      "default": "#FFFDF9"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured collection"
+    }
+  ]
+}
+{% endschema %}

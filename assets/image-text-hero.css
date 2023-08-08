@@ -1,0 +1,147 @@
+.image__overlay--banner .caption {
+  margin-bottom: 18px;
+  font-family: 'Highway Gothic Expanded';
+}
+
+.image__overlay--banner .heading {
+  margin-bottom: 37px;
+  line-height: 55px;
+}
+
+.image__overlay--banner .description {
+  margin-bottom: 46px;
+}
+
+.image__overlay--banner .btn,
+.image__overlay--banner .description p {
+  margin: 0 !important;
+}
+
+.image__video--banner.image__overlay--banner .image-with-text-overlay--content-inner {
+  max-width: 560px !important;
+}
+
+.image__overlay--banner .description p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: normal;
+  text-align: left !important;
+}
+
+.image__overlay--banner .image-with-text-overlay--content:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (min-width: 768px) { 
+
+  .image__video--banner.image__overlay--banner .image-with-text-overlay--content {
+    max-width: 50%!important;
+    padding: 44px;
+  }
+
+  .image__video--banner.image__overlay--banner .image-with-text-overlay--content.content-middle-right {
+    margin-right: 0;
+  }
+
+  .image__video--banner.image__overlay--banner .image-with-text-overlay--content.content-middle-left {
+    margin-left: 0;
+  }
+
+  .image__video--banner.image__overlay--banner .image-with-text-overlay--content.content-middle-center {
+    margin: 0 auto;
+  }
+  
+}
+
+@media screen and (min-width: 1440px) { 
+
+  .image__video--banner.image__overlay--banner .image-with-text-overlay--content {
+    padding: 44px 60px;
+  }
+
+  .image__video--banner.image__overlay--banner .btn {
+    min-width: 340px;
+    padding: 21px 45px 16px;
+  }
+  
+}
+
+@media screen and (max-width: 1067px) { 
+  
+  .image__overlay--banner .btn {
+    min-width: auto;
+  }
+
+}
+
+@media screen and (max-width: 767px) { 
+
+  .image__overlay--banner .caption,
+  .image__overlay--banner.image__video--banner .image-with-text-overlay--content .heading{
+    margin-bottom: 12px;
+  }
+  
+  .image__overlay--banner .btn {
+    min-width: auto;
+  }
+
+  .image__overlay--banner .image-with-text-overlay--bg {
+    position: relative;
+    padding-bottom: 93.334%;
+  }
+
+  .image__overlay--banner .image-with-text-overlay--bg img {
+     position: absolute;
+  }
+
+  .image__overlay--banner .image-with-text-overlay {
+    display: block;  
+    padding: 0;
+    min-height: auto;
+  }
+
+  .image__overlay--banner .image-with-text-overlay--content-inner .description {
+    margin-bottom: 26px;
+  }
+
+  .image__overlay--banner .image-with-text-overlay--content {
+    padding: 24px 16px;
+  }
+
+  .image__overlay--banner .caption {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.15em;
+  }
+
+  .image__overlay--banner .image-with-text-overlay--content-inner .heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.06em;
+  }
+
+  .image__overlay--banner .description p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .image__overlay--banner .image-with-text-overlay--content:before {
+    opacity: 1 !important;
+  }
+
+  .image__overlay--banner .image-with-text-overlay--content-inner {
+    align-items: flex-start;
+  }
+
+}
+
+
+
+

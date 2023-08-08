@@ -1,0 +1,406 @@
+{{- 'store-location.css' | asset_url | stylesheet_tag -}}
+
+{%- liquid
+	assign color_bg = section.settings.color_bg | downcase
+	assign color_text = section.settings.color_text
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+
+<div class="store__location--wrapper" style="background-color: {{ color_bg }};">
+  <div class="store__location--inner section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+    <h2 class="heading mb-40 text-center" style="color: {{ section.settings.color_text }}" >{{ section.settings.heading }}</h2>
+    <div class="store__location--wrap">
+      <div class="content__left">
+        {% if section.settings.image != blank %}
+          <div class="hide-mobile">{{ section.settings.image | image_url:width:original | image_tag }}</div>
+          {% if section.settings.mobile_image != blank %}
+            <div class="hide-desktop">{{ section.settings.mobile_image | image_url:width:original | image_tag }}</div>
+          {% else %}
+            <div>{{ section.settings.image | image_url:width:original | image_tag }}</div>
+          {% endif %}
+        {% else %}
+          {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+        {% endif %}
+      </div>
+      <div class="content__right">
+        {% for block in section.blocks %}
+          <div class="location__blocks">
+            <div class="location__blocks--inner">
+              <div class="location__left">
+                <a href="{% if block.settings.link != blank %}{{ block.settings.link }}{% else %}javascript:void(0);{% endif %}" class="location__name" style="color: {{ section.settings.color_text }}">{{ block.settings.store_location }}</a>
+                <p class="location__timings {% if block.settings.store_close %}closed{% endif %}" style="color: {{ section.settings.color_text }}">
+  
+                  {% assign currentDate = "now" | date: "%Y-%m-%d" | date: "%s" %}
+                  {% assign day =  'now' | date: "%A" | downcase %}
+                  {% assign close_date = block.settings.store_close_date | newline_to_br | split: "<br />" %}
+            
+                  {% assign CurrentDateExist = false %}
+                  {% assign DateStringArray = blank %}
+                  {% assign DateStringArrayTmp = blank %}
+          
+                  {% if block.settings.store_close_date != blank %}
+                    {% for date in close_date %}
+                      {% assign closeDate = date | date: "%s" %}
+                      {% capture tmpDate %}{{ closeDate }}={{ date }}{% endcapture %}
+                      {% assign DateStringArrayTmp = DateStringArrayTmp | append:tmpDate | append:',' %}
+                    
+                      {% if closeDate == currentDate %}
+                        {% assign CurrentDateExist = true %}
+                      {% else %}
+                        {% assign DateStringArray = DateStringArray | append: closeDate | append: ',' %}
+                      {% endif %}
+                    {% endfor %}
+
+                    {% assign dates = DateStringArray | split: ',' %}
+                    {% assign sorted_dates = dates | sort %}
+                    
+                    {% assign min_date = sorted_dates | first %}
+                      
+                    {% assign current_dateNext = min_date | date: "%Y-%m-%d" %}
+                    {% assign nextDate = current_dateNext | date: "%s" | plus: 86400 | date: "%m/%d" %}
+                      
+                      {% for i in (1..close_date.size) %}
+                        {% assign nextDateString = nextDate | date: '%s' %}
+                        {% if sorted_dates contains nextDateString %}
+                          {% assign nextDate = nextDateString | plus: 86400 | date: "%m/%d" %}
+                        {% endif %}
+                      {% endfor %}
+                  
+                    {% if CurrentDateExist %}
+                      {% assign store = 'Closed today. ' |append: 'Opens next on ' |append: nextDate %}
+                      <span class="closed">{{ store }}</span>
+                    {% else %}
+                      {% if day == "monday" %}
+                        <span class="opened">Open today: {{ block.settings.mon_am }}AM - {{ block.settings.mon_pm }}PM</span>
+                      {% elsif day == "tuesday" %}
+                        <span class="opened">Open today: {{ block.settings.tue_am }}AM - {{ block.settings.tue_pm }}PM</span>
+                      {% elsif day == "wednesday" %}
+                        <span class="opened">Open today: {{ block.settings.wed_am }}AM - {{ block.settings.wed_pm }}PM</span>
+                      {% elsif day == "thursday" %}
+                        <span class="opened">Open today: {{ block.settings.thu_am }}AM - {{ block.settings.thu_pm }}PM</span>
+                      {% elsif day == "friday" %}
+                        <span class="opened">Open today: {{ block.settings.fri_am }}AM - {{ block.settings.fri_pm }}PM</span>
+                      {% elsif day == "saturday" %}
+                        <span class="opened">Open today: {{ block.settings.sat_am }}AM - {{ block.settings.sat_pm }}PM</span>
+                      {% elsif day == "sunday" %}
+                        <span class="opened">Open today: {{ block.settings.sun_am }}AM - {{ block.settings.sun_pm }}PM</span>
+                      {% endif %}
+                    {% endif %}
+                    
+                  {% else %}
+                    
+                    {% if day == "monday" %}
+                      <span class="opened">Open today: {{ block.settings.mon_am }}AM - {{ block.settings.mon_pm }}PM</span>
+                    {% elsif day == "tuesday" %}
+                      <span class="opened">Open today: {{ block.settings.tue_am }}AM - {{ block.settings.tue_pm }}PM</span>
+                    {% elsif day == "wednesday" %}
+                      <span class="opened">Open today: {{ block.settings.wed_am }}AM - {{ block.settings.wed_pm }}PM</span>
+                    {% elsif day == "thursday" %}
+                      <span class="opened">Open today: {{ block.settings.thu_am }}AM - {{ block.settings.thu_pm }}PM</span>
+                    {% elsif day == "friday" %}
+                      <span class="opened">Open today: {{ block.settings.fri_am }}AM - {{ block.settings.fri_pm }}PM</span>
+                    {% elsif day == "saturday" %}
+                      <span class="opened">Open today: {{ block.settings.sat_am }}AM - {{ block.settings.sat_pm }}PM</span>
+                    {% elsif day == "sunday" %}
+                      <span class="opened">Open today: {{ block.settings.sun_am }}AM - {{ block.settings.sun_pm }}PM</span>
+                    {% endif %}
+                    
+                  {% endif %}
+                </p>
+              </div>
+              {% if block.settings.map_image != blank %}
+                <div class="location__image">
+                  {{ block.settings.map_image | image_url:width:original | image_tag }}
+                </div>
+              {% else %}
+                <div class="location__image placeholder">
+                  {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+                </div>
+              {% endif %}
+            </div>
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}" class="hide-desktop link">{{ block.settings.link_text }}</a>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Store Location",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background",
+      "default": "#fffdf9"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text",
+      "default": "#333333"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "Remove top spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "Remove bottom spacing"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "location",
+      "name": "location",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "map_image",
+          "label": "Map Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "store_close",
+          "label": "Store Close"
+        },
+        {
+          "type": "textarea",
+          "id": "store_location",
+          "label": "Location Name",
+          "default": "<p>Store Location Name</p>"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link Text",
+          "default": "Learn More"
+        },
+        {
+          "type": "textarea",
+          "id": "store_close_date",
+          "label": "Store Close Dates"
+        },
+        {
+          "type": "header",
+          "content": "Hours Open"
+        },
+        {
+          "type": "header",
+          "content": "Monday"
+        },
+        {
+          "type": "range",
+          "id": "mon_am",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Open Time",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "mon_pm",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Close Time",
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Tuesday"
+        },
+        {
+          "type": "range",
+          "id": "tue_am",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Open Time",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "tue_pm",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Close Time",
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Wednesday"
+        },
+        {
+          "type": "range",
+          "id": "wed_am",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Open Time",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "ted_pm",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Close Time",
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Thursday"
+        },
+        {
+          "type": "range",
+          "id": "thu_am",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Open Time",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "thu_pm",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Close Time",
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Friday"
+        },
+        {
+          "type": "range",
+          "id": "fri_am",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Open Time",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "fri_pm",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Close Time",
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Saturday"
+        },
+        {
+          "type": "range",
+          "id": "sat_am",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Open Time",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "sat_pm",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Close Time",
+          "default": 5
+        },
+        {
+          "type": "header",
+          "content": "Sunday"
+        },
+        {
+          "type": "range",
+          "id": "sun_am",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Open Time",
+          "default": 8
+        },
+        {
+          "type": "range",
+          "id": "sun_pm",
+          "min": 1,
+          "max": 24,
+          "step": 1,
+          "label": "Close Time",
+          "default": 5
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store Location",
+      "blocks": [
+        {
+          "type": "location"
+        },
+        {
+          "type": "location"
+        },
+        {
+          "type": "location"
+        },
+        {
+          "type": "location"
+        },
+        {
+          "type": "location"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

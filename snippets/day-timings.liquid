@@ -1,0 +1,15 @@
+{% if day == "monday" %}
+  <span class="opened">Open today:{{ block.settings.mon_am }}AM - {{ block.settings.mon_pm }}PM</span>
+{% elsif day == "tuesday" %}
+  <span class="opened">Open today:{{ block.settings.tue_am }}AM - {{ block.settings.tue_pm }}PM</span>
+{% elsif day == "wednesday" %}
+  <span class="opened">Open today:{{ block.settings.wed_am }}AM - {{ block.settings.wed_pm }}PM</span>
+{% elsif day == "thursday" %}
+  <span class="opened">Open today:{{ block.settings.thu_am }}AM - {{ block.settings.thu_pm }}PM</span>
+{% elsif day == "friday" %}
+  <span class="opened">Open today:{{ block.settings.fri_am }}AM - {{ block.settings.fri_pm }}PM</span>
+{% elsif day == "saturday" %}
+  <span class="opened">Open today:{{ block.settings.sat_am }}AM - {{ block.settings.sat_pm }}PM</span>
+{% elsif day == "sunday" %}
+  <span class="opened">Open today:{{ block.settings.sun_am }}AM - {{ block.settings.sun_pm }}PM</span>
+{% endif %}

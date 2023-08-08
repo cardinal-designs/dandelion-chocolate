@@ -1,0 +1,137 @@
+{{- 'product-quote-section.css' | asset_url | stylesheet_tag -}}
+
+{%- assign product = section.settings.product -%}
+
+<div class="product__quote--section" style="background-color: {{ section.settings.section_bg }}">
+  <div class="wrapper">
+    <div class="small-12 columns">
+      <div class="row">
+        <div class="product__area">
+          <div class="product__image">
+            <a href="{{ product.url }}">
+              {%- if section.settings.product_custom_image != blank -%}
+                {% assign image = section.settings.product_custom_image %}
+                {% assign master_custom_width = image.src.width | append: 'x' | append: image.src.height %}
+                {%- render 'responsive-image', image: image, sizes: master_custom_width -%}
+              {%- else -%}
+                {% assign product_image = product.featured_image %}
+                {% assign master_width = product_image.src.width | append: 'x' | append: product_image.src.height %}
+                {%- render 'responsive-image', image: product_image, sizes: master_width -%}
+              {%- endif -%}
+            </a>
+          </div>
+          <h5 class="h5">
+            <a href="{{ product.url }}">
+              {%- if section.settings.product_title != blank -%}
+                {{ section.settings.product_title }}
+              {%- else -%}
+                {{ product.title }}
+              {%- endif -%}
+            </a>
+          </h5>
+          <div class="body-2 rte">{{ section.settings.product_description }}</div>
+          <div class="product__price">
+            {% render 'product-price', product: product, use_variant: true, show_badges: true %}
+          </div>
+        </div>
+        <div class="quote__area">
+          <div class="quote__column--inr" style="background-color: {{ section.settings.quote_bg_color }}; {% if section.settings.quote_border_color %}border: 1px solid {{ section.settings.quote_border_color }};{% endif %} color: {{ section.settings.quote_text_color }}">
+            <div class="quote pb-70">{{ section.settings.quote }}</div>
+            <span class="publisher pb-60 m-pb-30">{{ section.settings.author }}</span>
+            <h6 class="cursive mb-0 m-pb-50">{{ section.settings.position }}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Prouduct & Quote Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_custom_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "text",
+      "id": "product_title",
+      "label": "Product Title"
+    },
+    {
+      "type": "richtext",
+      "id": "product_description",
+      "label": "Product Description"
+    },
+    {
+      "type": "header",
+      "content": "Quote"
+    },
+    {
+      "type": "richtext",
+      "id": "quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "author",
+      "label": "Author"
+    },
+    {
+      "type": "text",
+      "id": "position",
+      "label": "Position"
+    },
+    {
+      "type": "color_background",
+      "id": "quote_bg_color",
+      "label": "Quote BG Color",
+      "default": "#a09b86"
+    },
+    {
+      "type": "color",
+      "id": "quote_text_color",
+      "label": "Quote Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color_background",
+      "id": "quote_border_color",
+      "label": "Quote Border Color",
+      "default": "#a09b86"
+    },
+    {
+      "type": "header",
+      "content": "Section Style"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section BG Color",
+      "default": "#FFFDF9"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Prouduct & Quote Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

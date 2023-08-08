@@ -1,0 +1,151 @@
+{{- 'carousel-quotes.css' | asset_url | stylesheet_tag -}}
+
+{%- liquid
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+
+<section class="carousel__quotes--wrapper" style="background-color: {{ section.settings.section_bg }}">
+  <div class="row section-spacing{% if disable_top_spacing %}section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+    <div class="carousel__quotes--inner carousel__type--{{ section.settings.carousel_type }} carousel__align--{{ section.settings.carousel_alignment }}">
+      {% for block in section.blocks %}
+        <div class="carousel__item--wrapper">
+          <div class="carousel__item">
+            {% if block.settings.logo != blank %}
+              <div class="carousel__logo">
+                {{ block.settings.logo | image_url:width:original | image_tag }}
+              </div>
+            {% endif %}
+          
+            {% if block.settings.quotes != blank %}
+              <div class="carousel__quotes" style="color: {{ section.settings.text_color }}">
+                {{ block.settings.quotes }}
+              </div>
+            {% endif %}
+  
+            {% unless block.settings.author == blank and block.settings.author_logo == blank %}
+              <div class="carousel__author mt-40" style="color: {{ section.settings.text_color }}">
+                {% if block.settings.author_logo != blank %}
+                  {{ block.settings.author_logo | image_url:width:original | image_tag }}
+                {% else %}
+                  {{ block.settings.author }}
+                {% endif %}
+              </div>
+            {% endunless %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+    <div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "carousel-quotes",
+    "settings": [
+      {
+        "type": "color",
+        "id": "section_bg",
+        "label": "Section Background",
+        "default": "#FFFDF9"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#333"
+      },
+      {
+        "type": "select",
+        "id": "carousel_type",
+        "options": [
+            {
+                "value": "large",
+                "label": "Large"
+            },
+            {
+                "value": "small",
+                "label": "Small"
+            }
+        ],
+        "default": "large",
+        "label": "Display type"
+      },
+      {
+        "type": "select",
+        "id": "carousel_alignment",
+        "options": [
+            {
+                "value": "center",
+                "label": "Center"
+            },
+            {
+                "value": "left",
+                "label": "Left"
+            }
+        ],
+        "default": "left",
+        "label": "Carousel Alignment"
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "checkbox",
+        "id": "disable_top_spacing",
+        "default": false,
+        "label": "Remove top spacing"
+      },
+      {
+        "type": "checkbox",
+        "id": "disable_bottom_spacing",
+        "default": false,
+        "label": "Remove bottom spacing"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "quotes",
+        "name": "Quotes",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          },
+          {
+            "type": "richtext",
+            "id": "quotes",
+            "label": "Quotes",
+            "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author Name",
+            "default": "The New York Times"
+          },
+          {
+            "type": "image_picker",
+            "id": "author_logo",
+            "label": "Author Logo"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name" : "carousel-quotes"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

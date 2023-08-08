@@ -1,0 +1,1123 @@
+/*============================================================================
+  General
+==============================================================================*/
+
+/*================ Colors ================*/
+
+:root {
+  --dark-gray: #666666;
+  --gray: #6B6B6B;
+  --light-gray: #CCCCCC;;
+  --black: #000000;
+  --a-black: #040404;
+  --white: #FFFFFF;
+  --white-2: #FAFAFA;
+  --off-white: #FFFDF9;
+  --charcoal-black: #333333;
+  --silver: #CACACA;
+  --carbon-gray: #655F53;
+  --dark-gold: #A78B4C;
+  --gold: #D3A741;
+  --light-gold: #E2C465;
+  --stroke-gold: #8D7236
+  --terra-cotta: #AC5121;
+  --yellow: #F6C844;
+}
+
+/*================ Font Family ================*/
+
+/* .OPTICaslonBold-Cond {
+  font-family: OPTICaslonBold-Cond;
+}
+
+.Garamond-Premier-Pro {
+  font-family: Garamond Premiere Pro;
+}
+
+.Saa-Series-F-D {
+  font-family: Saa Series F D;
+}
+
+.CaslonSB-BoldCondensed {
+  font-family: CaslonSB-BoldCondensed;
+}
+
+.Garamond {
+  font-family: Garamond;
+} */
+
+/*================ Fonts ================*/
+
+h1,
+.h1 {
+  font-family: 'OPTICaslonBold-Cond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.h1__large {
+  font-family: 'OPTICaslonBold-Cond';
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: 0.05em;
+}
+
+h2,
+.h2 {
+  font-family: 'OPTICaslonBold-Cond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.500em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-family: 'OPTICaslonBold-Cond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.500em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h4,
+.h4 {
+  font-family: 'OPTICaslonBold-Cond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h5,
+.h5 {
+  font-family: 'CaslonSB-BoldCondensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.500em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h6,
+.h6 {
+  font-family: CaslonSB-BoldCondensed;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.sh0 {
+  font-family: 'CaslonSB-BoldCondensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.sh1 {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167em;
+  letter-spacing: 0.04em;
+}
+
+.sh2 {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.15em;
+}
+
+.sh3 {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  letter-spacing: 0.15em;
+}
+
+.sh4{
+  font-family: 'Saa Series F D';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+}
+
+
+p {
+  font-family: 'Garamond Premiere Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.body,
+.body p {
+  font-family: 'Garamond Premiere Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.250em;
+  letter-spacing: 0.02em;
+}
+
+.body-1,
+.body-1 p {
+  font-family: 'Garamond Premiere Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.500em;
+  letter-spacing: 0.02em;
+}
+
+.body-2 {
+  font-family: 'Garamond Premiere Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.adobe-caslon-heading {
+  font-family: 'Adobe Caslon Pro';
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0.15em;
+}
+
+.adobe-caslon-subheading {
+  font-family: 'Adobe Caslon Pro';
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0.15em;
+  font-style: italic;
+  text-transform: initial;
+}
+
+@media screen and (max-width: 767px) {
+
+  .body,
+  .body p {
+    font-size: 18px;
+    line-height: 1.300em;
+  }
+
+  h2,
+  .h2 {
+    font-size: 32px;
+  }
+  
+}
+
+/*================ Global Components ================*/
+
+.announcement,
+.announcement-bar--item {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.200em;
+  letter-spacing: 0.15em;
+}
+
+.nav {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.15em;
+}
+
+.navigation__link {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 11px !important;
+  line-height: 1.2em;
+  letter-spacing: .15em;
+}
+
+.breadcrumbs {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+}
+
+.money,
+.price {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.500em;
+  letter-spacing: 0.15em;
+}
+
+.money-small,
+.price-small {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+}
+
+.quote,
+.quote p {
+  font-family: 'CaslonSB-BoldCondensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.400em;
+  letter-spacing: 0.02em;
+}
+
+.caption{
+  font-family: 'Saa Series F D';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.15em;
+}
+
+.publisher {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.200em;
+  letter-spacing: 0.15em;
+}
+
+.cursive {
+  font-family: 'Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.thb-newsletter-title {
+  font-family: 'OPTICaslonBold-Cond';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.thb-widget-title {
+  font-family: 'OPTICaslonBold-Cond';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.1em;
+}
+
+.footer__links {
+  font-family: 'Highway Gothic Expanded';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.footer_text,
+.footer_text p {
+  font-family: 'Garamond Premiere Pro';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .quote, 
+  .quote p {
+    font-size: 26px;
+  }
+  
+  .publisher {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .quote, 
+  .quote p {
+    font-size: 28px;
+  }
+  
+  .publisher {
+    font-size: 16px;
+  }
+
+  .cursive {
+    font-size: 16px;
+  }
+  
+  .h1__large {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  
+  .caption{
+    font-size: 18px;
+  }
+
+  .adobe-caslon-heading,
+  .adobe-caslon-subheading {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.06em;
+  }
+
+  .thb-newsletter-title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .footer_text,
+  .footer_text p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .footer__links {
+    font-size: 13px;
+    line-height: 26px;
+  }
+
+  .footer .thb-widget-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+}
+
+/*============================================================================
+  Wrapper
+==============================================================================*/
+
+.wrapper {
+  max-width: 1600px;
+  padding: 0 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .wrapper {
+    padding: 0 15px;  
+  }
+  
+}
+
+@media screen and (min-width: 1068px) {
+  
+  .wrapper {
+    padding: 0 45px;  
+  }
+  
+}
+
+.row {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media only screen and (min-width: 768px) { 
+  
+  .row {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+   
+}
+
+@media only screen and (min-width: 1068px) { 
+  
+  .row {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+   
+}
+
+
+
+/*============================================================================
+  Buttons
+==============================================================================*/
+
+.btn,
+.button,
+input[type=submit] {
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: 16px 45px 11px;
+  background: var(--charcoal-black);
+  border: 1px solid var(--charcoal-black);
+  color: var(--white);
+  border-radius: 0;
+}
+
+.btn:hover,
+.button:hover,
+input[type=submit]:hover {
+  background: var(--white);
+  border-color: var(--charcoal-black);
+  color: var(--charcoal-black);
+}
+
+.full--width {
+  width: 100%;
+}
+
+/*================ Button Gray ================*/
+
+.btn--gray {
+  background: var(--light-gray);
+  color: var(--charcoal-black);
+  border-color: var(--light-gray);
+}
+
+.btn--gray:hover {
+  background: var(--white);
+  border-color: var(--light-gray);
+  color: var(--light-gray);
+}
+
+/*================ Button Gold ================*/ 
+
+.btn--gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--charcoal-black);
+}
+
+.btn--gold:hover {
+  background: var(--white);
+  color: var(--gold);
+  border-color: var(--gold)
+}
+
+/*================ Button Light Gold ================*/ 
+
+.btn--light-gold {
+  border-color: var(--light-gold);
+  background: var(--light-gold);
+  color: var(--charcoal-black);
+}
+
+.btn--light-gold:hover {
+  border-color: var(--light-gold);
+  background: var(--white);
+  color: var(--light-gold);
+}
+
+/*================ Button Outline ================*/ 
+
+.btn--outline {
+  background: none;
+  color: var(--charcoal-black);
+  border: 1px solid;
+  border-color: var(--charcoal-black);
+}
+
+.btn--outline:hover {
+  color: var(--white);
+  background-color: var(--charcoal-black);
+  border-color: var(--charcoal-black);
+}
+
+/*================ Button White ================*/ 
+
+.btn--white {
+  background: var(--white);
+  color: var(--charcoal-black);
+  border: 1px solid;
+  border-color: var(--charcoal-black);
+}
+
+.btn--white:hover {
+  color: var(--white);
+  background-color: var(--charcoal-black);
+  border-color: var(--charcoal-black);
+}
+
+/*================ Button White Outline ================*/ 
+
+.btn--white-outline {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid;
+  border-color: var(--white);
+}
+
+.btn--white-outline:hover {
+  color: var(--white);
+  background-color: var(--charcoal-black);
+  border-color: var(--charcoal-black);
+}
+
+/*============================================================================
+  Spacing
+==============================================================================*/
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-23 {
+  margin-bottom: 23px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-44 {
+  margin-bottom: 44px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mt-15{
+  margin-top: 15px;
+}
+
+.mt-18 {
+  margin-top: 18px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-40 {
+  margin-top: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.pt-45 {
+  padding-top: 45px;
+}
+
+.pb-45 {
+  padding-bottom: 45px;
+}
+
+.pl-45 {
+  padding-left: 45px;
+}
+
+.pr-45 {
+  padding-right: 45px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pl-60 {
+  padding-left: 60px;
+}
+
+.pr-70 {
+  padding-right: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pl-70 {
+  padding-left: 70px;
+}
+
+.pr-70 {
+  padding-right: 70px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.pl-90 {
+  padding-left: 90px;
+}
+
+.pr-90 {
+  padding-right: 90px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .m-pb-30 {
+    padding-bottom: 30px;
+  }
+
+  .m-pb-50 {
+    padding-bottom: 50px;
+  }
+  
+}
+
+/*================ Utility ================*/
+
+@media screen and (max-width: 767px) {
+  
+  .hide-mobile {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  
+  .hide-desktop {
+    display: none;
+  }
+  
+}
+
+/*================ PLAIN TEXT CSS START ================*/
+
+@media screen and (max-width: 1067px) {
+
+  .hide_tablet-mobile {
+    display: none;
+  }
+  
+}
+
+.rte h1 {
+  font-size: 30px; 
+}
+
+.rte h2 {
+  font-size: 26px; 
+}
+
+.rte h3 {
+  font-size: 22px; 
+}
+
+.rte h4 {
+  font-size: 20px; 
+}
+
+.rte h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rte h6 {
+  font-size: 16px;
+}
+
+@media only screen and (min-width:768px) {
+  
+  .rte h1 {
+    font-size: 38px; 
+  }
+
+  .rte h2 {
+    font-size: 34px;  
+  }
+
+  .rte h3 {
+    font-size: 28px;  
+  }
+
+  .rte h4 {
+    font-size: 24px; 
+  }
+    
+  .rte h5 {
+    font-size: 22px; 
+  }
+
+  .rte h6 {
+    font-size: 20px; 
+  }
+  
+}
+
+.rte {
+  font-family: Garamond Premiere Pro;
+  color: #333;
+}
+
+.rte h1,
+.rte h2,
+.rte h3,
+.rte h4,
+.rte h5,
+.rte h6 {
+  color: #333;
+}
+
+.rte:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.rte > p:first-child {
+  margin-top: 0;
+}
+
+.rte > p:last-child {
+  margin-bottom: 0;
+}
+
+.rte table {
+  table-layout: fixed;
+}
+
+.rte ul,
+.rte ol {
+  padding-left: 1.8rem;
+  margin: 0 0 1.25rem;
+}
+
+.rte li {
+  font-family: Garamond Premiere Pro;
+  font-size: 16px;
+  list-style: inherit;
+}
+
+.rte li:last-child {
+  margin-bottom: 0;
+}
+
+.rte a {
+  color: #333;
+}
+
+.rte a:hover {
+  color: #a78b4c;;
+}
+
+.rte blockquote {
+  display: inline-flex;
+  font-size: 14px;
+  padding: 0 0 0 1.1rem;
+  border-left: 1px solid;
+  margin: 18px 22px;
+  font-style: italic;
+  text-align: left;
+}
+
+.rte p+blockquote {
+  margin-top: 0;
+}
+
+.rte blockquote:before {
+  display: none;
+}
+
+.rte blockquote > * {
+  margin: -0.5rem 0 -0.5rem 0;
+}
+
+.rte p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width:768px) {
+
+  .rte p {
+    font-size: 18px;  
+  }
+
+  .rte li {
+    font-size: 18px;  
+  }
+  
+  .rte table td {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .rte blockquote {
+    font-size: 16px;
+    padding: 0 0 0 1.5rem;
+    margin: 20px 35px;
+  }
+  
+}
+
+.content__page {
+  padding: 50px 0;
+}
+
+@media only screen and (min-width:768px) {
+  
+  .content__page {
+    padding: 70px 0;
+  }
+  
+}
+
+.blog-post-detail {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.blog-post-detail .post-title {
+  max-width: 840px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+
+.blog-post-detail .post-title h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+@media only screen and (min-width:768px) {
+  
+  .blog-post-detail .post-title {
+    margin-bottom: 40px;
+  }
+
+  .blog-post-detail .post-title h1 {
+    font-size: 40px;
+  }
+
+}
+
+.blog-post-detail .thb-placeholder {
+  background: rgba(var(--color-body-rgb), 0.03);
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.blog-post-detail .thb-placeholder svg {
+  fill: var(--color-accent);
+}
+
+/*================ PLAIN TEXT CSS END ================*/
+
+/*================ POLICIES PAGE CSS START ================*/
+
+[role=main] .shopify-policy__title {
+  min-height: auto;
+  padding: 50px 40px 15px;
+}
+
+[role=main] .shopify-policy__title h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+[role=main] .shopify-policy__container .rte {
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width:768px) {
+
+  [role=main] .shopify-policy__container .rte {
+    margin: 0;
+    padding-bottom: 70px;
+  }
+  
+  [role=main] .shopify-policy__title {
+    padding: 70px 40px 20px;
+  }
+  
+  [role=main] .shopify-policy__title h1 {
+    font-size: 40px;
+  }
+
+}
+
+/*================ POLICIES PAGE CSS END ================*/
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0,0%,100%,.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.cart-drawer-buttons #storePickupApp {
+  display: none;
+}

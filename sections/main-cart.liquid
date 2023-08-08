@@ -1,0 +1,531 @@
+{{ 'cart.css' | asset_url | stylesheet_tag }}
+
+
+{% include 'cart-pickup' %}
+{% assign deliveryMinimum = section.settings.delivery_cart_minimum | plus: 0 | times: 100 %}
+{%- assign show_prop65_warning = false %}
+
+<div class="row">
+  <div class="small-12">
+    <div
+      class="thb-cart-form"
+      id="Cart"
+      data-id="{{ section.id }}">
+      {%- if cart != empty -%}
+        <form
+          action="{{ routes.cart_url }}"
+          method="post"
+          novalidate>
+          <h2 class="h2">{{ 'sections.cart.title' | t }}</h2>
+          <table class="cart-items no-borders">
+            <thead>
+              <th class="product-name">{{ 'sections.cart.headings.product' | t }}</th>
+              <th class="product-quantity">{{ 'sections.cart.headings.quantity' | t }}</th>
+              <th class="product-total">{{ 'sections.cart.headings.total' | t }}</th>
+            </thead>
+            <tbody>
+              {% for item in cart.items %}
+                <tr id="CartItem-{{ item.index | plus: 1 }}" data-product-id="{{ item.key | escape }}">
+                  <td class="product-name">
+                    <div class="product-cart-item">
+                      <div class="product-cart-item-image">
+                        {% if item.image %}
+                          {%- render 'responsive-image', image: item.image, sizes: '168x0' -%}
+                        {% else %}
+                          <div class="thb-placeholder" style="width: 100px;">
+                            {{ 'product-1' | placeholder_svg_tag }}
+                          </div>
+                        {% endif %}
+                      </div>
+                      <div>
+                        <a
+                          href="{{ item.url }}"
+                          title="{{ item.product.title | escape }}"
+                          class="cart-product-link h4">
+                          {{- item.product.title -}}
+                        </a>
+                        {% if item.selling_plan_allocation %}
+                          <div class="properties">
+                            <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
+                          </div>
+                        {% endif %}
+                        {% unless item.variant.title contains 'Default' %}
+                          <div class="product-cart-item-options">
+                            {% for option in item.product.options %}
+                              <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}}
+                              <br>
+                            {% endfor %}
+                          </div>
+                        {% endunless %}
+                        {%- if item.discounts != blank -%}
+                          <ul class="discounts" role="list">
+                            {%- for discount in item.discounts -%}
+                              <li class="discounts__discount">
+                                {%- render 'svg-icons' with 'discount' -%}
+                                {{ discount.title }} (-{{ discount.amount | money }})
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                        <quantity-selector class="quantity cart-update cart-update-mobile small-qty" data-id="{{ item.key | escape }}">
+                          <button
+                            class="minus"
+                            type="button"
+                            aria-label="{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}">
+                            {% render 'svg-icons' with 'minus' %}
+                          </button>
+                          <input
+                            type="number"
+                            name="updates[]"
+                            id="updates_{{ item.key }}"
+                            value="{{ item.quantity }}"
+                            min="{{ item.variant.quantity_rule.min }}"
+                            {% if item.variant.quantity_rule.max != null %}
+                            max="{{ item.variant.quantity_rule.max }}"
+                            {% endif %}
+                            step="{{ item.variant.quantity_rule.increment }}"
+                            class="qty"
+                            data-index="{{ item.index | plus: 1 }}"
+                            aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}">
+                          <button
+                            class="plus"
+                            type="button"
+                            aria-label="{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}">
+                            {% render 'svg-icons' with 'plus' %}
+                          </button>
+                        </quantity-selector>
+                        <a
+                          href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0"
+                          class="remove cart-remove-mobile"
+                          data-index="{{ item.index | plus: 1 }}">
+                          {%- render 'svg-icons' with 'trash' -%}
+                        </a>
+                        <div
+                          class="cart-item__error form-notification error"
+                          id="Line-item-error-{{ item.index | plus: 1 }}"
+                          role="alert"
+                          hidden>
+                          {% render 'svg-icons' with 'thb-error' %}
+                          <small class="cart-item__error-text"></small>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="product-quantity">
+                    <quantity-selector class="quantity cart-update" data-id="{{ item.key | escape }}">
+                      <button class="minus" type="button">{% render 'svg-icons' with 'minus' %}</button>
+                      <input
+                        type="number"
+                        name="updates[]"
+                        id="updates_{{ item.key }}"
+                        value="{{ item.quantity }}"
+                        min="{{ item.variant.quantity_rule.min }}"
+                        {% if item.variant.quantity_rule.max != null %}
+                        max="{{ item.variant.quantity_rule.max }}"
+                        {% endif %}
+                        step="{{ item.variant.quantity_rule.increment }}"
+                        class="qty"
+                        data-index="{{ item.index | plus: 1 }}"
+                        aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}">
+                      <button class="plus" type="button">{% render 'svg-icons' with 'plus' %}</button>
+                    </quantity-selector>
+                    <a
+                      href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0"
+                      class="remove cart-remove-desktop"
+                      data-index="{{ item.index | plus: 1 }}">
+                      {%- render 'svg-icons' with 'trash' -%}
+                    </a>
+                  </td>
+                  <td class="product-subtotal" data-subtotal="{{ item.line_price | escape }}">
+                    <span class="price h6">
+                      {%- if item.original_line_price != item.final_line_price -%}
+                        <del>
+                          <span class="amount">{{ item.original_line_price | money }}</span>
+                        </del>
+                        <ins>
+                          <span class="amount">{{ item.final_line_price | money }}</span>
+                        </ins>
+                      {%- else -%}
+                        <ins>
+                          <span class="amount">{{ item.original_line_price | money }}</span>
+                        </ins>
+                      {%- endif -%}
+                      {%- if item.variant.available and item.unit_price_measurement -%}
+                        <small class="unit-price">
+                          {{ item.variant.unit_price | money }}
+                          <span class="unit-price-separator">/</span>
+                          {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
+                            {{- item.variant.unit_price_measurement.reference_value -}}
+                          {%- endif -%}
+                          {{ item.variant.unit_price_measurement.reference_unit }}
+                        </small>
+                      {%- endif -%}
+                    </span>
+                    <div class="loading-overlay">
+                      {% render 'svg-icons' with 'thb-loading' %}
+                    </div>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+          <footer class="cart-footer">
+            <div class="cart__footer--left">
+              
+                {% comment %}
+                <td class="thb-cart-form--continue">
+                <a href="{{ routes.all_products_collection_url }}" class="back_to_shop text-button">{{ 'general.continue_shopping' | t }}</a>
+                </td>
+                {% endcomment %}
+                  <!-- Zapiet | Store Pickup + Delivery -->
+                  <div id="zapietContainer">
+                    <div id="storePickupApp"></div>
+                  </div>
+                  <!-- Zapiet | Store Pickup + Delivery -->
+                  {% if section.settings.holiday_shipping_enable %}
+                    {% unless latestShipDate %}
+                      {% assign today_number = 'now' | date: '%u' | plus: 0 %}
+                      {% comment %} get day of week as number {% endcomment %}
+                      {% assign today = 'now' | date: '%Y-%m-%d' | date: '%s' %}
+                      {% assign one_day = 86400 %}
+                      {% assign one_week_s = one_day | times: 7 %}
+                      {% assign days_until = 8 | minus: today_number %}
+                      {% assign next_monday_delta_s = days_until | times: one_day %}
+
+                      {% assign first_date_s = section.settings.holiday_shipping_first_date | date: '%s' | plus: 0 %}
+                      {% assign start_date_s = today | plus: next_monday_delta_s %}
+                      {% if first_date_s > start_date_s %}
+                        {% assign start_date_s = first_date_s %}
+                      {% endif %}
+
+                      {% assign last_date_s = section.settings.holiday_shipping_last_date | date: '%s' | plus: 1 %}
+
+                      {% assign seconds_span = last_date_s | minus: start_date_s %}
+                      {% assign num_weeks_out = seconds_span | divided_by: one_week_s | floor %}
+
+                      {% comment %}
+                      <script>
+                      console.log("{{num_weeks_out}},{{today}},{{today_number}},{{num_weeks_out}},{{last_date_s}},{{start_date_s}},{{start_date_s | date: '%Y-%m-%d %H:%M'}},{{first_date_s | date: '%Y-%m-%d %H:%M'}}");
+                      </script>
+                      {% endcomment %}
+
+                      {% if num_weeks_out >= 0 %}
+                        <div class="grid__item ship-date">
+                          <input
+                            type="hidden"
+                            name="attributes[Has ship date]"
+                            value="No">
+                          <input
+                            id="ShipDateCheckbox"
+                            type="checkbox"
+                            name="attributes[Has ship date]"
+                            value="Yes"
+                            {% if cart.attributes['Has ship date'] == 'Yes' %}
+                            checked
+                            {% endif %}>
+                          <label for="ShipDateCheckbox">
+                            <div class="icon--extra-large icon--circle">{% render 'icon-calendar' %}</div>
+                            <span>{{ 'cart.general.shipdate-choose' | t }}</span>
+                          </label>
+                        </div>
+                        <div
+                          class="grid__item"
+                          id="ShipDateContainer"
+                          style="display:{% if cart.attributes['Has ship date'] != 'Yes' %}none {% else %} block {% endif %}">
+                          <select
+                            type="text"
+                            id="ShipDateSelect"
+                            name="attributes[Ship Date]"
+                            {% if cart.attributes['Has ship date'] != 'Yes' %}
+                            disabled="disabled"
+                            {% endif %}>
+                            {% for w in (0..num_weeks_out) %}
+                              {% assign week_delta_s = one_week_s | times: w %}
+                              {% assign monday_s = start_date_s | plus: week_delta_s %}
+                              {% assign wednesday_s = monday_s | plus: 172800 %}
+                              {% assign date_val = monday_s | date: '%Y-%m-%d' %}
+                              {% assign date_label = monday_s | date: '%b %e' %}
+                              {% assign date_label_end = wednesday_s | date: '%b %e' %}
+                              {% if monday_s < last_date_s %}
+                                <option value="{{date_val}}">Ships out week of {{ date_label }}</option>
+                              {% endif %}
+                            {% endfor %}
+                          </select>
+                        </div>
+                      {% endif %}
+                    {% endunless %}
+                  {% endif %}
+                
+                <div class="grid__item gift_cart">
+                  <div class="grid__item cart-gift">
+                    <input
+                      type="hidden"
+                      name="attributes[This is a gift]"
+                      value="No">
+                    <input
+                      id="CartIsGiftCheckbox"
+                      type="checkbox"
+                      name="attributes[This is a gift]"
+                      value="Yes"
+                      {% if cart.attributes['This is a gift'] == 'Yes' %}
+                      checked
+                      {% endif %}>
+                    <label for="CartIsGiftCheckbox">{{ 'sections.cart.gift' | t }}</label>
+                  </div>
+                  <div
+                    class="grid__item"
+                    id="CartGiftNoteContainer"
+                    style="display:{% if cart.attributes['This is a gift'] != 'Yes' %}none {% else %} block {% endif %}">
+                    <div class="cart__subform">
+                      <label for="gift-from" class="cart__form-label">{{ 'sections.cart.giftfrom' | t }}</label>
+                      <input
+                        type="text"
+                        id="gift-from"
+                        class="form-input"
+                        name="attributes[Gift From]"
+                        placeholder="{{ 'sections.cart.giftfrom_placeholder' | t }}"
+                        maxlength="150"
+                        {% if cart.attributes['This is a gift'] == 'Yes' %}
+                        required
+                        {% endif %}
+                        value="{{ cart.attributes["Gift From"] }}">
+
+                      <label for="gift-note" class="cart__form-label">{{ 'sections.cart.giftnote' | t }}</label>
+                      <textarea
+                        id="gift-note"
+                        name="attributes[Gift Note]"
+                        placeholder="{{ 'sections.cart.giftnote_placeholder' | t }}"
+                        rows="5"
+                        maxlength="200"
+                        {% if cart.attributes['This is a gift'] == 'Yes' %}
+                        required
+                        {% endif -%}>{{ cart.attributes["Gift Note"] }}</textarea>
+                      {% unless hasPickupItems %}
+                        {% if section.settings.summer_shipping_enable %}
+                          <label class="blank"></label>
+                          <div class="cart__notice cart__summer-shipping">
+                            <p>{{ 'sections.cart.summer_gift_shipping_notice_html' | t }}</p>
+                          </div>
+                        {% endif %}
+                      {% endunless %}
+                      {% unless item.product.tags contains 'prop65_exempt' %}
+                        {%- assign show_prop65_warning = true %}
+                        {% comment %}
+                        <a class="cart-item__meta-title h4" href="#prop65_warning">⚠</a>
+                        {% endcomment %}
+                      {% endunless %}
+                    </div>
+                  </div>
+                </div>
+                <div class="thb-cart-form--cart-collaterals" colspan="2">
+                  {% if section.settings.cart_notes_enable %}
+                    {% comment %}
+                    <details class="cart-notes">
+                    <summary class="cart-notes-title">{{ 'sections.cart.add_notes' | t }}<span></span></summary>
+                    <textarea name="note" id="CartSpecialInstructions" class="full">{{ cart.note }}</textarea>
+                    </details>
+                    {% endcomment %}
+                    <div class="grid__item cart-delivery">
+                      <input
+                        type="hidden"
+                        name="attributes[Has delivery instructions]"
+                        value="No">
+                      <input
+                        id="CartSpecialInstructionsCheckbox"
+                        type="checkbox"
+                        name="attributes[Has delivery instructions]"
+                        value="Yes"
+                        {% if cart.attributes['Has delivery instructions'] == 'Yes' %}
+                        checked
+                        {% endif %}>
+                      <label for="CartSpecialInstructionsCheckbox">{{ 'sections.cart.note' | t }}</label>
+                    </div>
+                    <div
+                      class="grid__item cart-note"
+                      id="CartSpecialInstructionsContainer"
+                      style="display:{% if cart.attributes["Has delivery instructions"] != "Yes" %}none{%else%}block{% endif %}">
+                      <!--
+                      <label for="CartSpecialInstructions" class="cart-footer__note-label small--text-center">{{ 'sections.cart.note' | t }}</label>
+                      -->
+                      <textarea
+                        name="note"
+                        id="CartSpecialInstructions"
+                        placeholder="{{ 'sections.cart.note_placeholder' | t }}"
+                        maxlength="150"
+                        {% if cart.attributes['Has delivery instructions'] == 'Yes' %}
+                        required
+                        {% endif %}
+                        class="cart-footer__note-input"
+                        rows="3"
+                        data-cart-note>{{ cart.note }}</textarea>
+                    </div>
+                  {% endif %}
+                  {%- if cart.cart_level_discount_applications.size > 0 -%}
+                    <table cellspacing="0" class="no-borders">
+                      <tbody>
+                        {%- for discount in cart.cart_level_discount_applications -%}
+                          <tr class="cart-discount">
+                            <th>{{ discount.title }}</th>
+                            <td>
+                              <span class="price">
+                                <span class="amount">
+                                  {% if settings.currency_code_enabled %}
+                                    (-{{ discount.total_allocated_amount | money_with_currency }})
+                                  {% else %}
+                                    (-{{ discount.total_allocated_amount | money }})
+                                  {% endif %}
+                                </span>
+                              </span>
+                            </td>
+                          </tr>
+                        {%- endfor -%}
+                      </tbody>
+                    </table>
+                  {%- endif -%}
+                  {% if settings.cart_terms_conditions_enable %}
+                    <div class="thb-cart-form--cart-collaterals-terms">
+                      <input
+                        type="checkbox"
+                        id="CartTerms"
+                        required>
+                      <label for="CartTerms">
+                        {% if settings.cart_terms_conditions_page != blank %}
+                          {{ 'sections.cart.terms_html' | t: url: settings.cart_terms_conditions_page.url }}
+                        {% else %}
+                          {{ 'sections.cart.terms' | t }}
+                        {% endif %}
+                      </label>
+                    </div>
+                  {% endif %}
+                </div>
+            </div>
+            <div class="cart__footer--right">
+              <div class="subtotal">
+                <span>{{ 'sections.cart.subtotal' | t }}</span>
+                {% if settings.currency_code_enabled -%}
+                  {{- cart.total_price | money_with_currency -}}
+                {%- else -%}
+                  {{- cart.total_price | money -}}
+                {%- endif -%}
+              </div>
+              <div class="proceed-to-checkout" data-additional-checkout="{{ additional_checkout_buttons }}">
+                <button
+                  type="submit"
+                  name="checkout"
+                  class="checkout-button button">
+                  <span>
+                    {{- 'sections.cart.checkout' | t }}
+                  </span>
+                </button>
+                {%- if additional_checkout_buttons -%}
+                  <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+                    {{ content_for_additional_checkout_buttons }}
+                  </div>
+                {%- endif -%}
+              </div>
+              <p class="cart-policy-text">
+                {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                  {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- elsif cart.taxes_included -%}
+                  {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+                {%- elsif shop.shipping_policy.body != blank -%}
+                  {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+                {%- else -%}
+                  {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+                {%- endif -%}
+              </p>
+            </div>
+            <div class="cart__footer--full">
+              {% unless hasPickupItems %}
+                {% if section.settings.summer_shipping_enable %}
+                  <div class="cart__summer-shipping summer-shipping">
+                    <p>
+                      {{ 'sections.cart.summer_shipping_notice_html' | t }}
+                      <span class="cart__summer-shipping--delayed-delivery">
+                        {{- 'sections.cart.summer_shipping_delayed_delivery' | t -}}
+                      </span>
+                    </p>
+                  </div>
+                {% endif %}
+              {% endunless %}
+              <div class="warning">
+                {% if show_prop65_warning %}
+                  <div id="prop65_warning" class="prop65_warning prop65_warning--desktop">
+                    {{ 'sections.cart.prop65' | t }}
+                    <a
+                      href="#prop65_dialog"
+                      class="prop65_moreinfo btn-link"
+                      id="prop65_moreinfo">
+                      {{- 'sections.cart.prop65_more_info_label' | t -}}
+                    </a>
+                  </div>
+                {% endif %}
+                <div id="prop65_dialog" class="modaloverlay">
+                  <div class="modal">
+                    <a href="#close" class="close">&times;</a>
+                    <div>{{ 'sections.cart.prop65_detail_html' | t }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+        </form>
+      {%- else -%}
+        <div class="cart-empty">
+          <h1>{{ 'sections.cart.empty' | t }}</h1>
+          <p>{{ 'sections.cart.ready' | t }}</p>
+          <a href="{{ routes.root_url }}" class="button accent2">
+            <span>{{ 'general.continue_shopping' | t }}</span>
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+{{ 'cart.js' | asset_url | script_tag }}
+{% schema %}
+  {
+    "name": "Cart",
+    "class": "cart-section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "Enable order notes",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "summer_shipping_enable",
+        "label": "Enable summer shipping notice",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "holiday_shipping_enable",
+        "label": "Enable holiday shipping",
+        "info": "Allows guests to select ship week",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "holiday_shipping_first_date",
+        "label": "First allowed date for holiday shipping",
+        "info": "YYYY-MM-DD (Monday required)",
+        "default": "2021-11-20"
+      }, {
+        "type": "text",
+        "id": "holiday_shipping_last_date",
+        "label": "Last allowed date for holiday shipping",
+        "info": "YYYY-MM-DD",
+        "default": "2020-12-14"
+      }, {
+        "type": "text",
+        "id": "delivery_cart_minimum",
+        "label": "Delivery cart minimum ($)",
+        "default": "45"
+      }
+    ]
+  }
+{% endschema %}

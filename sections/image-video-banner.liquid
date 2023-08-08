@@ -1,0 +1,554 @@
+{{- 'image-with-text-overlay.css' | asset_url | stylesheet_tag -}}
+{{- 'image-video-banner.css' | asset_url | stylesheet_tag -}}
+{{- 'background-video.css' | asset_url | stylesheet_tag -}}
+
+{%- liquid
+  assign section_width = section.settings.section_width
+  assign image = section.settings.image
+  assign image_parallax = section.settings.image_parallax
+  assign desktop_height = section.settings.desktop_height
+  assign mobile_height = section.settings.mobile_height
+  assign content_width = section.settings.content_width
+  assign content_position = section.settings.content_position
+  assign text_alignment = section.settings.text_alignment
+  assign overlay_opacity = section.settings.overlay_opacity
+  assign content_overlay_opacity = section.settings.content_overlay_opacity
+  assign disable_top_spacing = section.settings.disable_top_spacing
+  assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+  assign fallback_image = section.settings.fallback_image
+  assign video = section.settings.video
+  assign video_hosted = section.settings.video_hosted
+
+  case mobile_height
+    when 'mobile-height-350'
+      assign mobile_image_height = 350
+    when 'mobile-height-400'
+      assign mobile_image_height = 400
+    when 'mobile-height-450'
+      assign mobile_image_height = 450
+    when 'mobile-height-500'
+      assign mobile_image_height = 500
+    else
+      assign mobile_image_height = 500
+  endcase
+-%}
+
+<div class="{{ section_width }} image__video--banner">
+  <image-with-text-overlay class="image-with-text-overlay text-{{ text_alignment }} {{ mobile_height }} {{ desktop_height }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
+    <div class="image-with-text-overlay--bg parallax--{{ image_parallax }}">
+      {% if video %}
+        <background-video class="background-video">
+			{%- if fallback_image != blank -%}
+			<div class="background-video__fallback-img">
+				<img data-src="{{ fallback_image | image_url }}" alt="{{ fallback_image.alt | escape }}" width="{{ fallback_image.width }}" height="{{ fallback_image.height }}" class="lazyload" />
+				<noscript>
+				<img src="{{ fallback_image | image_url }}" alt="{{ fallback_image.alt | escape }}" width="{{ fallback_image.width }}" height="{{ fallback_image.height }}" />
+				</noscript>
+			</div>
+			{%- endif -%}
+			<div class="background-video__iframe" data-provider="{{ video.type }}">
+				{%- if video_hosted == blank -%}
+					{%- if video != blank -%}
+						{%- if video.type == 'youtube' -%}
+							<iframe data-src="https://www.youtube.com/embed/{{ video.id }}?loop=1&autoplay=1&mute=1&playlist={{ video.id }}&iv_load_policy=3&disablekb=1&controls=0&playsinline=1&enablejsapi=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
+						{%- else -%}
+							<iframe data-src="https://player.vimeo.com/video/{{ video.id }}?background=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
+						{%- endif -%}
+					{%- endif -%}
+				{%- elsif video_hosted == blank -%}
+					{{ video_hosted | video_tag: autoplay: true, loop: true, controls: false, muted: true }}
+                {% else %}
+                  {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+				{%- endif -%}
+			</div>
+		</background-video>
+      {% elsif image %}
+        {%- liquid
+          assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+          assign master_width = image.src.width | append: 'x' | append: image.src.height
+          assign width = '375x' | append: small_width | append: ',' | append: master_width
+          assign class = ''
+          if image_parallax
+            assign class = 'thb-parallax-image'
+          endif
+
+          if section.settings.mobile_image
+            assign class = class | append: ' image-with-text-overlay--desktop'
+          endif
+        -%}
+        {%- render 'responsive-image', image: image, sizes: width, class: class -%}
+      {% else %}
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+      {% endif %}
+      {%- if section.settings.mobile_image -%}
+        {%- liquid
+          assign image = section.settings.mobile_image
+          assign master_width = image.src.width | append: 'x' | append: image.src.height
+          assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+
+          assign class = ''
+          if image_parallax
+              assign class = 'thb-parallax-image'
+          endif
+
+          assign class = class | append: ' image-with-text-overlay--mobile'
+          render 'responsive-image', image: image, sizes: width, class: class
+        -%}
+      {%- endif -%}
+    </div>
+
+    <div class="image-with-text-overlay--content content-{{ content_position }}" style="background: rgba(51,51,51,{{ content_overlay_opacity | divided_by: 100.0 }})">
+      <div class="image-with-text-overlay--content-inner">
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'breadcrumb' -%}
+              <div class="hide-mobile">
+                {% render 'breadcrumbs' %}
+              </div>
+            {%- when 'subheading' -%}
+              <p class="caption mb-60" {{ block.shopify_attributes }} style="color: {{ block.settings.caption_color }}">{{ block.settings.text }}</p>
+            {%- when 'heading' -%}
+              <h3 class="{{ block.settings.heading_size }} mb-45 heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.text | newline_to_br }}</h3>
+            {%- when 'text' -%}
+              <div class="description body-1 mb-45" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
+            {%- when 'button' -%}
+              {% if block.settings.button_text != blank %}
+                <a class="mt-15 btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+              {% endif %}
+            {% when 'space' %}
+            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+          {%- endcase -%}
+        {% endfor %}
+      </div>
+    </div>
+  </image-with-text-overlay>
+</div>
+<script src="{{ 'image-with-text-overlay.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Image Video Banner",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "full-width-row",
+          "label": "Full width"
+        },
+        {
+          "value": "full-width-row-full",
+          "label": "Full width, no spacing"
+        }
+      ],
+      "default": "grid",
+      "label": "Section width"
+    },
+    {
+      "type": "header",
+      "content": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "2800 x 650 .jpg recommended."
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image (optional)",
+      "info": "375 x 650 .jpg recommended."
+    },
+    {
+      "type": "header",
+      "content": "Background Video"
+    },
+    {
+      "type": "video_url",
+      "id": "video",
+      "label": "Video URL",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "placeholder": "Use a YouTube or Vimeo URL",
+      "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+      "info": "Video plays in a lightbox."
+    },
+    {
+      "type": "video",
+      "id": "video_hosted",
+      "label": "Shopify-hosted video",
+      "info": "Overrides the Video URL setting."
+    },
+    {
+      "type": "image_picker",
+      "id": "fallback_image",
+      "label": "Fallback image",
+      "info": "1920 x 1080 px .jpg recommended."
+    },
+    {
+      "type": "header",
+      "content": "Common Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_parallax",
+      "default": false,
+      "label": "Enable parallax",
+      "info": "Animations must be enabled in theme settings"
+    },
+    {
+      "type": "select",
+      "id": "desktop_height",
+      "label": "Desktop height",
+      "options": [
+        {
+          "value": "desktop-height-450",
+          "label": "450px"
+        },
+        {
+          "value": "desktop-height-520",
+          "label": "520px"
+        },
+        {
+          "value": "desktop-height-550",
+          "label": "550px"
+        },
+        {
+          "value": "desktop-height-650",
+          "label": "650px"
+        },
+        {
+          "value": "desktop-height-700",
+          "label": "700px"
+        },
+        {
+          "value": "desktop-height-750",
+          "label": "750px"
+        },
+        {
+          "value": "desktop-height-800",
+          "label": "800px"
+        },
+        {
+          "value": "desktop-height-full",
+          "label": "Full screen"
+        }
+      ],
+      "default": "desktop-height-650"
+    },
+    {
+      "type": "select",
+      "id": "mobile_height",
+      "label": "Mobile height",
+      "options": [
+        {
+          "value": "mobile-height-auto",
+          "label": "Adapt to content"
+        },
+        {
+          "value": "mobile-height-350",
+          "label": "350px"
+        },
+        {
+          "value": "mobile-height-400",
+          "label": "400px"
+        },
+        {
+          "value": "mobile-height-450",
+          "label": "450px"
+        },
+        {
+          "value": "mobile-height-500",
+          "label": "500px"
+        },
+        {
+          "value": "mobile-height-full",
+          "label": "Full screen"
+        }
+      ],
+      "default": "mobile-height-500"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Content position",
+      "options": [
+        {
+          "value": "middle-left",
+          "label": "Middle left"
+        },
+        {
+          "value": "middle-center",
+          "label": "Middle center"
+        },
+        {
+          "value": "middle-right",
+          "label": "Middle right"
+        }
+      ],
+      "default": "middle-center"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Content alignment"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Image Overlay opacity",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "content_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Content Overlay opacity",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "Remove top spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "Remove bottom spacing"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "subheading",
+      "name": "Subheading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "caption_color",
+          "label": "Color",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Add a tagline"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Color",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Image with text overlay"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "Small"
+            },
+            {
+              "value": "h1",
+              "label": "Medium"
+            },
+            {
+              "value": "h1__large",
+              "label": "Large"
+            },
+            {
+              "value": "h1-xlarge",
+              "label": "Extra large"
+            }
+          ],
+          "default": "h1-xlarge"
+        }
+      ]
+    },
+    {
+      "type": "breadcrumb",
+      "name": "Breadcrumbs",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Color",
+          "default": "#fff"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 2,
+      "settings": [
+        {
+          "id": "button_text",
+          "type": "text",
+          "label": "Button label",
+          "default": "Shop Now",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "id": "button_link",
+          "type": "url",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Desktop Button Style",
+          "options": [
+            {
+              "value": "btn--white",
+              "label": "White Button"
+            },
+            {
+              "value": "btn--gray",
+              "label": "Gray Button"
+            },
+            {
+              "value": "btn--gold",
+              "label": "Gold Button"
+            },
+            {
+              "value": "btn--light-gold",
+              "label": "Light Gold Button"
+            },
+            {
+              "value": "btn--outline",
+              "label": "Gray Outline Button"
+            }
+          ],
+          "default": "btn--white"
+        },
+        {
+          "type": "select",
+          "id": "mobile_button_style",
+          "label": "Mobile Button Style",
+          "options": [
+            {
+              "value": "btn--gray",
+              "label": "Gray Button"
+            },
+            {
+              "value": "btn--gold",
+              "label": "Gold Button"
+            },
+            {
+              "value": "btn--light-gold",
+              "label": "Light Gold Button"
+            },
+            {
+              "value": "btn--outline",
+              "label": "Gray Outline Button"
+            }
+          ],
+          "default": "btn--gold"
+        }
+      ]
+    },
+    {
+      "type": "space",
+      "name": "Empty space",
+      "settings": [
+        {
+          "type": "range",
+          "id": "height",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Height",
+          "default": 50
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Image Video Banner",
+      "blocks": [
+        {
+          "type": "subheading"
+        },
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "button"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
