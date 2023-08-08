@@ -91,15 +91,22 @@
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
+
     <!-- Zapiet | Store Pickup + Delivery -->
     {% if request.page_type == 'cart' %}
       {%- include 'cart-pickup' %}
-
     {% endif %}
+    
     {% render 'shogun-head' %}
+
+    <script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'vendor.min.js' | asset_url }}" async></script>
+    <script src="{{ 'custom.js' | asset_url }}" async></script>
+    
   </head>
   <body class="animations-{{ settings.animations }} button-uppercase-{{ settings.button_uppercase }} navigation-uppercase-{{ settings.navigation_uppercase }} product-title-uppercase-{{ settings.product_title_uppercase }}{% if customer %} customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template-{{ template | replace: '.', '-' | handle }}">
     <a class="screen-reader-shortcut" href="#main-content">{{ 'accessibility.skip_to_text' | t }}</a>
+    
     <div id="wrapper">
       {% sections 'header-group' %}
       <div role="main" id="main-content">
@@ -112,8 +119,6 @@
       <div class="click-capture"></div>
     </div>
 
-    {{ 'vendor.min.js' | asset_url | script_tag }}
-    {{ 'custom.js' | asset_url | script_tag }}
     {% if settings.animations %}
       {{ 'animations.min.js' | asset_url | script_tag }}
       <script>
@@ -122,22 +127,28 @@
         gsap.registerPlugin(ScrollTrigger);
       </script>
     {% endif %}
+    
     {% if settings.enable_quick_view %}
       <script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
     {% endif %}
+    
     {{ 'slideshow.js' | asset_url | script_tag }}
     {{ 'app.js' | asset_url | script_tag }}
+    
     <script
       type="module"
       src="{{ 'scroll-shadow.js' | asset_url }}"
       defer="defer"></script>
     <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    
     {%- if request.design_mode -%}
       {{ 'theme-editor.js' | asset_url | script_tag }}
     {%- endif -%}
+    
     {%- if settings.cart_recommendations -%}
       <script src="{{ 'product-recommendations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
     {% render 'back-to-top' %}
 
   </body>
