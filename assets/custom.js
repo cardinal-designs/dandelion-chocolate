@@ -150,7 +150,6 @@ var flickityNav = new Flickity(navCarousel, {
   asNavFor: '.carousel-main',
   prevNextButtons: true,
   contain: true,
-  wrapAround: true,
   cellAlign: 'left',
   pageDots: false
 });
