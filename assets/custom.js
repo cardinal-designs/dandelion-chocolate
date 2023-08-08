@@ -4,6 +4,7 @@ var flkty = new Flickity( elem, {
   pageDots: false,
   adaptiveHeight: true
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", function () {
     if (document.querySelector(".checkoutMethodContainer")?.classList.contains("shipping")) {
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     });
   }
-    
+  
   const cartSpecialInstructionsCheckbox = document.getElementById("CartSpecialInstructionsCheckbox");
   const cartSpecialInstructionsContainer = document.getElementById("CartSpecialInstructionsContainer");
   const cartSpecialInstructionsInput = document.getElementById("CartSpecialInstructions");
@@ -142,8 +143,7 @@ var flickityNav = new Flickity(navCarousel, {
 });
 
 // Accordion 
-
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
   var accordionContainer = $("dl.accordion-list");
   var duration = 300;

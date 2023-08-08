@@ -99,10 +99,10 @@
     
     {% render 'shogun-head' %}
 
-    <script src="{{ 'jquery.min.js' | asset_url }}" async></script>
-    <script src="{{ 'vendor.min.js' | asset_url }}" async></script>
-    <script src="{{ 'custom.js' | asset_url }}" async></script>
-    
+    <script src="{{ 'vendor.min.js' | asset_url }}"></script>
+    <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+      
   </head>
   <body class="animations-{{ settings.animations }} button-uppercase-{{ settings.button_uppercase }} navigation-uppercase-{{ settings.navigation_uppercase }} product-title-uppercase-{{ settings.product_title_uppercase }}{% if customer %} customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template-{{ template | replace: '.', '-' | handle }}">
     <a class="screen-reader-shortcut" href="#main-content">{{ 'accessibility.skip_to_text' | t }}</a>
