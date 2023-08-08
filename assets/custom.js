@@ -156,7 +156,8 @@ var flickityNav = new Flickity(navCarousel, {
 });
 
 // Accordion 
-var accordionContainer = $("dl.accordion-list");
+$( document ).ready(function() {
+  var accordionContainer = $("dl.accordion-list");
 var duration = 300;
 accordionContainer.on("click", "dt:not(.active)", function () {
   accordionContainer.find("dt.active").removeClass("active");
@@ -167,3 +168,4 @@ accordionContainer.on("click", "dt:not(.active)", function () {
 accordionContainer.on("click", "dt.active", function () {
   $(this).removeClass("active").next("dd").slideUp(duration);
 });
+}); 
