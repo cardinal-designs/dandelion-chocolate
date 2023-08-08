@@ -141,3 +141,15 @@ if(cart_drawer_checkout_button){
   })
 }
 
+var elem = document.querySelector('.carousel-main');
+var flkty = new Flickity(elem);
+
+// Initialize the navigation carousel
+var navCarousel = document.querySelector('.carousel-nav');
+var flickityNav = new Flickity(navCarousel, {
+  asNavFor: '.carousel-main',
+  prevNextButtons: true,
+  contain: true,
+  wrapAround: true,
+  pageDots: false
+});
