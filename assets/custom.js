@@ -151,7 +151,8 @@ var flickityNav = new Flickity(navCarousel, {
   prevNextButtons: true,
   contain: true,
   cellAlign: 'left',
-  pageDots: false
+  pageDots: false,
+  wrapAround: true
 });
 
 // Accordion 
