@@ -142,8 +142,10 @@ document.addEventListener("DOMContentLoaded", function() {
   var flickityContainer_main = document.querySelector(".carousel-main");
   var flickityItems_main = document.querySelectorAll(".product-images__slide");
 
+  var myElement = document.querySelector(".carousel-main");
+  
   if (flickityItems_main.length <= 5) {
-    
+    myElement.classList.add("hide__slider_arrows");
   }
   
   var flickityContainer = document.querySelector(".carousel-nav");
