@@ -28,7 +28,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "uppercase": true,
+            "uppercase": false,
             "show_products_rating": true
           }
         },
@@ -36,7 +36,7 @@
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
         },
@@ -48,7 +48,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "color_picker": true,
             "variant_is_disabled": true,
             "sizing_guide_text": "Sizing guide",
@@ -104,6 +104,7 @@
     },
     "16623877721f33fb14": {
       "type": "spacer",
+      "disabled": true,
       "settings": {
         "spacer_mobile": 35,
         "spacer_desktop": 90,
@@ -113,6 +114,7 @@
     },
     "16623743398765981b": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1662374339c00286b1-1": {
           "type": "heading",
@@ -156,6 +158,7 @@
     },
     "16623873609e87da8b": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "1662387360fb14d4f3-0": {
           "type": "column",
@@ -238,6 +241,7 @@
     },
     "166237435211863a49": {
       "type": "background-video",
+      "disabled": true,
       "settings": {
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-450",
@@ -254,6 +258,7 @@
     },
     "1663667029efc274af": {
       "type": "collapsible-content",
+      "disabled": true,
       "blocks": {
         "1663667029f86d6497-0": {
           "type": "collapsible_tab",
@@ -328,6 +333,7 @@
     },
     "1663667027ccd68a19": {
       "type": "scrolling-text",
+      "disabled": true,
       "blocks": {
         "157f1bcc-632c-4bf7-bd60-4c71b734c135": {
           "type": "text",
@@ -378,6 +384,7 @@
     },
     "166366868377cd57e4": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "blocks": {
         "b9349bb5-2620-4155-ac69-dea56c8ebbe1": {
           "type": "subheading",
@@ -449,6 +456,7 @@
     },
     "1662552569cce2536d": {
       "type": "spacer",
+      "disabled": true,
       "settings": {
         "spacer_mobile": 0,
         "spacer_desktop": 5,
