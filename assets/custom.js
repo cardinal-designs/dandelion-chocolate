@@ -128,38 +128,34 @@ document.addEventListener("DOMContentLoaded", function () {
   
 });
 
-
-
 // Initialize the navigation carousel
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
-
-  var elem = document.querySelector('.carousel-main');
-  var flkty = new Flickity(elem);
 
   var flickityContainer_main = document.querySelector(".carousel-main");
   var flickityItems_main = document.querySelectorAll(".product-images__slide");
 
   var myElement = document.querySelector(".carousel-main");
+  var myElementnav = document.querySelector(".carousel-nav");
   
   if (flickityItems_main.length <= 5) {
     myElement.classList.add("hide__slider_arrows");
+    myElementnav.classList.add("hide__slider_arrows");
   }
   
   var flickityContainer = document.querySelector(".carousel-nav");
   var flickityItems = document.querySelectorAll(".product-images__slide");
 
-  if (flickityItems.length >= 5) {
-    var flkty = new Flickity(flickityContainer, {
-        asNavFor: '.carousel-main',
-        prevNextButtons: true,
-        pageDots: false,
-        wrapAround: true,
-        cellAlign: 'left'
-    });
-  }
+  var elem = document.querySelector('.carousel-main');
+  var flkty = new Flickity(elem);
+  
+  var flkty1 = new Flickity(flickityContainer, {
+      asNavFor: '.carousel-main',
+      prevNextButtons: true,
+      pageDots: false,
+      wrapAround: true,
+      cellAlign: 'left'
+  });
+
 });
 
 // Accordion 
