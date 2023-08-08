@@ -1453,7 +1453,24 @@ dl.accordion-list dd {
 }
 
 .thb-product-detail .product-short-description p:last-of-type {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1067px) and (min-width: 768px) {
+
+  .product-image-container .flickity-button.next {
+    right: 52px;
+  }
+
+  .product-image-container .flickity-button.previous {
+    left: 52px;
+  }
+
+  .product-images .flickity-button {
+    width: 20px;
+    height: 20px;
+  }
+  
 }
 
 @media only screen and (max-width: 767px) {
