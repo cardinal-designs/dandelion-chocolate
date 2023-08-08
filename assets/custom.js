@@ -149,6 +149,8 @@ var navCarousel = document.querySelector('.carousel-nav');
 var flickityNav = new Flickity(navCarousel, {
   asNavFor: '.carousel-main',
   prevNextButtons: true,
+  contain: true,
+  cellAlign: 'left',
   pageDots: false
 });
 
