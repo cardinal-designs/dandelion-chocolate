@@ -5,8 +5,6 @@ var flkty = new Flickity( elem, {
   adaptiveHeight: true
 });
 document.addEventListener("DOMContentLoaded", function () {
-
-  // Define a function to handle the attribute change event
   document.addEventListener("click", function () {
     if (document.querySelector(".checkoutMethodContainer")?.classList.contains("shipping")) {
       document.querySelectorAll(".cart__summer-shipping").forEach( elm => {
@@ -18,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
     }
   })
-
+  
   const cartIsGiftCheckbox = document.getElementById("CartIsGiftCheckbox");
   const cartGiftNoteContainer = document.getElementById("CartGiftNoteContainer");
   const giftNoteInput = document.getElementById("gift-note");
@@ -39,8 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     });
   }
-  
-  
+    
   const cartSpecialInstructionsCheckbox = document.getElementById("CartSpecialInstructionsCheckbox");
   const cartSpecialInstructionsContainer = document.getElementById("CartSpecialInstructionsContainer");
   const cartSpecialInstructionsInput = document.getElementById("CartSpecialInstructions");
@@ -57,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     });
   }
-  
   
   function onShipDateCheckboxUpdate() {
     var shipDateCheckbox = document.getElementById("ShipDateCheckbox");
@@ -106,18 +102,14 @@ document.addEventListener("DOMContentLoaded", function () {
       document.cookie = `shopify_pay_redirect=${shopPayRedirectCookieValue}; path=/`;
     }
   }
-
-  if(document.querySelector('.prop65_moreinfo') != null){
-    document.querySelector('.prop65_moreinfo').addEventListener('click', function(){
-      document.querySelector('.modaloverlay').style.display = 'flex';
-    });
-  }
-
-  if(document.querySelector('.close') != null){
-    document.querySelector('.close').addEventListener('click', function(){
-      document.querySelector('.modaloverlay').style.display = 'none';
-    });
-  }
+  
+  document.querySelector('.prop65_moreinfo')?.addEventListener('click', function(){
+    document.querySelector('.modaloverlay').style.display = 'flex';
+  });
+  
+  document.querySelector('.close')?.addEventListener('click', function(){
+    document.querySelector('.modaloverlay').style.display = 'none';
+  });
   
   const modal = document.querySelector('.modaloverlay');
   
@@ -133,13 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   window.addEventListener('click', windowClickHandler);
   
-})
-const cart_drawer_checkout_button=document.querySelector(".cart_drawer_checkout_button");
-if(cart_drawer_checkout_button){
-  cart_drawer_checkout_button.addEventListener("click",()=>{
-    window.location.href="/cart"
-  })
-}
+});
 
 var elem = document.querySelector('.carousel-main');
 var flkty = new Flickity(elem);
@@ -151,12 +137,14 @@ var flickityNav = new Flickity(navCarousel, {
   prevNextButtons: true,
   contain: true,
   cellAlign: 'left',
-  pageDots: false,
-  wrapAround: true
+  wrapAround: true,
+  pageDots: false
 });
 
 // Accordion 
-$( document ).ready(function() {
+
+$(document).ready(function() {
+
   var accordionContainer = $("dl.accordion-list");
   var duration = 300;
   accordionContainer.on("click", "dt:not(.active)", function () {
@@ -164,8 +152,9 @@ $( document ).ready(function() {
     accordionContainer.find("dd").slideUp(duration);
     $(this).addClass("active").next("dd").slideDown(duration);
   });
-  
+
   accordionContainer.on("click", "dt.active", function () {
     $(this).removeClass("active").next("dd").slideUp(duration);
   });
-}); 
+
+});
