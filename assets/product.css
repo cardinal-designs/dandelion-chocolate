@@ -1419,7 +1419,8 @@ dl.accordion-list dd {
 }
 
 #Product-Slider-Thumbanils .product-images__slide {
-  width: 18.6%;
+  width: 100%;
+  max-width: 98px;
   border: 1px solid rgba(66,41,22,.2);
   padding: 2px;
   margin: 0 4px;
@@ -1484,11 +1485,6 @@ dl.accordion-list dd {
 
   .thb-product-detail.product .product-grid-container {
     display: block;
-  }
-
-  #Product-Slider-Thumbanils .product-images__slide {
-    width: 100%;
-    max-width: 98px;
   }
 
   .add_to_cart_holder {
