@@ -275,6 +275,8 @@
                 {%- endunless -%}
               {%- endfor -%}
             </product-slider>
+
+            {% if media_layout == 'slider' %}
             <product-slider
               id="Product-Slider-Thumbanils"
               class="product-images {% if media_layout == 'slider' %}carousel-nav{% endif %} product-images--{{ media_layout }}"
@@ -557,6 +559,7 @@
                 {%- endunless -%}
               {%- endfor -%}
             </product-slider>
+            {% endif %}
             {%- if display_slider_pagination -%}
               {%- unless single_media_visible_mobile -%}
                 <div class="product-images-buttons no-js-hidden">
