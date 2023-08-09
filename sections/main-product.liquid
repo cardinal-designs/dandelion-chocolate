@@ -114,7 +114,7 @@
           <div class="product-image-container">
             <product-slider
               id="Product-Slider"
-              class="product-images {% if media_layout == 'slider' %}carousel-main{% else %}no__slider{% endif %} product-images--{{ media_layout }}"
+              class="product-images {% if media_layout == 'slider' %}carousel-main{% else %} media__layout--{{ media_layout }} {% endif %} product-images--{{ media_layout }}"
               data-captions="{{ display_captions }}"
             >
               {%- if featured_media != null -%}
