@@ -1464,6 +1464,11 @@ dl.accordion-list dd {
   margin-bottom: 0;
 }
 
+.media__layout--collage .product-images__slide {
+  width: 50%;
+  float: left;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
