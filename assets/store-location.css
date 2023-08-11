@@ -86,6 +86,7 @@
   color: #AC5121 !important;
   text-decoration: underline;
   text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 .location__timings {
