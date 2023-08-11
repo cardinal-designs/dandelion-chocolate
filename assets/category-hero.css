@@ -88,6 +88,7 @@
 .category__hero--wrapper .btn:hover {
   background: var(--gold);
   border-color: var(--gold); 
+  color: var(--white);
 }
 
 .category__hero--wrapper .content__left .btn+.btn:hover {
