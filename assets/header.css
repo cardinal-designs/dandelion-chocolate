@@ -173,8 +173,8 @@
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Bottom .btn:hover {
-  background-color: var(--charcoal-black);
-  color: var(--gold);
+  border-color: var(--charcoal-black);
+  color: var(--white);
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Bottom .sub__menu-shipping--text {
