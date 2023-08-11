@@ -173,7 +173,7 @@
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Bottom .btn:hover {
-  border-color: var(--charcoal-black);
+  border-color: var(--gold);
   background-color: var(--gold);
   color: var(--white);
 }
