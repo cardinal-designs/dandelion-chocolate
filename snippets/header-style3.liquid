@@ -5,7 +5,7 @@
 {% render 'header-full-menu', menu: header_settings.menu, blocks: blocks %}
 
 {% if header_settings.logo %}
-  <a class="logolink" href="{{ routes.root_url }}">
+  <a class="logolink">
     <img
         src="{{ header_settings.logo | image_url }}"
         class="logoimg"
@@ -29,7 +29,7 @@
     >
   </a>
 {% else %}
-  <a class="logolink text-logo" href="{{ routes.root_url }}">
+  <a class="logolink text-logo">
     {{ shop.name }}
   </a>
 {% endif %}
