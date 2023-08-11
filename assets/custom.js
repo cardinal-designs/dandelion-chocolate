@@ -2,7 +2,7 @@ var elem = document.querySelector('.carousel__quotes--inner');
 var flkty = new Flickity( elem, {
   prevNextButtons: true,
   pageDots: false,
-  adaptiveHeight: true
+  adaptiveHeight: false
 });
 
 document.addEventListener("DOMContentLoaded", function () {
