@@ -246,7 +246,7 @@
 }
 
 .footer .signup-container input {
-  color: var(--color-footer-text, --color-body);
+  color: #333333 !important;
   border: none;
   background-color: var(--white);
 }
