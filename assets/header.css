@@ -106,6 +106,10 @@
   margin-top: 20px;
 }
 
+.header .full-menu .thb-full-menu li.menu-item-has-children.menu-item-has-megamenu > .sub-menu {
+  margin-top: 0;  
+}
+
 .header .full-menu .thb-full-menu li.menu-item-has-children>.mega-menu-container {
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
   border: 0;
