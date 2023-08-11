@@ -85,6 +85,11 @@
   color: #f6c844 !important;
 }
 
+.category__hero--wrapper .content__left .btn+.btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
 @media screen and (min-width: 1440px) {
 
   .category__hero--wrapper .btn {
