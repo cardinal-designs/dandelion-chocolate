@@ -1468,6 +1468,10 @@ dl.accordion-list dd {
   float: left;
 }
 
+.product-add-to-cart-sticky--inner .plus {
+  display: none;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
