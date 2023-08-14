@@ -5202,6 +5202,10 @@ select.resize-select {
   margin: 0 5px;
 }
 
+.cart-drawer-buttons .button:before {
+  display: none;
+}
+
 .cart-drawer .text-button {
   margin-top: 15px;
   margin-right: 0;
