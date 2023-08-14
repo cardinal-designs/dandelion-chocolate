@@ -1,4 +1,13 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
+
+{% assign my_fields = product.metafields.custom.sticky_product %}
+
+{%- if my_fields != blank -%}
+  {% assign product = product.metafields.custom.sticky_product %}
+{%- else -%}
+  {% assign product = product %}
+{%- endif -%}
+  
 <product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
 	<button class="product-add-to-cart-sticky--inner">
 		<div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
