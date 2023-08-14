@@ -918,7 +918,6 @@
   {% assign product_one = product %}
 {%- endif -%}
   
-    {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
   {% render 'product-add-to-cart-sticky',
     product: product_one,
     media: first_image,
@@ -927,7 +926,6 @@
     form: form,
     is_disabled: is_disabled
   %}
-  {% endform %}
 {%- endif -%}
 
 {{ sizing_popup }}
