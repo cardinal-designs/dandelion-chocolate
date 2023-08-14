@@ -686,3 +686,7 @@
   font-size: 14px;
   margin-bottom: 16px;
 }
+
+.product-card .new-percentage {
+  margin-bottom: 4px;  
+}
