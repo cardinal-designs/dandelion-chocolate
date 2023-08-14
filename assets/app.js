@@ -730,8 +730,8 @@ class CartDrawer {
            debugger
           if (parsedState.sections) {
             const drawerSection=this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
-            const ProductRecommendationsParent=drawerSection.querySelector(".product-recommendations--parent")
-            if(!ProductRecommendationsParent.classList.contains("active")){
+            const ProductRecommendationsParent=drawerSection?.querySelector(".product-recommendations--parent")
+            if(!ProductRecommendationsParent?.classList?.contains("active")){
               ProductRecommendationsParent.classList.add("active")
             }
             elementToReplace.innerHTML = drawerSection
