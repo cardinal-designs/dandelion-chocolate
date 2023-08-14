@@ -43,10 +43,6 @@
   font-weight: 500;
 }
 
-.category_text p {
-  margin-top: 4px;
-}
-
 .category_text,
 .category_text p {
   font-family: 'Saa Series F D';
@@ -56,6 +52,10 @@
   letter-spacing: 0.15em;
   text-align: center;
   margin: 0;
+}
+
+.category_text p {
+  margin-top: 4px;
 }
 
 .category__hero--wrapper .heading {
