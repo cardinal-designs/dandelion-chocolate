@@ -679,3 +679,8 @@
   color: #853538;
   margin-bottom: 4px;
 }
+
+.product-card .product__description {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
