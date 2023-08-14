@@ -906,11 +906,11 @@
 
 {% assign my_fields = product.metafields.custom %}
 
-  {%- if my_fields.sticky_product != blank -%}
-    {% assign product_one = my_fields.sticky_product %}
-  {%- else -%}
-    {% assign product_one = product %}
-  {%- endif -%}
+{%- if my_fields.sticky_product != blank -%}
+  {% assign product_one = my_fields.sticky_product %}
+{%- else -%}
+  {% assign product_one = product %}
+{%- endif -%}
   
   {% render 'product-add-to-cart-sticky',
     product: product_one,
