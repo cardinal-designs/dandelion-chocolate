@@ -1,6 +1,6 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-<product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="quick-{{ section.id }}">
+<product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
 	<button class="product-add-to-cart-sticky--inner">
 		<div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
 			{%- if media -%}
@@ -17,7 +17,7 @@
 	</button>
 	<div class="product-add-to-cart-sticky--content">
 		{%- unless product.has_only_default_variant -%}
-		<variant-selects  id="variant-selects-{{ section.id }}--sticky" class="no-js-hidden variant-selects--sticky" data-section="quick-{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
+		<variant-selects  id="variant-selects-{{ section.id }}--sticky" class="no-js-hidden variant-selects--sticky" data-section="{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
 			<div class="variations">
 				{%- for option in product.options_with_values -%}
 					{%- liquid
@@ -38,7 +38,7 @@
 		</variant-selects>
 		{%- endunless -%}
 		{%- if product != blank -%}
-		  <product-form class="product-form" data-sticky="1" data-section="quick-{{ section.id }}">
+		  <product-form class="product-form" data-sticky="1" data-section="{{ section.id }}">
 				<div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
 		      {% render 'svg-icons' with 'thb-error' %}
 		      <span class="product-form__error-message"></span>
