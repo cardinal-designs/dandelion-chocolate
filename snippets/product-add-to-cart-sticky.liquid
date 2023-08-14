@@ -4,6 +4,7 @@
 
 {%- if my_fields != blank -%}
   {% assign product = product.metafields.custom.sticky_product %}
+  {{ product | json }}
 {%- else -%}
   {% assign product = product %}
 {%- endif -%}
