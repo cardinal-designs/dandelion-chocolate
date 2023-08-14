@@ -1479,6 +1479,10 @@ dl.accordion-list dd {
   padding: 10px 5px 5px;  
 }
 
+.product-add-to-cart-sticky--content .product-form {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
