@@ -1,3 +1,5 @@
+<script src="{{ 'product.js' | asset_url }}" defer="defer"></script>
+
 {%- assign product_form_id = 'product-form-quick' | append: section.id -%}
 
 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
