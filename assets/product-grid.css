@@ -238,7 +238,7 @@
 
 .product-card .product-card-title {
   display: block;
-  color: var(--dark-gray);
+  color: #333333;
   margin-bottom: 10px;
 }
 
