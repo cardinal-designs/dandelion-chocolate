@@ -1,9 +1,7 @@
-
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
 
-  
-<product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
+<product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="quick-{{ section.id }}">
 	<button class="product-add-to-cart-sticky--inner">
 		<div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
 			{%- if media -%}
@@ -43,7 +41,7 @@
 		{%- if product != blank -%}
           {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-  <input type="hidden" name="quantity" value="1">
+            <input type="hidden" name="quantity" value="1">
 		  <product-form class="product-form" data-sticky="1" data-section="{{ section.id }}">
 				<div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
 		      {% render 'svg-icons' with 'thb-error' %}
@@ -52,7 +50,7 @@
 				<div class="product-add-to-cart-container">
 					<div class="form-notification error" style="display:none;"></div>
 				  <div class="add_to_cart_holder">
-				    <button type="submit" name="add" id="AddToCartSticky" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+				    <button type="submit" name="add" id="AddToCartSticky" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
 							<span class="single-add-to-cart-button--text">
 								{%- if product.selected_or_first_available_variant.available -%}
 				          {{ 'products.product.add_to_cart' | t }}
@@ -84,4 +82,3 @@
 	  {%- endif -%}
 	</div>
 </product-add-to-cart-sticky>
-
