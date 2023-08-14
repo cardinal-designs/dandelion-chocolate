@@ -2,8 +2,7 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
 
-  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-  <input type="hidden" name="quantity" value="1">
+  
 <product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
 	<button class="product-add-to-cart-sticky--inner">
 		<div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
@@ -42,7 +41,9 @@
 		</variant-selects>
 		{%- endunless -%}
 		{%- if product != blank -%}
-          {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}z
+          {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+  <input type="hidden" name="quantity" value="1">
 		  <product-form class="product-form" data-sticky="1" data-section="{{ section.id }}">
 				<div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
 		      {% render 'svg-icons' with 'thb-error' %}
