@@ -1,7 +1,7 @@
 
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-{%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+
   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
   <input type="hidden" name="quantity" value="1">
 <product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
@@ -42,6 +42,7 @@
 		</variant-selects>
 		{%- endunless -%}
 		{%- if product != blank -%}
+          {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}z
 		  <product-form class="product-form" data-sticky="1" data-section="{{ section.id }}">
 				<div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
 		      {% render 'svg-icons' with 'thb-error' %}
@@ -65,6 +66,7 @@
 				  </div>
 				</div>
 			</product-form>
+      {% endform %}
 		{%- else -%}
 	    <div class="product-form">
 	      <div class="product-form__buttons form">
@@ -81,4 +83,4 @@
 	  {%- endif -%}
 	</div>
 </product-add-to-cart-sticky>
-{% endform %}
+
