@@ -735,6 +735,9 @@ class CartDrawer {
           if (parsedState.sections) {
             console.log(this.getSectionInnerHTML(parsedState.sections[section.section], section.selector),"dddd")
             elementToReplace.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
+             if(!ProductRecommendationsParent.classList.contains("active")){
+            ProductRecommendationsParent.classList.add("active")
+          }
           }
         }));
 
