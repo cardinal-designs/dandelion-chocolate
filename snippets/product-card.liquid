@@ -137,7 +137,7 @@
         {{ product_card_product.title }}
       {% endif %}
     </a>
-  {{ product_card_product.metafields.info.percentage }}
+    <p class="new-percentage">{{ product_card_product.metafields.info.percentage }}</p>
   
     <h2 class="product__country h2">{{ product_card_product.metafields.info.country }}</h2>
     {% if product_card_product.metafields.custom.short_description != blank and show_description %}
