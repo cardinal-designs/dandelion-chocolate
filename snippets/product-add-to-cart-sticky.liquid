@@ -2,7 +2,7 @@
 
 {% assign my_fields = product.metafields.custom %}
 
-{{ my_fields.sticky_product | json }}
+{{ my_fields.sticky_product }}
 
 {%- if my_fields.sticky_product != blank -%}
   {% assign product = my_fields.sticky_product %}
