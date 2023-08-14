@@ -728,6 +728,10 @@ class CartDrawer {
         this.getSectionsToRender().forEach((section => {
           const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
            debugger
+          const ProductRecommendationsParent=elementToReplace.querySelector(".product-recommendations--parent")
+          if(!ProductRecommendationsParent.classList.contains("active")){
+            ProductRecommendationsParent.classList.add("active")
+          }
           if (parsedState.sections) {
             elementToReplace.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
           }
