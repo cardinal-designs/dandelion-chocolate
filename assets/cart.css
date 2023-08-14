@@ -647,3 +647,7 @@ body .zapietModal.moreInformation h2 {
 .cart-items tbody .product-name .product-cart-item {
   align-items: center;
 }
+
+.checkout-button:before {
+  display: none;
+}
