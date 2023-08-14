@@ -25,10 +25,10 @@
       </div>
       <div class="content__right">
         {% for block in section.blocks %}
-          <div class="location__blocks">
+          <a href="{% if block.settings.link != blank %}{{ block.settings.link }}{% else %}javascript:void(0);{% endif %}" class="location__blocks">
             <div class="location__blocks--inner">
               <div class="location__left">
-                <a href="{% if block.settings.link != blank %}{{ block.settings.link }}{% else %}javascript:void(0);{% endif %}" class="location__name" style="color: {{ section.settings.color_text }}">{{ block.settings.store_location }}</a>
+                <span class="location__name" style="color: {{ section.settings.color_text }}">{{ block.settings.store_location }}</span>
                 <p class="location__timings {% if block.settings.store_close %}closed{% endif %}" style="color: {{ section.settings.color_text }}">
   
                   {% assign currentDate = "now" | date: "%Y-%m-%d" | date: "%s" %}
@@ -122,7 +122,7 @@
             {% if block.settings.link != blank %}
               <a href="{{ block.settings.link }}" class="hide-desktop link">{{ block.settings.link_text }}</a>
             {% endif %}
-          </div>
+          </a>
         {% endfor %}
       </div>
     </div>
