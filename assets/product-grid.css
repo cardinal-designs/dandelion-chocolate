@@ -683,8 +683,9 @@
 }
 
 .product-card .product__description {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 16px;
+  letter-spacing: normal;
 }
 
 .product-card .new-percentage {
