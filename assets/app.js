@@ -732,7 +732,7 @@ class CartDrawer {
             console.log(this.getSectionInnerHTML(parsedState.sections[section.section], section.selector),"dddd")
             elementToReplace.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
               const ProductRecommendationsParent=elementToReplace.querySelector(".product-recommendations--parent")
-             if(!ProductRecommendationsParent.classList.contains("active")){
+             if(!ProductRecommendationsParent?.classList?.contains("active")){
             ProductRecommendationsParent.classList.add("active")
           }
           }
