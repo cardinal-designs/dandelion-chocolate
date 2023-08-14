@@ -729,12 +729,7 @@ class CartDrawer {
           const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
            debugger
           if (parsedState.sections) {
-            const drawerSection=this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
-            const ProductRecommendationsParent=drawerSection?.querySelector(".product-recommendations--parent")
-            if(!ProductRecommendationsParent?.classList?.contains("active")){
-              ProductRecommendationsParent.classList.add("active")
-            }
-            elementToReplace.innerHTML = drawerSection
+           elementToReplace.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
           }
         }));
 
