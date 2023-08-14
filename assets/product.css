@@ -1480,7 +1480,7 @@ dl.accordion-list dd {
 }
 
 .product-add-to-cart-sticky--content .product-form {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 1067px) and (min-width: 768px) {
