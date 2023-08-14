@@ -615,7 +615,7 @@ class CartDrawer {
     return [{
       id: 'Cart-Drawer',
       section: 'cart-drawer',
-      selector: '.cart-drawer'
+      selector: '.product-cart-item--container'
     },
     {
       id: 'cart-drawer-toggle',
