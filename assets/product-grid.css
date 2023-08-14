@@ -677,10 +677,10 @@
   font-size: 12px;
   line-height: 20px;
   color: #853538;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .product-card .product__description {
   font-size: 14px;
-  margin-bottom: 4px;
+  margin-bottom: 16px;
 }
