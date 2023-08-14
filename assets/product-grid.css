@@ -672,3 +672,7 @@
   }
 
 }
+
+.product-card .product__country {
+  font-size: 12px;
+}
