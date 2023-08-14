@@ -1,9 +1,9 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-{% assign my_fields = product.metafields.custom.sticky_product %}
+{% assign my_fields = product.metafields.custom %}
 
-{%- if my_fields != blank -%}
-  {% assign product = product.metafields.custom.sticky_product %}
+{%- if my_fields.sticky_product != blank -%}
+  {% assign product = my_fields.sticky_product %}
   {{ product | json }}
 {%- else -%}
   {% assign product = product %}
