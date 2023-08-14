@@ -727,7 +727,7 @@ class CartDrawer {
 
         this.getSectionsToRender().forEach((section => {
           const elementToReplace = document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
-
+           debugger
           if (parsedState.sections) {
             elementToReplace.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
           }
