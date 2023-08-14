@@ -6,7 +6,7 @@
 
 {%- if my_fields.sticky_product != blank -%}
   {% assign product = my_fields.sticky_product %}
-  ----{{ product }}
+  ----{{ product.id }}
 {%- else -%}
   {% assign product = product %}
   test{{ product | json }}
