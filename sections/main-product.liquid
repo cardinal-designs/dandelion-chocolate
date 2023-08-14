@@ -920,7 +920,7 @@
 
   {% assign productFormId = product_one.id %}
   
-    {%- form 'product', product_one, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+    {%- form 'product', product_one, id: productFormId, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
   {% render 'product-add-to-cart-sticky',
     product: product_one,
     media: first_image,
