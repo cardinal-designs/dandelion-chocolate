@@ -1,4 +1,4 @@
-{%- assign product_form_id = 'product-form-' | append: section.id -%}
+{%- assign product_form_id = product.id -%}
 {% assign productFormId = product.id %}
 <product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
 	<button class="product-add-to-cart-sticky--inner">
