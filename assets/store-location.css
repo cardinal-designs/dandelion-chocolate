@@ -135,6 +135,10 @@
   display: block;
 }
 
+.store__location--wrapper .store__location--wrapper .link {
+  text-decoration: none;  
+}
+
 @media screen and (min-width: 768px) {
   
   .store__location--wrapper .link {
