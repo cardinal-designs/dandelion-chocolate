@@ -707,7 +707,7 @@ class CartDrawer {
       quantity: quantity
     });
     if (this.container.querySelector('.product-recommendations--full')) {
-      this.container.querySelector('.product-recommendations--full').classList.remove('active');
+      //this.container.querySelector('.product-recommendations--full').classList.remove('active');
     }
     fetch(`${theme.routes.cart_change_url}`, {
         method: 'POST',
