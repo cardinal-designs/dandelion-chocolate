@@ -424,8 +424,8 @@
     margin: 20px 0 0;
   }
 
-  .image-with-text-overlay.stack_on_mobile .image-with-text-overlay--content-inner .btn + .btn{
-    margin: 10px 0 0;
+  .image-with-text-overlay.stack_on_mobile .image-with-text-overlay--content-inner .btn + .btn {
+    margin: 16px 0 0;
   }
 
   .image-with-text-overlay.stack_on_mobile .image-with-text-overlay--content-inner .btn+.btn {
