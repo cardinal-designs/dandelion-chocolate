@@ -1473,7 +1473,10 @@ dl.accordion-list dd {
 }
 
 .product-add-to-cart-sticky--content .add_to_cart_holder .button {
-  
+  flex: 1;
+  min-height: 40px;
+  border-radius: 0;
+  padding: 10px 5px 5px;  
 }
 
 @media screen and (max-width: 1067px) and (min-width: 768px) {
