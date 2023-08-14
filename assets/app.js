@@ -731,6 +731,7 @@ class CartDrawer {
           if (parsedState.sections) {
               const data=this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
             console.log(data,"---->")
+                        console.log(section.selector,'section.selectorsection.selector')
            elementToReplace.innerHTML = this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
           }
         }));
