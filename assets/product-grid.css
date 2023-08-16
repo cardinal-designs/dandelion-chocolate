@@ -418,6 +418,10 @@
   background: var(--gold);
 }
 
+.product-card .product-form form add_to_cart_holder.secondary__hover--enabled .single-add-to-cart-button--text {
+  background: var(--charcoal-black);
+}
+
 /* @media only screen and (min-width:768px) {
   
   .product-card .product-card-quickview span {
