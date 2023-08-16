@@ -240,6 +240,7 @@
   display: block;
   color: #333333;
   margin-bottom: 10px;
+  letter-spacing: 0.04em;
 }
 
 .product-title-uppercase-true .product-card .product-card-title {
