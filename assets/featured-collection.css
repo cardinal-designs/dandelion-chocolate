@@ -548,5 +548,9 @@
   .template-page-shop .featured__collection .section__title {
     letter-spacing: .15em;
   }
+
+  .template-page-shop .product__description {
+    line-height: 110%;
+  }
   
 }
