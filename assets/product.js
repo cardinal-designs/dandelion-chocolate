@@ -541,6 +541,7 @@ if (!customElements.get('product-form')) {
     constructor() {
       super();
       this.sticky = this.dataset.sticky;
+      console.log(this.querySelector('product-add-to-cart-sticky'))
       this.form = document.getElementById(`product-form-${this.dataset.section}`);
       this.form = document.getElementById(`product-form-quick-${this.dataset.section}`);
       
