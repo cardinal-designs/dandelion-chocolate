@@ -769,8 +769,8 @@
             "retina": true,
             "title": "Classes & Events",
             "heading_size": "h1",
-            "text": "<p>Explore Classes →<\/p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Explore Classes →",
             "link": "\/pages\/experiences#classes",
             "text_color": "#ffffff"
           }
@@ -784,8 +784,8 @@
             "retina": true,
             "title": "Factory Tours",
             "heading_size": "h1",
-            "text": "<p>Book a Tour →<\/p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Book a Tour →",
             "link": "\/pages\/experiences#tours",
             "text_color": "#ffffff"
           }
@@ -799,8 +799,8 @@
             "retina": true,
             "title": "Origin Trips",
             "heading_size": "h1",
-            "text": "<p>Explore trips →<\/p>",
-            "link_label": "",
+            "text": "",
+            "link_label": "Explore trips →",
             "link": "shopify:\/\/pages\/trips",
             "text_color": "#ffffff"
           }
