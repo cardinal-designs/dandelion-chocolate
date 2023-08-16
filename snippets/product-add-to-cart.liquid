@@ -11,6 +11,13 @@
         assign show_dynamic_checkout = true
       endif
     -%}
+      
+    {%- if product.metafields.custom.sticky_product != blank -%}
+      {% assign product = product.metafields.custom.sticky_product.value %}
+    {%- else -%}
+      {% assign product = product %}
+      {% endif %}
+        
   <product-form class="product-form" data-section="{{ section.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
 		<div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
       {% render 'svg-icons' with 'thb-error' %}
