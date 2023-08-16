@@ -61,7 +61,7 @@
   padding: 31px 0 31px 0;
 }
 
-.header .thb-full-menu li.menu-item-has-children > a {
+.header .thb-full-menu li.menu-item-has-children > a.navigation__link {
   padding-right: 15px;
 }
 
