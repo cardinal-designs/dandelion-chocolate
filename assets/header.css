@@ -166,6 +166,7 @@
   color: var(--charcoal-black);
   font-family: GaramondPremierPro, 'Garamond', 'Playfair Display', serif;
   font-weight: 500;
+  font-size: 36px;
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Columns {
