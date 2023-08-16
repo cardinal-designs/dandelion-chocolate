@@ -466,7 +466,6 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
       "settings": {
         "heading": "YOU MAY ALSO LIKE",
         "heading_left": true,
