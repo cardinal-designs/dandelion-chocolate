@@ -395,7 +395,7 @@
 
   .image-with-text-overlay--content-inner {
     height: 100%;
-    align-items: center;
+    align-items: start;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
