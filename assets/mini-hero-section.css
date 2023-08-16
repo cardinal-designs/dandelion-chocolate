@@ -221,7 +221,7 @@
 }
 
 .minihero__caption .action__button .body {
-  color: #DCB251;
+  color: #dcb251 !important;
 }
 
 @media only screen and (max-width:1439px) {
