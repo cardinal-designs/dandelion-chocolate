@@ -193,4 +193,8 @@
     padding: 25px 0;
   }
 
+  .template-page-shop .image-with-text__content--inner .subheading {
+    font-size: 12px;
+  }
+
 }
