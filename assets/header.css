@@ -161,6 +161,8 @@
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Left .Sub_Menu-Heading {
   color: var(--charcoal-black);
+  font-family: GaramondPremierPro, 'Garamond', 'Playfair Display', serif;
+  font-weight: 500;
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Columns {
