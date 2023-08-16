@@ -391,13 +391,6 @@
   background-size: cover;
 }
 
-.footer .disable_collapsible__menu .thb-widget-title {
-  letter-spacing: normal;
-  line-height: 120%; 
-  font-family: GaramondPremierPro,Garamond,Playfair Display,serif;
-  font-weight: 500;
-}
-
 @media only screen and (max-width: 1439px) {
   
   .footer .newsletter_block {
@@ -527,7 +520,6 @@
 
   .footer .disable_collapsible__menu .thb-widget-title {
     padding: 0 0 10px;
-    font-size: 24px;
   }
 
   .footer .thb-widget-menu li {
