@@ -391,6 +391,13 @@
   background-size: cover;
 }
 
+.thb-newsletter-title {
+  line-height: 120%;
+  font-family: GaramondPremierPro,Garamond,Playfair Display,serif;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
 @media only screen and (max-width: 1439px) {
   
   .footer .newsletter_block {
@@ -536,5 +543,3 @@
   }
 
 }
-
-
