@@ -45,7 +45,7 @@
 				<div class="product-add-to-cart-container">
 					<div class="form-notification error" style="display:none;"></div>
 				  <div class="add_to_cart_holder">
-				    <button type="submit" name="add" id="AddToCartSticky" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" 
+				    <button type="submit" name="add" id="AddToCartSticky" class="button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" 
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
 							<span class="single-add-to-cart-button--text">
 								{%- if product.selected_or_first_available_variant.available -%}
