@@ -43,13 +43,13 @@
   margin: 0;
   letter-spacing: 0.15em;
   font-size: 14px;
+  
   line-height: 120%;
 }
 
 .minihero__caption .btn {
   display: inline-block;
   margin-top: 10px;
-  color: #DCB251;
 }
 
 .minihero__caption .heading {
@@ -216,9 +216,12 @@
   font-size: 14px;
   letter-spacing: 0.15em;
   text-transform: capitalize;
-  color: #DCB251;
   margin-top: 20px;
   display: block;
+}
+
+.minihero__caption .action__button .body {
+  color: #DCB251;
 }
 
 @media only screen and (max-width:1439px) {
