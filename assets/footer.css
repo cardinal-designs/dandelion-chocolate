@@ -245,6 +245,10 @@
   stroke: var(--charcoal-black);
 }
 
+.footer .signup-container button:hover svg path {
+  stroke: var(--white);
+}
+
 .footer .signup-container input {
   color: #333333 !important;
   border: none;
