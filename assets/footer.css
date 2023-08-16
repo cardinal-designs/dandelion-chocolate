@@ -131,6 +131,7 @@
   
   .footer .thb-widget-title.collapsible {
     padding: 0;
+    cursor: text;
   }
 
   .footer .thb-widget-title.collapsible span {
