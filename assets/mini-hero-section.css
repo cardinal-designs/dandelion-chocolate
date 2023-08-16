@@ -213,7 +213,7 @@
 .minihero__caption .action__button,
 .minihero__caption .action__button * {
   font-family: 'Saa Series F D';
-  font-size: 14px;
+  font-size: 14px !important;
   letter-spacing: 0.15em;
   text-transform: capitalize;
   margin-top: 20px;
