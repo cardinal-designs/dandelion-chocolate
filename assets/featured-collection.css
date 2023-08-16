@@ -329,6 +329,10 @@
   font-weight: 400;
 }
 
+.template-page-shop .product__description {
+  line-height: 120%;
+}
+
 @media only screen and (max-width:1068px) {
 
   .featured__collection {
