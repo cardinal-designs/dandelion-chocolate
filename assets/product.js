@@ -759,7 +759,7 @@ if (!customElements.get('product-add-to-cart-sticky')) {
     setupObservers() {
       let _this = this,
         observer = new IntersectionObserver(function(entries) {
-          console.log(entries.target)
+          // console.log(entries.target)
           entries.forEach((entry) => {
             if (entry.target === footer) {
               if (entry.intersectionRatio > 0) {
@@ -785,7 +785,7 @@ if (!customElements.get('product-add-to-cart-sticky')) {
         }),
         form = document.getElementById(`product-form-${this.dataset.section}`),
         footer = document.getElementById('footer');
-  console.log(this)
+
 
       _this.formPassed = false;
       observer.observe(form);
