@@ -114,7 +114,6 @@
     },
     "16623743398765981b": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1662374339c00286b1-1": {
           "type": "heading",
@@ -144,6 +143,7 @@
         "1662374339c00286b1-2",
         "1662374339c00286b1-3"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row",
         "text_width": "large",
@@ -158,7 +158,6 @@
     },
     "16623873609e87da8b": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "1662387360fb14d4f3-0": {
           "type": "column",
@@ -223,6 +222,7 @@
         "c4878d73-465c-4c2e-9938-ad532ceb3d8d",
         "18b0a9c5-7f5b-4a61-b58e-c66bd53321a9"
       ],
+      "disabled": true,
       "settings": {
         "heading": "PRODUCT FEATURES",
         "heading_left": true,
@@ -258,7 +258,6 @@
     },
     "1663667029efc274af": {
       "type": "collapsible-content",
-      "disabled": true,
       "blocks": {
         "1663667029f86d6497-0": {
           "type": "collapsible_tab",
@@ -323,6 +322,7 @@
         "68288bd2-3db2-455d-a841-5aa19d752abb",
         "de9966d6-0cd0-4b0f-9810-aa062aff88ce"
       ],
+      "disabled": true,
       "settings": {
         "heading": "F.A.Q.",
         "description": "<p>They appreciate cut and details, things that aren't so obvious. <\/p>",
@@ -333,7 +333,6 @@
     },
     "1663667027ccd68a19": {
       "type": "scrolling-text",
-      "disabled": true,
       "blocks": {
         "157f1bcc-632c-4bf7-bd60-4c71b734c135": {
           "type": "text",
@@ -365,6 +364,7 @@
         "9f8d76e3-abba-44dd-82bb-b2fbba77db59",
         "7b936e53-853a-4481-9141-aa36b94e768a"
       ],
+      "disabled": true,
       "settings": {
         "stop_scroll": false,
         "height": "height-auto",
@@ -384,7 +384,6 @@
     },
     "166366868377cd57e4": {
       "type": "image-with-text-overlay",
-      "disabled": true,
       "blocks": {
         "b9349bb5-2620-4155-ac69-dea56c8ebbe1": {
           "type": "subheading",
@@ -431,6 +430,7 @@
         "c6ec8484-f95c-4682-a344-ab918c10cab4",
         "16636686835e8f94d4-3"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "desktop_height": "desktop-height-550",
@@ -466,6 +466,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "YOU MAY ALSO LIKE",
         "heading_left": true,
