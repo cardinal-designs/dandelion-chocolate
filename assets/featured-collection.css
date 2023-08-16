@@ -544,5 +544,9 @@
   .template-page-shop .featured__collection .section-header {
     margin-bottom: 30px;
   }
+
+  .template-page-shop .featured__collection .section__title {
+    letter-spacing: .15em;
+  }
   
 }
