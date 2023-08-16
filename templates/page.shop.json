@@ -897,8 +897,8 @@
             "retina": true,
             "title": "Baking With Dandelion",
             "heading_size": "h1",
-            "text": "<p>Our nibs and ground chocolate are great by themselves or as an ingredient in recipes like chocolate-chip cookies or brownies.<br\/><br\/>Explore all baking →<\/p>",
-            "link_label": "",
+            "text": "<p>Our nibs and ground chocolate are great by themselves or as an ingredient in recipes like chocolate-chip cookies or brownies.<\/p>",
+            "link_label": "Explore all baking →",
             "link": "shopify:\/\/products\/chocolate-baking-essentials",
             "text_color": "#ffffff"
           }
@@ -912,8 +912,8 @@
             "retina": true,
             "title": "Making Chocolate",
             "heading_size": "h1",
-            "text": "<p>Our book, Making Chocolate: From Bean to Bar to S'more, includes everything we've learned about making chocolate since the day we first cracked open a cocoa bean.<br\/><br\/>Explore Making Chocolate →<\/p>",
-            "link_label": "",
+            "text": "<p>Our book, Making Chocolate: From Bean to Bar to S'more, includes everything we've learned about making chocolate since the day we first cracked open a cocoa bean.<\/p>",
+            "link_label": "Explore Making Chocolate →",
             "link": "shopify:\/\/products\/making-chocolate-from-bean-to-bar-to-smore",
             "text_color": "#ffffff"
           }
@@ -927,8 +927,8 @@
             "retina": true,
             "title": "Chocolate Library",
             "heading_size": "h1",
-            "text": "<p>Explore our collection of reading material on chocolate.<br\/><br\/>Explore Books on Chocolate →<\/p>",
-            "link_label": "",
+            "text": "<p>Explore our collection of reading material on chocolate.<\/p>",
+            "link_label": "Explore Books on Chocolate →",
             "link": "shopify:\/\/collections\/books",
             "text_color": "#ffffff"
           }
