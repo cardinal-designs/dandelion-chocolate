@@ -44,6 +44,11 @@
   margin-top: 10px;
 }
 
+.minihero__caption .heading {
+  letter-spacing: 0.04em;
+  line-height: 120%;
+}
+
 .minihero__column.carousel__slide {
   margin-bottom: 0;
 }
