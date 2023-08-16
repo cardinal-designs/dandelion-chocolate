@@ -59,6 +59,7 @@
 
 .header .full-menu .thb-full-menu .navigation__link {
   padding: 31px 0 31px 0;
+  margin: 0;
 }
 
 .header .thb-full-menu li.menu-item-has-children > a.navigation__link {
