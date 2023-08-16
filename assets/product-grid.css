@@ -414,6 +414,10 @@
   padding-top: 6px;
 }
 
+.product-card .product-form form .single-add-to-cart-button--text:hover {
+  background: var(--gold);
+}
+
 /* @media only screen and (min-width:768px) {
   
   .product-card .product-card-quickview span {
