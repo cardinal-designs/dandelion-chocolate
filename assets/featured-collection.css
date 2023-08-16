@@ -303,6 +303,7 @@
   font-size: 32px;
   line-height: 1.2em;
   letter-spacing: 0.12em;
+  margin: 0 0 16px;
 }
 
 @media only screen and (max-width:1068px) {
