@@ -540,10 +540,9 @@ if (!customElements.get('product-form')) {
   customElements.define('product-form', class ProductForm extends HTMLElement {
     constructor() {
       super();
-      console.log(this.querySelector('#AddToCartSticky'))
-console.log(document.getElementById(`product-form-quick-${this.dataset.section}`))
       this.sticky = this.dataset.sticky;
       this.form = document.getElementById(`product-form-${this.dataset.section}`);
+      this.form = document.getElementById(`product-form-quick-${this.dataset.section}`;
       
       if(this.form) this.form.querySelector('[name=id]').disabled = false;
       if (!this.sticky) {
