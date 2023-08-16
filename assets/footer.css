@@ -395,6 +395,7 @@
   letter-spacing: normal;
   line-height: 120%; 
   font-family: GaramondPremierPro,Garamond,Playfair Display,serif;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 1439px) {
