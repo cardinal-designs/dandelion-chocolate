@@ -249,6 +249,10 @@
   stroke: var(--white);
 }
 
+.footer .signup-container button:hover {
+  background: var(--dark-gold);
+}
+
 .footer .signup-container input {
   color: #333333 !important;
   border: none;
