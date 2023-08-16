@@ -391,6 +391,11 @@
   background-size: cover;
 }
 
+.footer .disable_collapsible__menu .thb-widget-title {
+  letter-spacing: normal;
+  line-height: 120%; 
+}
+
 @media only screen and (max-width: 1439px) {
   
   .footer .newsletter_block {
