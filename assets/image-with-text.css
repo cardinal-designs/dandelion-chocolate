@@ -145,15 +145,21 @@
   letter-spacing: 0.15em;
   color: #DCB251;
   font-size: 14px;
+  line-height: 1;
 }
 
 .template-page-shop .image-with-text__content--inner .heading {
   font-size: 40px;
+  line-height: 1;
   letter-spacing: 0.04em;
 }
 
 .template-page-shop .image-with-text__content--inner .rte p {
   line-height: 120%;
+}
+
+.template-page-shop .image-with-text__content .btn {
+  margin-top: 10px;
 }
 
 @media only screen and (min-width:768px) {
