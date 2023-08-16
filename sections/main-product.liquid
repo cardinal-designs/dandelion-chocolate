@@ -917,7 +917,7 @@
 {%- else -%}
   {% assign product = product %}
 {%- endif -%}
-  
+  {{ product.title }}
 {% render 'product-add-to-cart-sticky',
   product: product,
   media: first_image,
