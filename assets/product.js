@@ -782,9 +782,9 @@ if (!customElements.get('product-add-to-cart-sticky')) {
         }, {
           threshold: [0, 1]
         }),
-        form = document.getElementById(`product-form-quick${this.dataset.section}`),
+        form = document.getElementById(`product-form-${this.dataset.section}`),
         footer = document.getElementById('footer');
-
+  console.log(this)
 
       _this.formPassed = false;
       observer.observe(form);
