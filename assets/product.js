@@ -759,7 +759,7 @@ if (!customElements.get('product-add-to-cart-sticky')) {
     setupObservers() {
       let _this = this,
         observer = new IntersectionObserver(function(entries) {
-          console.log(entries)
+          console.log(entries.target)
           entries.forEach((entry) => {
             if (entry.target === footer) {
               if (entry.intersectionRatio > 0) {
