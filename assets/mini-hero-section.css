@@ -41,7 +41,7 @@
 
 .minihero__caption .body p {
   margin: 0;
-  letter-spacing: 0.15em;
+  letter-spacing: normal;
   font-size: 14px;
   
   line-height: 120%;
