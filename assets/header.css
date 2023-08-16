@@ -457,5 +457,10 @@
     right: -12px;
     top: -6px;
   }
+
+  .mobile-menu-drawer .mobile-menu > li .parent-link span svg {
+    width: 19px;
+    height: 12px;
+  }
   
 }
