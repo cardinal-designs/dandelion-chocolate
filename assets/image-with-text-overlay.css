@@ -264,6 +264,10 @@
   align-items: flex-end;
 }
 
+.template-page-shop .image-with-text-overlay--content-inner .heading {
+  letter-spacing: 0.04em;
+}
+
 @media only screen and (max-width:1200px) {
   
   .image-with-text-overlay--content-inner.content-width-medium {
