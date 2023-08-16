@@ -47,6 +47,7 @@
 .minihero__caption .heading {
   letter-spacing: 0.04em;
   line-height: 120%;
+  margin-bottom: 20px;
 }
 
 .minihero__column.carousel__slide {
