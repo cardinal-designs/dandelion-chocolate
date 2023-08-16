@@ -282,6 +282,10 @@
   outline: 0;  
 }
 
+.footer .thb-widget-menu li:hover a {
+  color: #E3BE66 !important;
+}
+
 .sub-footer {
   margin-top: 40px;
   color: var(--color-footer-text, #fff);
