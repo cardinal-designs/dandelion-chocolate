@@ -407,7 +407,7 @@
   }
   
   .featured__collection {
-    padding: 32px 0;
+    padding: 32px 0 0;
   }
 
   .featured__collection .featured__collection--button .btn {
