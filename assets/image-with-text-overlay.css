@@ -457,6 +457,10 @@
   .image-with-text-overlay {
     padding: 0;  
   }
+
+  .template-page-shop .image-with-text-overlay--bg:after {
+    background-color: transparent;
+  }
   
 }
 
