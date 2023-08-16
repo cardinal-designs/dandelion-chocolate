@@ -273,6 +273,10 @@
   margin: 0 0 10px;
 }
 
+.template-page-shop .image-with-text-overlay--content .rte p {
+  line-height: 130%;
+}
+
 @media only screen and (max-width:1200px) {
   
   .image-with-text-overlay--content-inner.content-width-medium {
