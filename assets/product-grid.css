@@ -677,6 +677,10 @@
     margin-bottom: 10px;  
   }
 
+  .product-title-uppercase-true .product-card .product-card-title {
+    margin-bottom: 10px;
+  }
+
 }
 
 .product-card .product__country {
