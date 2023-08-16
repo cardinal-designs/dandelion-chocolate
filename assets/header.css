@@ -458,7 +458,8 @@
     top: -6px;
   }
 
-  .mobile-menu-drawer .mobile-menu > li .parent-link span svg {
+  .mobile-menu-drawer .mobile-menu > li .parent-link span svg,
+  .mobile-menu .parent-link-back button svg {
     width: 19px;
     height: 12px;
   }
