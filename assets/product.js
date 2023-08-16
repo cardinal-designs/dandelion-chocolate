@@ -778,7 +778,7 @@ if (!customElements.get('product-add-to-cart-sticky')) {
               } else if (entry.intersectionRatio === 1) {
                 _this.formPassed = false;
                 _this.classList.remove('sticky--visible');
-                console.log("out",document.querySelector('.sticky_product_id').value)
+                console.log("out",document.querySelector('.sticky_product_id_default').value)
               }
             }
           });
