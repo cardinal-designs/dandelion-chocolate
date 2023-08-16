@@ -302,7 +302,7 @@
   font-family: 'Saa Series F D';
   font-size: 32px;
   line-height: 1.2em;
-  letter-spacing: .04em;
+  letter-spacing: 0.12em;
 }
 
 @media only screen and (max-width:1068px) {
