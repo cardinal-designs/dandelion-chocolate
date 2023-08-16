@@ -758,6 +758,79 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
+    },
+    "4d1e8b0b-89cd-44f3-81a9-2c335eca92e7": {
+      "type": "collection-list",
+      "disabled": true,
+      "settings": {
+        "heading": "Shop by Category",
+        "heading_left": false,
+        "description": "<p>Add a short description for your collections<\/p>",
+        "full_width": true,
+        "collection_list": [
+          "all"
+        ],
+        "image_ratio": "portrait",
+        "layout": "grid",
+        "style": "style1",
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "0d44c647-8c17-466b-aa25-05bebdd94f0c": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "heading": "Featured Collection",
+        "description": "<p>Describe your featured collection here<\/p>",
+        "full_width": true,
+        "hide_cta_mobile": true,
+        "collection": "",
+        "show_short_product_desc": true,
+        "show_compare_at_price": false,
+        "show_all_products": false,
+        "display_type": "carousel",
+        "mobile_display_type": "carousel",
+        "columns_desktop": "4",
+        "different_column_grid_layout": "2\/4",
+        "quote_enable": false,
+        "mobile_swipe": true,
+        "quickview_cartbutton": "quick_view",
+        "product_limit": "2",
+        "show_progress_bar": false,
+        "show_view_all": true,
+        "quote": "",
+        "author": "",
+        "quote_bg_color": "#a09b86",
+        "quote_text_color": "#ffffff",
+        "quote_border_color": "#a09b86",
+        "section_bg": "#FFFDF9"
+      }
+    },
+    "c4eeb1de-0a8a-4b92-90b8-09aa9ac51844": {
+      "type": "th-featured-collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "collection": "",
+        "display_type": "carousel",
+        "product_limit": 12,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -772,6 +845,9 @@
     "f2cb92da-bdb5-44fa-8b49-1b79e94a0b15",
     "1627fb3e-f5c6-4d8c-8843-5b818899b71b",
     "7cb08fd4-ad98-4437-8d49-49f6fe76311a",
-    "0c97f2db-97cf-47e4-94e0-f1e6b3161d41"
+    "0c97f2db-97cf-47e4-94e0-f1e6b3161d41",
+    "4d1e8b0b-89cd-44f3-81a9-2c335eca92e7",
+    "0d44c647-8c17-466b-aa25-05bebdd94f0c",
+    "c4eeb1de-0a8a-4b92-90b8-09aa9ac51844"
   ]
 }
