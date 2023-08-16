@@ -28,8 +28,6 @@
   letter-spacing: 0.15em;
 }
 
-
-
 .image-with-text-overlay--content-inner .breadcrumbs svg path {
   fill: #333333;
 }
@@ -163,7 +161,7 @@
   }
   
   .image-with-text-overlay-caption--box {
-    padding: 65px 39px 33px 39px;
+    padding: 40px;
   }
 
 }
