@@ -445,7 +445,8 @@
   }
 
   .mobile-menu .parent-link-back button svg {
-    height: 14px;    
+    height: 18px;
+    width: 7px;
   }
   
 }
