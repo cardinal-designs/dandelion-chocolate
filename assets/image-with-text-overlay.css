@@ -266,10 +266,11 @@
 
 .template-page-shop .image-with-text-overlay--content-inner .heading {
   letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .template-page-shop .image-with-text-overlay--content-inner .subheading {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 
 @media only screen and (max-width:1200px) {
