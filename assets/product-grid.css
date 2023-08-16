@@ -703,7 +703,8 @@
     margin-bottom: 10px;
   }
 
-  .product-card .new-percentage {
+  .product-card .new-percentage,
+  .product-card .product__country {
     font-size: 10px;
   }
 
