@@ -306,6 +306,10 @@
   margin: 0 0 16px;
 }
 
+.template-page-shop .featured__collection .section-header {
+  margin-bottom: 50px;
+} 
+
 @media only screen and (max-width:1068px) {
 
   .featured__collection {
