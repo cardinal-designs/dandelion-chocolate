@@ -541,9 +541,9 @@ if (!customElements.get('product-form')) {
     constructor() {
       super();
       this.sticky = this.dataset.sticky;
-      console.log(document.querySelector('product-add-to-cart-sticky').querySelector('.sticky--visible'))
+      // console.log(document.querySelector('product-add-to-cart-sticky').querySelector('.sticky--visible'))
       this.form = document.getElementById(`product-form-${this.dataset.section}`);
-      this.form = document.getElementById(`product-form-quick-${this.dataset.section}`);
+      // this.form = document.getElementById(`product-form-quick-${this.dataset.section}`);
       
       if(this.form) this.form.querySelector('[name=id]').disabled = false;
       if (!this.sticky) {
