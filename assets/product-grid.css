@@ -414,7 +414,7 @@
   padding-top: 6px;
 }
 
-.product-card .product-form form .single-add-to-cart-button--text:hover {
+.product-card .product-form form .add_to_cart_holder:hover .single-add-to-cart-button--text {
   background: var(--gold);
 }
 
