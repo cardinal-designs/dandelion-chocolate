@@ -912,8 +912,8 @@
 
 {% assign my_fields = product.metafields.custom %}
   
-{%- if my_fields.sticky_product != blank -%}
-  {% assign product = my_fields.sticky_product.value %}
+{%- if product.metafields.custom.sticky_product != blank -%}
+  {% assign product = product.metafields.custom.sticky_product.value %}
 {%- else -%}
   {% assign product = product %}
 {%- endif -%}
