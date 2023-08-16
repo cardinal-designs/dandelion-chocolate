@@ -368,7 +368,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "04652f7a-eb2b-44e9-bd78-48dfa269aaf6": {
@@ -399,7 +400,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "156a4980-a379-4513-acbd-ad484c675407": {
@@ -429,7 +431,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "dcf58d18-7582-499d-bd3f-754d9d7ffd73": {
@@ -459,7 +462,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "51d1d361-7e0e-4d04-845a-dd6159e4b3ad": {
@@ -544,7 +548,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "79bf4562-295e-47bc-8711-c4261f761f72": {
@@ -574,7 +579,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": "chocolate-bars"
       }
     },
     "71cf8f81-4c80-4976-8426-36273da16fcc": {
@@ -604,7 +610,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "077e0d79-6070-440b-ade1-28ddcd15c218": {
@@ -634,7 +641,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "ba38da09-1ca7-4f62-8441-215d2c36bf53": {
@@ -664,7 +672,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "97bfe32d-7c59-4678-8f00-3603fa489856": {
@@ -694,7 +703,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "59319a80-6073-4db0-ade1-80b8b7f02126": {
@@ -724,7 +734,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "e96896ef-c364-4560-b177-b513b3ea7d26": {
@@ -754,7 +765,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "61e7ed6e-a401-488d-a783-c69a92e40f52": {
@@ -852,7 +864,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "b489c90a-18dd-4ef0-a616-2a2dfd9808c2": {
@@ -882,7 +895,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "cf3f0988-0d21-42f4-af35-f99cb8062230": {
@@ -980,7 +994,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     },
     "f0d45032-0727-48aa-89da-d89577e0e0ab": {
@@ -1010,7 +1025,8 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9"
+        "section_bg": "#fffdf9",
+        "custom_class": ""
       }
     }
   },
