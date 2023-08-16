@@ -199,9 +199,14 @@
   flex-wrap: wrap;
 }
 
+.header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Bottom .btn {
+  border-color: #E3BE66;
+  background-color: #E3BE66;
+}
+
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Bottom .btn:hover {
-  border-color: var(--gold);
-  background-color: var(--gold);
+  border-color: #E3BE66;
+  background-color: #E3BE66;
   color: var(--white);
 }
 
