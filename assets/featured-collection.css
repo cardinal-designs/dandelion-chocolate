@@ -306,7 +306,7 @@
   margin: 0;
 }
 
-.featured__collection .section-header .section__description {
+.template-page-shop .featured__collection .section-header .section__description {
   margin: 4px 0 0;
   max-width: 600px;
 }
@@ -315,9 +315,18 @@
   margin-bottom: 40px;
 } 
 
-.featured__collection .section-header .section__description p {
+.template-page-shop .featured__collection .section-header .section__description p {
   margin: 0;
   letter-spacing: normal;
+}
+
+.template-page-shop .product-card-title {
+  font-family: 'Garamond Premiere Pro';
+  font-size: 24px;
+  color: #333;
+  letter-spacing: normal;
+  line-height: 120%;
+  font-weight: 400;
 }
 
 @media only screen and (max-width:1068px) {
