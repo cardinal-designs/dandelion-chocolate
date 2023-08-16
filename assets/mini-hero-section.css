@@ -181,6 +181,10 @@
   position: relative;
 }
 
+.minihero__column:hover .min__hero-image--inner:before {
+  opacity: 0.3;
+}
+
 .min__hero-image--inner:before {
   content: '';
   background: #000000;
@@ -190,7 +194,7 @@
   position: absolute;
   top: 0;
   z-index: 1;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 @media only screen and (max-width:1439px) {
