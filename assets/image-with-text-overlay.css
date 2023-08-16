@@ -453,6 +453,10 @@
   .image-with-text-overlay.stack_on_mobile .image-with-text-overlay--content-inner .heading {
     text-align: left;
   }
+
+  .image-with-text-overlay {
+    padding: 0;  
+  }
   
 }
 
