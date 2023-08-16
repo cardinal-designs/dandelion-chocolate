@@ -910,7 +910,7 @@
 {%- if enable_sticky_add_to_cart -%}
   <input type="hidden" class="sticky_product_id_default" value="{{ product.selected_or_first_available_variant.id }}">
 {%- if product.metafields.custom.sticky_product != blank -%}
-{% assign product = product.metafields.custom.sticky_product.value %}
+  {% assign product = product.metafields.custom.sticky_product.value %}
   <input type="hidden" class="sticky_product_id" value="{{ product.selected_or_first_available_variant.id }}">
 {%- else -%}
   {% assign product = product %}
