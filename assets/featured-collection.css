@@ -307,12 +307,12 @@
 }
 
 .featured__collection .section-header .section__description {
-  margin: 10px 0 0;
+  margin: 4px 0 0;
   max-width: 600px;
 }
 
 .template-page-shop .featured__collection .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 } 
 
 .featured__collection .section-header .section__description p {
