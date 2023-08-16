@@ -142,6 +142,9 @@
 
 .template-page-shop .image-with-text__content--inner .subheading {
   font-family: 'Saa Series F D';
+  letter-spacing: 0.15em;
+  color: #DCB251;
+  font-size: 14px;
 }
 
 @media only screen and (min-width:768px) {
