@@ -48,7 +48,7 @@
                     {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 		<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" >
 				    <button type="submit" name="add" id="AddToCartSticky" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" 
-                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} >
+                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
 							<span class="single-add-to-cart-button--text">
 								{%- if product.selected_or_first_available_variant.available -%}
 				          {{ 'products.product.add_to_cart' | t }}
