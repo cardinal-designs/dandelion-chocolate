@@ -181,11 +181,11 @@
   position: relative;
 }
 
-.minihero__column:hover .min__hero-image--inner:before {
+.minihero__column:hover .min__hero-image--inner:after {
   opacity: 0.3;
 }
 
-.min__hero-image--inner:before {
+.min__hero-image--inner:after {
   content: '';
   background: #000000;
   width: 100%;
