@@ -4,6 +4,10 @@
   min-height: 78px;
 }
 
+.navigation__link {
+  font-size: 13px!important;  
+}
+
 .header .header__wrapper {
   max-width: 1080px;
   margin: 0 auto;
