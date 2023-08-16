@@ -910,8 +910,6 @@
 
 {%- if enable_sticky_add_to_cart -%}
 
-{% assign my_fields = product.metafields.custom %}
-  
 {%- if product.metafields.custom.sticky_product != blank -%}
   {% assign product = product.metafields.custom.sticky_product.value %}
 {%- else -%}
