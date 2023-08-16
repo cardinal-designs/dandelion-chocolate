@@ -167,6 +167,8 @@
   font-family: GaramondPremierPro, 'Garamond', 'Playfair Display', serif;
   font-weight: 500;
   font-size: 36px;
+  letter-spacing: normal;
+  line-height: 120%;
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Columns {
