@@ -673,6 +673,10 @@
     font-size: 14px;
   }
 
+  .product-card .product-featured-image {
+    margin-bottom: 10px;  
+  }
+
 }
 
 .product-card .product__country {
