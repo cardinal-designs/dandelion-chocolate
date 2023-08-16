@@ -913,7 +913,6 @@
   {% assign product = product.metafields.custom.sticky_product.value %}
   <input type="hidden" class="sticky_product_id" value="{{ product.selected_or_first_available_variant.id }}">
 {%- else -%}
- 
   <input type="hidden" class="sticky_product_id" value="{{ product.selected_or_first_available_variant.id }}">
 {%- endif -%}
   
