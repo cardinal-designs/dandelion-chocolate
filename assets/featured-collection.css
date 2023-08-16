@@ -333,6 +333,10 @@
   line-height: 120%;
 }
 
+.template-page-shop #Chocolate-Bars .product-card-title { 
+  font-family: 'OPTICaslonBold-Cond';
+}
+
 @media only screen and (max-width:1068px) {
 
   .featured__collection {
