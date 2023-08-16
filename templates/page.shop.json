@@ -900,7 +900,7 @@
             "text": "<p>Our nibs and ground chocolate are great by themselves or as an ingredient in recipes like chocolate-chip cookies or brownies.<\/p>",
             "link_label": "Explore all baking →",
             "link": "shopify:\/\/products\/chocolate-baking-essentials",
-            "text_color": "#dcb251"
+            "text_color": "#ffffff"
           }
         },
         "abe054ea-b7ad-4a9c-97d4-f92559f656d4": {
@@ -915,7 +915,7 @@
             "text": "<p>Our book, Making Chocolate: From Bean to Bar to S'more, includes everything we've learned about making chocolate since the day we first cracked open a cocoa bean.<\/p>",
             "link_label": "Explore Making Chocolate →",
             "link": "shopify:\/\/products\/making-chocolate-from-bean-to-bar-to-smore",
-            "text_color": "#dcb251"
+            "text_color": "#ffffff"
           }
         },
         "0c1745c4-cfcf-4e61-952f-a2c448573c4b": {
@@ -930,7 +930,7 @@
             "text": "<p>Explore our collection of reading material on chocolate.<\/p>",
             "link_label": "Explore Books on Chocolate →",
             "link": "shopify:\/\/collections\/books",
-            "text_color": "#dcb251"
+            "text_color": "#ffffff"
           }
         }
       },
