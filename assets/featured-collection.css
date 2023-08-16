@@ -312,6 +312,7 @@
 
 .featured__collection .section-header .section__description p {
   margin: 0;
+  letter-spacing: normal;
 }
 
 @media only screen and (max-width:1068px) {
