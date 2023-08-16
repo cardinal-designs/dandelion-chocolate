@@ -394,6 +394,7 @@
 .footer .disable_collapsible__menu .thb-widget-title {
   letter-spacing: normal;
   line-height: 120%; 
+  font-family: GaramondPremierPro,Garamond,Playfair Display,serif;
 }
 
 @media only screen and (max-width: 1439px) {
