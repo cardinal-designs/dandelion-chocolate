@@ -35,7 +35,7 @@
   </div>
 {% endcapture %}
 
-<div id="{{ section.settings.section_id }}" class="featured__collection{% if mobile_swipe %} swipe__on--mobile{% endif %}" style="background-color: {{ section.settings.section_bg }}">
+<div id="{{ section.settings.section_id }}" class="featured__collection{% if mobile_swipe %} swipe__on--mobile{% endif %} {{ section.settings.custom_class }} " style="background-color: {{ section.settings.section_bg }}">
   <div class="wrapper{% if full_width %} full-width-row{% endif %}">
     <div class="small-12 columns">
       {%- if section_heading != blank or section_description != blank -%}
@@ -530,6 +530,11 @@
       "id": "section_bg",
       "label": "Section BG Color",
       "default": "#FFFDF9"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
     }
   ],
   "presets": [
