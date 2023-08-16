@@ -298,6 +298,12 @@
   stroke: #fff;
 }
 
+.template-page-shop .featured__collection .section__title {
+  font-family: 'Saa Series F D';
+  font-size: 32px;
+  line-height: 1.2em;
+  letter-spacing: .04em;
+}
 
 @media only screen and (max-width:1068px) {
 
