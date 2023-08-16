@@ -43,13 +43,13 @@
   margin: 0;
   letter-spacing: 0.15em;
   font-size: 14px;
-  color: #DCB251;
   line-height: 120%;
 }
 
 .minihero__caption .btn {
   display: inline-block;
   margin-top: 10px;
+  color: #DCB251;
 }
 
 .minihero__caption .heading {
