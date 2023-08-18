@@ -1524,6 +1524,7 @@ dl.accordion-list dd {
 
   .thb-product-detail .product-title {
     text-align: left;
+    font-size: 32px;
   }
 
   #Product-Slider .flickity-viewport {
@@ -1544,5 +1545,5 @@ dl.accordion-list dd {
     flex: 0 0 100%;
     order: 1;
   }
-  
+
 }
