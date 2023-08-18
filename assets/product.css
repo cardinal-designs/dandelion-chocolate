@@ -1541,6 +1541,10 @@ quantity-selector.quantity .plus svg {
   letter-spacing: 0.02em;
 }
 
+.short_description {
+  position: relative;
+}
+
 .read_more,
 .read_less {
   margin-top: 10px;
