@@ -1559,6 +1559,7 @@ quantity-selector.quantity .plus svg {
 
 .thb-product-detail .product-short-description p {
   margin-bottom: 20px;
+  line-height: 140%;
 }
 
 .thb-product-detail .product-price-container .badge {
