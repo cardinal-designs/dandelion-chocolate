@@ -12,6 +12,7 @@
     },
     "breadcrumbs": {
       "type": "breadcrumbs",
+      "disabled": true,
       "settings": {
       }
     },
