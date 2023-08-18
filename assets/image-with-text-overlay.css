@@ -465,6 +465,10 @@
   .image-with-text-overlay-caption--box {
     padding: 30px;
   }
+
+  .image-with-text-overlay--content.content-middle-left {
+    padding-left: 16px !important;
+  }
   
 }
 
