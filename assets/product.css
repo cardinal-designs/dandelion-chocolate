@@ -1480,11 +1480,13 @@ dl.accordion-list dd {
 quantity-selector .minus svg {
   width: 12px;
   height: 4px;
+  opacity: 1;
 }
 
 quantity-selector .plus svg {
   width: 18px;
   height: 12px;
+  opacity: 1;
 }
 
 .product .quantity.buttons_added .qty, {
