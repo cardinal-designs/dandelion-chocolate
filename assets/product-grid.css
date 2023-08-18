@@ -681,6 +681,7 @@
 
 #AddToCart:focus-visible {
   border: 2px solid #9C854E;
+  outline: none;
 }
 
 @media (forced-colors:active) {
