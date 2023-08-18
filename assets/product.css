@@ -1565,4 +1565,8 @@ dl.accordion-list dd {
     margin-bottom: 20px;
   }
 
+  .product__detail {
+    padding: 10px 0;  
+  }
+
 }
