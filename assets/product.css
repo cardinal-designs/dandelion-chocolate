@@ -373,11 +373,10 @@
 .thb-product-detail .product-title {
   font-weight: 500;
   margin-bottom: 3px;
-  text-transform: initial;
   color: #333;
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: normal;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: .04em;
 }
 
 .thb-product-detail .product-title.uppercase--true {
