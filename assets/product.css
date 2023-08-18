@@ -1347,7 +1347,7 @@
   border-bottom: 1px solid var(--charcoal-black);
   padding: 10px 0;
   margin: 0 0 20px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .product__detail .product__harvest_year:after {
