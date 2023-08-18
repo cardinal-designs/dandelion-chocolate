@@ -896,7 +896,7 @@
     align-items: center;
     position: relative;
     width: 100%;
-    padding-right: 50px;
+    padding-right: 0;
     text-align: left;
     min-height: 48px; }
     .product-add-to-cart-sticky--inner .plus {
