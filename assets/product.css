@@ -1507,6 +1507,7 @@ dl.accordion-list dd {
 
   .thb-product-detail.product .product-grid-container {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .add_to_cart_holder {
@@ -1545,6 +1546,10 @@ dl.accordion-list dd {
   div#MediaGallery-template--16011451400332__main-product {
     flex: 0 0 100%;
     order: 1;
+  }
+
+  .flickity-page-dots {
+    display: none;
   }
 
 }
