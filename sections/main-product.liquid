@@ -93,7 +93,7 @@
             </h1>
             <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
             {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
-              <div class="product__detail test1">
+              <div class="product__detail">
                 {% comment %}
                   {% if product.metafields.info.percentage %}
                     <span class="product__percentage">{{product.metafields.info.percentage}}</span>
@@ -610,30 +610,8 @@
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'title' -%}
-                  <div class="product-price-container product__price">
-                  </div>
                   <div class="product-title-container hide-mobile" {{ block.shopify_attributes }}>
-                    <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
-                      {%- if product.metafields.info.origin != blank -%}
-                        {{ product.metafields.info.origin }}
-                      {%- else -%}
-                        {{ product.title }}              
-                      {%- endif -%}
-                    </h1>
-                    <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
-                    {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
-                      <div class="product__detail test">
-                        {% comment %}
-                          {% if product.metafields.info.percentage %}
-                            <span class="product__percentage">{{product.metafields.info.percentage}}</span>
-                          {% endif %}
-                        {% endcomment %}
-                        {% if product.metafields.info.harvest_year %}
-                          <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
-                        {% endif %}
-                      </div>
-                    {% endif %}
-                    <div class="product-price-container">
+                    <div class="product-price-container product__price">
                       <div class="no-js-hidden" id="price-{{ section.id }}">
                         {% render 'product-price', product: product, use_variant: true, show_badges: true %}
                       </div>
@@ -649,7 +627,28 @@
                           </div>
                         {%- endif -%}
                       {%- endif -%}
-                    </div>                
+                    </div>
+
+                    <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
+                      {%- if product.metafields.info.origin != blank -%}
+                        {{ product.metafields.info.origin }}
+                      {%- else -%}
+                        {{ product.title }}              
+                      {%- endif -%}
+                    </h1>
+                    <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
+                    {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
+                      <div class="product__detail">
+                        {% comment %}
+                          {% if product.metafields.info.percentage %}
+                            <span class="product__percentage">{{product.metafields.info.percentage}}</span>
+                          {% endif %}
+                        {% endcomment %}
+                        {% if product.metafields.info.harvest_year %}
+                          <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
+                        {% endif %}
+                      </div>
+                    {% endif %}
                     {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
                       <a class="star-rating-container" href="#shopify-product-reviews">
                         <div
