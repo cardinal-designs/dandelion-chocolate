@@ -620,7 +620,11 @@
                         {{ product.title }}              
                       {%- endif -%}
                     </h1>
-                    <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
+
+                    {%- if product.metafields.info.country != blank -%}
+                      <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
+                    {%- endif -%}
+                
                     {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
                       <div class="product__detail">
                         {% comment %}
