@@ -1567,6 +1567,10 @@ quantity-selector.quantity .plus svg {
   width: 100px;  
 }
 
+.product-add-to-cart-sticky--info {
+  flex: 0 0 calc(100% - 120px);  
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
