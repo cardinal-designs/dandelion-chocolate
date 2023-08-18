@@ -1508,6 +1508,13 @@ quantity-selector.quantity .plus svg {
   letter-spacing: .02em;
 }
 
+.short_description p {
+  font-size: 18px;
+  line-height: 140%;
+  color: #333333;
+  letter-spacing: 0.02em;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
