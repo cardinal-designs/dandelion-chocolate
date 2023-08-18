@@ -1479,10 +1479,6 @@ dl.accordion-list dd {
   margin-top: 0;
 }
 
-#Product-Slider .flickity-viewport {
-  background-color: #f5f6f5;
-}
-
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
@@ -1530,4 +1526,8 @@ dl.accordion-list dd {
     text-align: left;
   }
 
+  #Product-Slider .flickity-viewport {
+    background-color: #f5f6f5;
+  }
+  
 }
