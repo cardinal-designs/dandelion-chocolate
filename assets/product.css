@@ -1575,6 +1575,11 @@ quantity-selector.quantity .plus svg {
   font-weight: 500;
 }
 
+.product-add-to-cart-sticky--info .price {
+  font-size: 13px;
+  color: #777779;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
