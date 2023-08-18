@@ -5,7 +5,7 @@
 {% render 'header-full-menu', menu: header_settings.menu, blocks: blocks %}
 
 {% if header_settings.logo %}
-  <a class="logolink">
+  <a href="/" class="logolink">
     <img
         src="{{ header_settings.logo | image_url }}"
         class="logoimg"
