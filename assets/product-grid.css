@@ -419,6 +419,10 @@
   background: var(--gold);
 }
 
+.product-card .product-form .single-add-to-cart-button:before  {
+  display: none;
+}
+
 .product-card .product-form form .add_to_cart_holder.secondary__hover--enabled .single-add-to-cart-button:hover .single-add-to-cart-button--text {
   background: var(--charcoal-black);
   color: var(--white);
