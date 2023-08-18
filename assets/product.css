@@ -1580,6 +1580,10 @@ quantity-selector.quantity .plus svg {
   color: #777779;
 }
 
+#Product-Slider .flickity-viewport {
+  background-color: #f5f6f5;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
@@ -1632,10 +1636,6 @@ quantity-selector.quantity .plus svg {
     text-align: left;
     font-size: 32px;
     margin: 5px 0 10px;
-  }
-
-  #Product-Slider .flickity-viewport {
-    background-color: #f5f6f5;
   }
 
   .thb-product-detail .product-title-container {
