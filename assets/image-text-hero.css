@@ -42,7 +42,7 @@
 
   .image__video--banner.image__overlay--banner .image-with-text-overlay--content {
     max-width: 50%!important;
-    padding: 44px 30px;
+    padding: 44px ;
   }
 
   .image__video--banner.image__overlay--banner .image-with-text-overlay--content.content-middle-right {
@@ -70,6 +70,14 @@
     padding: 21px 45px 16px;
   }
   
+}
+
+@media screen and (max-width: 1440px) { 
+
+  .image__video--banner.image__overlay--banner .image-with-text-overlay--content {
+    padding: 44px 30px !important;
+  }
+
 }
 
 @media screen and (max-width: 1067px) { 
@@ -141,7 +149,3 @@
   }
 
 }
-
-
-
-
