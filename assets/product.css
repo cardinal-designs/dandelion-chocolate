@@ -1477,19 +1477,21 @@ dl.accordion-list dd {
   margin-top: 0;
 }
 
-quantity-selector .minus svg {
+quantity-selector.quantity .minus svg {
   width: 12px;
   height: 4px;
-  opacity: 1;
 }
 
-quantity-selector .plus svg {
+quantity-selector.quantity .plus svg {
   width: 18px;
   height: 12px;
-  opacity: 1;
 }
 
-.product .quantity.buttons_added .qty, {
+quantity-selector.quantity {
+  opacity: 1;  
+}
+
+.product .quantity.buttons_added .qty {
   font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;  
 }
 
