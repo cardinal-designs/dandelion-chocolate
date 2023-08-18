@@ -1685,4 +1685,8 @@ quantity-selector.quantity .plus svg {
     margin-top: 10px;
   }
 
+  .media__gallery {
+    flex: 0 0 100%;
+  }
+  
 }
