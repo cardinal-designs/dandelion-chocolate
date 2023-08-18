@@ -1580,6 +1580,10 @@ quantity-selector.quantity .plus svg {
   color: #777779;
 }
 
+h1.product-title + .product-price-container {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
