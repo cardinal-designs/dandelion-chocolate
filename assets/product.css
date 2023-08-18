@@ -1526,7 +1526,7 @@ quantity-selector.quantity .plus svg {
   font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif; 
 }
 
-.tasting-notes {
+.product-short-description .tasting-notes {
   font-family: GaramondItalic !important;
   font-size: 18px !important;
   line-height: 150% !important;
