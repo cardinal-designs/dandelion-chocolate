@@ -1527,6 +1527,10 @@ quantity-selector.quantity .plus svg {
   font-size: 14px;
 }
 
+.thb-product-detail .product-short-description p {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
