@@ -1529,5 +1529,15 @@ dl.accordion-list dd {
   #Product-Slider .flickity-viewport {
     background-color: #f5f6f5;
   }
+
+  .thb-product-detail .product-title-container {
+    order: 2;
+    flex: 0 0 100%;
+  }
+
+  .product .product-information {
+    max-width: 100%;
+    order: 3;
+  }
   
 }
