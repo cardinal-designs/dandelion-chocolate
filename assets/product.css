@@ -1552,4 +1552,8 @@ dl.accordion-list dd {
     display: none;
   }
 
+  product-slider#Product-Slider {
+    margin-bottom: 10px;
+  }
+
 }
