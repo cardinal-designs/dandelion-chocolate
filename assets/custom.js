@@ -246,8 +246,8 @@ $(window).on("load resize orientationchange", function(){
       i = 1440,
       s = t - i,
       a = s / 2;
-      if(a < 80){
-    var f_a = 80;
+      if(a < 60){
+    var f_a = 60;
 
     } else {
     var f_a = a;      
