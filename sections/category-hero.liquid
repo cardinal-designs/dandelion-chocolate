@@ -35,7 +35,7 @@
     </div>
     <div class="content__right">
       {% for block in section.blocks %}
-        <a href="{{ block.settings.link }}" class="category_item">
+        <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} class="category_item">
           {% if block.settings.image != blank %}
             <div class="category_image">
               {{ block.settings.image | image_url:width:original | image_tag }}
