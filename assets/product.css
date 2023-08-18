@@ -1382,6 +1382,10 @@
   letter-spacing: .05em;
 }
 
+.template-product #main-content {
+  background-color: #FFFDF9;
+}
+
 /*================ Accordion ================*/
 
 dl.accordion-list {
