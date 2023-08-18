@@ -450,10 +450,13 @@
 
 .thb-product-detail .product-short-description {
   font-size: 0.9375rem;
-  margin-bottom: 25px; }
-  .thb-product-detail .product-short-description p,
-  .thb-product-detail .product-short-description ul {
-    margin-bottom: 10px; }
+  margin-bottom: 30px; 
+}
+
+.thb-product-detail .product-short-description p,
+.thb-product-detail .product-short-description ul {
+  margin-bottom: 10px; 
+}
 
 .thb-product-detail .product-quick-images {
   height: 300px;
