@@ -891,8 +891,6 @@
     font-weight: 600;
     display: block;
     margin-bottom: 5px; }
-    .product-title-uppercase-true .product-add-to-cart-sticky--title {
-      text-transform: uppercase; }
   .product-add-to-cart-sticky--inner {
     display: flex;
     align-items: center;
@@ -1569,6 +1567,11 @@ quantity-selector.quantity .plus svg {
 
 .product-add-to-cart-sticky--info {
   flex: 0 0 calc(100% - 120px);  
+}
+
+.product-title-uppercase-true .product-add-to-cart-sticky--title {
+  font-family: Garamond Premiere Pro;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1067px) and (min-width: 768px) {
