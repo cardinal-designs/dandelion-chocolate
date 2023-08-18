@@ -611,9 +611,6 @@
                   {{ block.settings.custom_liquid }}
                 {%- when 'title' -%}
                   <div class="product__price">
-                    <div class="no-js-hidden" id="price-{{ section.id }}">
-                      {% render 'product-price', product: product, use_variant: true, show_badges: true %}
-                    </div>
                   </div>
                   <div class="product-title-container hide-mobile" {{ block.shopify_attributes }}>
                     <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
