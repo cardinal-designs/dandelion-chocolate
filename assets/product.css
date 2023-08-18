@@ -1377,6 +1377,7 @@ dl.accordion-list {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-top: 30px;
 }
 
 .product dl.accordion-list dt {
