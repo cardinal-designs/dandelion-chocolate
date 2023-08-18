@@ -675,6 +675,10 @@
   letter-spacing: 0.15em;
 }
 
+#AddToCart:focus-visible {
+  outline: none;
+}
+
 @media (forced-colors:active) {
   
   .rating {
