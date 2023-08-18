@@ -50,7 +50,7 @@
     "show_products_vendor": false,
     "show_products_swatches": false,
     "show_products_rating": false,
-    "show_secondary_btn_hover": false,
+    "show_secondary_btn_hover": true,
     "button_type": "cart_drawer_cart_button",
     "search_menu": "main-menu",
     "search_product_collection": "balms",
