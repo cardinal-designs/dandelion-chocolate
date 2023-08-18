@@ -1454,7 +1454,7 @@ dl.accordion-list dd {
 
 #Product-Slider-Thumbanils .product-images__slide {
   width: 100%;
-  max-width: 60px;
+  max-width: 98px;
   border: 1px solid rgba(66,41,22,.2);
   padding: 2px;
   margin: 0 4px;
@@ -1671,6 +1671,10 @@ quantity-selector.quantity .plus svg {
 
   .thb-product-detail .product-title-container {
     margin-bottom: 10px;
+  }
+
+  #Product-Slider-Thumbanils .product-images__slide {
+    max-width: 55px;
   }
 
 }
