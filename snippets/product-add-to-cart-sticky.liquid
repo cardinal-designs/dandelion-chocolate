@@ -1,6 +1,6 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 <product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
-	<button class="product-add-to-cart-sticky--inner">
+	<div class="product-add-to-cart-sticky--inner">
 		<div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
 			{%- if media -%}
 				{%- render 'responsive-image', image: media, sizes: '96x96' -%}
@@ -11,9 +11,6 @@
 			<div id="price-{{ section.id }}--sticky">
 				{% render 'product-price', product: product, use_variant: true, show_badges: false %}
 			</div>
-		</div>
-		<span class="plus"></span>
-	</button>
 	<div class="product-add-to-cart-sticky--content">
 		{%- unless product.has_only_default_variant -%}
 		<variant-selects  id="variant-selects-{{ section.id }}--sticky" class="no-js-hidden variant-selects--sticky" data-section="{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
@@ -75,4 +72,8 @@
 	    </div>
 	  {%- endif -%}
 	</div>
+		</div>
+		<span class="plus"></span>
+	</div>
+
 </product-add-to-cart-sticky>
