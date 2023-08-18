@@ -1563,6 +1563,10 @@ quantity-selector.quantity .plus svg {
   background: #951621;
 }
 
+.product-add-to-cart-sticky--image {
+  width: 100px;  
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
