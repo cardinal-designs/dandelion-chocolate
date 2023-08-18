@@ -243,7 +243,7 @@ let slideDown = (target, duration=400) => {
 
 $(window).on("load resize orientationchange", function(){
   var t = $("body").width(),
-    i = 1440,
+    i = 1560,
     s = t - i,
     a = s / 2;
     if(a < 60){
