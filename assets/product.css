@@ -1558,6 +1558,11 @@ quantity-selector.quantity .plus svg {
   margin-bottom: 20px;
 }
 
+.thb-product-detail .product-price-container .badge {
+  margin-top: -6px;  
+  background: #951621;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
