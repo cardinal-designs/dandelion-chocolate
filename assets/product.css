@@ -1527,6 +1527,7 @@ dl.accordion-list dd {
     text-align: left;
     font-size: 32px;
     text-transform: uppercase;
+    margin: 5px 0;
   }
 
   #Product-Slider .flickity-viewport {
