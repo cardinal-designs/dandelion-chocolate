@@ -1616,10 +1616,14 @@ quantity-selector.quantity .plus svg {
   }
   
   .add_to_cart_holder .quantity {
-    margin-left: 10px;
+    margin-left: 0;
     margin-right: 0;
   }
 
+  .product .add_to_cart_holder .button {
+    margin-left: 10px;
+  }
+  
   .thb-product-detail.product {
     padding-top: 20px;
   }
