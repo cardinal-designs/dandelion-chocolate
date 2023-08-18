@@ -1493,7 +1493,7 @@ quantity-selector.quantity .plus svg {
 }
 
 .product .quantity.buttons_added .qty {
-  font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;  
+  font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif; 
 }
 
 @media screen and (max-width: 1067px) and (min-width: 768px) {
