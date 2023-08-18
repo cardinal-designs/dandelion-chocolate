@@ -1527,12 +1527,12 @@ quantity-selector.quantity .plus svg {
   font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif; 
 }
 
-p.tasting-notes {
-  color: #B76A23;
-  font-size: 18px;
-  font-family: GaramondItalic;
-  line-height: 150%;
-  letter-spacing: .02em;
+.tasting-notes {
+  font-family: GaramondItalic !important;
+  font-size: 18px !important;
+  line-height: 150% !important;
+  letter-spacing: 0.05em !important;
+  color: #B76A23 !important;
 }
 
 .short_description p {
