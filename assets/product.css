@@ -1281,11 +1281,11 @@
 }
 
 .product__country {
-  font-family: SaaSeries, 'Saa Series FD', 'Open Sans', sans-serif;
-  font-size: 20px;
-  line-height: 40px;
-  letter-spacing: 0.18em;
-  color: #B76A23;
+  font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: .15em;
+  color: #b76a23;
   margin-bottom: 10px;
 }
 
