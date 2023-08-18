@@ -1477,6 +1477,11 @@ dl.accordion-list dd {
   margin-top: 0;
 }
 
+quantity-selector .minus svg {
+  width: 12px;
+  height: 4px;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
