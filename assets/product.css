@@ -1539,5 +1539,10 @@ dl.accordion-list dd {
     max-width: 100%;
     order: 3;
   }
+
+  div#MediaGallery-template--16011451400332__main-product {
+    flex: 0 0 100%;
+    order: 1;
+  }
   
 }
