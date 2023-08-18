@@ -371,12 +371,8 @@
   margin-bottom: 30px; }
 
 .thb-product-detail .product-title {
-  font-size: calc(var(--font-heading-scale) * 1.75rem);
-  line-height: calc(var(--font-heading-line-height-scale) * 2.125rem);
   font-weight: 500;
   margin-bottom: 3px;
-  color: var(--charcoal-black); 
-  text-transform: initial;
   text-transform: initial;
   color: #333;
   font-size: 36px;
