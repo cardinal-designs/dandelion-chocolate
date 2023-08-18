@@ -1506,7 +1506,7 @@ dl.accordion-list dd {
   }
 
   .thb-product-detail.product .product-grid-container {
-    display: block;
+    display: flex;
   }
 
   .add_to_cart_holder {
