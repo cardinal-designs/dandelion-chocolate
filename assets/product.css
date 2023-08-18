@@ -1350,6 +1350,25 @@
   font-weight: 500;
 }
 
+.product__detail {
+  font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: .15em;
+  color: var(--charcoal-black);
+  border-top: 1px solid var(--charcoal-black);
+  border-bottom: 1px solid var(--charcoal-black);
+  padding: 10px 0;
+  margin: 0 0 20px;
+  font-weight: 500;
+}
+
+.template-product-collaborator .product__detail {
+  color: #dcb251;
+  border-top: 1px solid #dcb251;
+  border-bottom: 1px solid #dcb251;
+}
+
 .product__detail .product__harvest_year:after {
   content: " Harvest";
   text-transform: uppercase;
