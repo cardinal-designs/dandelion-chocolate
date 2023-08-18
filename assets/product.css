@@ -1515,6 +1515,17 @@ quantity-selector.quantity .plus svg {
   letter-spacing: 0.02em;
 }
 
+.read_more,
+.read_less {
+  margin-top: 10px;
+  color: #d9b654;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: Saa Series F D !important;
+  letter-spacing: .15em;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
