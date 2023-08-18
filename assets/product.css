@@ -1482,6 +1482,11 @@ quantity-selector .minus svg {
   height: 4px;
 }
 
+quantity-selector .plus svg {
+  width: 18px;
+  height: 12px;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
