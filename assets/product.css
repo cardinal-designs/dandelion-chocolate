@@ -1487,7 +1487,7 @@ quantity-selector.quantity .plus svg {
   height: 12px;
 }
 
-quantity-selector.quantity {
+quantity-selector.quantity button svg {
   opacity: 1;  
 }
 
