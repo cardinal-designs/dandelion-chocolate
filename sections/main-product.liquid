@@ -66,7 +66,7 @@
       <div class="product-grid-container">
         {% for block in section.blocks limit: 1 %}
           <div class="product-title-container hide-desktop" {{ block.shopify_attributes }}>
-            <div class="product-price-container product__price hide-mobile">
+            <div class="product-price-container product__price">
               <div class="no-js-hidden" id="price-{{ section.id }}">
                 {% render 'product-price', product: product, use_variant: true, show_badges: true %}
               </div>
@@ -104,23 +104,6 @@
                 {% endif %}
               </div>
             {% endif %}
-            <div class="product-price-container product__price">
-              <div class="no-js-hidden" id="price-{{ section.id }}">
-                {% render 'product-price', product: product, use_variant: true, show_badges: true %}
-              </div>
-              {%- if section.settings.show_taxes_included != blank -%}
-                {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
-                  <div class="product__tax caption">
-                    {%- if cart.taxes_included -%}
-                      {{ 'products.product.include_taxes' | t }}
-                    {%- endif -%}
-                    {%- if shop.shipping_policy.body != blank -%}
-                      {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                    {%- endif -%}
-                  </div>
-                {%- endif -%}
-              {%- endif -%}
-            </div>
             {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
               <a class="star-rating-container" href="#shopify-product-reviews">
                 <div
@@ -628,6 +611,24 @@
                   {{ block.settings.custom_liquid }}
                 {%- when 'title' -%}
                   <div class="product-title-container hide-mobile" {{ block.shopify_attributes }}>
+                    <div class="product-price-container product__price">
+                      <div class="no-js-hidden" id="price-{{ section.id }}">
+                        {% render 'product-price', product: product, use_variant: true, show_badges: true %}
+                      </div>
+                      {%- if section.settings.show_taxes_included != blank -%}
+                        {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+                          <div class="product__tax caption">
+                            {%- if cart.taxes_included -%}
+                              {{ 'products.product.include_taxes' | t }}
+                            {%- endif -%}
+                            {%- if shop.shipping_policy.body != blank -%}
+                              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                            {%- endif -%}
+                          </div>
+                        {%- endif -%}
+                      {%- endif -%}
+                    </div>
+
                     <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
                       {%- if product.metafields.info.origin != blank -%}
                         {{ product.metafields.info.origin }}
