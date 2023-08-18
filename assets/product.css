@@ -1556,4 +1556,8 @@ dl.accordion-list dd {
     margin-bottom: 10px;
   }
 
+  .product-price-container.product__price.hide-desktop + .new-percentage {
+    display: none;
+  }
+
 }
