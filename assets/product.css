@@ -1560,5 +1560,9 @@ dl.accordion-list dd {
   .product-price-container.product__price.hide-desktop + .new-percentage {
     display: none;
   }
+  
+  .product__country {
+    margin-bottom: 20px;
+  }
 
 }
