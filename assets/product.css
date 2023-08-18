@@ -1447,10 +1447,6 @@ dl.accordion-list dd {
   grid-template-columns: 1fr 1fr;
 }
 
-/* .thb-product-detail.product .product-images__slide {
-  max-height: 550px;
-} */
-
 .thb-product-detail.product .product-single__media {
   padding-bottom: 100%;
 }
@@ -1481,6 +1477,10 @@ dl.accordion-list dd {
 
 .product-add-to-cart-sticky--content .product-form {
   margin-top: 0;
+}
+
+#Product-Slider .flickity-viewport {
+  background-color: #f5f6f5;
 }
 
 @media screen and (max-width: 1067px) and (min-width: 768px) {
