@@ -251,5 +251,5 @@ $(window).on("load resize orientationchange", function(){
     } else {
       var f_a = a;      
     }
-  $(".image-with-text-overlay .image-with-text-overlay--content").css("padding-left", f_a);
+  $(".image-with-text-overlay .image-with-text-overlay--content.content-middle-left").css("padding-left", f_a);
 });
