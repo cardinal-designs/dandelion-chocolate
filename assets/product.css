@@ -1282,6 +1282,7 @@
 
 .product .add_to_cart_holder .button {
   border-radius: 6px;
+  background-color: #CCA853 !important;
 }
 
 .product__country {
