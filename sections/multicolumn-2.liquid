@@ -38,6 +38,7 @@
 									endif
 								-%}
 								<figure class="multicolumn__image" style="width: {{ max_width }};">
+                                  <a href="{{ block.settings.link }}">
 									<div class="multicolumn__image--inner aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
                                         <div class="main-image {% if block.settings.hover_image != blank %}hover-image-show{% endif %}">
     										{%- render 'responsive-image', image: block.settings.image, sizes: '407x0,814x0', retina: block.settings.retina -%}
@@ -48,6 +49,7 @@
                                           </div>
                                         {% endif %}
 									</div>
+                                  </a>
 								</figure>
 							{% endif %}
 							{% if block.settings.title != blank %}
