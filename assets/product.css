@@ -1548,7 +1548,7 @@ dl.accordion-list dd {
     order: 1;
   }
 
-  .flickity-page-dots {
+  .product-image-container .flickity-page-dots {
     display: none;
   }
 
