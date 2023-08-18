@@ -715,7 +715,7 @@
         "button_link_1": "shopify:\/\/pages\/recipes",
         "button_style_1": "btn",
         "button_text_2": "SHOP BAKING KITS",
-        "button_link_2": "",
+        "button_link_2": "shopify:\/\/collections\/baking",
         "button_style_2": "btn--outline",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
