@@ -1677,4 +1677,8 @@ quantity-selector.quantity .plus svg {
     max-width: 55px;
   }
 
+  .product-form {
+    margin-top: 10px;
+  }
+
 }
