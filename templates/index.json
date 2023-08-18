@@ -22,7 +22,7 @@
           "type": "button",
           "settings": {
             "button_text": "BROWSE STORE",
-            "button_link": "shopify:\/\/pages\/shop-all",
+            "button_link": "shopify:\/\/pages\/shop-1",
             "button_style": "btn--white",
             "mobile_button_style": "btn--gold"
           }
@@ -277,7 +277,7 @@
             "text": "<p>Award-winning single-origin chocolate bar<\/p>",
             "text_color": "#333333",
             "link_label": "",
-            "link": "\/pages\/shop-1#Chocolate-Bars"
+            "link": "https:\/\/www.dandelionchocolate.com\/pages\/shop-1#Chocolate-Bars"
           }
         },
         "template--15975893827724__edf32bec-7a50-42f5-9c41-c298f2b0cdeb-16896699303b68da3e-1": {
@@ -750,7 +750,7 @@
         "subheading_mobile": "NEWSLETTER OR BLOG",
         "heading": "Follow along with what  we’re working on and what’s happening at the factory.",
         "button_text_1": "Shop Now",
-        "button_link_1": "",
+        "button_link_1": "https:\/\/blog.dandelionchocolate.com\/",
         "button_style_1": "btn",
         "button_text_2": "",
         "button_link_2": "",
