@@ -687,7 +687,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/category-1.png",
             "title": "Just Chocolate Cake",
-            "text": "<p>2½ Hours<\/p>"
+            "text": "<p>2½ Hours<\/p>",
+            "link": "shopify:\/\/pages\/just-chocolate-cake"
           }
         },
         "template--15975893827724__7cb08fd4-ad98-4437-8d49-49f6fe76311a-1689671717ced8c146-1": {
@@ -695,7 +696,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/category-4.jpg",
             "title": "Sourdough Chocolate Chip Banana Bread Muffins",
-            "text": "<p>2 Hours<\/p>"
+            "text": "<p>2 Hours<\/p>",
+            "link": "shopify:\/\/pages\/sourdough-chocolate-chip-banana-bread-muffins"
           }
         }
       },
@@ -727,7 +729,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/category-2.png",
             "title": "4000 Years and Counting: A History of Drinking Chocolate",
-            "text": ""
+            "text": "",
+            "link": ""
           }
         },
         "template--15975893827724__0c97f2db-97cf-47e4-94e0-f1e6b3161d41-1689671717ced8c146-1": {
@@ -735,7 +738,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/category-3.png",
             "title": "History of Chocolate",
-            "text": ""
+            "text": "",
+            "link": ""
           }
         }
       },
