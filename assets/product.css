@@ -1355,7 +1355,7 @@
   color: #666;
   font-size: 14px;
   font-family: GaramondPremierPro, 'Garamond', 'Playfair Display', serif;
-  letter-spacing: 2px;
+  letter-spacing: .05em;
 }
 
 /*================ Accordion ================*/
