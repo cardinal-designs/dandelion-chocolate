@@ -22,7 +22,7 @@
 				<div class="row align-stretch no-padding">
 					{%- for block in section.blocks -%}
 						<div class="multicolumn__column small-12 medium-3 columns">
-                          <a class="text-button" href="{{ block.settings.link }}">
+                          <a href="{{ block.settings.link }}">
 							{% if block.settings.image != blank %}
 								{%- liquid
 									assign ratio = 1
@@ -51,9 +51,9 @@
 									</div>
 								</figure>
 							{% endif %}
-							{% if block.settings.title != blank %}
-								<h4 class="{{ heading_size }} heading">{{ block.settings.title | newline_to_br }}</h4>
-							{% endif %}
+  							{% if block.settings.title != blank %}
+  								<h4 class="{{ heading_size }} heading">{{ block.settings.title | newline_to_br }}</h4>
+  							{% endif %}
                             </a>
 							{% if block.settings.text != blank %}
 								<div class="rte" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
