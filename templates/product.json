@@ -19,13 +19,6 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
-        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "style_vendor"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -80,7 +73,6 @@
         }
       },
       "block_order": [
-        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
         "title",
         "buy_buttons",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
