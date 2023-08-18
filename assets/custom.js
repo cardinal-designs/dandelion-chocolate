@@ -240,3 +240,17 @@ let slideDown = (target, duration=400) => {
     target.style.removeProperty('transition-property');
   }, duration);
 }
+
+$(window).on("load resize orientationchange", function(){
+  var t = $("body").width(),
+      i = 1440,
+      s = t - i,
+      a = s / 2;
+      if(a < 80){
+    var f_a = 80;
+
+    } else {
+    var f_a = a;      
+    }
+  $(".image-with-text-overlay .image-with-text-overlay--content").css("padding-left", f_a);
+});
