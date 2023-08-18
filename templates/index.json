@@ -433,7 +433,7 @@
           "type": "button",
           "settings": {
             "button_text": "SHOP single-origin BARS",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/bars",
             "button_style": "btn--white"
           }
         },
@@ -441,7 +441,7 @@
           "type": "button",
           "settings": {
             "button_text": "OUR STORY",
-            "button_link": "",
+            "button_link": "shopify:\/\/pages\/aboutus",
             "button_style": "btn--white-outline"
           }
         }
