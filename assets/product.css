@@ -1487,6 +1487,10 @@ quantity-selector .plus svg {
   height: 12px;
 }
 
+.product .quantity.buttons_added .qty, {
+  font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;  
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
