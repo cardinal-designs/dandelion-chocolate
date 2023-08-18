@@ -66,14 +66,7 @@
       <div class="product-grid-container">
         {% for block in section.blocks limit: 1 %}
           <div class="product-title-container" {{ block.shopify_attributes }}>
-            <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
-            {% if product.metafields.info.origin != blank %}
-              {{ product.metafields.info.origin }}
-            {% else %}
-              {{ product.title }}
-            {% endif %}
-            </h1>
-            
+      
             {%- if product.metafields.info.country != blank -%}
               <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
             {%- endif -%}   
