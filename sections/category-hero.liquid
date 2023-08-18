@@ -35,7 +35,10 @@
     </div>
     <div class="content__right">
       {% for block in section.blocks %}
-        <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} class="category_item">
+        <div class="category_item">
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}">
+          {% endif %}
           {% if block.settings.image != blank %}
             <div class="category_image">
               {{ block.settings.image | image_url:width:original | image_tag }}
@@ -55,7 +58,10 @@
               {% render 'clock' %}{{ block.settings.text }}
             </div>
           {% endif %}
-        </a>
+          {% if block.settings.link != blank %}
+            </a>
+          {% endif %}
+        </div>
       {% endfor %}
     </div>
 
