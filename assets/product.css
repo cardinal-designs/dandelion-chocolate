@@ -1612,7 +1612,7 @@ quantity-selector.quantity .plus svg {
   }
 
   .add_to_cart_holder {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   
   .add_to_cart_holder .quantity {
