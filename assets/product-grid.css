@@ -148,7 +148,11 @@
 }
 
 .product-card .badge {
-  font-family: Garamond Premiere Pro;
+  line-height: 1;
+  font-family: 'Saa Series F D';
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 5px;
 }
 
 @media (hover:hover) {
