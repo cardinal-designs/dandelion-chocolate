@@ -286,6 +286,10 @@
   border-color:#E3BE66;
 }
 
+.template-page-shop .image-with-text-overlay--content {
+  padding: 20px;
+}
+
 @media only screen and (min-width: 768px) {
 
   .template-page-shop image-with-text-overlay .image-with-text-overlay--content {
