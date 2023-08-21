@@ -147,6 +147,10 @@
   color: var(--dark-gold);
 }
 
+.product-card .badge {
+  font-family: Garamond Premiere Pro;
+}
+
 @media (hover:hover) {
   
   .product-card .product-featured-image.thb-hover:hover .product-primary-image {
