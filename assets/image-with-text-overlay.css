@@ -286,6 +286,11 @@
   border-color:#E3BE66;
 }
 
+.template-page-shop image-with-text-overlay .image-with-text-overlay--content {
+  padding: 0 20px !important;
+  max-width: 1520px !important;
+}
+
 @media only screen and (max-width:1200px) {
   
   .image-with-text-overlay--content-inner.content-width-medium {
