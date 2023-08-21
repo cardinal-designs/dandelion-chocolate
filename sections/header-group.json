@@ -1,1 +1,75 @@
-{"type":"header","name":"Header group","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"5b1ab378-833d-4a94-a02e-8325ec1551d0":{"type":"text","settings":{"icon":"box","text":"Free shipping on orders over $25.","link":""}}},"block_order":["5b1ab378-833d-4a94-a02e-8325ec1551d0"],"settings":{"bg_color":"#cccccc","text_color":"#333333","announcement_bar":true,"announcement_bar_homepage_only":false,"announcement_bar_layout":"carousel","direction":"left","speed":"20s"}},"header":{"type":"header","blocks":{"a1434a36-0fab-4b76-86fd-8aaecb6f8f11":{"type":"custom_megamenu","settings":{"title":"Explore Bean-to-bar Chocolate In All  Its Forms","button_label":"Shop All","button_url":"shopify:\/\/pages\/shop-1","shipping_text":"FREE SHIPPING ON ORDERS OVER $25","position":"1"}}},"block_order":["a1434a36-0fab-4b76-86fd-8aaecb6f8f11"],"settings":{"sticky_header":true,"logo":"shopify:\/\/shop_images\/Dandelion-Logo.png","logo_height_range":51,"logo_height_range_mobile":51,"style":"style3","header_shadow":"header--shadow-small","menu":"main-menu-left","right_menu":"main-menu-right","transparent_header":false,"logo_light":"shopify:\/\/shop_images\/dandelion-white.png","show_language_switcher":false,"show_currency_switcher":false,"mobile_primary_menu":"mobile-primary-menu","mobile_secondary_menu":"mobile-secondary-menu","mobile_promo_heading":"Promotion heading","mobile_promo_link_label":"Shop","mobile_promo_link":"","show_myaccount":false,"button_label":"Shop All","button_url":"shopify:\/\/collections\/all"}}},"order":["announcement-bar","header"]}
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "5b1ab378-833d-4a94-a02e-8325ec1551d0": {
+          "type": "text",
+          "settings": {
+            "icon": "box",
+            "text": "Free shipping on orders over $25.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5b1ab378-833d-4a94-a02e-8325ec1551d0"
+      ],
+      "settings": {
+        "bg_color": "#cccccc",
+        "text_color": "#333333",
+        "announcement_bar": true,
+        "announcement_bar_homepage_only": false,
+        "announcement_bar_layout": "carousel",
+        "direction": "left",
+        "speed": "20s"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "a1434a36-0fab-4b76-86fd-8aaecb6f8f11": {
+          "type": "custom_megamenu",
+          "settings": {
+            "title": "Bean-to-bar<br>Chocolate<br>In All Forms",
+            "button_label": "Explore All",
+            "button_url": "shopify:\/\/pages\/shop-1",
+            "shipping_text": "FREE SHIPPING ON ORDERS OVER $25",
+            "position": "1"
+          }
+        }
+      },
+      "block_order": [
+        "a1434a36-0fab-4b76-86fd-8aaecb6f8f11"
+      ],
+      "settings": {
+        "sticky_header": true,
+        "logo": "shopify:\/\/shop_images\/Dandelion-Logo.png",
+        "logo_height_range": 51,
+        "logo_height_range_mobile": 51,
+        "style": "style3",
+        "header_shadow": "header--shadow-small",
+        "menu": "main-menu-left",
+        "right_menu": "main-menu-right",
+        "transparent_header": false,
+        "logo_light": "shopify:\/\/shop_images\/dandelion-white.png",
+        "show_language_switcher": false,
+        "show_currency_switcher": false,
+        "mobile_primary_menu": "mobile-primary-menu",
+        "mobile_secondary_menu": "mobile-secondary-menu",
+        "mobile_promo_heading": "Promotion heading",
+        "mobile_promo_link_label": "Shop",
+        "mobile_promo_link": "",
+        "show_myaccount": false,
+        "button_label": "Shop All",
+        "button_url": "shopify:\/\/collections\/all"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
