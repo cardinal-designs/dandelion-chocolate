@@ -143,6 +143,10 @@
   background-color: #f5f6f5;
 }
 
+.product-card .product-featured-image .price {
+  color: var(--dark-gold);
+}
+
 @media (hover:hover) {
   
   .product-card .product-featured-image.thb-hover:hover .product-primary-image {
