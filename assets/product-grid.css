@@ -143,7 +143,7 @@
   background-color: #f5f6f5;
 }
 
-.product-card .product-featured-image .price {
+.product-card .product-card-info .price {
   color: var(--dark-gold);
 }
 
