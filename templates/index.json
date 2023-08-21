@@ -109,7 +109,7 @@
         "804bbead-7435-4967-a000-8c4fcb5b55a5"
       ],
       "settings": {
-        "stop_scroll": false,
+        "stop_scroll": true,
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
@@ -369,22 +369,41 @@
         "954ccb25-47cf-4f21-af82-d24aa5afe242": {
           "type": "quotes",
           "settings": {
-            "quotes": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>",
-            "author": "the new york times"
+            "quotes": "<p>\"Dandelion Chocolate has stood out in the new crop of bean-to-bar chocolate makers in America. And while the chocolate bars are exceptional, equally exciting is the way chocolate is used in their café ... blended into one of the best cups of hot chocolate I’ve ever had.\"<\/p>",
+            "author": "David Lebovitz",
+            "author_logo": "shopify:\/\/shop_images\/david_lebovitz.png"
           }
         },
         "8801cfc9-ea29-4681-977a-48ce347ba640": {
           "type": "quotes",
           "settings": {
-            "quotes": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>",
-            "author": ""
+            "quotes": "<p>“Each of Dandelion’s single-origin bars is unique to its terroir—the Dominican is nutty and bright, the Liberian earthy and umami-rich—and helps sustain the inhabitants (feathered and not) of the land.”<\/p>",
+            "author": "Vogue",
+            "author_logo": "shopify:\/\/shop_images\/Vogue_Icon_fb9fb6b3-a2cf-4e8b-a564-545266479209.png"
           }
         },
         "4addd9c1-c51d-4a60-9328-f9be7045dbc9": {
           "type": "quotes",
           "settings": {
-            "quotes": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>",
-            "author": ""
+            "quotes": "<p>“Instead of using additives and strange, unpronounceable ingredients to alter the flavor of his chocolate, [Dandelion Chocolate] relies on the distinct taste of the beans.”<\/p>",
+            "author": "Saveur",
+            "author_logo": "shopify:\/\/shop_images\/Saveur.png"
+          }
+        },
+        "2888968a-586c-4bfb-ae27-335e4a6932e7": {
+          "type": "quotes",
+          "settings": {
+            "quotes": "<p>“At Dandelion Chocolate’s bean-to-bar factory and café, you’ll find single-source chocolate bars roasted to subtle perfection.”<\/p>",
+            "author": "Condé Nast",
+            "author_logo": "shopify:\/\/shop_images\/Conde_Nast.png"
+          }
+        },
+        "bd78e75b-4a47-4d61-90c9-123582d30e02": {
+          "type": "quotes",
+          "settings": {
+            "quotes": "<p>“‘Small batch’ is what’s big at Dandelion Chocolate... Here, the focus is on quality, not quantity: Made in small amounts (with no batch exactly the same), and it sells out almost immediately.”<\/p>",
+            "author": "USA Today",
+            "author_logo": "shopify:\/\/shop_images\/USA_Today_faae6f64-aebb-4535-b139-4d18050aba1c.png"
           }
         }
       },
@@ -392,7 +411,9 @@
         "71354b71-4c77-405b-ad40-b02208c6bbd3",
         "954ccb25-47cf-4f21-af82-d24aa5afe242",
         "8801cfc9-ea29-4681-977a-48ce347ba640",
-        "4addd9c1-c51d-4a60-9328-f9be7045dbc9"
+        "4addd9c1-c51d-4a60-9328-f9be7045dbc9",
+        "2888968a-586c-4bfb-ae27-335e4a6932e7",
+        "bd78e75b-4a47-4d61-90c9-123582d30e02"
       ],
       "settings": {
         "section_bg": "#fffdf9",
