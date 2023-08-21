@@ -35,7 +35,7 @@
       ],
       "settings": {
         "section_width": "grid",
-        "image": "shopify:\/\/shop_images\/0051_EWP2016_Dandelion-0303_1.png",
+        "image": "shopify:\/\/shop_images\/No_Overlay_Hero-compressed.jpg",
         "video": "",
         "image_parallax": false,
         "desktop_height": "desktop-height-700",
@@ -750,10 +750,10 @@
       "settings": {
         "color_bg": "#dddddf",
         "color_text": "#333333",
-        "subheading": "FACTORY NEWSLETTER SIGN UP OR BLOG???",
-        "subheading_mobile": "NEWSLETTER OR BLOG",
+        "subheading": "NOTES FROM THE FACTORY",
+        "subheading_mobile": "FOLLOW ALONG WITH US",
         "heading": "Follow along with what  we’re working on and what’s happening at the factory.",
-        "button_text_1": "Shop Now",
+        "button_text_1": "READ THE BLOG",
         "button_link_1": "https:\/\/blog.dandelionchocolate.com\/",
         "button_style_1": "btn",
         "button_text_2": "",
