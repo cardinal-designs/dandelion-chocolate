@@ -10,7 +10,8 @@ var flkty = new Flickity( elem, {
   prevNextButtons: false,
   pageDots: false,
   adaptiveHeight: false,
-  cellAlign: "left"
+  cellAlign: "left",
+  contain: true
 });
 
 $(window).on("load resize orientationchange", function(){
