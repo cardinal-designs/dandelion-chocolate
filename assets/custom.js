@@ -5,6 +5,13 @@ var flkty = new Flickity( elem, {
   adaptiveHeight: false
 });
 
+var elem = document.querySelector('.category__slider');
+var flkty = new Flickity( elem, {
+  prevNextButtons: false,
+  pageDots: false,
+  adaptiveHeight: false
+});
+
 $(window).on("load resize orientationchange", function(){
   var windowsize = $(window).width();
   if(windowsize < 767 ) {
