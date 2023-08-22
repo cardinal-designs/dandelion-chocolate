@@ -211,9 +211,13 @@
 
   .multicolumn__2 .multicolumn__inner .row {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 15px;
     row-gap: 40px;
+  }
+
+  .multicolumn__2 .mobile__swiper .multicolumn__inner .row {
+    grid-template-columns: 1fr 1fr;   
   }
 
   .multicolumn__2 .multicolumn__column {
