@@ -1121,3 +1121,19 @@ input[type=submit]:hover {
 .cart-drawer-buttons #storePickupApp {
   display: none;
 }
+
+@media screen and (max-width: 767px) {
+  
+  .hide__mobile {
+    display: none !important;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  
+  .hide__desktop {
+    display: none !important;
+  }
+  
+}
