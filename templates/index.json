@@ -35,7 +35,7 @@
       ],
       "settings": {
         "section_width": "grid",
-        "image_url": false,
+        "image_url": true,
         "image": "shopify:\/\/shop_images\/No_Overlay_Hero-compressed.jpg",
         "video": "",
         "image_parallax": false,
