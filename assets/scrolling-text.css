@@ -161,7 +161,7 @@
     animation: marquee-left 90s linear infinite;
   }
 
-  .stop__scrolling .hide-desktop {
+  .stop__scrolling .scrolling-text--inner.direction-left > div.hide-desktop {
     animation: none;    
   }
 
