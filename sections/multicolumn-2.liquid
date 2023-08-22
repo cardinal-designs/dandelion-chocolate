@@ -63,10 +63,12 @@
 							{% endif %}
 						</div>
                         {%- style -%}
-                          #image_{{ block.id }} .multicolumn__image:before {
-                            background: {{ block.settings.content_bg }};
-                            opacity: {{ block.settings.content_overlay_opacity | divided_by: 100.0 }};
-                          }
+                          {%- if section.settings.show_overlay -%}
+                            #image_{{ block.id }} .multicolumn__image:before {
+                              background: {{ block.settings.content_bg }};
+                              opacity: {{ block.settings.content_overlay_opacity | divided_by: 100.0 }};
+                            }
+                          {%- endif -%}
                       
                           #image_{{ block.id }} .multicolumn .heading {
                             color: {{ block.settings.heading_color }};
