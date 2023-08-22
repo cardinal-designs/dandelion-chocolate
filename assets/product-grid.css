@@ -209,7 +209,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 5;
-  transition: all linear .15s;
+  transition: all linear .30s;
 }
 
 .product-card .product-featured-image-link:hover img {
