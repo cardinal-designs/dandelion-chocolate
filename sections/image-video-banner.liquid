@@ -97,9 +97,11 @@
         -%}
       {%- endif -%}
     </div>
-    {% for block in section.blocks %}
-      <a href="{{ block.settings.button_link }}" class="image__url--redirect"></a>
-    {% endfor %}
+    {% if section.settings.image_url %}
+      {% for block in section.blocks %}
+        <a href="{{ block.settings.button_link }}" class="image__url--redirect"></a>
+      {% endfor %}
+    {% endif %}
     <div class="image-with-text-overlay--content content-{{ content_position }}" style="background: rgba(51,51,51,{{ content_overlay_opacity | divided_by: 100.0 }})">
       <div class="image-with-text-overlay--content-inner">
         {% for block in section.blocks %}
@@ -156,6 +158,11 @@
     {
       "type": "header",
       "content": "Background Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_url",
+      "label": "Add URL over Image"
     },
     {
       "type": "image_picker",
