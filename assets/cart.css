@@ -651,3 +651,7 @@ body .zapietModal.moreInformation h2 {
 .checkout-button:before {
   display: none;
 }
+
+.pn-total-line-item {
+  color: #53595C;  
+}
