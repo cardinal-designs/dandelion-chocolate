@@ -940,6 +940,7 @@
   letter-spacing: normal;
   font-family: GaramondItalic !important;
   text-transform: capitalize;
+  font-style: italic;
 }
 
 .product-add-to-cart-sticky--inner .product__country {
