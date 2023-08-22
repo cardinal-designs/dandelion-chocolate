@@ -72,7 +72,11 @@
         -%}
       {%- endif -%}
     </div>
-
+    {% if section.settings.image_url %}
+      {% for block in section.blocks %}
+        <a href="{{ block.settings.button_link }}" class="image__url--redirect"></a>
+      {% endfor %}
+    {% endif %}
     <div class="image-with-text-overlay--content content-{{ content_position }}">
       
       <div class="image-with-text-overlay--content-inner">
@@ -148,6 +152,12 @@
     {
       "type": "header",
       "content": "Background Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_url",
+      "label": "Add URL over Image",
+      "default": false
     },
     {
       "type": "image_picker",
