@@ -7,6 +7,7 @@
 			{%- endif -%}
 		</div>
 		<div class="product-add-to-cart-sticky--info">
+          {{ product_card_product.metafields.info.percentage  }}tttt
             {%- if product_card_product.metafields.info.percentage != blank -%}
               <p class="new-percentage">{{ product_card_product.metafields.info.percentage }}%</p>
             {%- endif -%}
