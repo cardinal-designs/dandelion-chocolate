@@ -63,7 +63,7 @@
 							{% endif %}
 						</div>
                         {%- style -%}
-                          {%- if section.settings.show_overlay -%}
+                          {%- if section.settings.show_overlay == true -%}
                             #image_{{ block.id }} .multicolumn__image:before {
                               background: {{ block.settings.content_bg }};
                               opacity: {{ block.settings.content_overlay_opacity | divided_by: 100.0 }};
