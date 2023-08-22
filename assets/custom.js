@@ -20,7 +20,8 @@ $(window).on("load resize orientationchange", function(){
     var flkty = new Flickity( elem, {
       prevNextButtons: false,
       pageDots: false,
-      adaptiveHeight: false
+      adaptiveHeight: false,
+      contain: true
     });
   }
 });  
