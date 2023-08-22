@@ -151,6 +151,10 @@
   .scrolling-text--inner .hide-mobile {
     display: none;  
   }
+
+  .stop__scrolling .scrolling-text--inner.direction-left > div.hide-desktop {
+    animation: none;    
+  }
   
 }
 
@@ -159,10 +163,6 @@
   
   .scrolling-text--inner.direction-left > div {
     animation: marquee-left 90s linear infinite;
-  }
-
-  .stop__scrolling .scrolling-text--inner.direction-left > div.hide-desktop {
-    animation: none;    
   }
 
   .scrolling-text--inner.direction-left > div {
