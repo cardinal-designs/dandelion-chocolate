@@ -24,7 +24,8 @@
 }
 
 .category__hero--wrapper .category_item {
-  width: 100%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .category__hero--wrapper .category_text {

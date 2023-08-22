@@ -898,8 +898,7 @@
     width: 100%;
     padding-right: 0;
     text-align: left;
-    min-height: 48px;
-    padding-bottom: 51px;}
+    min-height: 48px;}
     .product-add-to-cart-sticky--inner .plus {
       position: absolute;
       top: calc(50% - 9.5px);
@@ -1607,13 +1606,6 @@ quantity-selector.quantity .plus svg {
   line-height: 14px;
   color: #777779;
   font-family: Saa Series F D;
-}
-
-.product-add-to-cart-sticky--content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 
 .product-add-to-cart-sticky--info .price {
