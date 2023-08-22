@@ -35,6 +35,7 @@
       ],
       "settings": {
         "section_width": "grid",
+        "image_url": false,
         "image": "shopify:\/\/shop_images\/No_Overlay_Hero-compressed.jpg",
         "video": "",
         "image_parallax": false,
@@ -246,6 +247,7 @@
       ],
       "settings": {
         "section_width": "full-width-row",
+        "image_url": true,
         "image": "shopify:\/\/shop_images\/advent_calendar_banner.jpg",
         "mobile_image": "shopify:\/\/shop_images\/Advent_Calendar_-_2023_-_Vertical.2.png",
         "image_parallax": false,
