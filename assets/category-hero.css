@@ -102,6 +102,14 @@
   width: 100%;
 }
 
+.category__hero--wrapper .category_item {
+  padding: 0 15px;
+}
+
+.category__hero--wrapper .content__right {
+  margin: 0 -30px;
+}
+
 @media screen and (min-width: 1440px) {
 
   .category__hero--wrapper .btn {
