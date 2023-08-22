@@ -354,7 +354,7 @@
         "image_ratio": "portrait",
         "text_alignment": "left",
         "heading_size": "caption",
-        "mobile_swipe": false,
+        "mobile_swipe": true,
         "show_progress_bar": true,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
