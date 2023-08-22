@@ -1605,7 +1605,7 @@ quantity-selector.quantity .plus svg {
   font-family: Saa Series F D;
 }
 
-.product-add-to-cart-sticky--content {
+.product-add-to-cart-sticky--content .product-form {
   margin-left: -96px;
 }
 
