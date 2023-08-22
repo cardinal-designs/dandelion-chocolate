@@ -99,7 +99,9 @@
     </div>
     {% if section.settings.image_url %}
       {% for block in section.blocks %}
-        <a href="{{ block.settings.button_link }}" class="image__url--redirect"></a>
+        {% if block.type == 'button' %}
+          <a href="{{ block.settings.button_link }}" class="image__url--redirect"></a>
+        {% endif %}
       {% endfor %}
     {% endif %}
     <div class="image-with-text-overlay--content content-{{ content_position }}" style="background: rgba(51,51,51,{{ content_overlay_opacity | divided_by: 100.0 }})">
@@ -118,8 +120,8 @@
               <div class="description body-1 mb-45" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {% if block.settings.button_text != blank %}
-                <!-- <a class="mt-15 btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
-                <a class="mt-15 btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>         -->
+                <a class="mt-15 btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+                <a class="mt-15 btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
               {% endif %}
             
             {% when 'space' %}
