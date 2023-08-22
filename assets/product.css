@@ -1741,3 +1741,16 @@ product-add-to-cart-sticky .variations fieldset .form__label {
   line-height: 14px;
   margin-bottom: 8px;
 }
+
+product-add-to-cart-sticky .separator {
+  padding: 0 6px;
+}
+
+product-add-to-cart-sticky .price {    
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
