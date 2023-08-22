@@ -106,10 +106,15 @@
   padding: 0 15px;
 }
 
-/* .category__hero--wrapper .content__right.flickity-enabled .flickity-viewport {
+.category__hero--wrapper .content__right.flickity-enabled .flickity-viewport {
   margin: 0 -15px;  
 }
- */
+
+.category__hero--wrapper .content__right.flickity-enabled {
+  column-gap: 0;
+}
+
+
 @media screen and (min-width: 1440px) {
 
   .category__hero--wrapper .btn {
