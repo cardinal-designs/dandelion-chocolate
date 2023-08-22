@@ -22,7 +22,9 @@ $(window).on("load resize orientationchange", function(){
       prevNextButtons: false,
       pageDots: false,
       adaptiveHeight: false,
-      contain: true
+      contain: true,
+      cellAlign: 'center',
+      groupCells: false
     });
   }
 });  
