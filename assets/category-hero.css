@@ -94,6 +94,8 @@
 .category__item-link:hover .category_title {
   color: #A1552E;
   text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 @media screen and (min-width: 1440px) {
