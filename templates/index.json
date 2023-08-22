@@ -110,6 +110,7 @@
       ],
       "settings": {
         "stop_scroll": false,
+        "stop_scroll_mobile": false,
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
@@ -353,7 +354,7 @@
         "image_ratio": "portrait",
         "text_alignment": "left",
         "heading_size": "caption",
-        "mobile_swipe": false,
+        "mobile_swipe": true,
         "show_progress_bar": true,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false

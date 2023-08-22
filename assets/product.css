@@ -932,6 +932,16 @@
   .product-add-to-cart-sticky .product-form .add_to_cart_holder {
     margin-bottom: 0; }
 
+.product-add-to-cart-sticky--inner .product__detail {
+  border: none;
+  padding: 0;
+  color: #777779;
+  font-family: Garamond Premiere Pro;
+  margin: 0;
+  letter-spacing: normal;
+  font-style: italic;
+  text-transform: capitalize;
+}
 
 
 .star-rating {
