@@ -151,33 +151,32 @@
         {% endif %}
       {% if product_info.origin and product_info.country %} 
         {% if product_card_product.product_card_product and product.type != 'Chocolate Bar' %}        
-        <div class="card__type">{{product_card_product.type}}
-        {% unless is_chocolate_bar %}
-          {% if product_info.percentage %}
-          - {{product_info.percentage}}%
-          {% endif %}
-        {% endunless %}
-        </div>       
+          <div class="card__type">{{ product_card_product.type }}
+            {% unless is_chocolate_bar %}
+              {% if product_info.percentage %}
+              - {{product_info.percentage}}%
+              {% endif %}
+            {% endunless %}
+          </div>       
         {% endif %}
+        
         {% if product_info.percentage and is_chocolate_bar %}        
           <div class="card__percentage">{{product_info.percentage}}%</div>        
         {% endif %}
+        
         {% if product_info.origin %}
-        <div class="card__origin">{{product_info.origin}}</div>
+          <div class="card__origin">{{product_info.origin}}</div>
         {% endif %}
+        
         {% if product_info.country %}
-        <div class="card__country">{{product_info.country}}</div>
+          <div class="card__country">{{product_info.country}}</div>
         {% endif %}   
 
       {% else %}
         <h3 class="card__name h4">{{ product_card_product.title }}</h3>      
-
-        {% comment %}
-        Experience-specific rendering
-        {% endcomment %}
         {% assign experience = product.metafields.experience %}      
         {% if experience.location_type %}
-        <div class="card__country">{{experience.location_type}}</div>
+          <div class="card__country">{{experience.location_type}}</div>
         {% endif %}    
 
       {% endif %}
