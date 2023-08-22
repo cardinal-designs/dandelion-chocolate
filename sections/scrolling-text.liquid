@@ -57,7 +57,11 @@
              {% endif %}
            </div>
           <div class="hide-desktop">
+             {% if section.settings.stop_scroll_mobile %}
+             {{ scrolling_text }}
+             {% else %}
   			{{ scrolling_text }}{{ scrolling_text }}{{ scrolling_text }}{{ scrolling_text }}{{ scrolling_text }}
+             {% endif %}
           </div>
 		</div>
 		{% style %}
