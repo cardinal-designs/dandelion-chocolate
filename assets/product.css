@@ -951,6 +951,9 @@
   letter-spacing: 0.15em;
 }
 
+product-add-to-cart-sticky .variations fieldset {
+  margin: 0;
+}
 
 .star-rating {
   --star-percent: calc(var(--star-rating) / 5 * 100%);
