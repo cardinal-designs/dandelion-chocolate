@@ -910,7 +910,7 @@
         "show_compare_at_price": false,
         "show_all_products": true,
         "show_collaborator": false,
-        "enable_treatment": false,
+        "enable_treatment": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
