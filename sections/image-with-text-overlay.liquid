@@ -28,7 +28,7 @@
 <div class="row {{ section_width }}">
 	<div class="small-12 columns">
 		<image-with-text-overlay class="image-with-text-overlay {% if section.settings.stack_on_mobile %}stack_on_mobile{% endif %} text-{{ text_alignment }} {{ mobile_height }} {{ desktop_height }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}{% if section.settings.caption_over_banner %} caption-over--mobile{% endif %}" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
-			<div class="image-with-text-overlay--bg">
+			<a href="{{ block.settings.button_link }}" class="image-with-text-overlay--bg">
 				{% if image %}
 					{%- liquid
 						assign small_width = image.src.height | times: '375' | divided_by: image.src.width
@@ -57,14 +57,8 @@
 						render 'responsive-image', image: image, sizes: width, class: class
 					-%}
 				{%- endif -%}
-			</div>
-            {% if section.settings.image_url %}
-              {% for block in section.blocks %}
-                {% if block.settings.button_link != blank %}
-                  <a href="{{ block.settings.button_link }}" class="image__url--redirect"></a>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
+			</a>
+
 			<div class="image-with-text-overlay--content content-{{ content_position }}" >
 				<div class="image-with-text-overlay--content-inner {% if section.settings.show_caption_box %}image-with-text-overlay-caption--box{% endif %} content-width-{{ content_width }}">
 					{% for block in section.blocks %}
