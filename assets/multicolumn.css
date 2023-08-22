@@ -218,7 +218,10 @@
 
   .multicolumn__2 .multicolumn__column {
     padding: 0;
-    width: 100%;
+  }
+
+  .multicolumn__2 .mobile__swiper .multicolumn__column {
+    width: 100%;    
   }
 
   .multicolumn__2 .heading {
