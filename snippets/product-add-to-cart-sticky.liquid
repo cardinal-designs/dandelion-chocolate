@@ -26,7 +26,9 @@
 				{% render 'product-price', product: product, use_variant: true, show_badges: false %}
 			</div>
    {% endcomment %}
-        	<div class="product-add-to-cart-sticky--content">
+        	
+		</div>
+      <div class="product-add-to-cart-sticky--content">
 		{%- unless product.has_only_default_variant -%}
 		<variant-selects  id="variant-selects-{{ section.id }}--sticky" class="no-js-hidden variant-selects--sticky" data-section="{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
 			<div class="variations">
@@ -91,7 +93,6 @@
 	    </div>
 	  {%- endif -%}
 	</div>
-		</div>
 		<span class="plus"></span>
 	</div>
 
