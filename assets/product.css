@@ -893,7 +893,7 @@
     margin-bottom: 5px; }
   .product-add-to-cart-sticky--inner {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     width: 100%;
     padding-right: 0;
