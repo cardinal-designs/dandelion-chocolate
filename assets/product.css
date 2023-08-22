@@ -1727,3 +1727,7 @@ quantity-selector.quantity .plus svg {
 .product-add-to-cart-sticky--inner {
  flex-wrap: wrap; 
 }
+
+.product-add-to-cart-sticky--content {
+  flex: 0 1 100%;
+}
