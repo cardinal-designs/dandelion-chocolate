@@ -198,7 +198,6 @@
   
 }
 
-
 @media only screen and (max-width: 767px) {  
 
   .multicolumn__2 {
@@ -212,7 +211,7 @@
 
   .multicolumn__2 .multicolumn__inner .row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 15px;
     row-gap: 40px;
   }

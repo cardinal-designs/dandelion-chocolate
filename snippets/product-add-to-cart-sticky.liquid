@@ -21,7 +21,9 @@
                         {% endif %}
                       </div>
                     {% endif %}
-			
+			<div id="price-{{ section.id }}--sticky">
+				{% render 'product-price', product: product, use_variant: true, show_badges: false %}
+			</div>
         	<div class="product-add-to-cart-sticky--content">
 		{%- unless product.has_only_default_variant -%}
 		<variant-selects  id="variant-selects-{{ section.id }}--sticky" class="no-js-hidden variant-selects--sticky" data-section="{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
@@ -65,7 +67,7 @@
 							<span class="loading-overlay">
 								{% render 'svg-icons' with 'thb-loading' %}
 							</span>
-          <div id="price-{{ section.id }}--sticky">
+          <div id="price-btn-{{ section.id }}--sticky">
 				{% render 'product-price', product: product, use_variant: true, show_badges: false %}
 			</div>
 						</button>
