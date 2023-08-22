@@ -1754,3 +1754,7 @@ product-add-to-cart-sticky .price {
   letter-spacing: 0.1em;
   text-align: center;
 }
+
+product-add-to-cart-sticky .variations .product-form__input--dropdown select {
+  height: 40px;
+}
