@@ -1731,3 +1731,13 @@ quantity-selector.quantity .plus svg {
 .product-add-to-cart-sticky--content {
   flex: 0 1 100%;
 }
+
+product-add-to-cart-sticky .variations fieldset .form__label {
+  font-family: Saa Series F D;
+  font-size: 12px;
+  letter-spacing: 0.05rem;
+  color: #777779;
+  font-weight: 400;
+  line-height: 14px;
+  margin-bottom: 8px;
+}
