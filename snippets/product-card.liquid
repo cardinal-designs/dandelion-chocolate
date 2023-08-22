@@ -150,7 +150,7 @@
           {% assign is_chocolate_bar = true %}
         {% endif %}
       {% if product_info.origin and product_info.country %} 
-        {% if product_card_product.product_card_product and product.type != 'Chocolate Bar' %}        
+        {% if product_card_product and product_card_product.type != 'Chocolate Bar' %}        
           <div class="card__type">{{ product_card_product.type }}
             {% unless is_chocolate_bar %}
               {% if product_info.percentage %}
