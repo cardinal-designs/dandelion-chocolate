@@ -1606,7 +1606,10 @@ quantity-selector.quantity .plus svg {
 }
 
 .product-add-to-cart-sticky--content .product-form {
-  margin-left: -96px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .product-add-to-cart-sticky--info .price {
