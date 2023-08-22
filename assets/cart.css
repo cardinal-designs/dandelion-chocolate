@@ -655,3 +655,7 @@ body .zapietModal.moreInformation h2 {
 .cart-drawer--recommendations--products .price {
   color: #53595c;  
 }
+
+.cart-drawer--recommendations .product-cart-item .text-button {
+  font-family: Saa Series F D;
+}
