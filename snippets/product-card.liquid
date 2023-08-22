@@ -150,8 +150,8 @@
           {% assign is_chocolate_bar = true %}
         {% endif %}
       {% if product_info.origin and product_info.country %} 
-        {% if product.type and product.type != 'Chocolate Bar' %}        
-        <div class="card__type">{{product.type}}
+        {% if product_card_product.product_card_product and product.type != 'Chocolate Bar' %}        
+        <div class="card__type">{{product_card_product.type}}
         {% unless is_chocolate_bar %}
           {% if product_info.percentage %}
           - {{product_info.percentage}}%
@@ -170,7 +170,7 @@
         {% endif %}   
 
       {% else %}
-        <h3 class="card__name h4">{{ product.title }}</h3>      
+        <h3 class="card__name h4">{{ product_card_product.title }}</h3>      
 
         {% comment %}
         Experience-specific rendering
