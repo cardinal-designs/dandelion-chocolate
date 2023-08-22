@@ -11,6 +11,9 @@
               <p class="new-percentage">{{ product.metafields.info.percentage }}%</p>
             {%- endif -%}
 			<div class="product-add-to-cart-sticky--title">{{ product.title }}</div>
+          {%- if product.metafields.info.country != blank -%}
+      <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
+    {% endif %}  
 			<div id="price-{{ section.id }}--sticky">
 				{% render 'product-price', product: product, use_variant: true, show_badges: false %}
 			</div>
