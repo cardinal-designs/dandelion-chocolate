@@ -133,11 +133,11 @@
 
     <div class="card__brand">{{ product_card_product.vendor }}</div>
     
-    {%- if product_card_product.metafields.info.percentage != blank and section.settings.enable_treatment == false -%}
+    {%- if product_card_product.metafields.info.percentage != blank and enable_treatment == false -%}
       <p class="new-percentage">{{ product_card_product.metafields.info.percentage }}%</p>
     {%- endif -%}
 
-    {%- if section.settings.enable_treatment -%}
+    {%- if enable_treatment -%}
       {% assign product_info = product_card_product.metafields.info %}        
       {% assign is_chocolate_bar = false %}
       {% if product_card_product.type and product_card_product.type == 'Chocolate Bar' %}
