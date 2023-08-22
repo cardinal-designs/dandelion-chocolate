@@ -943,6 +943,13 @@
   text-transform: capitalize;
 }
 
+.product-add-to-cart-sticky--inner .product__country {
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.15em;
+}
+
 
 .star-rating {
   --star-percent: calc(var(--star-rating) / 5 * 100%);
