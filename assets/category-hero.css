@@ -92,7 +92,7 @@
 }
 
 .category__item-link:hover .category_title {
-  color: #A1552E;
+  color: #A1552E !important;
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
