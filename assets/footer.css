@@ -410,6 +410,7 @@
   font-weight: 500;
   letter-spacing: normal;
   font-size: 40px;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 1439px) {
