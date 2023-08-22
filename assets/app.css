@@ -5785,7 +5785,7 @@ input[type="radio"],
 
 /***** Cart Drawer *****/
 
-.cart-drawer .product-title-uppercase-true .product-cart-item .cart-product-link {
+.cart-drawer .product-cart-item .cart-product-link {
   text-transform: capitalize;
   color: #333333;
   font-family: 'Garamond Premiere Pro';
