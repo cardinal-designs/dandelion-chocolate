@@ -183,6 +183,7 @@ if(accordionContainer){
     }
   });
 }
+
 let slideUp = (target, duration=400) => {
   target.style.transitionProperty = 'height, margin, padding';
   target.style.transitionDuration = duration + 'ms';
