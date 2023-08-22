@@ -2,6 +2,12 @@
   position: relative;  
 }
 
+.image__url--redirect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 .image__video--banner .btn {
   border: none;
   min-width: 390px !important;
