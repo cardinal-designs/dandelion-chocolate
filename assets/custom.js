@@ -23,7 +23,7 @@ $(window).on("load resize orientationchange", function(){
       pageDots: false,
       adaptiveHeight: false,
       contain: true,
-      cellAlign: 'center',
+      cellAlign: 'left',
       freeScroll: false
     });
   }
