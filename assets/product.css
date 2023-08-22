@@ -869,10 +869,10 @@
   bottom: 15px;
   right: 15px;
   width: calc(100% - 30px);
-  max-width: 420px;
+  max-width: 532px;
   z-index: 31;
   background: var(--bg-body);
-  padding: 18px;
+  padding: 23px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   transform: translateX(calc(100% + 50px)); }
   .product-add-to-cart-sticky.sticky--visible {
