@@ -153,6 +153,9 @@
         {% if product_card_product and product_card_product.type != 'Chocolate Bar' %}        
           <div class="card__type">{{ product_card_product.type }}
             {% unless is_chocolate_bar %}
+              {% if product_info.percentage %}
+              - {{ product_info.percentage }}%
+              {% endif %}
             {% endunless %}
           </div>       
         {% endif %}
