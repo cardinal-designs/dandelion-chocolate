@@ -152,11 +152,11 @@
     display: none;  
   }
 
-  .stop__scrolling .scrolling-text--inner.direction-left > div.hide-desktop {
+  .mobile__stop-scrolling .scrolling-text--inner.direction-left > div.hide-desktop {
     animation: none;    
   }
 
-  .stop__scrolling .scrolling-text--inner {
+  .mobile__stop-scrolling .scrolling-text--inner {
     overflow: auto; 
   }
   
