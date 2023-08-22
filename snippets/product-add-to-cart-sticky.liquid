@@ -59,9 +59,7 @@
 							<span class="single-add-to-cart-button--text">
 								{%- if product.selected_or_first_available_variant.available -%}
 				          {{ 'products.product.add_to_cart' | t }} 
-                            <div id="price-btn-{{ section.id }}--sticky">
-                                {% render 'product-price', product: product, use_variant: true, show_badges: false %}
-                            </div>
+                      
 				        {%- else -%}
 				          {{ 'products.product.sold_out' | t }}
 				        {%- endif -%}
@@ -69,6 +67,9 @@
 							<span class="loading-overlay">
 								{% render 'svg-icons' with 'thb-loading' %}
 							</span>
+                            <div id="price-btn-{{ section.id }}--sticky">
+                                {% render 'product-price', product: product, use_variant: true, show_badges: false %}
+                            </div>
 						</button>
 				  </div>
 				</div>
