@@ -5783,6 +5783,14 @@ input[type="radio"],
   margin-bottom: 0px;
 }
 
-.pn-total-line-item {
+/***** Cart Drawer *****/
+
+.cart-drawer .product-title-uppercase-true .product-cart-item .cart-product-link {
+  text-transform: capitalize;
+  color: #333333;
+  font-family: 'Garamond Premiere Pro';
+}
+
+.cart-drawer .pn-total-line-item {
   color: #53595C;  
 }
