@@ -218,6 +218,7 @@
 
   .multicolumn__2 .multicolumn__column {
     padding: 0;
+    width: 100%;
   }
 
   .multicolumn__2 .heading {
