@@ -74,7 +74,9 @@
     </div>
     {% if section.settings.image_url %}
       {% for block in section.blocks %}
-        <a href="{{ block.settings.button_link }}" class="image__url--redirect"></a>
+        {% if block.settings.button_link != blank %}
+          <a href="{{ block.settings.button_link }}" class="image__url--redirect"></a>
+        {% endif %}
       {% endfor %}
     {% endif %}
     <div class="image-with-text-overlay--content content-{{ content_position }}">
