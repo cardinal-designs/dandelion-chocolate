@@ -267,8 +267,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/chocolate-bars_3293c165-a927-418a-a1ba-e10ef5a741d8.jpg",
             "hover_image": "shopify:\/\/shop_images\/Confections.jpg",
-            "content_overlay_opacity": 100,
-            "content_bg": "#f8cf47",
+            "show_overlay": true,
+            "content_overlay_opacity": 31,
+            "content_bg": "#000000",
             "image_full_width": false,
             "retina": false,
             "title": "CHOCOLATE BARS",
@@ -285,6 +286,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/gifts_0a1577ed-1347-4982-b138-44a728edfb7b.jpg",
             "hover_image": "shopify:\/\/shop_images\/hot-chocolate_7c495e0c-e3a2-4cf6-a4bd-31c8e9e6c558.jpg",
+            "show_overlay": true,
             "content_overlay_opacity": 30,
             "content_bg": "#000000",
             "image_full_width": false,
@@ -303,6 +305,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/hot-chocolate_7c495e0c-e3a2-4cf6-a4bd-31c8e9e6c558.jpg",
             "hover_image": "shopify:\/\/shop_images\/chocolate-bars_3293c165-a927-418a-a1ba-e10ef5a741d8.jpg",
+            "show_overlay": true,
             "content_overlay_opacity": 30,
             "content_bg": "#000000",
             "image_full_width": false,
@@ -321,6 +324,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Confections.jpg",
             "hover_image": "shopify:\/\/shop_images\/hot-chocolate_7c495e0c-e3a2-4cf6-a4bd-31c8e9e6c558.jpg",
+            "show_overlay": true,
             "content_overlay_opacity": 30,
             "content_bg": "#000000",
             "image_full_width": false,
