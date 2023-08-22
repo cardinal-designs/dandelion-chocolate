@@ -1723,3 +1723,7 @@ quantity-selector.quantity .plus svg {
   }
   
 }
+
+.product-add-to-cart-sticky--inner {
+ flex-wrap: wrap; 
+}
