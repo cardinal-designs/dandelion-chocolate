@@ -106,8 +106,8 @@
   padding: 0 15px;
 }
 
-.category__hero--wrapper .content__right.flickity-enabled {
-  margin: 0 -30px;
+.category__hero--wrapper .content__right.flickity-enabled .flickity-viewport {
+  margin: 0 -15px;  
 }
 
 @media screen and (min-width: 1440px) {
