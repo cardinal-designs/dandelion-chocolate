@@ -2447,11 +2447,12 @@ table.no-borders tfoot td:first-child {
 .side-panel-header h4 {
   margin: 0;
   line-height: 1;
-  font-size: 0.9375rem;
-  letter-spacing: 0.1em;
+  font-size: 20px;
+  letter-spacing: .15em;
   font-weight: 600;
-  color: var(--color-body);
+  color: #53595c;
   text-transform: uppercase;
+  font-family: Saa Series F D;
 }
 
 .side-panel-header h4 > span {
