@@ -78,6 +78,7 @@
 							{%- when 'button' -%}
 								{% if block.settings.button_text != blank %}
 									<a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+                  					<a class="btn {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
 								{% endif %}
 							{% when 'space' %}
 		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
@@ -525,6 +526,10 @@
           "label": "Mobile Button Style",
           "options": [
             {
+              "value": "btn",
+              "label": "Default Button"
+            },
+            {
               "value": "btn--gray",
               "label": "Gray Button"
             },
@@ -541,7 +546,7 @@
               "label": "Gray Outline Button"
             }
           ],
-          "default": "btn--gold"
+          "default": "btn"
         }
       ]
     },
