@@ -14,6 +14,13 @@
           {%- if product.metafields.info.country != blank -%}
       <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
     {% endif %}  
+          {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
+                      <div class="product__detail">
+                        {% if product.metafields.info.harvest_year %}
+                          <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
+                        {% endif %}
+                      </div>
+                    {% endif %}
 			<div id="price-{{ section.id }}--sticky">
 				{% render 'product-price', product: product, use_variant: true, show_badges: false %}
 			</div>
