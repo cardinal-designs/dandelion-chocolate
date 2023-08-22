@@ -157,7 +157,15 @@
 
 @media screen and (max-width: 767px) {
   
-  .scrolling-text--inner.direction-left>div {
+  .scrolling-text--inner.direction-left > div {
+    animation: marquee-left 90s linear infinite;
+  }
+
+  .stop__scrolling .hide-desktop {
+    animation: none;    
+  }
+
+  .scrolling-text--inner.direction-left > div {
     animation: marquee-left 90s linear infinite;
   }
 

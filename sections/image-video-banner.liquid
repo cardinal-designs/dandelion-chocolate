@@ -97,7 +97,9 @@
         -%}
       {%- endif -%}
     </div>
-
+    {% for block in section.blocks %}
+      <a href="{{ block.settings.button_link }}"></a>
+    {% endfor %}
     <div class="image-with-text-overlay--content content-{{ content_position }}" style="background: rgba(51,51,51,{{ content_overlay_opacity | divided_by: 100.0 }})">
       <div class="image-with-text-overlay--content-inner">
         {% for block in section.blocks %}
@@ -119,7 +121,7 @@
             {% when 'space' %}
             <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
           {%- endcase -%}
-          <a href="{{ block.settings.button_link }}"></a>
+          
         {% endfor %}
       </div>
     </div>
