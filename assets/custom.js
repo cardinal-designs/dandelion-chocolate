@@ -10,7 +10,8 @@ var flkty = new Flickity( elem, {
   prevNextButtons: false,
   pageDots: false,
   adaptiveHeight: false,
-  contain: true
+  contain: true,
+  wrapAround: true
 });
 
 $(window).on("load resize orientationchange", function(){
@@ -21,7 +22,8 @@ $(window).on("load resize orientationchange", function(){
       prevNextButtons: false,
       pageDots: false,
       adaptiveHeight: false,
-      contain: true
+      contain: true,
+        wrapAround: true
     });
   }
 });  
