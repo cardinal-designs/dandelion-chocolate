@@ -595,8 +595,8 @@ input[type=submit]:hover {
 
 .btn--white:hover {
   color: var(--white);
-  background-color: var(--charcoal-black);
-  border-color: var(--charcoal-black);
+  background-color: #D3A944;
+  border-color:  #D3A944;
 }
 
 /*================ Button White Outline ================*/ 
