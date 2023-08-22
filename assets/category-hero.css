@@ -98,6 +98,10 @@
   text-decoration-thickness: 1px;
 }
 
+.category_image img {
+  width: 100%;
+}
+
 @media screen and (min-width: 1440px) {
 
   .category__hero--wrapper .btn {
