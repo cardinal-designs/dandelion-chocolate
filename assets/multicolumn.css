@@ -216,8 +216,8 @@
     row-gap: 40px;
   }
 
-  .multicolumn__2 .mobile__swiper .multicolumn__inner .row {
-    grid-template-columns: 1fr 1fr;   
+  .multicolumn__2 .multicolumn__inner .row.mobile__swiper  {
+    grid-template-columns: 1fr;   
   }
 
   .multicolumn__2 .multicolumn__column {
