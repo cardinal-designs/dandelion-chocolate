@@ -768,38 +768,11 @@
             "text": "",
             "link": ""
           }
-        },
-        "d4f26dc8-255c-4cf7-80ff-0663f4c19962": {
-          "type": "category",
-          "settings": {
-            "title": "Heading",
-            "text": "<p>2½ Hours<\/p>",
-            "link": ""
-          }
-        },
-        "84756629-fda4-45a2-b565-4e8467554b11": {
-          "type": "category",
-          "settings": {
-            "title": "Heading",
-            "text": "<p>2½ Hours<\/p>",
-            "link": ""
-          }
-        },
-        "a48e1bca-75f7-40c5-8261-f1a64855ca5e": {
-          "type": "category",
-          "settings": {
-            "title": "Heading",
-            "text": "<p>2½ Hours<\/p>",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "template--15975893827724__0c97f2db-97cf-47e4-94e0-f1e6b3161d41-1689671717ced8c146-0",
-        "template--15975893827724__0c97f2db-97cf-47e4-94e0-f1e6b3161d41-1689671717ced8c146-1",
-        "d4f26dc8-255c-4cf7-80ff-0663f4c19962",
-        "84756629-fda4-45a2-b565-4e8467554b11",
-        "a48e1bca-75f7-40c5-8261-f1a64855ca5e"
+        "template--15975893827724__0c97f2db-97cf-47e4-94e0-f1e6b3161d41-1689671717ced8c146-1"
       ],
       "settings": {
         "color_bg": "#dddddf",
