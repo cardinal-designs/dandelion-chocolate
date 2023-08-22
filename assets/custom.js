@@ -6,7 +6,7 @@ var flkty = new Flickity( elem, {
 });
 
 $(window).on("load resize orientationchange", function(){
-  if($(window).width < 767 )
+  if($(window).width < 767 ) {
     var elem = document.querySelector('.mobile__swiper');
     var flkty = new Flickity( elem, {
       prevNextButtons: false,

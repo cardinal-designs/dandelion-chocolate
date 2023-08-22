@@ -1588,7 +1588,7 @@ quantity-selector.quantity .plus svg {
 }
 
 .product-add-to-cart-sticky--info {
-  flex: 0 0 calc(100% - 120px);  
+  flex: 0 0 calc(100% - 96px);  
 }
 
 .product-title-uppercase-true .product-add-to-cart-sticky--title {
