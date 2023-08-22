@@ -462,7 +462,7 @@
           "settings": {
             "button_text": "SHOP single-origin BARS",
             "button_link": "shopify:\/\/collections\/bars",
-            "button_style": "btn--gray",
+            "button_style": "btn--white",
             "mobile_button_style": "btn--white"
           }
         },
