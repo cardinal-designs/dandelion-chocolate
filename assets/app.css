@@ -5798,3 +5798,11 @@ input[type="radio"],
 .cart-drawer .pn-total-line-item {
   color: #53595C;  
 }
+
+.cart-drawer--recommendations--products .price {
+  color: #53595c;  
+}
+
+.cart-drawer--recommendations .product-cart-item .text-button {
+  font-family: Saa Series F D;
+}

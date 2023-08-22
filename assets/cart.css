@@ -651,11 +651,3 @@ body .zapietModal.moreInformation h2 {
 .checkout-button:before {
   display: none;
 }
-
-.cart-drawer--recommendations--products .price {
-  color: #53595c;  
-}
-
-.cart-drawer--recommendations .product-cart-item .text-button {
-  font-family: Saa Series F D;
-}
