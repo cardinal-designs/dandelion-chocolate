@@ -24,7 +24,7 @@ $(window).on("load resize orientationchange", function(){
       adaptiveHeight: false,
       contain: true,
       cellAlign: 'center',
-      groupCells: false
+      freeScroll: false
     });
   }
 });  
