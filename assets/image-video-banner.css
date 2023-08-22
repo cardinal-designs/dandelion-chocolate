@@ -18,9 +18,9 @@
   height: 100%;
 }
 
-.image__video--banner .image-with-text-overlay--content-inner .btn + .btn {
+/* .image__video--banner .image-with-text-overlay--content-inner .btn + .btn {
   margin: 15px 0 0;
-}
+} */
 
 @media only screen and (min-width:768px) {
 
