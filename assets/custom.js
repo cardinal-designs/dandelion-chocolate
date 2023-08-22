@@ -10,7 +10,6 @@ var flkty = new Flickity( elem, {
   prevNextButtons: false,
   pageDots: false,
   adaptiveHeight: false,
-  cellAlign: "left",
   contain: true
 });
 
@@ -22,9 +21,7 @@ $(window).on("load resize orientationchange", function(){
       prevNextButtons: false,
       pageDots: false,
       adaptiveHeight: false,
-      contain: true,
-      cellAlign: 'left',
-      freeScroll: false
+      contain: true
     });
   }
 });  
