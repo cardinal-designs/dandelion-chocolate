@@ -804,7 +804,7 @@
       "settings": {
         "color_bg": "#dddddf",
         "color_text": "#333333",
-        "enable_carousel": false,
+        "enable_carousel": true,
         "subheading": "NOTES FROM THE FACTORY",
         "subheading_mobile": "FOLLOW ALONG WITH US",
         "heading": "Follow along with what  we’re working on and what’s happening at the factory.",
