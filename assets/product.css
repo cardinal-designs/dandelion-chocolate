@@ -926,7 +926,7 @@
       transform: rotateZ(90deg); }
   .product-add-to-cart-sticky--content {
     overflow: hidden;
-    padding-top: 18px; }
+    padding-top: 11px; }
     .product-add-to-cart-sticky--content.active {
       display: block; }
   .product-add-to-cart-sticky .product-form .add_to_cart_holder {
