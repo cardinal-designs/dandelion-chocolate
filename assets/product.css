@@ -941,6 +941,7 @@
   font-family: GaramondItalic !important;
   text-transform: capitalize;
   font-style: italic;
+  font-size: 16px;
 }
 
 .product-add-to-cart-sticky--inner .product__country {
