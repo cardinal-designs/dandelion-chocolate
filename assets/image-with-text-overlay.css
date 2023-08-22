@@ -8,6 +8,12 @@
   padding: 45px 0;
 }
 
+.image__url--redirect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 .image-with-text-overlay--content-inner .breadcrumbs {
   padding: 0;
   margin-bottom: 60px;
