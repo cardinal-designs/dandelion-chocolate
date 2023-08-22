@@ -210,9 +210,9 @@
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Bottom .btn:hover {
-  border-color: #E3BE66;
-  background-color: #E3BE66;
-  color: var(--white);
+  border-color: #DCA82D;
+  background-color: #DCA82D;
+  color: #333333;
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Bottom .sub__menu-shipping--text {
