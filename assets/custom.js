@@ -7,7 +7,7 @@ var flkty = new Flickity( elem, {
 
 var elem = document.querySelector('.mobile__swiper');
 var flkty = new Flickity( elem, {
-  prevNextButtons: true,
+  prevNextButtons: false,
   pageDots: false,
   adaptiveHeight: false
 });
