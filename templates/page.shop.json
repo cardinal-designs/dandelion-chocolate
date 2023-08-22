@@ -31,7 +31,8 @@
           "settings": {
             "button_text": "Learn More",
             "button_link": "https:\/\/www.dandelionchocolate.com\/products\/summer-treat-tin",
-            "button_style": "btn--gold"
+            "button_style": "btn--gold",
+            "mobile_button_style": "btn--gold"
           }
         }
       },
@@ -43,6 +44,7 @@
       ],
       "settings": {
         "section_width": "full-width-row-full",
+        "image_url": false,
         "image": "shopify:\/\/shop_images\/STT_Banner_Image_9059ded3-d1fe-422e-8126-5796283049de.jpg",
         "mobile_image": "shopify:\/\/shop_images\/Summer_Treats_Tin_-_Kitchen_-_Dandelion_Chocolate_2023.jpg",
         "desktop_height": "desktop-height-500",
