@@ -267,8 +267,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/chocolate-bars_3293c165-a927-418a-a1ba-e10ef5a741d8.jpg",
             "hover_image": "shopify:\/\/shop_images\/Confections.jpg",
-            "content_overlay_opacity": 30,
-            "content_bg": "#000000",
+            "content_overlay_opacity": 100,
+            "content_bg": "#f8cf47",
             "image_full_width": false,
             "retina": false,
             "title": "CHOCOLATE BARS",
