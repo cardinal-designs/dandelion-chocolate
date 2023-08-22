@@ -1,6 +1,5 @@
 {{ 'cart.css' | asset_url | stylesheet_tag }}
 
-
 {% include 'cart-pickup' %}
 {% assign deliveryMinimum = section.settings.delivery_cart_minimum | plus: 0 | times: 100 %}
 {%- assign show_prop65_warning = false %}
