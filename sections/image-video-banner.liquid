@@ -118,8 +118,8 @@
               <div class="description body-1 mb-45" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {% if block.settings.button_text != blank %}
-                <a class="mt-15 btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
-                <a class="mt-15 btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
+                <!-- <a class="mt-15 btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+                <a class="mt-15 btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>         -->
               {% endif %}
             
             {% when 'space' %}
