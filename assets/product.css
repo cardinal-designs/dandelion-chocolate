@@ -1605,6 +1605,13 @@ quantity-selector.quantity .plus svg {
   font-family: Saa Series F D;
 }
 
+.product-add-to-cart-sticky--content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .product-add-to-cart-sticky--info .price {
   font-size: 13px;
   color: #777779;
