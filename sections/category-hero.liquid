@@ -33,7 +33,7 @@
         </a>
       {% endif %}
     </div>
-    <div class="content__right {% if section.settings.enable_carousel %}category__slider {% endif %}">
+    <div class="content__right {% if section.settings.enable_carousel and section.blocks.size > 2 %}category__slider {% endif %}">
       {% for block in section.blocks %}
         <div class="category_item">
           {% if block.settings.link != blank %}
