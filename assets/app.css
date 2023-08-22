@@ -5782,3 +5782,7 @@ input[type="radio"],
   font-weight: 600;
   margin-bottom: 0px;
 }
+
+.pn-total-line-item {
+  color: #53595C;  
+}
