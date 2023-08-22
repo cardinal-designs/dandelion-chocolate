@@ -59,7 +59,7 @@
   content: '';
   width: 25px;
   display: block;
-  height: 17px;
+  height: 1px;
 }
 
 .carousel__quotes--wrapper .flickity-viewport {
@@ -80,7 +80,7 @@
 }
 
 .carousel__quotes--wrapper .flickity-prev-next-button.next:before {
-  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/quote-next.svg?v=1692658452);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='18' viewBox='0 0 25 18' fill='none'%3E%3Cpath d='M1 7.51183H6.55651e-07V9.51183L1 9.51183L1 7.51183ZM23.5 8.51183L24.1845 9.24083C24.3858 9.05181 24.5 8.78796 24.5 8.51183C24.5 8.23569 24.3858 7.97185 24.1845 7.78283L23.5 8.51183ZM16.1845 0.271C15.7819 -0.107046 15.149 -0.0871295 14.771 0.315486C14.3929 0.718101 14.4129 1.35095 14.8155 1.729L16.1845 0.271ZM14.8155 15.2947C14.4129 15.6727 14.3929 16.3056 14.771 16.7082C15.149 17.1108 15.7819 17.1307 16.1845 16.7527L14.8155 15.2947ZM1 9.51183H23.5V7.51183L1 7.51183L1 9.51183ZM14.8155 1.729L22.8155 9.24083L24.1845 7.78283L16.1845 0.271L14.8155 1.729ZM22.8155 7.78283L14.8155 15.2947L16.1845 16.7527L24.1845 9.24083L22.8155 7.78283Z' fill='%23333333'/%3E%3C/svg%3E");
 }
 
 .carousel__align--center .carousel__item {
