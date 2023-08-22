@@ -24,7 +24,7 @@
             "button_text": "BROWSE STORE",
             "button_link": "shopify:\/\/pages\/shop-1",
             "button_style": "btn--gold",
-            "mobile_button_style": "btn--outline"
+            "mobile_button_style": "btn--gray"
           }
         }
       },
