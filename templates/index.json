@@ -109,7 +109,7 @@
         "804bbead-7435-4967-a000-8c4fcb5b55a5"
       ],
       "settings": {
-        "stop_scroll": true,
+        "stop_scroll": false,
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
