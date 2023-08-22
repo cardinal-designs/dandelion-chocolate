@@ -483,6 +483,7 @@
       ],
       "settings": {
         "section_width": "full-width-row-full",
+        "image_url": true,
         "image": "shopify:\/\/shop_images\/EWP2016_DominicanRepublic-2118_3_1.png",
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
@@ -690,6 +691,7 @@
       ],
       "settings": {
         "section_width": "full-width-row-full",
+        "image_url": false,
         "image": "shopify:\/\/shop_images\/brown_image_test_2.png",
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
