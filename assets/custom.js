@@ -9,7 +9,8 @@ var elem = document.querySelector('.category__slider');
 var flkty = new Flickity( elem, {
   prevNextButtons: false,
   pageDots: false,
-  adaptiveHeight: false
+  adaptiveHeight: false,
+  cellAlign": left
 });
 
 $(window).on("load resize orientationchange", function(){
