@@ -5037,13 +5037,14 @@ select.resize-select {
 }
 
 .cart-drawer--recommendations--heading {
-  letter-spacing: 0.02em;
   position: relative;
-  font-size: 0.8125rem;
+  font-size: 14px;
   line-height: 1.3;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  font-family: Saa Series F D;
+  letter-spacing: .05em;
+  color: #53595C;
 }
 
 @media only screen and (min-width:1068px) {
