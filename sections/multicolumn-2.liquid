@@ -63,16 +63,16 @@
 							{% endif %}
 						</div>
                         {%- style -%}
-                          #{{ section.id }} #image_{{ block.id }} .multicolumn__image:before {
+                          #image_{{ block.id }} .multicolumn__image:before {
                             background: {{ block.settings.content_bg }};
                             opacity: {{ block.settings.content_overlay_opacity | divided_by: 100.0 }};
                           }
                       
-                          #{{ section.id }} #image_{{ block.id }} .multicolumn .heading {
+                          #image_{{ block.id }} .multicolumn .heading {
                             color: {{ block.settings.heading_color }};
                           }
                       
-                          #{{ section.id }} #image_{{ block.id }} .multicolumn .multicolumn__column:hover .heading {
+                          #image_{{ block.id }} .multicolumn .multicolumn__column:hover .heading {
                             color: {{ block.settings.heading_hover_color }};
                             text-decoration: underline;
                             text-underline-offset: 2px;
