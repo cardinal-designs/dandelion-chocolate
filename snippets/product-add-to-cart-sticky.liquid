@@ -45,7 +45,7 @@
 				    <button type="submit" name="add" id="AddToCartSticky" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
 							<span class="single-add-to-cart-button--text">
 								{%- if product.selected_or_first_available_variant.available -%}
-				          {{ 'products.product.add_to_cart' | t }}
+				          {{ 'products.product.add_to_cart' | t }} {% render 'product-price', product: product, use_variant: true, show_badges: false %}
 				        {%- else -%}
 				          {{ 'products.product.sold_out' | t }}
 				        {%- endif -%}
