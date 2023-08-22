@@ -102,11 +102,11 @@
   width: 100%;
 }
 
-.category__hero--wrapper .category_item {
+.category__hero--wrapper .content__right.flickity-enabled .category_item {
   padding: 0 15px;
 }
 
-.category__hero--wrapper .content__right {
+.category__hero--wrapper .content__right.flickity-enabled {
   margin: 0 -30px;
 }
 
