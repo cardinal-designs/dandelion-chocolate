@@ -5,6 +5,13 @@ var flkty = new Flickity( elem, {
   adaptiveHeight: false
 });
 
+var elem = document.querySelector('.mobile__swiper');
+var flkty = new Flickity( elem, {
+  prevNextButtons: true,
+  pageDots: false,
+  adaptiveHeight: false
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", function () {
     if (document.querySelector(".checkoutMethodContainer")?.classList.contains("shipping")) {

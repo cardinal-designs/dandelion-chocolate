@@ -19,7 +19,7 @@
 				<h2 class="section_heading caption text-center mb-45" style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h2>
 			{%- endif -%}
 			<div class="multicolumn__inner">
-				<div class="row align-stretch no-padding">
+				<div class="row align-stretch no-padding {% if mobile_swipe %}mobile__swiper{% endif %}">
 					{%- for block in section.blocks -%}
 						<div id="image_{{ block.id }}" class="multicolumn__column small-12 medium-3 columns">
                           <a href="{{ block.settings.link }}">
