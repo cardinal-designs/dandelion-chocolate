@@ -172,6 +172,11 @@
   text-transform: capitalize;
 }
 
+
+.header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Left .Sub_Menu-Heading.uppercase {
+  text-transform: uppercase;
+}
+
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Columns {
   padding: 0 0 0 36px;
   width: 69.25%;
