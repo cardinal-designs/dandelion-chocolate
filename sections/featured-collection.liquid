@@ -68,14 +68,14 @@
                 {%- for product in featured_collection.products limit: columns_desktop -%}
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
                   <div class="single__columns">
-                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, enable_treatment: section.settings.enable_treatment, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_collabrator: section.settings.show_collabrator, show_compare_price: section.settings.show_compare_at_price, enable_treatment: section.settings.enable_treatment, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
                   </div>
                 {%- endfor -%}
               {%- else -%}
                 {%- for product in featured_collection.products limit: 50 -%}
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
                   <div class="single__columns">
-                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, enable_treatment: section.settings.enable_treatment, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_collabrator: section.settings.show_collabrator, show_compare_price: section.settings.show_compare_at_price, enable_treatment: section.settings.enable_treatment, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
                   </div>
                 {%- endfor -%}                
               {%- endif -%}
@@ -87,7 +87,7 @@
             {%- else -%}
               {%- for i in (1..columns_desktop) -%}
                 <div class="single__columns">
-                  {% render 'product-card', hide_cta_mobile:hide_cta_mobile, enable_treatment: section.settings.enable_treatment, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc %}
+                  {% render 'product-card', hide_cta_mobile:hide_cta_mobile, enable_treatment: section.settings.enable_treatment, show_collabrator: section.settings.show_collabrator, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc %}
                 </div>
               {%- endfor -%}
               {% if section.settings.quote_enable == true %}
@@ -104,21 +104,21 @@
                 {%- for product in featured_collection.products limit: product_limit -%}
                   <div class="carousel__slide">
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
-                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_collabrator: section.settings.show_collabrator, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
                   </div>
                 {%- endfor -%}
               {%- else -%}
                 {%- for product in featured_collection.products limit: 50 -%}
                   <div class="carousel__slide">
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
-                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', enable_treatment: section.settings.enable_treatment, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_collabrator: section.settings.show_collabrator, enable_treatment: section.settings.enable_treatment, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
                   </div>
                 {%- endfor -%}      
               {%- endif -%}
             {%- else -%}
               {%- for i in (1..product_limit) -%}
                 <div class="carousel__slide">
-                  {% render 'product-card', hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, enable_treatment: section.settings.enable_treatment, show_description: section.settings.show_short_product_desc %}
+                  {% render 'product-card', hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, show_collabrator: section.settings.show_collabrator, enable_treatment: section.settings.enable_treatment, show_description: section.settings.show_short_product_desc %}
                 </div>
               {%- endfor -%}
             {%- endif -%}
@@ -150,14 +150,14 @@
                 {%- for product in featured_collection.products limit: columns_desktop -%}
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
                   <div class="single__columns">
-                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                    {% render 'product-card', hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', enable_treatment: section.settings.enable_treatment, show_collabrator: section.settings.show_collabrator, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
                   </div>
                 {%- endfor -%}
               {%- else -%}
                 {%- for product in featured_collection.products limit: 50 -%}
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
                   <div class="single__columns">
-                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', enable_treatment: section.settings.enable_treatment, show_collabrator: section.settings.show_collabrator, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
                   </div>
                 {%- endfor -%}                
               {%- endif -%}
@@ -169,7 +169,7 @@
             {%- else -%}
               {%- for i in (1..columns_desktop) -%}
                 <div class="single__columns">
-                  {% render 'product-card',hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc %}
+                  {% render 'product-card',hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, enable_treatment: section.settings.enable_treatment, show_collabrator: section.settings.show_collabrator, show_description: section.settings.show_short_product_desc %}
                 </div>
               {%- endfor -%}
               {% if section.settings.quote_enable == true %}
@@ -186,21 +186,21 @@
                 {%- for product in featured_collection.products limit: product_limit -%}
                   <div class="carousel__slide">
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
-                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', enable_treatment: section.settings.enable_treatment, show_compare_price: section.settings.show_compare_at_price, show_collabrator: section.settings.show_collabrator, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
                   </div>
                 {%- endfor -%}
               {%- else -%}
                 {%- for product in featured_collection.products limit: 50 -%}
                   <div class="carousel__slide">
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
-                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
+                    {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', enable_treatment: section.settings.enable_treatment, show_compare_price: section.settings.show_compare_at_price, show_collabrator: section.settings.show_collabrator, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
                   </div>
                 {%- endfor -%}      
               {%- endif -%}
             {%- else -%}
               {%- for i in (1..product_limit) -%}
                 <div class="carousel__slide">
-                  {% render 'product-card',hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc %}
+                  {% render 'product-card',hide_cta_mobile:hide_cta_mobile, show_compare_price: section.settings.show_compare_at_price, enable_treatment: section.settings.enable_treatment, show_collabrator: section.settings.show_collabrator, show_description: section.settings.show_short_product_desc %}
                 </div>
               {%- endfor -%}
             {%- endif -%}
