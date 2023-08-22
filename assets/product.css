@@ -936,10 +936,9 @@
   border: none;
   padding: 0;
   color: #777779;
-  font-family: Garamond Premiere Pro;
   margin: 0;
   letter-spacing: normal;
-  font-style: italic;
+  font-family: GaramondItalic !important;
   text-transform: capitalize;
 }
 
