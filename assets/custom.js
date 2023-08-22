@@ -5,12 +5,18 @@ var flkty = new Flickity( elem, {
   adaptiveHeight: false
 });
 
-var elem = document.querySelector('.mobile__swiper');
-var flkty = new Flickity( elem, {
-  prevNextButtons: false,
-  pageDots: false,
-  adaptiveHeight: false
-});
+$(window).on("load resize orientationchange", function(){
+  if($(window).width < 767 )
+    var elem = document.querySelector('.mobile__swiper');
+    var flkty = new Flickity( elem, {
+      prevNextButtons: false,
+      pageDots: false,
+      adaptiveHeight: false
+    });
+  
+  }
+
+});  
 
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", function () {
