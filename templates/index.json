@@ -462,7 +462,8 @@
           "settings": {
             "button_text": "SHOP single-origin BARS",
             "button_link": "shopify:\/\/collections\/bars",
-            "button_style": "btn--white"
+            "button_style": "btn--white",
+            "mobile_button_style": "btn--gold"
           }
         },
         "85661fae-713c-443f-9dd9-4d51cc6e5eaa": {
@@ -470,7 +471,8 @@
           "settings": {
             "button_text": "OUR STORY",
             "button_link": "shopify:\/\/pages\/aboutus",
-            "button_style": "btn--white-outline"
+            "button_style": "btn--white-outline",
+            "mobile_button_style": "btn--light-gold"
           }
         }
       },
@@ -671,7 +673,8 @@
           "settings": {
             "button_text": "classes & events",
             "button_link": "https:\/\/www.dandelionchocolate.com\/pages\/experiences",
-            "button_style": "btn--white"
+            "button_style": "btn--white",
+            "mobile_button_style": "btn"
           }
         },
         "46487914-1413-4599-9cbb-0d4f4f4a8adc": {
@@ -679,7 +682,8 @@
           "settings": {
             "button_text": "book a tour",
             "button_link": "\/pages\/experiences#tours",
-            "button_style": "btn--white-outline"
+            "button_style": "btn--white-outline",
+            "mobile_button_style": "btn"
           }
         }
       },
