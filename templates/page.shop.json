@@ -503,7 +503,8 @@
           "settings": {
             "button_text": "LEARN MORE",
             "button_link": "https:\/\/www.dandelionchocolate.com\/products\/hawaii-trip",
-            "button_style": "btn"
+            "button_style": "btn",
+            "mobile_button_style": "btn"
           }
         }
       },
@@ -642,7 +643,7 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
+        "show_collaborator": true,
         "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
