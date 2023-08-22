@@ -705,6 +705,10 @@
   font-family: Saa Series F D;
 }
 
+.card__type {
+  margin-bottom: 10px;
+}
+
 @media (forced-colors:active) {
   
   .rating {
