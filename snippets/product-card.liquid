@@ -144,7 +144,7 @@
       {% endif %}
     </a>
   
-      {% assign product_info = product.metafields.info %}        
+      {% assign product_info = product_card_product.metafields.info %}        
       {% assign is_chocolate_bar = false %}
       {% if product_card_product.type and product_card_product.type == 'Chocolate Bar' %}
           {% assign is_chocolate_bar = true %}
@@ -154,31 +154,13 @@
           <div class="card__type">{{ product_card_product.type }}
             {% unless is_chocolate_bar %}
               {% if product_info.percentage %}
-              - {{product_info.percentage}}%
+              - {{ product_info.percentage }}%
               {% endif %}
             {% endunless %}
           </div>       
         {% endif %}
-        
-        {% if product_info.percentage and is_chocolate_bar %}        
-          <div class="card__percentage">{{ product_info.percentage }}%</div>        
-        {% endif %}
-        
-        {% if product_info.origin %}
-          <div class="card__origin">{{ product_info.origin }}</div>
-        {% endif %}
-        
-        {% if product_info.country %}
-          <div class="card__country">{{ product_info.country }}</div>
-        {% endif %}   
-
       {% else %}
         <h3 class="card__name h4">{{ product_card_product.title }}</h3>      
-        {% assign experience = product.metafields.experience %}      
-        {% if experience.location_type %}
-          <div class="card__country">{{experience.location_type}}</div>
-        {% endif %}    
-
       {% endif %}
     
     {%- if product_card_product.metafields.info.country != blank -%}
