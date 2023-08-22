@@ -696,6 +696,15 @@
   outline: none;
 }
 
+.card__brand {
+  color: #b76a23;
+  font-size: 14px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-family: Saa Series F D;
+}
+
 @media (forced-colors:active) {
   
   .rating {
