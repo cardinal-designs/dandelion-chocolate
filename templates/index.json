@@ -247,7 +247,7 @@
       ],
       "settings": {
         "section_width": "full-width-row",
-        "image_url": true,
+        "image_url": false,
         "image": "shopify:\/\/shop_images\/advent_calendar_banner.jpg",
         "mobile_image": "shopify:\/\/shop_images\/Advent_Calendar_-_2023_-_Vertical.2.png",
         "image_parallax": false,
