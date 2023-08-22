@@ -5129,7 +5129,10 @@ select.resize-select {
 }
 
 .cart-drawer--recommendations .product-cart-item .cart-product-link {
-  font-size: calc(var(--font-product-title-scale, 1) * 0.8125rem);
+  text-transform: capitalize;
+  color: #333;
+  font-family: Garamond Premiere Pro;
+  font-size: 16px;
 }
 
 .cart-drawer .free-shipping {
