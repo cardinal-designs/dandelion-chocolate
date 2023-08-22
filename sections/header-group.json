@@ -34,6 +34,7 @@
           "type": "custom_megamenu",
           "settings": {
             "title": "Bean-to-bar<br>Chocolate<br>In All Forms",
+            "uppercase": true,
             "button_label": "Explore All",
             "button_url": "shopify:\/\/pages\/shop-1",
             "shipping_text": "FREE SHIPPING ON ORDERS OVER $25",
