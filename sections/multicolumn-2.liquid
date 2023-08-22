@@ -21,7 +21,7 @@
 			<div class="multicolumn__inner">
 				<div class="row align-stretch no-padding">
 					{%- for block in section.blocks -%}
-						<div class="multicolumn__column small-12 medium-3 columns">
+						<div id="image_{{ block.id }}" class="multicolumn__column small-12 medium-3 columns">
                           <a href="{{ block.settings.link }}">
 							{% if block.settings.image != blank %}
 								{%- liquid
@@ -62,6 +62,22 @@
 								<a class="text-button" href="{{ block.settings.link }}"><span>{{ block.settings.link_label }}</span></a>
 							{% endif %}
 						</div>
+                        {%- style -%}
+                          #{{ section.id }} #image_{{ block.id }} .multicolumn__image:before {
+                            background: {{ block.settings.content_bg }};
+                            opacity: {{ block.settings.content_overlay_opacity | divided_by: 100.0 }};
+                          }
+                      
+                          #{{ section.id }} #image_{{ block.id }} .multicolumn .heading {
+                            color: {{ block.settings.heading_color }};
+                          }
+                      
+                          #{{ section.id }} #image_{{ block.id }} .multicolumn .multicolumn__column:hover .heading {
+                            color: {{ block.settings.heading_hover_color }};
+                            text-decoration: underline;
+                            text-underline-offset: 2px;
+                          }                          
+                        {%- endstyle -%}
 					{%- endfor -%}
 				</div>
 			</div>
@@ -71,25 +87,6 @@
 </div>
 
 {% style %}
-
-  {% for block in section.blocks %}
-    
-    .multicolumn__image:before {
-      background: {{ block.settings.content_bg }};
-      opacity: {{ block.settings.content_overlay_opacity | divided_by: 100.0 }};
-    }
-
-    .multicolumn .heading {
-      color: {{ block.settings.heading_color }};
-    }
-
-    .multicolumn .multicolumn__column:hover .heading {
-      color: {{ block.settings.heading_hover_color }};
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-
-  {% endfor %}
 
   .section-multicolumn {
     background-color: {{ section.settings.section_bg }};
