@@ -5806,4 +5806,6 @@ input[type="radio"],
 
 .cart-drawer--recommendations .product-cart-item .text-button {
   font-family: Saa Series F D;
+  font-size: 12px;
+  letter-spacing: .05em;
 }
