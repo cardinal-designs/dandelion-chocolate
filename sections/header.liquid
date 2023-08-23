@@ -36,12 +36,12 @@
 		.header-section {
 			position: static !important;
 		}
+		{%- endunless -%}
 
         .header {
           background-color: {{ section.settings.bg_color }};
           border-color: {{ section.settings.border_color }};
         }
-		{%- endunless -%}
 	{%- endstyle -%}
 </header>
 
