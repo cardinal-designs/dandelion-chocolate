@@ -723,6 +723,11 @@
   line-height: 1;
 }
 
+.product-form__error-message-wrapper {
+  align-items: center;
+  justify-content: center;
+}
+
 .product-form__error-message-wrapper svg {
   width: 10px;
 }
