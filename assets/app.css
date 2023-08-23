@@ -5825,4 +5825,8 @@ input[type="radio"],
   display: none;
 }
 
+#product-form-installment {
+  display: none;
+}
+
 /***** Cart Drawer End *****/
