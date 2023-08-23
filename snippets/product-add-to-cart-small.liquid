@@ -1,18 +1,5 @@
 <div {{ block.shopify_attributes }}>
-	{%- if product != blank -%}
-	{%- liquid
-      assign gift_card_recipient_feature_active = false
-      if block.settings.show_gift_card_recipient and product.gift_card?
-        assign gift_card_recipient_feature_active = true
-      endif
-
-      assign show_dynamic_checkout = false
-      if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
-        assign show_dynamic_checkout = true
-      endif
-    -%}
-      
-        
+	{%- if product != blank -%}        
   <product-form class="product-form" data-section="{{ section.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
 		<div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
       {% render 'svg-icons' with 'thb-error' %}
