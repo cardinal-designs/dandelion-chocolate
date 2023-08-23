@@ -730,6 +730,7 @@
 
 .product-form__error-message-wrapper svg {
   width: 10px;
+  margin-right: 2px;
 }
 
 @media (forced-colors:active) {

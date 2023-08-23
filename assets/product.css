@@ -1301,13 +1301,13 @@ product-add-to-cart-sticky .variations fieldset {
   line-height: 1;
   margin-top: 4px;
   letter-spacing: 0.15em;
-  transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
 
 .product .add_to_cart_holder .button {
   border-radius: 6px;
   background-color: #E2C465 !important;
   border: 0;
+  transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
 
 .product .add_to_cart_holder .button::before {
