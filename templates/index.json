@@ -232,7 +232,7 @@
         "template--15975893827724__4737d624-6ff1-4063-b2a4-b5fda54ad3ac-1689669062976517aa-3": {
           "type": "button",
           "settings": {
-            "button_text": "Shop Now",
+            "button_text": "Pre-order",
             "button_link": "shopify:\/\/products\/advent-calendar",
             "button_style": "btn--white",
             "mobile_button_style": "btn--light-gold"
