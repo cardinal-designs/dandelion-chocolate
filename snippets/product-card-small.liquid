@@ -25,10 +25,10 @@
         endif
     -%}
       <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
-        {% if item.product.metafields.info.origin != blank %}
-          {{ item.product.metafields.info.origin }}
+        {% if product_small.metafields.info.origin != blank %}
+          {{ product_small.metafields.info.origin }}
         {% else %}
-          {{ item.product.title }}
+          {{ product_small.product.title }}
         {% endif %}
         
         {{ product_title }}
