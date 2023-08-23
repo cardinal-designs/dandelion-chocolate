@@ -44,7 +44,7 @@
           {%- if section_heading -%}
             <h2 class="section__title h2 hide-mobile">{{ section_heading }}</h2>
           {%- endif -%}
-          {%- if section_mobile_heading != blank -%}
+          {%- if section.settings.enable_mobile_heading -%}
             <h2 class="section__title h2 hide-desktop ttt">{{ section_mobile_heading }}</h2>
           {% else %}
             <h2 class="section__title h2 hide-desktop yyy">{{ section_heading }}</h2>
@@ -244,6 +244,12 @@
       "id": "heading",
       "label": "Heading",
       "default": "Featured Collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mobile_heading",
+      "label": "Different header on mobile",
+      "default": true
     },
     {
       "type": "text",
