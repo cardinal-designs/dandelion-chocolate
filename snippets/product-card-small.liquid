@@ -22,7 +22,7 @@
 				assign product_title = product_title | highlight: predictive_search.terms
 			endif
 		-%}
-        {%- assign product_form_id = 'product-form-' | append: section.id | append: product_small.id -%}
+        {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
 		<a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
 		{% render 'product-price', product: product_small %}
         {% render 'product-add-to-cart', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
