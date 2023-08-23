@@ -57,7 +57,13 @@
                   <a
                     href="{{ item.url }}"
                     title="{{ item.product.title | escape }}"
-                    class="cart-product-link">{{ item.product.title }}</a>
+                    class="cart-product-link">
+                    {% if item.metafields.info.origin != blank %}
+                      {{ item.metafields.info.origin }}
+                    {% else %}
+                      {{ item.title }}
+                    {% endif %}
+                  </a>
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
                       <del>
