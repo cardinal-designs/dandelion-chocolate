@@ -5828,13 +5828,18 @@ input[type="radio"],
   font-family: Saa Series F D;
   font-size: 12px;
   letter-spacing: .05em;
-  background: transparent!important;
+  background: transparent !important;
   color: var(--color-accent)!important;
   width: auto;
   margin: 0 auto;
   border: 1px solid #A48B55;
   padding: 8px 10px 3px;
   border-radius: 50px;
+}
+
+.cart-drawer--recommendations .product-cart-item .text-button:hover {
+  background-color: #A48B55 !important;
+  color: #ffffff;
 }
 
 .cart-drawer--recommendations--container .card__tasting-notes {
