@@ -165,7 +165,6 @@
                 {%- endfor -%}
               {%- else -%}
                 {%- for product in featured_collection.products limit: 50 -%}
-                  {{ forloop.count }}
                   {%- assign product_form_id = 'product-form-' | append: section.id | append: '--' | append: product.id -%}
                   <div class="single__columns {% if forloop.index == 1 %}single__item{% endif %}">
                     {% render 'product-card',hide_cta_mobile:hide_cta_mobile, product_card_product: product, quickviewFeaturedCol: 'true', enable_treatment: section.settings.enable_treatment, show_collaborator: section.settings.show_collaborator, show_compare_price: section.settings.show_compare_at_price, show_description: section.settings.show_short_product_desc, quickview_cartbutton: section.settings.quickview_cartbutton, form: form, product_form_id: product_form_id %}
