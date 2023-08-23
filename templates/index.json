@@ -306,7 +306,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Hot_Chocolate_-_Navigation_Photos_-_Website_-_2023.2.jpg",
-            "hover_image": "shopify:\/\/shop_images\/chocolate-bars_3293c165-a927-418a-a1ba-e10ef5a741d8.jpg",
             "show_overlay": false,
             "content_overlay_opacity": 30,
             "content_bg": "#000000",
