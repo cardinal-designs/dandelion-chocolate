@@ -5829,4 +5829,8 @@ input[type="radio"],
   display: none;
 }
 
+.cart-drawer--recommendations .product__quick-view {
+  display: none;
+}
+
 /***** Cart Drawer End *****/
