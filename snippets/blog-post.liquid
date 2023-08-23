@@ -23,7 +23,7 @@
 		<a href="{{ article.url }}" title="{{ article.title | escape }}">
             {% if article.url contains 'pages'%}
               {{ page.metafields.custom.featured_image | img_tag }}rrrrrr
-              {%- render 'responsive-image', image: page.metafields.custom.featured_image, sizes: image_sizes -%}              
+              {%- render 'responsive-image', image: article.image, sizes: image_sizes -%}              
             {% else %}
     			{%- if article.image -%}
     				{%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
