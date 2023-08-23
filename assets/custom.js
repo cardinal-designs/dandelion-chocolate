@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   if (flickityItems_main.length <= 5) {
     if(myElement)myElement.classList.add("hide__slider_arrows");
-    myElementnav.classList.add("hide__slider_arrows");
+    if(myElementnav)myElementnav.classList.add("hide__slider_arrows");
   }
   
   var flickityContainer = document.querySelector(".carousel-nav");
