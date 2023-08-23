@@ -653,6 +653,11 @@ body .zapietModal.moreInformation h2 {
 }
 
 .cart-item__error svg {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+}
+
+.cart-item__error-text {
+  line-height: 1;
 }
