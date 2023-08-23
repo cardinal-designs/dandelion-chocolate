@@ -11,7 +11,7 @@
 			assign ratio = 1
 		when 'landscape'
 			assign image_sizes = '320x200,640x400'
-			assign ratio = 1.6
+			assign ratio = 1.6image_sizes
 		when 'portrait'
 			assign image_sizes = '320x400,640x800'
 			assign ratio = 0.8
@@ -24,7 +24,7 @@
             {% if article.url contains 'pages'%}
               {% assign pageimg = article.metafields.custom.featured_image.value  %}
               {{ pageimg }}
-              {%- render 'responsive-image', image: pageimg, sizes: image_sizes -%}              
+              {%- render 'responsive-image', image: pageimg -%}              
             {% else %}
     			{%- if article.image -%}
     				{%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
