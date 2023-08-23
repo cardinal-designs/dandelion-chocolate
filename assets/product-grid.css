@@ -658,6 +658,8 @@
 
 .product-card product-form.product-form {
   padding: 0 !important;
+  display: block;
+  height: auto;
 }
 
 .product-card .product-form form,
