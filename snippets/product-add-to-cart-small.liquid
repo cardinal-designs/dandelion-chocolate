@@ -65,9 +65,6 @@
 						{% render 'svg-icons' with 'thb-loading' %}
 					</span>
 				</button>
-				{%- if show_dynamic_checkout -%}
-		      {{ form | payment_button }}
-		    {%- endif -%}
 		  </div>
 		</div>
 		{%- endform -%}
@@ -86,42 +83,4 @@
       </div>
     </div>
   {%- endif -%}
-	{%- if product != blank -%}
-		{%- form 'product', product, id: 'product-form-installment', class: 'installment' -%}
-			<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-			{{ form | payment_terms }}
-		{%- endform -%}
-	{%- endif -%}
 </div>
-{%- if pickup -%}
-{%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
-<pickup-availability
-	class="pickup-availability-wrapper"
-	{% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %}available{% endif %}
-  data-root-url="{{ routes.root_url }}"
-  data-variant-id="{{ product.selected_or_first_available_variant.id }}"
-  data-has-only-default-variant="{{ product.has_only_default_variant }}"
->
-	{%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
-	{%- if pick_up_availabilities.size > 0 -%}
-		{% render 'product-pickup-availability', pick_up_availabilities: pick_up_availabilities %}
-	{% endif %}
-</pickup-availability>
-<script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-{%- endif -%}
-
-{%- assign current_variant = product.selected_or_first_available_variant -%}
-{% unless product.tags contains "pickup" %}   
-  {% unless product.tags contains "gift card" %}      
-    <div class="product__ctarow product__free-shipping">
-      <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
-      <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}
-    </div>            
-    {% if section.settings.holiday_shipping %}    
-      <div class="product__ctarow product__holiday-shipping">    
-      <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle">{% render 'icon-calendar' %}</div></div>                              
-        <span class="">{{ 'products.product.holiday_shipping_html' | t }}</span>                                                            
-      </div>
-    {% endif %}
-  {% endunless %}
-{% endunless %}
