@@ -542,7 +542,7 @@ if (!customElements.get('product-form')) {
       super();
       console.log(this)
       this.sticky = this.dataset.sticky;
-      this.form = document.getElementById(`product-form-${this.dataset.section}`);
+      this.form = this.querySelector('form');
       
       if(this.form) this.form.querySelector('[name=id]').disabled = false;
       if (!this.sticky) {
