@@ -18,7 +18,8 @@
 	endcase
 -%}
 {%- if article -%}
-<div class="blog-post">
+<div class="blog-post 
+  {{ class }}">
 	<figure class="featured-image aspect-ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
 		<a href="{{ article.url }}" title="{{ article.title | escape }}">
 			{%- if article.image -%}
