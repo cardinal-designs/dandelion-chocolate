@@ -23,6 +23,7 @@
 		<a href="{{ article.url }}" title="{{ article.title | escape }}">
             {% if article.url contains 'pages'%}
               {% assign pageimg = article.metafields.custom.featured_image.value  %}
+              {{ pageimg }}
               {%- render 'responsive-image', image: pageimg, sizes: image_sizes -%}              
             {% else %}
     			{%- if article.image -%}
