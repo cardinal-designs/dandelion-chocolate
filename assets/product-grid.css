@@ -745,13 +745,14 @@
 }
 
 .product-form__error-message-wrapper {
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 4px;
 }
 
 .product-form__error-message-wrapper svg {
   width: 10px;
+  height: 10px;
   margin-right: 2px;
 }
 
