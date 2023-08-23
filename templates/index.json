@@ -60,6 +60,14 @@
             "outline_text": false
           }
         },
+        "272b277b-4d70-4c17-af2e-cdcccce11f90": {
+          "type": "text",
+          "settings": {
+            "text": "BEAN-TO-BAR",
+            "link": "",
+            "outline_text": false
+          }
+        },
         "template--15975893827724__7c963727-9f62-413e-a955-4c0272b66b19-1689667904b71a08f7-1": {
           "type": "text",
           "settings": {
@@ -72,14 +80,6 @@
           "type": "text",
           "settings": {
             "text": "DIRECT TRADE",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "272b277b-4d70-4c17-af2e-cdcccce11f90": {
-          "type": "text",
-          "settings": {
-            "text": "BEAN-TO-BAR",
             "link": "",
             "outline_text": false
           }
@@ -103,9 +103,9 @@
       },
       "block_order": [
         "template--15975893827724__7c963727-9f62-413e-a955-4c0272b66b19-1689667904b71a08f7-0",
+        "272b277b-4d70-4c17-af2e-cdcccce11f90",
         "template--15975893827724__7c963727-9f62-413e-a955-4c0272b66b19-1689667904b71a08f7-1",
         "template--15975893827724__7c963727-9f62-413e-a955-4c0272b66b19-1689667904b71a08f7-2",
-        "272b277b-4d70-4c17-af2e-cdcccce11f90",
         "02a6ff49-2e52-40de-8e4a-d94be26a6a50",
         "804bbead-7435-4967-a000-8c4fcb5b55a5"
       ],
@@ -115,7 +115,7 @@
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
-        "speed": "20s",
+        "speed": "10s",
         "text_size": 16,
         "text_uppercase": true,
         "image_size": "large",
