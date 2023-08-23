@@ -934,7 +934,7 @@
         "full_width": true,
         "hide_cta_mobile": true,
         "collection": "pantry-baking",
-        "show_short_product_desc": true,
+        "show_short_product_desc": false,
         "show_compare_at_price": false,
         "show_all_products": true,
         "show_collaborator": false,
