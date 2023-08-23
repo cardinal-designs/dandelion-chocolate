@@ -58,10 +58,10 @@
                     href="{{ item.url }}"
                     title="{{ item.product.title | escape }}"
                     class="cart-product-link">
-                    {% if item.metafields.info.origin != blank %}
-                      {{ item.metafields.info.origin }}
+                    {% if item.product.metafields.info.origin != blank %}
+                      {{ item.product.metafields.info.origin }}
                     {% else %}
-                      {{ item.title }}
+                      {{ item.product.title }}
                     {% endif %}
                   {{ item.metafields | json }}
                   </a>
