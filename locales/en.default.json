@@ -96,6 +96,7 @@
       "product_variants": "Product variants",
       "product_information": "Product information",
       "add_to_cart": "Add to cart",
+      "quick_add": "+ Quick Add",
       "sold_out": "Sold out",
       "save_html": "Save {{ saved_amount }}",
       "unavailable": "Unavailable",
