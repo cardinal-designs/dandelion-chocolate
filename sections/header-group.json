@@ -47,7 +47,7 @@
       ],
       "settings": {
         "bg_color": "#fffdf9",
-        "border_color": "#333333",
+        "border_color": "#d72f2f",
         "sticky_header": true,
         "logo": "shopify:\/\/shop_images\/Dandelion-Logo.png",
         "logo_height_range": 51,
