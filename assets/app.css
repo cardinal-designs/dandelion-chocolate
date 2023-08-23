@@ -5840,7 +5840,7 @@ input[type="radio"],
 
 .cart-drawer--recommendations .product-cart-item .text-button:hover {
   background-color: #A48B55 !important;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .cart-drawer--recommendations--container .card__tasting-notes,
