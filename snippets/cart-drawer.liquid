@@ -64,7 +64,7 @@
                       {{ item.product.title }}
                     {% endif %}
                   </a>
-              <div class="card__tasting_notes">{{ item.product.metafields.notes }}</div>
+              <div class="card__tasting_notes">{{ item.product.metafields.info.notes }}</div>
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
                       <del>
