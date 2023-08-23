@@ -262,7 +262,7 @@
 
 .product-title-uppercase-true .product-card .product-card-title {
   text-transform: capitalize;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .product-card .badge {
@@ -792,7 +792,7 @@
   }
 
   .product-title-uppercase-true .product-card .product-card-title {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   .product-card .new-percentage,
