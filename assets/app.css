@@ -4749,9 +4749,14 @@ select.resize-select {
 }
 
 .quantity + .remove {
-  margin-left: 13px;
-  color: rgb(233, 54, 54);
-  font-size: 14px;
+  margin: 14px 0 0;
+  color: #94949C;
+  display: block;
+  font-family: 'Saa Series F D';
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 6px;
+  font-weight: 400;
 }
 
 .remove svg {
