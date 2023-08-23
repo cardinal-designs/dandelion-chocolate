@@ -45,9 +45,9 @@
 															{%- when 'article' -%}
 																{% render 'blog-post', article: item, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
 															{%- when 'page' -%}
-                                                                {% assign pageimg = page.metafields.custom.featured_image  %}
+                                                                {% assign pageimg = item.metafields.custom.featured_image  %}
                                                           {{ pageimg }}rrr
-                                                          {{ page.metafields | json }}yyyy
+                                                          {{ item.metafields | json }}yyyy
 																{% render 'blog-post', article: item, show_date: false, show_excerpt: true, show_image: false, class: 'page-type' %}
 														{%- endcase -%}
 													</li>
