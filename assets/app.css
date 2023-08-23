@@ -5884,4 +5884,12 @@ input[type="radio"],
   height: 22px;
 }
 
+.cart-drawer--recommendations--products .product__country {
+  font-size: 12px;
+  line-height: 20px;
+  color: #855338;
+  margin-bottom: 10px;
+  letter-spacing: .15em;  
+}
+
 /***** Cart Drawer End *****/
