@@ -294,7 +294,7 @@
                 <h6 class="cart-drawer--recommendations--heading">{{ 'general.cart_drawer.you_may_also_like' | t }}</h6>
                 <div class="cart-drawer--recommendations--products">
                   {% for recommendation in recommendations.products %}
-                    {% render 'product-card-small' product_small: recommendation, quick_add: true %}
+                    {% render 'product-card-small' product_small: recommendation, quick_add: true, add_to_cart: true %}
                   {% endfor %}
                 </div>
               {% endif %}
