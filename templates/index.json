@@ -6,7 +6,7 @@
         "template--15975893827724__36e5a7f2-3c27-4571-bd42-47d25931dc34-16896636424446a74c-1": {
           "type": "heading",
           "settings": {
-            "heading_color": "#ffffff",
+            "heading_color": "#f8cf47",
             "text": "SINGLE-ORIGIN CHOCOLATE",
             "heading_size": "h1__large"
           }
@@ -111,7 +111,7 @@
       ],
       "settings": {
         "stop_scroll": true,
-        "stop_scroll_mobile": false,
+        "stop_scroll_mobile": true,
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
