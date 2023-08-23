@@ -469,8 +469,8 @@
         "85661fae-713c-443f-9dd9-4d51cc6e5eaa": {
           "type": "button",
           "settings": {
-            "button_text": "OUR STORY",
-            "button_link": "shopify:\/\/pages\/aboutus",
+            "button_text": "OUR PRODUCERS",
+            "button_link": "shopify:\/\/pages\/origins",
             "button_style": "btn--white-outline",
             "mobile_button_style": "btn--white-outline"
           }
