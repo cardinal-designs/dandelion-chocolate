@@ -5821,8 +5821,11 @@ input[type="radio"],
 .card__tasting-notes {
   font-size: 14px;
   margin-bottom: 12px;
-  letter-spacing: .023em;
-  line-height: 120%;
+  line-height: 16.8px;
+  color: #777779;
+  font-family: 'Garamond Premier Pro';
+  font-style: italic;
+  letter-spacing: .04em;
 }
 
 .cart-drawer--recommendations--container .product__ctarow {
