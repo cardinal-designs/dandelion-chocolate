@@ -651,3 +651,8 @@ body .zapietModal.moreInformation h2 {
 .checkout-button:before {
   display: none;
 }
+
+.cart-item__error svg {
+  width: 12px;
+  height: 12px;
+}
