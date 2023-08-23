@@ -1510,6 +1510,10 @@ dl.accordion-list dd {
   padding-bottom: 100%;
 }
 
+.side-panel-inner .thb-product-detail.product .product-single__media {
+  padding-bottom: 0;
+}
+
 .thb-product-detail.product .product-single__media img {
   object-fit: contain;
 }
