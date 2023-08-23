@@ -27,10 +27,10 @@
 		{% render 'product-price', product: product_small %}
         {% render 'product-add-to-cart-small', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
 		{% if quick_add %}
-		<button class="product__quick-view product-card-quickview text-button" href="#Product-Drawer" data-product-handle="{{ product_small.handle }}" tabindex="-1">
-			<div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
-			<span>{{ 'products.product.quick_view' | t }}</span>
-		</button>
+  		<button class="product__quick-view product-card-quickview text-button" href="#Product-Drawer" data-product-handle="{{ product_small.handle }}" tabindex="-1">
+          <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+          <span>{{ 'products.product.quick_view' | t }}</span>
+  		</button>
 		{% endif %}
 	</div>
 </product-card>
