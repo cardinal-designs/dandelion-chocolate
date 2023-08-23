@@ -702,12 +702,13 @@
 }
 
 .card__brand {
-  color: #b76a23;
-  font-size: 14px;
-  margin: 5px 0;
+  color: #A78B4C;
+  font-size: 12px;
+  margin: 5px 0 11px;
   text-transform: uppercase;
   letter-spacing: .05em;
   font-family: Saa Series F D;
+  line-height: 15.6px;
 }
 
 .card__type {
