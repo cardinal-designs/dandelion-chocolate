@@ -4751,7 +4751,7 @@ select.resize-select {
 .quantity + .remove {
   margin-left: 13px;
   color: rgb(233, 54, 54);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .remove svg {
