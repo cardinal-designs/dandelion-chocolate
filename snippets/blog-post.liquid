@@ -42,7 +42,7 @@
 {%- else -%}
 <div class="blog-post">
 	{% if show_image %}
-	<figure class="featured-image aspect-ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+	<figure class="featured-image aspect-ratio aaa" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
 		<a href="{{ article.url }}" title="{{ article.title | escape }}">
 			<div class="thb-placeholder">
 				{{ 'image' | placeholder_svg_tag }}
