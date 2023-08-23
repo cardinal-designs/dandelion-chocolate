@@ -5,7 +5,7 @@
       {% render 'svg-icons' with 'thb-error' %}
       <span class="product-form__error-message"></span>
     </div>
-		{%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+      {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 		<input type="hidden" name="id" class="default-product-input" value="{{ product.selected_or_first_available_variant.id }}" disabled>
 		<div class="product-add-to-cart-container">
 			<div class="form-notification error" style="display:none;"></div>
@@ -36,7 +36,7 @@
 						<button class="plus" type="button" aria-label="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}">{% render 'svg-icons' with 'plus' %}</button>
 			    </quantity-selector>
 				</div>
-				{%- endif -%}
+              {%- endif -%}
             <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
               <span class="single-add-to-cart-button--text">
               {%- if product.selected_or_first_available_variant.available -%}
@@ -51,7 +51,7 @@
             </button>
 		  </div>
 		</div>
-		{%- endform -%}
+      {%- endform -%}
 	</product-form>
 	{%- else -%}
     <div class="product-form">
