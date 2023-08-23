@@ -5812,6 +5812,8 @@ input[type="radio"],
   font-family: Saa Series F D;
   font-size: 12px;
   letter-spacing: .05em;
+  background: transparent !important;
+  color: var(--color-accent) !important;
 }
 
 .card__tasting-notes {
@@ -5831,6 +5833,10 @@ input[type="radio"],
 
 .cart-drawer--recommendations .product__quick-view {
   display: none;
+}
+
+.cart-drawer--recommendations .product-cart-item .text-button {
+  
 }
 
 /***** Cart Drawer End *****/
