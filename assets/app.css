@@ -5835,8 +5835,8 @@ color: var(--color-accent) !important;
   display: none;
 }
 
-.cart-drawer--recommendations .product-cart-item .text-button {
-  
+.cart-drawer--recommendations--products .product-form {
+  margin-top: 0;
 }
 
 /***** Cart Drawer End *****/
