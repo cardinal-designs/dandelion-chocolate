@@ -23,22 +23,7 @@
         endif
     -%}
     {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
-    
-    {% assign product_info = product_small.metafields.info %}        
-    {% assign is_chocolate_bar = false %}
-    {% if product_small.type and product_small.type == 'Chocolate Bar' %}
-      {% assign is_chocolate_bar = true %}
-    {% endif %}
-    {% if product_small and product_small.type != 'Chocolate Bar' %}        
-      <div class="card__type">{{ product_small.type }}
-        {% unless is_chocolate_bar %}
-          {% if product_info.percentage %}
-          - {{ product_info.percentage }}%
-          {% endif %}
-        {% endunless %}
-      </div>       
-    {% endif %}      
-    
+
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
 
     {%- if product_small.metafields.info.country != blank -%}
