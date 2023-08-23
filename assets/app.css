@@ -5140,9 +5140,11 @@ select.resize-select {
 .cart-drawer--recommendations .product-cart-item .cart-product-link {
   text-transform: capitalize;
   color: #333;
-  font-family: Garamond Premiere Pro;
   font-size: 16px;
   margin-bottom: 10px;
+  font-family: OPTICaslonBold-Cond;
+  line-height: 20.48px;
+  letter-spacing: .04em;
 }
 
 .cart-drawer .free-shipping {
