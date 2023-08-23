@@ -752,6 +752,12 @@
         "label": "Free shipping minimum amount",
         "default": "250",
         "info": "Enter the value without a currency symbol and use a decimal to separate dollars and cents. Example: '100.00'"
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_text",
+        "label": "Free shipping text",
+        "default": "Free shipping on orders over $25."
       }
     ]
   },
