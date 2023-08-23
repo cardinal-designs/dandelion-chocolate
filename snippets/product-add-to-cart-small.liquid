@@ -1,6 +1,6 @@
 <div {{ block.shopify_attributes }}>
 	{%- if product != blank -%}        
-  <product-form class="test product-form" data-section="{{ section.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
+  <product-form class="product-form" data-section="{{ section.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
     <div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
       {% render 'svg-icons' with 'thb-error' %}
       <span class="product-form__error-message"></span>
@@ -37,7 +37,7 @@
                 </quantity-selector>
               </div>
             {%- endif -%}
-            <button type="submit" name="add" id="AddToCart" class="product__quick-view product-card-quickview text-button {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+            <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
               <span class="single-add-to-cart-button--text">
               {%- if product.selected_or_first_available_variant.available -%}
                 {{ 'products.product.add_to_cart' | t }}
