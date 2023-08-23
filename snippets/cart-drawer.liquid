@@ -63,7 +63,6 @@
                     {% else %}
                       {{ item.product.title }}
                     {% endif %}
-                  {{ item.metafields | json }}
                   </a>
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
