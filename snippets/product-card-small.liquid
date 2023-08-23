@@ -22,8 +22,10 @@
 				assign product_title = product_title | highlight: predictive_search.terms
 			endif
 		-%}
+        {%- assign product_form_id = 'product-form-' | append: section.id -%}
 		<a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
 		{% render 'product-price', product: product_small %}
+        {% render 'product-add-to-cart', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
 		{% if quick_add %}
 		<button class="product-card-quickview text-button" href="#Product-Drawer" data-product-handle="{{ product_small.handle }}" tabindex="-1">
 			<div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
