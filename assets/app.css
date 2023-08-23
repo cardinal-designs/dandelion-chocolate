@@ -5813,6 +5813,10 @@ input[type="radio"],
   color: #53595c;  
 }
 
+.cart-drawer--recommendations .product-cart-item .text-button::before {
+  display: none;
+}
+
 .cart-drawer--recommendations .product-cart-item .text-button {
   font-family: Saa Series F D;
   font-size: 12px;
