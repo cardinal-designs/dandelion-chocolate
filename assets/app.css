@@ -5893,4 +5893,10 @@ input[type="radio"],
   letter-spacing: .15em; 
 }
 
+.side-panel-content .card__type {
+  color: #53595C;
+  font-size: 10px;
+  line-height: 12.8px;
+}
+
 /***** Cart Drawer End *****/
