@@ -1314,8 +1314,8 @@ product-add-to-cart-sticky .variations fieldset {
 }
 
 .product .add_to_cart_holder .button:hover {
-  background-color: #A48B55;
-  color: #ffffff;
+  background-color: #a48b55 !important;
+  color: #fff !IMPORTANT;
 }
 
 .product__country {

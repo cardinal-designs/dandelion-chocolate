@@ -723,6 +723,10 @@
   line-height: 1;
 }
 
+.product-form__error-message-wrapper svg {
+  width: 10px;
+}
+
 @media (forced-colors:active) {
   
   .rating {
