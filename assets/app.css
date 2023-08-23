@@ -3776,9 +3776,8 @@ h6,
 
 .thb-full-menu li.menu-item-has-children > a svg {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 5px);
   right: 0;
-  margin-top: -3px;
 }
 
 .thb-full-menu li.menu-item-has-children:focus-within {
