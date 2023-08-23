@@ -442,6 +442,11 @@
     max-width: 50% !important;
   }
 
+  .featured__collection.swipe__on--mobile .featured__collection--inner.display-type--grid .products.row .single__columns.single__item {
+    flex: 100% 0 0 !important;
+    max-width: 100% !important;
+  }
+
   .featured__collection.swipe__on--mobile .featured__collection--inner.display-type--grid .products.row::-webkit-scrollbar {
     display: none;
   }
