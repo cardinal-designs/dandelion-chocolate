@@ -5841,7 +5841,7 @@ input[type="radio"],
   margin-top: 0;
 }
 
-button#AddToCart {
+.cart-drawer--recommendations--products .single-add-to-cart-button {
   font-family: Saa Series F D;
   font-size: 12px;
   letter-spacing: .05em;
@@ -5849,6 +5849,11 @@ button#AddToCart {
   color: var(--color-accent)!important;
   width: auto;
   margin: 5px auto 0;
+}
+
+.cart-drawer--recommendations--products .loading-overlay {
+  width: 22px;
+  height: 22px;
 }
 
 /***** Cart Drawer End *****/
