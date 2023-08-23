@@ -12,7 +12,7 @@
 		assign transparent_header = section.settings.transparent_header
 	endif
 -%}
-<header style="background-color: {{ section.settings.bg_color }}" id="header" class="header {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif -%}">
+<header id="header" class="header {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif -%}">
 	<div class="header__wrapper row expanded">
 		<div class="small-12 columns">
 			{%- case style -%}
@@ -36,6 +36,11 @@
 		.header-section {
 			position: static !important;
 		}
+
+        .header {
+          background-color: {{ section.settings.bg_color }};
+          border-color: {{ section.settings.border_color }};
+        }
 		{%- endunless -%}
 	{%- endstyle -%}
 </header>
@@ -90,6 +95,12 @@
       "id": "bg_color",
       "label": "Background Color",
       "default": "#fffdf9"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border Color",
+      "default": "#333333"
     },
     {
       "type": "checkbox",
