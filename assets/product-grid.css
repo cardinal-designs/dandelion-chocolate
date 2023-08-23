@@ -566,6 +566,10 @@
   fill: #000;
 }
 
+.product-card .product-card-quickview:hover svg * {
+  fill: #fff;
+}
+
 .product-card:hover .product-card-quickview {
   transform: translateY(0%);
   margin-bottom: 16px;
