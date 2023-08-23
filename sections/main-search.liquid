@@ -45,7 +45,7 @@
 															{%- when 'article' -%}
 																{% render 'blog-post', article: item, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
 															{%- when 'page' -%}
-                                                                {% assign pageimg = page.metafields.custom.featured_image.value | img_tag  %}
+                                                                {% assign pageimg = page.metafields.custom.featured_image | img_tag  %}
                                                           {{ pageimg }}rrr
 																{% render 'blog-post', article: item, show_date: false, show_excerpt: true, show_image: false, class: 'page-type' %}
 														{%- endcase -%}
