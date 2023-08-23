@@ -41,13 +41,17 @@
     <div class="small-12 columns">
       {%- if section_heading != blank or section_description != blank -%}
         <div class="section-header">
-          {%- if section_heading -%}
-            <h2 class="section__title h2 hide-mobile">{{ section_heading }}</h2>
-          {%- endif -%}
+          
           {%- if section.settings.enable_mobile_heading -%}
-            <h2 class="section__title h2 hide-desktop ttt">{{ section_mobile_heading }}</h2>
+            {% if section_mobile_heading != blank %}
+              <h2 class="section__title h2 hide-desktop">{{ section_mobile_heading }}</h2>
+            {% else %}
+              <h2 class="section__title h2 hide-desktop">{{ section_heading }}</h2>
+            {% endif %}
           {% else %}
-            <h2 class="section__title h2 hide-desktop yyy">{{ section_heading }}</h2>
+            {%- if section_heading -%}
+              <h2 class="section__title h2 hide-mobile">{{ section_heading }}</h2>
+            {%- endif -%}
           {%- endif -%}
           {%- if section_description != blank -%}
             <div class="section__description body">
