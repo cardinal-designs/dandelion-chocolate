@@ -754,6 +754,12 @@
         "info": "Enter the value without a currency symbol and use a decimal to separate dollars and cents. Example: '100.00'"
       },
       {
+        "type": "checkbox",
+        "id": "policy_text",
+        "label": "Policy text",
+        "default": false
+      },
+      {
         "type": "text",
         "id": "free_shipping_text",
         "label": "Free shipping text",
