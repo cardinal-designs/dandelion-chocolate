@@ -659,5 +659,6 @@ body .zapietModal.moreInformation h2 {
 }
 
 .cart-item__error-text {
-  line-height: 1;
+  font-size: 12px;
+  line-height: 12px;
 }
