@@ -436,6 +436,7 @@
       "blocks": {
         "template--15975893827724__c13ec1ed-028d-49b9-840e-e227bcaad30a-16896703952d3b2776-0": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "DIRECT TRADE",
             "subheading_color": "#ffffff"
@@ -771,8 +772,8 @@
         "template--15975893827724__0c97f2db-97cf-47e4-94e0-f1e6b3161d41-1689671717ced8c146-1": {
           "type": "category",
           "settings": {
-            "image": "shopify:\/\/shop_images\/category-3.png",
-            "title": "History of Chocolate",
+            "image": "shopify:\/\/shop_images\/snooky.jpg",
+            "title": "Celebreating Snooky's Tenth Year",
             "text": "",
             "link": ""
           }
