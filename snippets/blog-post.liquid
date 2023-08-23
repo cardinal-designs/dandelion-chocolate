@@ -22,16 +22,8 @@
 	<figure class="featured-image aspect-ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
 		<a href="{{ article.url }}" title="{{ article.title | escape }}">
             {% if article.url contains 'pages'%}
-              {{ page.metafields.custom.featured_image | metafield_tag }}rrrrrr
-              {%- render 'responsive-image', image: page.metafields.custom.featured_image, sizes: image_sizes -%}
-
-          {% assign metafield = page.metafields.custom.featured_image.value %}
-{% if metafield %}
-  <img src="{{ metafield | asset_url }}" alt="Image">
-{% else %}
-  <p>No image available</p>
-{% endif %}
-              
+              {{ page.metafields.custom.featured_image | img_tag }}rrrrrr
+              {%- render 'responsive-image', image: page.metafields.custom.featured_image, sizes: image_sizes -%}              
             {% else %}
     			{%- if article.image -%}
     				{%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
