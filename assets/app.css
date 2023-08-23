@@ -5031,9 +5031,10 @@ select.resize-select {
 }
 
 @media only screen and (min-width:1068px) {
+  
   .cart-drawer--recommendations--products {
     padding: 10px 0;
-    grid-gap: 20px;
+    grid-gap: 32px;
     grid-auto-flow: row;
     grid-auto-columns: 1fr;
     overflow: hidden;
