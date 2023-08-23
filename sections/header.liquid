@@ -12,7 +12,7 @@
 		assign transparent_header = section.settings.transparent_header
 	endif
 -%}
-<header style="{{ section.settings.bg_color }}" id="header" class="header test {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif -%}">
+<header style="background-color: {{ section.settings.bg_color }}" id="header" class="header {{ style }} {{ header_shadow }} transparent--{{ transparent_header }} {% if sticky_header %}header-sticky--active{%- endif -%}">
 	<div class="header__wrapper row expanded">
 		<div class="small-12 columns">
 			{%- case style -%}
