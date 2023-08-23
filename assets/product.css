@@ -1305,8 +1305,8 @@ product-add-to-cart-sticky .variations fieldset {
 
 .product .add_to_cart_holder .button {
   border-radius: 6px;
-  background-color: #CCA853 !important;
-  border-color: #333333;
+  background-color: #E2C465 !important;
+  border: 0;
 }
 
 .product__country {
