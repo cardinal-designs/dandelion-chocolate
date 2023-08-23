@@ -559,11 +559,12 @@
 .product-card .product-card-quickview {
   width: 100%;
   max-width: calc(100% - 28px);
-  margin: 0 14px 16px;
+  margin: 0 14px;
 }
 
 .product-card:hover .product-card-quickview {
   transform: translateY(0%);
+  margin-bottom: 16px;
 }
 
 .collection-empty {
