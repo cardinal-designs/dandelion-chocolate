@@ -3,6 +3,7 @@
 
 {%- liquid
   assign section_heading = section.settings.heading
+  assign section_mobile_heading = section.settings.mobile_heading
   assign section_description = section.settings.description
   assign full_width = section.settings.full_width
   assign display_type = section.settings.display_type
@@ -41,7 +42,10 @@
       {%- if section_heading != blank or section_description != blank -%}
         <div class="section-header">
           {%- if section_heading -%}
-            <h2 class="section__title h2">{{ section_heading }}</h2>
+            <h2 class="section__title h2 desktop">{{ section_heading }}</h2>
+          {%- endif -%}
+          {%- if section_mobile_heading -%}
+            <h2 class="section__title h2 mobile">{{ section_mobile_heading }}</h2>
           {%- endif -%}
           {%- if section_description != blank -%}
             <div class="section__description body">
@@ -238,6 +242,11 @@
       "id": "heading",
       "label": "Heading",
       "default": "Featured Collection"
+    },
+    {
+      "type": "text",
+      "id": "mobile_heading",
+      "label": "Mobile Heading"
     },
     {
       "type": "richtext",
