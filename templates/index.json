@@ -111,11 +111,11 @@
       ],
       "settings": {
         "stop_scroll": true,
-        "stop_scroll_mobile": true,
+        "stop_scroll_mobile": false,
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
-        "speed": "10s",
+        "speed": "50s",
         "text_size": 16,
         "text_uppercase": true,
         "image_size": "large",
