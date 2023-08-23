@@ -22,9 +22,9 @@
 	<figure class="featured-image aspect-ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
 		<a href="{{ article.url }}" title="{{ article.title | escape }}">
             {% if article.url contains 'pages'%}
-              {% assign pageimg = article.metafields.custom.featured_image | img_tag %}
+              {% assign pageimg = article.metafields.custom.featured_image | img_url: 'original' %}
               {{ pageimg }}tttt
-              {{ pageimg | img_url:width:original }}yyyy
+
             {% else %}
     			{%- if article.image -%}
     				{%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
