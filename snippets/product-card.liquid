@@ -202,6 +202,7 @@
     {%- if product.metafields.info.notes != blank  -%}
       <div class="card__tasting_notes">{{ product.metafields.info.notes }}</div>  
     {%- endif -%}
+  
     {% render 'product-price', product: product_card_product, show_compare_price: show_compare_price %}
     {%- if settings.show_products_rating and product_card_product.metafields.reviews.rating.value != blank -%}
       <div class="star-rating" style="--star-rating: 5;"></div>
