@@ -564,10 +564,6 @@
 }
 
 .product-card .product-card-quickview svg * {
-  fill: #000;
-}
-
-.product-card .product-card-quickview:hover svg * {
   fill: #fff;
 }
 
