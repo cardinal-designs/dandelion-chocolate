@@ -351,6 +351,11 @@
   height: 20px;
 }
 
+.image__menu svg {
+  width: 117px;
+  height: 116px;
+}
+
 @media screen and (min-width: 1068px) {
 
   .header.style4 .header__wrapper {
