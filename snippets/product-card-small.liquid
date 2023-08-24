@@ -26,7 +26,7 @@
 
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
 
-    {%- if product_small.metafields.info.percentage != blank and enable_treatment == false -%}
+    {%- if product_small.metafields.info.percentage != blank -%}
       <p class="new-percentage">{{ product_small.metafields.info.percentage }}%</p>
     {%- endif -%}
     
