@@ -732,3 +732,7 @@ body .zapietModal.moreInformation h2 {
 .grid__item.cart-gift {
   margin-bottom: 10px;
 }
+
+.template-cart .product-title-uppercase-true .product-card .product-card-title {
+  letter-spacing: normal;
+}
