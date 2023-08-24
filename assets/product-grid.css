@@ -359,7 +359,7 @@
   background: rgb(211, 167, 65) !important;
 }
 
-.product-card .product-card-quickview:hover {
+.product-card .product-featured-image .product-card-quickview:hover {
   background: var(--dark-gold) !important;
   color: var(--white) !important;
   border-color: var(--charcoal-black) !important;
