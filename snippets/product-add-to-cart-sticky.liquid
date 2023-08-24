@@ -1,7 +1,6 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 <product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
-  {{ product.tags }}
-  <div class="product-add-to-cart-sticky--inner {% if product.type == 'Chocolate Bar' or product.tags contains 'Ingredients' %} == 'Food Items' %}chocolate__bar-product{% endif %}">
+  <div class="product-add-to-cart-sticky--inner {% if product.type == 'Chocolate Bar' or product.tags contains 'Ingredients' %} chocolate__bar-product{% endif %}">
     <div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
       {%- if media -%}
         {%- render 'responsive-image', image: media, sizes: '96x96' -%}
