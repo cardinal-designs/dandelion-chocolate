@@ -222,7 +222,7 @@ body .included-product__single .card__name {
   border: 0;
 }
 
-.hours-table td {
+.location-div .hours-table td {
   padding-top: 4px;
   padding-bottom: 4px;
 }
