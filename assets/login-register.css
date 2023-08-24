@@ -92,3 +92,13 @@
 .template-customers-login .thb-login-form .sub_heading {
   font-size: 20px;
 }
+
+.template-customers-login input {
+  height: 50px;  
+}
+
+.template-customers-login .thb-login-form .field label {
+  color: #53595C;
+  font-size: 18px;
+  line-height: 1;
+}
