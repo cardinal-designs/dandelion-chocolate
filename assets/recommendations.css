@@ -13,3 +13,7 @@
 .recommenadtions__row .card__type {
   color: #53595C;
 }
+
+.recommenadtions__row .product-card .product-featured-image {
+  margin-bottom: 20px;
+}
