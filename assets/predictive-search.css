@@ -99,6 +99,10 @@
 .search-drawer .side-panel-content--tabs button {
   padding-left: 17px;
   padding-right: 17px;
+  height: auto;
+  text-align: left;
+  display: block;
+  margin-top: 17px;
 }
 
 .side-panel-content.side-panel-content--initial {
