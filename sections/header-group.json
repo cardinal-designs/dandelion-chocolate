@@ -52,7 +52,7 @@
           "type": "megamenu_image",
           "settings": {
             "title": "Curations",
-            "megamenu_image": "shopify:\/\/shop_images\/confections_1202ee10-20fa-4a4f-a5b5-f6fffc42c212.jpg"
+            "megamenu_image": "shopify:\/\/shop_images\/curations.jpg"
           }
         },
         "54a554bd-76c9-438c-ab13-f4d640d5c31b": {
@@ -64,7 +64,8 @@
         "7b9f8e08-0482-4446-bf50-f4dd15f9bcc5": {
           "type": "megamenu_image",
           "settings": {
-            "title": "Gifts"
+            "title": "Gifts",
+            "megamenu_image": "shopify:\/\/shop_images\/Gifts_5c38c5af-54da-4a6c-a76a-1738f7b7385e.jpg"
           }
         },
         "1a1ba8a7-488b-4730-bb49-25a77cd58426": {
