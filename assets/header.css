@@ -118,6 +118,11 @@
   color: var(--terra-cotta);
 }
 
+.header  .thb-full-menu li.menu-item-has-children:hover > a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .header .full-menu .thb-full-menu li.menu-item-has-children.menu-item-has-megamenu > .sub-menu {
   margin-top: 0;  
 }
