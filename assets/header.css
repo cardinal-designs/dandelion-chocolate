@@ -372,14 +372,17 @@
   position: relative;
   top: unset;
   transform: none;
-  visibility: visible;
-  opacity: 1;
   box-shadow: none;
   margin-bottom: 27px;
   padding: 0;
   width: 100%;
 }
 
+.header .full-menu .thb-full-menu li.menu-item-has-children:hover > .sub-menu.third__level-menu {
+  visibility: visible;
+  opacity: 1;
+}
+  
 .second__level-menu svg {
   display: none;
 }
