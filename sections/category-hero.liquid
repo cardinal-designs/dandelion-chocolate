@@ -41,8 +41,20 @@
           {% endif %}
           {% if block.settings.image != blank %}
             <div class="category_image">
-              {% assign block_image = block.settings.image %}
-              {%- render 'responsive-image', image: block_image -%}
+              {% assign image = block.settings.image %}
+
+              {%- liquid
+                  assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+                  assign master_width = image.src.width | append: 'x' | append: image.src.height
+                  assign width = '375x' | append: small_width | append: ',' | append: master_width
+
+                  assign class = ''
+
+                  if section.settings.mobile_image
+                      assign class = class | append: ' image-with-text-overlay--desktop'
+                  endif
+              -%}
+              {%- render 'responsive-image', image: image, sizes: width, class: class -%}
             </div>
           {% else %}
             <div class="category_image placeholder">
