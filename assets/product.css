@@ -1544,6 +1544,11 @@ dl.accordion-list dd {
   letter-spacing: .15em;
 }
 
+.product-add-to-cart-sticky--content .add_to_cart_holder .button:hover {
+  background: #A48B55;
+  color: #ffffff;  
+}
+
 .product-add-to-cart-sticky--content .add_to_cart_holder .button::before {
   display: none;
 }
