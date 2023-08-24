@@ -21,7 +21,7 @@
 				<ul class="products collection row small-up-1 medium-up-4 no-padding">
                   {% for recommendation in recommendations.products %}
                     <li class="columns">
-                        {% render 'product-card',
+                        {% render 'product-card-recommendation',
                           product_card_product: recommendation,
                           enable_treatment: section.settings.enable_treatment,
                           show_collaborator: section.settings.show_collaborator,
