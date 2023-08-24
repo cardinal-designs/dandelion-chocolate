@@ -722,7 +722,7 @@
 .card__brand {
   color: #A78B4C;
   font-size: 12px;
-  margin: 5px 0 11px;
+  margin: 5px 0;
   text-transform: uppercase;
   letter-spacing: .15em;
   font-family: Saa Series F D;
