@@ -19,7 +19,7 @@
         endfor
       -%}
       {% for block in blocks %}
-        {{ block.settings.title }}
+        {{ block.settings.image_title }}
       {% endfor %}
       <li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if has_mega_menu %} menu-item-has-megamenu{% endif %}{% if link.active %} active{% endif %}" {% if has_sub_menu %}data-item-title="{{ link.title | escape }}"{% endif %}>
         <a href="{{ link.url }}" class="navigation__link" title="{{ link.title | escape }}"{%- if link.active %} aria-current="page"{% endif -%}>
