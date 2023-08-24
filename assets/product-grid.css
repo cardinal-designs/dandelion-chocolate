@@ -365,6 +365,11 @@
   border-color: var(--charcoal-black) !important;
 }
 
+.product-featured-image:hover .product-card-quickview {
+  background: var(--charcoal-black) !important;
+  color: var(--white) !important;
+}
+
 .product-card .product-card-quickview:hover span {
   color: var(--white) !important;
 }
