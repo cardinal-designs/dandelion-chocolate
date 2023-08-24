@@ -74,6 +74,14 @@
 				font-size: {{ text_size | append: 'px' }};
 			}
 
+            #scrolling-text-{{ section.id }} .scrolling-text--inner.direction-left > div {
+              animation: marquee-left {{ speed }} linear infinite; 
+            }
+            
+            #scrolling-text-{{ section.id }} .scrolling-text--inner.direction-right > div {
+              animation: marquee-right {{ speed }} linear infinite; 
+            }
+
 		{% endstyle %}
 	</div>
 	</div>
