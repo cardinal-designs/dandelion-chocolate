@@ -5,16 +5,19 @@
   font-family: 'Saa Series F D';
   display: inline-flex;
   white-space: nowrap;
-  font-size: 0.6875rem;
   text-transform: uppercase;
-  height: 31px;
   border-radius: 62px;
-  padding: 0 14px;
   align-items: center;
-  font-weight: 600;
   margin: 0 5px;
   border: 1px solid #53595C;
   color: #53595C;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 13px 17.5px 10px;
+  height: auto;
   /* border: 1px solid var(--color-border);  */
 }
   .thb-predictive-search--popular div a:hover, .thb-predictive-search--popular div a.active {
