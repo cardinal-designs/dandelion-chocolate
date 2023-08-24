@@ -67,7 +67,7 @@
                         {% endif %}
                       {% endfor %}
                   
-                    {% if CurrentDateExist %}111
+                    {% if CurrentDateExist %}
                       {% assign store = 'Closed today. ' |append: 'Opens next on ' |append: nextDate %}
                       <span class="closed">{{ store }}</span>
                     {% else %}
@@ -89,7 +89,7 @@
                       {% endif %}
                     {% endif %}
                     
-                  {% else %}44
+                  {% else %}
                     
                     {% if day == "monday" %}
                       <span class="opened">Open today: {{ block.settings.mon_am }}AM - {{ block.settings.mon_pm }}PM</span>
