@@ -92,6 +92,11 @@
   letter-spacing: 0.1em;
 }
 
+.thb-predictive-search--popular {
+  border-top: 1px solid #94949C;
+  border-bottom: 1px solid #94949C;
+}
+
 .side-panel.search-drawer .searchform input::placeholder {
   font-size: 18px;
   color: var(--charcoal-black);

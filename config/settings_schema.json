@@ -708,6 +708,13 @@
         "label": "Free shipping minimum amount",
         "default": "25",
         "info": "Enter the value without a currency symbol and use a decimal to separate dollars and cents. Example: '100.00'"
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_text_cart_page",
+        "label": "Free shipping text cart page",
+        "default": "25",
+        "info": "You’re eligible for free shipping!"
       }
     ]
   },
