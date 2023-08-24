@@ -1534,8 +1534,10 @@ dl.accordion-list dd {
 .product-add-to-cart-sticky--content .add_to_cart_holder .button {
   flex: 1;
   min-height: 40px;
-  border-radius: 0;
-  padding: 10px 5px 5px;  
+  padding: 10px 5px 5px;
+  background-color: #E2C465 !important;
+  border-radius: 30px;
+  border: 0; 
 }
 
 .product-add-to-cart-sticky--content .product-form {

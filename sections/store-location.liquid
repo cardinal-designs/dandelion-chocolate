@@ -72,19 +72,19 @@
                       <span class="closed">{{ store }}</span>
                     {% else %}
                       
-                      {% if day == "monday" %}1
+                      {% if day == "monday" %}
                         <span class="opened">Open today: {{ block.settings.mon_am }}AM - {{ block.settings.mon_pm | replace: ".5", ":30" }}PM</span>
-                      {% elsif day == "tuesday" %}2
+                      {% elsif day == "tuesday" %}
                         <span class="opened">Open today: {{ block.settings.tue_am }}AM - {{ block.settings.tue_pm | replace: ".5", ":30" }}PM</span>
-                      {% elsif day == "wednesday" %}3
+                      {% elsif day == "wednesday" %}
                         <span class="opened">Open today: {{ block.settings.wed_am }}AM - {{ block.settings.wed_pm | replace: ".5", ":30" }}PM</span>
-                      {% elsif day == "thursday" %}4
+                      {% elsif day == "thursday" %}
                         <span class="opened">Open today: {{ block.settings.thu_am }}AM - {{ block.settings.thu_pm | replace: ".5", ":30" }}PM</span>
-                      {% elsif day == "friday" %}5
+                      {% elsif day == "friday" %}
                         <span class="opened">Open today: {{ block.settings.fri_am }}AM - {{ block.settings.fri_pm | replace: ".5", ":30" }}PM</span>
-                      {% elsif day == "saturday" %}6
+                      {% elsif day == "saturday" %}
                         <span class="opened">Open today: {{ block.settings.sat_am }}AM - {{ block.settings.sat_pm | replace: ".5", ":30" }}PM</span>
-                      {% elsif day == "sunday" %}7
+                      {% elsif day == "sunday" %}
                         <span class="opened">Open today: {{ block.settings.sun_am }}AM - {{ block.settings.sun_pm | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% endif %}
