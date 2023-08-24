@@ -444,9 +444,10 @@ body .zapietModal.moreInformation h2 {
 .prop65_warning {
   margin: 14px 0 0;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 14px;
+  line-height: 18px;
   letter-spacing: .02em;
+  color: #53595C;
 }
 
 .cart__summer-shipping.summer-shipping b {

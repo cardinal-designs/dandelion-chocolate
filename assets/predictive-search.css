@@ -166,6 +166,11 @@
   text-align: center;
 }
 
+.search-drawer .predictive-search__item:hover,
+.search-drawer .add_to_cart_holder .single-add-to-cart-button {
+  background: var(--dark-gold);
+}
+
 .side-panel-content.side-panel-content--has-tabs .side-panel-content--inner {
   overflow: auto;
 }
