@@ -94,8 +94,9 @@
 }
 
 .template-customers-login input {
-  height: 50px;  
-  color: var(--chacoal-black);
+  height: 50px;
+  color: var(--charcoal-black);
+  background: #fff;
 }
 
 .template-customers-login .thb-login-form .field label {
