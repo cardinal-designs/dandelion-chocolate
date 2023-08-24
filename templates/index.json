@@ -521,13 +521,13 @@
             "wed_am": 7,
             "ted_pm": 6,
             "thu_am": 7,
-            "thu_pm": 8.5,
+            "thu_pm": 6.5,
             "fri_am": 7,
-            "fri_pm": 8,
+            "fri_pm": 6,
             "sat_am": 9,
-            "sat_pm": 10.5,
+            "sat_pm": 7.5,
             "sun_am": 9,
-            "sun_pm": 9
+            "sun_pm": 8
           }
         },
         "template--15975893827724__f2cb92da-bdb5-44fa-8b49-1b79e94a0b15-16896716954a5dba7a-1": {
