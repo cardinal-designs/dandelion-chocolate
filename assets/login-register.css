@@ -85,6 +85,10 @@
   background: var(--off-white);
 }
 
-.template-customers-login .thb-login-form h4 {
+.template-customers-login .thb-login-form .heading {
   font-size: 40px;
+}
+
+.template-customers-login .thb-login-form .sub_heading {
+  font-size: 20px;
 }
