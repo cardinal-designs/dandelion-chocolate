@@ -87,7 +87,9 @@
 
 .template-customers-login .thb-login-form .heading {
   font-size: 40px;
-  line-height: 1;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0.04em;
 }
 
 .template-customers-login .thb-login-form .sub_heading {
