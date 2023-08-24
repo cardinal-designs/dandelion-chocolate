@@ -1122,6 +1122,10 @@ input[type=submit]:hover {
   display: none;
 }
 
+.cart-section {
+  background-color: #FFFDF9;
+}
+
 @media screen and (max-width: 767px) {
   
   .hide__mobile {
