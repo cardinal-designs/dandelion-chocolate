@@ -565,19 +565,19 @@
             "link_text": "Learn More",
             "store_close_date": "2023-11-23\n2023-12-25\n2023-12-31\n2024-01-01",
             "mon_am": 7,
-            "mon_pm": 12,
+            "mon_pm": 8,
             "tue_am": 7,
-            "tue_pm": 12,
+            "tue_pm": 9,
             "wed_am": 7,
-            "ted_pm": 12,
+            "ted_pm": 10.5,
             "thu_am": 7,
-            "thu_pm": 12,
+            "thu_pm": 8.5,
             "fri_am": 7,
-            "fri_pm": 12,
+            "fri_pm": 9.5,
             "sat_am": 7,
-            "sat_pm": 12,
+            "sat_pm": 7,
             "sun_am": 7,
-            "sun_pm": 12
+            "sun_pm": 9.5
           }
         },
         "template--15975893827724__f2cb92da-bdb5-44fa-8b49-1b79e94a0b15-16896716954a5dba7a-3": {
