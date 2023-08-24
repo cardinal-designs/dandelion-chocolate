@@ -148,3 +148,7 @@
   text-transform: capitalize;
   color: var(--charcoal-black);
 }
+
+.search-drawer .card__tasting-notes {
+  margin: 4px 0 9px; 
+}
