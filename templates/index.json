@@ -590,19 +590,19 @@
             "link_text": "Learn More",
             "store_close_date": "",
             "mon_am": 10,
-            "mon_pm": 12,
+            "mon_pm": 10.5,
             "tue_am": 10,
-            "tue_pm": 12,
+            "tue_pm": 7.5,
             "wed_am": 10,
-            "ted_pm": 12,
+            "ted_pm": 6.5,
             "thu_am": 10,
-            "thu_pm": 12,
+            "thu_pm": 8,
             "fri_am": 10,
-            "fri_pm": 12,
+            "fri_pm": 4,
             "sat_am": 10,
-            "sat_pm": 12,
+            "sat_pm": 10.5,
             "sun_am": 10,
-            "sun_pm": 12
+            "sun_pm": 8
           }
         },
         "template--15975893827724__f2cb92da-bdb5-44fa-8b49-1b79e94a0b15-16896716954a5dba7a-4": {
