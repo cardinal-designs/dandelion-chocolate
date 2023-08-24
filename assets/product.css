@@ -1545,8 +1545,8 @@ dl.accordion-list dd {
 }
 
 .product-add-to-cart-sticky--content .add_to_cart_holder .button:hover {
-  background: #A48B55;
-  color: #ffffff;  
+  background: #A48B55 !important;
+  color: #ffffff !important;
 }
 
 .product-add-to-cart-sticky--content .add_to_cart_holder .button::before {
