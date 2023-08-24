@@ -1128,6 +1128,7 @@ input[type=submit]:hover {
 
 .template-cart .remove {
   margin-left: 33px;
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
