@@ -213,7 +213,7 @@
 }
 
 .product-card .product-featured-image-link:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .product-card .product-featured-image-link .thb-placeholder {
