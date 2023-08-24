@@ -703,3 +703,9 @@ body .zapietModal.moreInformation h2 {
 .cart__summer-shipping p:last-child {
   margin-bottom: 0;
 }
+
+.free-shipping--text {
+  font-family: Garamond;
+  text-align: center;
+  color: #333333;
+}
