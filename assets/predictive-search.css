@@ -25,15 +25,7 @@
     background: var(--color-accent);
     border-color: var(--color-accent); }
 
-.thb-predictive-search--label {
-  display: block;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 20px; }
+
 
 .thb-predictive-search--popular {
   margin-bottom: 30px;
@@ -86,6 +78,18 @@
 
 .search-drawer {
   max-width: 400px;
+}
+
+.thb-predictive-search--label {
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 14px; 
+  font-family: Saa Series F D;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.1em;
 }
 
 .side-panel.search-drawer .searchform input::placeholder {
