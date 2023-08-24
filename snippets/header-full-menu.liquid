@@ -79,7 +79,7 @@
                       {%- else -%}
                         Test
                         <a href="{{ colLink.url }}">
-                          <img src="{{ block.settings.megamenu_image | img_url: '450x' }}">
+                          <img src="{{ blocks.settings.megamenu_image | img_url: '450x' }}">
                         </a>                     
                       {%- endif -%}
                       <a href="{{ colLink.url }}" title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
