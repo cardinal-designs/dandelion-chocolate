@@ -51,6 +51,7 @@
     "show_products_swatches": false,
     "show_products_rating": false,
     "show_secondary_btn_hover": false,
+    "free_shipping_cart": true,
     "cart_drawer_notes": false,
     "button_type": "cart_drawer_cart_button",
     "free_shipping": false,
