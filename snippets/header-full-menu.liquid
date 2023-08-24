@@ -14,10 +14,11 @@
             assign position = block.settings.position | plus: 0
         if position == parent_index
                 assign has_mega_menu = true
-                assign mega_menu_block_index = forloop.index1
+                assign mega_menu_block_index = forloop.index0
             endif
         endfor
       -%}
+      {{ mega_menu_block_index }}
       <li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if has_mega_menu %} menu-item-has-megamenu{% endif %}{% if link.active %} active{% endif %}" {% if has_sub_menu %}data-item-title="{{ link.title | escape }}"{% endif %}>
         <a href="{{ link.url }}" class="navigation__link" title="{{ link.title | escape }}"{%- if link.active %} aria-current="page"{% endif -%}>
                 {{- link.title -}}
@@ -57,7 +58,7 @@
             assign mega_menu_block = blocks[mega_menu_block_index]
           -%}
 
-          {{  mega_menu_block.type }}
+          
           {% if mega_menu_block.type == 'custom_megamenu' %}
             <div class="sub-menu mega-menu-container Custom_SubMenu--Section" tabindex="-1">
               <div class="Custom_SubMenu--Wrapper">
