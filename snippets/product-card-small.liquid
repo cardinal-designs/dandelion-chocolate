@@ -30,10 +30,6 @@
     
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
 
-    {%- if product_small.metafields.info.country != blank -%}
-      <h2 class="product__country h2">{{ product_small.metafields.info.country }}</h2>
-    {% endif %}
-    
      {%- if product_small.metafields.info.notes != blank -%}
         <div class="card__tasting-notes">{{ product_small.metafields.info.notes }}</div>
       {%- endif -%}
