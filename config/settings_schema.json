@@ -713,8 +713,7 @@
         "type": "text",
         "id": "free_shipping_text_cart_page",
         "label": "Free shipping text cart page",
-        "default": "25",
-        "info": "You’re eligible for free shipping!"
+        "default": "You’re eligible for free shipping!"
       }
     ]
   },
