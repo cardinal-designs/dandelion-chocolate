@@ -92,6 +92,10 @@
   letter-spacing: 0.1em;
 }
 
+.search-drawer .side-panel-content--tabs {
+  height: auto;
+}
+
 .search-drawer .side-panel-content--tabs button {
   padding-left: 17px;
   padding-right: 17px;
