@@ -378,7 +378,7 @@
   width: 100%;
 }
 
-.header .full-menu .thb-full-menu li.menu-item-has-children:hover > .sub-menu.third__level-menu {
+.header .full-menu .thb-full-menu li.menu-item-has-children:hover .sub-menu.third__level-menu {
   visibility: visible;
   opacity: 1;
 }
