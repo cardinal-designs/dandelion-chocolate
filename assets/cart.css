@@ -282,7 +282,7 @@
   margin-top: 20px; 
 }
 
-p.cart-policy-text {
+.cart-footer .cart-policy-text {
   display: inline-block;
   font-size: 14px;
   margin-top: 10px;
@@ -290,6 +290,7 @@ p.cart-policy-text {
   width: 100%;
   font-family: Garamond;
 }
+
 .cart-policy-text a {
   text-decoration: underline;
   text-underline-offset: 2px; 
