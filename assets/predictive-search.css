@@ -112,6 +112,10 @@
   color: #53595C;
 }
 
+.search-drawer .product-cart-item-image {
+  margin-right: 12px;
+}
+
 .side-panel-content.side-panel-content--initial {
   border-top: 1px solid #94949C;
   border-bottom: 1px solid #94949C;
