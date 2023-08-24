@@ -167,7 +167,7 @@
 }
 
 .search-drawer .predictive-search__item:hover,
-.search-drawer .add_to_cart_holder .single-add-to-cart-button {
+.search-drawer .add_to_cart_holder .single-add-to-cart-button:hover {
   background: var(--dark-gold);
 }
 
