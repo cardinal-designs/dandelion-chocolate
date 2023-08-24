@@ -90,6 +90,7 @@
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0.1em;
+  color: #53595C;
 }
 
 .search-drawer .side-panel-content--tabs {
@@ -100,9 +101,15 @@
   padding-left: 17px;
   padding-right: 17px;
   height: auto;
-  text-align: left;
   display: block;
   margin-top: 17px;
+  font-family: Saa Series F D;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #53595C;
 }
 
 .side-panel-content.side-panel-content--initial {
