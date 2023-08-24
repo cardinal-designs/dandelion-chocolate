@@ -84,6 +84,10 @@
 
 
 
+.search-drawer {
+  max-width: 400px;
+}
+
 .side-panel.search-drawer .searchform input::placeholder {
   font-size: 18px;
   color: var(--charcoal-black);
