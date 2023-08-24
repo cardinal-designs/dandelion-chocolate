@@ -4,6 +4,12 @@
 {% assign deliveryMinimum = section.settings.delivery_cart_minimum | plus: 0 | times: 100 %}
 {%- assign show_prop65_warning = false %}
 
+{%- liquid
+  assign free_shipping = settings.free_shipping
+  assign free_shipping_minimum = settings.free_shipping_minimum | times: 100
+  assign total = cart.total_price
+-%}
+
 <div class="row">
   <div class="small-12">
     <div
