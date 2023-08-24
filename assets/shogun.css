@@ -232,3 +232,7 @@ body .included-product__single .card__name {
   font-size: 12px !important;
   line-height: 1 !important;
 }
+
+.location-div .hours-table {
+  margin-bottom: 0;
+}
