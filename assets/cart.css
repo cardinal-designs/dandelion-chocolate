@@ -282,9 +282,9 @@
   margin-top: 20px; 
 }
 
-.cart-policy-text {
+p.cart-policy-text {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 14px;
   margin-top: 10px;
   text-align: center;
   width: 100%;
