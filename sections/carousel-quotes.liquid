@@ -148,4 +148,10 @@
 {% endstylesheet %}
 
 {% javascript %}
+  var elem = document.querySelector('.carousel__quotes--inner');
+    var flkty = new Flickity( elem, {
+    prevNextButtons: true,
+    pageDots: false,
+    adaptiveHeight: false
+  });
 {% endjavascript %}
