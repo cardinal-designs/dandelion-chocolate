@@ -728,3 +728,7 @@ body .zapietModal.moreInformation h2 {
 .template-cart .cart-items.no-borders tbody {
   border-bottom: 1px solid #777777;
 }
+
+.grid__item.cart-gift {
+  margin-bottom: 10px;
+}
