@@ -77,7 +77,7 @@
                           <img src="{{ collectionFeatured.image | img_url: '450x' }}">
                         </a>
                       {%- else -%}
-                       {% for block in section.blocks %}
+                       {% for block in blocks %}
                          {{ block.settings.title }}
                         {% endfor %}
                         <a href="{{ colLink.url }}">
