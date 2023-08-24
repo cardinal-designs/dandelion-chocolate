@@ -131,9 +131,10 @@
 }
 
 .thb-cart-form .cart-items tbody tr td.product-subtotal .price {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #53595c;
+  line-height: 17px;
 }
 
 
