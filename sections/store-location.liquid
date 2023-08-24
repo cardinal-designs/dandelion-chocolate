@@ -71,7 +71,7 @@
                       {% assign store = 'Closed today. ' |append: 'Opens next on ' |append: nextDate %}
                       <span class="closed">{{ store }}</span>
                     {% else %}
-                      {{ block.settings.thu_pm | replace: ".5", ":30" }}
+                      
                       {% if day == "monday" %}1
                         <span class="opened">Open today: {{ block.settings.mon_am }}AM - {{ block.settings.mon_pm | replace: ".5", ":30" }}PM</span>
                       {% elsif day == "tuesday" %}2
