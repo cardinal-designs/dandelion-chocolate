@@ -383,10 +383,6 @@ body .zapietModal.moreInformation h2 {
   font-weight: 500;
 }
 
-.proceed-to-checkout {
-  text-align: right;
-}
-
 .proceed-to-checkout .checkout-button {
   font-weight: 700;  
 }
