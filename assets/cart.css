@@ -384,7 +384,11 @@ body .zapietModal.moreInformation h2 {
 }
 
 .proceed-to-checkout .checkout-button {
-  font-weight: 700;  
+  font-weight: 700;
+  border-radius: 30px;
+  background: #E2C465;
+  width: 100%;
+  border: 0;
 }
 
 .cart__dynamic-checkout-buttons {
