@@ -676,3 +676,7 @@ body .zapietModal.moreInformation h2 {
 .grid__item.gift_cart {
   margin-top: 26px;
 }
+
+.cart__summer-shipping p {
+  margin-bottom: 15px;
+}
