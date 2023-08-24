@@ -162,6 +162,8 @@
     prevNextButtons: true,
     pageDots: false,
     adaptiveHeight: false,
-    autoPlay: 1500
+    {% if section.settings.autoplay %}
+      autoPlay: {{ section.settings.autoplay_speed }}
+    {% endif %}
   });
 </script>
