@@ -43,7 +43,7 @@
 }
 
 .scrolling-text--inner.direction-left > div {
-  animation: marquee-left 80s linear infinite; 
+  animation: marquee-left 10s linear infinite; 
 }
 
 .scrolling-text--inner.direction-right > div {
