@@ -98,3 +98,7 @@
   padding-bottom: 36px;
   position: relative;
 }
+
+.addtocart__small--wrapper .product-form {
+  margin: 0;
+}
