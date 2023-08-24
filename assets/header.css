@@ -388,6 +388,10 @@
   margin-bottom: 0;
 }
 
+.sub-menu.third__level-menu li:last-child a {
+  margin-bottom: 0 !important;
+}
+
 @media screen and (min-width: 1068px) {
 
   .header.style4 .header__wrapper {
