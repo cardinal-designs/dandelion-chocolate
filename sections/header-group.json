@@ -99,12 +99,6 @@
           "settings": {
             "image_title": "Pickups"
           }
-        },
-        "030ddf9f-0c54-48cc-ba97-3ffc68f15f88": {
-          "type": "megamenu_image",
-          "settings": {
-            "image_title": ""
-          }
         }
       },
       "block_order": [
@@ -117,8 +111,7 @@
         "59fdebdd-45ed-474b-8605-4e3c015e3780",
         "a881f3fe-2a90-4dfa-8a15-f50422777a0e",
         "915badcb-601a-4c4d-b20f-fe20c91ef08c",
-        "1e649e31-ff0a-4b4c-943f-70735fef3a11",
-        "030ddf9f-0c54-48cc-ba97-3ffc68f15f88"
+        "1e649e31-ff0a-4b4c-943f-70735fef3a11"
       ],
       "settings": {
         "bg_color": "#fffdf9",
