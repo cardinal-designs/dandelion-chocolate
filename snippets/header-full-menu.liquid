@@ -77,9 +77,9 @@
                           <img src="{{ collectionFeatured.image | img_url: '450x' }}">
                         </a>
                       {%- else -%}
-                       {% for block in blocks %}
-                         {{ block.settings.title }}
-                        {% endfor %}
+                     
+                         {{ mega_menu_block.type }}
+                       
                         <a href="{{ colLink.url }}">
                           <img src="{{ mega_menu_block.settings.megamenu_image | img_url: '450x' }}">
                         </a>                     
