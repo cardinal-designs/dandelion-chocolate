@@ -165,12 +165,13 @@
         {{ product_card_product.title }}
       {% endif %}
     </a>
-
-    {% render 'product-price', product: product_card_product, show_compare_price: show_compare_price %}
     
     {%- if product_card_product.metafields.info.country != blank -%}
       <h2 class="product__country h2">{{ product_card_product.metafields.info.country }}</h2>
-    {% endif %}      
+    {% endif %}   
+    
+    {% render 'product-price', product: product_card_product, show_compare_price: show_compare_price %}
+   
     {% if product_card_product.metafields.custom.short_description != blank and show_description %}
       <div class="product__description body">{{ product_card_product.metafields.custom.short_description }}</div>
     {% endif %}
