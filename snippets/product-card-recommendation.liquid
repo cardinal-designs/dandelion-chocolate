@@ -165,14 +165,16 @@
         {{ product_card_product.title }}
       {% endif %}
     </a>
-      
+
+    {% render 'product-price', product: product_card_product, show_compare_price: show_compare_price %}
+    
     {%- if product_card_product.metafields.info.country != blank -%}
       <h2 class="product__country h2">{{ product_card_product.metafields.info.country }}</h2>
     {% endif %}      
     {% if product_card_product.metafields.custom.short_description != blank and show_description %}
       <div class="product__description body">{{ product_card_product.metafields.custom.short_description }}</div>
     {% endif %}
-    {% render 'product-price', product: product_card_product, show_compare_price: show_compare_price %}
+
     {% render 'product-card-swatch', product: product_card_product, sizes: sizes %}
     {%- if settings.show_products_rating and product_card_product.metafields.reviews.rating.value != blank -%}
       <div class="star-rating" style="--star-rating: {{ product_card_product.metafields.reviews.rating.value.rating }};"></div>
