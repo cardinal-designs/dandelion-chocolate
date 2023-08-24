@@ -77,11 +77,9 @@
                           <img src="{{ collectionFeatured.image | img_url: '450x' }}">
                         </a>
                       {%- else -%}
-                        {%- if mega_menu_block.type = 'megamenu_image' -%}
-                          <a href="{{ colLink.url }}">
-                            <img src="{{ mega_menu_block.settings.megamenu_image | img_url: '450x' }}">
-                          </a>                     
-                        {%- endif -%}
+                        <a href="{{ colLink.url }}">
+                          <img src="{{ mega_menu_block.settings.megamenu_image | img_url: '450x' }}">
+                        </a>                     
                       {%- endif -%}
                       <a href="{{ colLink.url }}" title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
                     </li>
