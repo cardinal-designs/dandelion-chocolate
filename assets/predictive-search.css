@@ -207,6 +207,7 @@
 
 .search-drawer .side-panel-content--search-footer {
   padding: 18px 30px;
+  border-top: 1px solid #94949C;
 }
 
 .search-drawer .side-panel-content--search-footer button {
