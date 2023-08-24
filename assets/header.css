@@ -107,7 +107,7 @@
 }
 
 .header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu {
-  padding: 5px 15px 13px;
+  padding: 27px 25px 31px;
   min-width: 215px;
   box-shadow: none;
   left: 0;
@@ -118,7 +118,6 @@
   color: #333333;
   text-decoration: none;
 }
-
 
 .header .full-menu .thb-full-menu li.menu-item-has-children > .sub-menu.third__level-menu li a:hover {
   color: var(--terra-cotta);  

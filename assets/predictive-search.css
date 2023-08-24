@@ -116,6 +116,16 @@
   border-radius: 50px;
 }
 
+.addtocart__small--wrapper .single-add-to-cart-button--text {
+  color: #A48B55;
+  font-family: Saa Series F D;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
 .side-panel-content.side-panel-content--has-tabs .side-panel-content--inner {
   overflow: auto;
 }
