@@ -130,3 +130,12 @@
 .side-panel-content.side-panel-content--has-tabs .side-panel-content--inner {
   overflow: auto;
 }
+
+.search-drawer .side-panel-content--inner .new-percentage {
+  font-family: Saa Series F D;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.15em;
+  margin-bottom: 3px;
+}
