@@ -1,3 +1,7 @@
 .recommenadtions__row {
   background-color: #FFFDF9;
 }
+
+.recommenadtions__row .product-card .product-card-info .price {
+  margin-bottom: 17px;
+}
