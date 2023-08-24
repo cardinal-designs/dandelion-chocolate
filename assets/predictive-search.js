@@ -32,7 +32,7 @@ class PredictiveSearch {
       item.addEventListener('click', (event) => {
         var _this = this;
         event.preventDefault();
-        document.getElementsByTagName("body")[0].classList.toggle('open-cc');
+        // document.getElementsByTagName("body")[0].classList.toggle('open-cc');
         this.container.classList.toggle('active');
         this.container.closest('body').classList.add('open-cc');
         if (this.container.classList.contains('active')) {
