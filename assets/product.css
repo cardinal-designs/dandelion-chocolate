@@ -1629,6 +1629,10 @@ quantity-selector.quantity .plus svg {
   flex: 0 0 calc(100% - 96px);  
 }
 
+.chocolate__bar-product .product-add-to-cart-sticky--info {
+  flex: 0 0 calc(100% - 139px);
+}
+
 .product-title-uppercase-true .product-add-to-cart-sticky--title {
   font-family: Garamond Premiere Pro;
   font-size: 24px;
