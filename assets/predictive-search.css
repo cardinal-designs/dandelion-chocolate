@@ -200,6 +200,10 @@
   margin-bottom: 3px;
 }
 
+.search-drawer .price {
+  color: #53595C;
+}
+
 .search-drawer .side-panel-content--inner .cart-product-link {
   font-size: 18px;
   font-weight: 400;
