@@ -2,6 +2,7 @@
 
 
 .thb-predictive-search--popular div a {
+  font-family: 'Saa Series F D';
   display: inline-flex;
   white-space: nowrap;
   font-size: 0.6875rem;
