@@ -221,3 +221,8 @@ body .included-product__single .card__name {
 .hours-table {
   border: 0;
 }
+
+.hours-table td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
