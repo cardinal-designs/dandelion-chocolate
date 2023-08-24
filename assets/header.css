@@ -108,10 +108,14 @@
 
 .header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu {
   padding: 27px 25px 31px;
-  width: 318px;
+  min-width: 215px;
   box-shadow: none;
   left: 0;
   box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.15);
+}
+
+.header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu.location__menu {
+  width: 318px;
 }
 
 .header .full-menu .thb-full-menu li.menu-item-has-children > .sub-menu li:hover > a {
