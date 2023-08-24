@@ -88,3 +88,8 @@
   font-size: 18px;
   color: var(--charcoal-black);
 }
+
+.addtocart__small--wrapper {
+  position: absolute;
+  left: 0;
+}
