@@ -34,7 +34,8 @@ class PredictiveSearch {
         event.preventDefault();
         document.getElementsByTagName("body")[0].classList.toggle('open-cc');
         this.container.classList.toggle('active');
-        this.container.classList.toggle('open-cc');
+        console.log(this.container)
+        // this.container.classList.toggle('open-cc');
         if (this.container.classList.contains('active')) {
           setTimeout(function() {
             _this.input.focus({
