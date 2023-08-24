@@ -9,3 +9,7 @@
 .recommenadtions__row .product-title-uppercase-true .product-card .product-card-title {
   margin-bottom: 12px;
 }
+
+.recommenadtions__row .card__type {
+  color: #53595C;
+}
