@@ -113,6 +113,7 @@
   background: #E3BE66;
   border: none;
   color: var(--charcoal-black);
+  max-width: 352px;
 }
 
 .template-customers-login .thb-login-form .button_wrap button:hover:before {
