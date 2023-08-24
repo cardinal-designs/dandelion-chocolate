@@ -719,3 +719,7 @@ body .zapietModal.moreInformation h2 {
 .template-cart aside.free-shipping {
   margin-bottom: 50px;
 }
+
+.template-cart table.no-borders thead th {
+  border-bottom: 1px solid #777777;  
+}
