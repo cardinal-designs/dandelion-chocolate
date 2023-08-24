@@ -25,7 +25,7 @@
   .thb-form-container .thb-register-form {
     width: 100%;
     flex: 1;
-    max-width: 640px;
+    max-width: 770px;
     margin: 0 auto; }
     @media only screen and (min-width: 768px) {
       .thb-form-container .thb-login-form,
