@@ -5,8 +5,8 @@
 {%- assign show_prop65_warning = false %}
 
 {%- liquid
-  assign free_shipping = settings.free_shipping
-  assign free_shipping_minimum = settings.free_shipping_minimum | times: 100
+  assign free_shipping = settings.free_shipping_cart
+  assign free_shipping_minimum = settings.free_shipping_minimum_cart | times: 100
   assign total = cart.total_price
 -%}
 
@@ -23,7 +23,7 @@
           novalidate>
           <h2 class="h2">{{ 'sections.cart.title' | t }}</h2>
           
-          {%- if free_shipping and settings.free_shipping_minimum != blank -%}
+          {%- if free_shipping and settings.free_shipping_minimum_cart != blank -%}
             <aside
               class="free-shipping"
               data-cart-total="{{ total }}"
