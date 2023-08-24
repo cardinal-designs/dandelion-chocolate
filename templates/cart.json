@@ -1,1 +1,32 @@
-{"sections":{"main-cart":{"type":"main-cart","settings":{"cart_notes_enable":true,"summer_shipping_enable":true,"holiday_shipping_enable":false,"holiday_shipping_first_date":"2021-11-20","holiday_shipping_last_date":"2020-12-14","delivery_cart_minimum":"45"}},"product-recommendations":{"type":"product-recommendations","settings":{"heading":"You may also like","heading_left":false,"description":"<p>Describe your featured collection here<\/p>","full_width":true,"mobile_swipe":true,"disable_top_spacing":true,"disable_bottom_spacing":false}}},"order":["main-cart","product-recommendations"]}
+{
+  "sections": {
+    "main-cart": {
+      "type": "main-cart",
+      "settings": {
+        "cart_notes_enable": true,
+        "summer_shipping_enable": true,
+        "summer_shipping_enable_text": "<p><strong>WHEN DO YOU SHIP?<\/strong><\/p><p>We ship Monday through Friday, pending product availability.<\/p><p><strong>FEDEX 2DAY SHIPPING<\/strong><\/p><p>Choose $15 expedited shipping at checkout for FedEx 2Day service. These orders are processed first and generally ship within one business day. Orders placed before noon ship same business day.<\/p><p><strong>USPS PRIORITY SHIPPING<\/strong><\/p><p>USPS Priority Shipping is free for orders $25 and above. These orders generally ship within 3 business days. We cannot guarantee arrival dates, but work hard to get these orders to USPS as quickly as possible. (Please let us know if USPS delivery is not available to your address.)<\/p><p><strong>WARM WEATHER SHIPPING<\/strong><\/p><p>From April to September, we pack orders with ice (at no extra charge). For orders placed Wednesday through Friday, if hot weather is forecast, we may hold shipments until Monday, to prevent chocolate from melting over weekends.<\/p>",
+        "holiday_shipping_enable": false,
+        "holiday_shipping_first_date": "2021-11-20",
+        "holiday_shipping_last_date": "2020-12-14",
+        "delivery_cart_minimum": "45"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "heading_left": false,
+        "description": "<p>Describe your featured collection here<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main-cart",
+    "product-recommendations"
+  ]
+}
