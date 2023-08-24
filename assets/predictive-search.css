@@ -93,3 +93,8 @@
   position: absolute;
   left: 0;
 }
+
+.search-drawer .product-cart-item {
+  padding-bottom: 36px;
+  position: relative;
+}
