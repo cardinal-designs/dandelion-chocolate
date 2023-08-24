@@ -74,7 +74,7 @@
                     <li class="pl-10 pr-10 mt-15{% if colLink.active %} active{% endif %}" role="none">
                       {%- if colLink.type contains 'collection_link' -%}
                         <a href="{{ colLink.url }}">
-                            <img src="{{ collectionFeatured.image | img_url: '450x' }}">
+                          <img src="{{ collectionFeatured.image | img_url: '450x' }}">
                         </a>
                       {%- endif -%}
                       <a href="{{ colLink.url }}" title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
