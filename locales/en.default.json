@@ -215,7 +215,7 @@
       "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
-      "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
+      "taxes_and_shipping_at_checkout": "Final tax and shipping calculated during checkout",
       "summer_shipping_notice_html": "We ship Monday through Friday, pending product availability. <br><br> Choose <b>$15 expedited shipping<\/b> at checkout for <b>FedEx 2Day service<\/b>. These orders are processed first and generally ship within one business day. Orders placed before noon <b>ship same business day.<\/b><br><br>  <b>USPS Priority Shipping is free<\/b> for orders $25 and above. These orders generally ship within 3 business days. We cannot guarantee arrival dates, but work hard to get these orders to USPS as quickly as possible. (Please let us know if USPS delivery is not available to your address.) <br><br><b> From April to September, we pack orders with ice (at no extra charge). For orders placed Wednesday through Friday, if hot weather is forecast, we may hold shipments until Monday, to prevent chocolate from melting over weekends.<\/b>",
       "summer_shipping_delayed_delivery": "",
       "gift": "Add a gift message",
