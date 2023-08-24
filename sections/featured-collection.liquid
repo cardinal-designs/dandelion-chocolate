@@ -235,6 +235,22 @@
   </div>
 </div>
 
+{% style %}
+
+  .template-page-shop #{{ section.settings.section_id }} .featured__collection .section__title {
+    font-size: {{ section.settings.heading_desktop }};
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .template-page-shop #{{ section.settings.section_id }} .featured__collection .section__title {
+      font-size: {{ section.settings.heading_mobile }};
+    }
+    
+  }
+  
+{% endstyle %}
+  
 {% schema %}
 {
   "name": "Featured collection",
@@ -249,6 +265,26 @@
       "id": "heading",
       "label": "Heading",
       "default": "Featured Collection"
+    },
+    {
+      "type": "range",
+      "id": "heading_desktop",
+      "min": 10,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading size for desktop",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "heading_mobile",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading size for mobile",
+      "default": 22
     },
     {
       "type": "checkbox",
