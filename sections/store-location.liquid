@@ -13,6 +13,7 @@
     <div class="store__location--wrap">
       <div class="content__left">
         {% if section.settings.image != blank %}
+          {{ section.settings.image_link }}tttttt
           <a href="{{ section.settings.image_link }}">
             <div class="hide-mobile">{{ section.settings.image | image_url:width:original | image_tag }}</div>
             {% if section.settings.mobile_image != blank %}
