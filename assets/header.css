@@ -356,6 +356,15 @@
   height: 116px;
 }
 
+.header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu.third__level-menu {
+  position: relative;
+  top: unset;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: none;
+}
+
 @media screen and (min-width: 1068px) {
 
   .header.style4 .header__wrapper {
