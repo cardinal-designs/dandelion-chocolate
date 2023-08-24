@@ -356,7 +356,7 @@
   height: 116px;
 }
 
-.header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu.third__level-menu {
+.header .full-menu .thb-full-menu li.menu-item-has-children > .sub-menu.third__level-menu {
   position: relative;
   top: unset;
   transform: none;
