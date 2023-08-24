@@ -92,6 +92,7 @@
 .addtocart__small--wrapper {
   position: absolute;
   left: 0;
+  width: 100%;
 }
 
 .search-drawer .product-cart-item {
