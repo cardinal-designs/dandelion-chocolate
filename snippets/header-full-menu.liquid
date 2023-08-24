@@ -80,7 +80,7 @@
                           <img src="{{ collectionFeatured.image | img_url: '450x' }}">
                         </a>
                       {%- else -%}
-                     {{ colLink }}
+                     {{ colLink.title }}
                       {% for block in blocks %}
                       {% assign ImageTitle = block.settings.image_title | handleize %}
                       
