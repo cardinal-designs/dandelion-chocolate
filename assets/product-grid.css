@@ -360,7 +360,7 @@
 }
 
 .product-card .product-card-quickview:hover {
-  background: var(--charcoal-black) !important;
+  background: var(--dark-gold) !important;
   color: var(--white) !important;
   border-color: var(--charcoal-black) !important;
 }
