@@ -5,3 +5,7 @@
 .recommenadtions__row .product-card .product-card-info .price {
   margin-bottom: 17px;
 }
+
+.recommenadtions__row .product-title-uppercase-true .product-card .product-card-title {
+  margin-bottom: 12px;
+}
