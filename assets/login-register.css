@@ -104,6 +104,13 @@
   line-height: 1;
 }
 
-.template-customers-login .thb-login-form {
+.template-customers-login .thb-login-form .button_wrap {
   text-align: center; 
+}
+
+.template-customers-login .thb-login-form .button_wrap button {
+  border-radius: 50px;
+  background: #E3BE66;
+  border: none;
+  color: var(--charcoal-black);
 }
