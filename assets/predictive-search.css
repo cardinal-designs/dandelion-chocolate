@@ -92,11 +92,12 @@
 .addtocart__small--wrapper {
   position: absolute;
   left: 0;
+  bottom: 0;
   width: 100%;
 }
 
 .search-drawer .product-cart-item {
-  padding-bottom: 36px;
+  padding-bottom: 53px;
   position: relative;
 }
 
