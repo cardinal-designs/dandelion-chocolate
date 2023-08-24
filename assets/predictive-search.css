@@ -102,3 +102,7 @@
 .addtocart__small--wrapper .product-form {
   margin: 0;
 }
+
+.addtocart__small--wrapper .single-add-to-cart-button:before {
+  display: none;
+}
