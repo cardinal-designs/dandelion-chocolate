@@ -45,9 +45,9 @@
                       {% capture tmpDate %}{{ closeDate }}={{ date }}{% endcapture %}
                       {% assign DateStringArrayTmp = DateStringArrayTmp | append:tmpDate | append:',' %}
                     
-                      {% if closeDate == currentDate %}11
+                      {% if closeDate == currentDate %}
                         {% assign CurrentDateExist = true %}
-                      {% else %}22
+                      {% else %}
                         {% assign DateStringArray = DateStringArray | append: closeDate | append: ',' %}
                       {% endif %}
                     {% endfor %}

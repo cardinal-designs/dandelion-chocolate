@@ -1537,7 +1537,11 @@ dl.accordion-list dd {
   padding: 10px 5px 5px;
   background-color: #E2C465 !important;
   border-radius: 30px;
-  border: 0; 
+  border: 0;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: .15em;
 }
 
 .product-add-to-cart-sticky--content .product-form {
