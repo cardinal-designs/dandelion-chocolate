@@ -392,6 +392,11 @@ body .zapietModal.moreInformation h2 {
   border: 0;
 }
 
+.proceed-to-checkout .checkout-button:hover {
+  background: #A48B55;
+  color: #ffffff;
+}
+
 .proceed-to-checkout {
   margin-top: 20px;
 }
