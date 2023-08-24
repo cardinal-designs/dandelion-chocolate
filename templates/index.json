@@ -615,19 +615,19 @@
             "link_text": "Learn More",
             "store_close_date": "",
             "mon_am": 8,
-            "mon_pm": 12,
+            "mon_pm": 10,
             "tue_am": 8,
-            "tue_pm": 12,
+            "tue_pm": 11,
             "wed_am": 8,
-            "ted_pm": 12,
+            "ted_pm": 7.5,
             "thu_am": 8,
-            "thu_pm": 12,
+            "thu_pm": 11.5,
             "fri_am": 8,
-            "fri_pm": 12,
+            "fri_pm": 8.5,
             "sat_am": 8,
-            "sat_pm": 12,
+            "sat_pm": 9.5,
             "sun_am": 8,
-            "sun_pm": 12
+            "sun_pm": 3
           }
         }
       },
