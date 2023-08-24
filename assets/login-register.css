@@ -103,6 +103,7 @@
   height: 50px;
   color: var(--charcoal-black);
   background: #fff;
+  border-color: #CCCCCE;
 }
 
 .template-customers-login .thb-login-form .field label {
