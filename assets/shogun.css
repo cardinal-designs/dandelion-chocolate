@@ -217,6 +217,7 @@ body .included-product__single .card__name {
 
 /* =========== bar-info end =========== */
 
-.hours-table td {
+.hours-table td,
+.hours-table {
   border: 0;
 }
