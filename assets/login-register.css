@@ -114,3 +114,7 @@
   border: none;
   color: var(--charcoal-black);
 }
+
+.template-customers-login .thb-login-form .button_wrap button:hover:before {
+  background: var(--charcoal-black);
+}
