@@ -36,7 +36,7 @@
 
                         -%}
                 <li class="{%- if l.active %}active{% endif %}{% if has_sub_menu %} menu-item-has-children{%- endif -%}" role="none" {% if has_sub_menu %}data-item-title="{{ l.title | escape }}"{% endif %}>
-                  <a href="{{ l.url }}" class="navigation__link" {% if l.title == 'Sourcing report' or l.title == 'Wholesale' or l.title == 'Faq' %} target="_blank"{% endif %} title="{{ l.title | escape }}" role="menuitem">
+                  <a href="{{ l.url }}" class="navigation__link" {% if l.title == 'Sourcing report' or l.title == 'Wholesale' or l.title == 'Faq' or l.title == 'Corporate' %} target="_blank"{% endif %} title="{{ l.title | escape }}" role="menuitem">
                                 {{- l.title -}}
                                 {%- if has_sub_menu -%}{%- render 'svg-icons' with 'thb-dropdown-right' -%}{%- endif -%}
                             </a>
