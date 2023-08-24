@@ -44,7 +44,8 @@
         "5c5ce808-46ad-4223-a81d-0762127e6161": {
           "type": "megamenu_image",
           "settings": {
-            "title": "Bars"
+            "title": "Bars",
+            "megamenu_image": "shopify:\/\/shop_images\/Bars.jpg"
           }
         },
         "6ee67f33-b199-44d9-bf55-0c8452932828": {
