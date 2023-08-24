@@ -335,9 +335,6 @@
                       {% endunless %}
                       {% unless item.product.tags contains 'prop65_exempt' %}
                         {%- assign show_prop65_warning = true %}
-                        {% comment %}
-                        <a class="cart-item__meta-title h4" href="#prop65_warning">⚠</a>
-                        {% endcomment %}
                       {% endunless %}
                     </div>
                   </div>

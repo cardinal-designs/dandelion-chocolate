@@ -171,6 +171,10 @@
   background: var(--dark-gold) !important;
 }
 
+.search-drawer .add_to_cart_holder .single-add-to-cart-button:hover .single-add-to-cart-button--text {
+  color: var(--white) !important;
+}
+
 .side-panel-content.side-panel-content--has-tabs .side-panel-content--inner {
   overflow: auto;
 }
