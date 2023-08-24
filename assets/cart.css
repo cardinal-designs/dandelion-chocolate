@@ -689,3 +689,12 @@ body .zapietModal.moreInformation h2 {
   line-height: 17.8px;
   letter-spacing: 2.1px;
 }
+
+.cart__summer-shipping p {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  font-family: 'Garamond Premiere Pro';
+}
