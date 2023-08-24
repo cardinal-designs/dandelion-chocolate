@@ -1126,7 +1126,7 @@ input[type=submit]:hover {
   background-color: #FFFDF9;
 }
 
-.template-cart .remove {
+.template-cart .remove.cart-remove-desktop {
   margin-left: 33px;
   display: block;
 }
