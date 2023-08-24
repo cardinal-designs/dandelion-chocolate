@@ -80,9 +80,12 @@
                           <img src="{{ collectionFeatured.image | img_url: '450x' }}">
                         </a>
                       {%- else -%}
-                     
+                     {{ colLink }}
                       {% for block in blocks %}
-                        {{ block.settings.image_title }}
+                      {% assign ImageTitle = block.settings.image_title | handleize %}
+                      
+                      
+                        
                       {% endfor %}
                        
                         <a href="{{ colLink.url }}">
