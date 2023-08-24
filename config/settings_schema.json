@@ -695,6 +695,19 @@
         "type": "url",
         "id": "cart_terms_conditions_page",
         "label": "Terms and conditions page"
+      },
+      {
+        "type": "checkbox",
+        "id": "free_shipping_cart",
+        "label": "Show free shipping message cart",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_minimum_cart",
+        "label": "Free shipping minimum amount",
+        "default": "25",
+        "info": "Enter the value without a currency symbol and use a decimal to separate dollars and cents. Example: '100.00'"
       }
     ]
   },
