@@ -111,3 +111,7 @@
 .addtocart__small--wrapper .product-add-to-cart-container button {
   margin: 0;
 }
+
+.side-panel-content.side-panel-content--has-tabs .side-panel-content--inner {
+  overflow: auto;
+}
