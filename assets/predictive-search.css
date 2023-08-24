@@ -218,3 +218,7 @@
   width: 20px;
   height: 20px;
 }
+
+.search-drawer .side-panel-close svg path {
+  stroke: #A38B55;
+}
