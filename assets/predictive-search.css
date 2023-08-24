@@ -74,3 +74,10 @@
     .thb-predictive-search--promotion-products .column {
       flex: 0 0 90%;
       max-width: 90%; } }
+
+
+
+.side-panel.search-drawer .searchform input::placeholder {
+  font-size: 18px;
+  color: red;
+}
