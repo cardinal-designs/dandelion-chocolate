@@ -423,6 +423,10 @@ body .zapietModal.moreInformation h2 {
   flex: 0 1 calc(50% - 10px);
 }
 
+.cart__footer--full {
+  flex: 0 1 calc(50% - -12px);
+}
+
 .grid__item.cart-delivery input,
 .grid__item.cart-gift input {
   width: 15px;
