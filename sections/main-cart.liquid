@@ -463,7 +463,7 @@
               <div class="warning">
                 {% if show_prop65_warning %}
                   <div id="prop65_warning" class="prop65_warning prop65_warning--desktop">
-                    {{ settings.prop65_text }}
+                    {{ section.settings.prop65_text }}
                     <a
                       href="#prop65_dialog"
                       class="prop65_moreinfo btn-link"
@@ -543,6 +543,11 @@
         "id": "delivery_cart_minimum",
         "label": "Delivery cart minimum ($)",
         "default": "45"
+      },
+      {
+        "type": "textarea",
+        "id": "prop65_text",
+        "label": "Prop65 text "
       }
     ]
   }
