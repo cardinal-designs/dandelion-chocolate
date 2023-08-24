@@ -369,6 +369,7 @@
   box-shadow: none;
   margin-bottom: 27px;
   padding: 0;
+  width: 100%;
 }
 
 .second__level-menu svg {
