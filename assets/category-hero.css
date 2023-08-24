@@ -28,8 +28,11 @@
 }
 
 .category__hero--wrapper .category_image {
-  transition: all 0.3s;
   overflow: hidden;
+}
+
+.category__hero--wrapper .category_image img {
+  transition: all 0.3s;
 }
 
 .category__hero--wrapper .category_image:hover img {
