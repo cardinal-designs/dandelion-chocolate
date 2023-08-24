@@ -387,7 +387,7 @@ body .zapietModal.moreInformation h2 {
 }
 
 .proceed-to-checkout .checkout-button {
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 30px;
   background: #E2C465;
   width: 100%;
