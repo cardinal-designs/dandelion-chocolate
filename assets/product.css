@@ -1623,6 +1623,9 @@ quantity-selector.quantity .plus svg {
 .chocolate__bar-product .product-add-to-cart-sticky--image {
   background-color: #F5F6F5;
   width: 123px;
+  height: 123px;
+  display: flex;
+  align-items: center;
 }
 
 .product-add-to-cart-sticky--info {
