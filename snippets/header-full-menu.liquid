@@ -41,7 +41,7 @@
                                 {%- if has_sub_menu -%}{%- render 'svg-icons' with 'thb-dropdown-right' -%}{%- endif -%}
                             </a>
                             {%- if has_sub_menu -%}
-                                <ul class="sub-menu" role="menu">
+                                <ul class="sub-menu third__level-menu" role="menu">
                                     {%- for sub_link in l.links -%}
                                         <li class="{%- if sub_link.active %} active{% endif %}" role="none">
                                             <a href="{{ sub_link.url }}" class="navigation__link" title="{{ sub_link.title | escape }}" role="menuitem">{{- sub_link.title -}}</a>
