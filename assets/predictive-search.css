@@ -205,6 +205,10 @@
   padding: 17px 17px 26px;
 }
 
-.side-panel-content--search-footer {
+.search-drawer .side-panel-content--search-footer {
   padding: 18px 30px;
+}
+
+.search-drawer .side-panel-content--search-footer button {
+  border-radius: 50px;
 }

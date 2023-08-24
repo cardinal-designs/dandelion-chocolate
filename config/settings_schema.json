@@ -714,6 +714,11 @@
         "id": "free_shipping_text_cart_page",
         "label": "Free shipping text cart page",
         "default": "You’re eligible for free shipping!"
+      },
+      {
+        "type": "textarea",
+        "id": "prop65_text",
+        "label": "Prop65 text "
       }
     ]
   },
