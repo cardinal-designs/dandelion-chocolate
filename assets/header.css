@@ -366,6 +366,10 @@
   margin-bottom: 27px;
 }
 
+.second__level-menu svg {
+  display: none;
+}
+
 @media screen and (min-width: 1068px) {
 
   .header.style4 .header__wrapper {
