@@ -424,7 +424,7 @@
         "carousel_type": "large",
         "carousel_alignment": "left",
         "autoplay": true,
-        "autoplay_speed": "4000",
+        "autoplay_speed": "2000",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
