@@ -17,3 +17,7 @@
 .recommenadtions__row .product-card .product-featured-image {
   margin-bottom: 20px;
 }
+
+.recommenadtions__row .product-card .product__country {
+  margin-bottom: 12px;
+}
