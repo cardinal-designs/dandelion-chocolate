@@ -153,3 +153,7 @@
 .search-drawer .card__tasting-notes {
   margin: 4px 0 9px; 
 }
+
+.side-panel.search-drawer .side-panel-content--has-tabs .thb-predictive-search--popular {
+  padding: 17px 17px 26px;
+}

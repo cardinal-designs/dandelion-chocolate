@@ -53,7 +53,7 @@
     "show_secondary_btn_hover": false,
     "cart_drawer_notes": false,
     "button_type": "cart_drawer_cart_button",
-    "free_shipping": true,
+    "free_shipping": false,
     "free_shipping_minimum": "250",
     "search_menu": "main-menu",
     "search_product_collection": "balms",
