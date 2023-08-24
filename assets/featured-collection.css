@@ -308,8 +308,9 @@
 }
 
 .template-page-shop .featured__collection .section-header .section__description {
-  margin: 16px 0 0;
+  margin: 0;
   max-width: 600px;
+  color: var(--charcoal-black);
 }
 
 .template-page-shop .featured__collection .section-header {
