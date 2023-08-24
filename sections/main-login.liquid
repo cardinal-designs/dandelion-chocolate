@@ -4,7 +4,7 @@
     <div class="thb-form-container">
 				<div class="thb-login-form" id="recover">
 					<h4 class="heading">{{ 'customer.recover_password.title' | t }}</h4>
-					<p class="subheading">{{ 'customer.recover_password.subtext' | t }}</p>
+					<p class="sub_heading">{{ 'customer.recover_password.subtext' | t }}</p>
 					{%- form 'recover_customer_password' -%}
 
 						{%- if form.errors -%}
@@ -44,7 +44,7 @@
         <div class="thb-login-form" id="login">
           {% form 'customer_login', novalidate: 'novalidate' %}
 						<h4 class="heading">{{ 'customer.login_page.login' | t }}</h4>
-						<p class="subheading">{{ 'customer.login_page.login_description' | t }}</p>
+						<p class="sub_heading">{{ 'customer.login_page.login_description' | t }}</p>
 						{% if form.errors %}
 						<div class="form-notification error">
 							{% render 'svg-icons' with 'thb-error' %} {{ form.errors | default_errors }}
