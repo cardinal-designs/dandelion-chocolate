@@ -19,11 +19,11 @@
 			{% if recommendations.performed and recommendations.products_count > 0 %}
 				{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
 				<ul class="products collection row small-up-1 medium-up-4 no-padding">
-					{% for recommendation in recommendations.products %}
-						<li class="columns">
-							{% render 'product-card', product_card_product: recommendation %}
-						</li>
-					{% endfor %}
+                  {% for recommendation in recommendations.products %}
+                    <li class="columns">
+                        {% render 'product-card', product_card_product: recommendation %}
+                    </li>
+                  {% endfor %}
 				</ul>
 			{% endif %}
 		</product-recommendations>
