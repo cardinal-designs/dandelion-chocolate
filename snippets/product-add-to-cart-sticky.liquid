@@ -1,39 +1,33 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
 <product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
-	<div class="product-add-to-cart-sticky--inner {% if product.type == 'Chocolate Bar' %}chocolate__bar-product{% endif %}">
-		<div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
-			{%- if media -%}
-				{%- render 'responsive-image', image: media, sizes: '96x96' -%}
-			{%- endif -%}
-		</div>
-		<div class="product-add-to-cart-sticky--info">
-            {%- if product.metafields.info.percentage != blank -%}
-              <p class="new-percentage">{{ product.metafields.info.percentage }}%</p>
-            {%- endif -%}
-			<div class="product-add-to-cart-sticky--title">
-              {% if product.metafields.info.origin != blank %}
-                {{ product.metafields.info.origin }}
-              {% else %}
-                {{ product.title }}
-              {% endif %}
-            </div>
-          {%- if product.metafields.info.country != blank -%}
-      <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
-    {% endif %}  
-          {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
-                      <div class="product__detail">
-                        {% if product.metafields.info.harvest_year %}
-                          <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
-                        {% endif %}
-                      </div>
-                    {% endif %}
-                    {% comment %}
-			<div id="price-{{ section.id }}--sticky">
-				{% render 'product-price', product: product, use_variant: true, show_badges: false %}
-			</div>
-   {% endcomment %}
-        	
-		</div>
+  <div class="product-add-to-cart-sticky--inner {% if product.type == 'Chocolate Bar' %}chocolate__bar-product{% endif %}">
+    <div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
+      {%- if media -%}
+        {%- render 'responsive-image', image: media, sizes: '96x96' -%}
+      {%- endif -%}
+    </div>
+    <div class="product-add-to-cart-sticky--info">
+      {%- if product.metafields.info.percentage != blank -%}
+        <p class="new-percentage">{{ product.metafields.info.percentage }}%</p>
+      {%- endif -%}
+      <div class="product-add-to-cart-sticky--title">
+        {% if product.metafields.info.origin != blank %}
+          {{ product.metafields.info.origin }}
+        {% else %}
+          {{ product.title }}
+        {% endif %}
+      </div>
+      {%- if product.metafields.info.country != blank -%}
+        <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
+      {% endif %}  
+      {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
+        <div class="product__detail">
+          {% if product.metafields.info.harvest_year %}
+            <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
       <div class="product-add-to-cart-sticky--content">
 		{%- unless product.has_only_default_variant -%}
 		<variant-selects  id="variant-selects-{{ section.id }}--sticky" class="no-js-hidden variant-selects--sticky" data-section="{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
