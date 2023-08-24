@@ -83,10 +83,11 @@
                     
                       {% for block in blocks %}
                       {% assign ImageTitle = block.settings.image_title | handleize %}
+                      {% assign ImageMegaMenu = block.settings.megamenu_image %}
                       {% assign navigationTitle = colLink.title | handleize %}
                         {% if navigationTitle == ImageTitle %}
                           <a href="{{ colLink.url }}">
-                          <img src="{{ mega_menu_block.settings.megamenu_image | img_url: '450x' }}">
+                          <img src="{{ ImageMegaMenu | img_url: '450x' }}">
                         </a> 
                         {% break %}
                         {% endif %}
