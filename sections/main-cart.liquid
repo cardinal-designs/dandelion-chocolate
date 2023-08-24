@@ -33,7 +33,7 @@
                   {%- assign remaining_amount = total | minus: free_shipping_minimum | abs | money_without_trailing_zeros -%}
                   {{ 'general.cart_drawer.free_shipping.spend_more_for_free_shipping_html' | t: amount: remaining_amount }}
                 {%- else -%}
-                  {{ 'general.cart_drawer.free_shipping.free_shipping_applied_at_checkout' | t }}
+                  {{ section.settings.free_shipping_text_cart_page }}
                 {%- endif -%}
               </div>
               <div class="free-shipping--bar">
