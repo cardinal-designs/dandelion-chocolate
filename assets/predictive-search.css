@@ -92,7 +92,7 @@
   letter-spacing: 0.1em;
 }
 
-.thb-predictive-search--popular {
+.side-panel-content.side-panel-content--initial {
   border-top: 1px solid #94949C;
   border-bottom: 1px solid #94949C;
 }
