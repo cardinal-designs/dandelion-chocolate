@@ -123,6 +123,10 @@
   text-decoration: none;
 }
 
+.header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu li:hover a {
+  color: var(--terra-cotta);
+}
+
 .header .full-menu .thb-full-menu li.menu-item-has-children > .sub-menu.third__level-menu li a:hover {
   color: var(--terra-cotta);  
 }
