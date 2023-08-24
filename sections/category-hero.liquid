@@ -41,7 +41,7 @@
           {% endif %}
           {% if block.settings.image != blank %}
             <div class="category_image">
-              {% assign block_image = block.settings.image %}
+              {% assign block_image = block.settings.image | img_url: 'original' %}
               {%- render 'responsive-image', image: block_image -%}
             </div>
           {% else %}

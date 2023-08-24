@@ -391,6 +391,10 @@ body .zapietModal.moreInformation h2 {
   border: 0;
 }
 
+.proceed-to-checkout {
+  margin-top: 20px;
+}
+
 .cart__dynamic-checkout-buttons {
   margin-top: 14px;
 }
