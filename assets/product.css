@@ -1663,6 +1663,11 @@ quantity-selector.quantity .plus svg {
   line-height: 24px;
 }
 
+.chocolate__bar-product .product-add-to-cart-sticky--image img {
+  margin: 0 auto;
+  max-width: 86px;
+}
+
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
   .product-image-container .flickity-button.next {
