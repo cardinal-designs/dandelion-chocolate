@@ -103,3 +103,7 @@
   font-size: 18px;
   line-height: 1;
 }
+
+.template-customers-login .thb-login-form {
+  text-align: center; 
+}
