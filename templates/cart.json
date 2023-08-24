@@ -9,7 +9,8 @@
         "holiday_shipping_enable": false,
         "holiday_shipping_first_date": "2021-11-20",
         "holiday_shipping_last_date": "2020-12-14",
-        "delivery_cart_minimum": "45"
+        "delivery_cart_minimum": "45",
+        "prop65_text": "<span>⚠<\/span>WARNING: The cocoa beans that we use to make our chocolate can expose you to cadmium, which is known to the state of California to cause birth defects or other reproductive harm."
       }
     },
     "product-recommendations": {
