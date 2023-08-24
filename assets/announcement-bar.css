@@ -30,7 +30,12 @@
 }
 
 .announcement-bar--carousel .carousel__slide .icon {
-  height: 30px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  border-radius: 100%;
+  display: none;
 }
 
 .announcement-bar--inner .announcement-bar--icon {
