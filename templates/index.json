@@ -521,7 +521,7 @@
             "wed_am": 7,
             "ted_pm": 18,
             "thu_am": 7,
-            "thu_pm": 18,
+            "thu_pm": 7.5,
             "fri_am": 7,
             "fri_pm": 19,
             "sat_am": 9,
