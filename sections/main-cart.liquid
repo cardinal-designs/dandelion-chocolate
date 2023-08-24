@@ -16,6 +16,26 @@
           method="post"
           novalidate>
           <h2 class="h2">{{ 'sections.cart.title' | t }}</h2>
+          
+          {%- if free_shipping and settings.free_shipping_minimum != blank -%}
+            <aside
+              class="free-shipping"
+              data-cart-total="{{ total }}"
+              data-minimum="{{ free_shipping_minimum }}">
+              <div class="free-shipping--text">
+                {%- if total < free_shipping_minimum -%}
+                  {%- assign remaining_amount = total | minus: free_shipping_minimum | abs | money_without_trailing_zeros -%}
+                  {{ 'general.cart_drawer.free_shipping.spend_more_for_free_shipping_html' | t: amount: remaining_amount }}
+                {%- else -%}
+                  {{ 'general.cart_drawer.free_shipping.free_shipping_applied_at_checkout' | t }}
+                {%- endif -%}
+              </div>
+              <div class="free-shipping--bar">
+                <div class="free-shipping--percentage"></div>
+              </div>
+            </aside>
+          {%- endif -%}
+
           <table class="cart-items no-borders">
             <thead>
               <th class="product-name">{{ 'sections.cart.headings.product' | t }}</th>
