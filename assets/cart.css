@@ -493,6 +493,10 @@ body .zapietModal.moreInformation h2 {
   margin: 20px 0 6px;
 }
 
+.cart__footer--left #storePickupApp .shipping_note {
+  display: none;
+}
+
 .cart__footer--left .grid__item label {
   font-size: 16px;
   /* font-family: 'Saa Series F D'; */
