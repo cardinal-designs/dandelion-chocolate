@@ -723,3 +723,7 @@ body .zapietModal.moreInformation h2 {
 .template-cart table.no-borders thead th {
   border-bottom: 1px solid #777777;  
 }
+
+.template-cart .cart-items.no-borders tbody {
+  border-bottom: 1px solid #777777;
+}
