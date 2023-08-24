@@ -698,3 +698,7 @@ body .zapietModal.moreInformation h2 {
   line-height: 20.8px;
   font-family: 'Garamond Premiere Pro';
 }
+
+.cart__summer-shipping p:last-child {
+  margin-bottom: 0;
+}
