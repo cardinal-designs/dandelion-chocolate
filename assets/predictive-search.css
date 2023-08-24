@@ -79,5 +79,5 @@
 
 .side-panel.search-drawer .searchform input::placeholder {
   font-size: 18px;
-  color: red;
+  color: var(--charcoal-black);
 }

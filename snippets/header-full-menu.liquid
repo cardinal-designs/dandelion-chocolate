@@ -86,7 +86,7 @@
                       {% assign ImageMegaMenu = block.settings.megamenu_image %}
                       {% assign navigationTitle = colLink.title | handleize %}
                         {% if navigationTitle == ImageTitle %}
-                          <a href="{{ colLink.url }}">
+                          <a class="image__menu" href="{{ colLink.url }}">
                             {%- if ImageMegaMenu != blank -%}
                               <img src="{{ ImageMegaMenu | img_url: '450x' }}">
                             {%- else -%}
