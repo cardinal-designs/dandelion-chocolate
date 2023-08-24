@@ -213,3 +213,8 @@
 .search-drawer .side-panel-content--search-footer button {
   border-radius: 50px;
 }
+
+.search-drawer .side-panel-close svg {
+  width: 20px;
+  height: 20px;
+}
