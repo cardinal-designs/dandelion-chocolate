@@ -204,3 +204,7 @@
 .side-panel.search-drawer .side-panel-content--has-tabs .thb-predictive-search--popular {
   padding: 17px 17px 26px;
 }
+
+.side-panel-content--search-footer {
+  padding: 18px 30px;
+}
