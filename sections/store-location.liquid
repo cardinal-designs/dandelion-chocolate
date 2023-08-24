@@ -75,9 +75,9 @@
                         <span class="opened">Open today: {{ block.settings.mon_am }}AM - {{ block.settings.mon_pm }}PM</span>
                       {% elsif day == "tuesday" %}
                         <span class="opened">Open today: {{ block.settings.tue_am }}AM - {{ block.settings.tue_pm }}PM</span>
-                      {% elsif day == "wednesday" %}11
+                      {% elsif day == "wednesday" %}
                         <span class="opened">Open today: {{ block.settings.wed_am }}AM - {{ block.settings.wed_pm }}PM</span>
-                      {% elsif day == "thursday" %}22
+                      {% elsif day == "thursday" %}
                         <span class="opened">Open today: {{ block.settings.thu_am }}AM - {{ block.settings.thu_pm }}PM</span>
                       {% elsif day == "friday" %}
                         <span class="opened">Open today: {{ block.settings.fri_am }}AM - {{ block.settings.fri_pm }}PM</span>
@@ -297,7 +297,7 @@
           "type": "range",
           "id": "thu_am",
           "min": 1,
-          "max": 24,
+          "max": 12,
           "step": 0.5,
           "label": "Open Time",
           "default": 8
@@ -306,7 +306,7 @@
           "type": "range",
           "id": "thu_pm",
           "min": 1,
-          "max": 24,
+          "max": 12,
           "step": 0.5,
           "label": "Close Time",
           "default": 5
