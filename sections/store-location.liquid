@@ -13,14 +13,12 @@
     <div class="store__location--wrap">
       <div class="content__left">
         {% if section.settings.image != blank %}
-          <a href="{{ section.settings.image_link }}">
-            <div class="hide-mobile">{{ section.settings.image | image_url:width:original | image_tag }}</div>
-            {% if section.settings.mobile_image != blank %}
-              <div class="hide-desktop">{{ section.settings.mobile_image | image_url:width:original | image_tag }}</div>
-            {% else %}
-              <div>{{ section.settings.image | image_url:width:original | image_tag }}</div>
-            {% endif %}
-          </a>
+          <div class="hide-mobile">{{ section.settings.image | image_url:width:original | image_tag }}</div>
+          {% if section.settings.mobile_image != blank %}
+            <div class="hide-desktop">{{ section.settings.mobile_image | image_url:width:original | image_tag }}</div>
+          {% else %}
+            <div>{{ section.settings.image | image_url:width:original | image_tag }}</div>
+          {% endif %}
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
         {% endif %}
@@ -73,6 +71,7 @@
                       {% assign store = 'Closed today. ' |append: 'Opens next on ' |append: nextDate %}
                       <span class="closed">{{ store }}</span>
                     {% else %}
+                      {{ block.settings.thu_pm }}
                       {% if day == "monday" %}
                         <span class="opened">Open today: {{ block.settings.mon_am }}AM - {{ block.settings.mon_pm }}PM</span>
                       {% elsif day == "tuesday" %}
@@ -166,11 +165,6 @@
       "type": "image_picker",
       "id": "mobile_image",
       "label": "Mobile Image"
-    },
-    {
-      "type": "url",
-      "id": "image_link",
-      "label": "Image URL"
     },
     {
       "type": "header",
