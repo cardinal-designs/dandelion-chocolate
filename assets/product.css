@@ -1544,6 +1544,10 @@ dl.accordion-list dd {
   letter-spacing: .15em;
 }
 
+.product-add-to-cart-sticky--content .add_to_cart_holder .button::before {
+  display: none;
+}
+
 .product-add-to-cart-sticky--content .product-form {
   margin-top: 0;
 }
