@@ -27,6 +27,15 @@
   width: 50%;
 }
 
+.category__hero--wrapper .category_image {
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.category__hero--wrapper .category_image:hover img {
+  transform: scale(1.1);
+}
+
 .category__hero--wrapper .category_text {
   display: flex;
   align-items: center;
