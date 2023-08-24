@@ -80,17 +80,17 @@
                           <img src="{{ collectionFeatured.image | img_url: '450x' }}">
                         </a>
                       {%- else -%}
-                     {{ colLink.title }}
+                    
                       {% for block in blocks %}
                       {% assign ImageTitle = block.settings.image_title | handleize %}
-                      
-                      
-                        
-                      {% endfor %}
-                       
-                        <a href="{{ colLink.url }}">
+                      {% assign navigationTitle = colLink.title | handleize %}
+                        {% if navigationTitle == ImageTitle %}
+                          <a href="{{ colLink.url }}">
                           <img src="{{ mega_menu_block.settings.megamenu_image | img_url: '450x' }}">
-                        </a>                     
+                        </a> 
+                        {% break %}
+                        {% endif %}
+                      {% endfor %}   
                       {%- endif -%}
                       <a href="{{ colLink.url }}" title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
                     </li>
