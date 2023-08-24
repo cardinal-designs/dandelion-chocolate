@@ -433,12 +433,10 @@
               {% unless hasPickupItems %}
                 {% if section.settings.summer_shipping_enable %}
                   <div class="cart__summer-shipping summer-shipping">
-                    <p>
-                      {{ 'sections.cart.summer_shipping_notice_html' | t }}
-                      <span class="cart__summer-shipping--delayed-delivery">
-                        {{- 'sections.cart.summer_shipping_delayed_delivery' | t -}}
-                      </span>
-                    </p>
+                    {{ section.settings.summer_shipping_enable_text }}
+                    <span class="cart__summer-shipping--delayed-delivery">
+                      {{- 'sections.cart.summer_shipping_delayed_delivery' | t -}}
+                    </span>
                   </div>
                 {% endif %}
               {% endunless %}
