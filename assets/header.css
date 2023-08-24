@@ -364,6 +364,7 @@
   opacity: 1;
   box-shadow: none;
   margin-bottom: 27px;
+  padding: 0;
 }
 
 .second__level-menu svg {
