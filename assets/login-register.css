@@ -84,3 +84,7 @@
 .template-customers-login {
   background: var(--off-white);
 }
+
+.thb-login-form .thb-form-container h4 {
+  font-size: 40px;
+}
