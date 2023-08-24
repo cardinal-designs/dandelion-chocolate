@@ -186,7 +186,6 @@
   text-transform: capitalize;
 }
 
-
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Left .Sub_Menu-Heading.uppercase {
   text-transform: uppercase;
 }
@@ -383,6 +382,10 @@
   line-height: 19.2px;
   font-size: 16px ! important;
   letter-spacing: .04em;
+}
+
+.header .full-menu .thb-full-menu li.menu-item-has-children.second__level-menu:last-child .sub-menu.third__level-menu {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1068px) {
