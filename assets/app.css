@@ -4750,12 +4750,15 @@ select.resize-select {
 .quantity + .remove {
   margin: 14px 0 0;
   color: #94949C;
-  display: block;
   font-family: 'Saa Series F D';
   font-size: 10px;
   line-height: 12px;
   margin-top: 6px;
   font-weight: 400;
+}
+
+.side-panel-content .quantity + .remove {
+  display: block;
 }
 
 .remove svg {
