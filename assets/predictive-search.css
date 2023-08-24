@@ -139,6 +139,10 @@
   margin-bottom: 36px;
 }
 
+.search-drawer .side-panel-header {
+  height: 70px;
+}
+
 .addtocart__small--wrapper .product-form {
   margin: 0;
 }
