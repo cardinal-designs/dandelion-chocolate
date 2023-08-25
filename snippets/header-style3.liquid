@@ -6,7 +6,7 @@
 
 {% if header_settings.logo %}
   <a href="/" class="logolink">
-  {%- render 'responsive-image', image: header_settings.logo, sizes: '407x0,814x0' -%}
+    {%- render 'responsive-image', image: header_settings.logo, sizes: '407x0,814x0', class: 'logoimg' -%}
     {%- liquid
         if header_settings.logo_light != blank
             assign light_logo = header_settings.logo_light
@@ -14,8 +14,8 @@
             assign light_logo = header_settings.logo
         endif
     -%}
-{%- render 'responsive-image', image: header_settings.logo, sizes: '407x0,814x0' -%}
 
+    {%- render 'responsive-image', image: header_settings.logo, sizes: '407x0,814x0', class: 'logoimg logoimg--light' -%}
     
   </a>
 {% else %}
