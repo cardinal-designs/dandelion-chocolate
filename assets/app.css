@@ -4913,7 +4913,7 @@ select.resize-select {
 @media only screen and (min-width:768px) {
   .product-cart-item img,
   .product-cart-item .thb-placeholder {
-    width: 96px;
+    width: 100px;
   }
 
 }
