@@ -777,3 +777,7 @@ body .zapietModal.moreInformation h2 {
 .template-cart .product-quantity {
   padding-left: 12px;
 }
+
+.template-cart table.no-borders tbody tr td.product-subtotal {
+  padding-right: 0;
+}
