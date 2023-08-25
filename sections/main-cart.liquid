@@ -63,12 +63,15 @@
                         {% endif %}
                       </div>
                       <div>
-                        <a
-                          href="{{ item.url }}"
-                          title="{{ item.product.title | escape }}"
-                          class="cart-product-link h4">
-                          {{- item.product.title -}}
-                        </a>
+
+                      <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4">
+                        {% if item.product.metafields.info.origin != blank %}
+                          {{ item.product.metafields.info.origin }}
+                        {% else %}
+                          {{ item.product.title }}
+                        {% endif %}
+                      </a>
+
                         {% if item.selling_plan_allocation %}
                           <div class="properties">
                             <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
