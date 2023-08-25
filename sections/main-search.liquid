@@ -39,14 +39,11 @@
 											<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }}">
 												{%- for item in search.results -%}
 													<li class="column">
-														{%- case item.object_type -%}
-															{%- when 'product' -%}
-																{% render 'product-card', product_card_product: item %}
-															{%- when 'article' -%}
-																{% render 'blog-post', article: item, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
-															{%- when 'page' -%}
-																{% render 'blog-post', article: item, show_date: false, show_excerpt: true, show_image: false, class: 'page-type', %}
-														{%- endcase -%}
+														{% if result.object_type == 'product' %}
+
+                                                          {% render 'product-card', product_card_product: item %}
+					
+														{%- endif -%}
 													</li>
 												{%- endfor -%}
 											</ul>
