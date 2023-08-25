@@ -46,7 +46,6 @@
                   <form role="search" method="get" class="searchform" action="{{ routes.search_url }}">
                     <fieldset>
                       <input type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
-                       <input type="hidden" name="type" value="product">
                       <button type="submit" class="thb-search-submit">{% render 'svg-icons' with 'search' %}</button>
                     </fieldset>
                   </form>
