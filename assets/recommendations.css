@@ -4,6 +4,8 @@
 
 .recommenadtions__row .product-card .product-card-info .price {
   margin-bottom: 17px;
+  font-size: 12px;
+  color: #A28D5B;
 }
 
 .recommenadtions__row .product-title-uppercase-true .product-card .product-card-title {
@@ -20,4 +22,22 @@
 
 .recommenadtions__row .product-card .product__country {
   margin-bottom: 12px;
+}
+
+.product-recommendations .section-header h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #A38B55;
+  letter-spacing: .05em;
+}
+
+.product-recommendations .section-header {
+  margin-bottom: 40px;
+}
+
+.product-title-uppercase-true .product-recommendations .product-card .product-card-title {
+  letter-spacing: normal;
+  line-height: 26.4px;
+  margin-bottom: 8px;
 }
