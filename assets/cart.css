@@ -788,4 +788,5 @@ body .zapietModal.moreInformation h2 {
 .remove.cart-remove-mobile {
   display: block;
   padding-left: 25px;
+  letter-spacing: .10em;
 }
