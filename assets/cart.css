@@ -784,3 +784,8 @@ body .zapietModal.moreInformation h2 {
 .template-cart table.no-borders tbody tr td.product-subtotal {
   padding-right: 0;
 }
+
+.remove.cart-remove-mobile {
+  display: block;
+  padding-left: 25px;
+}
