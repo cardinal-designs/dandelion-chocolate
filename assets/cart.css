@@ -754,3 +754,7 @@ body .zapietModal.moreInformation h2 {
   line-height: 12.8px;
   margin-bottom: 2px;
 }
+
+.template-cart table.no-borders tbody tr td {
+  padding: 12px 30px 12px 0;
+}
