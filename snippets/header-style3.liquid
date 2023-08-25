@@ -20,15 +20,7 @@
             assign light_logo = header_settings.logo
         endif
     -%}
-    <img
-        src="{{ light_logo | image_url }}"
-        class="logoimg logoimg--light"
-        alt="{{ header_settings.logo.alt | default: shop.name | escape }}"
-        width="{{ header_settings.logo.width }}"
-        height="{{ section.settings.logo.height }}"
-    >
     {%- render 'responsive-image', image: header_settings.logo, sizes: '407x0,814x0' -%}
-    
   </a>
 {% else %}
   <a href="/" class="logolink text-logo">

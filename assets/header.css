@@ -38,6 +38,7 @@
 
 .header .logolink {
   margin: 12px 0 15px;
+  max-width: 103px;
 }
 
 .header .thb-secondary-area {
