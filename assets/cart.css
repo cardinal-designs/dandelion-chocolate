@@ -770,6 +770,10 @@ body .zapietModal.moreInformation h2 {
   text-decoration: underline;
 }
 
-table.cart-items  {
+.template-cart table.cart-items  {
   margin-bottom: 25px;
+}
+
+.template-cart .product-quantity {
+  padding-left: 12px;
 }
