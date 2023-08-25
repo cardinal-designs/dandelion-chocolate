@@ -16,7 +16,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "Before You Go",
+        "heading": "Before You Go...",
         "heading_left": false,
         "description": "",
         "full_width": true,
@@ -24,7 +24,8 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": false,
         "show_collaborator": false,
-        "enable_treatment": true
+        "enable_treatment": true,
+        "show_short_product_desc": true
       }
     }
   },
