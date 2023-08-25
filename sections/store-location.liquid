@@ -13,11 +13,23 @@
     <div class="store__location--wrap">
       <div class="content__left">
         {% if section.settings.image != blank %}
-          <div class="hide-mobile">{{ section.settings.image | image_url:width:original | image_tag }}</div>
+          <div class="hide-mobile">
+            <a href="{{ section.settings.image_link }}">
+              {{ section.settings.image | image_url:width:original | image_tag }}
+            </a>
+          </div>
           {% if section.settings.mobile_image != blank %}
-            <div class="hide-desktop">{{ section.settings.mobile_image | image_url:width:original | image_tag }}</div>
+            <div class="hide-desktop">
+              <a href="{{ section.settings.image_link }}">
+                {{ section.settings.mobile_image | image_url:width:original | image_tag }}
+              </a>
+            </div>
           {% else %}
-            <div>{{ section.settings.image | image_url:width:original | image_tag }}</div>
+            <div>
+              <a href="{{ section.settings.image_link }}">
+                {{ section.settings.image | image_url:width:original | image_tag }}
+              </a>
+            </div>
           {% endif %}
         {% else %}
           {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
@@ -165,6 +177,11 @@
       "type": "image_picker",
       "id": "mobile_image",
       "label": "Mobile Image"
+    },
+    {
+      "type": "url",
+      "id": "image_link",
+      "label": "Image Link"
     },
     {
       "type": "header",
