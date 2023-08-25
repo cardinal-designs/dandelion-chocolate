@@ -41,3 +41,7 @@
   line-height: 26.4px;
   margin-bottom: 8px;
 }
+
+.product-recommendations .product-card .product__description {
+  letter-spacing: normal;
+}
