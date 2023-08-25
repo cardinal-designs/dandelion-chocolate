@@ -460,6 +460,8 @@
 .facets .thb-filter .thb-filter-title {
   color: #A48B55;
   font-family: Saa Series F D;  
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .thb-filter-availability label {
