@@ -27,6 +27,8 @@
         width="{{ header_settings.logo.width }}"
         height="{{ section.settings.logo.height }}"
     >
+    {%- render 'responsive-image', image: header_settings, sizes: '407x0,814x0' -%}
+    
   </a>
 {% else %}
   <a href="/" class="logolink text-logo">
