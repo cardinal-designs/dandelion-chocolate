@@ -394,6 +394,7 @@ body .zapietModal.moreInformation h2 {
   width: 100%;
   border: 0;
   color: #333;
+  min-height: 55px;
 }
 
 .proceed-to-checkout .checkout-button:hover {
