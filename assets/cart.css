@@ -790,3 +790,14 @@ body .zapietModal.moreInformation h2 {
   padding-left: 24px;
   letter-spacing: .10em;
 }
+
+div#prop65_warning span {
+  background-image: url('https://cdn.shopify.com/s/files/1/2434/0841/files/caution.png');
+  font-size: 0;
+  width: 16px;
+  display: inline-block;
+  height: 13px;
+  background-size: cover;
+  margin: -5px 4px 0 0px;
+  vertical-align: middle;
+}
