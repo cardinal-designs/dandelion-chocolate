@@ -315,7 +315,7 @@
                       name="attributes[This is a gift]"
                       value="Yes"
                       {% if cart.attributes['This is a gift'] == 'Yes' %}
-                      checked
+                        checked
                       {% endif %}>
                     <label for="CartIsGiftCheckbox">{{ 'sections.cart.gift' | t }}</label>
                   </div>
@@ -333,7 +333,7 @@
                         placeholder="{{ 'sections.cart.giftfrom_placeholder' | t }}"
                         maxlength="150"
                         {% if cart.attributes['This is a gift'] == 'Yes' %}
-                        required
+                          required
                         {% endif %}
                         value="{{ cart.attributes["Gift From"] }}">
 
