@@ -746,3 +746,10 @@ body .zapietModal.moreInformation h2 {
 .template-cart .product-title-uppercase-true .product-card .product-card-title {
   letter-spacing: normal;
 }
+
+.cart-items .card__type {
+  font-size: 10px;
+  color: #53595C;
+  line-height: 12.8px;
+  margin-bottom: 2px;
+}
