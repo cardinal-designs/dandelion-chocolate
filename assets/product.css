@@ -1644,7 +1644,9 @@ quantity-selector.quantity .plus svg {
 
 .product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title {
   font-family: OPTICaslonBold-Cond;
-  text-transform: uppercase;  
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;  
 }
 
 .product-add-to-cart-sticky--info .new-percentage {
