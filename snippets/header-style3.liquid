@@ -6,13 +6,7 @@
 
 {% if header_settings.logo %}
   <a href="/" class="logolink">
-    <img
-        src="{{ header_settings.logo | image_url }}"
-        class="logoimg"
-        alt="{{ header_settings.logo.alt | default: shop.name | escape }}"
-        width="{{ header_settings.logo.width }}"
-        height="{{ header_settings.logo.height }}"
-    >
+  {%- render 'responsive-image', image: header_settings.logo, sizes: '407x0,814x0' -%}
     {%- liquid
         if header_settings.logo_light != blank
             assign light_logo = header_settings.logo_light
@@ -20,7 +14,9 @@
             assign light_logo = header_settings.logo
         endif
     -%}
-    {%- render 'responsive-image', image: header_settings.logo, sizes: '407x0,814x0' -%}
+{%- render 'responsive-image', image: header_settings.logo, sizes: '407x0,814x0' -%}
+
+    
   </a>
 {% else %}
   <a href="/" class="logolink text-logo">
