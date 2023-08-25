@@ -600,6 +600,7 @@ body .zapietModal.moreInformation h2 {
 .thb-cart-form .h2 {
   margin-bottom: 12px;
   color: #A38B55;
+  line-height: 59px;
 }
 
 @media only screen and (max-width:767px) { 
