@@ -796,3 +796,7 @@ body .zapietModal.moreInformation h2 {
 .product-recommendations .section-header {
   margin-bottom: 40px;
 }
+
+.product-title-uppercase-true .product-card .product-card-title {
+  letter-spacing: normal;
+}
