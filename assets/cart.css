@@ -757,4 +757,5 @@ body .zapietModal.moreInformation h2 {
 
 .template-cart table.no-borders tbody tr td {
   padding: 12px 30px 12px 0;
+  border-color: #777777;
 }
