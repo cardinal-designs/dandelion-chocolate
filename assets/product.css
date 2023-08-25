@@ -1824,7 +1824,7 @@ product-add-to-cart-sticky .price {
 product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   height: 40px;
   color: #333333;
-  font-size: 14px;
+  font-size: 16px;
   font-family: 'Garamond';
   border-color: #cccccc;
 }
