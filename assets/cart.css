@@ -603,6 +603,10 @@ body .zapietModal.moreInformation h2 {
   line-height: 59px;
 }
 
+.product-cart-item-image {
+  background-color: #f5f6f5;
+}
+
 @media only screen and (max-width:767px) { 
 
   .cart-footer {
