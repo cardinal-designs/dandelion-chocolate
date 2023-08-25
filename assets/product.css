@@ -1646,7 +1646,8 @@ quantity-selector.quantity .plus svg {
   font-family: OPTICaslonBold-Cond;
   text-transform: uppercase;
   font-size: 20px;
-  line-height: 24px;  
+  line-height: 24px;
+  letter-spacing: .04em;
 }
 
 .product-add-to-cart-sticky--info .new-percentage {
