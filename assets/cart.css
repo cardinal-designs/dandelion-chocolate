@@ -729,6 +729,7 @@ body .zapietModal.moreInformation h2 {
 .template-cart .free-shipping--text {
   font-family: 'Garamond Premiere Pro';
   text-align: center;
+  font-size: 20px;
   color: #333333;
 }
 
