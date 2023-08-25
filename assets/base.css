@@ -1130,6 +1130,9 @@ input[type=submit]:hover {
   display: block;
 }
 
+
+/***** General CSS Start *****/
+
 .tasting__notes {
   color: #777779;
   font-family: Garamond Premier Pro;
@@ -1139,6 +1142,8 @@ input[type=submit]:hover {
   line-height: 16.8px;
   letter-spacing: 0.56px;
 }
+
+/***** General CSS End *****/
 
 @media screen and (max-width: 767px) {
   
