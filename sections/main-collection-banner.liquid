@@ -29,7 +29,7 @@
 {%- endif -%}
 {{ 'collection-banner.css' | asset_url | stylesheet_tag }}
 
-<div class="collection-banner collection-banner--heading-uppercase-{{ make_heading_uppercase }}{% if show_collection_image and image %} collection-banner--has-bg{% endif %}" style="--overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
+<div style="background-color:{{ section.settings.bg_color }}" class="collection-banner collection-banner--heading-uppercase-{{ make_heading_uppercase }}{% if show_collection_image and image %} collection-banner--has-bg{% endif %}" style="--overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
 	<div class="collection-banner--breadcrumbs">
 		{%- render 'breadcrumbs' -%}
 	</div>
@@ -91,69 +91,74 @@
   {
     "name": "Collection banner",
     "settings": [
-			{
-				"type": "header",
-				"content": "Collection page"
-			},
-			{
-	      "type": "checkbox",
-	      "id": "show_collection_image",
-	      "default": true,
-	      "label": "Show collection image"
-	    },
-			{
-	      "type": "checkbox",
-	      "id": "show_collection_description",
-	      "default": true,
-	      "label": "Show collection description"
-	    },
-			{
-	      "type": "checkbox",
-	      "id": "show_subcollections",
-	      "default": true,
-	      "label": "Show subcollections",
-				"info": "Links to subcollections from your menu will appear here. [Learn more.](https://documentation.fuelthemes.net/kb/how-do-i-create-subcollections/)"
-	    },
-			{
-	      "type": "checkbox",
-	      "id": "make_heading_uppercase",
-	      "default": false,
-	      "label": "Make heading uppercase"
-	    },
-			{
-				"type": "header",
-				"content": "Catalog page"
-			},
-			{
-				"type": "paragraph",
-				"content": "Learn more about [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page)"
-			},
-			{
+      {
+        "type": "header",
+        "content": "Collection page"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_image",
+        "default": true,
+        "label": "Show collection image"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_description",
+        "default": true,
+        "label": "Show collection description"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_subcollections",
+        "default": true,
+        "label": "Show subcollections",
+        "info": "Links to subcollections from your menu will appear here. [Learn more.](https://documentation.fuelthemes.net/kb/how-do-i-create-subcollections/)"
+      },
+      {
+        "type": "checkbox",
+        "id": "make_heading_uppercase",
+        "default": false,
+        "label": "Make heading uppercase"
+      },
+      {
+        "type": "header",
+        "content": "Catalog page"
+      },
+      {
+        "type": "paragraph",
+        "content": "Learn more about [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page)"
+      },
+      {
         "type": "image_picker",
         "id": "image",
         "label": "Catalog image",
-	      "info": "Changes the image for the [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page). 1920 x 640 px .jpg recommended."
+        "info": "Changes the image for the [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page). 1920 x 640 px .jpg recommended."
       },
-			{
-	      "type": "header",
-	      "content": "Colors"
-	    },
-			{
-				"type": "color",
-				"id": "overlay_color",
-				"label": "Overlay",
-				"default": "#000000"
-			},
-			{
-				"type": "range",
-				"id": "overlay_opacity",
-				"min": 0,
-				"max": 100,
-				"step": 1,
-				"unit": "%",
-				"label": "Overlay opacity",
-				"default": 20
-			}
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "overlay_color",
+        "label": "Overlay",
+        "default": "#000000"
+      },
+      {
+        "type": "range",
+        "id": "overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Overlay opacity",
+        "default": 20
+      }
     ]
   }
 {% endschema %}
