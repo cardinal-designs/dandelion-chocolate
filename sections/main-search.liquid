@@ -22,9 +22,9 @@
 					{%- if search.results.size == 0 -%}
 						<div class="collection-empty">
 							{% render 'svg-icons' with 'thb-no-products' %}
-		          <p>
-		            {{ 'search.no_results' | t: terms: search.terms }}
-		          </p>
+          		          <p>
+          		            {{ 'search.no_results' | t: terms: search.terms }}
+          		          </p>
 						</div>
 					{%- else -%}
 						{%- paginate search.results by products_per_page -%}
