@@ -760,3 +760,7 @@ body .zapietModal.moreInformation h2 {
   padding: 12px 30px 12px 0;
   border-color: #777777;
 }
+
+.prop65_warning a {
+  color: #D3A741;
+}
