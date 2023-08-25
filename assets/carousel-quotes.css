@@ -28,6 +28,13 @@
   margin: 0;
 }
 
+a.cart-product-link.h4 {
+  font-family: 'Garamond Premiere Pro';
+  line-height: 25px;
+  font-size: 20px;
+  letter-spacing: normal;
+}
+
 .carousel__align--left .carousel__author {
   display: flex;
   align-items: center;
