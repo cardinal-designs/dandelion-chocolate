@@ -784,3 +784,11 @@ body .zapietModal.moreInformation h2 {
 .template-cart table.no-borders tbody tr td.product-subtotal {
   padding-right: 0;
 }
+
+.product-recommendations .section-header h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #A38B55;
+  letter-spacing: .05em;
+}
