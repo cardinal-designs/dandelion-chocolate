@@ -71,8 +71,8 @@
                           {{ item.product.title }}
                         {% endif %}
                       </a>
-                      {% if product_card_product.metafields.custom.short_description != blank and show_description %}
-                        <div class="product__description body">{{ product_card_product.metafields.custom.short_description }}</div>
+                      {% if item.product.metafields.custom.short_description != blank and show_description %}
+                        <div class="product__description body">{{ item.product.metafields.custom.short_description }}</div>
                       {% endif %}
                 
                         {% if item.selling_plan_allocation %}
