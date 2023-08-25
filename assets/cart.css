@@ -503,6 +503,10 @@ body .zapietModal.moreInformation h2 {
   margin: 0;
 }
 
+.checkoutMethod {
+  background-color: #ffffff;
+}
+
 .cart__footer--left #storePickupApp p {
   font-size: 18px;
   margin: 20px 0 6px;
