@@ -605,6 +605,7 @@ body .zapietModal.moreInformation h2 {
 
 .product-cart-item-image {
   background-color: #f5f6f5;
+  width: 100px;
 }
 
 @media only screen and (max-width:767px) { 
