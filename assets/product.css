@@ -1541,7 +1541,7 @@ dl.accordion-list dd {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  letter-spacing: .15em;
+  letter-spacing: .10em;
 }
 
 .product-add-to-cart-sticky--content .add_to_cart_holder .button:hover {

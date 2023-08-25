@@ -797,21 +797,6 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
-    },
-    "24cc8002-f644-47d1-8764-eed8ebfa9167": {
-      "type": "product-quote-section",
-      "settings": {
-        "product": "",
-        "product_title": "",
-        "product_description": "",
-        "quote": "",
-        "author": "",
-        "position": "sfgdfgdfgfg",
-        "quote_bg_color": "#a09b86",
-        "quote_text_color": "#ffffff",
-        "quote_border_color": "#a09b86",
-        "section_bg": "#FFFDF9"
-      }
     }
   },
   "order": [
@@ -826,7 +811,6 @@
     "f2cb92da-bdb5-44fa-8b49-1b79e94a0b15",
     "1627fb3e-f5c6-4d8c-8843-5b818899b71b",
     "7cb08fd4-ad98-4437-8d49-49f6fe76311a",
-    "0c97f2db-97cf-47e4-94e0-f1e6b3161d41",
-    "24cc8002-f644-47d1-8764-eed8ebfa9167"
+    "0c97f2db-97cf-47e4-94e0-f1e6b3161d41"
   ]
 }
