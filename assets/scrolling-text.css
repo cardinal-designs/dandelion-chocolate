@@ -130,7 +130,7 @@
   
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   
   .scrolling-text--inner .hide-desktop {
     display: none;  
@@ -146,7 +146,7 @@
   
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1279px) {
   
   .scrolling-text--inner .hide-mobile {
     display: none;  
@@ -161,7 +161,6 @@
   }
   
 }
-
 
 @media screen and (max-width: 767px) {
   
