@@ -644,6 +644,7 @@
         "heading": "VISIT US",
         "image": "shopify:\/\/shop_images\/store-location-image.png",
         "mobile_image": "shopify:\/\/shop_images\/store-mobile.png",
+        "image_link": "shopify:\/\/pages\/visit-us",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
