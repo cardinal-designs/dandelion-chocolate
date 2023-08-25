@@ -792,3 +792,7 @@ body .zapietModal.moreInformation h2 {
   color: #A38B55;
   letter-spacing: .05em;
 }
+
+.product-recommendations .section-header {
+  margin-bottom: 40px;
+}
