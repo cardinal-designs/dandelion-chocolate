@@ -1647,6 +1647,7 @@ quantity-selector.quantity .plus svg {
   line-height: 14px;
   color: #777779;
   font-family: Saa Series F D;
+  letter-spacing: .15em;
 }
 
 .product-add-to-cart-sticky--info .price {
