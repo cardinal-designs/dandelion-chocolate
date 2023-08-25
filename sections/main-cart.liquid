@@ -70,12 +70,14 @@
                         {% assign is_chocolate_bar = true %}
                       {% endif %}
                       {% if item.product and item.product.type != 'Chocolate Bar' %}        
-                        <div class="card__type">{{ item.product.type }}
+                        <div class="card__type">
                           {% unless is_chocolate_bar %}
                             {% if product_info.percentage %}
-                            - {{ product_info.percentage }}%
+                              {{ product_info.percentage }}%
                             {% endif %}
-                          {% endunless %}
+                          {% endunless %}                        
+                          {{ item.product.type }}
+
                         </div>       
                       {% endif %} 
                       <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4">
