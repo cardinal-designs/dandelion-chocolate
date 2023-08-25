@@ -599,7 +599,7 @@ body .zapietModal.moreInformation h2 {
   line-height: 26.6px;
   margin-bottom: 1px;
   font-family: 'Garamond Premiere Pro';
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .cart-items tbody tr td.product-quantity .quantity path {
@@ -765,4 +765,9 @@ body .zapietModal.moreInformation h2 {
 .prop65_warning a {
   color: #D3A741;
   text-decoration: underline;
+}
+
+table.cart-items  {
+  border: 0;
+  margin-bottom: 25px;
 }
