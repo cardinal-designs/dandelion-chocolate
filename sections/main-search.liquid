@@ -42,10 +42,6 @@
 														{%- case item.object_type -%}
 															{%- when 'product' -%}
 																{% render 'product-card', product_card_product: item %}
-															{%- when 'article' -%}
-																{% render 'blog-post', article: item, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
-															{%- when 'page' -%}
-																{% render 'blog-post', article: item, show_date: false, show_excerpt: true, show_image: false, class: 'page-type', %}
 														{%- endcase -%}
 													</li>
 												{%- endfor -%}
