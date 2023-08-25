@@ -763,4 +763,5 @@ body .zapietModal.moreInformation h2 {
 
 .prop65_warning a {
   color: #D3A741;
+  text-decoration: underline;
 }
