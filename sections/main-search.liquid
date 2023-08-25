@@ -39,11 +39,9 @@
 											<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }}">
 												{%- for item in search.results -%}
 													<li class="column">
-														{% if result.object_type == 'product' %}
-
-                                                          {% render 'product-card', product_card_product: item %}
-					
-														{%- endif -%}
+                                                      {% if item.object_type == 'product' %}
+                                                        {% render 'product-card', product_card_product: item %}
+                                                      {%- endif -%}
 													</li>
 												{%- endfor -%}
 											</ul>
