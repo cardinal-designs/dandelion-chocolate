@@ -1,0 +1,9 @@
+{% render 'gtm' %}
+
+{% render 'lucky-orange' %}  
+
+{% unless checkout_page %}
+  {% render 'little-data', customer:customer %}  
+{% endunless %}
+
+{% render 'speedcurve' %}
