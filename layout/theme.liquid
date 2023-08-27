@@ -102,6 +102,8 @@
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
 
+    {% render 'analytics', customer: customer %}
+
     <!-- Zapiet | Store Pickup + Delivery -->
     {% if request.page_type == 'cart' %}
       {%- include 'cart-pickup' %}
