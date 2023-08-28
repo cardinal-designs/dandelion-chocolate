@@ -74,7 +74,7 @@
                 <ul class="Sub_Menu-Columns" tabindex="-1">
                   {%- for colLink in link.links -%}
                    {% assign collectionFeatured = colLink.object %}
-                    <li class="pl-10 pr-10 mt-15{% if colLink.active %} active{% endif %}" role="none">
+                    <li class="pl-10 pr-10{% if colLink.active %} active{% endif %}" role="none">
                       {%- if colLink.type contains 'collection_link' -%}
                         <a href="{{ colLink.url }}">
                           <img src="{{ collectionFeatured.image | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
