@@ -786,6 +786,11 @@
   width: 8px;
 }
 
+.product-card:hover .product-form {
+  transform: translateY(0);
+  bottom: 15px;
+}
+
 @media (forced-colors:active) {
   
   .rating {
