@@ -1920,12 +1920,12 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 }
 
 .template-search .product-card .product-card-title {
-  text-transform: capitalize;
-  margin-bottom: 4px;
-  font-family: 'Garamond Premiere Pro';
+  text-transform: capitalize !important;
+  margin-bottom: 4px !important;
+  font-family: Garamond Premiere Pro;
   font-weight: 400;
   letter-spacing: normal;
-  color: #333333;
+  color: #333;
 }
 
 @media only screen and (max-width: 1067px) {
