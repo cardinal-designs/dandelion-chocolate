@@ -337,12 +337,6 @@ p {
   }
 }
 
-@supports not (-webkit-touch-callout: none) {
-  .cursive {
-    font-style: italic;
-  }
-}
-
 .thb-newsletter-title {
   font-family: 'OPTICaslonBold-Cond';
   font-size: 40px;
