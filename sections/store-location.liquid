@@ -152,7 +152,7 @@
                     {% endif %}
                     
                   {% else %}
-                    
+                    {% comment %}
                     {% if day == "monday" %}
                       <span class="opened">Open today: {{ block.settings.mon_am | replace: ".5", ":30" }}AM - {{ block.settings.mon_pm | replace: ".5", ":30" }}PM</span>
                     {% elsif day == "tuesday" %}
@@ -168,7 +168,7 @@
                     {% elsif day == "sunday" %}
                       <span class="opened">Open today: {{ block.settings.sun_am | replace: ".5", ":30" }}AM - {{ block.settings.sun_pm | replace: ".5", ":30" }}PM</span>
                     {% endif %}
-                    
+                    {% endcomment %}
                   {% endif %}
                 </p>
               </div>
