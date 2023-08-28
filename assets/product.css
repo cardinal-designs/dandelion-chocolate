@@ -1921,6 +1921,12 @@ button.rebuy-button {
   .rebuy-product-block {
     padding: 0 10px!important;
   }
+
+  .rebuy-widget .rebuy-product-grid {
+    -webkit-justify-content: start;
+    -moz-justify-content: start;
+    justify-content: start;    
+  }
   
 }
 
