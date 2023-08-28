@@ -34,7 +34,7 @@
   endcase
 -%}
 
-<div class="{{ section_width }} image__video--banner test1">
+<div class="{{ section_width }} image__video--banner">
   <image-with-text-overlay class="image-with-text-overlay text-{{ text_alignment }} {{ mobile_height }} {{ desktop_height }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
     <div class="image-with-text-overlay--bg parallax--{{ image_parallax }}">
       {% if video %}
