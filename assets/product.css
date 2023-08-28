@@ -1901,3 +1901,7 @@ button.rebuy-button {
   opacity:1;
   visibility: visible;
 }
+
+.rebuy-product-block {
+  position: relative;
+}
