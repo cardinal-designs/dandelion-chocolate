@@ -94,8 +94,6 @@
                     {% else %}
                       in 2 
                     {% endif %}
-
-                      ---{{ current_time }}
                       
                       {% if day == "monday" %}
                         <span class="opened">Open today: {{ block.settings.mon_am | replace: ".5", ":30" }}AM - {{ block.settings.mon_pm | replace: ".5", ":30" }}PM</span>
