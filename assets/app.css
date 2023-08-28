@@ -4561,6 +4561,10 @@ select.resize-select {
   width: 100%;
   margin: 0;
   padding-right: 50px;
+  font-family: 'Garamond';
+  font-size: 18px;
+  color: #333333;
+  line-height: 23px;
 }
 
 .searchform fieldset input:-moz-placeholder {
