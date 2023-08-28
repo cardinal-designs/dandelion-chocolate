@@ -36,7 +36,7 @@
             "title": "Bean-to-bar<br>Chocolate<br>In All Forms",
             "uppercase": false,
             "button_label": "SHOP ALL",
-            "button_url": "shopify:\/\/pages\/shop",
+            "button_url": "shopify:\/\/pages\/shop-new",
             "shipping_text": "FREE SHIPPING ON ORDERS OVER $25",
             "position": "1"
           }
