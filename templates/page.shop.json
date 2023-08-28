@@ -525,6 +525,7 @@
         "template--15975894155404__51d1d361-7e0e-4d04-845a-dd6159e4b3ad-1687893184ee0dfaed-2",
         "75d3437d-b8a0-4cf0-a6cc-8e4c8bd51477"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Hawaii_Origin_Trip.webp",
         "use_video": false,
