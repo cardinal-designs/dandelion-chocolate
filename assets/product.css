@@ -1897,8 +1897,8 @@ button.rebuy-button {
 
 .rebuy-product-block:hover .rebuy-product-actions {
   transform: translateY(0);
-  bottom: 15px;
-  opacity:1;
+  bottom: 24%;
+  opacity: 1;
   visibility: visible;
 }
 
