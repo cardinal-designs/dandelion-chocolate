@@ -4752,6 +4752,8 @@ select.resize-select {
 }
 
 .quantity + .remove {
+  width: 76px;
+  text-align: center;
   margin: 14px 0 0;
   color: #94949C;
   font-family: 'Saa Series F D';
