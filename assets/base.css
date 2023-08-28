@@ -333,13 +333,13 @@ p {
 
 @supports (-webkit-touch-callout: none) {
   .cursive {
-    font-family: 'AGaramondPro';
+    font-style: italic;
   }
 }
 
 @supports not (-webkit-touch-callout: none) {
   .cursive {
-    font-family: 'AGaramondPro';
+    font-style: italic;
   }
 }
 

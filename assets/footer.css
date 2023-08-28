@@ -277,6 +277,18 @@
   text-align: left;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .footer .signup-container .field label {
+    font-style: italic;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .footer .signup-container .field label {
+    font-style: italic;
+  }
+}
+
 .footer .signup-container input:focus-visible,
 .footer .signup-container .field label:focus-visible {
   outline: 0;  
