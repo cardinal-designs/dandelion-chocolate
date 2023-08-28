@@ -389,11 +389,23 @@
 }
 
 .second__level-menu > a.navigation__link {
-  font-family: 'Adobe Garamond Pro';
+  font-family: 'AGaramondPro';
   text-transform: capitalize !important;
   line-height: 19.2px;
   font-size: 16px ! important;
   letter-spacing: .04em;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .footer .signup-container .field label {
+    font-style: italic;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .footer .signup-container .field label {
+    font-style: italic;
+  }
 }
 
 .header .full-menu .thb-full-menu li.menu-item-has-children.second__level-menu:last-child .sub-menu.third__level-menu {
