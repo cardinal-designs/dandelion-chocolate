@@ -278,7 +278,7 @@
 }
 
 .safari__specific--css .footer .signup-container .field label {
-  font-style: normal  
+  font-style: italic;  
 }
 
 .footer .signup-container input:focus-visible,
