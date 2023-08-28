@@ -938,10 +938,22 @@
   color: #777779;
   margin: 0;
   letter-spacing: normal;
-  font-family: 'Adobe Garamond Pro';
+  font-family: 'AGaramondPro';
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 400;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .product-short-description .tasting-notes {
+    font-style: italic;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .product-short-description .tasting-notes {
+    font-style: italic;
+  }
 }
 
 .product-add-to-cart-sticky--inner .product__country {
