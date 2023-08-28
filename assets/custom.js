@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   window.addEventListener('click', windowClickHandler);
 
-  $('.rebuy-button').click(function(){
+  $(document).on('click','.rebuy-button',function(){
     setTimeout(function(){
       $('#cart-drawer-toggle').trigger('click');
     },3000)
