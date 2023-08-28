@@ -26,6 +26,18 @@
   letter-spacing: 0.02em;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .text__right p {
+    font-style: italic;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .text__right p {
+    font-style: italic;
+  } 
+}
+
 .two__column--quotes .heading,
 .two__column--quotes .subheading {
   margin: 0;
