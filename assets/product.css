@@ -1858,6 +1858,8 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-radius: 50px;
   opacity: 0;
   visibility: hidden;
+  transform: translateY(100%);
+  transition: all .25s linear;
 }
 
 .rebuy-product-block {
