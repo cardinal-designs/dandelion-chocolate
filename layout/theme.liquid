@@ -72,10 +72,10 @@
 
     {% render 'social-meta-tags' %}
 
-    {{ 'app.css' | asset_url | stylesheet_tag }}
-    {{ 'font-face.css' | asset_url | stylesheet_tag }}
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'shogun.css' | asset_url | stylesheet_tag }}
+    {{ 'app.css' | asset_url | stylesheet_tag | preload_tag: as: 'style' }}
+    {{ 'font-face.css' | asset_url | stylesheet_tag | preload_tag: as: 'style' }}
+    {{ 'base.css' | asset_url | stylesheet_tag | preload_tag: as: 'style' }}
+    {{ 'shogun.css' | asset_url | stylesheet_tag | preload_tag: as: 'style' }}
 
     {% render 'head-variables' %}
 
