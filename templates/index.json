@@ -762,7 +762,7 @@
         "template--15975893827724__0c97f2db-97cf-47e4-94e0-f1e6b3161d41-1689671717ced8c146-0": {
           "type": "category",
           "settings": {
-            "image": "shopify:\/\/shop_images\/coffee.webp",
+            "image": "shopify:\/\/shop_images\/caffeine.jpg",
             "title": "Caffeine and Cacao: a Stimulating Discussion",
             "text": "",
             "link": "https:\/\/blog.dandelionchocolate.com\/2015\/09\/14\/caffeine-and-cacao-a-stimulating-discussion\/"
@@ -771,10 +771,10 @@
         "template--15975893827724__0c97f2db-97cf-47e4-94e0-f1e6b3161d41-1689671717ced8c146-1": {
           "type": "category",
           "settings": {
-            "image": "shopify:\/\/shop_images\/snooky.jpg",
+            "image": "shopify:\/\/shop_images\/snooky_9cabc0f5-b14e-4dfe-bcd0-3bcb800ec40d.jpg",
             "title": "Celebrating Snooky's Tenth Year",
             "text": "",
-            "link": ""
+            "link": "https:\/\/blog.dandelionchocolate.com\/2022\/09\/27\/celebrating-snookys-tenth-year-dandelion\/"
           }
         }
       },
