@@ -222,8 +222,8 @@
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Columns li {
-  flex: 137px 0 0;
-  max-width: 137px;
+  flex: 25% 0 0;
+  max-width: 25%;
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Bottom {
