@@ -215,6 +215,10 @@ body .included-product__single .card__name {
   font-family: Garamond Premiere Pro !important;
 }
 
+.event-button .shg-btn {
+  padding: 16px 11px!important;
+}
+
 /* =========== bar-info end =========== */
 
 .hours-table td,
@@ -236,3 +240,4 @@ body .included-product__single .card__name {
 .location-div .hours-table {
   margin-bottom: 0;
 }
+
