@@ -475,6 +475,15 @@
   line-height: 18px;
 }
 
+span.facets__label {
+  color: #777779;
+  font-family: Saa Series F D;
+  font-size: 13px !important;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+}
+
 .facets--bar .facets-toggle,
 .facets--bar .thb-filter-sort-count select {
   color: #a48b55;
