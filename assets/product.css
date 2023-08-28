@@ -1908,6 +1908,17 @@ button.rebuy-button {
   position: relative;
 }
 
+.rebuy-widget-content .primary-title {
+  font-family: OPTICaslonBold-Cond;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 40px;
+  line-height: normal;
+  letter-spacing: .04em;
+  text-transform: uppercase !important;
+}
+
 @media only screen and (max-width: 1067px) {
 
   .rebuy-widget-content {
