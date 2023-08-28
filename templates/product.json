@@ -361,6 +361,7 @@
       "disabled": true,
       "settings": {
         "stop_scroll": false,
+        "stop_scroll_mobile": false,
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
@@ -413,7 +414,8 @@
           "settings": {
             "button_text": "Shop Now",
             "button_link": "shopify:\/\/collections\/midi",
-            "button_style": "btn"
+            "button_style": "btn",
+            "mobile_button_style": "btn"
           }
         }
       },
@@ -427,6 +429,7 @@
       "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
+        "image_url": false,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-500",
         "content_width": "medium",
@@ -468,11 +471,33 @@
         "full_width": true,
         "mobile_swipe": true,
         "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": false,
+        "show_collaborator": true,
+        "enable_treatment": true,
+        "show_short_product_desc": true
       }
     },
     "shogun-below": {
       "type": "shogun-below",
+      "settings": {
+      }
+    },
+    "1693215725f4a695df": {
+      "type": "apps",
+      "blocks": {
+        "5a4505da-256e-40c8-9f46-4ee03e22161a": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "103729",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "5a4505da-256e-40c8-9f46-4ee03e22161a"
+      ],
       "settings": {
       }
     }
@@ -492,6 +517,7 @@
     "16625458859c68803a",
     "1662552569cce2536d",
     "product-recommendations",
-    "shogun-below"
+    "shogun-below",
+    "1693215725f4a695df"
   ]
 }
