@@ -114,7 +114,7 @@
                     <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button button outline {% unless product_card_product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                       <span class="single-add-to-cart-button--text">
                       {%- if product_card_product.selected_or_first_available_variant.available -%}
-                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 0H4.4V8H3.6V0Z" fill="var(--color-body)"></path><path d="M3.49692e-08 4.4L0 3.6L8 3.6V4.4L3.49692e-08 4.4Z" fill="var(--color-body)"></path></svg>
+
                         {{ 'products.product.quick_add' | t }}
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
