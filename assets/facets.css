@@ -455,3 +455,22 @@
     .thb-filter ul.list-color label:not(.facet-checkbox--disabled):hover {
       z-index: 1;
       box-shadow: 0 0 0 1px var(--color-body) inset; }
+
+
+.facets .thb-filter .thb-filter-title {
+  color: #A48B55;
+  font-family: Saa Series F D;  
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.thb-filter-availability label {
+  color: #333333;
+  font-size: 14px;  
+}
+
+.price_range .price_slider_amount input {
+  font-size: 14px;
+  color: #333333;
+  line-height: 18px;
+}
