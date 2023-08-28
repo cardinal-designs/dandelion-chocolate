@@ -504,3 +504,7 @@ span.facets__label {
 .facets--bar .thb-filter-sort-count .select-arrow {
   right: 10px;
 }
+
+.mobile-filters-apply {
+  border-radius: 30px;
+}
