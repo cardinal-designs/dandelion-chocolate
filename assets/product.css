@@ -1863,3 +1863,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   margin: 0 auto;
   padding: 0 45px;
 }
+
+.rebuy-product-media {
+  background-color: #f5f6f5;
+}
