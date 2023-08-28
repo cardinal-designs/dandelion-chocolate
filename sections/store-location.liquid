@@ -26,7 +26,7 @@
             </div>
           {% else %}
             <div>
-              <a href="{{ section.settings.image_link }}">
+              <a href="{{ section.settings.image_link }}" aria-label="link">
                 {{ section.settings.image | image_url:width:original | image_tag }}
               </a>
             </div>
