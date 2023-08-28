@@ -1921,5 +1921,9 @@ button.rebuy-button {
   .rebuy-product-block {
     margin-bottom: 30px !important;
   }
+
+  .rebuy-product-block {
+    padding: 0 10px!important;
+  }
     
 }
