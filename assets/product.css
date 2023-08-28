@@ -1876,3 +1876,18 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .rebuy-product-media {
   background-color: #f5f6f5;
 }
+
+button.rebuy-button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Saa Series F D;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: .15em;
+}
