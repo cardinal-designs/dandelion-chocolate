@@ -87,8 +87,8 @@
 
                     {% assign current_time = "now" | date: "%s" %}
                     {% assign midnight = "today" | date: "%s" %}
-                    {% assign specific_time = "07:00:00" | date: "%s" %}
-                    {% assign open_time = block.settings.mon_am | replace: ".5", ":30" %}
+                    {% assign specific_time = "7:00:00" | date: "%s" %}
+                    {% assign open_time = block.settings.mon_am %}
                     ---{{ open_time }},{{ specific_time }}
                     {% if current_time >= midnight and current_time <= specific_time %}
                       
