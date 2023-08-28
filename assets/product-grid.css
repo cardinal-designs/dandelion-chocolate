@@ -269,6 +269,10 @@
   text-transform: uppercase;
 }
 
+.chocolate-bars .product-card .new-percentage {
+  margin-bottom: 3px;  
+}
+
 .product-card .badge {
   position: absolute;
   z-index: 30;
