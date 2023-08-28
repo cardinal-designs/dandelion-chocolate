@@ -90,7 +90,8 @@
         "915badcb-601a-4c4d-b20f-fe20c91ef08c": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Merchandise"
+            "image_title": "Merchandise",
+            "megamenu_image": "shopify:\/\/shop_images\/book-shadow_1.jpg"
           }
         },
         "1e649e31-ff0a-4b4c-943f-70735fef3a11": {
