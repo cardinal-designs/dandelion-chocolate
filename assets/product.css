@@ -945,13 +945,13 @@
 }
 
 @supports (-webkit-touch-callout: none) {
-  .product-short-description .tasting-notes {
+  .product-add-to-cart-sticky--inner .product__detail {
     font-style: italic;
   }
 }
 
 @supports not (-webkit-touch-callout: none) {
-  .product-short-description .tasting-notes {
+  .product-add-to-cart-sticky--inner .product__detail {
     font-style: italic;
   }
 }
@@ -1602,12 +1602,6 @@ quantity-selector.quantity .plus svg {
   }
 }
 
-@supports not (-webkit-touch-callout: none) {
-  .product-short-description .tasting-notes {
-    font-style: italic;
-  }
-}
-
 .short_description p {
   font-size: 18px;
   line-height: 140%;
@@ -1935,7 +1929,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .template-product .rebuy-widget-content .primary-title {
   font-family: OPTICaslonBold-Cond;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #333;
   font-size: 40px;
   line-height: normal;
@@ -1943,8 +1937,13 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   text-transform: uppercase !important;
 }
 
-div#rebuy-widget-103729 {
-  padding-bottom: 60px;
+.template-search .product-card .product-card-title {
+  text-transform: capitalize !important;
+  margin-bottom: 4px !important;
+  font-family: Garamond Premiere Pro;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #333;
 }
 
 @media only screen and (max-width: 1067px) {
