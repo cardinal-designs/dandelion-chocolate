@@ -474,3 +474,11 @@
   color: #333333;
   line-height: 18px;
 }
+
+.facets--bar .facets-toggle {
+  color: #a48b55;
+  font-family: Saa Series F D;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
