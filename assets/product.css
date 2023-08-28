@@ -1916,14 +1916,18 @@ button.rebuy-button {
 
 }
 
+@media only screen and (max-width: 767px) {
+
+  .rebuy-product-block {
+    padding: 0 10px!important;
+  }
+  
+}
+
 @media only screen and (max-width: 480px) {
 
   .rebuy-product-block {
     margin-bottom: 30px !important;
-  }
-
-  .rebuy-product-block {
-    padding: 0 10px!important;
   }
     
 }
