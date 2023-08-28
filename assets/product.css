@@ -1938,6 +1938,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
     -moz-justify-content: start;
     justify-content: start;    
   }
+
+  .template-product .rebuy-widget-content .primary-title {
+    font-size: 32px;
+  }
   
 }
 
