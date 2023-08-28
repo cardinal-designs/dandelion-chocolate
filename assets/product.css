@@ -1854,6 +1854,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   bottom: 0;
 }
 
+.rebuy-product-block {
+  padding: 0 22px !important;
+}
+
 .rebuy-product-info {
   text-align: left;
 }
