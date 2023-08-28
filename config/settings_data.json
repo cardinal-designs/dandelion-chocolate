@@ -59,7 +59,7 @@
     "search_menu": "main-menu",
     "search_product_collection": "balms",
     "currency_code_enabled": false,
-    "lazy_loading": true,
+    "lazy_loading": false,
     "favicon": "shopify:\/\/shop_images\/D_Favicon.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/Dandelion-Chocolate-Logo_large_bc66fc7c-a8cf-4418-bb27-c574b6be7cde.png",
     "checkout_logo_position": "center",
