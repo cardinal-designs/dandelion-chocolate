@@ -778,8 +778,8 @@
   border-radius: 50px;
 }
 
-.product-card .single-add-to-cart-button {
-  border-radius: 40px;  
+.product-card .product-form .single-add-to-cart-button {
+  border-radius: 40px;
 }
 
 @media (forced-colors:active) {
