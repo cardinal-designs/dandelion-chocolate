@@ -1846,4 +1846,5 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   font-size: 10px;
   line-height: 15px;
   letter-spacing: .15em;
+  color: var(--dark-gold);
 }
