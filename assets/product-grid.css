@@ -782,6 +782,10 @@
   border-radius: 40px;
 }
 
+.product-card .product-form .single-add-to-cart-button svg {
+  width: 8px;
+}
+
 @media (forced-colors:active) {
   
   .rating {
