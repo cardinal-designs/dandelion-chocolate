@@ -90,13 +90,13 @@
   },
   "products": {
     "product": {
-      "quick_view": "Quick Add",
+      "quick_view": "Quick View",
+      "quick_add": "+ Quick Add",
       "out_of_stock": "Out of stock",
       "on_sale": "Sale",
       "product_variants": "Product variants",
       "product_information": "Product information",
       "add_to_cart": "Add to cart",
-      "quick_add": "+ Quick Add",
       "sold_out": "Sold out",
       "save_html": "Save {{ saved_amount }}",
       "unavailable": "Unavailable",
