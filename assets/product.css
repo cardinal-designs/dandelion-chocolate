@@ -950,12 +950,6 @@
   }
 }
 
-@supports not (-webkit-touch-callout: none) {
-  .product-add-to-cart-sticky--inner .product__detail {
-    font-style: italic;
-  }
-}
-
 .product-add-to-cart-sticky--inner .product__country {
   margin-bottom: 11px;
   font-size: 14px;
