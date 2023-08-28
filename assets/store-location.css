@@ -122,6 +122,16 @@
   margin-right: 8px;
 }
 
+.location__timings .temp-close::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  background: #333333;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
 .store__location--wrapper .link {
   font-family: 'Saa Series F D';
   font-size: 12px;
