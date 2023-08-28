@@ -265,6 +265,10 @@
   margin-bottom: 4px;
 }
 
+.product-title-uppercase-true .chocolate-bars .product-card .product-card-title {
+  text-transform: uppercase;
+}
+
 .product-card .badge {
   position: absolute;
   z-index: 30;
