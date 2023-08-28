@@ -944,10 +944,8 @@
   font-weight: 400;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .product-add-to-cart-sticky--inner .product__detail {
-    font-style: italic;
-  }
+.safari__specific--css .product-add-to-cart-sticky--inner .product__detail { 
+  font-style: italic;
 }
 
 .product-add-to-cart-sticky--inner .product__country {
