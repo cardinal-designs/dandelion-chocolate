@@ -15,7 +15,7 @@
 -%}
 {%- if search.performed -%}
 	{%- render 'facets-mobile', results: search, enable_filtering: enable_filtering, enable_sorting: enable_sorting -%}
-	<div class="row {% if full_width %}full-width-row{% endif %}">
+	<div  style="background-color: {{ section.settings.bg_color }}" class="row {% if full_width %}full-width-row{% endif %}">
 		<div class="small-12 columns">
 			<div class="collection-container section-spacing-bottom">
 				<div id="ProductGridContainer">
