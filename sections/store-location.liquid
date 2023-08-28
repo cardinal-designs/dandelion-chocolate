@@ -20,7 +20,7 @@
           </div>
           {% if section.settings.mobile_image != blank %}
             <div class="hide-desktop">
-              <a href="{{ section.settings.image_link }}">
+              <a href="{{ section.settings.image_link }}" aria-label="link">
                 {{ section.settings.mobile_image | image_url:width:original | image_tag }}
               </a>
             </div>
