@@ -6,14 +6,14 @@
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-0": {
           "type": "subheading",
           "settings": {
-            "text": "FRESHLY BAKED",
+            "text": "",
             "subheading_color": "#d3a741"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-1": {
           "type": "heading",
           "settings": {
-            "text": "Summer Treat Tin",
+            "text": "Single-Origin S’Mores Kit",
             "heading_size": "h1",
             "heading_color": "#333333"
           }
@@ -21,7 +21,7 @@
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Featuring freshly baked fudgy brownies, Miso Blondies, and chocolate-and-vanilla Cookies & Cream Sandwiches, this collection inlcludes Chef Lisa's versions of time-honored treats in a custom-designed, take-anywhere Summer Treat Tin.<\/p>",
+            "text": "<p>Three origins of chocolate Large Chips, plenty of house-made graham crackers and marshmallows, plus instructions — for a gooey, crispy-crunchy s’more at home or outdoors<\/p>",
             "description_size": "body-1",
             "description_color": "#333333"
           }
@@ -42,6 +42,70 @@
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2",
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3"
       ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image_url": false,
+        "image": "shopify:\/\/shop_images\/Desktop_S_mores.webp",
+        "mobile_image": "shopify:\/\/shop_images\/Mobile_Smores_Box_-_Summer_-_Dandelion_Chocolate_-_2023_1.webp",
+        "desktop_height": "desktop-height-500",
+        "mobile_height": "mobile-height-635",
+        "content_width": "medium",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "overlay_opacity": 30,
+        "show_caption_box": true,
+        "caption_over_banner": true,
+        "caption_bg": "#FFFFFFF2",
+        "mobile_caption_bg": "#F5F6F5",
+        "stack_on_mobile": false,
+        "content__bg": "#333333",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "82e29b78-d5f5-4844-8417-2abc961b672a": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "69477bf6-7c61-4feb-b9a2-00992fbb7f42": {
+          "type": "subheading",
+          "settings": {
+            "text": "FRESHLY BAKED",
+            "subheading_color": "#d3a741"
+          }
+        },
+        "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3": {
+          "type": "heading",
+          "settings": {
+            "text": "Summer Treat Tin",
+            "heading_size": "h1",
+            "heading_color": "#333333"
+          }
+        },
+        "1c54a7df-956d-4754-add0-db32fb0b4e9e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Featuring freshly baked fudgy brownies, Miso Blondies, and chocolate-and-vanilla Cookies & Cream Sandwiches, this collection inlcludes Chef Lisa's versions of time-honored treats in a custom-designed, take-anywhere Summer Treat Tin.<\/p>",
+            "description_size": "body-1",
+            "description_color": "#333333"
+          }
+        },
+        "4af6929c-0254-43be-b8ac-6f6f24e2709f": {
+          "type": "button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/summer-treat-tin",
+            "button_style": "btn--gold",
+            "mobile_button_style": "btn--gold"
+          }
+        }
+      },
+      "block_order": [
+        "69477bf6-7c61-4feb-b9a2-00992fbb7f42",
+        "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3",
+        "1c54a7df-956d-4754-add0-db32fb0b4e9e",
+        "4af6929c-0254-43be-b8ac-6f6f24e2709f"
+      ],
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
@@ -202,75 +266,6 @@
         "overlay_opacity": 0,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
-      }
-    },
-    "79a5bbf9-3f4a-4f65-98b2-ad0e4351999f": {
-      "type": "mini-hero-section",
-      "blocks": {
-        "template--14864636575818__79a5bbf9-3f4a-4f65-98b2-ad0e4351999f-16853720068171ba48-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Mini-Hero-Image-2.jpg",
-            "show_overlay": false,
-            "image_full_width": true,
-            "retina": true,
-            "title": "OPTIONAL MINI HERO I",
-            "heading_size": "h3",
-            "text": "<p>Assume there will always be two mini heroes. HTML editable.<\/p>",
-            "link_label": "LEARN MORE",
-            "link": "",
-            "text_color": "#333333"
-          }
-        },
-        "template--14864636575818__79a5bbf9-3f4a-4f65-98b2-ad0e4351999f-16853720068171ba48-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Mini-Hero-Image-2.jpg",
-            "show_overlay": false,
-            "image_full_width": true,
-            "retina": true,
-            "title": "OPTIONAL MINI HERO I",
-            "heading_size": "h3",
-            "text": "<p>Assume there will always be two mini heroes. HTML editable.<\/p>",
-            "link_label": "LEARN MORE",
-            "link": "",
-            "text_color": "#333333"
-          }
-        },
-        "template--14864636575818__79a5bbf9-3f4a-4f65-98b2-ad0e4351999f-16853720068171ba48-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Mini-Hero-Image-2.jpg",
-            "show_overlay": false,
-            "image_full_width": true,
-            "retina": true,
-            "title": "OPTIONAL MINI HERO I",
-            "heading_size": "h3",
-            "text": "<p>Assume there will always be two mini heroes. HTML editable.<\/p>",
-            "link_label": "LEARN MORE",
-            "link": "",
-            "text_color": "#333333"
-          }
-        }
-      },
-      "block_order": [
-        "template--14864636575818__79a5bbf9-3f4a-4f65-98b2-ad0e4351999f-16853720068171ba48-0",
-        "template--14864636575818__79a5bbf9-3f4a-4f65-98b2-ad0e4351999f-16853720068171ba48-1",
-        "template--14864636575818__79a5bbf9-3f4a-4f65-98b2-ad0e4351999f-16853720068171ba48-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "description": "",
-        "full_width": false,
-        "display_type": "grid",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "text_alignment": "left",
-        "mobile_swipe": false,
-        "show_progress_bar": false,
-        "caption_overlap": false,
-        "section_bg": "#fffdf9"
       }
     },
     "23f32bf8-b73d-4eef-9e20-5f299f6c3c2e": {
@@ -1132,9 +1127,9 @@
   },
   "order": [
     "2a732536-248e-4bfc-bf69-56eb0774b4df",
+    "82e29b78-d5f5-4844-8417-2abc961b672a",
     "f72cb3d9-4d68-4827-b7a3-beff27085607",
     "9030161c-4222-47f2-8b32-ad7222b9b6f6",
-    "79a5bbf9-3f4a-4f65-98b2-ad0e4351999f",
     "23f32bf8-b73d-4eef-9e20-5f299f6c3c2e",
     "0fc540a0-78fa-4cd0-b59c-fd5c3cb2ebbe",
     "3a9ad542-713f-46b0-898c-18c8b4ae6799",
