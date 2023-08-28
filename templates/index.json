@@ -508,7 +508,7 @@
         "template--15975893827724__f2cb92da-bdb5-44fa-8b49-1b79e94a0b15-16896716954a5dba7a-0": {
           "type": "location",
           "settings": {
-            "map_image": "shopify:\/\/shop_images\/Ebene_1.png",
+            "map_image": "shopify:\/\/shop_images\/16th_Street_19921784-d091-47b5-8ca5-e36682158ed0.png",
             "store_close": false,
             "store_location": "16<sup>th<\/sup> Street Factory",
             "link": "shopify:\/\/pages\/16th-street-factory",
@@ -533,7 +533,7 @@
         "template--15975893827724__f2cb92da-bdb5-44fa-8b49-1b79e94a0b15-16896716954a5dba7a-1": {
           "type": "location",
           "settings": {
-            "map_image": "shopify:\/\/shop_images\/Ebene_2.png",
+            "map_image": "shopify:\/\/shop_images\/Valencia.png",
             "store_close": false,
             "store_location": "Valencia Street",
             "link": "shopify:\/\/pages\/valencia-street",
@@ -558,7 +558,7 @@
         "template--15975893827724__f2cb92da-bdb5-44fa-8b49-1b79e94a0b15-16896716954a5dba7a-2": {
           "type": "location",
           "settings": {
-            "map_image": "shopify:\/\/shop_images\/Ebene_3.png",
+            "map_image": "shopify:\/\/shop_images\/Ferry_Building.png",
             "store_close": false,
             "store_location": "Ferry Building",
             "link": "shopify:\/\/pages\/ferry-building",
@@ -583,7 +583,7 @@
         "template--15975893827724__f2cb92da-bdb5-44fa-8b49-1b79e94a0b15-16896716954a5dba7a-3": {
           "type": "location",
           "settings": {
-            "map_image": "shopify:\/\/shop_images\/Ebene_4.png",
+            "map_image": "shopify:\/\/shop_images\/Fillmore.png",
             "store_close": false,
             "store_location": "Fillmore Street",
             "link": "shopify:\/\/pages\/fillmore",
