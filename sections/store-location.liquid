@@ -14,7 +14,7 @@
       <div class="content__left">
         {% if section.settings.image != blank %}
           <div class="hide-mobile">
-            <a href="{{ section.settings.image_link }}">
+            <a href="{{ section.settings.image_link }}" aria-label="link">
               {{ section.settings.image | image_url:width:original | image_tag }}
             </a>
           </div>
