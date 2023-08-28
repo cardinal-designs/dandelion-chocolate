@@ -110,8 +110,11 @@
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
 
-    {% render 'analytics', customer: customer %}
     <script src="https://cdn.speedcurve.com/js/lux.js?id=516060344" defer crossorigin="anonymous"></script>
+
+    {% unless checkout_page %}
+      {% render 'little-data', customer:customer %}  
+    {% endunless %}
 
     <!-- Zapiet | Store Pickup + Delivery -->
     {% if request.page_type == 'cart' %}
