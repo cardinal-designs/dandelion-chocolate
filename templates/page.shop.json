@@ -736,13 +736,13 @@
     "97bfe32d-7c59-4678-8f00-3603fa489856": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Treats",
-        "heading": "Treats",
+        "section_id": "Confections",
+        "heading": "Confections",
         "heading_desktop": 32,
         "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
-        "description": "<p>small bites and nibble-able confections<\/p>",
+        "description": "<p>small bites and nibble-able treats<\/p>",
         "full_width": true,
         "hide_cta_mobile": true,
         "collection": "treats",
