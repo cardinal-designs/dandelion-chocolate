@@ -1848,3 +1848,8 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   letter-spacing: .15em;
   color: var(--dark-gold);
 }
+
+.rebuy-product-actions {
+  position: absolute;
+  bottom: 0;
+}
