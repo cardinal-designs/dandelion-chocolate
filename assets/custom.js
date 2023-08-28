@@ -269,3 +269,8 @@ $(window).on("load resize orientationchange", function(){
     }
   $(".image-with-text-overlay .image-with-text-overlay--content.content-middle-left").css("padding-left", f_a);
 });
+
+
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+  document.body.classList.add("newBodyClass");
+}
