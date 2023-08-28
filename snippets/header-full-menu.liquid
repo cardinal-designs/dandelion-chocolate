@@ -77,7 +77,7 @@
                     <li class="pl-10 pr-10 mt-15{% if colLink.active %} active{% endif %}" role="none">
                       {%- if colLink.type contains 'collection_link' -%}
                         <a href="{{ colLink.url }}">
-                          <img src="{{ collectionFeatured.image | img_url: '450x' }}">
+                          <img src="{{ collectionFeatured.image | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
                         </a>
                       {%- else -%}
                     
@@ -86,9 +86,9 @@
                       {% assign ImageMegaMenu = block.settings.megamenu_image %}
                       {% assign navigationTitle = colLink.title | handleize %}
                         {% if navigationTitle == ImageTitle %}
-                          <a class="image__menu" href="{{ colLink.url }}">
+                          <a class="image__menu" href="{{ colLink.url }}" aria-label="image menu link">
                             {%- if ImageMegaMenu != blank -%}
-                              <img src="{{ ImageMegaMenu | img_url: '450x' }}">
+                              <img src="{{ ImageMegaMenu | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
                             {%- else -%}
                              {{ 'product-1' | placeholder_svg_tag }}                 
                             {%- endif -%}
