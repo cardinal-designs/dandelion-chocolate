@@ -766,9 +766,9 @@
   margin-right: 2px;
 }
 
-.product-title-uppercase-true .baking_products .product-card .product-card-title {
-  font-family: OPTICaslonBold-Cond !important;
-  text-transform: uppercase !important;
+.product-title-uppercase-true .baking_products.product-card .product-card-title {
+  font-family: OPTICaslonBold-Cond;
+  text-transform: uppercase;
 }
 
 .product-card product-form.product-form {
