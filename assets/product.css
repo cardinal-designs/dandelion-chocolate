@@ -1919,6 +1919,15 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   text-transform: uppercase !important;
 }
 
+.template-search .product-card .product-card-title {
+  text-transform: capitalize;
+  margin-bottom: 4px;
+  font-family: 'Garamond Premiere Pro';
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #333333;
+}
+
 @media only screen and (max-width: 1067px) {
 
   .template-product .rebuy-widget-content {
