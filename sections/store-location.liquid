@@ -85,7 +85,7 @@
                       <span class="closed">{{ store }}</span>
                     {% else %}
 
-                  {% assign current_time =  "today" | date: "%s" %}
+                  {% assign current_time =  "now" | date: "%s" %}
                   {% assign nextDateTime = current_time | plus: 86400 %}
                       ---{{ current_time }}
                       

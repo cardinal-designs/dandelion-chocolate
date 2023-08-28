@@ -348,6 +348,8 @@
       "settings": {
         "section_id": "",
         "heading": "SIMPLE collection grid with 2 product blocks",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "",
@@ -384,6 +386,8 @@
       "settings": {
         "section_id": "",
         "heading": "SIMPLE collection grid with 3 product blocks",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "",
@@ -419,6 +423,8 @@
       "settings": {
         "section_id": "Curated-Gifts",
         "heading": "Curations",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>the best of Dandelion, beautifully wrapped and ready to gift<\/p>",
@@ -454,6 +460,8 @@
       "settings": {
         "section_id": "Gifts",
         "heading": "Gifts",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "",
@@ -545,6 +553,8 @@
       "settings": {
         "section_id": "Bar-Sets",
         "heading": "Bar Sets",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>our favorite bars, in many presentations<\/p>",
@@ -562,7 +572,7 @@
         "different_column_grid_layout": "2\/4",
         "quote_enable": false,
         "mobile_swipe": true,
-        "quickview_cartbutton": "quick_view",
+        "quickview_cartbutton": "addtocart",
         "product_limit": "2",
         "show_progress_bar": true,
         "show_view_all": false,
@@ -580,6 +590,8 @@
       "settings": {
         "section_id": "Chocolate-Bars",
         "heading": "Classic Chocolate Bars",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>dark with traditional chocolate notes<\/p>",
@@ -615,6 +627,8 @@
       "settings": {
         "section_id": "Well-Balanced-Chocolate-Bars",
         "heading": "Well-Balanced Chocolate Bars",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>complex and intriguing flavors<\/p>",
@@ -650,6 +664,8 @@
       "settings": {
         "section_id": "Bold-and-Unexpected",
         "heading": "Bold and Unexpected",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>assertive, unusual, and bright<\/p>",
@@ -685,6 +701,8 @@
       "settings": {
         "section_id": "High-Percentage-Chocolate-Bars",
         "heading": "High-Percentage Chocolate Bars",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>85% and 100% bars that showcase the pure, bold flavors of chocolate<\/p>",
@@ -720,6 +738,8 @@
       "settings": {
         "section_id": "Treats",
         "heading": "Treats",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>small bites and nibble-able confections<\/p>",
@@ -755,6 +775,8 @@
       "settings": {
         "section_id": "Pastries",
         "heading": "Pastries for Pickup Only",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>these items are baked to order and are available by pre-order for pickup at our 16th Street factory<\/p>",
@@ -790,6 +812,8 @@
       "settings": {
         "section_id": "Hot-Chocolates",
         "heading": "Hot Chocolates",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>the original hot chocolate recipes that put our café on San Francisco’s map<\/p>",
@@ -893,6 +917,8 @@
       "settings": {
         "section_id": "",
         "heading": "Kits for Virtual Events",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "",
@@ -928,6 +954,8 @@
       "settings": {
         "section_id": "Baking",
         "heading": "Pantry and Baking",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": true,
         "mobile_heading": "Baking",
         "description": "<p>hot chocolate to brownies, pies to tarts, our large chips, ground chocolate, and crunchy cocoa nibs are kitchen-ready<\/p>",
@@ -1032,6 +1060,8 @@
       "settings": {
         "section_id": "Merchandise",
         "heading": "Merchandise",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>beautiful items that complement chocolate<\/p>",
@@ -1067,6 +1097,8 @@
       "settings": {
         "section_id": "",
         "heading": "Books on Chocolate",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
         "enable_mobile_heading": false,
         "mobile_heading": "",
         "description": "<p>titles to inspire, inform, and educate<\/p>",
