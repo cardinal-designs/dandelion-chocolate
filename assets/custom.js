@@ -140,6 +140,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
   window.addEventListener('click', windowClickHandler);
+
+  $('.rebuy-button').click(function(){
+    setTimeout(function(){
+      $('#cart-drawer-toggle').trigger('click');
+    })
+  })
   
 });
 
