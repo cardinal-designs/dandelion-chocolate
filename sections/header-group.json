@@ -72,7 +72,8 @@
         "1a1ba8a7-488b-4730-bb49-25a77cd58426": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Treats"
+            "image_title": "Treats",
+            "megamenu_image": "shopify:\/\/shop_images\/Treats_f596759e-b618-4391-a1a1-581d6354db8e.jpg"
           }
         },
         "59fdebdd-45ed-474b-8605-4e3c015e3780": {
