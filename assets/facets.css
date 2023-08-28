@@ -482,3 +482,7 @@
   font-weight: 400;
   letter-spacing: normal;
 }
+
+.facets--bar .facets-toggle svg {
+  margin-top: -5px;
+}
