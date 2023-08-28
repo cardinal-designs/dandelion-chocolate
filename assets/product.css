@@ -1907,3 +1907,11 @@ button.rebuy-button {
 .rebuy-product-block {
   position: relative;
 }
+
+@media only screen and (max-width: 1067px) {
+
+  .rebuy-widget-content {
+    padding: 0 15px;
+  }
+
+}
