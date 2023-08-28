@@ -116,7 +116,7 @@
         "full_width": true,
         "direction": "left",
         "speed": "50s",
-        "text_size": 16,
+        "text_size": 12,
         "text_uppercase": true,
         "image_size": "large",
         "color_bg": "#fffdf9",
