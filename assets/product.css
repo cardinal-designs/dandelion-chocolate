@@ -1853,3 +1853,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   position: absolute;
   bottom: 0;
 }
+
+.rebuy-product-info {
+  text-align: left;
+}
