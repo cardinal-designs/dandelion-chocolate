@@ -1894,3 +1894,8 @@ button.rebuy-button {
   border-radius: 50px!important;
   padding: 16px 0 10px
 }
+
+.rebuy-product-block:hover button.rebuy-button {
+  transform: translateY(0);
+  bottom: 15px;
+}
