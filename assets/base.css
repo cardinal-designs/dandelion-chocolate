@@ -324,11 +324,23 @@ p {
 }
 
 .cursive {
-  font-family: 'Adobe Garamond Pro';
+  font-family: 'AGaramondPro';
   font-weight: 400;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.02em;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .cursive {
+    font-family: 'AGaramondPro';
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .cursive {
+    font-family: 'AGaramondPro';
+  }
 }
 
 .thb-newsletter-title {
