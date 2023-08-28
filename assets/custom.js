@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
   $('.rebuy-button').click(function(){
     setTimeout(function(){
       $('#cart-drawer-toggle').trigger('click');
-    })
+    },3000)
   })
   
 });
