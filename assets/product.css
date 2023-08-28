@@ -1577,11 +1577,23 @@ quantity-selector.quantity .plus svg {
 }
 
 .product-short-description .tasting-notes {
-  font-family: 'Adobe Garamond Pro';
+  font-family: 'AGaramondPro';
   font-size: 18px !important;
   line-height: 150% !important;
   letter-spacing: 0.05em !important;
   color: #B76A23 !important;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .product-short-description .tasting-notes {
+    font-style: italic;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .product-short-description .tasting-notes {
+    font-style: italic;
+  }
 }
 
 .short_description p {
