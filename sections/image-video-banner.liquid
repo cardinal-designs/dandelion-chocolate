@@ -77,7 +77,7 @@
             assign class = class | append: ' image-with-text-overlay--desktop'
           endif
         -%}
-        {%- render 'responsive-image', image: image, sizes: width, class: class -%}
+        {%- render 'responsive-image', image: image, sizes: width, class: class, image_loading_speed:"eager" -%}
       {% else %}
         {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
       {% endif %}
