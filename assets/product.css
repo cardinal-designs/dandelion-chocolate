@@ -1588,6 +1588,10 @@ quantity-selector.quantity .plus svg {
   color: #B76A23 !important;
 }
 
+.safari__specific--css .product-short-description .tasting-notes {
+  font-style: italic;
+}
+
 @supports (-webkit-touch-callout: none) {
   .product-short-description .tasting-notes {
     font-style: italic;
