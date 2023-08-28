@@ -1164,3 +1164,8 @@ input[type=submit]:hover {
   }
   
 }
+
+heightwidthauto {
+  height: auto !important;
+  width: auto !important;
+}
