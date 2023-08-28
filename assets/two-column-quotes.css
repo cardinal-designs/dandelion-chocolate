@@ -26,6 +26,10 @@
   letter-spacing: 0.02em;
 }
 
+.safari__specific--css .text__right p {
+  font-style: italic;
+}
+
 @supports (-webkit-touch-callout: none) {
   .text__right p {
     font-style: italic;
