@@ -1890,4 +1890,5 @@ button.rebuy-button {
   line-height: 17px;
   text-align: center;
   letter-spacing: .15em;
+  border-radius: 50px !important;
 }
