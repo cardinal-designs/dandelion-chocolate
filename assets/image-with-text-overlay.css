@@ -290,10 +290,11 @@
   margin-bottom: 30px;
 }
 
-/* .template-page-shop .image-with-text-overlay--content-inner .btn {
-  background-color:#E3BE66;
-  border-color:#E3BE66;
-} */
+.image-with-text-overlay .btn--white-outline:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+}
 
 .template-page-shop .image-with-text-overlay--content {
   padding: 20px !important;
