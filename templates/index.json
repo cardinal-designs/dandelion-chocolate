@@ -22,7 +22,7 @@
           "type": "button",
           "settings": {
             "button_text": "BROWSE STORE",
-            "button_link": "shopify:\/\/pages\/shop-1",
+            "button_link": "shopify:\/\/pages\/shop",
             "button_style": "btn--white",
             "mobile_button_style": "btn--gold"
           }
