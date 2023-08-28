@@ -84,7 +84,7 @@
                       <span class="closed">{{ store }}</span>
                     {% else %}
 
-                  {% assign current_time =  "now" | date: "%Y-%m-%d %H:%M" %}
+                  {% assign current_time =  "now" | date: "%s" %}
                       ---{{ current_time }}
                       
                       {% if day == "monday" %}
