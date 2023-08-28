@@ -266,7 +266,8 @@
   color: var(--color-footer-text, #fff);
 }
 
-.footer .signup-container .field label {
+.footer .signup-container .field label,
+.safari__specific--css .footer .signup-container .field label {
   color: rgba(0,0,0,0.6) !important;
   padding: 0 16px 2px;
   font-family: 'AGaramondPro';
@@ -275,12 +276,6 @@
   line-height: 19px;
   letter-spacing: 0.02em;
   text-align: left;
-}
-
-@supports (-webkit-touch-callout: none) {
-  .footer .signup-container .field label {
-    font-style: italic;
-  }
 }
 
 .footer .signup-container input:focus-visible,
