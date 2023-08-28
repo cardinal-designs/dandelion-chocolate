@@ -518,3 +518,12 @@ span.facets__label {
   font-weight: 400;
   line-height: 15px;
 }
+
+.template-search .product-card .product-card-title {
+  text-transform: capitalize !important;
+  margin-bottom: 4px !important;
+  font-family: Garamond Premiere Pro;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #333;
+}
