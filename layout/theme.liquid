@@ -76,7 +76,9 @@
     {{ 'app.css' | asset_url | stylesheet_tag }}
     {{ 'font-face.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% comment %}
     {{ 'shogun.css' | asset_url | stylesheet_tag }}
+    {% endcomment %}
 
     {% render 'head-variables' %}
 
