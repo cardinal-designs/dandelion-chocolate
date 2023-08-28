@@ -323,13 +323,16 @@ p {
   letter-spacing: 0.15em;
 }
 
-.cursive,
-.safari__specific--css .cursive {
+.cursive {
   font-family: 'AGaramondPro';
   font-weight: 400;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.02em;
+}
+
+.safari__specific--css .cursive {
+  font-style: italic;
 }
 
 .thb-newsletter-title {

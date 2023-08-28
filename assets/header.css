@@ -400,12 +400,6 @@
   font-style: italic;
 }
 
-@supports (-webkit-touch-callout: none) {
-  .second__level-menu > a.navigation__link {
-    font-style: italic;
-  }
-}
-
 .header .full-menu .thb-full-menu li.menu-item-has-children.second__level-menu:last-child .sub-menu.third__level-menu {
   margin-bottom: 0;
 }
