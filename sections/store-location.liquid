@@ -78,7 +78,8 @@
                           {% assign nextDate = nextDateString | plus: 86400 | date: "%m/%d" %}
                         {% endif %}
                       {% endfor %}
-                  
+
+                    -------{{ "now" | date: "%Y-%m-%d %H:%M" }}
                     {% if CurrentDateExist %}
                       {% assign store = 'Closed today. ' |append: 'Opens next on ' |append: nextDate %}
                       <span class="closed">{{ store }}</span>
