@@ -122,7 +122,16 @@
     <script src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
-      
+
+    <!-- Lucky Orange -->
+    <script type='text/javascript'>
+    window.__wtw_lucky_site_id = 122654;
+    (function() {
+    var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true; wa.fetchpriority = "low";
+    wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+    })();
+    </script>
   </head>
   <body class="animations-{{ settings.animations }} button-uppercase-{{ settings.button_uppercase }} navigation-uppercase-{{ settings.navigation_uppercase }} product-title-uppercase-{{ settings.product_title_uppercase }}{% if customer %} customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template-{{ template | replace: '.', '-' | handle }}">
     <!-- Google Tag Manager (noscript) -->
