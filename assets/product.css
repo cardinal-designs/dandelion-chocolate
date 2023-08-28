@@ -1893,10 +1893,9 @@ button.rebuy-button {
   letter-spacing: .15em;
   border-radius: 50px!important;
   padding: 16px 0 10px;
-  transition: all .25s linear;
 }
 
-.rebuy-product-block:hover button.rebuy-button {
+.rebuy-product-block:hover .rebuy-product-actions {
   transform: translateY(0);
   bottom: 15px;
   opacity:1;
