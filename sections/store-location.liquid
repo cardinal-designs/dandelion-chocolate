@@ -70,6 +70,7 @@
                     {% assign min_date = sorted_dates | first %}
                       
                     {% assign current_dateNext = min_date | date: "%Y-%m-%d" %}
+                    
                     {% assign nextDate = current_dateNext | date: "%s" | plus: 86400 | date: "%m/%d" %}
                       
                       {% for i in (1..close_date.size) %}
@@ -84,7 +85,8 @@
                       <span class="closed">{{ store }}</span>
                     {% else %}
 
-                  {% assign current_time =  "now" | date: "%s" %}
+                  {% assign current_time =  "today" | date: "%s" %}
+                  {% assign nextDateTime = current_time | plus: 86400 %}
                       ---{{ current_time }}
                       
                       {% if day == "monday" %}
