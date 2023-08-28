@@ -397,13 +397,13 @@
 }
 
 @supports (-webkit-touch-callout: none) {
-  .footer .signup-container .field label {
+  .second__level-menu > a.navigation__link {
     font-style: italic;
   }
 }
 
 @supports not (-webkit-touch-callout: none) {
-  .footer .signup-container .field label {
+  .second__level-menu > a.navigation__link {
     font-style: italic;
   }
 }
