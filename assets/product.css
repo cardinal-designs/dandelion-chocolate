@@ -1852,6 +1852,11 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .rebuy-product-actions {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  width: 100%;
+  max-width: calc(100% - 28px);
+  margin: 0 14px;
+  border-radius: 50px;
 }
 
 .rebuy-product-block {
