@@ -91,9 +91,9 @@
   transition: background-color .2s ease-in, opacity .2s ease-in; 
 }
 
-.shg-box-content p span {
+/* .shg-box-content p span {
   font-family: inherit !important;
-}
+} */
 
 body{
   font-family: Garamond;
