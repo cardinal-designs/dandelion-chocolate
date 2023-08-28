@@ -1829,3 +1829,12 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   font-family: 'Garamond';
   border-color: #cccccc;
 }
+
+.rebuy-product-title {
+  font-family: Garamond Premiere Pro;
+  font-size: 24px;
+  color: #333;
+  letter-spacing: normal;
+  line-height: normal;
+  font-weight: 400;
+}
