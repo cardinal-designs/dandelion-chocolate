@@ -85,8 +85,16 @@
                       <span class="closed">{{ store }}</span>
                     {% else %}
 
-                  {% assign current_time =  "now" | date: "%s" %}
-                  {% assign nextDateTime = current_time | plus: 86400 %}
+                    {% assign current_time = "now" | date: "%s" %}
+                    {% assign midnight = "today" | date: "%s" %}
+                    {% assign specific_time = "07:00:00" | date: "%s" %}
+                    
+                    {% if current_time >= midnight and current_time <= specific_time %}
+                      in 1 
+                    {% else %}
+                      in 2 
+                    {% endif %}
+
                       ---{{ current_time }}
                       
                       {% if day == "monday" %}
