@@ -1830,7 +1830,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-color: #cccccc;
 }
 
-.rebuy-product-title {
+.template-product .rebuy-product-title {
   font-family: Garamond Premiere Pro;
   font-size: 24px;
   color: #333;
@@ -1849,7 +1849,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   color: var(--dark-gold);
 }
 
-.rebuy-product-actions {
+.template-product .rebuy-product-actions {
   position: absolute;
   bottom: 70px;
   width: 100%;
@@ -1864,25 +1864,25 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   right: 0;
 }
 
-.rebuy-product-block {
+.template-product .rebuy-product-block {
   padding: 0 22px !important;
 }
 
-.rebuy-product-info {
+.template-product .rebuy-product-info {
   text-align: left;
 }
 
-.rebuy-widget-content {
+.template-product .rebuy-widget-content {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 45px;
 }
 
-.rebuy-product-media {
+.template-product .rebuy-product-media {
   background-color: #f5f6f5;
 }
 
-button.rebuy-button {
+.template-product button.rebuy-button {
   width: 100%;
   display: flex;
   align-items: center;
@@ -1897,18 +1897,18 @@ button.rebuy-button {
   padding: 16px 0 10px;
 }
 
-.rebuy-product-block:hover .rebuy-product-actions {
+.template-product .rebuy-product-block:hover .rebuy-product-actions {
   transform: translateY(0);
   bottom: 24%;
   opacity: 1;
   visibility: visible;
 }
 
-.rebuy-product-block {
+.template-product .rebuy-product-block {
   position: relative;
 }
 
-.rebuy-widget-content .primary-title {
+.template-product .rebuy-widget-content .primary-title {
   font-family: OPTICaslonBold-Cond;
   font-weight: 500;
   margin-bottom: 10px;
@@ -1921,7 +1921,7 @@ button.rebuy-button {
 
 @media only screen and (max-width: 1067px) {
 
-  .rebuy-widget-content {
+  .template-product .rebuy-widget-content {
     padding: 0 15px;
   }
 
@@ -1929,11 +1929,11 @@ button.rebuy-button {
 
 @media only screen and (max-width: 767px) {
 
-  .rebuy-product-block {
+  .template-product .rebuy-product-block {
     padding: 0 10px!important;
   }
 
-  .rebuy-widget .rebuy-product-grid {
+  .template-product .rebuy-widget .rebuy-product-grid {
     -webkit-justify-content: start;
     -moz-justify-content: start;
     justify-content: start;    
@@ -1943,7 +1943,7 @@ button.rebuy-button {
 
 @media only screen and (max-width: 480px) {
 
-  .rebuy-product-block {
+  .template-product .rebuy-product-block {
     margin-bottom: 30px !important;
   }
     
