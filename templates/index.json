@@ -608,7 +608,6 @@
         "template--15975893827724__f2cb92da-bdb5-44fa-8b49-1b79e94a0b15-16896716954a5dba7a-4": {
           "type": "location",
           "settings": {
-            "map_image": "shopify:\/\/shop_images\/Ebene_5.png",
             "store_close": false,
             "store_location": "The Venetian",
             "link": "shopify:\/\/pages\/the-venetian",
