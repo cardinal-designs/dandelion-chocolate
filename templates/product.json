@@ -7,7 +7,6 @@
     },
     "shogun-above": {
       "type": "shogun-above",
-      "disabled": true,
       "settings": {
       }
     },
