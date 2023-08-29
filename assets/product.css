@@ -1912,6 +1912,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   background-color: #F6C844;
 }
 
+.template-product button.rebuy-button:hover {
+  border: 0;
+}
+
 .template-product .rebuy-product-block:hover .rebuy-product-actions {
   transform: translateY(0);
   bottom: 24%;
