@@ -5917,8 +5917,4 @@ input[type="radio"],
   margin-top: 10px;
 }
 
-.cart-drawer--recommendations .product-cart-item .text-button quantity-selector.quantity.cart-update {
-  border-radius: 4px;
-}
-
 /***** Cart Drawer End *****/
