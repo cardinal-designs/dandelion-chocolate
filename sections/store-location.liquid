@@ -81,7 +81,7 @@
                       {% endfor %}
 
                     {% if CurrentDateExist %}
-                      {% assign store = 'Closed today. ' |append: 'Opens next on ' | append: nextDate %}
+                      {% assign store = 'Closed today. ' | append: 'Opens next on ' | append: nextDate %}
                       <span class="closed">{{ store }}</span>
                     {% else %}
                       
