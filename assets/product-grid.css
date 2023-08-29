@@ -451,22 +451,14 @@
   background: var(--gold);
 }
 
-.product-card .product-form .single-add-to-cart-button:before  {
+/* .product-card .product-form .single-add-to-cart-button:before  {
   display: none;
-}
+} */
 
 .product-card .product-form form .add_to_cart_holder.secondary__hover--enabled .single-add-to-cart-button:hover .single-add-to-cart-button--text {
   background: var(--charcoal-black);
   color: var(--white);
 }
-
-/* @media only screen and (min-width:768px) {
-  
-  .product-card .product-card-quickview span {
-    font-size: 0.6875rem;
-  }
-
-} */
 
 .product-card .product-card-quickview .loading-overlay {
   position: absolute;
