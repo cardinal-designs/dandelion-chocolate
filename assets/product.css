@@ -1976,6 +1976,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
     padding: 40px 0;
   }
 
+  .template-product .rebuy-widget-content .primary-title {
+    font-size: 36px;
+  }
+
 }
 
 @media only screen and (max-width: 1067px) {
