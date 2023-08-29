@@ -244,3 +244,7 @@ body .included-product__single .card__name {
 .step-number p {
   margin: 0;
 }
+
+.shg-btn-text {
+  border-radius: 30px !important;
+}
