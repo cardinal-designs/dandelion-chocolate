@@ -241,3 +241,6 @@ body .included-product__single .card__name {
   margin-bottom: 0;
 }
 
+.step-number p {
+  margin: 0;
+}
