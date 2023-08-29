@@ -497,6 +497,7 @@
       "block_order": [
         "5a4505da-256e-40c8-9f46-4ee03e22161a"
       ],
+      "disabled": true,
       "settings": {
       }
     }
