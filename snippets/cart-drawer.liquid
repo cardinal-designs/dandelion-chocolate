@@ -311,7 +311,7 @@
                 <div class="cart-drawer--recommendations--products">
                   {% for recommendation in recommendations.products %}
                     {{ recommendation.handle | json }}
-                    {% if recommendation.handle != 'international-shipping-fee' %}
+                    {% if recommendation.handle != 'curated-gift-san-francisco-favorites' %}
                       {% render 'product-card-small' product_small: recommendation, quick_add: true, add_to_cart: true %}
                     {% endif %}
                   {% endfor %}
