@@ -41,7 +41,7 @@
   }
   
   .image__video--banner .image-with-text-overlay--content {
-    max-width: 55% !important;
+    max-width: 62% !important;
     padding: 44px;
   }
 
@@ -60,6 +60,14 @@
   .image__video--banner .background-video__iframe iframe {
     height: 200%;
     top: -60%;
+  }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .image__video--banner .image-with-text-overlay--content {
+    max-width: 55% !important;
   }
   
 }
