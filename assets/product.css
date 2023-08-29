@@ -1954,6 +1954,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   text-transform: capitalize;
 }
 
+.template-product .rebuy-widget-content .rebuy-product-block .rebuy-product-media img {
+  width: 100%;
+}
+
 .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-price>div {
   line-height: 1;
 }
