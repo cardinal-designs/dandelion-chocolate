@@ -1,11 +1,14 @@
-.image_with--text-overlay .image-with-text-overlay {
+.image-with-text-overlay {
   position: relative;
   display: flex;
   overflow: hidden;
   width: 100%;
-  background: var(--color-accent);
   color: #fff;
   padding: 45px 0;
+}
+
+.image_with--text-overlay .image-with-text-overlay {
+  background: var(--color-accent);  
 }
 
 .image__url--redirect {
