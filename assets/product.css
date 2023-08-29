@@ -1962,6 +1962,14 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   line-height: 1;
 }
 
+@media only screen and (max-width: 1200px) {
+  
+  .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
+    font-size: 20px;
+  }
+  
+}
+
 @media only screen and (max-width: 1067px) {
 
   .template-product .rebuy-widget-content {
@@ -1984,6 +1992,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
   .template-product .rebuy-widget-content .primary-title {
     font-size: 32px;
+  }
+
+  .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
+    font-size: 17p[x;
   }
   
 }
