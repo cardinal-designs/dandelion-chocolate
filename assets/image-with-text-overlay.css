@@ -491,6 +491,15 @@
   
 }
 
+@media only screen and (max-width: 614px) {
+  
+  .image-with-text-overlay--content-inner p.caption {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
 @media only screen and (max-width: 600px) {
   
   .image-with-text-overlay.stack_on_mobile .image-with-text-overlay--content-inner .btn {
@@ -498,10 +507,6 @@
     max-width: 100%;
   }
   
-}
-
-@media only screen and (max-width: 600px) {
-
   .image__video--banner .btn {
     min-width: unset !important;
   }
