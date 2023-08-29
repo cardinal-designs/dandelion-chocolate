@@ -18,10 +18,6 @@
   height: 100%;
 }
 
-/* .image__video--banner .image-with-text-overlay--content-inner .btn + .btn {
-  margin: 15px 0 0;
-} */
-
 @media only screen and (min-width:768px) {
 
   .image__video--banner .image-with-text-overlay {
@@ -45,7 +41,7 @@
   }
   
   .image__video--banner .image-with-text-overlay--content {
-    max-width: 50% !important;
+    max-width: 55% !important;
     padding: 44px;
   }
 
