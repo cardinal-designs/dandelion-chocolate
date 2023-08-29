@@ -1948,6 +1948,16 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   color: #333;
 }
 
+.template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
+  display: block;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+
+.template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-price>div {
+  line-height: 1;
+}
+
 @media only screen and (max-width: 1067px) {
 
   .template-product .rebuy-widget-content {
