@@ -30,8 +30,8 @@
     
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
 
-     {%- if product_small.metafields.info.notes != blank -%}
-        <div class="card__tasting-notes">{{ product_small.metafields.info.notes }}</div>
+     {%- if product_small.metafields.custom.short_description != blank -%}
+        <div class="card__tasting-notes">{{ product_small.metafields.custom.short_description }}</div>
       {%- endif -%}
     {% render 'product-price', product: product_small %}
     {% render 'product-add-to-cart-small', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
