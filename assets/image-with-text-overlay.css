@@ -213,10 +213,6 @@
   max-width: 900px;
 }
 
-/* .image-with-text-overlay--content-inner .heading {
-  margin-bottom: 10px;
-} */
-
 .animations-true .image-with-text-overlay--content h3 {
   visibility: hidden;
   will-change: visibility;
@@ -489,7 +485,6 @@
     padding: 30px;
   }
 
-  .image-with-text-overlay--content,	
   .image-with-text-overlay--content.content-middle-left {	
     padding: 0 !important;	
   }
