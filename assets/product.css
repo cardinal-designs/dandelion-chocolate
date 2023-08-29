@@ -1909,6 +1909,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   letter-spacing: .15em;
   border-radius: 50px!important;
   padding: 16px 0 10px;
+  background-color: #F6C844;
 }
 
 .template-product .rebuy-product-block:hover .rebuy-product-actions {
