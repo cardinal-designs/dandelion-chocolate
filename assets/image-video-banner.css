@@ -41,7 +41,7 @@
   }
   
   .image__video--banner .image-with-text-overlay--content {
-    max-width: 62% !important;
+    max-width: 100% !important;
     padding: 44px;
   }
 
