@@ -11,7 +11,11 @@
         <p class="new-percentage">{{ product.metafields.info.percentage }}%</p>
       {%- endif -%}
       <div class="product-add-to-cart-sticky--title">
+        {% if product.metafields.info.origin != blank %}
+          {{ product.metafields.info.origin }}
+        {% else %}
           {{ product.title }}
+        {% endif %}
       </div>
       {%- if product.metafields.info.country != blank -%}
         <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
