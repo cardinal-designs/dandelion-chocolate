@@ -870,6 +870,61 @@
     ]
   },
   {
+    "name": "Mobile Menu",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_1",
+        "label": "Shop Chocolate Image #1"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_2",
+        "label": "Shop Chocolate Image #2"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_3",
+        "label": "Shop Chocolate Image #3"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_4",
+        "label": "Shop Chocolate Image #4"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_5",
+        "label": "Shop Chocolate Image #5"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_6",
+        "label": "Shop Chocolate Image #6"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_7",
+        "label": "Shop Chocolate Image #7"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_8",
+        "label": "Shop Chocolate Image #8"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_9",
+        "label": "Shop Chocolate Image #9"
+      },
+      {
+        "type": "image_picker",
+        "id": "chocolate_image_10",
+        "label": "Shop Chocolate Image #10"
+      }
+    ]
+  },
+  {
     "name": "Favicon",
     "settings": [
       {
