@@ -921,6 +921,31 @@
         "type": "image_picker",
         "id": "chocolate_image_10",
         "label": "Shop Chocolate Image #10"
+      },
+      {
+        "type": "image_picker",
+        "id": "events_image_1",
+        "label": "Tours\/Events Image #1"
+      },
+      {
+        "type": "image_picker",
+        "id": "events_image_2",
+        "label": "Tours\/Events Image #2"
+      },
+      {
+        "type": "image_picker",
+        "id": "events_image_3",
+        "label": "Tours\/Events Image #3"
+      },
+      {
+        "type": "image_picker",
+        "id": "events_image_4",
+        "label": "Tours\/Events Image #4"
+      },
+      {
+        "type": "image_picker",
+        "id": "events_image_5",
+        "label": "Tours\/Events Image #5"
       }
     ]
   },
