@@ -35,8 +35,9 @@
                 </button>
               </li>
               {%- for colLink in link.links -%}
+                {% comment %}
                 {% assign Object = colLink.object %}
-                <li class=" TEST sub__menu--navigation{% if colLink.active %} active{% endif %} 
+                  <li class="sub__menu--navigation{% if colLink.active %} active{% endif %} 
                     {% if colLink.type contains 'collection_link' %}{% if Object.image == blank %}no_image_class{% endif %}{% endif %}
                     {% if colLink.type contains 'page_link' %}{% if Object.metafields.custom.mega_menu_image.value == blank %}no_image_class{% endif %}{% endif %}
                   " role="none">
@@ -56,7 +57,18 @@
                     </a>
                   {%- else -%}
                     <a href="{{ colLink.url }}" title="{{ colLink.title | escape }}" role="menuitem">                     
-                      <p class="navigation__link TEST">{{ colLink.title }}</p>
+                      <p class="navigation__link">{{ colLink.title }}</p>
+                    </a>
+                  {%- endif -%}
+                </li>
+              {% endcomment %}
+
+
+                <li class="sub__menu--navigation{% if colLink.active %} active{% endif %}" role="none">
+                  {%- if colLink.type contains 'collection_link' -%}
+                    <a href="{{ colLink.url }}">
+                        <img src="{{ Object.image | img_url: '350x' }}">
+                      <p class="navigation__link">{{ colLink.title }}</p>
                     </a>
                   {%- endif -%}
                 </li>
