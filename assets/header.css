@@ -137,6 +137,11 @@
   text-underline-offset: 3px;
 }
 
+.header .full-menu .thb-full-menu .navigation__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .header .full-menu .thb-full-menu li.menu-item-has-children.menu-item-has-megamenu > .sub-menu {
   margin-top: 0;  
 }
