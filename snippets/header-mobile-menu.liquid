@@ -66,7 +66,8 @@
 
                 <li class="sub__menu--navigation{% if colLink.active %} active{% endif %}" role="none">
                     <a href="{{ colLink.url }}">
-                      {% assign image = settings.chocolate_image %}
+                      {% capture image_setting %}chocolate_image_{{ forloop.index }}{% endcapture %}
+                      {% assign image = settings[image_setting] %}
                       <img src="{{ image | img_url: '350x' }}">
                       <p class="navigation__link">{{ colLink.title }}</p>
                     </a>
