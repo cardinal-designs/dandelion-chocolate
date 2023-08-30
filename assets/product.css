@@ -1327,6 +1327,12 @@ product-add-to-cart-sticky .variations fieldset {
   width: 100%;
 }
 
+.product .product-button--link .btn {
+  background-color: #e2c465!important;
+  border: 0;
+  transition: all .25s cubic-bezier(.104,.204,.492,1);
+}
+
 .product__country {
   font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;
   font-size: 16px;
