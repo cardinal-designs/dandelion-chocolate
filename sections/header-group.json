@@ -9,7 +9,7 @@
           "type": "text",
           "settings": {
             "icon": "box",
-            "text": "Free shipping on orders over $25",
+            "text": "Free shipping on orders over $25.",
             "link": ""
           }
         }
@@ -136,7 +136,7 @@
         "mobile_promo_link": "",
         "show_myaccount": false,
         "button_label": "Shop All",
-        "button_url": "shopify:\/\/collections\/all"
+        "button_url": "\/pages\/shop"
       }
     }
   },
