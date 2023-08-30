@@ -3625,10 +3625,11 @@ h6,
 
 .mobile-toggle span:nth-child(1) {
   transform-origin: top left;
+  top: 19px;
 }
 
 .mobile-toggle span:nth-child(2) {
-  top: 24px;
+  top: 24.5px;
 }
 
 .mobile-toggle span:nth-child(3) {
