@@ -216,6 +216,16 @@
               {% endfor %}
             </tbody>
           </table>
+          <div class="cart__footer--right hide-desktop">
+              <div class="subtotal">
+                <span>{{ 'sections.cart.subtotal' | t }}</span>
+                {% if settings.currency_code_enabled -%}
+                  {{- cart.total_price | money_with_currency -}}
+                {%- else -%}
+                  {{- cart.total_price | money -}}
+                {%- endif -%}
+              </div>
+            </div>
           <footer class="cart-footer">
             <div class="cart__footer--left">
               
@@ -464,7 +474,7 @@
                   {%- endif -%}
                 </p>
             </div>
-            <div class="cart__footer--right">
+            <div class="cart__footer--right hide-mobile">
               <div class="subtotal">
                 <span>{{ 'sections.cart.subtotal' | t }}</span>
                 {% if settings.currency_code_enabled -%}
