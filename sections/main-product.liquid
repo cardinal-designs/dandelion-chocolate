@@ -825,7 +825,7 @@
                 {%- when 'buy_buttons' -%}
                   {% if product.metafields.custom.alternative_add_to_cart_button_link != blank %}
                     <div class="product-button--link">
-                      <a class="add_to_cart_holder button" href="{{ product.metafields.custom.alternative_add_to_cart_button_link }}">{{ product.metafields.custom.alternative_add_to_cart_button_label }}</a>
+                      <a class="btn btn--gold" href="{{ product.metafields.custom.alternative_add_to_cart_button_link }}">{{ product.metafields.custom.alternative_add_to_cart_button_label }}</a>
                     </div>
                   {% else %}
                     {% render 'product-add-to-cart',
