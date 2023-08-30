@@ -1333,6 +1333,11 @@ product-add-to-cart-sticky .variations fieldset {
   transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
 
+.product .product-button--link .btn:hover {
+  background-color: #a48b55 !important;
+  color: #fff !important;
+}
+
 .product__country {
   font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;
   font-size: 16px;
