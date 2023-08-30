@@ -824,7 +824,7 @@
                   </side-panel-links>
                 {%- when 'buy_buttons' -%}
                   {% if product.metafields.custom.alternative_add_to_cart_button_link != blank %}
-                    <div class="product-form">
+                    <div class="product-button--link">
                       <a class="btn btn--gold full--width" href="{{ product.metafields.custom.alternative_add_to_cart_button_link }}">{{ product.metafields.custom.alternative_add_to_cart_button_label }}</a>
                     </div>
                   {% else %}
