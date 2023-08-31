@@ -462,7 +462,7 @@
                 {%- endfor -%}
               {% endif %}
 
-              {%- for media in product.media -%}
+              {%- for media in product.media offset: offsetValue -%}
                 {%- unless media.id == featured_media.id -%}
                   {%- liquid
                     if media.media_type == 'image'
