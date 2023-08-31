@@ -4693,7 +4693,8 @@ select.resize-select {
 
 .quantity.small-qty .qty {
   height: 34px;
-  line-height: 1;
+  line-height: 34px;
+  font-family: 'Saa Series F D';
 }
 
 .quantity.small-qty .minus,
