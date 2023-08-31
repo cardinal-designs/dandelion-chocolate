@@ -87,7 +87,9 @@
                         {% endif %}
                       </a>
                       {% if item.product.metafields.info.notes != blank %}
+                        {% unless item.product.type == 'Gift' %}
                         <div class="tasting__notes body">{{ item.product.metafields.info.notes }}</div>
+                        {% endunless %}  
                       {% endif %}
                 
                         {% if item.selling_plan_allocation %}
