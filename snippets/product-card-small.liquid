@@ -29,7 +29,7 @@
     {%- endif -%}
     
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
-    <div class="product-type">{{ product_small.metafields.info.country }}</div>
+    <div class="product-info-country">{{ product_small.metafields.info.country }}</div>
      {%- if product_small.metafields.custom.short_description != blank -%}
         <div class="card__tasting-notes">{{ product_small.metafields.custom.short_description }}</div>
       {%- endif -%}
