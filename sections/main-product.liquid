@@ -43,6 +43,12 @@
     assign single_media_visible_mobile = true
   endif
 -%}
+
+{% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}
+  {% assign offsetValue = 4 %}
+  {% else %}
+  {% assign offsetValue = 1 %}
+{% endif %}
 {%- if first_3d_model -%}
   <link
     id="ModelViewerStyle"
@@ -172,11 +178,6 @@
                   </div>
                 </div>
               {%- endif -%}
-              {% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}
-                {% assign offsetValue = 4 %}
-                {% else %}
-                {% assign offsetValue = 1 %}
-              {% endif %}
               {%- for media in product.media offset: offsetValue -%}
                 {%- unless media.id == featured_media.id -%}
                   {%- liquid
