@@ -816,3 +816,7 @@ div#prop65_warning span {
 .cart-drawer--recommendations--container {
   background: #EFEFEF;
 }
+
+.cart-drawer--recommendations--heading {
+  font-family: Garamond Premier Pro;
+}
