@@ -391,7 +391,9 @@
   .thb-product-detail .product-information--inner.production-information--sticky {
     position: sticky;
     top: calc(var(--header-height, 80px) + 20px);
-    left: 0; } }
+    left: 0; 
+  }
+}
 
 .thb-product-detail shopify-payment-terms {
   font-size: 0.8125rem;
