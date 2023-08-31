@@ -25,6 +25,9 @@
           {% if product.metafields.info.harvest_year %}
             <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
           {% endif %}
+          {% if product.metafields.info.notes != blank %}
+          <div class="product__testing-note">{{ product.metafields.info.notes }}</div>
+          {% endif %}  
         </div>
       {% endif %}
     </div>
