@@ -184,7 +184,7 @@
                   -%}
                   <div
                     id="Slide-{{ section.id }}-{{ media.id }}"
-                    class="product-images__slide test{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if hide_variants and variant_images contains media.src %} product-images__slide-item--variant{% endif %}{% if media.media_type != 'image' %} product-images__slide--full{% endif %}"
+                    class="product-images__slide{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if hide_variants and variant_images contains media.src %} product-images__slide-item--variant{% endif %}{% if media.media_type != 'image' %} product-images__slide--full{% endif %}"
                     data-media-id="{{ section.id }}-{{ media.id }}"
                   >
                     {%- case media.media_type -%}
