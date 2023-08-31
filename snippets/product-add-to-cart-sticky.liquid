@@ -22,9 +22,11 @@
       {% endif %}  
       {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
         <div class="product__detail">
+          {% comment %}
           {% if product.metafields.info.harvest_year %}
             <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
           {% endif %}
+          {% endcomment %}
           {% if product.metafields.info.notes != blank %}
           <div class="product__testing-note">{{ product.metafields.info.notes }}</div>
           {% endif %}  
