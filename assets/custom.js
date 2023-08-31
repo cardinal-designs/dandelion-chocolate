@@ -273,6 +273,7 @@ $(window).on("load resize orientationchange", function(){
 
 if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
   document.body.classList.add("safari__specific--css");
+}
 
 
 $('.Sub_Menu-Columns li').on('click', 'a', function(event) {
