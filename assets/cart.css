@@ -793,7 +793,7 @@ body .zapietModal.moreInformation h2 {
   letter-spacing: .10em;
 }
 
-@media screen (min-width: 1068px) {
+@media only screen and (min-width: 1068px) {
 
   .remove.cart-remove-mobile {
     display: none;
