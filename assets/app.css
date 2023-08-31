@@ -2536,6 +2536,17 @@ table.no-borders tfoot td:first-child {
   margin-top: auto;
 }
 
+.product-info-country {
+  color: var(--Charcoal, #53595C);
+  text-align: center;
+  font-family: Saa Series F D;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128%;
+  letter-spacing: 1.5px;
+}
+
 .side-panel-content .button {
   flex-shrink: 0;
 }
