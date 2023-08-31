@@ -173,7 +173,7 @@
                 </div>
               {%- endif -%}
               {% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}
-                {% assign offsetValue = 4 %}
+                {% assign offsetValue = 2 %}
                 {% else %}
                 {% assign offsetValue = 1 %}
               {% endif %}
@@ -345,7 +345,7 @@
               {% assign product_media = product.media | size %}
 
               {% if product_media <= 5 %}
-                {%- for media in product.media -%}
+                {%- for media in product.media offset: offsetValue -%}
                   {%- unless media.id == featured_media.id -%}
                     {%- liquid
                       if media.media_type == 'image'
