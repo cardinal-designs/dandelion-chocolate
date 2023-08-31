@@ -1365,7 +1365,7 @@ product-add-to-cart-sticky .variations fieldset {
 .product__ctacol--icon {
   display: flex;
   flex: 0 0 40px;
-  margin-right: 16px;
+  margin-right: 10px;
 }
 
 .product__ctarow {
