@@ -5917,4 +5917,12 @@ input[type="radio"],
   margin-top: 10px;
 }
 
+@media screen (min-width: 1068px) {
+
+  .remove.cart-remove-mobile {
+    display: none;
+  }
+  
+}
+
 /***** Cart Drawer End *****/
