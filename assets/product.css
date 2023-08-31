@@ -390,7 +390,8 @@
 @media only screen and (min-width: 1068px) {
   .thb-product-detail .product-information--inner.production-information--sticky {
     position: sticky;
-    top: calc(var(--header-height, 80px) + 20px);
+    /* top: calc(var(--header-height, 80px) + 20px); */
+    top: 0;
     left: 0; 
   }
 }
