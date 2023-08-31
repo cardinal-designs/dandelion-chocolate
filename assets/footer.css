@@ -560,3 +560,7 @@
   }
 
 }
+
+.signup-form .field input[type="email"] {
+  font-size: 1rem;
+}
