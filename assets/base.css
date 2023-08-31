@@ -1135,6 +1135,10 @@ input[type=submit]:hover {
   letter-spacing: .10em;
 }
 
+.cart-checkout-button {
+  background: #E2C465;
+}
+
 .cart-checkout-button:hover {
   background: #A28D5B;
   color: #fff;
