@@ -1135,6 +1135,12 @@ input[type=submit]:hover {
   letter-spacing: .10em;
 }
 
+.cart-checkout-button:hover {
+  background: #A28D5B;
+  color: #fff;
+  border-color: #A28D5B;
+}
+
 /***** General CSS Start *****/
 
 .tasting__notes {
