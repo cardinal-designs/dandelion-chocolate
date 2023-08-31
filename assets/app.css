@@ -5080,7 +5080,7 @@ select.resize-select {
   margin-left: -30px;
   margin-bottom: 0;
   margin-top: auto;
-  background: var(--bg-body-darken, #f8f8f8);
+  background: #EFEFEF;
   transition: transform 0.3s cubic-bezier(0.104, 0.204, 0.492, 1);
 }
 
