@@ -1137,6 +1137,7 @@ input[type=submit]:hover {
 
 .cart-checkout-button {
   background: #E2C465;
+  border-color: #E2C465;
 }
 
 .cart-checkout-button:hover {
