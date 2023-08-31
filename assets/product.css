@@ -1392,7 +1392,7 @@ product-add-to-cart-sticky .variations fieldset {
 
 .product__free-shipping span {
   color: #4a4a4a;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .product__detail {
@@ -2033,6 +2033,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
   .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
     font-size: 17px;
+  }
+
+  .template-product .thb-product-detail .product-short-description p {
+    font-size: 18px;
   }
   
 }
