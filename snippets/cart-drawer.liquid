@@ -61,7 +61,9 @@
                 {% if item.product.type and item.product.type == 'Chocolate Bar' %}
                   {% assign is_chocolate_bar = true %}
                 {% endif %}
-              
+
+
+                {{ item.product.metafields.custom.hide_super_title }}
                 {% if item.product and item.product.type != 'Chocolate Bar' and item.product.metafields.custom.hide_super_title != false %}        
                   <div class="card__type">{{ item.product.type }}
                     {% unless is_chocolate_bar %}
