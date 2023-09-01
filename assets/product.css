@@ -1428,7 +1428,7 @@ product-add-to-cart-sticky .variations fieldset {
 }
 
 .product__detail .product__harvest_year:after {
-  content: " Harvest";
+  content: "Harvest";
   text-transform: uppercase;
 }
 
