@@ -346,7 +346,6 @@
               {% assign product_media = product.media | size %}
 
               {% if product_media <= 5 %}
-                test
                 {%- for media in product.media offset: offsetValue -%}
                   {%- unless media.id == featured_media.id -%}
                     {%- liquid
