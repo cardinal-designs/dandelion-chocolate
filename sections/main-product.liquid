@@ -626,6 +626,7 @@
                 {%- when 'title' -%}
                   <div class="product-price-container product__price">
                   </div>
+                  <p>{{ my_fields.above_title }}</p>
                   <div class="product-title-container test" {{ block.shopify_attributes }}>
                     <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
                       {%- if product.metafields.info.origin != blank -%}
