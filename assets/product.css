@@ -1428,18 +1428,18 @@ product-add-to-cart-sticky .variations fieldset {
 }
 
 .product__detail .product__harvest_year:after {
-  content: "Harvest";
+  content: " Harvest";
   text-transform: uppercase;
 }
 
-/* .product__harvest_year {
+.product__harvest_year {
   color: #333;
   font-family: Saa Series F D;
   font-size: 13px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: .15em;  
-} */
+}
 
 .new-percentage {
   margin-bottom: 10px;
