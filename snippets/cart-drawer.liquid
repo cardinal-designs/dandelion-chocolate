@@ -63,7 +63,7 @@
                     {{ item.product.metafields.info.product_type }}
                   </div>       
                 {% endif %}      
- 
+                 {{ item.product.metafields | json }}
                   <a
                     href="{{ item.url }}"
                     title="{{ item.product.title | escape }}"
