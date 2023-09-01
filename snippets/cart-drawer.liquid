@@ -57,20 +57,26 @@
                 <div class="product-cart-item-info">
     
                 {% assign product_info = item.product.metafields.info %}        
-
-                {% if product_info.product_type != blank %}        
+                {% assign is_chocolate_bar = false %}
+                {% if item.product.type and item.product.type == 'Chocolate Bar' %}
+                  {% assign is_chocolate_bar = true %}
+                {% endif %}
+                {% if item.product and item.product.type != 'Chocolate Bar' %}        
                   <div class="card__type">{{ item.product.type }}
-                    {{ item.product.metafields.info.product_type }}
+                    {% unless is_chocolate_bar %}
+                      {% if product_info.percentage %}
+                      - {{ product_info.percentage }}%
+                      {% endif %}
+                    {% endunless %}
                   </div>       
                 {% endif %}      
-                  test
-                 {{ item.product.metafields | json }}
+ 
                   <a
                     href="{{ item.url }}"
                     title="{{ item.product.title | escape }}"
                     class="cart-product-link">
-                    {% if product_info.cart_title != blank %}
-                      {{ product_info.cart_title }} ---
+                    {% if item.product.metafields.info.origin != blank %}
+                      {{ item.product.metafields.info.origin }}
                     {% else %}
                       {{ item.product.title }}
                     {% endif %}
@@ -78,10 +84,7 @@
 
                   {%- if item.product.metafields.custom.short_description != blank -%}
                     <div class="card__tasting-notes">{{ item.product.metafields.custom.short_description }}</div>
-                  {%- else -%}
-                     <div class="card__tasting-notes">{{ item.product.metafields.info.tasting_notes }}</div>
                   {%- endif -%}
-              
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
                       <del>
