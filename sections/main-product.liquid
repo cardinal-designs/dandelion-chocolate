@@ -44,6 +44,8 @@
   endif
 -%}
 
+{% assign my_fields = product.metafields.info %}
+
 {% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}
   {% assign offsetValue = 2 %}
   {% else %}
