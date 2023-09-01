@@ -63,13 +63,14 @@
                     {{ item.product.metafields.info.product_type }}
                   </div>       
                 {% endif %}      
+                  test
                  {{ item.product.metafields | json }}
                   <a
                     href="{{ item.url }}"
                     title="{{ item.product.title | escape }}"
                     class="cart-product-link">
                     {% if product_info.cart_title != blank %}
-                      {{ product_info.cart_title }}
+                      {{ product_info.cart_title }} ---
                     {% else %}
                       {{ item.product.title }}
                     {% endif %}
