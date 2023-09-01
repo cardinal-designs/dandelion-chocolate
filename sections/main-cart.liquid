@@ -78,20 +78,25 @@
                         {% else %}
                           {{ item.product.title }}
                         {% endif %}
-                      </a>                
-                        {% if item.selling_plan_allocation %}
-                          <div class="properties">
-                            <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
-                          </div>
-                        {% endif %}
-                        {% unless item.variant.title contains 'Default' %}
-                          <div class="product-cart-item-options">
-                            {% for option in item.product.options %}
-                              <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}}
-                              <br>
-                            {% endfor %}
-                          </div>
-                        {% endunless %}
+                      </a>        
+
+                      {%- if product_info.tasting_notes != blank -%}
+                        <div class="card__tasting-notes">{{ product_info.tasting_notes }}</div>
+                      {%- endif -%}
+                        
+                      {% if item.selling_plan_allocation %}
+                        <div class="properties">
+                          <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
+                        </div>
+                      {% endif %}
+                      {% unless item.variant.title contains 'Default' %}
+                        <div class="product-cart-item-options">
+                          {% for option in item.product.options %}
+                            <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}}
+                            <br>
+                          {% endfor %}
+                        </div>
+                      {% endunless %}
                         {%- if item.discounts != blank -%}
                           <ul class="discounts" role="list">
                             {%- for discount in item.discounts -%}
