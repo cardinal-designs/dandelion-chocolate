@@ -130,6 +130,10 @@ body .bar-icons p {
   font-family: 'Saa Series F D' !important;
 }
 
+.bar-icons {
+  grid-template-columns: repeat(6, 16.5%) !important;
+}
+
 body .howitworks-num span {
   line-height: normal;
 }
