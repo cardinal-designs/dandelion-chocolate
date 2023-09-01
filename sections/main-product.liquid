@@ -344,7 +344,6 @@
                 </div>
               {%- endif -%}
               {% assign product_media = product.media | size %}
-Test__1
               {% if product_media <= 5 %}
                 {%- for media in product.media offset: offsetValue -%}
                   {%- unless media.id == featured_media.id -%}
