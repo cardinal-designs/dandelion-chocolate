@@ -61,13 +61,9 @@
                 {% if item.product.type and item.product.type == 'Chocolate Bar' %}
                   {% assign is_chocolate_bar = true %}
                 {% endif %}
-                {% if item.product and item.product.type != 'Chocolate Bar' %}        
+                {% if item.product.metafields.info.product_type != blank %}        
                   <div class="card__type">{{ item.product.type }}
-                    {% unless is_chocolate_bar %}
-                      {% if product_info.percentage %}
-                      - {{ product_info.percentage }}%
-                      {% endif %}
-                    {% endunless %}
+                    {{ item.product.metafields.info.product_type }}
                   </div>       
                 {% endif %}      
  
