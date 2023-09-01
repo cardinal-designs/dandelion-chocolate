@@ -57,11 +57,8 @@
                 <div class="product-cart-item-info">
     
                 {% assign product_info = item.product.metafields.info %}        
-                {% assign is_chocolate_bar = false %}
-                {% if item.product.type and item.product.type == 'Chocolate Bar' %}
-                  {% assign is_chocolate_bar = true %}
-                {% endif %}
-                {% if item.product.metafields.info.product_type != blank %}        
+
+                {% if product_info.product_type != blank %}        
                   <div class="card__type">{{ item.product.type }}
                     {{ item.product.metafields.info.product_type }}
                   </div>       
@@ -71,8 +68,8 @@
                     href="{{ item.url }}"
                     title="{{ item.product.title | escape }}"
                     class="cart-product-link">
-                    {% if item.product.metafields.info.cart_title != blank %}
-                      {{ item.product.metafields.info.cart_title }}
+                    {% if product_info.cart_title != blank %}
+                      {{ product_info.cart_title }}
                     {% else %}
                       {{ item.product.title }}
                     {% endif %}
@@ -83,6 +80,7 @@
                   {%- else -%}
                      <div class="card__tasting-notes">{{ item.product.metafields.info.tasting_notes }}</div>
                   {%- endif -%}
+              
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
                       <del>
