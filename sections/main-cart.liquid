@@ -54,13 +54,15 @@
                   <td class="product-name">
                     <div class="product-cart-item">
                       <div class="product-cart-item-image">
-                        {% if item.image %}
-                          {%- render 'responsive-image', image: item.image, sizes: '168x0' -%}
-                        {% else %}
-                          <div class="thb-placeholder" style="width: 100px;">
-                            {{ 'product-1' | placeholder_svg_tag }}
-                          </div>
-                        {% endif %}
+                        <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}">
+                          {% if item.image %}
+                            {%- render 'responsive-image', image: item.image, sizes: '168x0' -%}
+                          {% else %}
+                            <div class="thb-placeholder" style="width: 100px;">
+                              {{ 'product-1' | placeholder_svg_tag }}
+                            </div>
+                          {% endif %}
+                        </a>
                       </div>
                       <div>
                         
