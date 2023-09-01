@@ -68,8 +68,7 @@
                         
                       {% assign product_info = item.product.metafields.info %}        
 
-                      <div class="card__type">
-                        {{ product_info.product_type }}
+                      <div class="card__type">--
                       </div>       
  
                       <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4">
