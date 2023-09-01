@@ -44,8 +44,6 @@
   endif
 -%}
 
-{% assign my_fields = product.metafields.info %}
-
 {% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}
   {% assign offsetValue = 2 %}
   {% else %}
@@ -626,7 +624,7 @@
                 {%- when 'title' -%}
                   <div class="product-price-container product__price">
                   </div>
-                  <div class="product-title-container test" {{ block.shopify_attributes }}>
+                  <div class="product-title-container" {{ block.shopify_attributes }}>
                     <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
                       {%- if product.metafields.info.origin != blank -%}
                         {{ product.metafields.info.origin }}
