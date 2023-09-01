@@ -9,6 +9,8 @@
   assign free_shipping_minimum = settings.free_shipping_minimum_cart | times: 100
   assign total = cart.total_price
 -%}
+                        
+{% assign product_info = item.product.metafields.info %}        
 
 <div class="row">
   <div class="small-12">
@@ -55,18 +57,14 @@
                     <div class="product-cart-item">
                       <div class="product-cart-item-image">
                         <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}">
-                          {% if item.image %}
-                            {%- render 'responsive-image', image: item.image, sizes: '168x0' -%}
+                          {% if product_info.cart_image_url %}
+                            {%- render 'responsive-image', image: product_info.cart_image_url, sizes: '168x0' -%}
                           {% else %}
-                            <div class="thb-placeholder" style="width: 100px;">
-                              {{ 'product-1' | placeholder_svg_tag }}
-                            </div>
+                            {%- render 'responsive-image', image: item.image, sizes: '168x0' -%}
                           {% endif %}
                         </a>
                       </div>
                       <div>
-                        
-                      {% assign product_info = item.product.metafields.info %}        
 
                       <div class="card__type">
                         {{ product_info.product_type }}
