@@ -68,9 +68,11 @@
                         
                       {% assign product_info = item.product.metafields.info %}        
 
-                      <div class="card__type">
-                        {{ product_info.product_type }}
-                      </div>       
+                      {% if product_info.product_type != blank %}
+                        <div class="card__type">
+                          {{ product_info.product_type }}
+                        </div>       
+                      {% endif %}
  
                       <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4">
                         {% if product_info.cart_title != blank %}
