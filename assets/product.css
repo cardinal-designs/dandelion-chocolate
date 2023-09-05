@@ -1276,6 +1276,7 @@ product-add-to-cart-sticky .variations fieldset {
   right: 10px;
 }
 
+.product-image-container .flickity-button.previous[disabled],
 .product-image-container .flickity-button.next[disabled] {
   display: none;
 }
