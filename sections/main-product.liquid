@@ -298,9 +298,10 @@
             {% if media_layout == 'slider' %}
             <product-slider
               id="Product-Slider-Thumbanils"
-              class="product-images test_4 {% if media_layout == 'slider' %}carousel-nav test_2{% endif %} product-images--{{ media_layout }}"
+              class="product-images test_4 {% if media_layout == 'slider' %}carousel-nav {% endif %} product-images--{{ media_layout }}"
               data-captions="{{ display_captions }}"
             >
+              <p>test_2</p>
               {%- if featured_media != null -%}
                 {%- liquid
                   assign image_index = image_index | plus: 1
