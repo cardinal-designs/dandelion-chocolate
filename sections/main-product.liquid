@@ -311,7 +311,7 @@
                     assign ratio = featured_media.preview_image.aspect_ratio
                   endif
                 -%}
-                <p>test_2</p>
+     
                 <div
                   id="Slide-{{ section.id }}-{{ featured_media.id }}"
                   class="product-images__slide is-active {% if hide_variants and variant_images contains featured_media.src %} product-images__slide-item--variant{% endif %}"
@@ -339,7 +339,7 @@
                         {%- render 'svg-icons' with 'zoom' -%}
                       </a>
                     {%- endif -%}
-                test
+
                     {%- render 'responsive-image', image: featured_media.preview_image, sizes: 100x, image_loading_speed: "eager" -%}
                     {%- if featured_media.preview_image.alt != blank and display_captions -%}
                       <span class="figcaption">{{ featured_media.preview_image.alt }}</span>
@@ -478,7 +478,7 @@
                   -%}
                   <div
                     id="Slide-{{ section.id }}-{{ media.id }}"
-                    class="product-images__slide{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if hide_variants and variant_images contains media.src %} product-images__slide-item--variant{% endif %}{% if media.media_type != 'image' %} product-images__slide--full{% endif %}"
+                    class="product-images__slide test_5{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if hide_variants and variant_images contains media.src %} product-images__slide-item--variant{% endif %}{% if media.media_type != 'image' %} product-images__slide--full{% endif %}"
                     data-media-id="{{ section.id }}-{{ media.id }}"
                   >
                     {%- case media.media_type -%}
