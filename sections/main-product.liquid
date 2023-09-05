@@ -350,7 +350,7 @@
               {% assign product_media = product.media | size %}
 
               {% if product_media <= 5 %}
-                {%- for media in product.media offset: offsetValue -%}
+                {%- for media in product.media -%}
                   {%- unless media.id == featured_media.id -%}
                     {%- liquid
                       if media.media_type == 'image'
