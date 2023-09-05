@@ -168,7 +168,8 @@ document.addEventListener("DOMContentLoaded", function() {
       prevNextButtons: true,
       pageDots: false, 
       wrapAround: true,
-      cellAlign: 'left'
+      cellAlign: 'left',
+      contain: true
   });
 
 });
