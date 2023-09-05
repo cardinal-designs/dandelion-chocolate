@@ -394,7 +394,7 @@
                                 {%- render 'svg-icons' with 'zoom' -%}
                               </a>
                             {%- endif -%}
-                            {%- render 'responsive-image', image: media.preview_image, sizes: 100x -%}
+                            {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
                             {%- if media.preview_image.alt != blank and display_captions -%}
                               <span class="figcaption">{{ media.preview_image.alt }}</span>
                             {%- endif -%}
@@ -441,7 +441,7 @@
                             >
                               {%- render 'svg-icons' with 'thb-icon-3d-model' -%}
                             </button>
-                            {%- render 'responsive-image', image: media.preview_image, sizes: 100x -%}
+                            {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
                             <template>
                               {{ media | media_tag: image_size: '2048x', toggleable: true }}
                             </template>
@@ -510,7 +510,7 @@
                               {%- render 'svg-icons' with 'zoom' -%}
                             </a>
                           {%- endif -%}
-                          {%- render 'responsive-image', image: media.preview_image, sizes: 100x -%}
+                          {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
                           {%- if media.preview_image.alt != blank and display_captions -%}
                             <span class="figcaption">{{ media.preview_image.alt }}</span>
                           {%- endif -%}
