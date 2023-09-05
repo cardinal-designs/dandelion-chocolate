@@ -1529,6 +1529,10 @@ dl.accordion-list dd {
   margin: 0 4px;
 }
 
+#Product-Slider-Thumbanils .product-images__slide.is-nav-selected {
+  border-color: #000;
+}
+
 .thb-product-detail.product .row {
   max-width: 1160px;
   padding: 0 20px;
