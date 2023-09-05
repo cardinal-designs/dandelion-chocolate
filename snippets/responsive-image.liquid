@@ -41,7 +41,7 @@
 
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
   <link rel="preload" as="image" href="{{- src -}}" crossorigin="anonymous">
-  <img {% if image_loading_speed %} loading='eager' {% else %} loading='auto' {% endif %} class="heightwidthauto lazyload{% unless settings.lazy_loading %} no-blur{% endunless %}{% if retina %} retina_size{% endif %} {{ class | escape }}" width="300" height="300" data-sizes="auto" src="{{- src -}}" data-srcset="{{ srcset | slice: 0, l | strip_newlines -}}" alt="{{ image.alt | escape }}" {% if focal_point -%}style="object-position: {{ focal_point }};"{% endif %} />
+  <img {% if image_loading_speed %} loading='eager' {% else %} loading='auto' {% endif %} class="heightwidthauto lazyload{% unless settings.lazy_loading %} no-blur{% endunless %}{% if retina %} retina_size{% endif %} {{ class | escape }}" data-sizes="auto" src="{{- src -}}" data-srcset="{{ srcset | slice: 0, l | strip_newlines -}}" alt="{{ image.alt | escape }}" {% if focal_point -%}style="object-position: {{ focal_point }};"{% endif %} />
 <noscript>
 <img width="{{ image.width }}" loading='auto' height="{{ image.height }}" sizes="auto" src="{{- image.src | img_url: image_sizes[0], crop: 'center' -}}" srcset="{{ srcset | slice: 0, l | strip_newlines }}" alt="{{ image.alt | escape }}" loading="lazy" {% if focal_point -%}style="object-position: {{ focal_point }};"{% endif %} />
 </noscript>{% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
