@@ -42,7 +42,7 @@
           "settings": {
             "show_quantity_selector": true,
             "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false
+            "show_gift_card_recipient": true
           }
         },
         "0b3e272b-c86a-4dba-946c-c6912251371c": {
