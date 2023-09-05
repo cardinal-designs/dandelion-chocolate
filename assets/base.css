@@ -1151,6 +1151,10 @@ input[type=submit]:hover {
   margin-bottom: 70px;
 }
 
+body.open-cart{
+ overflow: hidden;
+}
+
 /***** General CSS Start *****/
 
 html{
