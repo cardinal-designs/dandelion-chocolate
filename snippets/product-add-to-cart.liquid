@@ -20,6 +20,7 @@
     </div>
 		{%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 		<input type="hidden" name="id" class="default-product-input" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+          {{ gift_card_recipient_feature_active }}
 		{%- if gift_card_recipient_feature_active -%}
           --1111{{ gift_card_recipient_feature_active }}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
