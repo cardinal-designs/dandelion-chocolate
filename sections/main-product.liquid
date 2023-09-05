@@ -130,7 +130,7 @@
         {% endcomment %}
         
         <div class="media__gallery" id="MediaGallery-{{ section.id }}">
-          <div class="product-image-container test_3">
+          <div class="product-image-container">
             <product-slider
               id="Product-Slider"
               class="product-images {% if media_layout == 'slider' %}carousel-main{% else %} media__layout--{{ media_layout }} {% endif %} product-images--{{ media_layout }}"
@@ -298,7 +298,7 @@
             {% if media_layout == 'slider' %}
             <product-slider
               id="Product-Slider-Thumbanils"
-              class="product-images test_4 {% if media_layout == 'slider' %}carousel-nav {% endif %} product-images--{{ media_layout }}"
+              class="product-images {% if media_layout == 'slider' %}carousel-nav {% endif %} product-images--{{ media_layout }}"
               data-captions="{{ display_captions }}"
             >
               
@@ -318,7 +318,7 @@
                   data-media-id="{{ section.id }}-{{ featured_media.id }}"
                 >
                   <div
-                    class="product-single__media product-single__media-image test_1 aspect-ratio aspect-ratio--{{ media_aspect_ratio }}"
+                    class="product-single__media product-single__media-image aspect-ratio aspect-ratio--{{ media_aspect_ratio }}"
                     id="Media-Thumbnails-{{ section.id }}-{{ featured_media.id }}"
                     style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;"
                   >
@@ -478,7 +478,7 @@
                   -%}
                   <div
                     id="Slide-{{ section.id }}-{{ media.id }}"
-                    class="product-images__slide test_5{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if hide_variants and variant_images contains media.src %} product-images__slide-item--variant{% endif %}{% if media.media_type != 'image' %} product-images__slide--full{% endif %}"
+                    class="product-images__slide {% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if hide_variants and variant_images contains media.src %} product-images__slide-item--variant{% endif %}{% if media.media_type != 'image' %} product-images__slide--full{% endif %}"
                     data-media-id="{{ section.id }}-{{ media.id }}"
                   >
                     {%- case media.media_type -%}
@@ -813,7 +813,7 @@
                       data-url="{{ product.url }}"
                       data-is-disabled="{{ is_disabled }}"
                     >
-                      <div class="variations test" {{ block.shopify_attributes }}>
+                      <div class="variations" {{ block.shopify_attributes }}>
                         {%- for option in product.options_with_values -%}
                           {%- liquid
                             assign option_name = option.name | downcase | escape
