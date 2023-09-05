@@ -169,7 +169,8 @@ document.addEventListener("DOMContentLoaded", function() {
       pageDots: false, 
       wrapAround: true,
       cellAlign: 'left',
-      contain: true
+      contain: true,
+      groupCells: true
   });
 
 });
