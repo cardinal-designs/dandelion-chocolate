@@ -151,6 +151,10 @@
   padding-bottom: 112%;
 }
 
+.chocolate-bars .product-card .product-featured-image-link img {
+  object-fit: contain;
+}
+
 .product-card .product-card-info .price {
   color: var(--dark-gold);
 }
