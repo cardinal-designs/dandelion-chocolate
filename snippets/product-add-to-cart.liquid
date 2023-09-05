@@ -53,10 +53,10 @@
 			    </quantity-selector>
 				</div>
 				{%- endif -%}
-          {% assign sold_out = true %}
+          {% assign sold_out = false %}
           {% for tag in  product.tags %}
             {% if tag == 'force_soldout' %}
-              {% assign sold_out = false %}
+              {% assign sold_out = true %}
               {% break %}
             {% endif %}
           {% endfor %}
