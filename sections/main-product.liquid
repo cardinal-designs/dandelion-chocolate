@@ -336,7 +336,7 @@
                         {%- render 'svg-icons' with 'zoom' -%}
                       </a>
                     {%- endif -%}
-                    {%- render 'responsive-image', image: featured_media.preview_image, sizes: sizes, responsive_loading: "eager" -%}
+                    {%- render 'responsive-image', image: featured_media.preview_image, sizes: sizes, image_loading_speed: "eager" -%}
                     {%- if featured_media.preview_image.alt != blank and display_captions -%}
                       <span class="figcaption">{{ featured_media.preview_image.alt }}</span>
                     {%- endif -%}
