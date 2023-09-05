@@ -61,7 +61,7 @@
             {% endif %}
           {% endfor %}
           
-		    <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available or sold_out == true %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false or sold_out %}disabled{% endif %}>
+		    <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false or sold_out %}disabled{% endif %}>
 					<span class="single-add-to-cart-button--text">
 						{%- if product.selected_or_first_available_variant.available and sold_out != true -%}
 		          {{ 'products.product.add_to_cart' | t }}
