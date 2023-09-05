@@ -167,10 +167,8 @@ document.addEventListener("DOMContentLoaded", function() {
       asNavFor: '.carousel-main',
       prevNextButtons: true,
       pageDots: false, 
-      wrapAround: true,
+      wrapAround: false,
       cellAlign: 'left'
-      // contain: true,
-      // groupCells: true
   });
 
 });
