@@ -21,7 +21,7 @@
   assign ratio = 1
   assign sizes = '375x375,550x550'
   if media_aspect_ratio == 'adapt'
-    assign sizes = '375x0,640x0'
+    assign sizes = '375x0,550x0'
   elsif media_aspect_ratio == 'portrait'
     assign ratio = 1 | divided_by: 1.25
     assign sizes = '375x469,640x800'
