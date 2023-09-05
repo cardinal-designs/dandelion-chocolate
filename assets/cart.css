@@ -27,10 +27,6 @@
   margin-bottom: 0; 
 }
 
-.cart-drawer .side-panel-footer {
-  margin-bottom: 50px;
-}
-
 @media only screen and (min-width: 1068px) {
   
   .cart-items thead .product-name,

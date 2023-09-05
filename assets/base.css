@@ -1147,6 +1147,10 @@ input[type=submit]:hover {
   border-color: #A28D5B;
 }
 
+.cart-drawer .side-panel-footer {
+  margin-bottom: 50px;
+}
+
 /***** General CSS Start *****/
 
 html{
