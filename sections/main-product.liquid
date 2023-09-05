@@ -45,9 +45,9 @@
   endif
 -%}
 
-{% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}11
+{% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}
   {% assign offsetValue = 2 %}
-  {% else %}22
+  {% else %}
   {% assign offsetValue = 1 %}
 {% endif %}
 {%- if first_3d_model -%}
