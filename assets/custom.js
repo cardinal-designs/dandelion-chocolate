@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var flickityItems = document.querySelectorAll(".product-images__slide");
 
   var elem = document.querySelector('.carousel-main');
-  var flkty = new Flickity(elem);
+  var flkty2 = new Flickity(elem);
   
   var flkty1 = new Flickity(flickityContainer, {
       asNavFor: '.carousel-main',
