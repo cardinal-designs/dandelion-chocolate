@@ -19,7 +19,7 @@
   assign is_disabled = false
 
   assign ratio = 1
-  assign sizes = '375x375,640x640'
+  assign sizes = '375x375,550x550'
   if media_aspect_ratio == 'adapt'
     assign sizes = '375x0,640x0'
   elsif media_aspect_ratio == 'portrait'
@@ -223,7 +223,7 @@
                               {%- render 'svg-icons' with 'zoom' -%}
                             </a>
                           {%- endif -%}
-                          {%- render 'responsive-image', image: media.preview_image, sizes: 550x -%}
+                          {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
                           {%- if media.preview_image.alt != blank and display_captions -%}
                             <span class="figcaption">{{ media.preview_image.alt }}</span>
                           {%- endif -%}
