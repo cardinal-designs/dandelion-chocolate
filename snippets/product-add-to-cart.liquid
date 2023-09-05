@@ -53,7 +53,7 @@
 			    </quantity-selector>
 				</div>
 				{%- endif -%}
-		    <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %} {% if product.tags contains "force_soldout" %}sold-out{% endif %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+		    <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %} {% if product.tags contains 'force_soldout' %}sold-out{% endif %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
 					<span class="single-add-to-cart-button--text">
 						{%- if product.selected_or_first_available_variant.available -%}
 		          {{ 'products.product.add_to_cart' | t }}
