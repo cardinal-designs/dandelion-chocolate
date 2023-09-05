@@ -441,7 +441,7 @@
                             >
                               {%- render 'svg-icons' with 'thb-icon-3d-model' -%}
                             </button>
-                            {%- render 'responsive-image', image: media.preview_image, sizes: sizes -%}
+                            {%- render 'responsive-image', image: media.preview_image, sizes: 100x -%}
                             <template>
                               {{ media | media_tag: image_size: '2048x', toggleable: true }}
                             </template>
