@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var flkty1 = new Flickity(flickityContainer, {
       asNavFor: '.carousel-main',
       prevNextButtons: true,
-      pageDots: false,
+      pageDots: false, 
       contain: true,
       wrapAround: true,
       cellAlign: 'left'
