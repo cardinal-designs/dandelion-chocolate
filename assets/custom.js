@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function() {
       asNavFor: '.carousel-main',
       prevNextButtons: true,
       pageDots: false, 
-      wrapAround: false,
+      wrapAround: true,
       cellAlign: 'left'
   });
 
