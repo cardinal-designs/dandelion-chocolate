@@ -301,7 +301,7 @@
               class="product-images test_4 {% if media_layout == 'slider' %}carousel-nav {% endif %} product-images--{{ media_layout }}"
               data-captions="{{ display_captions }}"
             >
-              <p>test_2</p>
+              
               {%- if featured_media != null -%}
                 {%- liquid
                   assign image_index = image_index | plus: 1
@@ -311,6 +311,7 @@
                     assign ratio = featured_media.preview_image.aspect_ratio
                   endif
                 -%}
+                <p>test_2</p>
                 <div
                   id="Slide-{{ section.id }}-{{ featured_media.id }}"
                   class="product-images__slide is-active {% if hide_variants and variant_images contains featured_media.src %} product-images__slide-item--variant{% endif %}"
