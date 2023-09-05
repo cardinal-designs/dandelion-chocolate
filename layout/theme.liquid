@@ -194,7 +194,10 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
       <script src="{{ 'product-recommendations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {% render 'back-to-top' %}
+    {% comment %}
+      {% render 'back-to-top' %}
+    {% endcomment %}
+    
     <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
 
     {% render 'gorgias' %}
