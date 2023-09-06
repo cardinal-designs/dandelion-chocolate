@@ -515,7 +515,7 @@
                   </div>
                   {% if product.metafields.info.above_title != blank %}
                     <div class="above_title">
-                      {{ product.metafields.info.above_title }}
+                      {{ product.metafields.info.above_title | metafield_tag }}
                     </div>
                   {% endif %}
                   <div class="product-title-container aaaa" {{ block.shopify_attributes }}>
