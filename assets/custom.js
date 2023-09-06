@@ -317,7 +317,7 @@ $(document).ready(function () {
       var $listItems = $list.children('li');
     
       $styledSelect.click(function(e) {
-          e.stopPropagation();
+          // e.stopPropagation();
           $('div.select-styled.active').not(this).each(function(){
               $(this).removeClass('active').next('ul.select-options').hide();
           });
