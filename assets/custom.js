@@ -324,27 +324,17 @@ $(document).ready(function () {
           $(this).toggleClass('active').next('ul.select-options').toggle();
       });
     
-     $listItems.forEach(function(listItem) {
-      listItem.addEventListener('click', function(e) {
+     $listItems.click(function(e) {
         e.stopPropagation();
-        $styledSelect.textContent = this.textContent;
-        var relValue = this.getAttribute('rel');
-        $this.querySelector('option[value="' + relValue + '"]').selected = true;
-        var changeEvent = new Event('change', { bubbles: true });
-        $this.dispatchEvent(changeEvent);
-        var selectedItems = $list.querySelectorAll('li.is-selected');
-        selectedItems.forEach(function(selectedItem) {
-          selectedItem.classList.remove('is-selected');
-        });
-        var relItems = $list.querySelectorAll('li[rel="' + relValue + '"]');
-        relItems.forEach(function(relItem) {
-          relItem.classList.add('is-selected');
-        });
-        $list.style.display = 'none';
-        //console.log($this.value);
+        $styledSelect.text($(this).text()).removeClass('active');
+        // $this.find('option[value="'+$(this).attr('rel')+'"]').prop('selected', true);
+        // $this.trigger('change'); // Trigger the change event on the select element
+      $this.find('option[value="'+$(this).attr('rel')+'"]').prop('selected', 1).trigger("change");
+        $list.find('li.is-selected').removeClass('is-selected');
+        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+        $list.hide();
+        console.log($this.find('option[value="'+$(this).attr('rel')+'"]'));
       });
-    });
-
 
     
       $(document).click(function() {
