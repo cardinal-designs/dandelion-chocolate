@@ -2028,6 +2028,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-radius: 0;
 }
 
+.variations .select-styled:before {
+  content: '';
+}
+
 .variations .select-styled.active {
   border-color: #A28D5B;
 }
