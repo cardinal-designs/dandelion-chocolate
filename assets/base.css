@@ -1069,6 +1069,10 @@ input[type=submit]:hover {
   padding: 50px 40px 15px;
 }
 
+[role=main] .shopify-policy__title {
+  font-size: 0;
+}
+
 [role=main] .shopify-policy__title h1 {
   font-size: 36px;
   color: #333;
