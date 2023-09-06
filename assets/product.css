@@ -2069,7 +2069,8 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   }
 
   .product-add-to-cart-sticky--info,
-  .product-add-to-cart-sticky--image {
+  .product-add-to-cart-sticky--image,
+  .product-add-to-cart-sticky variant-selects {
     display: none !important;
   }
 
