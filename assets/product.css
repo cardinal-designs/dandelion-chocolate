@@ -2070,6 +2070,11 @@ ul.select-options li.is-selected {
   color: #fff;
 }
 
+ul.select-options li:hover:before,
+ul.select-options li.is-selected:before {
+  display: block;
+}
+
 @media only screen and (max-width: 1200px) {
   
   .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
