@@ -317,7 +317,7 @@ $(document).ready(function () {
       var $listItems = $list.children('li');
     
       $styledSelect.click(function(e) {
-          e.stopPropagation();
+          // e.stopPropagation();
           $('div.select-styled.active').not(this).each(function(){
               $(this).removeClass('active').next('ul.select-options').hide();
           });
@@ -325,7 +325,7 @@ $(document).ready(function () {
       });
     
       $listItems.click(function(e) {
-          e.stopPropagation();
+          // e.stopPropagation();
           $styledSelect.text($(this).text()).removeClass('active');
           $this.val($(this).attr('rel'));
         $list.find('li.is-selected').removeClass('is-selected');
