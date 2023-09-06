@@ -2043,6 +2043,12 @@ ul.select-options li {
   padding: 10px 0;
 }
 
+ul.select-options li:hover,
+ul.select-options li.is-selected {
+  background: #9F8B5C;
+  color: #fff;
+}
+
 @media only screen and (max-width: 1200px) {
   
   .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
