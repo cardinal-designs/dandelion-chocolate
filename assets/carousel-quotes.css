@@ -141,6 +141,12 @@ a.cart-product-link.h4 {
   left: 45px;
 }
 
+.carousel__align--left .carousel__author img {
+  max-height: 50px;
+  object-fit: contain;
+  object-position: left;
+}
+
 @media only screen and (max-width: 767px) { 
 
   .carousel__quotes--wrapper .flickity-viewport {
