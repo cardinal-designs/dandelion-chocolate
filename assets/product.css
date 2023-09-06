@@ -2024,7 +2024,8 @@ ul.select-options {
   font-weight: 400;
   background: transparent;
   max-width: 100%;
-  border-radius: 0;+
+  border-radius: 0;
+  margin: 0;
   padding: 8px;
   background: rgb(227, 229, 230);
 }
