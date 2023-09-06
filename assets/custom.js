@@ -327,7 +327,7 @@ $(document).ready(function () {
       $listItems.click(function(e) {
           // e.stopPropagation();
           $styledSelect.text($(this).text()).removeClass('active');
-          $this.val($(this).attr('rel')).change();
+          $this.val($(this).attr('rel')).trigger('change');
         $list.find('li.is-selected').removeClass('is-selected');
         $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
           $list.hide();
