@@ -2064,6 +2064,8 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
   .product-add-to-cart-sticky {
     background: transparent;
+    padding: 0;
+    box-shadow: none;
   }
 
 }
