@@ -85,8 +85,8 @@
                     {% endif %}
                   </a>
 
-                  {%- if item.product.metafields.custom.short_description != blank -%}
-                    <div class="card__tasting-notes">{{ item.product.metafields.custom.short_description }}</div>
+                  {%- if item.product.metafields.info.tasting_notes != blank -%}
+                    <div class="card__tasting-notes">{{ item.product.metafields.info.tasting_notes }}</div>
                   {%- endif -%}
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
