@@ -2014,6 +2014,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   line-height: 1;
 }
 
+ul.select-options {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   
   .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
