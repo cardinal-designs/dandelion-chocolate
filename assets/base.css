@@ -1069,7 +1069,7 @@ input[type=submit]:hover {
   padding: 50px 40px 15px;
 }
 
-[role=main] .shopify-policy__title {
+[role=main] .shopify-policy__title h1 {
   font-size: 0;
 }
 
