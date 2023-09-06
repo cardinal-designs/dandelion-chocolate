@@ -2073,6 +2073,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
     display: none !important;
   }
 
+  .product-add-to-cart-sticky--content .add_to_cart_holder .button {
+    min-height: 50px;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
