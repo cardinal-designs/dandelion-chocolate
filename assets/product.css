@@ -2040,6 +2040,18 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-color: #A28D5B;
 }
 
+.product-information .variations .select-styled:before {
+  content: "";
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/dropdown_arrow.png?v=1694003024);
+  width: 20px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .product-information ul.select-options {
   display: none;
   margin: 0;
