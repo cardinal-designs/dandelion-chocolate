@@ -68,8 +68,8 @@
                         
                       {% assign product_info = item.product.metafields.info %}        
 
-                      {%- if product.metafields.info.percentage != blank or product.metafields.info.product_type != blank -%}
-                        <p class="new-percentage">{{ product.metafields.info.percentage }}% {{ product.metafields.info.product_type }}</p> 
+                      {%- if product_info.percentage != blank or product_info.product_type != blank -%}
+                        <p class="new-percentage">{{ product_info.percentage }}% {{ product_info.product_type }}</p> 
                       {%- endif -%}
                 
                       {% if product_info.product_type != blank %}
