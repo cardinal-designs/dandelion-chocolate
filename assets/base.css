@@ -1073,8 +1073,12 @@ input[type=submit]:hover {
   font-size: 0;
 }
 
-[role=main] .shopify-policy__title h1 {
+[role=main] .shopify-policy__title h1:before {
   font-size: 36px;
+}
+
+[role=main] .shopify-policy__title h1,
+[role=main] .shopify-policy__title h1:before {
   color: #333;
 }
 
@@ -1095,6 +1099,10 @@ input[type=submit]:hover {
   }
   
   [role=main] .shopify-policy__title h1 {
+    font-size: 40px;
+  }
+
+  [role=main] .shopify-policy__title h1:before {
     font-size: 40px;
   }
 
