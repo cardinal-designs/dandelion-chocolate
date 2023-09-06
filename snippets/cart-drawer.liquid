@@ -75,8 +75,8 @@
                     href="{{ item.url }}"
                     title="{{ item.product.title | escape }}"
                     class="cart-product-link">
-                    {% if item.product.metafields.info.origin != blank %}
-                      {{ item.product.metafields.info.origin }}
+                    {% if item.product.metafields.info.cart_title != blank %}
+                      {{ item.product.metafields.info.cart_title }}
                     {% else %}
                       {{ item.product.title }}
                     {% endif %}
