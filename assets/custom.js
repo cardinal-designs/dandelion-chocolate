@@ -327,11 +327,13 @@ $(document).ready(function () {
      $listItems.click(function(e) {
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
-        // $this.find('option[value="'+$(this).attr('rel')+'"]').prop('selected', true);
-        // $this.trigger('change'); // Trigger the change event on the select element
-      $this.find('option[value="'+$(this).attr('rel')+'"]').prop('selected', 1);
-       var changeEvent = new Event('change', { bubbles: true });
-    $this.dispatchEvent(changeEvent);
+        var selectElement = $this[0];
+    selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
+    
+    // Dispatch the 'change' event on the select element
+    var changeEvent = new Event('change', { bubbles: true });
+    selectElement.dispatchEvent(changeEvent);
+
        
         $list.find('li.is-selected').removeClass('is-selected');
         $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
