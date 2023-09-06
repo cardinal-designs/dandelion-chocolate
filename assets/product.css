@@ -2061,7 +2061,11 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   .template-product .thb-product-detail .product-short-description p {
     font-size: 18px;
   }
-  
+
+  .product-add-to-cart-sticky {
+    background: transparent;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
