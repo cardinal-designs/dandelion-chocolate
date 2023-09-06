@@ -2028,15 +2028,19 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-radius: 0;
 }
 
-.variations .select-styled:before {
+.product-information .variations select {
+  display: none;
+}
+
+.product-information .variations .select-styled:before {
   content: '';
 }
 
-.variations .select-styled.active {
+.product-information .variations .select-styled.active {
   border-color: #A28D5B;
 }
 
-ul.select-options {
+.product-information ul.select-options {
   display: none;
   margin: 0;
   padding: 8px;
@@ -2050,7 +2054,7 @@ ul.select-options {
   z-index: 99;
 }
 
-ul.select-options li {
+.product-information ul.select-options li {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -2063,7 +2067,7 @@ ul.select-options li {
   position: relative;
 }
 
-ul.select-options li:before {
+.product-information ul.select-options li:before {
   content: '';
   background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/checked.png?v=1694003508);
   width: 17px;
@@ -2074,14 +2078,14 @@ ul.select-options li:before {
   margin-right: 10px;
 }
 
-ul.select-options li:hover,
-ul.select-options li.is-selected {
+.product-information ul.select-options li:hover,
+.product-information ul.select-options li.is-selected {
   background: #9F8B5C;
   color: #fff;
 }
 
-ul.select-options li:hover:before,
-ul.select-options li.is-selected:before {
+.product-information ul.select-options li:hover:before,
+.product-information ul.select-options li.is-selected:before {
   display: block;
 }
 
