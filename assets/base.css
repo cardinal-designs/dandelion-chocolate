@@ -1074,6 +1074,7 @@ input[type=submit]:hover {
 }
 
 [role=main] .shopify-policy__title h1:before {
+  content: '';
   font-size: 36px;
 }
 
