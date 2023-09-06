@@ -27,8 +27,11 @@
             <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
           {% endif %}
           {% endcomment %}
+          {% if product.metafields.info.micro_info != blank %}
+            <div class="product__testing-note">{{ product.metafields.info.micro_info }}</div>
+          {% endif %}  
           {% if product.metafields.info.notes != blank %}
-          <div class="product__testing-note aaaa">{{ product.metafields.info.notes }}</div>
+            <div class="product__testing-note">{{ product.metafields.info.notes }}</div>
           {% endif %}  
         </div>
       {% endif %}
