@@ -2018,7 +2018,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border: 1px solid var(--color-form-border);
   padding: 12px 17px;
   height: 45.53px;
-  color: var(--color-body);
+  color: #333;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
