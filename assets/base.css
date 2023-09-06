@@ -1070,11 +1070,11 @@ input[type=submit]:hover {
 }
 
 [role=main] .shopify-policy__title h1 {
-  font-size: 0;
+  font-size: 0 !important;
 }
 
 [role=main] .shopify-policy__title h1:before {
-  content: '';
+  content: 'Return and Shipping policies';
   font-size: 36px;
 }
 
