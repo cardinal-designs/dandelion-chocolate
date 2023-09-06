@@ -2042,6 +2042,12 @@ ul.select-options {
   padding: 8px;
   background: rgb(227, 229, 230);
   list-style: none;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
 }
 
 ul.select-options li {
