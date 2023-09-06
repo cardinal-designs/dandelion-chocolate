@@ -333,7 +333,7 @@ $(document).ready(function () {
         $list.find('li.is-selected').removeClass('is-selected');
         $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
         $list.hide();
-        //console.log($this.val());
+        console.log($this.find('option[value="'+$(this).attr('rel')+'"]'));
       });
 
     
