@@ -2047,6 +2047,7 @@ ul.select-options li {
   letter-spacing: 0.02em;
   font-family: 'Garamond Premiere Pro';
   padding: 10px;
+  padding-left: 37px;
   display: flex;
   align-items: center;
 }
