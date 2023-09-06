@@ -2085,6 +2085,7 @@ variant-selects .product-form__input .select-arrow {
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 
 .product-information ul.select-options li:before {
