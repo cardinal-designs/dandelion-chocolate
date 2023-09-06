@@ -869,7 +869,7 @@
 
 .product-add-to-cart-sticky {
   position: fixed;
-  bottom: 15px;
+  bottom: 90px;
   right: 15px;
   width: calc(100% - 30px);
   max-width: 532px;
