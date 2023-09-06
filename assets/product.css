@@ -2052,6 +2052,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   transform: translateY(-50%);
 }
 
+variant-selects .product-form__input .select-arrow {
+  display: none;
+}
+
 .product-information ul.select-options {
   display: none;
   margin: 0;
