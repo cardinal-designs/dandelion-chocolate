@@ -324,15 +324,15 @@ $(document).ready(function () {
           $(this).toggleClass('active').next('ul.select-options').toggle();
       });
     
-      $listItems.click(function(e) {
-          e.stopPropagation();
-          $styledSelect.text($(this).text()).removeClass('active');
-          $this.val($(this).attr('rel'));
-        $list.find('li.is-selected').removeClass('is-selected');
-        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
-          $list.hide();
-          //console.log($this.val());
-      });
+      // $listItems.click(function(e) {
+      //     e.stopPropagation();
+      //     $styledSelect.text($(this).text()).removeClass('active');
+      //     $this.val($(this).attr('rel'));
+      //   $list.find('li.is-selected').removeClass('is-selected');
+      //   $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+      //     $list.hide();
+      //     //console.log($this.val());
+      // });
     
       $(document).click(function() {
           $styledSelect.removeClass('active');
