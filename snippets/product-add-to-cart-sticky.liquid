@@ -27,14 +27,14 @@
             <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
           {% endif %}
           {% endcomment %}
-          {% if product.metafields.info.micro_info != blank %}
-            <div class="product__testing-note micro__info">{{ product.metafields.info.micro_info }}</div>
-          {% endif %}  
-          {% if product.metafields.info.tasting_notes != blank %}
-            <div class="product__testing-note">{{ product.metafields.info.tasting_notes }}</div>
-          {% endif %}  
         </div>
       {% endif %}
+      {% if product.metafields.info.micro_info != blank %}
+        <div class="product__testing-note micro__info">{{ product.metafields.info.micro_info }}</div>
+      {% endif %}  
+      {% if product.metafields.info.tasting_notes != blank %}
+        <div class="product__testing-note">{{ product.metafields.info.tasting_notes }}</div>
+      {% endif %}  
     </div>
       <div class="product-add-to-cart-sticky--content">
 		{%- unless product.has_only_default_variant -%}
