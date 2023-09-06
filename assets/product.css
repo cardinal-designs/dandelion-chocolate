@@ -2053,15 +2053,13 @@ ul.select-options li {
 }
 
 ul.select-options li:before {
-  display: none;
-}
-
-ul.select-options li:before {
   content: '';
   background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/checked.png?v=1694003508);
   width: 17px;
   height: 14px;
-  display: inline-block;
+  display: none;
+  position: absolute;
+  left: 10px;
   margin-right: 10px;
 }
 
