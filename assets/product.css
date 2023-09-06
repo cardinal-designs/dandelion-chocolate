@@ -2028,6 +2028,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-radius: 0;
 }
 
+.variations .select-styled.active {
+  border-color: #A28D5B;
+}
+
 ul.select-options {
   display: none;
   margin: 0;
@@ -2042,7 +2046,7 @@ ul.select-options li {
   line-height: 23px;
   letter-spacing: 0.02em;
   font-family: 'Garamond Premiere Pro';
-  padding: 10px 0;
+  padding: 10px;
 }
 
 ul.select-options li:hover,
