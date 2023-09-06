@@ -325,14 +325,14 @@ $(document).ready(function () {
       });
     
      $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.find('option[value="'+$(this).attr('rel')+'"]').prop('selected', true);
-        // $this.trigger('change'); // Trigger the change event on the select element
-        $list.find('li.is-selected').removeClass('is-selected');
-        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
-        $list.hide();
-        //console.log($this.val());
+        // e.stopPropagation();
+        // $styledSelect.text($(this).text()).removeClass('active');
+        // $this.find('option[value="'+$(this).attr('rel')+'"]').prop('selected', true);
+        // // $this.trigger('change'); // Trigger the change event on the select element
+        // $list.find('li.is-selected').removeClass('is-selected');
+        // $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+        // $list.hide();
+        // //console.log($this.val());
       });
 
     
