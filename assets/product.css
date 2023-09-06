@@ -2068,6 +2068,11 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
     box-shadow: none;
   }
 
+  .product-add-to-cart-sticky--info,
+  .product-add-to-cart-sticky--image {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
