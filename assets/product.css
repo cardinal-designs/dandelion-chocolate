@@ -2050,6 +2050,7 @@ ul.select-options li {
   padding-left: 37px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 ul.select-options li:before {
