@@ -328,7 +328,7 @@ $(document).ready(function () {
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
         $this.find('option[value="'+$(this).attr('rel')+'"]').prop('selected', true);
-        $this.trigger('change'); // Trigger the change event on the select element
+        // $this.trigger('change'); // Trigger the change event on the select element
         $list.find('li.is-selected').removeClass('is-selected');
         $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
         $list.hide();
