@@ -947,6 +947,10 @@
   font-weight: 400;
 }
 
+.product-add-to-cart-sticky--inner .product__detail .micro__info {
+  margin-bottom:10px;
+}
+
 .safari__specific--css .product-add-to-cart-sticky--inner .product__detail { 
   font-style: italic;
 }
