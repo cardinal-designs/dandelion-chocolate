@@ -325,11 +325,11 @@ $(document).ready(function () {
       });
     
       $listItems.click(function(e) {
-          e.stopPropagation();
+          // e.stopPropagation();
           $styledSelect.text($(this).text()).removeClass('active');
-          $this.val($(this).attr('rel'));
-        // $list.find('li.is-selected').removeClass('is-selected');
-        // $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+          $this.val($(this).attr('rel')).change();
+        $list.find('li.is-selected').removeClass('is-selected');
+        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
           $list.hide();
           //console.log($this.val());
       });
