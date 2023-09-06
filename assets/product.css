@@ -2090,7 +2090,7 @@ variant-selects .product-form__input .select-arrow {
 
 .product-information ul.select-options li:before {
   content: '';
-  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/checked.png?v=1694003508);
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/check.svg?v=1694036142);
   width: 17px;
   height: 14px;
   display: none;
