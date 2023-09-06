@@ -67,14 +67,10 @@
                       <div>
                         
                       {% assign product_info = item.product.metafields.info %}        
-
-                      {%- if product_info.percentage != blank or product_info.product_type != blank -%}
-                        <p class="new-percentage">{{ product_info.percentage }}% {{ product_info.product_type }}</p> 
-                      {%- endif -%}
                 
-                      {% if product_info.product_type != blank %}
+                      {% if product_info.percentage != blank or product_info.product_type != blank %}
                         <div class="card__type">
-                          {{ product_info.product_type }}
+                          {{ product_info.percentage }}% {{ product_info.product_type }}
                         </div>       
                       {% endif %}
  
