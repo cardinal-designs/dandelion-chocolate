@@ -2047,6 +2047,17 @@ ul.select-options li {
   letter-spacing: 0.02em;
   font-family: 'Garamond Premiere Pro';
   padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul.select-options li:before {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/checked.png?v=1694003508);
+  width: 17px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 ul.select-options li:hover,
