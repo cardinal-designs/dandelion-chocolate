@@ -527,6 +527,12 @@
                       {%- endif -%}
                     </h1>
 
+                    {% if product.metafields.info.subtitle != blank %}
+                      <div class="subtitle">
+                        {{ product.metafields.info.subtitle | metafield_tag }}
+                      </div>
+                    {% endif %}
+
                     {%- if product.metafields.info.country != blank -%}
                       <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
                     {%- endif -%}
