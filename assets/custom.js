@@ -201,7 +201,7 @@ if(accordionContainer){
 }
 
 // Accordion 
-var accordionContainer = document.querySelector("dl.accordion-list-test");
+var accordionContainer = document.querySelector("dl.meta__accordion--list");
 var duration = 300;
 if(accordionContainer){
   accordionContainer.addEventListener("click", function(event) {
