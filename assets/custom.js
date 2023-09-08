@@ -316,8 +316,6 @@ $(document).ready(function () {
 
 
 $(document).ready(function() {
-  var accordion = $('.accordion-list').html();
-    $('.accordion-list').remove();
   var desc = $('.product__description .shg-theme-text-content').html();
   var read_more = '<div class="rm_grad" style="">&nbsp;</div></div><div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div><dl class="accordion-list">';
     $('.product__description .shg-theme-text-content').html('<div class="short_description">' + desc + read_more + accordion + "</dl>");
