@@ -388,6 +388,11 @@
     "name": "Location",
     "settings": [
       {
+        "type": "header",
+        "content": "16th Street Factory",
+        "info": "Add 16th Street Factory Details"
+      },
+      {
         "type": "image_picker",
         "id": "map_image",
         "label": "Map Image"

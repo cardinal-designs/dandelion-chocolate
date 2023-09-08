@@ -584,15 +584,6 @@
                       {{ block.settings.tasting_notes }}
                     </div>
                   {% endif %}
-                {%- when 'guarantee_icons' -%}
-                  <div class="bar-icons">
-                    {% for bar_icon in product.metafields.custom.product_icons.value %}
-                      <div>
-                        <img alt="Kosher icon" src="https://cdn.shopify.com/s/files/1/2434/0841/files/Kosher_icon.svg">
-                        <p>{{ bar_icon }}</p>
-                      </div>
-                    {% endfor %}
-                  </div>
                 {%- when 'product_description' -%}
                 {% if block.settings.product_description != blank %}
                   <div class="meta__product--description">
@@ -634,7 +625,15 @@
                     {% endif %}
                 
                   </dl>
-                    
+                 {%- when 'guarantee_icons' -%}
+                  <div class="bar-icons">
+                    {% for bar_icon in product.metafields.custom.product_icons.value %}
+                      <div>
+                        <img alt="Kosher icon" src="https://cdn.shopify.com/s/files/1/2434/0841/files/Kosher_icon.svg">
+                        <p>{{ bar_icon }}</p>
+                      </div>
+                    {% endfor %}
+                  </div>
                 {%- when 'description' -%}
                   {% if product.metafields.info.special_message_location == 'Top' %}
                     <div class="special__message--wrap">
