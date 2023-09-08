@@ -541,11 +541,9 @@
                    {% comment %}
                     {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
                       <div class="product__detail">
-                        {% comment %}
-                          {% if product.metafields.info.percentage %}
+                        {% if product.metafields.info.percentage %}
                             <span class="product__percentage">{{product.metafields.info.percentage}}</span>
                           {% endif %}
-                        {% endcomment %}
                         {% if product.metafields.info.harvest_year %}
                           <span class="product__harvest_year rrrr">{{ product.metafields.info.harvest_year }}</span>
                         {% endif %}
@@ -557,14 +555,9 @@
                   {% endcomment %}
 
                     {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
-                      <div class="product__detail--wrap">
-                        {% comment %}
-                          {% if product.metafields.info.percentage %}
-                            <span class="product__percentage">{{product.metafields.info.percentage}}</span>
-                          {% endif %}
-                        {% endcomment %}
+                      <div class="product__detail product__detail--wrap">
                         {% if product.metafields.info.harvest_year %}
-                          <span class="product__harvest_year rrrr">{{ product.metafields.info.harvest_year }}</span>
+                          <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
                         {% endif %}
                         {% if product.metafields.info.batch_number %}
                           <span class="product__batch_number">BATCH no. {{ product.metafields.info.batch_number }}</span>
