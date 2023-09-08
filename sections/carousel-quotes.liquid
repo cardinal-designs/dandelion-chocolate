@@ -14,11 +14,7 @@
             {% if block.settings.logo != blank %}
               <div class="carousel__logo">
                 {{ block.settings.logo | image_url:width:original | image_tag }}
-              </div>
-            {% else %}
-              <div class="carousel__logo">
-                {{ block.settings.logo_text }}
-              </div>              
+              </div>           
             {% endif %}
           
             {% if block.settings.quotes != blank %}
@@ -146,11 +142,6 @@
             "type": "image_picker",
             "id": "logo",
             "label": "Logo"
-          },
-          {
-            "type": "text",
-            "id": "logo_text",
-            "label": "Text (Instead of logo)"
           },
           {
             "type": "richtext",
