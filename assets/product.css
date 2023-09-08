@@ -2211,6 +2211,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   overflow: hidden;
 }
 
-.hide-rebuy .rebuy-widget {
-  display: none !important;
+.meta__product--description .rm_grad {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%);
+  height: 300px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
