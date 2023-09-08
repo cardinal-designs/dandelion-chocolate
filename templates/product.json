@@ -86,9 +86,9 @@
         "88a32717-f86c-4cd9-a5b9-49d8f009ac6b": {
           "type": "tab_list",
           "settings": {
-            "ingredients": "<p>Ingredients<\/p>",
-            "ingredients_allergens": "<p>Ingredients Allergens<\/p>",
-            "ingredients_allergen_facility": "<p>Ingredients Allergen Facility<\/p>"
+            "ingredients": "{{ product.metafields.info.ingredients | metafield_tag }}",
+            "ingredients_allergens": "{{ product.metafields.info.allergens.value }}",
+            "ingredients_allergen_facility": "{{ product.metafields.info.allergen_facility.value }}"
           }
         }
       },
