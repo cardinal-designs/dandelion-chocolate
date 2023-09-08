@@ -323,8 +323,8 @@ $(document).ready(function() {
   $('.read_less').hide();
   
   var og_height = $('.short_description').height();
-  $('.short_description').css({"max-height": "320px"});
-  $('.short_description .metafield-rich_text_field').css({"max-height": "320px"});
+  $('.short_description').css({"max-height": "300px"});
+  $('.short_description .metafield-rich_text_field').css({"max-height": "300px"});
   
   $('.read_more').on('click', function() {
     $('.short_description').animate({ "max-height": og_height});
@@ -335,8 +335,8 @@ $(document).ready(function() {
   });
   
   $('.read_less').on('click', function() {
-    $('.short_description').animate({ "max-height": "320px"});
-    $('.short_description .metafield-rich_text_field').animate({ "max-height": "320px"});
+    $('.short_description').animate({ "max-height": "300px"});
+    $('.short_description .metafield-rich_text_field').animate({ "max-height": "300px"});
     $(this).hide();
     $('.rm_grad').show(); 
     $('.read_more').show();
