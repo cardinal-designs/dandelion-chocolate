@@ -98,11 +98,13 @@
                       </small>
                     {%- endif -%}
                   </span>
+              
                   {% if item.selling_plan_allocation %}
                     <div class="properties">
                       <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
                     </div>
                   {% endif %}
+              
                   {% unless item.variant.title contains 'Default' %}
                     <div class="product-cart-item-options">
                       {% for option in item.product.options %}
