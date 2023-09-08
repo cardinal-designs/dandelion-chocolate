@@ -423,7 +423,7 @@
         "text_color": "#333333",
         "carousel_type": "large",
         "carousel_alignment": "left",
-        "autoplay": false,
+        "autoplay": true,
         "show_arrows_desktop": false,
         "show_arrows_mobile": false,
         "autoplay_speed": "2000",
