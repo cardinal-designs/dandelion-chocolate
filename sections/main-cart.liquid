@@ -55,12 +55,10 @@
                     <div class="product-cart-item">
                       <div class="product-cart-item-image">
                         <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}">
-                          {% if item.image %}
-                            {%- render 'responsive-image', image: item.image, sizes: '168x0' -%}
-                          {% else %}
-                            <div class="thb-placeholder" style="width: 100px;">
-                              {{ 'product-1' | placeholder_svg_tag }}
-                            </div>
+                          {% if item.product.metafields.info.cart_image_url %}
+                            {%- render 'responsive-image', image: item.product.metafields.info.cart_image_url, sizes: '192x0' -%}
+                           {% else %}
+                            {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
                           {% endif %}
                         </a>
                       </div>

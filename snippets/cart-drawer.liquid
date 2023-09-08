@@ -42,12 +42,10 @@
                 <div class="product-cart-item-image">
                   <a
                       href="{{ item.url }}">
-                    {% if item.image %}
+                    {% if item.product.metafields.info.cart_image_url %}
+                      {%- render 'responsive-image', image: item.product.metafields.info.cart_image_url, sizes: '192x0' -%}
+                     {% else %}
                       {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
-                    {% else %}
-                      <div class="thb-placeholder" style="width: 96px;">
-                        {{ 'product-1' | placeholder_svg_tag }}
-                      </div>
                     {% endif %}
                     <div class="loading-overlay">
                       {% render 'svg-icons' with 'thb-loading' %}
