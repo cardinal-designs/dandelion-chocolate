@@ -646,7 +646,7 @@
                         {% assign lb = weight | split: "." | first %}
                         --{{ lb | times: 100.00 }} lb
                         {% assign oz = weight | split: "." | last %}
-                        .{{ oz }} oz
+                        {{ oz | times: 100.00 }} oz
                         ( {{ block.settings.product_weight_in_grams }} gm)
                       </dd>
                     {% endif %}
