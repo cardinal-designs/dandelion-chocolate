@@ -312,3 +312,29 @@ $(document).ready(function () {
     event.preventDefault();
   });
 })
+
+
+
+$(document).ready(function() {
+  var accordion = $('.accordion-list').html();
+    $('.accordion-list').remove();
+  var desc = $('.product__description .shg-theme-text-content').html();
+  var read_more = '<div class="rm_grad" style="">&nbsp;</div></div><div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div><dl class="accordion-list">';
+    $('.product__description .shg-theme-text-content').html('<div class="short_description">' + desc + read_more + accordion + "</dl>");
+    $('.read_less').hide();
+  var og_height = $('.short_description').height();
+    $('.short_description').css({"max-height": "300px"});
+  
+  $('.read_more').on('click', function() {
+    $('.short_description').animate({ "max-height": og_height});
+    $(this).hide();
+    $('.read_less').show();
+    $('.rm_grad').hide();
+  });
+  
+  $('.read_less').on('click', function() {
+    $('.short_description').animate({ "max-height": "300px"});
+    $(this).hide();
+     setTimeout(function(){  $('.rm_grad').fadeIn(); $('.read_more').show(); }, 300);
+  });
+});
