@@ -633,7 +633,7 @@
                     {% if block.settings.ingredients != blank or block.settings.ingredients_allergens != blank or block.settings.ingredients_allergen_facility != blank  %}
                       <dt>INGREDIENTS & ALLERGENS</dt>
                       <dd>
-                        <div>{{ block.settings.ingredients }}</div>
+                        <div>{{ block.settings.ingredients | newline_to_br }}</div>
                         <div>{{ block.settings.ingredients_allergens }}</div>
                         <div>{{ block.settings.ingredients_allergen_facility }}</div>
                       </dd>
