@@ -129,11 +129,11 @@
           <div class="product__ctacol--icon">
             <div class="icon--extra-large icon--circle {{ merch_text }}aaaaaa" >
               {% if merch_text == 'add gift note at checkout' %}
-                {% render 'icon-email' %}
+                {% render 'icon-email' %} {{ merch_text }}
               {% elsif  merch_text == 'contact us for corporate gifting' %}
-                {% render 'icon-gift' %}
+                {% render 'icon-gift' %} {{ merch_text }}
               {% else %}
-                {% render 'icon-truck-2' %}
+                {% render 'icon-truck-2' %} {{ merch_text }}
               {% endif %}
             </div>
           </div>
