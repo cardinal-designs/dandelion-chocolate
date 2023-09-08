@@ -637,14 +637,15 @@
                           {% elsif bar_icon == 'Nut Free' %}
                             {% render 'Treenut_Free' %}
                           {% elsif bar_icon == 'Vegan' %}
-                            {% render 'Kosher_icon' %}
+                            {% render 'Vegan-2' %}
                           {% elsif bar_icon == 'Direct Sourced' %}
-                            {% render 'Kosher_icon' %}
+                            {% render 'Direct_sourced' %}
                           {% elsif bar_icon == 'Two Ingredients' %}
+                            {% render 'Cocoa_bean-Sugar' %}
                           {% endif %}
                         {% endcapture %}
                         <div>
-                          <img alt="Kosher icon" src="https://cdn.shopify.com/s/files/1/2434/0841/files/Kosher_icon.svg">
+                          {{ bar_icon_img }}
                           <p>{{ bar_icon }}</p>
                         </div>
                       {% endfor %}
