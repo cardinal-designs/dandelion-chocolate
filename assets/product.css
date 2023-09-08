@@ -2140,4 +2140,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
 .meta__accordion--list p {
   margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: normal;
 }
