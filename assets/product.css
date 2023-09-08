@@ -2191,3 +2191,16 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .meta__new--percentage {
   margin: 0;  
 }
+
+.product__detail--wrap {
+  font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: .15em;
+  color: var(--charcoal-black);
+  border-top: 1px solid var(--charcoal-black);
+  border-bottom: 1px solid var(--charcoal-black);
+  padding: 10px 0;
+  margin: 0 0 20px;
+  font-weight: 500;
+}
