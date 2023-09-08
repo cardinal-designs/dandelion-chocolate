@@ -24,10 +24,6 @@
     -%}
     {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
 
-   {% if product_small.metafields.info.product_type != blank and product_small.metafields.info.percentage != blank %}   
-      <p class="new-percentage">{{ product_small.metafields.info.percentage }}% {{ product_small.metafields.info.product_type }}</p>
-    {%- endif -%}
-    
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
     <span>{{ product_title }}</span>
     <div class="product-info-country">{{ product_small.metafields.info.country }}</div>
