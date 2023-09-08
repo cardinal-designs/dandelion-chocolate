@@ -13,9 +13,7 @@ $(window).on("load resize orientationchange", function(){
     var flkty = new Flickity( elem, {
       prevNextButtons: false,
       pageDots: false,
-      adaptiveHeight: false,
-      contain: true,
-      wrapAround: true
+      adaptiveHeight: false
     });
   }
 });  
