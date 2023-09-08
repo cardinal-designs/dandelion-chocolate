@@ -125,12 +125,19 @@
     {% for merch_icon in product.metafields.custom.merch_icons.value %}
       {{ merch_icon }}<br>
     {% endfor %}
+    {% assign merch_text = merch_icon | downcase %}
     <div class="merch__icons">
       {% for merch_icon in product.metafields.custom.merch_icons.value %}
         <div class="product__ctarow product__free-shipping">
           <div class="product__ctacol--icon">
             <div class="icon--extra-large icon--circle" >
-              {% render 'icon-truck-2' %}
+              {% if merch_text == 'add gift note at checkout' %}
+                {% render 'icon-email' %}
+              {% elsif  merch_text == 'contact us for corporate gifting' %}
+                {% render 'icon-gift' %}
+              {% else %}
+                {% render 'icon-truck-2' %}
+              {% endif %}
             </div>
           </div>
           <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.{%endif%}</span>
