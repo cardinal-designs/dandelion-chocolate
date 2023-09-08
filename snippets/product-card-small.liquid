@@ -42,7 +42,11 @@
     {%- if product_small.metafields.info.tasting_notes != blank -%}
       <div class="card__tasting-notes">{{ product_small.metafields.info.tasting_notes }}</div>
     {%- endif -%}
-    
+
+    {%- if product_small.metafields.info.micro_info != blank -%}
+      <div class="card__tasting-notes">{{ product_small.metafields.info.micro_info }}</div>
+    {%- endif -%}
+
     {% render 'product-price', product: product_small %}
     {% render 'product-add-to-cart-small', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
     </a>
