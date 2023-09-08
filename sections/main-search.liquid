@@ -36,7 +36,13 @@
 										{%- endif -%}
 										<div>
 											{%- render 'facets-bar', results: search, enable_filtering: enable_filtering, enable_sorting: enable_sorting -%}
-											<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }}">
+                                            {% assign show = true %}
+                                            {% for tag in product.tags %}
+                                              {% if tag contains 'hide_from_search' %}
+                                                {% assign show = false %}
+                                              {% endif %}
+                                            {% endfor %}
+											<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }} {% if show != true %}hidden{% endif %}"">
 												{%- for item in search.results -%}
                                                   {% if item.object_type == 'product' %}
 													<li class="column">
