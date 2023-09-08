@@ -200,6 +200,32 @@ if(accordionContainer){
   });
 }
 
+// Accordion 
+var accordionContainer = document.querySelector("dl.accordion-list-test");
+var duration = 300;
+if(accordionContainer){
+  accordionContainer.addEventListener("click", function(event) {
+    if (event.target.tagName === "DT" && !event.target.classList.contains("active")) {
+      var activeDt = accordionContainer.querySelector("dt.active");
+      
+      if (activeDt) {
+        activeDt.classList.remove("active");
+        slideUp(activeDt.nextElementSibling)
+      }
+      event.target.classList.add("active");
+      slideDown(event.target.nextElementSibling)
+    } else if (event.target.tagName === "DT" && event.target.classList.contains("active")) {
+      var activeDt = accordionContainer.querySelector("dt.active");
+      
+      if (activeDt) {
+        activeDt.classList.remove("active");
+        slideUp(activeDt.nextElementSibling)
+      }
+    
+    }
+  });
+}
+
 let slideUp = (target, duration=400) => {
   target.style.transitionProperty = 'height, margin, padding';
   target.style.transitionDuration = duration + 'ms';
