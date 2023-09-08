@@ -1437,6 +1437,8 @@ product-add-to-cart-sticky .variations fieldset {
   text-transform: uppercase;
 }
 
+.product__chocolate_maker_name,
+.product__batch_number,
 .product__harvest_year {
   color: #333;
   font-family: Saa Series F D;
