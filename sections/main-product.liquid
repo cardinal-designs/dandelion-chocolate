@@ -579,7 +579,11 @@
                     {%- endif -%}
                   </div>
                 {%- when 'special_message' -%}
-                  
+                {% if product.metafields.info.special_message != blank %}
+                  <div class="special__message--wrap">
+                    {{ product.metafields.info.special_message }}
+                  </div>
+                {% endif %}
                 {%- when 'description' -%}
                   <div class="product-short-description rte product__description" {{ block.shopify_attributes }}>
                     {{ product.description }}
