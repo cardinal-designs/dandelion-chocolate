@@ -1716,12 +1716,13 @@ quantity-selector.quantity .plus svg {
 }
 
 .product-add-to-cart-sticky--info .new-percentage {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   font-size: 10px;
   line-height: 12px;
-  color: #53595C;
+  color: #53595c;
   font-family: Saa Series F D;
   letter-spacing: .15em;
+  display: block;
 }
 
 .product-add-to-cart-sticky--info .price {
