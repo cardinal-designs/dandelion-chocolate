@@ -127,31 +127,31 @@
     {% endfor %}
     <div class="merch__icons {% if merch_icons_count > 1 %}multi__merch--icons{% endif %}">
       {% if product.metafields.custom.merch_icons.value != blank %}
+        {% for merch_icon in product.metafields.custom.merch_icons.value %}
+          {% assign merch_text = merch_icon | downcase | strip %}
+          <div class="product__ctarow product__free-shipping">
+            <div class="product__ctacol--icon">
+              <div class="icon--extra-large icon--circle" >
+                {% if merch_text == 'add gift note at checkout' %}
+                  {% render 'icon-email' %} 
+                {% elsif  merch_text == 'contact us for corporate gifting' %}
+                  {% render 'icon-gift' %} 
+                {% else %}
+                  {% render 'icon-truck-2' %} 
+                {% endif %}
+              </div>
+            </div> 
+            <span class="">
+              {{ merch_text }} {% if merch_text == 'free shipping' %}{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}{% endif %}
+            </span>
+          </div>     
+        {% endfor %}
       {% else %}
         <div class="product__ctarow product__free-shipping">
           <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
           <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}
         </div>   
       {% endif %}
-      {% for merch_icon in product.metafields.custom.merch_icons.value %}
-        {% assign merch_text = merch_icon | downcase | strip %}
-        <div class="product__ctarow product__free-shipping">
-          <div class="product__ctacol--icon">
-            <div class="icon--extra-large icon--circle" >
-              {% if merch_text == 'add gift note at checkout' %}
-                {% render 'icon-email' %} 
-              {% elsif  merch_text == 'contact us for corporate gifting' %}
-                {% render 'icon-gift' %} 
-              {% else %}
-                {% render 'icon-truck-2' %} 
-              {% endif %}
-            </div>
-          </div> 
-          <span class="">
-            {{ merch_text }} {% if merch_text == 'free shipping' %}{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}{% endif %}
-          </span>
-        </div>     
-      {% endfor %}
     </div>
     {% if section.settings.holiday_shipping %}    
       <div class="product__ctarow product__holiday-shipping">    
