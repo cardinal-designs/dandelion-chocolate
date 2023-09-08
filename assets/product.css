@@ -2090,3 +2090,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   line-height: 29px;
   letter-spacing: 0.04em;
 }
+
+.merch__icons.multi__merch--icons {
+  display: flex;
+}
