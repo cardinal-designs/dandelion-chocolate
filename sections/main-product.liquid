@@ -642,11 +642,12 @@
                     {% if block.settings.product_weight_in_grams != blank %}
                       <dt>WEIGHT</dt>
                       <dd>
-                        {% if block.settings.product_weight_in_kg != blank %}
+                        {% if block.settings.product_weight_in_grams != blank %}
                           {% assign weight = block.settings.product_weight_in_grams | divided_by: 28.35 %}
                           {{ weight | round: 2 }} oz ({{ block.settings.product_weight_in_grams }} gm)
-                          {% if block.settings.product_weight_in_kg != blank %}
                         {% endif %}
+                      
+                        {% if block.settings.product_weight_in_kg != blank %}
                         <br>
                           {% assign weight_kg = block.settings.product_weight_in_kg | times: 2.205 %}
                           {{ weight_kg | round: 1 }} lb ({{ block.settings.product_weight_in_kg }} kg)
