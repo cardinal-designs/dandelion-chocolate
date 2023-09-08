@@ -58,6 +58,10 @@ a.cart-product-link.h4 {
   margin: 90px auto;
 }
 
+.carousel__quotes--wrapper.hide__arrows-desktop .row {
+  margin: 90px auto 30px;
+}
+
 .carousel__quotes--wrapper .flickity-prev-next-button svg {
   display: none;
 }
