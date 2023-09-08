@@ -2094,3 +2094,9 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .merch__icons.multi__merch--icons {
   display: flex;
 }
+
+.merch__icons.multi__merch--icons .product__ctarow {
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
