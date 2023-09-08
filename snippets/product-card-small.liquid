@@ -26,8 +26,14 @@
 
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
     <span>{{ product_title }}</span>
-    <div class="product-info-country">{{ product_small.metafields.info.country }}</div>
-     {%- if product_small.metafields.custom.short_description != blank -%}
+      
+    {% if product_small.metafields.info.origin_country != blank %}
+      <div class="product-info-country">
+        {{ product_small.metafields.info.origin_country }}
+      </div>
+    {%- endif -%}
+    
+    {%- if product_small.metafields.custom.short_description != blank -%}
         <div class="card__tasting-notes">{{ product_small.metafields.custom.short_description }}</div>
       {%- endif -%}
     {% render 'product-price', product: product_small %}
