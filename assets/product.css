@@ -2137,3 +2137,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   letter-spacing: 0.02em;
   color: #B76A23;
 }
+
+.meta__accordion--list p {
+  margin: 0;
+}
