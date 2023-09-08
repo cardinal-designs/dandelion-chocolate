@@ -162,10 +162,10 @@ a.cart-product-link.h4 {
   }
 
   .carousel__quotes--wrapper .row {
-    margin: 25px auto 80px;
+    margin: 25px auto 75px;
   }
 
-  .hide__arrows-mobile .carousel__quotes--wrapper .row {
+  .carousel__quotes--wrapper .row {
     margin: 25px auto 30px;
   }
 
