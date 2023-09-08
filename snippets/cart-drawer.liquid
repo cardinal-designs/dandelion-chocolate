@@ -56,20 +56,11 @@
                 </div>
                 <div class="product-cart-item-info">
     
-                {% assign product_info = item.product.metafields.info %}        
-                {% assign is_chocolate_bar = false %}
-                {% if item.product.type and item.product.type == 'Chocolate Bar' %}
-                  {% assign is_chocolate_bar = true %}
-                {% endif %}
-                {% if item.product and item.product.type != 'Chocolate Bar' %}        
-                  <div class="card__type">{{ item.product.type }}
-                    {% unless is_chocolate_bar %}
-                      {% if product_info.percentage %}
-                      - {{ product_info.percentage }}%
-                      {% endif %}
-                    {% endunless %}
-                  </div>       
-                {% endif %}      
+                  {% if product_card_product.metafields.info.product_type != blank and product_card_product.metafields.info.percentage != blank %}   
+                    <div class="card__type">
+                      {{ product_card_product.metafields.info.percentage }}% {{ product_card_product.metafields.info.product_type }}
+                    </div>       
+                  {% endif %}     
  
                   <a
                     href="{{ item.url }}"
