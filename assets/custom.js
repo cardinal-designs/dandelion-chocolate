@@ -330,6 +330,7 @@ $(document).ready(function() {
   }else {
     $('.read_more').hide();
     $('.read_less').hide();
+    $('.rm_grad').hide();
   }
   
   $('.read_more').on('click', function() {
