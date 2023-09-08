@@ -323,8 +323,11 @@ $(document).ready(function() {
   $('.read_less').hide();
   
   var og_height = $('.short_description').height();
-  $('.short_description').css({"max-height": "300px"});
-  $('.short_description .metafield-rich_text_field').css({"max-height": "300px"});
+
+  if( og_height > 300 ) {
+    $('.short_description').css({"max-height": "300px"});
+    $('.short_description .metafield-rich_text_field').css({"max-height": "300px"});
+  }
   
   $('.read_more').on('click', function() {
     $('.short_description').animate({ "max-height": og_height});
