@@ -122,6 +122,7 @@
 {% unless product.tags contains "pickup" %}   
   {% unless product.tags contains "gift card" %}   
 
+    {{ product.metafields.custom.merch_icons }}ppppppppp
     {% for merch_icons in product.metafields.custom.merch_icons %}
       {{ merch_icons.value }}yyy
     {% endfor %}
