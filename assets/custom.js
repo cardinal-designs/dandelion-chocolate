@@ -338,7 +338,7 @@ $(document).ready(function() {
     $('.short_description').animate({ "max-height": "300px"});
     $('.short_description .metafield-rich_text_field').animate({ "max-height": "300px"});
     $(this).hide();
-    $('.rm_grad').fadeIn(); 
+    $('.rm_grad').show(); 
     $('.read_more').show();
   });
   
