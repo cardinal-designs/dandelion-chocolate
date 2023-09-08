@@ -25,7 +25,13 @@
     {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
 
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
-    <span>{{ product_title }}</span>
+    <span>
+      {% if product_small.metafields.info.origin_country != blank %}
+        {{ product_small.metafields.info.origin_country }}
+      {% else %}
+         {{ product_title }}
+      {% endif %}
+    </span>
       
     {% if product_small.metafields.info.origin_country != blank %}
       <div class="product-info-country">
