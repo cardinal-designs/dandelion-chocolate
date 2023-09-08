@@ -336,6 +336,7 @@ $(document).ready(function() {
   
   $('.read_less').on('click', function() {
     $('.short_description').animate({ "max-height": "300px"});
+    $('.short_description .metafield-rich_text_field').animate({ "max-height": "300px"});
     $(this).hide();
      setTimeout(function(){  $('.rm_grad').fadeIn(); $('.read_more').show(); }, 300);
   });
