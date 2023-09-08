@@ -4,6 +4,8 @@
 	assign free_shipping_minimum = settings.free_shipping_minimum_cart | times: 100
 	assign total = cart.total_price
 -%}
+
+{% assign product_info = item.product.metafields.info %}  
   
   <div
     class="side-panel cart-drawer"
@@ -42,8 +44,8 @@
                 <div class="product-cart-item-image">
                   <a
                       href="{{ item.url }}">
-                    {% if item.product.metafields.info.cart_image_url %}
-                      {%- render 'responsive-image', image: item.product.metafields.info.cart_image_url, sizes: '192x0' -%}
+                    {% if product_info.cart_image_url %}
+                      {%- render 'responsive-image', image: product_info.cart_image_url, sizes: '192x0' -%}
                      {% else %}
                       {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
                     {% endif %}
@@ -54,25 +56,25 @@
                 </div>
                 <div class="product-cart-item-info">
     
-                  {% if item.product.metafields.info.product_type != blank and item.product.metafields.info.percentage != blank %}   
-                    <div class="card__type">
-                      {{item.product.metafields.info.percentage }}% {{ item.product.metafields.info.product_type }}
-                    </div>       
-                  {% endif %}     
+                {% if product_info.product_type != blank and product_info.percentage != blank %}   
+                  <div class="card__type">
+                    {{ product_info.percentage }}% {{ product_info.product_type }}
+                  </div>       
+                {% endif %}     
  
                   <a
                     href="{{ item.url }}"
                     title="{{ item.product.title | escape }}"
                     class="cart-product-link">
-                    {% if item.product.metafields.info.cart_title != blank %}
-                      {{ item.product.metafields.info.cart_title }}
+                    {% if product_info.cart_title != blank %}
+                      {{ product_info.cart_title }}
                     {% else %}
                       {{ item.product.title }}
                     {% endif %}
                   </a>
 
-                  {%- if item.product.metafields.info.tasting_notes != blank -%}
-                    <div class="card__tasting-notes">{{ item.product.metafields.info.tasting_notes }}</div>
+                  {%- if product_info.tasting_notes != blank -%}
+                    <div class="card__tasting-notes">{{ product_info.tasting_notes }}</div>
                   {%- endif -%}
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
