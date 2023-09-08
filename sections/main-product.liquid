@@ -629,6 +629,20 @@
                   {% if product.metafields.custom.product_icons.value != blank %}
                     <div class="bar-icons meta__bar--icons">
                       {% for bar_icon in product.metafields.custom.product_icons.value %}
+                        {% capture bar_icon_img  %}
+                          {% if bar_icon == 'Kosher' %}
+                            {% render 'Kosher_icon' %}
+                          {% elsif bar_icon == 'Gluten Free' %}
+                            {% render 'Gluten_free' %}
+                          {% elsif bar_icon == 'Nut Free' %}
+                            {% render 'Treenut_Free' %}
+                          {% elsif bar_icon == 'Vegan' %}
+                            {% render 'Kosher_icon' %}
+                          {% elsif bar_icon == 'Direct Sourced' %}
+                            {% render 'Kosher_icon' %}
+                          {% elsif bar_icon == 'Two Ingredients' %}
+                          {% endif %}
+                        {% endcapture %}
                         <div>
                           <img alt="Kosher icon" src="https://cdn.shopify.com/s/files/1/2434/0841/files/Kosher_icon.svg">
                           <p>{{ bar_icon }}</p>
