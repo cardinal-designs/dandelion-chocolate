@@ -236,5 +236,9 @@
   .multicolumn__2 .heading {
     margin-bottom: 12px;
   }
+
+  .multicolumn__2 .flickity-slider {
+    margin-left: -10px; 
+  }
   
 }
