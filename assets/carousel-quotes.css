@@ -147,10 +147,6 @@ a.cart-product-link.h4 {
   object-position: left;
 }
 
-.hide__arrows-desktop .flickity-button {
-  display: none;
-}
-
 @media only screen and (max-width: 767px) { 
 
   .carousel__quotes--wrapper .flickity-viewport {
@@ -209,6 +205,14 @@ a.cart-product-link.h4 {
   }
 
   .hide__arrows-mobile .flickity-button {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 767px) {
+
+  .hide__arrows-desktop .flickity-button {
     display: none;
   }
 
