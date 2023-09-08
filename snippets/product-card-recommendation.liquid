@@ -175,8 +175,12 @@
     
     {% render 'product-price', product: product_card_product, show_compare_price: show_compare_price %}
    
-    {% if product_card_product.metafields.custom.short_description != blank and show_description %}
-      <div class="product__description body">{{ product_card_product.metafields.custom.short_description }}</div>
+    {% if product_card_product.metafields.info.tasting_notes != blank %}
+      <div class="product__tasting-note">{{ product_card_product.metafields.info.tasting_notes }}</div>
+    {% endif %}
+
+    {% if product_card_product.metafields.info.micro_info != blank %}
+      <div class="product__description body">{{ product_card_product.metafields.info.micro_info }}</div>
     {% endif %}
 
     {% render 'product-card-swatch', product: product_card_product, sizes: sizes %}
