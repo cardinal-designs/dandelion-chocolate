@@ -1706,6 +1706,7 @@ quantity-selector.quantity .plus svg {
   font-size: 24px;
   line-height: 28px;
   font-weight: 400;
+  letter-spacing: normal;
 }
 
 .product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title {
