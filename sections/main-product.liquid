@@ -514,7 +514,9 @@
                   <div class="product-price-container product__price aaaa">
                   </div>
                   <p class="meta__new--percentage">
-                    {{ product.metafields.info.percentage }}%
+                    {% if product.metafields.info.percentage != blank %}
+                      {{ product.metafields.info.percentage }}%
+                    {% endif %}
                     {% if product.metafields.info.product_type != blank %}
                       <span>{{ product.metafields.info.product_type }} </span>
                     {% endif %}
