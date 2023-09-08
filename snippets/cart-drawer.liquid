@@ -56,8 +56,8 @@
                 </div>
                 
                 <div class="product-cart-item-info">
-                {%- if product.metafields.info.percentage != blank or product.metafields.info.product_type != blank -%}
-                  <p class="card__type">{{ product.metafields.info.percentage }}% {{ product.metafields.info.product_type }}</p> 
+                {%- if product.metafields.info.product_type != blank -%}
+                  <p class="card__type">{{ product.metafields.info.product_type }}</p> 
                 {%- endif -%}
                 {% assign product_info = item.product.metafields.info %}        
                 {% assign is_chocolate_bar = false %}
