@@ -645,15 +645,8 @@
                         {% assign weight = block.settings.product_weight_in_grams | divided_by: 28.35 %}
                         {{ weight | round: 2 }} oz ({{ block.settings.product_weight_in_grams }} gm)
                         <br>
-                        {% assign weight_kg = product.metafields.custom.product_weight_in_kilo | times: 2.205 %}
-                        {{ weight_kg | round: 1 }} lb ({{ product.metafields.custom.product_weight_in_kilo }} kg)
-
-                        {% comment %}
-                        {% assign lb = weight | split: "." | first %}
-                        --{{ lb | times: 100.00 }} lb
-                        {% assign oz = weight | split: "." | last %}
-                        {{ oz | times: 100.00 }} oz
-                      {% endcomment %}
+                        {% assign weight_kg = product_weight_in_kg | times: 2.205 %}
+                        {{ weight_kg | round: 1 }} lb ({{ product_weight_in_kg }} kg)
                       </dd>
                     {% endif %}
 
