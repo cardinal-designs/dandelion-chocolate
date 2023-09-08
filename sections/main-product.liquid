@@ -642,7 +642,7 @@
                     {% if block.settings.product_weight_in_grams != blank %}
                       <dt>WEIGHT</dt>
                       <dd>
-                        {{ block.settings.product_weight_in_grams }}
+                        {{ block.settings.product_weight_in_grams | divided_by: 453.6 }}
                       </dd>
                     {% endif %}
 
