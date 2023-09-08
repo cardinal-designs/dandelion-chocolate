@@ -74,7 +74,7 @@
         "bb9ce6e4-8de1-4994-b04a-b6d0a753e16f": {
           "type": "tasting_notes",
           "settings": {
-            "tasting_notes": ""
+            "tasting_notes": "<p>{{ product.metafields.info.tasting_notes.value }}<\/p>"
           }
         },
         "721fd69a-979f-40a7-b8cf-b23ac7ab273d": {
