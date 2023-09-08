@@ -124,7 +124,7 @@
 
     <div class="merch__icons">
       {% for merch_icon in product.metafields.custom.merch_icons.value %}
-        {% assign merch_text = merch_icon | downcase %}
+        {% assign merch_text = merch_icon | downcase | strip %}
         <div class="product__ctarow product__free-shipping">
           <div class="product__ctacol--icon">
             <div class="icon--extra-large icon--circle {{ merch_text }}aaaaaa" >
