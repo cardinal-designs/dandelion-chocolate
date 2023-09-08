@@ -127,15 +127,12 @@
         {% assign merch_text = merch_icon | downcase | strip %}
         <div class="product__ctarow product__free-shipping">
           <div class="product__ctacol--icon">
-            <div class="icon--extra-large icon--circle {{ merch_text }}aaaaaa" >
+            <div class="icon--extra-large icon--circle" >
               {% if merch_text == 'add gift note at checkout' %}
-                aaaa
                 {% render 'icon-email' %} 
               {% elsif  merch_text == 'contact us for corporate gifting' %}
-                fff
                 {% render 'icon-gift' %} 
               {% else %}
-                tttt
                 {% render 'icon-truck-2' %} 
               {% endif %}
             </div>
