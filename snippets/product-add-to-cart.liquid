@@ -123,8 +123,8 @@
   {% unless product.tags contains "gift card" %}   
 
     {{ product.metafields.custom.merch_icons }}ppppppppp
-    {% for merch_icons in product.metafields.custom.merch_icons %}
-      {{ merch_icons }}yyy
+    {% for merch_icon in product.metafields.custom.merch_icons.value %}
+      {{ merch_icon }}yyy
     {% endfor %}
     <div class="merch__icons">
       <div class="product__ctarow product__free-shipping">
