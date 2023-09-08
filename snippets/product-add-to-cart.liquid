@@ -140,7 +140,17 @@
               {% endif %}
             </div>
           </div>
-          <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.{%endif%}</span>
+          <span class="">
+            {% if merch_text == 'free shipping' %}
+              {{ merch__icons }} {% if current_variant.price < 2500 %} on orders over $25.{%endif%}
+            {% elsif merch_text == 'add gift note at checkout' %}
+              {{{ merch__icons }}
+            {% elsif  merch_text == 'contact us for corporate gifting' %}
+              {{ merch__icons }}
+            {% else %}
+              {{ merch__icons }}
+            {% endif %}
+          </span>
         </div>     
       {% endfor %}
       <div class="product__ctarow product__free-shipping">
