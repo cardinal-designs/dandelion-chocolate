@@ -578,17 +578,6 @@
                       </a>
                     {%- endif -%}
                   </div>
-                {%- when 'special_message' -%}
-                  {% if product.metafields.info.special_message != blank %}
-                    <div class="special__message--wrap">
-                      {{ product.metafields.info.special_message }}
-                    </div>
-                  {% endif %}
-                  {% if product.metafields.info.special_message_location != blank %}
-                    <div class="special__message--location">
-                      {{ product.metafields.info.special_message_location }}
-                    </div>
-                  {% endif %}
                 {%- when 'description' -%}
                   {% if product.metafields.info.special_message_location == 'Top' %}
                     <div class="special__message--wrap">
@@ -1493,11 +1482,6 @@
           "info": "When enabled, gift card products can optionally be sent to a recipient with a personal message."
         }
       ]
-    },
-    {
-      "type": "special_message",
-      "name": "Special Message",
-      "limit": 1
     },
     {
       "type": "description",
