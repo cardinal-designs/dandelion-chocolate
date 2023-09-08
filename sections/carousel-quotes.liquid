@@ -7,7 +7,7 @@
 
 <section class="carousel__quotes--wrapper" style="background-color: {{ section.settings.section_bg }}">
   <div class="row section-spacing{% if disable_top_spacing %}section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
-    <div class="carousel__quotes--inner carousel__type--{{ section.settings.carousel_type }} carousel__align--{{ section.settings.carousel_alignment }}">
+    <div class="carousel__quotes--inner {% unless section.settings.show_arrows_desktop %} hide__arrows-desktop{% endunless %} {% unless section.settings.show_arrows_mobile %} hide__arrows-mobile{% endunless %} carousel__type--{{ section.settings.carousel_type }} carousel__align--{{ section.settings.carousel_alignment }}">
       {% for block in section.blocks %}
         <div class="carousel__item--wrapper">
           <div class="carousel__item">
@@ -100,8 +100,14 @@
       },
       {
         "type": "checkbox",
-        "id": "show_arrows",
-        "label": "Show Arrows",
+        "id": "show_arrows_desktop",
+        "label": "Show Arrows Desktop",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_arrows_mobile",
+        "label": "Show Arrows Mobile",
         "default": false
       },
       {
