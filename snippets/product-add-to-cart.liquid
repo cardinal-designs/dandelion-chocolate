@@ -142,13 +142,13 @@
           </div>
           <span class="">
             {% if merch_text == 'free shipping' %}
-              {{ merch__icons }} {% if current_variant.price < 2500 %} on orders over $25.{%endif%}
+              {{ merch_text }} {% if current_variant.price < 2500 %} on orders over $25.{%endif%}
             {% elsif merch_text == 'add gift note at checkout' %}
-              {{{ merch__icons }}
+              {{ merch_text }}
             {% elsif  merch_text == 'contact us for corporate gifting' %}
-              {{ merch__icons }}
+              {{ merch_text }}
             {% else %}
-              {{ merch__icons }}
+              {{ merch_text }}
             {% endif %}
           </span>
         </div>     
