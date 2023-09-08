@@ -1709,7 +1709,7 @@ quantity-selector.quantity .plus svg {
 }
 
 .product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title {
-  text-transform: uppercase;
+  text-transform: inherit;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: .04em;
