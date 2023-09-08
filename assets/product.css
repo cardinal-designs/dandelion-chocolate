@@ -1698,7 +1698,7 @@ quantity-selector.quantity .plus svg {
 }
 
 .chocolate__bar-product .product-add-to-cart-sticky--info {
-  flex: 0 0 calc(100% - 139px);
+  flex: 0 0 calc(100% - 99px);
 }
 
 .product-title-uppercase-true .product-add-to-cart-sticky--title {
