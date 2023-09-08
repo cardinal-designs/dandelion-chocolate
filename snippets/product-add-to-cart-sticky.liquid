@@ -10,6 +10,13 @@
       {%- if product.metafields.info.percentage != blank -%}
         <p class="new-percentage">{{ product.metafields.info.percentage }}%</p>
       {%- endif -%}
+
+      {% if product.metafields.info.product_type != blank and product.metafields.info.percentage != blank %}   
+        <div class="card__type">
+          {{ product.metafields.info.percentage }}% {{ product.metafields.info.product_type }}
+        </div>       
+      {% endif %}
+    
       <div class="product-add-to-cart-sticky--title">
         {% if product.metafields.info.origin != blank %}
           {{ product.metafields.info.origin }}
