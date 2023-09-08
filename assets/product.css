@@ -933,7 +933,7 @@
       transform: rotateZ(90deg); }
   .product-add-to-cart-sticky--content {
     overflow: hidden;
-    padding-top: 11px; }
+    padding-top: 13px; }
     .product-add-to-cart-sticky--content.active {
       display: block; }
   .product-add-to-cart-sticky .product-form .add_to_cart_holder {
