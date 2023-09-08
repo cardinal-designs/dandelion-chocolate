@@ -2118,4 +2118,5 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
 .special__message--wrap:before {
   content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/info-circle.png?v=1694164023);
 }
