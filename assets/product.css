@@ -2111,11 +2111,10 @@ variant-selects .product-form__input .select-arrow {
 }
 
 .product__testing-note {
-  font-family: Garamond Premier Pro;
   font-size: 16px;
   font-style: italic;
   line-height: 19.2px;
-  letter-spacing: 0.4em;  
+  letter-spacing: 0.04em;  
   font-family: 'AGaramondPro';
   color: #777779;
 }
