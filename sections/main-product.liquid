@@ -644,7 +644,7 @@
                       <dd>
                         {% assign weight = block.settings.product_weight_in_grams | divided_by: 453.6 %}
 
-                        main: {{ weight }}
+                        main: {{ weight | round: 2 }}
 
 
 
