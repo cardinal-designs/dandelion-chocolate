@@ -579,6 +579,12 @@
                     {%- endif -%}
                   </div>
                 {%- when 'description' -%}
+                {% if block.settings.product_description != blank %}
+                  <div class="special__message--wrap">
+                    {{ block.settings.product_description }}
+                  </div>
+                {% endif %}
+                {%- when 'description' -%}
                   {% if product.metafields.info.special_message_location == 'Top' %}
                     <div class="special__message--wrap">
                       {{ product.metafields.info.special_message }}
