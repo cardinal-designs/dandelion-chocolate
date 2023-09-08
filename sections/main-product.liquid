@@ -644,9 +644,10 @@
                       <dd>
                         {% assign weight = block.settings.product_weight_in_grams | divided_by: 453.6 %}
                         {% assign lb = weight | split: "." | first %}
-                        {{ lb }}kkkk
+                        {{ lb }} lb
                         {% assign oz = weight | split: "." | last %}
-                        {{ oz }}kkkk
+                        {{ oz }} oz
+                        ( {{ weight }} gm)
                       </dd>
                     {% endif %}
 
