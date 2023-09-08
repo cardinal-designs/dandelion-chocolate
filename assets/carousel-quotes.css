@@ -165,6 +165,10 @@ a.cart-product-link.h4 {
     margin: 25px auto 75px;
   }
 
+  .carousel__quotes--wrapper .hide__arrows-mobile .row {
+    margin: 25px auto 30px;
+  }
+
   .carousel__quotes p {
     font-size: 28px;
     line-height: 34px;
