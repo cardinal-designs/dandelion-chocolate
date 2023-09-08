@@ -327,6 +327,9 @@ $(document).ready(function() {
   if( og_height > 300 ) {
     $('.short_description').css({"max-height": "300px"});
     $('.short_description .metafield-rich_text_field').css({"max-height": "300px"});
+  }else {
+    $('.read_more').hide();
+    $('.read_less').hide();
   }
   
   $('.read_more').on('click', function() {
