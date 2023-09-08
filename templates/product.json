@@ -86,9 +86,13 @@
         "88a32717-f86c-4cd9-a5b9-49d8f009ac6b": {
           "type": "tab_list",
           "settings": {
-            "ingredients": "{{ product.metafields.info.ingredients | metafield_tag }}",
+            "included_description": "{{ product.metafields.info.included_description | metafield_tag }}",
+            "ingredients": "<p>{{ product.metafields.info.ingredients | metafield_tag }}<\/p>",
             "ingredients_allergens": "{{ product.metafields.info.allergens.value }}",
-            "ingredients_allergen_facility": "{{ product.metafields.info.allergen_facility.value }}"
+            "ingredients_allergen_facility": "{{ product.metafields.info.allergen_facility.value }}",
+            "product_weight_in_grams": "",
+            "storage_instructions": "",
+            "shelf_life": ""
           }
         }
       },
