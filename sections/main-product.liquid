@@ -645,8 +645,8 @@
                         {% assign weight = block.settings.product_weight_in_grams | divided_by: 28.35 %}
                         {{ weight | round: 2 }} oz ({{ block.settings.product_weight_in_grams }} gm)
                         <br>
-                        {% assign weight_kg = product_weight_in_kg | times: 2.205 %}
-                        {{ weight_kg | round: 1 }} lb ({{ product_weight_in_kg }} kg)
+                        {% assign weight_kg = block.settings.product_weight_in_kg | times: 2.205 %}
+                        {{ weight_kg | round: 1 }} lb ({{ block.settings.product_weight_in_kg }} kg)
                       </dd>
                     {% endif %}
 
