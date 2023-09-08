@@ -590,7 +590,7 @@
                     {{ block.settings.product_description | newline_to_br }} 
                   </div>
                 {% endif %}
-                {%- when 'tabs' -%}
+                {%- when 'tab_list' -%}
                   <dl class="accordion-list">
                     <dt>INGREDIENTS & ALLERGENS</dt>
                     <dd>
@@ -1529,7 +1529,7 @@
       ]
     },
     {
-      "type": "tabs",
+      "type": "tab_list",
       "name": "Accordion List",
       "limit": 1,
       "settings": [
