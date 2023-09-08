@@ -614,8 +614,8 @@ body .zapietModal.moreInformation h2 {
 .thb-cart-form .h2 {
   margin-bottom: 12px;
   color: #A38B55;
-  line-height: 59px;
-  font-size: 46px;
+  line-height: 1.3;
+  font-size: 40px;
   letter-spacing: .05em;
 }
 
@@ -816,7 +816,8 @@ div#prop65_warning span {
 @media only screen and (max-width: 767px) {
 
   .thb-cart-form .h2 {
-    font-size: 30px;
+    font-size: 25px;
+    margin: 0;
   }
 
   .grid__item.cart-delivery input,
