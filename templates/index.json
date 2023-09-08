@@ -426,7 +426,7 @@
         "carousel_alignment": "left",
         "autoplay": true,
         "show_arrows_desktop": false,
-        "show_arrows_mobile": true,
+        "show_arrows_mobile": false,
         "autoplay_speed": "2000",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
