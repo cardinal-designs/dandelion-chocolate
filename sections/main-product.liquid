@@ -590,9 +590,20 @@
                     </div>
                   {% endif %}
                 {%- when 'description' -%}
+                  {{ product.metafields.info.special_message_location }}
+                  {% if product.metafields.info.special_message_location == 'top' %}
+                    <div class="special__message--wrap">
+                      {{ product.metafields.info.special_message }}
+                    </div>
+                  {% endif %}
                   <div class="product-short-description rte product__description" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
+                  {% if product.metafields.info.special_message_location == 'bottom' %}
+                    <div class="special__message--wrap">
+                      {{ product.metafields.info.special_message }}
+                    </div>
+                  {% endif %}
                 {%- when 'inventory_level' -%}
                   {% render 'product-inventory-notice', product: product, section: section, block: block %}
                 {%- when 'variant_picker' -%}
