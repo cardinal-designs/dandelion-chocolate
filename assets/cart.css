@@ -812,3 +812,11 @@ div#prop65_warning span {
   margin: -5px 2px 0 0px;
   vertical-align: middle;
 }
+
+@media only screen and (max-width: 767px) {
+
+  .thb-cart-form .h2 {
+    font-size: 30px;
+  }
+
+}
