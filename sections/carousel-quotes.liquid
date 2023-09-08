@@ -28,7 +28,7 @@
                 {% if block.settings.author_logo != blank %}
                   {{ block.settings.author_logo | image_url:width:original | image_tag }}
                 {% else %}
-                  {{ block.settings.author }}
+                  <p class="caption">{{ block.settings.author }}</p>
                 {% endif %}
               </div>
             {% endunless %}
