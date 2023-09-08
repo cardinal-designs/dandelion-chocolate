@@ -2227,3 +2227,17 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .meta__product--description .read_less {
   margin-top: 5px;
 }
+
+.below_title p {
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  text-align: left;
+  color: #CFA545;
+  margin: 10px 0 20px;
+  border-top: 1px solid #CFA545;
+  border-bottom: 1px solid #CFA545;
+  padding: 10px 0;
+}
