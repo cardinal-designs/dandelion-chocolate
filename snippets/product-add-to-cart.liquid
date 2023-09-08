@@ -123,8 +123,16 @@
   {% unless product.tags contains "gift card" %}      
     <div class="product__ctarow product__free-shipping">
       <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
-      <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}
-    </div>            
+      <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.{%endif%}</span>
+    </div>        
+    <div class="product__ctarow product__free-shipping">
+      <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
+      <span class="">add gift note at checkout</span>
+    </div> 
+    <div class="product__ctarow product__free-shipping">
+      <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
+      <span class="">contact us for corporate gifting</span>
+    </div> 
     {% if section.settings.holiday_shipping %}    
       <div class="product__ctarow product__holiday-shipping">    
       <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle">{% render 'icon-calendar' %}</div></div>                              
