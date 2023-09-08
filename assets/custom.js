@@ -317,11 +317,13 @@ $(document).ready(function () {
 
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
+  
   var read_more = '<div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div>';
-    $('.meta__product--description .metafield-rich_text_field').html('<div class="short_description">' + desc + read_more + "</dl>");
+  $('.meta__product--description .metafield-rich_text_field').html('<div class="short_description">' + desc + read_more + "</dl>");
   $('.read_less').hide();
+  
   var og_height = $('.short_description').height();
-    $('.short_description').css({"max-height": "300px"});
+  $('.short_description').css({"max-height": "300px"});
   
   $('.read_more').on('click', function() {
     $('.short_description').animate({ "max-height": og_height});
@@ -335,9 +337,5 @@ $(document).ready(function() {
     $(this).hide();
      setTimeout(function(){  $('.rm_grad').fadeIn(); $('.read_more').show(); }, 300);
   });
-
-  var hideRebuy = $('.hide-rebuy');
-  if (hideRebuy){
-    $('.rebuy-widget').css('display','none')
-  }
+  
 });
