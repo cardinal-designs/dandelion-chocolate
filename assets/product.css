@@ -1713,7 +1713,7 @@ quantity-selector.quantity .plus svg {
   text-transform: inherit;
   font-size: 20px;
   line-height: 22px;
-  letter-spacing: .04em;
+  letter-spacing: normal;
 }
 
 .product-add-to-cart-sticky--info .new-percentage {
