@@ -590,7 +590,7 @@
                     {{ block.settings.product_description | newline_to_br }} 
                   </div>
                 {% endif %}
-                {%- when 'accordion_list' -%}
+                {%- when 'accordion' -%}
                   <dl class="accordion-list">
                     <dt>INGREDIENTS & ALLERGENS</dt>
                     <dd>
@@ -1529,7 +1529,7 @@
       ]
     },
     {
-      "type": "accordion_list",
+      "type": "accordion",
       "name": "Accordion List",
       "limit": 1,
       "settings": [
