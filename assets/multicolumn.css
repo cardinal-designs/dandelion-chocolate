@@ -225,7 +225,8 @@
   }
 
   .multicolumn__2 .mobile__swiper .multicolumn__column {
-    width: 100%;    
+    width: 90%;
+    margin-right: 20px;
   }
 
   .multicolumn__2 .heading {
