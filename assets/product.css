@@ -2128,7 +2128,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   margin-right: 8px;
 }
 
-.meta__tasting--notes {
+.meta__tasting--notes * {
   font-family: 'AGaramondPro';
   font-size: 18px;
   font-style: italic;
