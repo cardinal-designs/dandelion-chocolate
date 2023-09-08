@@ -19,19 +19,13 @@
       </div>
       {%- if product.metafields.info.country != blank -%}
         <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
-      {% endif %}  
-      {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
-        <div class="product__detail">
-          {% comment %}
-          {% if product.metafields.info.harvest_year %}
-            <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
-          {% endif %}
-          {% endcomment %}
-          {% if product.metafields.info.notes != blank %}
-          <div class="product__tasting-note">{{ product.metafields.info.notes }}</div>
-          {% endif %}  
-        </div>
       {% endif %}
+      
+      {% if product.metafields.info.tasting_notes != blank %}
+        <div class="product__detail">
+          <div class="product__tasting-note">{{ product.metafields.info.tasting_notes }}</div>
+        </div>
+      {% endif %}  
     </div>
       <div class="product-add-to-cart-sticky--content">
 		{%- unless product.has_only_default_variant -%}
