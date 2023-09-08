@@ -590,8 +590,7 @@
                     </div>
                   {% endif %}
                 {%- when 'description' -%}
-                  {{ product.metafields.info.special_message_location }}ttttt
-                  {% if product.metafields.info.special_message_location == 'top' %}
+                  {% if product.metafields.info.special_message_location == 'Top' %}
                     <div class="special__message--wrap">
                       {{ product.metafields.info.special_message }}
                     </div>
@@ -599,7 +598,7 @@
                   <div class="product-short-description rte product__description" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
-                  {% if product.metafields.info.special_message_location == 'bottom' %}
+                  {% if product.metafields.info.special_message_location == 'Bottom' %}
                     <div class="special__message--wrap">
                       {{ product.metafields.info.special_message }}
                     </div>
