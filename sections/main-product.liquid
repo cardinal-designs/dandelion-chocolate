@@ -608,16 +608,24 @@
                         <div>{{ block.settings.ingredients_allergen_facility }}</div>
                       </dd>
                     {% endif %}
+
+                    {% if block.settings.product_weight_in_grams != blank %}
+                      <dt>WEIGHT</dt>
+                      <dd>
+                        {{ block.settings.product_weight_in_grams }}
+                      </dd>
+                    {% endif %}
+
+                    {% if block.settings.storage_instructions != blank or block.settings.shelf_life != blank %}
+                      <dt>ADDITIONAL INFORMATION</dt>
+                      <dd>
+                        {{ block.settings.storage_instructions }}
+                        {{ block.settings.shelf_life }}
+                      </dd>
+                    {% endif %}
                 
-                    <dt>WEIGHT</dt>
-                    <dd>
-                      
-                    </dd>
-                    <dt>ADDITIONAL INFORMATION</dt>
-                    <dd>
-                      
-                    </dd>
                   </dl>
+                    
                 {%- when 'description' -%}
                   {% if product.metafields.info.special_message_location == 'Top' %}
                     <div class="special__message--wrap">
