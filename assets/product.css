@@ -2116,6 +2116,8 @@ variant-selects .product-form__input .select-arrow {
   font-style: italic;
   line-height: 19.2px;
   letter-spacing: 0.4em;  
+  font-family: 'AGaramondPro';
+  color: #777779;
 }
 
 @media only screen and (max-width: 1200px) {
