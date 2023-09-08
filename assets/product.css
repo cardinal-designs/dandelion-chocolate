@@ -2182,3 +2182,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   text-transform: lowercase;
   margin-bottom: 14px;
 }
+
+.product-information--inner .new-percentage {
+  display: none;
+}

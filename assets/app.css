@@ -5922,6 +5922,11 @@ input[type="radio"],
   letter-spacing: .15em; 
 }
 
+.side-panel-content .quantity.small-qty {
+  padding: 0 25px;
+  border-radius: 5px;
+}
+
 .side-panel-content .card__type {
   color: #53595C;
   font-size: 10px;
