@@ -1895,6 +1895,9 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   font-size: 16px;
   font-family: 'Garamond';
   border-color: #cccccc;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='7' viewBox='0 0 16 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.999939L7.87508 5.99994L14.75 0.999939' stroke='%23333333' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
 }
 
 .template-product .rebuy-product-title {
