@@ -5864,20 +5864,20 @@ input[type="radio"],
   color: #ffffff !important;
 }
 
-.cart-drawer--recommendations--container .card__tasting-notes,
-.side-panel-content .card__tasting-notes {
-  font-size: 14px;
+.product-cart-item .card__tasting-notes {
+  font-size: 16px;
   margin-bottom: 0;
-  line-height: 16.8px;
+  line-height: 19.2px;
   color: #777779;
   font-family: 'AGaramondPro';
   letter-spacing: .04em;
 }
 
-.product-cart-item .card__tasting-notes {
-  font-size: 16px;
+.cart-drawer--recommendations--container .card__tasting-notes,
+.side-panel-content .card__tasting-notes {
+  font-size: 14px;
   margin-bottom: 0;
-  line-height: 19.2px;
+  line-height: 16.8px;
   color: #777779;
   font-family: 'AGaramondPro';
   letter-spacing: .04em;

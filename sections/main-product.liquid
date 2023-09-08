@@ -513,6 +513,7 @@
                 {%- when 'title' -%}
                   <div class="product-price-container product__price aaaa">
                   </div>
+                  <p class="meta__new--percentage">{{ product.metafields.info.percentage }}%</p>
                   {% if product.metafields.info.above_title != blank %}
                     <div class="above_title">
                       {{ product.metafields.info.above_title | metafield_tag }}
