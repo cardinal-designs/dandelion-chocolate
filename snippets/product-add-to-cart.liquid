@@ -123,13 +123,19 @@
   {% unless product.tags contains "gift card" %}   
 
     {% for merch_icon in product.metafields.custom.merch_icons.value %}
-      {{ merch_icon }}yyy
+      {{ merch_icon }}<br>
     {% endfor %}
     <div class="merch__icons">
-      <div class="product__ctarow product__free-shipping">
-        <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
-        <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.{%endif%}</span>
-      </div>        
+      {% for merch_icon in product.metafields.custom.merch_icons.value %}
+        <div class="product__ctarow product__free-shipping">
+          <div class="product__ctacol--icon">
+            <div class="icon--extra-large icon--circle" >
+              {% render 'icon-truck-2' %}
+            </div>
+          </div>
+          <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.{%endif%}</span>
+        </div>     
+      {% endfor %}
       <div class="product__ctarow product__free-shipping">
         <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-email' %}</div></div>
         <span class="">add gift note at checkout</span>
