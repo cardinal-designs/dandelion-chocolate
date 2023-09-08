@@ -578,9 +578,16 @@
                       </a>
                     {%- endif -%}
                   </div>
-                {%- when 'description' -%}
+                tasting_notes
+                {%- when 'tasting_notes' -%}
+                  {% if block.settings.tasting_notes != blank %}
+                    <div class="meta__tasting--notes">
+                      {{ block.settings.tasting_notes }}
+                    </div>
+                  {% endif %}
+                {%- when 'product_description' -%}
                 {% if block.settings.product_description != blank %}
-                  <div class="special__message--wrap">
+                  <div class="meta__product--description">
                     {{ block.settings.product_description }}
                   </div>
                 {% endif %}
