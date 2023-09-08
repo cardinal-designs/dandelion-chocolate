@@ -503,16 +503,7 @@
             {% for block in section.blocks %}
               {%- case block.type -%}
                 {%- when '@app' -%}
-                  {% assign show = true %}
-                ------{{ show }}
-                  {% for tag in product.tags %}
-                    {% if tag contains 'hide_from_rebuy' %}
-                      {% assign show = false %}
-                    {% endif %}
-                  {% endfor %}
-                  {% if show == true %}
                     {% render block %}
-                  {% endif %}
                 {%- when 'text' -%}
                   <p class="product--text {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                     {{- block.settings.text -}}
