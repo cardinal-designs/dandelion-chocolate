@@ -584,6 +584,15 @@
                       {{ block.settings.tasting_notes }}
                     </div>
                   {% endif %}
+                {%- when 'product_icons' -%}
+                  <div class="bar-icons">
+                    {% for bar_icon in product.metafields.custom.product_icons.value %}
+                      <div>
+                        <img alt="Kosher icon" src="https://cdn.shopify.com/s/files/1/2434/0841/files/Kosher_icon.svg">
+                        <p>{{ bar_icon }}</p>
+                      </div>
+                    {% endfor %}
+                  </div>
                 {%- when 'product_description' -%}
                 {% if block.settings.product_description != blank %}
                   <div class="meta__product--description">
@@ -1600,6 +1609,11 @@
           "label": "Shelf Life"
         }
       ]
+    },
+    {
+      "type": "product_icons",
+      "name": "Product Icons",
+      "limit": 1
     },
     {
       "type": "product_description",
