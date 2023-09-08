@@ -83,9 +83,12 @@
             "product_description": "{{ product.metafields.info.product_description | metafield_tag }}"
           }
         },
-        "3792e015-60fb-435b-a7f5-eff3d2b5898e": {
-          "type": "accordion",
+        "39fdf9f5-d870-4ed4-8bef-a25a89838013": {
+          "type": "test",
           "settings": {
+            "ingredients": "<p>Ingredients<\/p>",
+            "ingredients_allergens": "<p>Ingredients Allergens<\/p>",
+            "ingredients_allergen_facility": "<p>Ingredients Allergen Facility<\/p>"
           }
         }
       },
@@ -98,7 +101,7 @@
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b",
         "bb9ce6e4-8de1-4994-b04a-b6d0a753e16f",
         "721fd69a-979f-40a7-b8cf-b23ac7ab273d",
-        "3792e015-60fb-435b-a7f5-eff3d2b5898e"
+        "39fdf9f5-d870-4ed4-8bef-a25a89838013"
       ],
       "settings": {
         "full_width": true,
