@@ -587,7 +587,7 @@
                 {%- when 'product_description' -%}
                 {% if block.settings.product_description != blank %}
                   <div class="meta__product--description">
-                    {{ block.settings.product_description }}
+                    {{ block.settings.product_description | newline_to_br }} 
                   </div>
                 {% endif %}
                 {%- when 'description' -%}
