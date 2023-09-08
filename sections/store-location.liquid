@@ -37,7 +37,7 @@
       </div>
       <div class="content__right">
         {% for i in (1..5) %}
-            {{settings.store_location[i]}}
+            ----------{{settings.store_location[i]}}-----
         {% endfor %}
         {% for block in section.blocks %}
           <a href="{% if block.settings.link != blank %}{{ block.settings.link }}{% else %}javascript:void(0);{% endif %}" class="location__blocks">
