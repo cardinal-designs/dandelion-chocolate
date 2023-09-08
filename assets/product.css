@@ -1446,6 +1446,7 @@ product-add-to-cart-sticky .variations fieldset {
   letter-spacing: .15em;  
 }
 
+.meta__new--percentage,
 .new-percentage {
   margin-bottom: 10px;
   color: #666;
