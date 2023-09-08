@@ -394,34 +394,34 @@
       },
       {
         "type": "image_picker",
-        "id": "map_image",
+        "id": "map_image1",
         "label": "Map Image"
       },
       {
         "type": "checkbox",
-        "id": "store_close",
+        "id": "store_close1",
         "label": "Store Close"
       },
       {
         "type": "textarea",
-        "id": "store_location",
+        "id": "store_location1",
         "label": "Location Name",
         "default": "<p>Store Location Name<\/p>"
       },
       {
         "type": "url",
-        "id": "link",
+        "id": "link1",
         "label": "Link"
       },
       {
         "type": "text",
-        "id": "link_text",
+        "id": "link_text1",
         "label": "Link Text",
         "default": "Learn More"
       },
       {
         "type": "textarea",
-        "id": "store_close_date",
+        "id": "store_close_date1",
         "label": "Store Close Dates"
       },
       {
@@ -434,7 +434,7 @@
       },
       {
         "type": "range",
-        "id": "mon_am",
+        "id": "mon_am1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -443,7 +443,7 @@
       },
       {
         "type": "range",
-        "id": "mon_pm",
+        "id": "mon_pm1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -456,7 +456,7 @@
       },
       {
         "type": "range",
-        "id": "tue_am",
+        "id": "tue_am1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -465,7 +465,7 @@
       },
       {
         "type": "range",
-        "id": "tue_pm",
+        "id": "tue_pm1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -478,7 +478,7 @@
       },
       {
         "type": "range",
-        "id": "wed_am",
+        "id": "wed_am1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -487,7 +487,7 @@
       },
       {
         "type": "range",
-        "id": "ted_pm",
+        "id": "ted_pm1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -500,7 +500,7 @@
       },
       {
         "type": "range",
-        "id": "thu_am",
+        "id": "thu_am1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -509,7 +509,7 @@
       },
       {
         "type": "range",
-        "id": "thu_pm",
+        "id": "thu_pm1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -518,11 +518,11 @@
       },
       {
         "type": "header",
-        "content": "Friday"
+        "content": "Frida1y"
       },
       {
         "type": "range",
-        "id": "fri_am",
+        "id": "fri_am1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -531,7 +531,7 @@
       },
       {
         "type": "range",
-        "id": "fri_pm",
+        "id": "fri_pm1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -544,7 +544,7 @@
       },
       {
         "type": "range",
-        "id": "sat_am",
+        "id": "sat_am1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -553,7 +553,7 @@
       },
       {
         "type": "range",
-        "id": "sat_pm",
+        "id": "sat_pm1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -566,7 +566,7 @@
       },
       {
         "type": "range",
-        "id": "sun_am",
+        "id": "sun_am1",
         "min": 1,
         "max": 12,
         "step": 0.5,
@@ -575,7 +575,787 @@
       },
       {
         "type": "range",
-        "id": "sun_pm",
+        "id": "sun_pm1",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "16th Street Factory",
+        "info": "Add 16th Street Factory Details"
+      },
+      {
+        "type": "image_picker",
+        "id": "map_image2",
+        "label": "Map Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "store_close2",
+        "label": "Store Close"
+      },
+      {
+        "type": "textarea",
+        "id": "store_location2",
+        "label": "Location Name",
+        "default": "<p>Store Location Name<\/p>"
+      },
+      {
+        "type": "url",
+        "id": "link2",
+        "label": "Link"
+      },
+      {
+        "type": "text",
+        "id": "link_text2",
+        "label": "Link Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "textarea",
+        "id": "store_close_date2",
+        "label": "Store Close Dates"
+      },
+      {
+        "type": "header",
+        "content": "Hours Open"
+      },
+      {
+        "type": "header",
+        "content": "Monday"
+      },
+      {
+        "type": "range",
+        "id": "mon_am2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "mon_pm2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Tuesday"
+      },
+      {
+        "type": "range",
+        "id": "tue_am2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "tue_pm2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Wednesday"
+      },
+      {
+        "type": "range",
+        "id": "wed_am2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "ted_pm2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Thursday"
+      },
+      {
+        "type": "range",
+        "id": "thu_am2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "thu_pm2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Frida2y"
+      },
+      {
+        "type": "range",
+        "id": "fri_am2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "fri_pm2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Saturday"
+      },
+      {
+        "type": "range",
+        "id": "sat_am2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "sat_pm2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Sunday"
+      },
+      {
+        "type": "range",
+        "id": "sun_am2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "sun_pm2",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "16th Street Factory",
+        "info": "Add 16th Street Factory Details"
+      },
+      {
+        "type": "image_picker",
+        "id": "map_image3",
+        "label": "Map Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "store_close3",
+        "label": "Store Close"
+      },
+      {
+        "type": "textarea",
+        "id": "store_location3",
+        "label": "Location Name",
+        "default": "<p>Store Location Name<\/p>"
+      },
+      {
+        "type": "url",
+        "id": "link3",
+        "label": "Link"
+      },
+      {
+        "type": "text",
+        "id": "link_text3",
+        "label": "Link Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "textarea",
+        "id": "store_close_date3",
+        "label": "Store Close Dates"
+      },
+      {
+        "type": "header",
+        "content": "Hours Open"
+      },
+      {
+        "type": "header",
+        "content": "Monday"
+      },
+      {
+        "type": "range",
+        "id": "mon_am3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "mon_pm3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Tuesday"
+      },
+      {
+        "type": "range",
+        "id": "tue_am3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "tue_pm3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Wednesday"
+      },
+      {
+        "type": "range",
+        "id": "wed_am3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "ted_pm3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Thursday"
+      },
+      {
+        "type": "range",
+        "id": "thu_am3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "thu_pm3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Frida3y"
+      },
+      {
+        "type": "range",
+        "id": "fri_am3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "fri_pm3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Saturday"
+      },
+      {
+        "type": "range",
+        "id": "sat_am3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "sat_pm3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Sunday"
+      },
+      {
+        "type": "range",
+        "id": "sun_am3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "sun_pm3",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "16th Street Factory",
+        "info": "Add 16th Street Factory Details"
+      },
+      {
+        "type": "image_picker",
+        "id": "map_image4",
+        "label": "Map Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "store_close4",
+        "label": "Store Close"
+      },
+      {
+        "type": "textarea",
+        "id": "store_location4",
+        "label": "Location Name",
+        "default": "<p>Store Location Name<\/p>"
+      },
+      {
+        "type": "url",
+        "id": "link4",
+        "label": "Link"
+      },
+      {
+        "type": "text",
+        "id": "link_text4",
+        "label": "Link Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "textarea",
+        "id": "store_close_date4",
+        "label": "Store Close Dates"
+      },
+      {
+        "type": "header",
+        "content": "Hours Open"
+      },
+      {
+        "type": "header",
+        "content": "Monday"
+      },
+      {
+        "type": "range",
+        "id": "mon_am4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "mon_pm4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Tuesday"
+      },
+      {
+        "type": "range",
+        "id": "tue_am4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "tue_pm4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Wednesday"
+      },
+      {
+        "type": "range",
+        "id": "wed_am4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "ted_pm4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Thursday"
+      },
+      {
+        "type": "range",
+        "id": "thu_am4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "thu_pm4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Frida4y"
+      },
+      {
+        "type": "range",
+        "id": "fri_am4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "fri_pm4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Saturday"
+      },
+      {
+        "type": "range",
+        "id": "sat_am4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "sat_pm4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Sunday"
+      },
+      {
+        "type": "range",
+        "id": "sun_am4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "sun_pm4",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "16th Street Factory",
+        "info": "Add 16th Street Factory Details"
+      },
+      {
+        "type": "image_picker",
+        "id": "map_image5",
+        "label": "Map Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "store_close5",
+        "label": "Store Close"
+      },
+      {
+        "type": "textarea",
+        "id": "store_location5",
+        "label": "Location Name",
+        "default": "<p>Store Location Name<\/p>"
+      },
+      {
+        "type": "url",
+        "id": "link5",
+        "label": "Link"
+      },
+      {
+        "type": "text",
+        "id": "link_text5",
+        "label": "Link Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "textarea",
+        "id": "store_close_date5",
+        "label": "Store Close Dates"
+      },
+      {
+        "type": "header",
+        "content": "Hours Open"
+      },
+      {
+        "type": "header",
+        "content": "Monday"
+      },
+      {
+        "type": "range",
+        "id": "mon_am5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "mon_pm5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Tuesday"
+      },
+      {
+        "type": "range",
+        "id": "tue_am5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "tue_pm5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Wednesday"
+      },
+      {
+        "type": "range",
+        "id": "wed_am5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "ted_pm5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Thursday"
+      },
+      {
+        "type": "range",
+        "id": "thu_am5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "thu_pm5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Frida5y"
+      },
+      {
+        "type": "range",
+        "id": "fri_am5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "fri_pm5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Saturday"
+      },
+      {
+        "type": "range",
+        "id": "sat_am5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "sat_pm5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Close Time",
+        "default": 5
+      },
+      {
+        "type": "header",
+        "content": "Sunday"
+      },
+      {
+        "type": "range",
+        "id": "sun_am5",
+        "min": 1,
+        "max": 12,
+        "step": 0.5,
+        "label": "Open Time",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "sun_pm5",
         "min": 1,
         "max": 12,
         "step": 0.5,
