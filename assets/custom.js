@@ -11,7 +11,12 @@ $(window).on("load resize orientationchange", function(){
   if(windowsize < 767 ) {
     var elem = document.querySelector('.mobile__swiper');
     var flkty = new Flickity( elem, {
-    
+      prevNextButtons: false,
+      pageDots: false,
+      adaptiveHeight: false,
+      contain: true,
+      wrapAround: false,
+      freeScroll: false
     });
   }
 });  
