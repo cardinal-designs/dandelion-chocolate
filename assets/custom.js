@@ -318,7 +318,7 @@ $(document).ready(function () {
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
   
-  var read_more = '<div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div>';
+  var read_more = '<div class="rm_grad" style="">&nbsp;</div><div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div>';
   $('.meta__product--description .metafield-rich_text_field').html('<div class="short_description">' + desc + read_more + "</dl>");
   $('.read_less').hide();
   
