@@ -37,26 +37,41 @@
       </div>
       <div class="content__right">
         {% for i in (1..5) %}
-          {% assign store_location = 'store_location' | append: i %}
-          {{ settings[store_location] }}
-        {% endfor %}
-
-        {% for block in section.blocks %}
-          <a href="{% if block.settings.link != blank %}{{ block.settings.link }}{% else %}javascript:void(0);{% endif %}" class="location__blocks">
+          {% assign map_image5 = 'map_image5' | append: i %}
+          {% assign store_close5 = 'store_close5' | append: i %}
+          {% assign store_location5 = 'store_location5' | append: i %}
+          {% assign link5 = 'link5' | append: i %}
+          {% assign link_text5 = 'link_text5' | append: i %}
+          {% assign store_close_date5 = 'store_close_date5' | append: i %}
+          {% assign mon_am5 = 'mon_am5' | append: i %}
+          {% assign mon_pm5 = 'mon_pm5' | append: i %}
+          {% assign tue_am5 = 'tue_am5' | append: i %}
+          {% assign tue_pm5 = 'tue_pm5' | append: i %}
+          {% assign wed_am5 = 'wed_am5' | append: i %}
+          {% assign ted_pm5 = 'ted_pm5' | append: i %}
+          {% assign thu_am5 = 'thu_am5' | append: i %}
+          {% assign thu_pm5 = 'thu_pm5' | append: i %}
+          {% assign fri_am5 = 'fri_am5' | append: i %}
+          {% assign fri_pm5 = 'fri_pm5' | append: i %}
+          {% assign sat_am5 = 'sat_am5' | append: i %}
+          {% assign sat_pm5 = 'sat_pm5' | append: i %}
+          {% assign sun_am5 = 'sun_am5' | append: i %}
+          {% assign sun_pm5 = 'sun_pm5' | append: i %}
+          <a href="{% if settings[link] != blank %}{{ settings[link] }}{% else %}javascript:void(0);{% endif %}" class="location__blocks">
             <div class="location__blocks--inner">
               <div class="location__left">
-                <span class="location__name" style="color: {{ section.settings.color_text }}">{{ block.settings.store_location }}</span>
-                <p class="location__timings {% if block.settings.store_close %}closed{% endif %}" style="color: {{ section.settings.color_text }}">
-  
+                <span class="location__name" style="color: {{ section.settings.color_text }}">{{ settings[store_location] }}</span>
+                <p class="location__timings {% if settings[store_close] %}closed{% endif %}" style="color: {{ section.settings.color_text }}">
+        
                   {% assign currentDate = "now" | date: "%Y-%m-%d" | date: "%s" %}
                   {% assign day =  'now' | date: "%A" | downcase %}
-                  {% assign close_date = block.settings.store_close_date | newline_to_br | split: "<br />" %}
+                  {% assign close_date = settings[store_close_date] | newline_to_br | split: "<br />" %}
             
                   {% assign CurrentDateExist = false %}
                   {% assign DateStringArray = blank %}
                   {% assign DateStringArrayTmp = blank %}
           
-                  {% if block.settings.store_close_date != blank %}
+                  {% if settings[store_close_date] != blank %}
                     {% for date in close_date %}
                       {% assign closeDate = date | date: "%s" %}
                       {% capture tmpDate %}{{ closeDate }}={{ date }}{% endcapture %}
@@ -68,7 +83,7 @@
                         {% assign DateStringArray = DateStringArray | append: closeDate | append: ',' %}
                       {% endif %}
                     {% endfor %}
-
+        
                     {% assign dates = DateStringArray | split: ',' %}
                     {% assign sorted_dates = dates | sort %}
                     
@@ -84,7 +99,7 @@
                           {% assign nextDate = nextDateString | plus: 86400 | date: "%m/%d" %}
                         {% endif %}
                       {% endfor %}
-
+        
                     {% if CurrentDateExist %}
                       {% assign store = 'Closed today. ' | append: 'Opens next on ' | append: nextDate %}
                       <span class="closed">{{ store }}</span>
@@ -93,65 +108,65 @@
                       {% if day == "monday" %}
                         {% assign current_time = "now" | date: "%s" %}
                         {% assign midnight = "today" | date: "%s" %}
-                        {% assign specific_time = block.settings.mon_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                        {% assign specific_time = settings[mon_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                         {% if current_time >= midnight and current_time <= specific_time %}
-                          <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM </span>
+                          <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ block.settings.mon_am | replace: ".5", ":30" }}AM - {{ block.settings.mon_pm | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[mon_am] | replace: ".5", ":30" }}AM - {{ settings[mon_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% elsif day == "tuesday" %}
                         {% assign current_time = "now" | date: "%s" %}
                         {% assign midnight = "today" | date: "%s" %}
-                        {% assign specific_time = block.settings.tue_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                        {% assign specific_time = settings[tue_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                         {% if current_time >= midnight and current_time <= specific_time %}
-                          <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                          <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ block.settings.tue_am | replace: ".5", ":30" }}AM - {{ block.settings.tue_pm | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[tue_am] | replace: ".5", ":30" }}AM - {{ settings[tue_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% elsif day == "wednesday" %}
                         {% assign current_time = "now" | date: "%s" %}
                         {% assign midnight = "today" | date: "%s" %}
-                        {% assign specific_time = block.settings.wed_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                        {% assign specific_time = settings[wed_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                         {% if current_time >= midnight and current_time <= specific_time %}
-                          <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                          <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ block.settings.wed_am | replace: ".5", ":30" }}AM - {{ block.settings.wed_pm | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[wed_am] | replace: ".5", ":30" }}AM - {{ settings[wed_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% elsif day == "thursday" %}
                         {% assign current_time = "now" | date: "%s" %}
                         {% assign midnight = "today" | date: "%s" %}
-                        {% assign specific_time = block.settings.thu_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                        {% assign specific_time = settings[thu_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                         {% if current_time >= midnight and current_time <= specific_time %}
-                          <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                          <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ block.settings.thu_am | replace: ".5", ":30" }}AM - {{ block.settings.thu_pm | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[thu_am] | replace: ".5", ":30" }}AM - {{ settings[thu_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% elsif day == "friday" %}
                         {% assign current_time = "now" | date: "%s" %}
                         {% assign midnight = "today" | date: "%s" %}
-                        {% assign specific_time = block.settings.fri_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                        {% assign specific_time = settings[fri_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                         {% if current_time >= midnight and current_time <= specific_time %}
-                          <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                          <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ block.settings.fri_am | replace: ".5", ":30" }}AM - {{ block.settings.fri_pm | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[fri_am] | replace: ".5", ":30" }}AM - {{ settings[fri_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% elsif day == "saturday" %}
                         {% assign current_time = "now" | date: "%s" %}
                         {% assign midnight = "today" | date: "%s" %}
-                        {% assign specific_time = block.settings.sat_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                        {% assign specific_time = settings[sat_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                         {% if current_time >= midnight and current_time <= specific_time %}
-                          <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                          <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ block.settings.sat_am | replace: ".5", ":30" }}AM - {{ block.settings.sat_pm | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[sat_am] | replace: ".5", ":30" }}AM - {{ settings[sat_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% elsif day == "sunday" %}
                         {% assign current_time = "now" | date: "%s" %}
                         {% assign midnight = "today" | date: "%s" %}
-                        {% assign specific_time = block.settings.sun_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                        {% assign specific_time = settings[sun_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                         {% if current_time >= midnight and current_time <= specific_time %}
-                          <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                          <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ block.settings.sun_am | replace: ".5", ":30" }}AM - {{ block.settings.sun_pm | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[sun_am] | replace: ".5", ":30" }}AM - {{ settings[sun_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% endif %}
                     {% endif %}
@@ -161,74 +176,74 @@
                     {% if day == "monday" %}
                       {% assign current_time = "now" | date: "%s" %}
                       {% assign midnight = "today" | date: "%s" %}
-                      {% assign specific_time = block.settings.mon_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                      {% assign specific_time = settings[mon_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                       {% if current_time >= midnight and current_time <= specific_time %}
-                        <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM </span>
+                        <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ block.settings.mon_am | replace: ".5", ":30" }}AM - {{ block.settings.mon_pm | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[mon_am] | replace: ".5", ":30" }}AM - {{ settings[mon_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "tuesday" %}
                       {% assign current_time = "now" | date: "%s" %}
                       {% assign midnight = "today" | date: "%s" %}
-                      {% assign specific_time = block.settings.tue_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                      {% assign specific_time = settings[tue_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                       {% if current_time >= midnight and current_time <= specific_time %}
-                        <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                        <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ block.settings.tue_am | replace: ".5", ":30" }}AM - {{ block.settings.tue_pm | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[tue_am] | replace: ".5", ":30" }}AM - {{ settings[tue_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "wednesday" %}
                       {% assign current_time = "now" | date: "%s" %}
                       {% assign midnight = "today" | date: "%s" %}
-                      {% assign specific_time = block.settings.wed_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                      {% assign specific_time = settings[wed_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                       {% if current_time >= midnight and current_time <= specific_time %}
-                        <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                        <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ block.settings.wed_am | replace: ".5", ":30" }}AM - {{ block.settings.wed_pm | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[wed_am] | replace: ".5", ":30" }}AM - {{ settings[wed_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "thursday" %}
                       {% assign current_time = "now" | date: "%s" %}
                       {% assign midnight = "today" | date: "%s" %}
-                      {% assign specific_time = block.settings.thu_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                      {% assign specific_time = settings[thu_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                       {% if current_time >= midnight and current_time <= specific_time %}
-                        <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                        <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ block.settings.thu_am | replace: ".5", ":30" }}AM - {{ block.settings.thu_pm | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[thu_am] | replace: ".5", ":30" }}AM - {{ settings[thu_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "friday" %}
                       {% assign current_time = "now" | date: "%s" %}
                       {% assign midnight = "today" | date: "%s" %}
-                      {% assign specific_time = block.settings.fri_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                      {% assign specific_time = settings[fri_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                       {% if current_time >= midnight and current_time <= specific_time %}
-                        <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                        <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ block.settings.fri_am | replace: ".5", ":30" }}AM - {{ block.settings.fri_pm | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[fri_am] | replace: ".5", ":30" }}AM - {{ settings[fri_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "saturday" %}
                       {% assign current_time = "now" | date: "%s" %}
                       {% assign midnight = "today" | date: "%s" %}
-                      {% assign specific_time = block.settings.sat_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                      {% assign specific_time = settings[sat_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                       {% if current_time >= midnight and current_time <= specific_time %}
-                        <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                        <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ block.settings.sat_am | replace: ".5", ":30" }}AM - {{ block.settings.sat_pm | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[sat_am] | replace: ".5", ":30" }}AM - {{ settings[sat_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "sunday" %}
                       {% assign current_time = "now" | date: "%s" %}
                       {% assign midnight = "today" | date: "%s" %}
-                      {% assign specific_time = block.settings.sun_am | replace: ".5", ":30" | append: ":00" | date: "%s" %}
+                      {% assign specific_time = settings[sun_am] | replace: ".5", ":30" | append: ":00" | date: "%s" %}
                       {% if current_time >= midnight and current_time <= specific_time %}
-                        <span class="temp-close">Closed now; opens today at {{ block.settings.mon_am | replace: ".5", ":30" }}AM  </span>
+                        <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ block.settings.sun_am | replace: ".5", ":30" }}AM - {{ block.settings.sun_pm | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[sun_am] | replace: ".5", ":30" }}AM - {{ settings[sun_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% endif %}
                     
                   {% endif %}
                 </p>
               </div>
-              {% if block.settings.map_image != blank %}
+              {% if settings[map_image] != blank %}
                 <div class="location__image">
-                  {{ block.settings.map_image | image_url:width:original | image_tag }}
+                  {{ settings[map_image] | image_url:width:original | image_tag }}
                 </div>
               {% else %}
                 <div class="location__image placeholder">
@@ -236,8 +251,8 @@
                 </div>
               {% endif %}
             </div>
-            {% if block.settings.link_text != blank %}
-              <span class="hide-desktop link">{{ block.settings.link_text }}</span>
+            {% if settings[link_text] != blank %}
+              <span class="hide-desktop link">{{ settings[link_text] }}</span>
             {% endif %}
           </a>
         {% endfor %}
