@@ -645,7 +645,7 @@
                         {% assign weight = block.settings.product_weight_in_grams | divided_by: 28.35 %}
                         {{ weight | round: 2 }} oz ({{ block.settings.product_weight_in_grams }} gm)
 
-                        {% assign weight_kg = product.metafields.custom.product_weight_in_kilo | divided_by: 2.205 %}
+                        {% assign weight_kg = product.metafields.custom.product_weight_in_kilo | times: 2.205 %}
                         {{ weight_kg | round: 2 }} oz ({{ product.metafields.custom.product_weight_in_kilo }} gm)
 
 
