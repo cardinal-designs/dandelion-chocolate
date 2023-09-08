@@ -2241,3 +2241,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-bottom: 1px solid #CFA545;
   padding: 11px 0 4px;
 }
+
+.hide-rebuy .rebuy-widget {
+  display: none !important;
+}
