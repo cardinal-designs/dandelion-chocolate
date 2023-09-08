@@ -151,6 +151,11 @@ a.cart-product-link.h4 {
   object-position: left;
 }
 
+.carousel__quotes--wrapper .caption {
+  font-size: 16px;
+  margin: 0;
+}
+
 @media only screen and (max-width: 767px) { 
 
   .carousel__quotes--wrapper .flickity-viewport {
