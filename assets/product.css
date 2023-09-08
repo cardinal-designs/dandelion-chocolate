@@ -2110,6 +2110,14 @@ variant-selects .product-form__input .select-arrow {
   display: block;
 }
 
+.product__testing-note {
+  font-family: Garamond Premier Pro;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 19.2px;
+  letter-spacing: 0.4em;  
+}
+
 @media only screen and (max-width: 1200px) {
   
   .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
