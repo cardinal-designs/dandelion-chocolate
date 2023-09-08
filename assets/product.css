@@ -2115,3 +2115,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   background: #F5F1DB;
   padding: 15px 9px;
 }
+
+.special__message--wrap:before {
+  content: '';
+}
