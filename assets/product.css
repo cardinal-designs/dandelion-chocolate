@@ -2207,6 +2207,6 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   font-weight: 500;
 }
 
-.metafield-rich_text_field {
+.short_description .metafield-rich_text_field {
   overflow: hidden;
 }
