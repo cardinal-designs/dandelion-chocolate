@@ -2218,3 +2218,8 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   top: 0;
   width: 100%;
 }
+
+.meta__product--description .read_less {
+  margin-top: 5px;
+  display: none;
+}
