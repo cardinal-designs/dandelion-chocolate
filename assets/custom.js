@@ -336,7 +336,7 @@ $(document).ready(function() {
      setTimeout(function(){  $('.rm_grad').fadeIn(); $('.read_more').show(); }, 300);
   });
 
-  var hideRebuy = $('.hide-rebuy').length();
+  var hideRebuy = $('.hide-rebuy');
   if (hideRebuy){
     $('.rebuy-widget').css('display','none')
   }
