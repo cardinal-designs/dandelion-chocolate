@@ -37,7 +37,8 @@
       </div>
       <div class="content__right">
         {% for i in (1..5) %}
-          {{ settings['store_location'] }}
+          {% assign store_location = 'store_location' | append: i %}
+          {{ settings[store_location] }}
         {% endfor %}
 
         {% for block in section.blocks %}
