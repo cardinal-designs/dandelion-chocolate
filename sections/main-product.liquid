@@ -560,7 +560,12 @@
                           <span class="product__harvest_year">{{ product.metafields.info.harvest_year }} HARVEST</span>
                         {% endif %}
                         {% if product.metafields.info.batch_number %}
+                          · 
                           <span class="product__batch_number">BATCH no. {{ product.metafields.info.batch_number }}</span>
+                        {% endif %}
+                        {% if product.metafields.info.chocolate_maker_name %}
+                          · 
+                          <span class="product__chocolate_maker_name">BATCH no. {{ product.metafields.info.chocolate_maker_name }}</span>
                         {% endif %}
                       </div>
                     {% endif %}
