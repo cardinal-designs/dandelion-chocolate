@@ -94,6 +94,11 @@
             "storage_instructions": "{{ product.metafields.info.storage_instructions | metafield_tag }}",
             "shelf_life": "{{ product.metafields.info.shelf_life | metafield_tag }}"
           }
+        },
+        "f6206b2a-e143-4f36-ae40-2c2130ef00e6": {
+          "type": "icon_list",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -105,7 +110,8 @@
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b",
         "bb9ce6e4-8de1-4994-b04a-b6d0a753e16f",
         "721fd69a-979f-40a7-b8cf-b23ac7ab273d",
-        "88a32717-f86c-4cd9-a5b9-49d8f009ac6b"
+        "88a32717-f86c-4cd9-a5b9-49d8f009ac6b",
+        "f6206b2a-e143-4f36-ae40-2c2130ef00e6"
       ],
       "settings": {
         "full_width": true,
