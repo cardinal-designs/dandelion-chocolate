@@ -2210,3 +2210,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .short_description .metafield-rich_text_field {
   overflow: hidden;
 }
+
+.hide-rebuy .rebuy-widget {
+  display: none !important;
+}
