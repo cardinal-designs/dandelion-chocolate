@@ -1397,13 +1397,7 @@ product-add-to-cart-sticky .variations fieldset {
 
 .product__free-shipping span {
   color: #4a4a4a;
-  font-family: Saa Series F D;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 12px;
-  letter-spacing: 0.1em;
-  text-align: center;
-  margin-top: 8px;
+  font-size: 18px;
 }
 
 .product__detail {
@@ -2107,3 +2101,12 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   flex: 1;
 }
 
+.merch__icons.multi__merch--icons .product__free-shipping span {
+  font-family: Saa Series F D;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 8px;
+}
