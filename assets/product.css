@@ -1704,6 +1704,7 @@ quantity-selector.quantity .plus svg {
 .product-title-uppercase-true .product-add-to-cart-sticky--title {
   font-family: Garamond Premiere Pro;
   font-size: 24px;
+  line-height: 28px;
   font-weight: 400;
 }
 
