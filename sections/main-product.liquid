@@ -526,9 +526,9 @@
                     </div>
                   {% endif %}
                   <div class="product-title-container" {{ block.shopify_attributes }}>
-                    <h1 class="TEST product-title uppercase--{{ block.settings.uppercase }}">
-                      {%- if product.metafields.info.title != blank -%}
-                        {{ product.metafields.info.title }}
+                    <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
+                      {%- if product.metafields.info.origin_region != blank -%}
+                        {{ product.metafields.info.origin_region }}
                       {%- else -%}
                         {{ product.title }}              
                       {%- endif -%}
