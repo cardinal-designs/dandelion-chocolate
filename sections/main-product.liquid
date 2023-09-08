@@ -578,6 +578,8 @@
                       </a>
                     {%- endif -%}
                   </div>
+                {%- when 'special_message' -%}
+                  
                 {%- when 'description' -%}
                   <div class="product-short-description rte product__description" {{ block.shopify_attributes }}>
                     {{ product.description }}
@@ -1474,8 +1476,8 @@
       ]
     },
     {
-      "type": "merch_icons",
-      "name": "Merch Icons",
+      "type": "special_message",
+      "name": "Special Message",
       "limit": 1
     },
     {
