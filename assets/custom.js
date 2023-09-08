@@ -14,7 +14,7 @@ $(window).on("load resize orientationchange", function(){
       prevNextButtons: false,
       pageDots: false,
       adaptiveHeight: false,
-      contain: false,
+      contain: true,
       wrapAround: false,
       freeScroll: false
     });
