@@ -584,7 +584,7 @@
                       {{ block.settings.tasting_notes }}
                     </div>
                   {% endif %}
-                {%- when 'product_icons' -%}
+                {%- when 'guarantee_icons' -%}
                   <div class="bar-icons">
                     {% for bar_icon in product.metafields.custom.product_icons.value %}
                       <div>
@@ -1611,7 +1611,7 @@
       ]
     },
     {
-      "type": "product_icons",
+      "type": "guarantee_icons",
       "name": "Product Icons",
       "limit": 1
     },
