@@ -37,26 +37,26 @@
       </div>
       <div class="content__right">
         {% for i in (1..5) %}
-          {% assign map_image5 = 'map_image5' | append: i %}
-          {% assign store_close5 = 'store_close5' | append: i %}
-          {% assign store_location5 = 'store_location5' | append: i %}
-          {% assign link5 = 'link5' | append: i %}
-          {% assign link_text5 = 'link_text5' | append: i %}
-          {% assign store_close_date5 = 'store_close_date5' | append: i %}
-          {% assign mon_am5 = 'mon_am5' | append: i %}
-          {% assign mon_pm5 = 'mon_pm5' | append: i %}
-          {% assign tue_am5 = 'tue_am5' | append: i %}
-          {% assign tue_pm5 = 'tue_pm5' | append: i %}
-          {% assign wed_am5 = 'wed_am5' | append: i %}
-          {% assign ted_pm5 = 'ted_pm5' | append: i %}
-          {% assign thu_am5 = 'thu_am5' | append: i %}
-          {% assign thu_pm5 = 'thu_pm5' | append: i %}
-          {% assign fri_am5 = 'fri_am5' | append: i %}
-          {% assign fri_pm5 = 'fri_pm5' | append: i %}
-          {% assign sat_am5 = 'sat_am5' | append: i %}
-          {% assign sat_pm5 = 'sat_pm5' | append: i %}
-          {% assign sun_am5 = 'sun_am5' | append: i %}
-          {% assign sun_pm5 = 'sun_pm5' | append: i %}
+          {% assign map_image = 'map_image' | append: i %}
+          {% assign store_close = 'store_close' | append: i %}
+          {% assign store_location = 'store_location' | append: i %}
+          {% assign link = 'link' | append: i %}
+          {% assign link_text = 'link_text' | append: i %}
+          {% assign store_close_date = 'store_close_date' | append: i %}
+          {% assign mon_am = 'mon_am' | append: i %}
+          {% assign mon_pm = 'mon_pm' | append: i %}
+          {% assign tue_am = 'tue_am' | append: i %}
+          {% assign tue_pm = 'tue_pm' | append: i %}
+          {% assign wed_am = 'wed_am' | append: i %}
+          {% assign wed_pm = 'wed_pm' | append: i %}
+          {% assign thu_am = 'thu_am' | append: i %}
+          {% assign thu_pm = 'thu_pm' | append: i %}
+          {% assign fri_am = 'fri_am' | append: i %}
+          {% assign fri_pm = 'fri_pm' | append: i %}
+          {% assign sat_am = 'sat_am' | append: i %}
+          {% assign sat_pm = 'sat_pm' | append: i %}
+          {% assign sun_am = 'sun_am' | append: i %}
+          {% assign sun_pm = 'sun_pm' | append: i %}
           <a href="{% if settings[link] != blank %}{{ settings[link] }}{% else %}javascript:void(0);{% endif %}" class="location__blocks">
             <div class="location__blocks--inner">
               <div class="location__left">
