@@ -324,10 +324,11 @@ $(document).ready(function() {
   
   var og_height = $('.short_description').height();
   $('.short_description').css({"max-height": "300px"});
-  $('.metafield-rich_text_field').css({"max-height": "300px"});
+  $('.short_description .metafield-rich_text_field').css({"max-height": "300px"});
   
   $('.read_more').on('click', function() {
     $('.short_description').animate({ "max-height": og_height});
+    $('.short_description .metafield-rich_text_field').animate({ "max-height": og_height});
     $(this).hide();
     $('.read_less').show();
     $('.rm_grad').hide();
