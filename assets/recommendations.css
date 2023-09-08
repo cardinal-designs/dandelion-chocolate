@@ -47,6 +47,8 @@
 
 .product-title-uppercase-true .product-recommendations .product-card .chocolate__bar-product .product-card-title {
   text-transform: uppercase;
+  font-family: OPTICaslonBold-Cond;
+  letter-spacing: .04em;
 }
 
 .product-recommendations .product-card .product__description {

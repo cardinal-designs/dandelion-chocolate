@@ -316,10 +316,10 @@ $(document).ready(function () {
 
 
 $(document).ready(function() {
-  var desc = $('.product__description .shg-theme-text-content').html();
-  var read_more = '<div class="rm_grad" style="">&nbsp;</div></div><div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div><dl class="accordion-list">';
-    $('.product__description .shg-theme-text-content').html('<div class="short_description">' + desc + read_more + accordion + "</dl>");
-    $('.read_less').hide();
+  var desc = $('.meta__product--description').html();
+  var read_more = '<div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div>';
+    $('.meta__product--description').html('<div class="short_description">' + desc + read_more + "</dl>");
+  $('.read_less').hide();
   var og_height = $('.short_description').height();
     $('.short_description').css({"max-height": "300px"});
   
