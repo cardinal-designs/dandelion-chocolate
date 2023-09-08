@@ -819,4 +819,10 @@ div#prop65_warning span {
     font-size: 30px;
   }
 
+  .grid__item.cart-delivery input,
+  .grid__item.cart-gift input {
+    width: 20px;
+    height: 20px;
+  }
+  
 }
