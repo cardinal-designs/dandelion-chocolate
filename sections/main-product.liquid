@@ -590,7 +590,7 @@
                     {{ block.settings.product_description | newline_to_br }} 
                   </div>
                 {% endif %}
-                {%- when 'accordion' -%}
+                {%- when 'accordion_list' -%}
                   <dl class="accordion-list">
                     <dt>INGREDIENTS & ALLERGENS</dt>
                     <dd>
@@ -1529,14 +1529,28 @@
       ]
     },
     {
-      "type": "accordion",
-      "name": "accordion",
+      "type": "accordion_list",
+      "name": "Accordion List",
       "limit": 1,
       "settings": [
         {
+          "type": "header",
+          "content": "INGREDIENTS & ALLERGENS"
+        },
+        {
           "type": "richtext",
-          "id": "product_description",
-          "label": "Product Description"
+          "id": "ingredients",
+          "label": "Ingredients"
+        },
+        {
+          "type": "richtext",
+          "id": "ingredients_allergens",
+          "label": "Ingredients Allergens"
+        },
+        {
+          "type": "richtext",
+          "id": "ingredients_allergen_facility",
+          "label": "Ingredients Allergen Facility"
         }
       ]
     },
