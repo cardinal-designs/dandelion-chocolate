@@ -2172,3 +2172,12 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   opacity: 0.6;
 }
 
+.product__tasting-note {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 19.2px;
+  letter-spacing: 0.04em;  
+  font-family: 'AGaramondPro';
+  color: #777779;
+  text-transform: lowercase;
+}
