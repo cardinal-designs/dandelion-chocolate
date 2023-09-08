@@ -131,7 +131,7 @@
         </product-form>
      {% endif %}
   </figure>
-  <div class="product-card-info">
+  <div class="product-card-info {% if product_card_product.type == 'Chocolate Bar' or product_card_product.tags contains 'Ingredients' %}chocolate__bar-product{% endif %}">
     {%- if settings.show_products_vendor -%}
       <div class="product-card-vendor sh1"><a href="{{ product_card_product.vendor | url_for_vendor }}" title="{{ product_card_product.vendor | escape }}">{{ product_card_product.vendor }}</a></div>
     {%- endif -%}
