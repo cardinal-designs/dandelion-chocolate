@@ -592,10 +592,12 @@
                 {% endif %}
                 {%- when 'tab_list' -%}
                   <dl class="accordion-list accordion-list-test">
-                    <dt>included in this assorment</dt>
-                    <dd>
-                      
-                    </dd>
+                    {% if block.settings.included_description != blank %}
+                      <dt>included in this assorment</dt>
+                      <dd>
+                        {{ block.settings.included_description }}
+                      </dd>
+                    {% endif %}
                     <dt>INGREDIENTS & ALLERGENS</dt>
                     <dd>
                       <div>{{ block.settings.ingredients }}</div>
