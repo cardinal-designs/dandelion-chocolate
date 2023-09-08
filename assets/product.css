@@ -2145,6 +2145,12 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   letter-spacing: normal;
 }
 
+.meta__bar--icons {
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  justify-content: space-between;
+}
+
 .meta__bar--icons p {
   font-family: 'SAA Series FD', 'Open sans';
   text-transform: uppercase;
