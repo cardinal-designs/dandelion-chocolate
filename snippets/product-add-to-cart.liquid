@@ -121,6 +121,10 @@
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {% unless product.tags contains "pickup" %}   
   {% unless product.tags contains "gift card" %}   
+
+    {% for merch_icons in product.metafields.custom.merch_icons %}
+      {{ merch_icons.value }}yyy
+    {% endfor %}
     <div class="merch__icons">
       <div class="product__ctarow product__free-shipping">
         <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
