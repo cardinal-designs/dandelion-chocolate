@@ -432,7 +432,8 @@
 .thb-product-detail .product-price-container .badge {
   margin-right: 5px;
   height: 23px;
-  padding: 0 11px; }
+  padding: 5px 11px 0;
+}
 
 .thb-product-detail .star-rating-container {
   display: block;
