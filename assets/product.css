@@ -2150,6 +2150,14 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   letter-spacing: normal;
 }
 
+.ingredients__list--item {
+  margin-bottom: 10px;
+}
+
+.ingredients__list--item:last-child {
+  margin-bottom: 0;
+}
+
 .meta__bar--icons {
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
