@@ -695,6 +695,7 @@
                     {% endif %}
                   {% endif %}
                   <div class="product-short-description rte product__description meta__product--description" {{ block.shopify_attributes }}>
+                {{ product.metafields.info.product_description }}pppp
                     {% if product.metafields.info.product_description != blank %}
                       {{ product.metafields.info.product_description | newline_to_br | metafield_tag }} 
                     {% else %}

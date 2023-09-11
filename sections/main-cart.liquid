@@ -75,6 +75,8 @@
                       <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4">
                         {% if product_info.cart_title != blank %}
                           {{ product_info.cart_title }}
+                        {% elsif product_info.title != blank %}
+                          {{ product_info.title }}
                         {% else %}
                           {{ item.product.title }}
                         {% endif %}
