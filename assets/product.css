@@ -2121,6 +2121,10 @@ variant-selects .product-form__input .select-arrow {
   color: #777779;
 }
 
+.hide-rebuy .rebuy-widget {
+  display: none !important;
+}
+
 @media only screen and (max-width: 1200px) {
   
   .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
