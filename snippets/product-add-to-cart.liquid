@@ -132,7 +132,9 @@
           <div class="product__ctarow product__free-shipping">
             <div class="product__ctacol--icon">
               <div class="icon--extra-large icon--circle" >
-                {% if merch_text == 'add gift note at checkout' %}
+                {% if merch_text == 'free shipping' %}
+                  {% render 'icon-truck-2' %} 
+                {% elsif merch_text == 'add gift note at checkout' %}
                   {% render 'icon-email' %} 
                 {% elsif  merch_text == 'contact us for corporate gifting' %}
                   {% render 'icon-gift' %} 
