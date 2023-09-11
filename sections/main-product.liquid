@@ -654,8 +654,8 @@
                     {% if block.settings.storage_instructions != blank or block.settings.shelf_life != blank %}
                       <dt>ADDITIONAL INFORMATION</dt>
                       <dd>
-                        {{ block.settings.storage_instructions }}
-                        {{ block.settings.shelf_life }}
+                        <div class="ingredients__list--item">{{ block.settings.storage_instructions }}</div>
+                        <div class="ingredients__list--item">{{ block.settings.shelf_life }}</div>
                       </dd>
                     {% endif %}
                 
