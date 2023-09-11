@@ -31,10 +31,9 @@
       {% assign show = true %}
       {% for tag in item.tags %}
         {% if tag contains 'hide_from_search' %}
-          {% assign show = false %}
+          {% assign counter =  counter | plus: 1%}
         {% endif %}
       {% endfor %}
-      {% if show == true %}{% assign counter =  counter | plus: 1%}{% endif %}
     {% endfor %}
 {%- endif -%}
 
@@ -65,7 +64,7 @@
 				{% endif %}
 				{%- if show_collection_description and description != '' -%}
 				<div class="collection-banner--description">
-					<p>{{ description }}</p>
+					<p>{{ description }}</p> -- {{ counter }}
 				</div>
 				{%- endif -%}
 				{%- if show_subcollections -%}
