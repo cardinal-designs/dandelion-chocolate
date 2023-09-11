@@ -42,6 +42,7 @@
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2",
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
@@ -106,7 +107,6 @@
         "1c54a7df-956d-4754-add0-db32fb0b4e9e",
         "4af6929c-0254-43be-b8ac-6f6f24e2709f"
       ],
-      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
