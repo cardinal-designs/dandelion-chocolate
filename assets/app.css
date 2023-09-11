@@ -5936,6 +5936,10 @@ input[type="radio"],
   margin-top: 10px;
 }
 
+.variant__info {
+  font-style: italic;
+}
+
 /***** Cart Drawer End *****/
 
 .template-search .hide-search {
