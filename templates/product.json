@@ -478,7 +478,6 @@
     },
     "shogun-below": {
       "type": "shogun-below",
-      "disabled": true,
       "settings": {
       }
     },
