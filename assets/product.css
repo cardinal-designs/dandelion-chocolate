@@ -2110,6 +2110,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   margin-bottom: 30px;
 }
 
+.merch__icons.multi__merch--icons .product__ctarow {
+  margin-bottom: 0;
+}
+
 .merch__icons.multi__merch--icons .product__free-shipping span {
   font-family: Saa Series F D;
   font-size: 10px;
