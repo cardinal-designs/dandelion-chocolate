@@ -1399,7 +1399,7 @@ product-add-to-cart-sticky .variations fieldset {
 .product__free-shipping span {
   color: #4a4a4a;
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .product__detail {
