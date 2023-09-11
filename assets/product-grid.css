@@ -402,6 +402,10 @@
   margin: 0;
 }
 
+.product-add-to-cart-container .add_to_cart_holder button {
+  display: block !important;
+}
+
 .product-card .product-form {
   position: absolute;
   bottom: 0;
