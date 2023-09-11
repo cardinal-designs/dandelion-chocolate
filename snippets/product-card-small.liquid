@@ -25,32 +25,32 @@
     {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
 
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
-    <span>
-      {% if product_small.metafields.info.origin_region != blank %}
-        {{ product_small.metafields.info.origin_region | metafield_tag }}
-      {% elsif product_small.metafields.info.title != blank %}
-        {{ product_small.metafields.info.title | metafield_tag }}
-      {% else %}
-         {{ product_title }}
-      {% endif %}
-    </span>
+      <span>
+        {% if product_small.metafields.info.origin_region != blank %}
+          {{ product_small.metafields.info.origin_region | metafield_tag }}
+        {% elsif product_small.metafields.info.title != blank %}
+          {{ product_small.metafields.info.title | metafield_tag }}
+        {% else %}
+          {{ product_title }}
+        {% endif %}
+      </span>
+        
+      {% if product_small.metafields.info.origin_country != blank %}
+        <div class="product-info-country">
+          {{ product_small.metafields.info.origin_country }}
+        </div>
+      {%- endif -%}
       
-    {% if product_small.metafields.info.origin_country != blank %}
-      <div class="product-info-country">
-        {{ product_small.metafields.info.origin_country }}
-      </div>
-    {%- endif -%}
-    
-    {%- if product_small.metafields.info.tasting_notes != blank -%}
-      <div class="card__tasting-notes">{{ product_small.metafields.info.tasting_notes }}</div>
-    {%- endif -%}
-
-    {%- if product_small.metafields.info.micro_info != blank -%}
-      <div class="product__description">{{ product_small.metafields.info.micro_info }}</div>
-    {%- endif -%}
-
-    {% render 'product-price', product: product_small %}
-    {% render 'product-add-to-cart-small', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
+      {%- if product_small.metafields.info.tasting_notes != blank -%}
+        <div class="card__tasting-notes">{{ product_small.metafields.info.tasting_notes }}</div>
+      {%- endif -%}
+  
+      {%- if product_small.metafields.info.micro_info != blank -%}
+        <div class="product__description">{{ product_small.metafields.info.micro_info }}</div>
+      {%- endif -%}
+  
+      {% render 'product-price', product: product_small %}
+      {% render 'product-add-to-cart-small', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
     </a>
     {% if quick_add %}
       <button class="product__quick-view product-card-quickview text-button" href="#Product-Drawer" data-product-handle="{{ product_small.handle }}" tabindex="-1">
