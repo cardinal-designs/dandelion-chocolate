@@ -131,11 +131,15 @@
   </figure>
   <div class="product-card-info">
     {%- if settings.show_products_vendor -%}
-      <div class="product-card-vendor sh1"><a href="{{ product_card_product.vendor | url_for_vendor }}" title="{{ product_card_product.vendor | escape }}">{{ product_card_product.vendor }}</a></div>
+      <div class="product-card-vendor sh1">
+        <a href="{{ product_card_product.metafields.info.vendor_name | url_for_vendor }}" title="{{ product_card_product.metafields.info.vendor_name | escape }}">
+          {{ product_card_product.metafields.info.vendor_name }}
+        </a>
+      </div>
     {%- endif -%}
 
-    {%- if show_collaborator -%}
-      <div class="card__brand">{{ product_card_product.vendor }}</div>
+    {%- if product_card_product.metafields.info.vendor_name != blank -%}
+      <div class="card__brand">{{ product_card_product.metafields.info.vendor_name }}</div>
     {%- endif -%}
   
     {% if product_card_product.metafields.info.product_type != blank or product_card_product.metafields.info.percentage != blank %}   
