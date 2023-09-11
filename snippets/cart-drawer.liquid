@@ -44,9 +44,8 @@
                       href="{{ item.url }}">
                     {% if item.product.metafields.info.cart_image_url != blank %}
                       {%- render 'responsive-image', image: item.product.metafields.info.cart_image_url, sizes: '192x0' -%}
-                      test1
                      {% else %}
-                      test
+  
                       {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
                     {% endif %}
                     <div class="loading-overlay">
