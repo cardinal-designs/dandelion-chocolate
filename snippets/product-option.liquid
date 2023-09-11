@@ -21,7 +21,7 @@
                   {% if forloop.index == 1 %}
                     {% assign customOptions = product.metafields.custom.calendar_for_one_ | metafield_tag | default: value %}
                   {% else %}
-                    {% assign customOptions = product.metafields.custom.calendar_for_two.value | metafield_tag | default: value %}
+                    {% assign customOptions = product.metafields.custom.calendar_for_two | metafield_tag | default: value %}
                   {% endif %}
                   {{ customOptions }}
                 {% else %}
