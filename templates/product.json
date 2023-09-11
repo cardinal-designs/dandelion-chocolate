@@ -45,11 +45,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "0b3e272b-c86a-4dba-946c-c6912251371c": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
           "type": "side_panel",
           "disabled": true,
@@ -77,10 +72,9 @@
             "tasting_notes": "<p>{{ product.metafields.info.tasting_notes.value }}<\/p>"
           }
         },
-        "721fd69a-979f-40a7-b8cf-b23ac7ab273d": {
-          "type": "product_description",
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
           "settings": {
-            "product_description": "{{ product.metafields.info.product_description | metafield_tag }}"
           }
         },
         "88a32717-f86c-4cd9-a5b9-49d8f009ac6b": {
@@ -106,11 +100,10 @@
         "title",
         "variant_picker",
         "buy_buttons",
-        "0b3e272b-c86a-4dba-946c-c6912251371c",
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b",
         "bb9ce6e4-8de1-4994-b04a-b6d0a753e16f",
-        "721fd69a-979f-40a7-b8cf-b23ac7ab273d",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
         "88a32717-f86c-4cd9-a5b9-49d8f009ac6b",
         "f6206b2a-e143-4f36-ae40-2c2130ef00e6"
       ],
