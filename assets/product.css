@@ -2163,6 +2163,11 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   margin-bottom: 10px;
 }
 
+.ingredients__list--item a {
+  color: #DCB251;
+  text-decoration: underline;
+}
+
 .ingredients__list--item:last-child {
   margin-bottom: 0;
 }
