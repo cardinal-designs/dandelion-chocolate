@@ -19,7 +19,7 @@
 		      <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
                 {% if option.name == 'Size' %}
                   {% if forloop.index == 1 %}
-                    {% assign customOptions = variant[forloop.index].metafields.custom.calendar_for_one | default: value %}
+                    {% assign customOptions = product.variant[forloop.index].metafields.custom.calendar_for_one | default: value %}
                   {% else %}
                     {% assign customOptions = product.metafields.custom.calendar_for_two | default: value %}
                   {% endif %}
