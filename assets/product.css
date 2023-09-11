@@ -2106,16 +2106,6 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   letter-spacing: 0.04em;
 }
 
-.merch__icons.multi__merch--icons {
-  display: flex;
-}
-
-.merch__icons.multi__merch--icons .product__ctarow {
-  flex-direction: column;
-  text-align: center;
-  flex: 1;
-}
-
 .merch__icons.multi__merch--icons .product__free-shipping span {
   font-family: Saa Series F D;
   font-size: 10px;
@@ -2255,4 +2245,18 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
 .hide-rebuy .rebuy-widget {
   display: none !important;
+}
+
+@media only screen and (min-width: 768px) { 
+  
+  .merch__icons.multi__merch--icons {
+    display: flex;
+  }
+  
+  .merch__icons.multi__merch--icons .product__ctarow {
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+  }
+  
 }
