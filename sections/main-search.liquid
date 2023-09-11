@@ -38,8 +38,14 @@
 											{%- render 'facets-bar', results: search, enable_filtering: enable_filtering, enable_sorting: enable_sorting -%}
 											<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }}">
 												{%- for item in search.results -%}
+                                                  {% assign show = true %}
+                                                  {% for tag in item.tags %}
+                                                    {% if tag contains 'hide_from_search' %}
+                                                      {% assign show = false %}
+                                                    {% endif %}
+                                                  {% endfor %}
                                                   {% if item.object_type == 'product' %}
-													<li class="column">
+													<li class="column {% if show != true %}hide-search{% endif %}">
                                                       {% render 'product-card', product_card_product: item %}
 													</li>
                                                   {%- endif -%}
