@@ -2056,7 +2056,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   display: block;
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: 53%;
   transform: translateY(-50%);
 }
 
