@@ -337,6 +337,7 @@ $(document).ready(function() {
     $('.short_description').animate({ "max-height": og_height});
     $('.short_description .metafield-rich_text_field').animate({ "max-height": og_height});
     $(this).hide();
+    $('.short_description').addClass('expanded');
     $('.read_less').show();
     $('.rm_grad').hide();
   });
@@ -345,6 +346,7 @@ $(document).ready(function() {
     $('.short_description').animate({ "max-height": "300px"});
     $('.short_description .metafield-rich_text_field').animate({ "max-height": "300px"});
     $(this).hide();
+    $('.short_description').removeClass('expanded');
     $('.rm_grad').show(); 
     $('.read_more').show();
   });
