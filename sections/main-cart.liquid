@@ -76,7 +76,7 @@
                         {% if product_info.cart_title != blank %}
                           {{ product_info.cart_title }}
                         {% elsif product_info.title != blank %}
-                          {{ product_info.title }}
+                          {{ product_info.title | metafield_tag }}
                         {% else %}
                           {{ item.product.title }}
                         {% endif %}
