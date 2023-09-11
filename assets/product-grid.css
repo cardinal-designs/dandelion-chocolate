@@ -778,8 +778,7 @@
   margin-right: 2px;
 }
 
-.product-title-uppercase-true .opti__fonts.product-card .product-card-title,
-.opti__fonts * {
+.product-title-uppercase-true .opti__fonts.product-card .product-card-title {
   font-family: OPTICaslonBold-Cond;
   text-transform: uppercase;
 }
