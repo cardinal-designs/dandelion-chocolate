@@ -2188,6 +2188,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   line-height: 8px;
   color: #A28D5B;
   opacity: 0.6;
+  margin-bottom: 0;
 }
 
 .product__tasting-note {
