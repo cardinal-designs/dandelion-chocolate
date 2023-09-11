@@ -120,7 +120,7 @@
                   {% unless item.variant.title contains 'Default' %}
                     <div class="product-cart-item-options">
                       {% for option in item.product.options %}
-                        {{ item.variant.options[forloop.index0] }} {% if option == 'Size' %}{{ item.variant.metafields.custom.variant_subtitle }}{% endif %} {% if forloop.last != true %},
+                        {{ item.variant.options[forloop.index0] }} {% if option == 'Size' %}({{ item.variant.metafields.custom.variant_subtitle }}){% endif %} {% if forloop.last != true %},
                         {% endif %}
                       {% endfor %}
                     </div>
