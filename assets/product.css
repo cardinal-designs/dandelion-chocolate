@@ -2284,5 +2284,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   .merch__icons.multi__merch--icons {
     margin-top: 20px;
   }
+
+  .product__free-shipping {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
   
 }
