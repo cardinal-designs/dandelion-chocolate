@@ -622,7 +622,7 @@
                     {% if block.settings.included_description != blank %}
                       <dt>included in this assorment</dt>
                       <dd>
-                        {{ block.settings.included_description }}
+                        {{ block.settings.included_description | newline_to_br }}
                       </dd>
                     {% endif %}
                 
