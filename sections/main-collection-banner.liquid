@@ -15,18 +15,7 @@
 	endif
 -%}
 {%- if template == 'search' -%}
-	{%- liquid
-		assign show_collection_image = false
-		assign show_subcollections = false
-		assign title = 'search.heading' | t
-	-%}
-	{%- capture description %}
-		{% assign search_phrase = search.terms | replace: '*', '' %}
-		{% if '' != search_phrase %}
-			<p>{{ 'search.results_found' | t: count: search.results_count, key: search_phrase }}</p>
-		{% endif %}
-	{%- endcapture -%}
-  {% assign counter = 0 %}
+   {% assign counter = 0 %}
     {%- for item in search.results -%}
       {% assign show = true %}
       {% for tag in item.tags %}
@@ -35,6 +24,19 @@
         {% endif %}
       {% endfor %}
     {% endfor %}
+  {% assign searchCount = search.results_count | minus: counter %}
+	{%- liquid
+		assign show_collection_image = false
+		assign show_subcollections = false
+		assign title = 'search.heading' | t
+	-%}
+	{%- capture description %}
+		{% assign search_phrase = search.terms | replace: '*', '' %}
+		{% if '' != search_phrase %}
+			<p>{{ 'search.results_found' | t: count: searchCount, key: search_phrase }}</p>
+		{% endif %}
+	{%- endcapture -%}
+ 
 {%- endif -%}
 
 
@@ -64,7 +66,7 @@
 				{% endif %}
 				{%- if show_collection_description and description != '' -%}
 				<div class="collection-banner--description">
-					<p>{{ description }}</p> -- {{ counter }}
+					<p>{{ description }}</p>
 				</div>
 				{%- endif -%}
 				{%- if show_subcollections -%}
