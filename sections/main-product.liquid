@@ -694,9 +694,11 @@
                   {% endif %}
                 {%- when 'description' -%}
                   {% if product.metafields.info.special_message_location == 'Top' %}
-                    <div class="special__message--wrap">
-                      {{ product.metafields.info.special_message }}
-                    </div>
+                    {% if product.metafields.info.special_message != blank %}
+                      <div class="special__message--wrap">
+                        {{ product.metafields.info.special_message }}
+                      </div>
+                    {% endif %}
                   {% endif %}
                   <div class="product-short-description rte product__description" {{ block.shopify_attributes }}>
                     {{ product.description }}
