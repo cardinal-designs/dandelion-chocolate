@@ -55,8 +55,8 @@
                     <div class="product-cart-item">
                       <div class="product-cart-item-image">
                         <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}">
-                          {% if item.product.metafields.info.cart_image_url != blank %}
-                            {%- render 'responsive-image', image: item.product.metafields.info.cart_image_url, sizes: '192x0' -%}
+                          {% if item.product.metafields.image.cart_image_url != blank %}
+                            {%- render 'responsive-image', image: item.product.metafields.image.cart_image_url, sizes: '192x0' -%}
                            {% else %}
                             {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
                           {% endif %}
