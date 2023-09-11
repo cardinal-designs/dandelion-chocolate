@@ -65,7 +65,7 @@
                     title="{{ item.product.title | escape }}"
                     class="cart-product-link">
                     {% if item.product.metafields.info.cart_title != blank %}
-                      {{ item.product.metafields.info.cart_title }}
+                      {{ item.product.metafields.info.cart_title | metafield_tag }}
                     {% else %}
                       {{ item.product.title }}
                     {% endif %}
