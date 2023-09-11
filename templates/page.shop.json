@@ -52,10 +52,10 @@
         "content_width": "medium",
         "content_position": "middle-left",
         "text_alignment": "left",
-        "overlay_opacity": 30,
+        "overlay_opacity": 33,
         "show_caption_box": true,
         "caption_over_banner": true,
-        "caption_bg": "#FFFFFFF2",
+        "caption_bg": "#fff",
         "mobile_caption_bg": "#F5F6F5",
         "stack_on_mobile": false,
         "content__bg": "#333333",
@@ -68,6 +68,7 @@
       "blocks": {
         "69477bf6-7c61-4feb-b9a2-00992fbb7f42": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "FRESHLY BAKED",
             "subheading_color": "#d3a741"
@@ -76,7 +77,7 @@
         "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3": {
           "type": "heading",
           "settings": {
-            "text": "Summer Treat Tin",
+            "text": "Halva Bonbons",
             "heading_size": "h1",
             "heading_color": "#333333"
           }
@@ -84,7 +85,7 @@
         "1c54a7df-956d-4754-add0-db32fb0b4e9e": {
           "type": "text",
           "settings": {
-            "text": "<p>Featuring freshly baked fudgy brownies, Miso Blondies, and chocolate-and-vanilla Cookies & Cream Sandwiches, this collection inlcludes Chef Lisa's versions of time-honored treats in a custom-designed, take-anywhere Summer Treat Tin.<\/p>",
+            "text": "<p>Hand-crafted Seed + Mill sesame-seed halva tops velvety, cardamom-scented 70% Tumaco, Colombia chocolate ganache — all enrobed in Dandelion 70% House Blend chocolate, and finished with edible gold foil.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333"
           }
@@ -109,17 +110,17 @@
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
-        "image": "shopify:\/\/shop_images\/STT_Banner_Image_9059ded3-d1fe-422e-8126-5796283049de.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Summer_Treats_Tin_-_Kitchen_-_Dandelion_Chocolate_2023.jpg",
+        "image": "shopify:\/\/shop_images\/Halva_Hero_bg.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Halva_Hero_mobile.jpg",
         "desktop_height": "desktop-height-500",
         "mobile_height": "mobile-height-635",
         "content_width": "medium",
         "content_position": "middle-left",
         "text_alignment": "left",
-        "overlay_opacity": 30,
+        "overlay_opacity": 0,
         "show_caption_box": true,
         "caption_over_banner": true,
-        "caption_bg": "#FFFFFFF2",
+        "caption_bg": "rgba(0,0,0,0)",
         "mobile_caption_bg": "#F5F6F5",
         "stack_on_mobile": false,
         "content__bg": "#333333",
