@@ -1464,6 +1464,7 @@ product-add-to-cart-sticky .variations fieldset {
 
 /*================ Accordion ================*/
 
+d.meta__accordion--list,
 dl.accordion-list {
   background-color: transparent;
   border: none;
@@ -1482,6 +1483,7 @@ dl.accordion-list {
   margin-top: 30px;
 }
 
+.product dl.meta__accordion--list dt,
 .product dl.accordion-list dt {
   text-transform: uppercase;
   border-top: 1px solid #333;
@@ -1493,14 +1495,17 @@ dl.accordion-list {
   color: #666666;
 }
 
+.product dl.meta__accordion--list dt span,
 .product dl.accordion-list dt span {
   font-size: 13px !important;
 }
 
+dl.meta__accordion--list dt:hover
 dl.accordion-list dt:hover {
   background-color: rgba(255, 198, 0, 0.5); 
 }
 
+dl.meta__accordion--list dt:after,
 dl.accordion-list dt:after {
   content: '＋';
   font-weight: bold;
@@ -1511,10 +1516,12 @@ dl.accordion-list dt:after {
   text-shadow: 0 0 0 #A28D5B; 
 }
 
+dl.meta__accordion--list dt.active:after,
 dl.accordion-list dt.active:after {
   content: '－'; 
 }
 
+dl.meta__accordion--list dd,
 dl.accordion-list dd {
   padding: 5px 5px 15px 5px;
   display: none;
