@@ -10,7 +10,7 @@
 		  {{ option.name }}{{ sizing_link }}
 		</div>
 		<div class="select">
-          {{ product.metafields.custom.calendar_for_one_  | metafield_tag }}
+          
 		  <select
 				id="Option-{{ section.id }}-{{ forloop.index0 }}{{ appended }}"
 				name="options[{{ option.name | escape | append: appended }}]"
@@ -20,7 +20,7 @@
 		      <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
                 {% if option.name == 'Size' %}
                   {% if forloop.index == 1 %}
-                    {% assign customOptions = product.metafields.custom.calendar_for_one_ | default: value %}
+                    {{ product.metafields.custom.calendar_for_one_  | metafield_tag }}
                   {% else %}
                     {% assign customOptions = product.metafields.custom.calendar_for_two | default: value %}
                   {% endif %}
