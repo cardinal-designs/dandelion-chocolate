@@ -16,13 +16,12 @@
 				form="{{ product_form_id }}"
 			>
 		    {%- for value in option.values -%}
-              {{ product.metafields.custom.calendar_for_one_ |metafield_tag }}
 		      <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
                 {% if option.name == 'Size' %}
                   {% if forloop.index == 1 %}
                     {% assign customOptions = product.metafields.custom.calendar_for_one_ | metafield_tag | default: value %}
                   {% else %}
-                    {% assign customOptions = product.metafields.custom.calendar_for_two.value | default: value %}
+                    {% assign customOptions = product.metafields.custom.calendar_for_two.value | metafield_tag | default: value %}
                   {% endif %}
                   {{ customOptions }}
                 {% else %}
