@@ -5961,7 +5961,14 @@ input[type="radio"],
 
 .micro__copy {
   font-size: 16px;
-  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  margin: 10px 0 8px;
+}
+
+.product-cart-item .micro__copy {
+  font-size: 14px;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
