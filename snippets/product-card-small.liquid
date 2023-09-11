@@ -28,6 +28,8 @@
     <span>
       {% if product_small.metafields.info.origin_region != blank %}
         {{ product_small.metafields.info.origin_region }}
+      {% elsif product_small.metafields.info.title != blank %}
+        {{ product_small.metafields.info.title }}
       {% else %}
          {{ product_title }}
       {% endif %}
