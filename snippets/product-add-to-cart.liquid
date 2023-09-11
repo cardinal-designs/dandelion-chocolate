@@ -125,7 +125,7 @@
     {% for merch_icon in product.metafields.custom.merch_icons.value %}
       {% assign merch_icons_count = merch_icons_count | plus: 1 %}
     {% endfor %}
-    <div class="merch__icons {% if merch_icons_count > 1 %}multi__merch--icons{% endif %}">
+    <div class="merch__icons {% if merch_icons_count > 0 %}multi__merch--icons{% endif %}">
       {% if product.metafields.custom.merch_icons.value != blank %}
         {% for merch_icon in product.metafields.custom.merch_icons.value %}
           {% assign merch_text = merch_icon | downcase | strip %}
