@@ -2305,6 +2305,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   .meta__bar--icons div {
     flex: 0 1 16.66%;
     max-width: 16.66%;
+    margin: 0;
   }
   
 }
