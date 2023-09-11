@@ -5937,3 +5937,7 @@ input[type="radio"],
 }
 
 /***** Cart Drawer End *****/
+
+.template-search .hide-search {
+  display: none !important;
+}
