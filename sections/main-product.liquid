@@ -616,12 +616,6 @@
                       {{ block.settings.tasting_notes }}
                     </div>
                   {% endif %}
-                {%- when 'product_description' -%}
-                {% if block.settings.product_description != blank %}
-                  <div class="meta__product--description">
-                    {{ block.settings.product_description | newline_to_br }} 
-                  </div>
-                {% endif %}
                 {%- when 'tab_list' -%}
                   <dl class="accordion-list meta__accordion--list">
                 
@@ -700,8 +694,12 @@
                       </div>
                     {% endif %}
                   {% endif %}
-                  <div class="product-short-description rte product__description" {{ block.shopify_attributes }}>
-                    {{ product.description }}
+                  <div class="product-short-description rte product__description meta__product--description" {{ block.shopify_attributes }}>
+                    {% if product.metafields.info.product_description != blank %}
+                      {{ product.metafields.info.product_description | newline_to_br }} 
+                    {% else %}
+                      {{ product.description }}
+                    {% endif %}
                   </div>
                   {% if product.metafields.info.special_message_location == 'Bottom' %}
                     <div class="special__message--wrap">
@@ -1678,18 +1676,6 @@
       "type": "icon_list",
       "name": "Product Icons",
       "limit": 1
-    },
-    {
-      "type": "product_description",
-      "name": "Product Description",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "product_description",
-          "label": "Product Description"
-        }
-      ]
     },
     {
       "type": "description",
