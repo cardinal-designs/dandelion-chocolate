@@ -349,6 +349,12 @@ $(document).ready(function () {
       });
   
   });
+
+  var productsLength = $('.template-search #product-grid .column:visible').length;
+  var hiddenProducts = $('.hide-search').length;
+  if(productsLength && hiddenProducts){
+    $('.facets__label').text(productsLength+ " Results")
+  }
 })
 
 
