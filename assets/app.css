@@ -5165,7 +5165,7 @@ select.resize-select {
   font-size: 18px;
   margin-bottom: 5px;
   line-height: 21.6px;
-  letter-spacing: .04em;
+  letter-spacing: normal;
 }
 
 .cart-drawer--recommendations .product-cart-item .cart-product-link .opti__fonts {
