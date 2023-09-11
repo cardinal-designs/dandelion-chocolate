@@ -120,7 +120,7 @@
                   {% unless item.variant.title contains 'Default' %}
                     <div class="product-cart-item-options">
                       {% for option in item.product.options %}
-                        {{ option.name }}
+                        {{ option }}
                         {{ item.variant.options[forloop.index0] }}{% if forloop.last != true %},
                         {% endif %}
                       {% endfor %}
