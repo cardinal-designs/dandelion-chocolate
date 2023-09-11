@@ -349,6 +349,11 @@ $(document).ready(function () {
       });
   
   });
+
+  var productsLength = $('.template-search #product-grid .column:visible').length;
+  if(productsLength){
+    $('.facets__label').text(productsLength+ " Results")
+  }
 })
 
 
