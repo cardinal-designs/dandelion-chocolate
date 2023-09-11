@@ -2027,15 +2027,16 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border: 1px solid var(--color-form-border);
   padding: 12px 17px;
   height: 45px;
-  color: #333;
+  color: #33383C;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 17px;
   letter-spacing: 0.02em;
   background: transparent;
   max-width: 100%;
   border-radius: 0;
   cursor: pointer;
+  font-family: 'Garamond Premiere Pro';
 }
 
 .product-information .variations select {
