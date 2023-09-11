@@ -2289,5 +2289,9 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
     margin-bottom: 8px;
     margin-top: 8px;
   }
+
+  .thb-product-detail .product-short-description {
+    margin-bottom: 20px;
+  }
   
 }
