@@ -610,12 +610,6 @@
                       </a>
                     {%- endif -%}
                   </div>
-                {%- when 'tasting_notes' -%}
-                  {% if block.settings.tasting_notes != blank %}
-                    <div class="meta__tasting--notes">
-                      {{ block.settings.tasting_notes }}
-                    </div>
-                  {% endif %}
                 {%- when 'tab_list' -%}
                   <dl class="meta__accordion--list">
                 
@@ -693,6 +687,11 @@
                         {{ product.metafields.info.special_message }}
                       </div>
                     {% endif %}
+                  {% endif %}
+                  {% if block.settings.tasting_notes != blank %}
+                    <div class="meta__tasting--notes">
+                      {{ block.settings.tasting_notes }}
+                    </div>
                   {% endif %}
                   <div class="product-short-description rte product__description meta__product--description" {{ block.shopify_attributes }}>
                     {% if product.metafields.info.product_description != blank %}
@@ -1594,18 +1593,6 @@
           "default": false,
           "label": "Show recipient form for gift card products",
           "info": "When enabled, gift card products can optionally be sent to a recipient with a personal message."
-        }
-      ]
-    },
-    {
-      "type": "tasting_notes",
-      "name": "Tasting Notes",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "tasting_notes",
-          "label": "Tasting Notes"
         }
       ]
     },
