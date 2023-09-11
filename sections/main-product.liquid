@@ -688,9 +688,9 @@
                       </div>
                     {% endif %}
                   {% endif %}
-                  {% if block.settings.tasting_notes != blank %}
+                  {% if product.metafields.info.tasting_notes != blank %}
                     <div class="meta__tasting--notes">
-                      {{ block.settings.tasting_notes }}
+                      {{ product.metafields.info.tasting_notes }}
                     </div>
                   {% endif %}
                   <div class="product-short-description rte product__description meta__product--description" {{ block.shopify_attributes }}>
