@@ -1,5 +1,5 @@
 <product-card class="product-cart-item">
-  <div class="product-cart-item-image {% if product_small.type == "Chocolate Bar" %}chocolate__bar-product{% endif %}">
+  <div class="product-cart-item-image {% if product_small.metafields.custom.product_title_fonts.value contains "OPTICaslonBold" %}opti__fonts{% endif %}">
     {% if product_small.featured_image %}
       <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
         {%- render 'responsive-image', image: product_small.featured_image, sizes: '192x0' -%}
