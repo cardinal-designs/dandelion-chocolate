@@ -529,8 +529,8 @@
                     <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
                       {%- if product.metafields.info.origin_region != blank -%}
                         {{ product.metafields.info.origin_region }}
-                      {%- elsif product.metafields.info.title != blank -%}
-                        {{ product.metafields.info.title }}
+                      {%- elsif product.metafields.info.title.value != blank -%}
+                        {{ product.metafields.info.title.value }}
                       {%- else -%}
                         {{ product.title }}       
                       {%- endif -%}
