@@ -27,7 +27,7 @@
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
     <span>
       {% if product_small.metafields.info.origin_region != blank %}
-        {{ product_small.metafields.info.origin_region }}
+        {{ product_small.metafields.info.origin_region | metafield_tag }}
       {% elsif product_small.metafields.info.title != blank %}
         {{ product_small.metafields.info.title | metafield_tag }}
       {% else %}
