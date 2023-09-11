@@ -1285,6 +1285,7 @@ product-add-to-cart-sticky .variations fieldset {
 .product .product-information {
   max-width: 452px;
   margin: 0 auto;
+  width: 100%; 
 }
 
 .thb-product-detail .product-short-description {
