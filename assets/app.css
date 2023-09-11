@@ -5958,3 +5958,12 @@ input[type="radio"],
 .template-search .hide-search {
   display: none !important;
 }
+
+.micro__copy {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-top: 5px;  
+}
