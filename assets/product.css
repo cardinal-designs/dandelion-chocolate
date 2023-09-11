@@ -2037,6 +2037,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-radius: 0;
   cursor: pointer;
   font-family: 'Garamond Premiere Pro';
+  min-height: 50px;
 }
 
 .product-information .variations select {
