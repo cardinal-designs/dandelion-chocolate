@@ -144,7 +144,10 @@
               </div>
             </div> 
             <span class="">
-              {{ merch_text }} {% if merch_text == 'free shipping' %}{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}{% endif %}
+              {{ merch_text }} 
+              {% comment %}
+                {% if merch_text == 'free shipping' %}{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}{% endif %}
+              {% endcomment %}
             </span>
           </div>     
         {% endfor %}
