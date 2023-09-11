@@ -2293,5 +2293,9 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   .thb-product-detail .product-short-description {
     margin-bottom: 20px;
   }
+
+  .short_description {
+    margin-bottom: 34px;
+  }
   
 }
