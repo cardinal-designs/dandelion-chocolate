@@ -2157,6 +2157,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 }
 
 .meta__accordion--list * {
+  font-family: Garamond Premiere Pro;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: normal;
@@ -2170,7 +2171,6 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 }
 
 .ingredients__list--item {
-  font-family: Garamond Premiere Pro;
   margin-bottom: 10px;
 }
 
