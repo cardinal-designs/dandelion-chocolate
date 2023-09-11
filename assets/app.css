@@ -5162,9 +5162,19 @@ select.resize-select {
 .cart-drawer--recommendations .product-cart-item .cart-product-link {
   text-transform: capitalize;
   color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 21.6px;
+  letter-spacing: .04em;
+}
+
+.cart-drawer--recommendations .product-cart-item .cart-product-link .opti__fonts {
+  text-transform: capitalize;
+  color: #333;
   font-size: 16px;
   margin-bottom: 5px;
   font-family: OPTICaslonBold-Cond;
+  text-transform: uppercase;
   line-height: 20.48px;
   letter-spacing: .04em;
 }
