@@ -131,7 +131,7 @@
         {% for merch_icon in product.metafields.custom.merch_icons.value %}
           {% assign merch_text = merch_icon | downcase | strip %}
           <div class="product__ctarow product__free-shipping">
-            <div class="product__ctacol--icon">
+            <div class="product__ctacol--icon aaaa">
               <div class="icon--extra-large icon--circle" >
                 {% if merch_text == 'free shipping' %}
                   {% render 'icon-truck-2' %} 
