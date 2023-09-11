@@ -2139,6 +2139,9 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   height: 16px;
   display: inline-block;
   margin-right: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .meta__tasting--notes,
