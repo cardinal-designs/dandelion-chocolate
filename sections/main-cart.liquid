@@ -58,6 +58,7 @@
                           {% if item.product.metafields.info.cart_image_url != blank %}
                             {%- render 'responsive-image', image: item.product.metafields.info.cart_image_url, sizes: '192x0' -%}
                            {% else %}
+                            test
                             {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
                           {% endif %}
                         </a>
