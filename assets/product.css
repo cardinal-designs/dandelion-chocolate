@@ -2298,4 +2298,8 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
     margin-bottom: 34px;
   }
   
+  .meta__bar--icons {
+    display: flex;
+  }
+  
 }
