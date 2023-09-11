@@ -5960,10 +5960,10 @@ input[type="radio"],
 }
 
 .micro__copy {
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: lowercase;
-  margin-top: 5px;  
+  margin: 10px 0 8px;
 }
