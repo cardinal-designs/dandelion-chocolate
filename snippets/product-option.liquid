@@ -10,6 +10,7 @@
 		  {{ option.name }}{{ sizing_link }}
 		</div>
 		<div class="select">
+          {{ product.metafields.custom.calendar_for_one_  | metafield_tag }}
 		  <select
 				id="Option-{{ section.id }}-{{ forloop.index0 }}{{ appended }}"
 				name="options[{{ option.name | escape | append: appended }}]"
