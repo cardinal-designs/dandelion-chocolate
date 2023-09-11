@@ -2222,6 +2222,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   font-weight: 500;
 }
 
+.short_description {
+  padding-bottom: 16px;
+}
+
 .short_description .metafield-rich_text_field {
   overflow: hidden;
 }
