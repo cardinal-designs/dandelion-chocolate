@@ -132,8 +132,8 @@
   <div class="product-card-info">
     {%- if settings.show_products_vendor -%}
       <div class="product-card-vendor sh1">
-        <a href="{{ product_card_product.metafields.info.vendor_name | url_for_vendor }}" title="{{ product_card_product.metafields.info.vendor_name | escape }}">
-          {{ product_card_product.metafields.info.vendor_name }}
+        <a href="{{ product_card_product.vendor | url_for_vendor }}" title="{{ product_card_product.vendor | escape }}">
+          {{ product_card_product.vendor }}
         </a>
       </div>
     {%- endif -%}
