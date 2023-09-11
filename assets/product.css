@@ -2278,3 +2278,11 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   }
   
 }
+
+@media only screen and (max-width: 767px) { 
+
+  .merch__icons.multi__merch--icons {
+    margin-top: 20px;
+  }
+  
+}
