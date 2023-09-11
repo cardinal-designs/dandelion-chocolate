@@ -1320,6 +1320,7 @@ product-add-to-cart-sticky .variations fieldset {
   border-radius: 30px;
   background-color: #E2C465 !important;
   border: 0;
+  margin: 0;
   transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
 
