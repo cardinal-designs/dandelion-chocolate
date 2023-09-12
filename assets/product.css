@@ -1303,7 +1303,7 @@ product-add-to-cart-sticky .variations fieldset {
 .product .quantity.buttons_added .qty,
 .product .quantity .minus, .quantity .plus {
   width: 52px;
-  height: 52px;
+  height: 46px;
   background: transparent !important;
 }
 
