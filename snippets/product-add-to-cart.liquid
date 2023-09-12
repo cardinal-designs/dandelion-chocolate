@@ -65,7 +65,7 @@
               <span class="single-add-to-cart-button--text">
                 {%- if product.selected_or_first_available_variant.available and sold_out != true -%}
                   {{ 'products.product.add_to_cart' | t }}
-                  {% render 'product-price' %}
+                  <span>{{ money_price }}</span>
                 {%- else -%}
                   {{ 'products.product.sold_out' | t }}
                 {%- endif -%}
