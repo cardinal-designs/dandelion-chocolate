@@ -24,8 +24,6 @@
     {% endif %}
   {% endfor %}
   {% endfor %}
-
-------{{ hideCount }}
   
 	{%- liquid
 		assign show_collection_image = false
@@ -34,8 +32,9 @@
 	-%}
 	{%- capture description %}
 		{% assign search_phrase = search.terms | replace: '*', '' %}
+      
 		{% if '' != search_phrase %}
-			<p>{{ 'search.results_found' | t: count: search.results_count, key: search_phrase }}</p>
+			
 		{% endif %}
 	{%- endcapture -%}
 {%- endif -%}
