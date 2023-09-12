@@ -165,6 +165,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var getPosition = $('.media__gallery').attr('data-position');
   if(getPosition){
+    console.log($('#Product-Slider .product-images__slide:eq(1)'));
+    console.log($("#Product-Slider .product-images__slide:eq(0)"))
     $('#Product-Slider .product-images__slide:eq(1)').insertBefore("#Product-Slider .product-images__slide:eq(0)");
   }
   console.log('getPosition',getPosition);
