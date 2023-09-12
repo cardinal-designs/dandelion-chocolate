@@ -4964,6 +4964,7 @@ select.resize-select {
   text-transform: uppercase;
   color: #777779;
   font-family: Saa Series F D;
+  line-height: 12px;
 }
 
 .product-cart-item .small-qty {
