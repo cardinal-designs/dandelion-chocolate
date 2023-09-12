@@ -73,11 +73,11 @@
                 {% render 'svg-icons' with 'thb-loading' %}
               </span>
               <span class="separator"> · </span>
-              <div class="product-price-container">
-                <div class="no-js-hidden" id="price-{{ section.id }}">
+              <span class="product-price-container">
+                <span class="no-js-hidden" id="price-{{ section.id }}">
                   {% render 'product-price', product: product, use_variant: true, show_badges: true %}
-                </div>
-              </div>
+                </span>
+              </span>
           </button>
             {%- if show_dynamic_checkout -%}
 		      {{ form | payment_button }}
