@@ -57,13 +57,10 @@
   {% assign offsetValue = 1 %}
 {% endif %}
 {{  }}
-{% for media in product.media %}
-  {% if media.media_type == 'image' %}
-    {{ media.preview_image.id }}, {{ product.metafields.info.product_featured_image }}
+{% for image in product.images %}
     {% if media.id == product.metafields.info.product_featured_image %}
       {% assign position = media.position %}
     {% endif %}
-  {% endif %}
 {% endfor %}
 
 {%- if first_3d_model -%}
