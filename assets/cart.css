@@ -607,11 +607,6 @@ body .zapietModal.moreInformation h2 {
   font-weight: 400;
 }
 
-.product-title-uppercase-true .product-cart-item .cart-product-link.opti__fonts {
-  font-family: OPTICaslonBold-Cond;
-  text-transform: uppercase;
-}
-
 .cart-items tbody tr td.product-quantity .quantity path {
   fill: #333;
 }
