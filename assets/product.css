@@ -2334,6 +2334,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
 .product__price-main span.price .amount {
   color: #333333;
+  transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
 
 .product__price-main .price {
