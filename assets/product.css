@@ -1803,6 +1803,10 @@ quantity-selector.quantity .plus svg {
     margin-left: 0;
     margin-right: 0;
     width: 101px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
   }
 
   .product .add_to_cart_holder .button {
