@@ -1722,8 +1722,7 @@ quantity-selector.quantity .plus svg {
   font-weight: 400;
 }
 
-.product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title,
-.product-title-uppercase-true .product-add-to-cart-sticky--title.opti__fonts {
+.product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title {
   font-family: OPTICaslonBold-Cond;
   text-transform: uppercase;
   font-size: 20px;
