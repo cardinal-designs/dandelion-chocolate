@@ -14,7 +14,7 @@
       </div>       
     {% endif %}
     
-      <div class="product-add-to-cart-sticky--title">
+      <div class="product-add-to-cart-sticky--title {% if product.metafields.custom.product_title_fonts.value contains "OPTICaslonBold" or product.type == 'Chocolate Bar' %}opti__fonts{% endif %}">
         {% if product.metafields.info.origin != blank %}
           {{ product.metafields.info.origin }}
         {% else %}
