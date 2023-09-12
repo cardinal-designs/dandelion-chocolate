@@ -164,6 +164,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var flkty2 = new Flickity(elem);
 
   var getPosition = $('.media__gallery').attr('data-position');
+  if(getPosition){
+    $('#Product-Slider .product-images__slide').eq(getPosition).insertAfter("#Product-Slider .product-images__slide:eq(0)");
+  }
   console.log('getPosition',getPosition);
   
   var flkty1 = new Flickity(flickityContainer, {
