@@ -27,7 +27,7 @@
     {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
 
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
-      <span class="{% if product_small.metafields.custom.product_title_fonts.value contains "OPTICaslonBold" %}opti__fonts{% endif %}">
+      <span class="{% if product_small.metafields.custom.product_title_fonts.value contains "OPTICaslonBold" or product_small.type == 'Chocolate Bar' %}opti__fonts{% endif %}">
         {% if product_small.metafields.info.origin_region != blank %}
           {{ product_small.metafields.info.origin_region | metafield_tag }}
         {% elsif product_small.metafields.info.title != blank %}
