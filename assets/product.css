@@ -2327,6 +2327,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   display: inline-block;
 }
 
+.product__price-main span.price .amount {
+  color: #333333;
+}
+
 .product__price-main .price {
   font-size: 13px;
 }
