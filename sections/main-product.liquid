@@ -620,11 +620,11 @@
                       </dd>
                     {% endif %}
                 
-                    {% if block.settings.ingredients != blank or block.settings.ingredients_allergens != blank or product.metafields.info.allergen_facility != blank  %}
+                    {% if product.metafields.info.ingredients != blank or product.metafields.info.allergens != blank or product.metafields.info.allergen_facility != blank  %}
                       <dt>INGREDIENTS & ALLERGENS</dt>
                       <dd>
-                        <div class="ingredients__list--item">{{ block.settings.ingredients | newline_to_br }}</div>
-                        <div class="ingredients__list--item">{{ block.settings.ingredients_allergens }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.ingredients | newline_to_br }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.allergens }}</div>
                         <div class="ingredients__list--item">{{ product.metafields.info.allergen_facility }}</div>
                       </dd>
                     {% endif %}
@@ -690,7 +690,7 @@
                   {% endif %}
                   {% if product.metafields.info.tasting_notes != blank %}
                     <div class="meta__tasting--notes">
-                      tasting notes: {{ product.metafields.info.tasting_notes }}
+                      {{ product.metafields.info.tasting_notes }}
                     </div>
                   {% endif %}
                   <div class="product-short-description rte product__description meta__product--description" {{ block.shopify_attributes }}>
