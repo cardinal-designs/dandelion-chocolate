@@ -34,7 +34,7 @@
 		{% assign search_phrase = search.terms | replace: '*', '' %}
       
 		{% if '' != search_phrase %}
-			
+			<p>{{ 'search.results_found' | t: count: search.results_count, key: search_phrase }}</p>
 		{% endif %}
 	{%- endcapture -%}
 {%- endif -%}
