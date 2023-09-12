@@ -538,6 +538,8 @@
                         {% endif %}
                       </div>
                     {% endif %}
+
+                    {% comment %}
                     <div class="product-price-container">
                       <div class="no-js-hidden" id="price-{{ section.id }}">
                         {% render 'product-price', product: product, use_variant: true, show_badges: true %}
@@ -554,7 +556,8 @@
                           </div>
                         {%- endif -%}
                       {%- endif -%}
-                    </div>                
+                    </div>
+                    {% endcomment %}
                     {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
                       <a class="star-rating-container" href="#shopify-product-reviews">
                         <div
