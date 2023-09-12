@@ -171,14 +171,14 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   console.log('getPosition',getPosition);
   
-  var flkty1 = new Flickity(flickityContainer, {
-      asNavFor: '.carousel-main',
-      prevNextButtons: true,
-      pageDots: false, 
-      wrapAround: false,
-      cellAlign: 'left',
-      contain: true
-  });
+  // var flkty1 = new Flickity(flickityContainer, {
+  //     asNavFor: '.carousel-main',
+  //     prevNextButtons: true,
+  //     pageDots: false, 
+  //     wrapAround: false,
+  //     cellAlign: 'left',
+  //     contain: true
+  // });
 
 });
 
