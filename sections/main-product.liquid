@@ -637,10 +637,10 @@
                           {{ weight | round: 2 }} oz ({{ product.metafields.info.product_weight_in_grams }} gm)
                         {% endif %}
                       
-                        {% if block.settings.product_weight_in_kg != blank %}
+                        {% if product.metafields.custom.product_weight_in_kilo != blank %}
                         <br>
-                          {% assign weight_kg = block.settings.product_weight_in_kg | times: 2.205 %}
-                          {{ weight_kg | round: 1 }} lb ({{ block.settings.product_weight_in_kg }} kg)
+                          {% assign weight_kg = product.metafields.custom.product_weight_in_kilo | times: 2.205 %}
+                          {{ weight_kg | round: 1 }} lb ({{ product.metafields.custom.product_weight_in_kilo }} kg)
                         {% endif %}
                       </dd>
                     {% endif %}
