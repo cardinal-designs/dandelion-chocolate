@@ -4305,7 +4305,7 @@ input[type="submit"][disabled] {
   pointer-events: none;
 }
 
-.button[disabled] span:not(.loading-overlay),
+.button[disabled] > span:not(.loading-overlay),
 input[type="submit"][disabled] span:not(.loading-overlay) {
   opacity: 0.5;
 }
