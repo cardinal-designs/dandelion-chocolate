@@ -58,8 +58,8 @@
 {% endif %}
 {{  }}
 {% for image in product.images %}
-    {% if media.id == product.metafields.info.product_featured_image %}
-      {% assign position = media.position %}
+    {% if image.id == product.metafields.info.product_featured_image %}
+      {% assign position = image.position %}
     {% endif %}
 {% endfor %}
 
