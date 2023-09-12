@@ -56,13 +56,13 @@
 {% if hostile == true %}
   {% assign offsetValue = 1 %}
 {% endif %}
-{{ product.metafields.info.product_featured_image }}
-{% for image in product.images %}
-  {{ image.id }}
-    {% if image.id == product.metafields.info.product_featured_image %}
-      called
-      {% assign position = image.position %}
+{{  }}
+{% for media in product.media %}
+  {% if media.media_type == 'image' %}
+    {% if media.id == product.metafields.info.product_featured_image %}
+      {% assign position = media.position %}
     {% endif %}
+  {% endif %}
 {% endfor %}
 
 {%- if first_3d_model -%}
