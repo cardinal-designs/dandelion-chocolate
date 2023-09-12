@@ -21,10 +21,7 @@
           {{ product.title }}
         {% endif %}
       </div>
-      {%- if product.metafields.info.country != blank -%}
-        <h2 class="product__country h2">{{ product.metafields.info.country }}</h2>
-      {% endif %}
-      
+
       {% if product.metafields.info.tasting_notes != blank %}
         <div class="product__detail">
           <div class="product__tasting-note">{{ product.metafields.info.tasting_notes }}</div>
