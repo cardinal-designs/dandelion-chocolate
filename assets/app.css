@@ -2439,7 +2439,7 @@ table.no-borders tfoot td:first-child {
   left: 0;
   z-index: 35;
   background: var(--bg-body, #fff);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 0;
   padding: 17px 30px;
   height: 72px;
 }
