@@ -410,12 +410,12 @@
   border-bottom: 1px solid var(--color-border); }
 
 .thb-product-detail .product-price-container .price {
-  font-size: 13px;
+  font-size: 14px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   letter-spacing: .15em;
-  color: #53595C;
+  color: #666;
 }
 
 .thb-product-detail .product-price-container .price .unit-price {
