@@ -1809,6 +1809,11 @@ quantity-selector.quantity .plus svg {
     align-items: center
   }
 
+  .add_to_cart_holder quantity-selector.quantity .minus svg {
+    width: 10px;
+    height: 3px;
+  }
+
   .product .add_to_cart_holder .button {
     margin-left: 10px;
   }
