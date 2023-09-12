@@ -56,6 +56,11 @@
 {% if hostile == true %}
   {% assign offsetValue = 1 %}
 {% endif %}
+
+{% for media in product.media %}
+  {{ media | json }}
+{% endfor %}
+
 {%- if first_3d_model -%}
   <link
     id="ModelViewerStyle"
