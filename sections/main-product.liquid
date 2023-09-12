@@ -527,7 +527,7 @@
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'title' -%}
-                  <div class="product-price-container product__price aaaa">
+                  <div class="product-price-container product__price">
                   </div>
                   <p class="meta__new--percentage">
                     {% if product.metafields.info.percentage != blank %}
@@ -598,7 +598,7 @@
                         {% endif %}
                       </div>
                     {% endif %}
-                    <div class="product-price-container">
+                    <div class="product-price-container test">
                       <div class="no-js-hidden" id="price-{{ section.id }}">
                         {% render 'product-price', product: product, use_variant: true, show_badges: true %}
                       </div>
