@@ -2335,9 +2335,6 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .product__price-main span.price .amount {
   color: #333333;
   transition: all .40s linear;
-}
-
-.product__price-main .price {
   font-size: 13px;
 }
 
