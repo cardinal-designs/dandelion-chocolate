@@ -645,11 +645,11 @@
                       </dd>
                     {% endif %}
 
-                    {% if block.settings.storage_instructions != blank or block.settings.shelf_life != blank %}
+                    {% if product.metafields.info.storage_instructions != blank or product.metafields.info.shelf_life != blank %}
                       <dt>ADDITIONAL INFORMATION</dt>
                       <dd>
-                        <div class="ingredients__list--item">{{ block.settings.storage_instructions }}</div>
-                        <div class="ingredients__list--item">{{ block.settings.shelf_life }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.storage_instructions }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.shelf_life }}</div>
                       </dd>
                     {% endif %}
                 
