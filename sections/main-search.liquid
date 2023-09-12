@@ -40,13 +40,6 @@
 											<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }}">
 												{%- for item in search.results -%}
                                                   
-                                                  {% assign show = false %}
-                                                  {% for tag in item.tags %}
-                                                    {% if tag contains 'hide_from_search' %}
-                                                      {% assign show = false %}
-                                                    {% endif %}
-                                                  {% endfor %}
-                                                  
                                                   {% if item.object_type == 'product' %}
                                                     {% unless tag contains 'hide_from_search' %}
   													<li class="column">
