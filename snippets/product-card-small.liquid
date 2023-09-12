@@ -29,7 +29,7 @@
     {%- endif -%}
     
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
-    <span>{{ product_title }}</span>
+    <span class="{% if product_small.metafields.custom.product_title_fonts.value contains "OPTICaslonBold" or product_small.type == 'Chocolate Bar' %}opti__fonts{% endif %}">{{ product_title }}</span>
     <div class="product-info-country">{{ product_small.metafields.info.country }}</div>
      {%- if product_small.metafields.custom.short_description != blank -%}
         <div class="card__tasting-notes">{{ product_small.metafields.custom.short_description }}</div>
