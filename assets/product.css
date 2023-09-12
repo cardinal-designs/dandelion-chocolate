@@ -1819,6 +1819,12 @@ quantity-selector.quantity .plus svg {
     height: 9px;
   }
 
+  .product .quantity.buttons_added .qty,
+  .product .quantity .minus, .quantity .plus {
+    width: 30px;
+    height: 46px;
+  }
+
   .product .add_to_cart_holder .button {
     margin-left: 10px;
   }
