@@ -61,22 +61,22 @@
             {% endif %}
           {% endfor %}
           
-				    <button type="submit" name="add" id="AddToCartSticky" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
-                      <span class="single-add-to-cart-button--text">
-						{%- if product.selected_or_first_available_variant.available -%}
-				          {{ 'products.product.add_to_cart' | t }} 
-				        {%- else -%}
-				          {{ 'products.product.sold_out' | t }}
-				        {%- endif -%}
-                      </span>
-                        <span class="loading-overlay">
-                          {% render 'svg-icons' with 'thb-loading' %}
-                        </span>
-                        <span class="separator"> · </span>
-                        <div id="price-btn-{{ section.id }}--sticky" class="sticky__add-to-cart">
-                          {% render 'product-price', product: product, use_variant: true, show_badges: false %}
-                        </div>
-                    </button>
+          <button type="submit" name="add" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
+            <span class="single-add-to-cart-button--text">
+              {%- if product.selected_or_first_available_variant.available -%}
+                {{ 'products.product.add_to_cart' | t }} 
+              {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- endif -%}
+            </span>
+              <span class="loading-overlay">
+                {% render 'svg-icons' with 'thb-loading' %}
+              </span>
+              <span class="separator"> · </span>
+              <div id="price-btn-{{ section.id }}--sticky" class="sticky__add-to-cart">
+                {% render 'product-price', product: product, use_variant: true, show_badges: false %}
+              </div>
+          </button>
             {%- if show_dynamic_checkout -%}
 		      {{ form | payment_button }}
 		    {%- endif -%}
