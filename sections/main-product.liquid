@@ -58,6 +58,7 @@
 {% endif %}
 {{  }}
 {% for image in product.images %}
+  {{ image.id }}
     {% if image.id == product.metafields.info.product_featured_image %}
       {% assign position = image.position %}
     {% endif %}
