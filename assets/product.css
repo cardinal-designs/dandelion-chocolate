@@ -1802,6 +1802,7 @@ quantity-selector.quantity .plus svg {
   .add_to_cart_holder .quantity {
     margin-left: 0;
     margin-right: 0;
+    width: 101px;
   }
 
   .product .add_to_cart_holder .button {
