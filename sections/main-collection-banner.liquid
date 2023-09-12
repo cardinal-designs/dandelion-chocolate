@@ -16,15 +16,17 @@
 -%}
 {%- if template == 'search' -%}
   {% assign hideCount = 0 %}
-  {%- for item in search.results -%} 
   {% assign hideFromSearch = false %}
+  {%- for item in search.results -%} 
   {% for tag in item.tags %}
     {% if tag == 'hide_from_search' %}
       {% assign hideCount = hideCount | plus: 1 %}
+      {% assign hideFromSearch = true %}
     {% endif %}
   {% endfor %}
   {% endfor %}
   
+
 	{%- liquid
 		assign show_collection_image = false
 		assign show_subcollections = false
@@ -32,10 +34,17 @@
 	-%}
 	{%- capture description %}
 		{% assign search_phrase = search.terms | replace: '*', '' %}
-      
-		{% if '' != search_phrase %}
+      {% if hideFromSearch %}
+        {% assign countSearch = search.results_count| minus: hideCount %}
+        {% if '' != search_phrase %}
+			<p>{{ 'search.results_found' | t: count: countSearch, key: search_phrase }}</p>
+		{% endif %}
+      {% else %}
+        {% if '' != search_phrase %}
 			<p>{{ 'search.results_found' | t: count: search.results_count, key: search_phrase }}</p>
 		{% endif %}
+      {% endif %}
+		
 	{%- endcapture -%}
 {%- endif -%}
 {{ 'collection-banner.css' | asset_url | stylesheet_tag }}
