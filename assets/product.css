@@ -1327,6 +1327,7 @@ product-add-to-cart-sticky .variations fieldset {
   border: 0;
   margin: 0;
   padding-top: 6px;
+  font-size: 13px;
   transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
 
