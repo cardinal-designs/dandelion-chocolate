@@ -56,7 +56,7 @@
 {% if hostile == true %}
   {% assign offsetValue = 1 %}
 {% endif %}
-{{  }}
+{{ product.metafields.info.product_featured_image }}
 {% for image in product.images %}
   {{ image.id }}
     {% if image.id == product.metafields.info.product_featured_image %}
