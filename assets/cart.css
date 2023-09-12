@@ -115,6 +115,7 @@
 .thb-cart-form .quantity {
   background: #f5f6f5;
   border: none;
+  border-radius: 5px;
 }
 
 .thb-cart-form .quantity .plus {
