@@ -179,6 +179,7 @@
                 </div>
               {%- endif -%}
 {% assign hostile = product.metafields.info.hide_gallery_image %}
+{{ hostile }}
               {%- for media in product.media -%}
                 {%- unless media.id == featured_media.id -%}
                   {%- liquid
