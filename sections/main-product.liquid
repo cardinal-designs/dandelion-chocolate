@@ -44,27 +44,12 @@
     assign single_media_visible_mobile = true
   endif
 -%}
-{% comment %}
+
 {% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}
   {% assign offsetValue = 2 %}
   {% else %}
   {% assign offsetValue = 1 %}
 {% endif %}
-{% endcomment %}
-
-{% assign hostile = product.metafields.info.hide_gallery_image %}
-{% if hostile == true %}
-  {% assign offsetValue = 1 %}
-{% endif %}
-{{  }}
-{% for media in product.media %}
-  {% if media.media_type == 'image' %}
-    {% if media.id == product.metafields.info.product_featured_image %}
-      {% assign position = media.position %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
 {%- if first_3d_model -%}
   <link
     id="ModelViewerStyle"
@@ -143,7 +128,7 @@
         {% endfor %}
         {% endcomment %}
         
-        <div class="media__gallery" id="MediaGallery-{{ section.id }}" data-position= "{{ position }}">
+        <div class="media__gallery" id="MediaGallery-{{ section.id }}">
           <div class="product-image-container">
             <product-slider
               id="Product-Slider"
@@ -193,9 +178,7 @@
                   </div>
                 </div>
               {%- endif -%}
-
-
-              {%- for media in product.media offset: offsetValue -%}
+              {%- for media in product.media -%}
                 {%- unless media.id == featured_media.id -%}
                   {%- liquid
                     if media.media_type == 'image'
@@ -366,7 +349,7 @@
               {%- endif -%}
 
               
-              {%- for media in product.media offset: offsetValue -%}
+              {%- for media in product.media -%}
                 {%- unless media.id == featured_media.id -%}
                   {%- liquid
                     if media.media_type == 'image'
@@ -527,7 +510,7 @@
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'title' -%}
-                  <div class="product-price-container product__price">
+                  <div class="product-price-container product__price aaaa">
                   </div>
                   <p class="meta__new--percentage">
                     {% if product.metafields.info.percentage != blank %}
@@ -598,7 +581,23 @@
                         {% endif %}
                       </div>
                     {% endif %}
-                
+                    <div class="product-price-container">
+                      <div class="no-js-hidden" id="price-{{ section.id }}">
+                        {% render 'product-price', product: product, use_variant: true, show_badges: true %}
+                      </div>
+                      {%- if section.settings.show_taxes_included != blank -%}
+                        {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+                          <div class="product__tax caption">
+                            {%- if cart.taxes_included -%}
+                              {{ 'products.product.include_taxes' | t }}
+                            {%- endif -%}
+                            {%- if shop.shipping_policy.body != blank -%}
+                              {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                            {%- endif -%}
+                          </div>
+                        {%- endif -%}
+                      {%- endif -%}
+                    </div>                
                     {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
                       <a class="star-rating-container" href="#shopify-product-reviews">
                         <div
@@ -691,16 +690,14 @@
                   {% endif %}
                   {% if product.metafields.info.tasting_notes != blank %}
                     <div class="meta__tasting--notes">
-                      tasting notes: {{ product.metafields.info.tasting_notes }}
+                      {{ product.metafields.info.tasting_notes }}
                     </div>
                   {% endif %}
+                  {% if product.metafields.info.product_description != blank %}
                   <div class="product-short-description rte product__description meta__product--description" {{ block.shopify_attributes }}>
-                    {% if product.metafields.info.product_description != blank %}
                       {{ product.metafields.info.product_description | metafield_tag | newline_to_br }} 
-                    {% else %}
-                      {{ product.description }}
-                    {% endif %}
                   </div>
+                  {% endif %}
                   {% if product.metafields.info.special_message_location == 'Bottom' %}
                     <div class="special__message--wrap">
                       {{ product.metafields.info.special_message }}
