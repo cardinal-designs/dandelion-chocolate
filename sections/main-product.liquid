@@ -60,7 +60,7 @@
 {% for media in product.media %}
   {% if media.media_type == 'image' %}
     {% if media.id == product.metafields.info.product_featured_image %}
-      {{ media.position }}
+      {% assign position = media.position %}
     {% endif %}
   {% endif %}
 {% endfor %}
@@ -143,7 +143,7 @@
         {% endfor %}
         {% endcomment %}
         
-        <div class="media__gallery" id="MediaGallery-{{ section.id }}">
+        <div class="media__gallery" id="MediaGallery-{{ section.id }}" data-position= {{ position }}>
           <div class="product-image-container">
             <product-slider
               id="Product-Slider"
