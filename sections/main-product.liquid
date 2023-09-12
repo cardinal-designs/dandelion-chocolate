@@ -105,11 +105,11 @@
             
             {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
               <div class="product__detail">
-                {% comment %}
+
                   {% if product.metafields.info.percentage %}
                     <span class="product__percentage">{{product.metafields.info.percentage}}</span>
                   {% endif %}
-                {% endcomment %}
+
                 {% if product.metafields.info.harvest_year %}
                   <span class="product__harvest_year">{{ product.metafields.info.harvest_year }}</span>
                 {% endif %}
@@ -178,8 +178,6 @@
                   </div>
                 </div>
               {%- endif -%}
-                    {{ product.metafields.info.hide_gallery_image }}
-
               {%- for media in product.media -%}
                 {%- unless media.id == featured_media.id -%}
                   {%- liquid
@@ -512,7 +510,7 @@
                 {%- when 'custom_liquid' -%}
                   {{ block.settings.custom_liquid }}
                 {%- when 'title' -%}
-                  <div class="product-price-container product__price aaaa">
+                  <div class="product-price-container product__price">
                   </div>
                   <p class="meta__new--percentage">
                     {% if product.metafields.info.percentage != blank %}
@@ -584,9 +582,6 @@
                       </div>
                     {% endif %}
                     <div class="product-price-container">
-                      <div class="no-js-hidden" id="price-{{ section.id }}">
-                        {% render 'product-price', product: product, use_variant: true, show_badges: true %}
-                      </div>
                       {%- if section.settings.show_taxes_included != blank -%}
                         {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
                           <div class="product__tax caption">
