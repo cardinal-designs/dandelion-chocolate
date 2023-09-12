@@ -53,8 +53,6 @@
 
 {% assign hostile = product.metafields.info.hide_gallery_image %}
 {% if hostile == true %}
-  {% assign offsetValue = 2 %}
-  {% else %}
   {% assign offsetValue = 1 %}
 {% endif %}
 {%- if first_3d_model -%}
