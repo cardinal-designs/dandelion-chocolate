@@ -366,7 +366,10 @@
 
 @media only screen and (min-width: 768px) {
   .thb-product-detail {
-    margin-top: 40px; } }
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+  } 
+}
 
 .thb-product-detail .product-title-container {
   margin-bottom: 20px; 
@@ -1303,7 +1306,7 @@ product-add-to-cart-sticky .variations fieldset {
 .product .quantity.buttons_added .qty,
 .product .quantity .minus, .quantity .plus {
   width: 52px;
-  height: 46px;
+  height: 52px;
   background: transparent !important;
 }
 
@@ -1326,7 +1329,7 @@ product-add-to-cart-sticky .variations fieldset {
   background-color: #E2C465 !important;
   border: 0;
   margin: 0;
-  padding-top: 4px;
+  padding-top: 6px;
   font-size: 13px;
   transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
@@ -1338,10 +1341,6 @@ product-add-to-cart-sticky .variations fieldset {
 .product .add_to_cart_holder .button:hover {
   background-color: #a48b55 !important;
   color: #fff !important;
-}
-
-.product .add_to_cart_holder .button:hover .product__price-main span.price .amount {
-  color: #fff !important;  
 }
 
 .product .product-button--link {
@@ -1631,14 +1630,13 @@ dl.accordion-list dd {
 }
 
 quantity-selector.quantity .minus svg {
-  width: 10px;
-  height: 3px;
-  margin-bottom: 2px;
+  width: 12px;
+  height: 4px;
 }
 
 quantity-selector.quantity .plus svg {
-  width: 13px;
-  height: 9px;
+  width: 18px;
+  height: 12px;
 }
 
 .quantity .minus svg,
@@ -1807,27 +1805,6 @@ quantity-selector.quantity .plus svg {
   .add_to_cart_holder .quantity {
     margin-left: 0;
     margin-right: 0;
-    width: 101px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center
-  }
-
-  .add_to_cart_holder quantity-selector.quantity .minus svg {
-    width: 10px;
-    height: 3px;
-  }
-
-  .add_to_cart_holder  quantity-selector.quantity .plus svg {
-    width: 16px;
-    height: 9px;
-  }
-
-  .product .quantity.buttons_added .qty,
-  .product .quantity .minus, .quantity .plus {
-    width: 40px;
-    height: 46px;
   }
 
   .product .add_to_cart_holder .button {
@@ -2188,7 +2165,6 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   line-height: 25px;
   letter-spacing: 0.02em;
   color: #B76A23;
-  text-transform: lowercase;
 }
 
 .meta__accordion--list * {
@@ -2306,10 +2282,6 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   margin-top: 5px;
 }
 
-.sticky__add-to-cart {
-  display: inline-block;
-}
-
 .below_title p {
   font-family: Saa Series F D;
   font-size: 14px;
@@ -2326,16 +2298,6 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
 .hide-rebuy .rebuy-widget {
   display: none !important;
-}
-
-.product__price-main {
-  display: inline-block;
-}
-
-.product__price-main span.price .amount {
-  color: #333333;
-  transition: all .40s linear;
-  font-size: 13px;
 }
 
 @media only screen and (min-width: 768px) { 
