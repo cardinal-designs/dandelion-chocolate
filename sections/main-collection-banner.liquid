@@ -15,6 +15,9 @@
 	endif
 -%}
 {%- if template == 'search' -%}
+  {%- for item in search.results -%} 
+    {{ item.title }}
+  {% endfor %}
 	{%- liquid
 		assign show_collection_image = false
 		assign show_subcollections = false
