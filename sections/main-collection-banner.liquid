@@ -15,9 +15,18 @@
 	endif
 -%}
 {%- if template == 'search' -%}
+  {% assign hideCount = 0 %}
   {%- for item in search.results -%} 
-    {{ item.title }}
+  {% assign hideFromSearch = false %}
+  {% for tag in item.tags %}
+    {% if tag == 'hide_from_search' %}
+      {% assign hideCount = hideCount | plus: 1 %}
+    {% endif %}
   {% endfor %}
+  {% endfor %}
+
+------{{ hideCount }}
+  
 	{%- liquid
 		assign show_collection_image = false
 		assign show_subcollections = false
