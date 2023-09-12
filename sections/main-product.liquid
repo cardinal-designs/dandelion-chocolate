@@ -58,7 +58,7 @@
 {% endif %}
 
 {% for media in product.media %}
-  {{ media | json }}
+  {{ media.position }}
 {% endfor %}
 
 {%- if first_3d_model -%}
