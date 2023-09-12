@@ -2279,6 +2279,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   margin-top: 5px;
 }
 
+.sticky__add-to-cart {
+  display: inline-block;
+}
+
 .below_title p {
   font-family: Saa Series F D;
   font-size: 14px;
