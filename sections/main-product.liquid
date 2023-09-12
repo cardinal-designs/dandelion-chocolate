@@ -629,12 +629,12 @@
                       </dd>
                     {% endif %}
 
-                    {% if block.settings.product_weight_in_grams != blank %}
+                    {% if product.metafields.info.product_weight_in_grams != blank %}
                       <dt>WEIGHT</dt>
                       <dd>
-                        {% if block.settings.product_weight_in_grams != blank %}
-                          {% assign weight = block.settings.product_weight_in_grams | divided_by: 28.35 %}
-                          {{ weight | round: 2 }} oz ({{ block.settings.product_weight_in_grams }} gm)
+                        {% if product.metafields.info.product_weight_in_grams != blank %}
+                          {% assign weight = product.metafields.info.product_weight_in_grams | divided_by: 28.35 %}
+                          {{ weight | round: 2 }} oz ({{ product.metafields.info.product_weight_in_grams }} gm)
                         {% endif %}
                       
                         {% if block.settings.product_weight_in_kg != blank %}
@@ -1593,69 +1593,6 @@
           "default": false,
           "label": "Show recipient form for gift card products",
           "info": "When enabled, gift card products can optionally be sent to a recipient with a personal message."
-        }
-      ]
-    },
-    {
-      "type": "tab_list",
-      "name": "Accordion List",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "header",
-          "content": "INCLUDED IN THIS ASSORMENT"
-        },
-        {
-          "type": "richtext",
-          "id": "included_description",
-          "label": "Included Description"
-        },
-        {
-          "type": "header",
-          "content": "INGREDIENTS & ALLERGENS"
-        },
-        {
-          "type": "richtext",
-          "id": "ingredients",
-          "label": "Ingredients"
-        },
-        {
-          "type": "text",
-          "id": "ingredients_allergens",
-          "label": "Ingredients Allergens"
-        },
-        {
-          "type": "text",
-          "id": "ingredients_allergen_facility",
-          "label": "Ingredients Allergen Facility"
-        },
-        {
-          "type": "header",
-          "content": "WEIGHT"
-        },
-        {
-          "type": "text",
-          "id": "product_weight_in_grams",
-          "label": "Product Weight(In Grams)"
-        },
-        {
-          "type": "text",
-          "id": "product_weight_in_kg",
-          "label": "Product Weight(In KG)"
-        },
-        {
-          "type": "header",
-          "content": "ADDITIONAL INFORMATION"
-        },
-        {
-          "type": "richtext",
-          "id": "storage_instructions",
-          "label": "Storage Instructions"
-        },
-        {
-          "type": "richtext",
-          "id": "shelf_life",
-          "label": "Shelf Life"
         }
       ]
     },
