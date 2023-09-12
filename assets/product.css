@@ -1629,6 +1629,7 @@ dl.accordion-list dd {
 quantity-selector.quantity .minus svg {
   width: 12px;
   height: 4px;
+  margin-bottom: 2px;
 }
 
 quantity-selector.quantity .plus svg {
