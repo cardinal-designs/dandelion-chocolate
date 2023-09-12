@@ -616,7 +616,7 @@
                     {% if product.metafields.info.included_description != blank %}
                       <dt>included in this assorment</dt>
                       <dd>
-                        {{ product.metafields.info.included_description | newline_to_br }}
+                        {{ product.metafields.info.included_description.value | metafield_tag | newline_to_br }}
                       </dd>
                     {% endif %}
                 
