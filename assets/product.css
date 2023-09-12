@@ -1340,7 +1340,7 @@ product-add-to-cart-sticky .variations fieldset {
   color: #fff !important;
 }
 
-.product .add_to_cart_holder .button:hover .product__price-main .price {
+.product .add_to_cart_holder .button:hover .product__price-main span.price .amount {
   color: #fff !important;  
 }
 
