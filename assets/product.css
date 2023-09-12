@@ -2301,6 +2301,14 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   display: none !important;
 }
 
+.product__price-main {
+  display: inline-block;
+}
+
+.product__price-main .price {
+  font-size: 13px;
+}
+
 @media only screen and (min-width: 768px) { 
   
   .merch__icons.multi__merch--icons {
