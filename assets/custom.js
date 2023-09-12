@@ -161,24 +161,21 @@ document.addEventListener("DOMContentLoaded", function() {
   var flickityItems = document.querySelectorAll(".product-images__slide");
 
   var elem = document.querySelector('.carousel-main');
-  // var flkty2 = new Flickity(elem);
-
-  var getPosition = $('.media__gallery').attr('data-position');
+  var getPosition = parseInt($('.media__gallery').attr('data-position')) - 1;
   if(getPosition){
-    console.log($('#Product-Slider .product-images__slide:eq(1)'));
-    console.log($("#Product-Slider .product-images__slide:eq(0)"))
     $('#Product-Slider .product-images__slide:eq(1)').insertBefore("#Product-Slider .product-images__slide:eq(0)");
   }
-  console.log('getPosition',getPosition);
   
-  // var flkty1 = new Flickity(flickityContainer, {
-  //     asNavFor: '.carousel-main',
-  //     prevNextButtons: true,
-  //     pageDots: false, 
-  //     wrapAround: false,
-  //     cellAlign: 'left',
-  //     contain: true
-  // });
+  var flkty2 = new Flickity(elem);
+  
+  var flkty1 = new Flickity(flickityContainer, {
+      asNavFor: '.carousel-main',
+      prevNextButtons: true,
+      pageDots: false, 
+      wrapAround: false,
+      cellAlign: 'left',
+      contain: true
+  });
 
 });
 
