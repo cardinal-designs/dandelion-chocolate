@@ -44,13 +44,13 @@
     assign single_media_visible_mobile = true
   endif
 -%}
-
+{% comment %}
 {% if product.metafields.image.hide_gallery_photo.value == 'Yes' %}
   {% assign offsetValue = 2 %}
   {% else %}
   {% assign offsetValue = 1 %}
 {% endif %}
-
+{% endcomment %}
 {% assign hostile = product.metafields.info.hide_gallery_image %}
 {% if hostile == true %}
   {% assign offsetValue = 1 %}
