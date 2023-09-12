@@ -58,7 +58,9 @@
 {% endif %}
 
 {% for media in product.media %}
-  {{ media.media_type }}
+  {% if media.media_type == 'image' %}
+    {{ media.id }}
+  {% endif %}
 {% endfor %}
 
 {%- if first_3d_model -%}
