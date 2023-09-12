@@ -613,10 +613,10 @@
                 {%- when 'tab_list' -%}
                   <dl class="meta__accordion--list">
                 
-                    {% if block.settings.included_description != blank %}
+                    {% if product.metafields.info.included_description != blank %}
                       <dt>included in this assorment</dt>
                       <dd>
-                        {{ block.settings.included_description | newline_to_br }}
+                        {{ product.metafields.info.included_description | newline_to_br }}
                       </dd>
                     {% endif %}
                 
