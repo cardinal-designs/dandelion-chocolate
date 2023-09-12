@@ -32,7 +32,7 @@
         <div class="side-panel-content--tab-panel tab-active">
           {%- for predictive_product in predictive_search_products -%}
             {% assign hideFromSearch = false %}
-            {% for tag in item.tags %}
+            {% for tag in predictive_product.tags %}
               {% if tag == 'hide_from_search' %}
                 {% assign hideFromSearch = true %}
               {% endif %}
