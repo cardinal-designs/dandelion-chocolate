@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var flkty2 = new Flickity(elem);
 
   var getPosition = $('.media__gallery').attr('data-position');
-  console.log(getPosition);
+  console.log('getPosition',getPosition);
   
   var flkty1 = new Flickity(flickityContainer, {
       asNavFor: '.carousel-main',
