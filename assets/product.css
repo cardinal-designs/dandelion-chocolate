@@ -2131,7 +2131,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   background: #F5F1DB;
   padding: 15px 9px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 0 30px;
   font-size: 18px;
   font-weight: 400;
@@ -2151,6 +2151,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 3px;
 }
 
 .meta__tasting--notes,
