@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var getPosition = $('.media__gallery').attr('data-position');
   if(getPosition){
-    $('#Product-Slider .product-images__slide').eq(getPosition).insertAfter("#Product-Slider .product-images__slide:eq(0)");
+    $('#Product-Slider .product-images__slide').eq(getPosition).insertBefore("#Product-Slider .product-images__slide:eq(0)");
   }
   console.log('getPosition',getPosition);
   
