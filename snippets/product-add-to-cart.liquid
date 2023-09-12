@@ -65,7 +65,9 @@
               <span class="single-add-to-cart-button--text">
                 {%- if product.selected_or_first_available_variant.available and sold_out != true -%}
                   {{ 'products.product.add_to_cart' | t }} <span class="separator"> · </span>
-                  <span class="product__price-main">{{ product.price | money }}</span>
+                  <div id="price-btn-{{ section.id }}--sticky" class="product__price-main">
+                    {% render 'product-price', product: product, use_variant: true, show_badges: false %}
+                  </div>
                 {%- else -%}
                   {{ 'products.product.sold_out' | t }}
                 {%- endif -%}
