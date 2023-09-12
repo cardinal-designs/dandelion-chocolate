@@ -72,7 +72,7 @@
                         </div>       
                       {% endif %}
  
-                      <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4">
+                      <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4 {% if item.product.type == 'Chocolate Bar' %} {% endif %}">
                         {% if product_info.cart_title != blank %}
                           {{ product_info.cart_title | metafield_tag }}
                         {% elsif product_info.title != blank %}
