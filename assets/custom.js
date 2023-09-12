@@ -163,7 +163,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var elem = document.querySelector('.carousel-main');
   var getPosition = parseInt($('.media__gallery').attr('data-position')) - 1;
   if(getPosition){
-    $('#Product-Slider .product-images__slide:eq(1)').insertBefore("#Product-Slider .product-images__slide:eq(0)");
+    $('#Product-Slider .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider .product-images__slide:eq(0)");
+    $('#Product-Slider-Thumbanils .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider .product-images__slide:eq(0)");
+    
   }
   
   var flkty2 = new Flickity(elem);
