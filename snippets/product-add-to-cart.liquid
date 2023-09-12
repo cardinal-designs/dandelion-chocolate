@@ -53,29 +53,30 @@
 			    </quantity-selector>
 				</div>
 				{%- endif -%}
-          {% assign sold_out = false %}
-          {% for tag in  product.tags %}
-            {% if tag == 'force_soldout' %}
-              {% assign sold_out = true %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
+            {% assign sold_out = false %}
+            {% for tag in  product.tags %}
+              {% if tag == 'force_soldout' %}
+                {% assign sold_out = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
           
-		    <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false or sold_out %}disabled{% endif %}>
-					<span class="single-add-to-cart-button--text">
-						{%- if product.selected_or_first_available_variant.available and sold_out != true -%}
-		          {{ 'products.product.add_to_cart' | t }}
-		        {%- else -%}
-		          {{ 'products.product.sold_out' | t }}
-		        {%- endif -%}
-					</span>
-					<span class="loading-overlay">
-						{% render 'svg-icons' with 'thb-loading' %}
-					</span>
-				</button>
-				{%- if show_dynamic_checkout -%}
-		      {{ form | payment_button }}
-		    {%- endif -%}
+            <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false or sold_out %}disabled{% endif %}>
+              <span class="single-add-to-cart-button--text">
+                {%- if product.selected_or_first_available_variant.available and sold_out != true -%}
+                  {{ 'products.product.add_to_cart' | t }}
+                  {% render 'product-price' %}
+                {%- else -%}
+                  {{ 'products.product.sold_out' | t }}
+                {%- endif -%}
+              </span>
+              <span class="loading-overlay">
+                {% render 'svg-icons' with 'thb-loading' %}
+              </span>
+            </button>
+            {%- if show_dynamic_checkout -%}
+              {{ form | payment_button }}
+            {%- endif -%}
 		  </div>
 		</div>
 		{%- endform -%}
