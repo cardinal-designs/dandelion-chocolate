@@ -623,9 +623,9 @@
                     {% if product.metafields.info.ingredients != blank or product.metafields.info.allergens != blank or product.metafields.info.allergen_facility != blank  %}
                       <dt>INGREDIENTS & ALLERGENS</dt>
                       <dd>
-                        <div class="ingredients__list--item">{{ product.metafields.info.ingredients | newline_to_br }}</div>
-                        <div class="ingredients__list--item">{{ product.metafields.info.allergens }}</div>
-                        <div class="ingredients__list--item">{{ product.metafields.info.allergen_facility }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.ingredients | metafield_tag | newline_to_br }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.allergens | metafield_tag }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.allergen_facility | metafield_tag }}</div>
                       </dd>
                     {% endif %}
 
@@ -648,8 +648,8 @@
                     {% if product.metafields.info.storage_instructions != blank or product.metafields.info.shelf_life != blank %}
                       <dt>ADDITIONAL INFORMATION</dt>
                       <dd>
-                        <div class="ingredients__list--item">{{ product.metafields.info.storage_instructions }}</div>
-                        <div class="ingredients__list--item">{{ product.metafields.info.shelf_life }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.storage_instructions | metafield_tag }}</div>
+                        <div class="ingredients__list--item">{{ product.metafields.info.shelf_life | metafield_tag }}</div>
                       </dd>
                     {% endif %}
                 
