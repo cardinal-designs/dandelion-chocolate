@@ -1821,7 +1821,7 @@ quantity-selector.quantity .plus svg {
 
   .product .quantity.buttons_added .qty,
   .product .quantity .minus, .quantity .plus {
-    width: 30px;
+    width: 40px;
     height: 46px;
   }
 
