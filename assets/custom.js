@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var getPosition = parseInt($('.media__gallery').attr('data-position')) - 1;
   if(getPosition){
     $('#Product-Slider .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider .product-images__slide:eq(0)");
-    $('#Product-Slider-Thumbanils .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider .product-images__slide:eq(0)");
+    $('#Product-Slider-Thumbanils .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider-Thumbanils .product-images__slide:eq(0)");
     
   }
   
