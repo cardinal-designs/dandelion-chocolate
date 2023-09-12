@@ -34,7 +34,7 @@
         {%- endfor %}
       {%- endif -%}
       {%- if featured_media -%}
-        {%- render 'responsive-image', class: 'product-primary-image', image: featured_media, sizes: '550x550' -%}
+        {%- render 'responsive-image', class: 'product-primary-image', image: featured_media, sizes: 'sizes' -%}
       {%- else -%}
         <div class="thb-placeholder">
           {{ 'product-1' | placeholder_svg_tag }}
