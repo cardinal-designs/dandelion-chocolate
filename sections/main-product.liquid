@@ -56,10 +56,12 @@
 {% if hostile == true %}
   {% assign offsetValue = 1 %}
 {% endif %}
-{{ product.metafields.info.product_featured_image }}
+{{  }}
 {% for media in product.media %}
   {% if media.media_type == 'image' %}
-    {{ media.id }}
+    {% if media.id == product.metafields.info.product_featured_image %}
+      {{ media.position }}
+    {% endif %}
   {% endif %}
 {% endfor %}
 

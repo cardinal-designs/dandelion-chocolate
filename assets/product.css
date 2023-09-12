@@ -1814,6 +1814,11 @@ quantity-selector.quantity .plus svg {
     height: 3px;
   }
 
+  .add_to_cart_holder  quantity-selector.quantity .plus svg {
+    width: 16px;
+    height: 9px;
+  }
+
   .product .add_to_cart_holder .button {
     margin-left: 10px;
   }
