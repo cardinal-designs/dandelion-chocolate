@@ -12,13 +12,13 @@
   endif
   if product_aspect_ratio == 'adapt'
     assign ratio = featured_media.aspect_ratio
-    assign sizes = '375x375,440x440'
+    assign sizes = '375x,440x'
   elsif product_aspect_ratio == 'portrait'
     assign ratio = 1 | divided_by: 1.25
-    assign sizes = '375x350,770x700'
+    assign sizes = '375x,770x'
   elsif product_aspect_ratio == 'landscape'
     assign ratio = 1 | divided_by: 0.75
-    assign sizes = '375x250,770x500'
+    assign sizes = '375x,770x'
   endif
   assign product_content_alignment = settings.product_content_alignment
 -%}
