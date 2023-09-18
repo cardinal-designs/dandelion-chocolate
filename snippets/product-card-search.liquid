@@ -47,7 +47,7 @@
           {{ product_title }}
         {% endif %}
       </span>
-
+----{{ product_small.variant }}
       {% unless product_small.variant.title contains 'Default' %}
         <div class="product-cart-item-options">
           {% for option in product_small.options %}
@@ -69,11 +69,7 @@
       {%- if product_small.metafields.info.tasting_notes != blank -%}
         <div class="card__tasting-notes">{{ product_small.metafields.info.tasting_notes }}</div>
       {%- endif -%}
-   
-      {%- if product_small.metafields.info.micro_info != blank -%}
-        <div class="micro__copy">{{ product_small.metafields.info.micro_info }}</div>
-      {%- endif -%}  
-
+  
       {% render 'product-price', product: product_small %}
       {% render 'product-add-to-cart-small', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
     </a>
