@@ -312,6 +312,7 @@
 
             {% if media_layout == 'slider' %}
             {% assign product_media = product.media | size %}
+              {% if product_media > 1 %}
               <product-slider
                 id="Product-Slider-Thumbanils"
                 class="product-images {% if media_layout == 'slider' %}carousel-nav{% endif %} product-images--{{ media_layout }}"
@@ -480,6 +481,7 @@
                   {%- endunless -%}
                 {%- endfor -%}
               </product-slider>
+              {% endif %}                
             {% endif %}
             
             {%- if display_slider_pagination -%}
