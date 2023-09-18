@@ -47,7 +47,9 @@
           {{ product_title }}
         {% endif %}
       </span>
-----{{ product_small.variant }}
+
+      {{ product_small.variant.option1 }}
+      
       {% unless product_small.variant.title contains 'Default' %}
         <div class="product-cart-item-options">
           {% for option in product_small.options %}
