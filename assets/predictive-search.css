@@ -216,6 +216,7 @@
   letter-spacing: 0em;
   text-transform: capitalize;
   color: var(--charcoal-black);
+  margin: 0 0 4px;
 }
 
 .search-drawer .card__tasting-notes {
