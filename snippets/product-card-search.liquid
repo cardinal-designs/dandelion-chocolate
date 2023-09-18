@@ -1,13 +1,9 @@
 <product-card class="product-cart-item">
   <div class="product-cart-item-image">
-    {% if product_small.metafields.image.cart_image_url != blank %}
-      <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
-        {%- render 'responsive-image', image: product_small.metafields.image.cart_image_url.value , sizes: '192x0' -%}
-      </a>
-    {% elsif product_small.featured_image  %}
+    {% if product_small.featured_image %}
       <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
         {%- render 'responsive-image', image: product_small.featured_image, sizes: '192x0' -%}
-      </a>      
+      </a>
     {% else %}
       <div class="thb-placeholder" style="height:75px;">
         {%-
@@ -20,7 +16,6 @@
       </div>
     {% endif %}
   </div>
-
   <div>
     {%-
         liquid
@@ -47,19 +42,7 @@
           {{ product_title }}
         {% endif %}
       </span>
-      
-      {% unless product_small.has_only_default_variant %}
-        <div class="product-cart-item-options">
-          {% for option in product_small.options %}
-            {% comment %}<span>{{ option }}</span>: {{ product_small.variant.options[forloop.index0] -}}{% endcomment %}
-            {% unless product_small.variants[forloop.index0].title == 'Default Title' %}
-              <span>{{ option }}</span>: {{ product_small.variants[forloop.index0].title }}
-            {% endunless %}
-            <br>
-          {% endfor %}
-        </div>
-      {% endunless %}
-      
+        
       {% if product_small.metafields.info.origin_country != blank %}
         <div class="product__country h2">
           {{ product_small.metafields.info.origin_country }}
