@@ -131,28 +131,17 @@
     "f72cb3d9-4d68-4827-b7a3-beff27085607": {
       "type": "hero-section",
       "blocks": {
-        "21faf7fa-d9bb-426c-8bf5-6bd59841c49b": {
-          "type": "breadcrumb",
-          "settings": {
-          }
-        },
-        "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "A LIMITED-EDITION MOTHER’S DAY EXCLUSIVE"
-          }
-        },
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-1": {
           "type": "heading",
           "settings": {
-            "text": "Four-Ingredient  Tokyo GÂteau",
+            "text": "Chocolate-Dipped Fig Truffles",
             "heading_size": "h1"
           }
         },
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Created by Chef Mai and flown every spring directly from our kitchen <br\/>in Tokyo, in time for Mother’s Day. Created by Chef Mai and flown <br\/>every spring directly from our kitchen in Tokyo, in time for Mother’s <br\/>Day.<br\/><\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra vitae congue eu consequat ac felis. Sollicitudin aliquam ultrices sagittis orci. <\/p>"
           }
         },
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-3": {
@@ -163,25 +152,12 @@
             "button_style": "btn--gold",
             "mobile_button_style": "btn--gold"
           }
-        },
-        "421fcbdc-d6db-4fcd-95f5-59c81d00517b": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "btn--outline",
-            "mobile_button_style": "btn--gold"
-          }
         }
       },
       "block_order": [
-        "21faf7fa-d9bb-426c-8bf5-6bd59841c49b",
-        "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-0",
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-1",
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-2",
-        "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-3",
-        "421fcbdc-d6db-4fcd-95f5-59c81d00517b"
+        "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-3"
       ],
       "disabled": true,
       "settings": {
@@ -193,76 +169,6 @@
         "mobile_height": "mobile-height-400",
         "content_width": "medium",
         "content_position": "middle-left",
-        "text_alignment": "left",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "9030161c-4222-47f2-8b32-ad7222b9b6f6": {
-      "type": "hero-section",
-      "blocks": {
-        "69e61948-4711-4254-adb8-1a48bbf02ffc": {
-          "type": "breadcrumb",
-          "settings": {
-          }
-        },
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "A LIMITED-EDITION MOTHER’S DAY EXCLUSIVE"
-          }
-        },
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-1": {
-          "type": "heading",
-          "settings": {
-            "text": "FouR-Ingredient  <br>Tokyo GÂteau",
-            "heading_size": "h2"
-          }
-        },
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Created by Chef Mai and flown every spring directly from our kitchen <br\/>in Tokyo, in time for Mother’s Day. Created by Chef Mai and flown <br\/>every spring directly from our kitchen in Tokyo, in time for Mother’s <br\/>Day.<br\/><\/p>"
-          }
-        },
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-3": {
-          "type": "button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "btn--outline",
-            "mobile_button_style": "btn--gold"
-          }
-        },
-        "6155959b-c5cd-43e9-aac4-9286c777d4d7": {
-          "type": "button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "btn--outline",
-            "mobile_button_style": "btn--gold"
-          }
-        }
-      },
-      "block_order": [
-        "69e61948-4711-4254-adb8-1a48bbf02ffc",
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-0",
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-1",
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-2",
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-3",
-        "6155959b-c5cd-43e9-aac4-9286c777d4d7"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_width": "grid",
-        "image": "shopify:\/\/shop_images\/Shop-Banner-Image-2.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Shop-Banner-Mobile.jpg",
-        "image_parallax": false,
-        "desktop_height": "desktop-height-520",
-        "mobile_height": "mobile-height-400",
-        "content_width": "medium",
-        "content_position": "middle-right",
         "text_alignment": "left",
         "overlay_opacity": 0,
         "disable_top_spacing": true,
@@ -1131,7 +1037,6 @@
     "2a732536-248e-4bfc-bf69-56eb0774b4df",
     "82e29b78-d5f5-4844-8417-2abc961b672a",
     "f72cb3d9-4d68-4827-b7a3-beff27085607",
-    "9030161c-4222-47f2-8b32-ad7222b9b6f6",
     "23f32bf8-b73d-4eef-9e20-5f299f6c3c2e",
     "0fc540a0-78fa-4cd0-b59c-fd5c3cb2ebbe",
     "3a9ad542-713f-46b0-898c-18c8b4ae6799",
