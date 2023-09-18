@@ -5981,7 +5981,6 @@ input[type="radio"],
   font-weight: 500;
   line-height: 14.4px;
   color: #855338;
-  margin-bottom: 8px;
+  margin: 6px 0;
   letter-spacing: .15em;
-  margin-top: 4px;
 }
