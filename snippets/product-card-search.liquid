@@ -29,7 +29,7 @@
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
       {% if product_small.metafields.info.product_type != blank or product_small.metafields.info.percentage != blank %}   
         <div class="card__type">
-          {{ product_small.metafields.info.percentage }}% {{ product_small.metafields.info.product_type }}
+          {{ product_small.metafields.info.product_type }}
         </div>       
       {% endif %}  
       
