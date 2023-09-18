@@ -331,6 +331,8 @@ $(document).ready(function() {
   
   var og_height = $('.short_description').height();
 
+  console.log(og_height);
+
   if( og_height > 300 ) {
     $('.short_description').css({"max-height": "300px"});
     $('.short_description .metafield-rich_text_field').css({"max-height": "300px"});
