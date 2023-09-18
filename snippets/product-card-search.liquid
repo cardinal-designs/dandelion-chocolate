@@ -48,7 +48,7 @@
         {% endif %}
       </span>
 
-      --{{ product_small.variants.option1 }}
+      --{{ product_small.has_only_default_variant }}
       
       {% unless product_small.variant.title contains 'Default' %}
         <div class="product-cart-item-options">
