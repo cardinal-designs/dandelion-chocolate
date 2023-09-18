@@ -5963,7 +5963,6 @@ input[type="radio"],
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  text-transform: lowercase;
   margin: 10px 0 8px;
 }
 
@@ -5971,6 +5970,5 @@ input[type="radio"],
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
-  text-transform: lowercase;
   margin: 5px 0 5px;
 }
