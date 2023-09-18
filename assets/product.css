@@ -2347,6 +2347,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   opacity: 1;
 }
 
+.short_description .metafield-rich_text_field p:empty {
+  display: none;
+}
+
 .variations .product-form__input--dropdown .select,
 .variations .product-form__input--dropdown select {
   letter-spacing: .15em;
