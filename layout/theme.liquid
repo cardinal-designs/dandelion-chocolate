@@ -71,7 +71,8 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
 
     {% render 'social-meta-tags' %}
 
-    {{ 'font-face.css' | asset_url | stylesheet_tag }}
+    <link herf="{{ 'font-face.css' | asset_url }}" rel="stylesheet" preload>
+
     {{ 'app.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'shogun.css' | asset_url | stylesheet_tag }}
