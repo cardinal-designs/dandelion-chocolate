@@ -85,6 +85,10 @@
                       {%- if product_info.tasting_notes != blank -%}
                         <div class="card__tasting-notes">{{ product_info.tasting_notes }}</div>
                       {%- endif -%}
+                
+                      {%- if product_small.metafields.info.micro_info != blank -%}
+                        <div class="micro__copy">{{ product_small.metafields.info.micro_info }}</div>
+                      {%- endif -%}  
                         
                       {% if item.selling_plan_allocation %}
                         <div class="properties">
