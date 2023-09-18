@@ -33,11 +33,11 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
     <meta name="theme-color" content="{{ settings.color_body_bg }}">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link
+    <!-- <link
       rel="preconnect"
       href="https://cdn.shopify.com"
       crossorigin>
-    <link href="https://cdn.getshogun.com" rel="preconnect" crossorigin> 
+    <link href="https://cdn.getshogun.com" rel="preconnect" crossorigin>  -->
     
     {% render 'head-preload' %}
 
@@ -70,7 +70,6 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'shogun.css' | asset_url | stylesheet_tag }}
 
-    {% render 'head-variables' %}
 
     <script>
       window.theme = window.theme || {};
