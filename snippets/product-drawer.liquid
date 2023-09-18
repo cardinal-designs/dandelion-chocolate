@@ -1,6 +1,6 @@
 {% assign template = template | replace: '.', '-' | handle %}
 {% if 'product-quick-view' != template %}
-<link id="Product" rel="stylesheet" href="{{ 'product.css' | asset_url }}" media="print" onload="this.media='all'">
+<link id="Product" rel="stylesheet" href="{{ 'product.css' | asset_url }}" media="print" onload="this.rel='stylesheet'">
 <div class="side-panel product-drawer" id="Product-Drawer" tabindex="-1">
 	<div class="side-panel-inner">
 		<div class="side-panel-header">
