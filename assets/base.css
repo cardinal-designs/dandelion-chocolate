@@ -59,16 +59,6 @@ h1,
   text-transform: uppercase;
 }
 
-.thb-product-detail .product-title, .thb-product-detail .product-title * {
-    font-family: CaslonSB-BoldCondensed;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #333;
-    font-size: 40px;
-    line-height: normal;
-    letter-spacing: .04em;
-}
-
 .h1__large {
   font-family: 'OPTICaslonBold-Cond';
   font-size: 72px;
