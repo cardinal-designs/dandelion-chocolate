@@ -41,6 +41,10 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
     
     {% render 'head-preload' %}
 
+    {{ 'font-face.css' | asset_url | stylesheet_tag }}
+    {{ 'app.css' | asset_url | stylesheet_tag }}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'shogun.css' | asset_url | stylesheet_tag }}
     {% if settings.favicon != blank -%}
       <link
         rel="icon"
@@ -65,10 +69,6 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
 
     {% render 'social-meta-tags' %}
 
-    {{ 'font-face.css' | asset_url | stylesheet_tag }}
-    {{ 'app.css' | asset_url | stylesheet_tag }}
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'shogun.css' | asset_url | stylesheet_tag }}
 
 
     <script>
