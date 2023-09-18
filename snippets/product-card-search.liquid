@@ -27,6 +27,12 @@
     {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
 
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
+      {% if product_small.metafields.info.product_type != blank or product_small.metafields.info.percentage != blank %}   
+        <div class="card__type">
+          {{ product_small.metafields.info.percentage }}% {{ product_small.metafields.info.product_type }}
+        </div>       
+      {% endif %}  
+      
       <span class="{% if product_small.metafields.custom.product_title_fonts.value contains "OPTICaslonBold" or product_small.type == 'Chocolate Bar' %}opti__fonts{% endif %}">
         {% if product_small.metafields.info.origin_region != blank %}
           {{ product_small.metafields.info.origin_region | metafield_tag }}
