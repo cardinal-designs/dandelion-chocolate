@@ -76,8 +76,8 @@
                     <div class="card__tasting-notes">{{ item.product.metafields.info.tasting_notes }}</div>
                   {%- endif -%}
 
-                  {%- if product_card_product.metafields.info.micro_info != blank -%}
-                    <div class="micro__copy">{{ product_card_product.metafields.info.micro_info }}</div>
+                  {%- if item.product.metafields.info.micro_info != blank -%}
+                    <div class="micro__copy">{{ item.product.metafields.info.micro_info }}</div>
                   {%- endif -%}
                   
                   <span class="price">
