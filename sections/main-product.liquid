@@ -675,7 +675,7 @@
                         {% endcapture %}
                         <div>
                           {{ bar_icon_img }}
-                          <p>{{ bar_icon }}</p>
+                          <p>{{ bar_icon | metafield_tag }}</p>
                         </div>
                       {% endfor %}
                     </div>
