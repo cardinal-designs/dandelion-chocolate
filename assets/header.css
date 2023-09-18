@@ -317,55 +317,6 @@
   overflow: hidden;
 }
 
-/*
-.mobile-toggle svg {
-  width: 18px;
-  height: 1.5px;
-  background: var(--color-header-icons, --color-accent);
-  position: absolute;
-  border-radius: 1px;
-  top: 18px;
-  left: 15px;
-}
-
-.mobile-toggle svg path:nth-child(1) {
-  transform-origin: top left;
-}
-
-.mobile-toggle svg path:nth-child(2) {
-  top: 23px;
-}
-
-.mobile-toggle svg path:nth-child(3) {
-  transform-origin: top left;
-  top: 28px;
-}
-
-.no-js .mobile-toggle-wrapper[open] .mobile-toggle svg path:nth-child(1) {
-  transform: rotateZ(45deg) translateY(-1px);
-}
-
-.no-js .mobile-toggle-wrapper[open] .mobile-toggle svg path:nth-child(2) {
-  opacity: 0;
-}
-
-.no-js .mobile-toggle-wrapper[open] .mobile-toggle svg path:nth-child(3) {
-  transform: rotateZ(-45deg);
-}
-
-.js .mobile-toggle-wrapper[open].active .mobile-toggle svg path:nth-child(1) {
-  transform: rotateZ(45deg) translateY(-3px);
-}
-
-.js .mobile-toggle-wrapper[open].active .mobile-toggle svg path:nth-child(2) {
-  opacity: 0;
-}
-
-.js .mobile-toggle-wrapper[open].active .mobile-toggle svg path:nth-child(3) {
-  transform: rotateZ(-45deg) translateY(1px);
-}
-*/
-
 .header .thb-secondary-area .thb-secondary-myaccount svg {
   height: 20px;
 }
@@ -517,6 +468,10 @@
 }
 
 @media screen and (max-width: 767px) {
+
+  .navigation__link {
+    font-size: 13px!important;  
+  }
   
   .header>.row>.columns {
     padding: 0 9px;
