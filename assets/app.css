@@ -407,6 +407,7 @@ h5,
 .h5,
 h6,
 .h6 {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   color: var(--color-body);
