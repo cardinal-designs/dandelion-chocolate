@@ -47,10 +47,8 @@
           {{ product_title }}
         {% endif %}
       </span>
-
-      --{{ product_small.has_only_default_variant }}
       
-      {% unless product_small.variant.title contains 'Default' %}
+      {% unless product_small.has_only_default_variant %}
         <div class="product-cart-item-options">
           {% for option in product_small.options %}
             {% comment %}<span>{{ option }}</span>: {{ product_small.variant.options[forloop.index0] -}}{% endcomment %}
