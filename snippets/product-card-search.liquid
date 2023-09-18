@@ -52,7 +52,9 @@
         <div class="product-cart-item-options">
           {% for option in product_small.options %}
             {% comment %}<span>{{ option }}</span>: {{ product_small.variant.options[forloop.index0] -}}{% endcomment %}
-            <span>{{ option }}</span>: {{ product_small.variants[forloop.index0].title }}
+            {% unless product_small.variants[forloop.index0].title == 'Default Title' %}
+              <span>{{ option }}</span>: {{ product_small.variants[forloop.index0].title }}
+            {% endunless %}
             <br>
           {% endfor %}
         </div>
