@@ -28,28 +28,28 @@
     <a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-featured-image-link aspect-ratio aspect-ratio--{{ settings.product_aspect_ratio }}" style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;">
       {%- if products_hover_images and product_card_product.images.size > 1 -%}
         {%- for i in (1..products_hover_images_count) -%}
-					{%- if product_card_product.images[i] -%}
-	          {%- render 'responsive-image', class: 'product-secondary-image', image: product_card_product.images[i], sizes: sizes -%}
-		      {%- endif -%}
+          {%- if product_card_product.images[i] -%}
+            {%- render 'responsive-image', class: 'product-secondary-image', image: product_card_product.images[i], sizes: sizes -%}
+          {%- endif -%}
         {%- endfor %}
       {%- endif -%}
-			{%- if featured_media -%}
-      	{%- render 'responsive-image', class: 'product-primary-image', image: featured_media, sizes: sizes -%}
-			{%- else -%}
-				<div class="thb-placeholder">
-					{{ 'product-1' | placeholder_svg_tag }}
-				</div>
-			{%- endif -%}
+      {%- if featured_media -%}
+        {%- render 'responsive-image', class: 'product-primary-image', image: featured_media, sizes: sizes -%}
+      {%- else -%}
+        <div class="thb-placeholder">
+            {{ 'product-1' | placeholder_svg_tag }}
+        </div>
+      {%- endif -%}
 
-          {% unless quickviewFeaturedCol == 'true' %}
-             {%- if settings.enable_quick_view -%}
-                <button class="product-card-quickview" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
-                    <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
-                    <span>{{ 'products.product.quick_view' | t }}</span>
-                </button>
-             {%- endif -%}
-          {% endunless %}
-      
+      {% unless quickviewFeaturedCol == 'true' %}
+        {%- if settings.enable_quick_view -%}
+          <button class="product-card-quickview" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+            <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+            <span>{{ 'products.product.quick_view' | t }}</span>
+          </button>
+        {%- endif -%}
+      {% endunless %}
+    
           {% if quickview_cartbutton == 'quick_view' %}
             <button class="product-card-quickview" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
               <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
