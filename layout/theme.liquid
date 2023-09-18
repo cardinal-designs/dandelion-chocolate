@@ -39,11 +39,6 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
       crossorigin>
     <link href="https://cdn.getshogun.com" rel="preconnect" crossorigin> 
     
-    
-    
-
-      
-    
     {% render 'head-preload' %}
 
     {% if settings.favicon != blank -%}
@@ -67,13 +62,6 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
-
-    {%- unless settings.heading_font.system? and settings.body_font.system? -%}
-      <link
-        rel="preconnect"
-        href="https://fonts.shopifycdn.com"
-        crossorigin>
-    {%- endunless -%}
 
     {% render 'social-meta-tags' %}
 
