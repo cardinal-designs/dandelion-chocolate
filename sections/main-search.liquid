@@ -19,49 +19,48 @@
 		<div class="small-12 columns">
 			<div class="collection-container section-spacing-bottom">
 				<div id="ProductGridContainer">
-					{%- if search.results.size == 0 -%}
-						<div class="collection-empty">
-							{% render 'svg-icons' with 'thb-no-products' %}
-          		          <p>
-          		            {{ 'search.no_results' | t: terms: search.terms }}
-          		          </p>
-						</div>
-					{%- else -%}
-						{%- paginate search.results by products_per_page -%}
-							<div class="collection-container section-spacing-bottom">
-								<div id="ProductGridContainer">
-									<div class="sidebar-container facets--{{ facets_desktop }} results--{{ collection.products.size }}">
-										{%- if facets_desktop == 'sidebar' -%}
-											{%- render 'facets-desktop', results: search, enable_filtering: enable_filtering, enable_sorting: enable_sorting -%}
-										{%- endif -%}
-										<div>
-											{%- render 'facets-bar', results: search, enable_filtering: enable_filtering, enable_sorting: enable_sorting -%}
-                                            
-											<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }}">
-												{%- for item in search.results -%}                                                  
-                                                  {% assign hideFromSearch = false %}
-                                                  {% for tag in item.tags %}
-                                                    {% if tag == 'hide_from_search' %}
-                                                      {% assign hideFromSearch = true %}
-                                                    {% endif %}
-                                                  {% endfor %}
-                                                  
-                                                  {% if item.object_type == 'product' %}
-                                                    {% unless hideFromSearch %}
-    													<li class="column">
-                                                        {% render 'product-card', product_card_product: item %}
-    													</li>
-                                                    {% endunless %}
-                                                  {%- endif -%}
-												{%- endfor -%}
-											</ul>
-											{% render 'pagination', paginate: paginate, pagination_type: pagination_type, id: section.id %}
-										</div>
-									</div>
-								</div>
-							</div>
-						{%- endpaginate -%}
-					{%- endif -%}
+                  {%- if search.results.size == 0 -%}
+                    <div class="collection-empty">
+                      {% render 'svg-icons' with 'thb-no-products' %}
+                      <p>
+                        {{ 'search.no_results' | t: terms: search.terms }}
+                      </p>
+                    </div>
+                  {%- else -%}
+                    {%- paginate search.results by products_per_page -%}
+                      <div class="collection-container section-spacing-bottom">
+                        <div id="ProductGridContainer">
+                          <div class="sidebar-container facets--{{ facets_desktop }} results--{{ collection.products.size }}">
+                            {%- if facets_desktop == 'sidebar' -%}
+                              {%- render 'facets-desktop', results: search, enable_filtering: enable_filtering, enable_sorting: enable_sorting -%}
+                          {%- endif -%}
+                          <div>
+                            {%- render 'facets-bar', results: search, enable_filtering: enable_filtering, enable_sorting: enable_sorting -%}
+                            <ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }}">
+                              {%- for item in search.results -%}                                                  
+                                {% assign hideFromSearch = false %}
+                                {% for tag in item.tags %}
+                                  {% if tag == 'hide_from_search' %}
+                                    {% assign hideFromSearch = true %}
+                                  {% endif %}
+                                {% endfor %}
+                                
+                                {% if item.object_type == 'product' %}
+                                  {% unless hideFromSearch %}
+                                      <li class="column">
+                                      {% render 'product-card', product_card_product: item %}
+                                      </li>
+                                  {% endunless %}
+                                {%- endif -%}
+                              {%- endfor -%}
+                            </ul>
+                            {% render 'pagination', paginate: paginate, pagination_type: pagination_type, id: section.id %}
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    {%- endpaginate -%}
+                {%- endif -%}
 				</div>
 			</div>
 		</div>
