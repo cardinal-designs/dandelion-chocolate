@@ -49,7 +49,7 @@
       </span>
 
       {% unless product_small.variant.title contains 'Default' %}
-        <div class="product-cart-item-options 222">
+        <div class="product-cart-item-options">
           {% for option in product_small.options %}
             <span>{{ option }}</span>: {{ product_small.variant.options[forloop.index0] -}}
             <br>
