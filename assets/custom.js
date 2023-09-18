@@ -329,7 +329,7 @@ $(document).ready(function() {
   $('.meta__product--description .metafield-rich_text_field').html('<div class="short_description">' + desc + read_more + "</dl>");
   $('.read_less').hide();
   
-  var og_height = $('.short_description').height();
+  var og_height = $('.short_description').innerHeight();
 
   console.log(og_height);
 
