@@ -1,0 +1,64 @@
+<product-card class="product-cart-item">
+  <div class="product-cart-item-image">
+    {% if product_small.featured_image %}
+      <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
+        {%- render 'responsive-image', image: product_small.featured_image, sizes: '192x0' -%}
+      </a>
+    {% else %}
+      <div class="thb-placeholder" style="height:75px;">
+        {%-
+          liquid
+          capture index
+              cycle '1', '2', '3', '4', '5', '6'
+          endcapture
+      -%}
+        {{ 'product-' | append: index | placeholder_svg_tag }}
+      </div>
+    {% endif %}
+  </div>
+  <div>
+    {%-
+        liquid
+        assign product_title = product_small.title
+        if predictive_search
+            assign product_title = product_title | highlight: predictive_search.terms
+        endif
+    -%}
+    {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
+
+    <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
+      <span class="{% if product_small.metafields.custom.product_title_fonts.value contains "OPTICaslonBold" or product_small.type == 'Chocolate Bar' %}opti__fonts{% endif %}">
+        {% if product_small.metafields.info.origin_region != blank %}
+          {{ product_small.metafields.info.origin_region | metafield_tag }}
+        {% elsif product_small.metafields.info.title != blank %}
+          {{ product_small.metafields.info.title | metafield_tag }}
+        {% else %}
+          {{ product_title }}
+        {% endif %}
+      </span>
+        
+      {% if product_small.metafields.info.origin_country != blank %}
+        <div class="product__country h2">
+          {{ product_small.metafields.info.origin_country }}
+        </div>
+      {%- endif -%}
+      
+      {%- if product_small.metafields.info.tasting_notes != blank -%}
+        <div class="card__tasting-notes">{{ product_small.metafields.info.tasting_notes }}</div>
+      {%- endif -%}
+  
+      {%- if product_small.metafields.info.micro_info != blank -%}
+        <div class="micro__copy">{{ product_small.metafields.info.micro_info }}</div>
+      {%- endif -%}
+  
+      {% render 'product-price', product: product_small %}
+      {% render 'product-add-to-cart-small', product: product_small, form: form, product_form_id: product_form_id, block: block, pickup: false %}
+    </a>
+    {% if quick_add %}
+      <button class="product__quick-view product-card-quickview text-button" href="#Product-Drawer" data-product-handle="{{ product_small.handle }}" tabindex="-1">
+        <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+        <span>{{ 'products.product.quick_view' | t }}</span>
+      </button>
+    {% endif %}
+  </div>
+</product-card>
