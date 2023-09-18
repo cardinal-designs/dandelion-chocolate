@@ -5964,6 +5964,7 @@ input[type="radio"],
   font-weight: 400;
   line-height: normal;
   margin: 10px 0 8px;
+  text-transform: initial;
 }
 
 .product-cart-item .micro__copy {
@@ -5971,6 +5972,7 @@ input[type="radio"],
   font-weight: 400;
   line-height: normal;
   margin: 5px 0 5px;
+  text-transform: initial;
 }
 
 .side-panel-content--inner .product__country {
