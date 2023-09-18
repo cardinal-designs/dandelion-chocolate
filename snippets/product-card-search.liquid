@@ -47,7 +47,16 @@
           {{ product_title }}
         {% endif %}
       </span>
-        
+
+      {% unless product_small.variant.title contains 'Default' %}
+        <div class="product-cart-item-options">
+          {% for option in product_small.product.options %}
+            <span>{{ option }}</span>: {{ product_small.variant.options[forloop.index0] -}}
+            <br>
+          {% endfor %}
+        </div>
+      {% endunless %}
+      
       {% if product_small.metafields.info.origin_country != blank %}
         <div class="product__country h2">
           {{ product_small.metafields.info.origin_country }}
