@@ -1,4 +1,4 @@
-<link rel="preload" href="{{ 'shogun.css' | asset_url }}" as="style" onload="this.rel='stylesheet'"/>
+<link rel="preload" href="{{ 'product.css' | asset_url }}" as="style" onload="this.rel='stylesheet'"/>
 
 {{- 'product.css' | asset_url | stylesheet_tag -}}
 
@@ -546,7 +546,7 @@
                     </div>
                   {% endif %}
                   <div class="product-title-container" {{ block.shopify_attributes }}>
-                    <h1 class="product-title uppercase--{{ block.settings.uppercase }}">
+                    <h1 class="product-title uppercase--{{ block.settings.uppercase }}" style="    font-family: CaslonSB-BoldCondensed;">
                       {%- if product.metafields.info.origin_region != blank -%}
                         {{ product.metafields.info.origin_region }}
                       {%- elsif product.metafields.info.title != blank -%}
