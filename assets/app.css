@@ -5965,6 +5965,7 @@ input[type="radio"],
   line-height: normal;
   margin: 10px 0 8px;
   text-transform: initial;
+  font-family: Garamond Premiere Pro;
 }
 
 .product-cart-item .micro__copy {
@@ -5973,6 +5974,7 @@ input[type="radio"],
   line-height: normal;
   margin: 5px 0 5px;
   text-transform: initial;
+  font-family: Garamond Premiere Pro;
 }
 
 .side-panel-content--inner .product__country {
