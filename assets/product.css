@@ -2346,6 +2346,15 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   opacity: 1;
 }
 
+.variations .product-form__input--dropdown .select,
+.variations .product-form__input--dropdown select {
+  letter-spacing: .15em;
+  font-family: Saa Series F D;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 26px;
+}
+
 @media only screen and (min-width: 768px) { 
   
   .merch__icons.multi__merch--icons {
