@@ -48,9 +48,9 @@
                                                   
                                                   {% if item.object_type == 'product' %}
                                                     {% unless hideFromSearch %}
-  													<li class="column">
+    													<li class="column">
                                                         {% render 'product-card', product_card_product: item %}
-  													</li>
+    													</li>
                                                     {% endunless %}
                                                   {%- endif -%}
 												{%- endfor -%}
