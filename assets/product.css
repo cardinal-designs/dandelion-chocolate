@@ -2263,6 +2263,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
 .meta__new--percentage {
   margin: 0;  
+  letter-spacing: .15em;
 }
 
 .product__detail--wrap {
