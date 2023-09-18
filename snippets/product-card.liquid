@@ -50,25 +50,25 @@
         {%- endif -%}
       {% endunless %}
     
-          {% if quickview_cartbutton == 'quick_view' %}
-            <button class="product-card-quickview" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
-              <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
-              <span>
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 0H4.4V8H3.6V0Z" fill="var(--color-body)"></path><path d="M3.49692e-08 4.4L0 3.6L8 3.6V4.4L3.49692e-08 4.4Z" fill="var(--color-body)"></path></svg>
-                {{ 'products.product.quick_view' | t }}
-              </span>
-            </button>
-          {% endif %}
-      
-          {%- if products_hover_images and product_card_product.images.size > 1 and settings.products_hover_dots -%}
-            <ul class="product-secondary-images-nav">
-              {%- for i in (1..products_hover_images_count) -%}
-                {%- if product_card_product.images[i] -%}
-                  <li></li>
-                {%- endif -%}
-              {%- endfor %}
-            </ul>
-          {%- endif -%}
+      {% if quickview_cartbutton == 'quick_view' %}
+        <button class="product-card-quickview" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+          <div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+          <span>
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.6 0H4.4V8H3.6V0Z" fill="var(--color-body)"></path><path d="M3.49692e-08 4.4L0 3.6L8 3.6V4.4L3.49692e-08 4.4Z" fill="var(--color-body)"></path></svg>
+            {{ 'products.product.quick_view' | t }}
+          </span>
+        </button>
+      {% endif %}
+  
+      {%- if products_hover_images and product_card_product.images.size > 1 and settings.products_hover_dots -%}
+        <ul class="product-secondary-images-nav">
+          {%- for i in (1..products_hover_images_count) -%}
+            {%- if product_card_product.images[i] -%}
+              <li></li>
+            {%- endif -%}
+          {%- endfor %}
+        </ul>
+      {%- endif -%}
     </a>
     {% if quickview_cartbutton == 'addtocart' %}
         <product-form class="product-form {% if hide_cta_mobile == true %}hide-mobile{% endif %}" data-section="{{ section.id }}--{{ product_card_product.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
@@ -83,7 +83,7 @@
               {%- render 'gift-card-recipient-form', product: product_card_product, form: form, section: section -%}
             {%- endif -%}
             <div class="product-add-to-cart-container">
-                <div class="form-notification error" style="display:none;"></div>
+              <div class="form-notification error" style="display:none;"></div>
               <div class="add_to_cart_holder {% if settings.show_secondary_btn_hover %}secondary__hover--enabled{% endif %}">
                 {%- if block.settings.show_quantity_selector -%}
                     <div id="quantity-{{ section.id }}" {{ block.shopify_attributes }}>
