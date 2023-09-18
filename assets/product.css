@@ -383,10 +383,6 @@
   letter-spacing: .04em;
 }
 
-.thb-product-detail .product-title.uppercase--true {
-  text-transform: uppercase;
-}
-
 .thb-product-detail .product-title a {
   color: var(--color-body); 
 }
