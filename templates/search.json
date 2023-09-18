@@ -23,6 +23,7 @@
         "enable_filtering": true,
         "enable_sorting": true,
         "facets_desktop": "drawer",
+        "quickview_cartbutton": "addtocart",
         "image_ratio": "square",
         "show_date": true,
         "show_excerpt": false
