@@ -321,8 +321,6 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 //   });
 // })
 
-
-
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
   
