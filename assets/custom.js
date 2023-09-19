@@ -324,7 +324,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 //   });
 // });
 
-document.querySelectoAll('.Sub_Menu-Columns li').forEach((ele)=>{
+document.querySelectorAll('.Sub_Menu-Columns li').forEach((ele)=>{
   console.log(ele)
 })
 // window.scroll({
