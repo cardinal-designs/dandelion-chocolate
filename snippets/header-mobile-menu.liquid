@@ -64,7 +64,7 @@
               {% endcomment %}
 
 
-                <li class="sub__menu--navigation{% if colLink.active %} active{% endif %}" role="none">
+                <li class="sub__menu--navigation {% if link.title contains 'Chocolate' or link.title contains 'Events' %} child-menu-image {% endif %} {% if colLink.active %} active{% endif %}" role="none">
                     <a href="{{ colLink.url }}">
                       {% if link.title contains 'Chocolate' %}
                         {% capture image_setting %}chocolate_image_{{ forloop.index }}{% endcapture %}
