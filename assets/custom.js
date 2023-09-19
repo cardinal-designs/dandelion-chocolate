@@ -327,7 +327,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
     let Id = el.currentTarget.getAttribute('data-col-Id'),
-        sectionId = document.querySelector(`id="${Id}"`);
+        sectionId = document.querySelector(`[id="${Id}"]`);
     console.log(sectionId)
     
   })
