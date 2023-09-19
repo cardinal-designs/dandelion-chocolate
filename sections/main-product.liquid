@@ -663,24 +663,27 @@
                     <div class="bar-icons meta__bar--icons">
                       {% for bar_icon in product.metafields.custom.product_icons.value %}
                         {% capture bar_icon_img  %}
-                          {% if bar_icon == 'Kosher' %}
-                            {% render 'Kosher_icon' %}
-                          {% elsif bar_icon == 'Gluten Free' %}
+                          {% assign bar_icon_name = bar_icon | downcase %}
+                          {% if bar_icon_name == 'kosher' %}
+                            {% render 'icon-kosher' %}
+                          {% elsif bar_icon_name == 'gluten free' %}
                             {% render 'Gluten_free' %}
-                          {% elsif bar_icon == 'Soy free' %}
+                          {% elsif bar_icon_name == 'soy free' %}
                             {% render 'Soy_Free' %}
-                          {% elsif bar_icon == 'Vegan' %}
+                          {% elsif bar_icon_name == 'vegan' %}
                             {% render 'Vegan-2' %}
-                          {% elsif bar_icon == 'Direct Sourced' %}
+                          {% elsif bar_icon_name == 'direct sourced' %}
                             {% render 'Direct_sourced' %}
-                          {% elsif bar_icon == 'Two Ingredients' %}
+                          {% elsif bar_icon_name == 'two ingredients' %}
                             {% render 'Cocoa_bean-Sugar' %}
-                          {% elsif bar_icon == 'Peanut free' %}
+                          {% elsif bar_icon_name == 'peanut free' %}
                             {% render 'Peanut_Free' %}
-                          {% elsif bar_icon == 'Treenut free' or bar_icon == 'Nut free' %}
+                          {% elsif bar_icon_name == 'treenut free' or bar_icon_name == 'nut free' %}
                             {% render 'Treenut_Free' %}
-                          {% elsif bar_icon == 'Dairy' %}
+                          {% elsif bar_icon_name == 'dairy' %}
                             {% render 'Dairy' %}
+                          {% elsif bar_icon_name == 'customizable' %}
+                            {% render 'customizable' %}
                           {% endif %}
                         {% endcapture %}
                         <div>
