@@ -328,14 +328,13 @@ document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
     let Id = el.currentTarget.getAttribute('data-col-Id'),
         sectionId = document.querySelector(`[id="${Id}"]`);
-    console.log(sectionId)
-    
+    window.scroll({
+      top: sectionId.offsetTop-90,
+      behavior: "smooth",
+    });
   })
 })
-// window.scroll({
-//   top: document.querySelector('#Curated-Gifts').offsetTop-90,
-//   behavior: "smooth",
-// });
+
 
 
 $(document).ready(function() {
