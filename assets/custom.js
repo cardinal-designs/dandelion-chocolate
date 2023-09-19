@@ -319,7 +319,6 @@ $(document).ready(function () {
       scrollTop: navScrollTo.offset().top - 300
     });
     event.preventDefault();
-    
   });
 });
 
