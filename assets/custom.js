@@ -313,12 +313,13 @@ $(document).ready(function () {
   $('.Sub_Menu-Columns li').on('click', 'a', function(event) {
     console.log('Clicked')
     var navScrollTo = $($(this).attr('href'));
-    var scrollToTop = navScrollTo.offset().top ;  
-    console.log(scrollToTop);
+    // var scrollToTop = navScrollTo.offset().top ;  
+    // console.log(scrollToTop);
     $('html, body').animate({
-      scrollTop: scrollToTop + 300
+      scrollTop: navScrollTo.offset().top ;
     });
     event.preventDefault();
+    
   });
 })
 
