@@ -311,7 +311,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 
 $(document).ready(function () {
   $('.Sub_Menu-Columns li a').on('click', function(event) {
-    console.log('Clicked')
+    console.log('Clicked');
     var navScrollTo = $(this).attr('href').split('#');
     console.log('navScrollTo', navScrollTo[1]);
     var scrollToTop = '#' + navScrollTo[1].offset().top;  
