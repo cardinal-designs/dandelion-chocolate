@@ -313,8 +313,9 @@ $(document).ready(function () {
   $('.Sub_Menu-Columns li a').on('click', function(event) {
     console.log('Clicked')
     var navScrollTo = $(this).attr('href');
+    console.log('navScrollTo', navScrollTo);
     var scrollToTop = navScrollTo.offset().top;  
-    console.log(scrollToTop);
+    
     $('html, body').animate({
       scrollTop: navScrollTo.offset().top
     });
