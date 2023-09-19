@@ -314,7 +314,7 @@ $(document).ready(function () {
     console.log('Clicked')
     var navScrollTo = $($(this).attr('href'));
     var scrollToTop = navScrollTo.offset().top ;  
-    console.log(scrollTop);
+    console.log(scrollToTop);
     $('html, body').animate({
       scrollTop: scrollToTop + 300
     });
