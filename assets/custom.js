@@ -314,8 +314,9 @@ $(document).ready(function () {
     console.log('Clicked')
     var navScrollTo = $($(this).attr('href'));
     var scrollToTop = navScrollTo.offset().top ;  
+    console.log(scrollTop);
     $('html, body').animate({
-      scrollTop: scrollToTop - 300
+      scrollTop: scrollToTop + 300
     });
     event.preventDefault();
   });
