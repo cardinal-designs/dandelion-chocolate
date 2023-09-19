@@ -313,7 +313,7 @@ $(document).ready(function () {
   $('.Sub_Menu-Columns li').on('click', 'a', function(event) {
     console.log('Clicked')
     var navScrollTo = $($(this).attr('href'));
-    var scrollToTop = navScrollTo.offset().top ;  
+    var scrollToTop = navScrollTo.offset().top - 300 ;  
     $('html, body').animate({
       scrollTop: scrollToTop 
     });
