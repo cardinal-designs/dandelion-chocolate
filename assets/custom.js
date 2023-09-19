@@ -316,7 +316,8 @@ $(document).ready(function () {
     // var scrollToTop = navScrollTo.offset().top ;  
     // console.log(scrollToTop);
     $('html, body').animate({
-      scrollTop: navScrollTo.offset().top - 300;
+      scrollTop: navScrollTo.offset().top - 300
+      console.log(scrollTop);
     });
     event.preventDefault();
     
