@@ -322,7 +322,7 @@ $(document).ready(function () {
     event.preventDefault();
     
   });
-})
+});
 
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
