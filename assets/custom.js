@@ -326,7 +326,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
-    let Id = ele.currentTarget.getAttribute('data-col-Id');
+    // let Id = ele.currentTarget.getAttribute('data-col-Id');
     console.log(ele.target,Id)
   })
 })
