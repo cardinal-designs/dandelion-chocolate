@@ -325,7 +325,10 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 // });
 
 document.querySelectorAll('.Sub_Menu-Columns li').forEach((ele)=>{
-  console.log(ele)
+  ele.addEvenListener('click',function(el){
+    let Id = ele.currentTarget.getAttribute('data-col-Id');
+    console.log(Id)
+  })
 })
 // window.scroll({
 //   top: document.querySelector('#Curated-Gifts').offsetTop-90,
