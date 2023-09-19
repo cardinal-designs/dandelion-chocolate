@@ -315,10 +315,10 @@ $(document).ready(function () {
     var navScrollTo = $(this).attr('href').split('#');
     console.log('navScrollTo', navScrollTo[1]);
 
-    var scrollToTop = $('#' + navScrollTo[1]).offset().top;  
+    var scrollToTop = $('#' + navScrollTo[1]).offset().top - 90;  
     console.log('navScrollTo222', scrollToTop);
     $('html, body').animate({
-      scrollTop: navScrollTo.offset().top
+      scrollTop: scrollToTop
     });
     event.preventDefault();
   });
