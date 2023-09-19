@@ -1132,7 +1132,7 @@ input[type=submit]:hover {
 .template-cart .remove.cart-remove-desktop {
   margin-left: 18px;
   display: block;
-  letter-spacing: .10em;
+  letter-spacing: .15em;
 }
 
 .cart-checkout-button {
