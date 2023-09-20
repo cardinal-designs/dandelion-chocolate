@@ -48,17 +48,15 @@
 
 
 {% style %}
+  
   {% for block in section.blocks %}
     
     #section--{{ section.id }} .caption {
       color: {{ block.settings.caption_color }}
     }
-  
-    #section--{{ section.id }} .heading {
-      color: {{ block.settings.heading_color }}
-    }
-  
+
   {% endfor %}
+  
 {% endstyle %}
 
 {% schema %}
