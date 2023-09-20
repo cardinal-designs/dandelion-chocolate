@@ -312,6 +312,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 $(document).ready(function () {
 
   var url = window.location.href;
+  console.log(url);
   $('.Sub_Menu-Columns li a').on('click', function(event) {
     var navScrollTo = $(this).attr('href').split('#');
     console.log('navScrollTo', navScrollTo[1]);
