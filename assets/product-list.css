@@ -136,12 +136,12 @@
   .product__items--wrap {
     grid-template-columns: 1fr;
     gap: 50px;
-    padding-top: 16px;
   }
 
   .product__list--wrap .block__buttons {
     row-gap: 12px;
     flex-wrap: wrap;
+    padding-top: 16px;
   }
 
   .product__list--wrap .block__buttons a {
