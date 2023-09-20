@@ -309,7 +309,9 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
   document.body.classList.add("safari__specific--css");
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
+  $('.Sub_Menu-Columns li a').on('click', function(event) {
+
     $('html, body').hide();
 
     if (window.location.hash) {
@@ -323,6 +325,7 @@ $(document).ready(function() {
     else {
         $('html, body').show();
     }
+});
 });
 
 
