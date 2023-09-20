@@ -65,6 +65,7 @@
 .trip__rich--text .rte * {
   font-size: 18px; 
   font-weight: 400;
+  letter-spacing: normal;
   line-height: 27px;
 }
 
