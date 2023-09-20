@@ -36,12 +36,12 @@
 
 /*================ Trip Landing ================*/
 
-.rich-text__inner .icon {
+.trip__rich--text .rich-text__inner .icon {
   margin: 0 auto 16px;
   width: 30px;
   height: 30px;
 }
 
-.rich-text__inner .icon img {
+.trip__rich--text .rich-text__inner .icon img {
   margin: 0;
 }
