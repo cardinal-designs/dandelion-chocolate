@@ -313,8 +313,9 @@ $(document).ready(function () {
 
   var url = window.location.href;
   console.log(url);
-    var navScrollTo = url.split('#');
-    console.log(navScrollTo);
+  var page = url.substring(url.lastIndexOf('/') + 1);
+  console.log(page);
+
 
 
 });
