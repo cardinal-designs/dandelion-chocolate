@@ -566,5 +566,12 @@
     font-size: 28px;
     line-height: 37px;
   }
+
+  .trip__image--overlay .image-with-text-overlay--content .rte * {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+  }
   
 }
