@@ -41,3 +41,21 @@
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
 }
+
+.product__list--wrap .block__description p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin: 0;
+}
+
+.product__list--wrap .block__buttons a {
+  display: block;
+}
+
+
+
+
+
