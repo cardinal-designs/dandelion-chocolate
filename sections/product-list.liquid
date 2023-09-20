@@ -11,67 +11,69 @@
    {% for block in section.blocks %}
      <div class="product__items" id="block--{{ block.id }}">
         <div class="image__wrap">
-          {% if image %}
-            {%- liquid
-              assign small_width = image.src.height | times: '375' | divided_by: image.src.width
-              assign master_width = image.src.width | append: 'x' | append: image.src.height
-              assign width = '375x' | append: small_width | append: ',' | append: master_width
-              assign class = ''
-            -%}
-            {%- render 'responsive-image', image: image, sizes: width, class: class -%}
-          {% else %}
-            {{ 'collection-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-          {% endif %}
+        {% if image %}
+        {%- liquid
+        assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+        assign master_width = image.src.width | append: 'x' | append: image.src.height
+        assign width = '375x' | append: small_width | append: ',' | append: master_width
+        assign class = ''
+        -%}
+        {%- render 'responsive-image', image: image, sizes: width, class: class -%}
+        {% else %}
+        {{ 'collection-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+        {% endif %}
         </div>
+       
         <div class="block__header">
-          {% if block.settings.heading != blank %}
-            <h3 class="heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.heading | newline_to_br }}</h3>
-          {% endif %}
-          {% if block.settings.subheading != blank %}
-            <p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.subheading }}</p>  
-          {% endif %}
+        {% if block.settings.heading != blank %}
+        <h3 class="heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.heading | newline_to_br }}</h3>
+        {% endif %}
+        {% if block.settings.subheading != blank %}
+        <p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.subheading }}</p>  
+        {% endif %}
         </div>
+       
         {% if block.settings.text != blank %}
           <div class="block__description">
             <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
           </div>
         {% endif %}
 
-     {% assign product = block.settings.product %}
-     {{ product }}aaaaa
-     {%- unless product.selected_or_first_available_variant.available -%}
-       sold out
-       {%- endunless -%}
+        {% assign product = block.settings.product %}
         <div class="block__buttons">
-         {% if product != blank %}
-          {%- unless product.selected_or_first_available_variant.available -%}
-            <a class="btn btn--gold sold__out--btn" href="#" role="button" title="sold out" {{ block.shopify_attributes }}><span>{{ 'products.product.sold_out' | t }}</span></a>   
+          {% if product != blank %}
+            {%- unless product.selected_or_first_available_variant.available -%}
+              <a class="btn btn--gold sold__out--btn" href="#" role="button" title="sold out" {{ block.shopify_attributes }}><span>{{ 'products.product.sold_out' | t }}</span></a>   
+            {% else %}
+              {% if block.settings.button_link != blank %}
+                <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
+              {% endif %}
+            {%- endunless -%}
+            {% if block.settings.button_link != blank %}
+              <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
+            {% endif %}
           {% else %}
             {% if block.settings.button_link != blank %}
               <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
             {% endif %}
-          {%- endunless -%}
-           {% else %}
-           {% if block.settings.button_link != blank %}
-              <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
-            {% endif %}
-           {% if block.settings.button_link != blank %}
+            {% if block.settings.button_link != blank %}
               <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
+            {% endif %}
           {% endif %}
-           {% endif %}
         </div>
-       </div>
-      {% style %}
-        #block--{{ block.id }} .heading {
-          color: {{ block.settings.heading_color }}
-        }
-        #block--{{ block.id }} .subheading {
-          color: {{ block.settings.caption_color }}
-        }
-        #block--{{ block.id }} .block__description * {
-          color: {{ block.settings.text_color }}
-        }
-      {% endstyle %}
+    </div>
+    
+        {% style %}
+          #block--{{ block.id }} .heading {
+            color: {{ block.settings.heading_color }}
+          }
+          #block--{{ block.id }} .subheading {
+            color: {{ block.settings.caption_color }}
+          }
+          #block--{{ block.id }} .block__description * {
+            color: {{ block.settings.text_color }}
+          }
+        {% endstyle %}
     {% endfor %}
   </div>
 </div>
