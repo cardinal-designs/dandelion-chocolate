@@ -314,8 +314,8 @@ $(document).ready(function () {
   var url = window.location.href;
   console.log(url);
   $('.Sub_Menu-Columns li a').on('click', function(event) {
-    var navScrollTo = $(this).attr('href').split('#');
-    console.log('navScrollTo', navScrollTo[1]);
+    var navScrollTo = url.split('#');
+    console.log(navScrollTo);
 
     var scrollToTop = $('#' + navScrollTo[1]).offset().top - 90;  
     console.log('navScrollTo222', scrollToTop);
