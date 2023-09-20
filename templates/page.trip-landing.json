@@ -15,7 +15,7 @@
             "text": "Origin Trips",
             "heading_size": "h1",
             "heading_color": "#ffffff",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "template--16033892335756__a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56-text-1": {
@@ -24,7 +24,7 @@
             "text": "<p>Experience cacao farming and chocolate making up close and personal, while building relationships with other chocolate lovers.<\/p>",
             "description_size": "body-1",
             "description_color": "#ffffff",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         }
       },
@@ -56,11 +56,10 @@
     "3c1730b0-58ef-40e6-b5c5-62c14faf849f": {
       "type": "rich-text",
       "blocks": {
-        "39d5fb3b-d11b-4cf0-97ca-ecda29b17918": {
-          "type": "image",
+        "18348d12-375b-43ad-bdba-8330309b6c2f": {
+          "type": "icon",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Info_Icon_dd2777b8-4482-4925-a8e9-31715fc08e1b.png",
-            "retina": false
+            "icon": "shopify:\/\/shop_images\/Info_Icon_dd2777b8-4482-4925-a8e9-31715fc08e1b.png"
           }
         },
         "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-heading-1": {
@@ -79,7 +78,7 @@
         }
       },
       "block_order": [
-        "39d5fb3b-d11b-4cf0-97ca-ecda29b17918",
+        "18348d12-375b-43ad-bdba-8330309b6c2f",
         "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-heading-1",
         "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-text-1"
       ],
