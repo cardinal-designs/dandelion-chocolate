@@ -316,10 +316,13 @@ $(document).ready(function () {
   console.log(page);
   
   let sectionScrolll = document.querySelector(`[id="${page}"]`);
+  if(sectionScrolll){
   window.scroll({
     top: sectionScrolll.offsetTop - 50,
     behavior: "smooth",
   });
+    
+  }
 });
 
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
