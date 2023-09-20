@@ -538,6 +538,8 @@
 
 .trip__image--overlay .image-with-text-overlay--content .heading {
   margin-bottom: 16px;
+  line-height: 53px;
+  letter-spacing: 0.1em;
 }
 
 .trip__image--overlay .image-with-text-overlay--content .rte * {
