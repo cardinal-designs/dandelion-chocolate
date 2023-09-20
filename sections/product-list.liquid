@@ -4,12 +4,13 @@
   assign section_width = section.settings.section_width
   assign disable_top_spacing = section.settings.disable_top_spacing
   assign disable_bottom_spacing = section.settings.disable_bottom_spacing
-  assign image = section.settings.image
+  
 -%}
 
 <div class="{{ section_width }} product__list--wrap" id="section--{{ section.id }}">
   <div class="product__items--wrap row section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
    {% for block in section.blocks %}
+     {% assign image = block.settings.image %}
      <div class="product__items" id="block--{{ block.id }}">
         <div class="image__wrap">
         {% if image %}
