@@ -146,6 +146,7 @@
 
   .product__list--wrap .block__buttons a {
     flex: 0 1 100%;
+    font-size: 14px;
   }
 
   .product__list--wrap .block__description {
