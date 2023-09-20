@@ -52,7 +52,7 @@
 						{%- when 'subheading' -%}
 							<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 						{%- when 'heading' -%}
-							<h3 class="{{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+							<h3 class="{{ block.settings.size }} heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
 						{%- when 'text' -%}
 							<div class="rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 						{%- when 'button' -%}
