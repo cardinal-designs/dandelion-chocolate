@@ -66,3 +66,7 @@
   letter-spacing: 0em;
   margin: 0;
 }
+
+.trip__rich--text .rich-text__inner {
+  max-width: 662px;
+}
