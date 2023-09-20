@@ -239,7 +239,9 @@
   }
 
   .section-image-with-text .trip__image--text.row.full-width-spacing .columns {
-    max-width: 1152px;
+    max-width: 1242px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .trip__image--text .image-with-text__inner {
