@@ -329,7 +329,7 @@ document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
     let Id = el.currentTarget.getAttribute('data-col-Id'),
         sectionId = document.querySelector(`[id="${Id}"]`);
     window.scroll({
-      top: sectionId.offsetTop - 400,
+      top: sectionId.offsetTop,
       behavior: "smooth",
     });
   })
