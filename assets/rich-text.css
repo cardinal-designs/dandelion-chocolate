@@ -49,3 +49,11 @@
 .trip__rich--text .rich-text__inner .icon img {
   margin: 0;
 }
+
+.trip__rich--text .heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
