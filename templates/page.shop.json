@@ -7,7 +7,8 @@
           "type": "subheading",
           "settings": {
             "text": "",
-            "subheading_color": "#d3a741"
+            "subheading_color": "#d3a741",
+            "subheading_color_mobile": "#333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-1": {
@@ -15,7 +16,8 @@
           "settings": {
             "text": "Single-Origin S’Mores Kit",
             "heading_size": "h1",
-            "heading_color": "#333333"
+            "heading_color": "#333333",
+            "heading_color_mobile": "#333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2": {
@@ -23,7 +25,8 @@
           "settings": {
             "text": "<p>Three origins of chocolate Large Chips, plenty of house-made graham crackers and marshmallows, plus instructions — for a gooey, crispy-crunchy s’more at home or outdoors<\/p>",
             "description_size": "body-1",
-            "description_color": "#333333"
+            "description_color": "#333333",
+            "description_color_mobile": "#333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3": {
@@ -60,7 +63,8 @@
         "stack_on_mobile": false,
         "content__bg": "#333333",
         "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": true,
+        "custom_class": ""
       }
     },
     "82e29b78-d5f5-4844-8417-2abc961b672a": {
@@ -70,7 +74,8 @@
           "type": "subheading",
           "settings": {
             "text": "FRESHLY BAKED",
-            "subheading_color": "#d3a741"
+            "subheading_color": "#d3a741",
+            "subheading_color_mobile": "#333"
           }
         },
         "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3": {
@@ -78,7 +83,8 @@
           "settings": {
             "text": "Summer Treat Tin",
             "heading_size": "h1",
-            "heading_color": "#333333"
+            "heading_color": "#333333",
+            "heading_color_mobile": "#333"
           }
         },
         "1c54a7df-956d-4754-add0-db32fb0b4e9e": {
@@ -86,7 +92,8 @@
           "settings": {
             "text": "<p>Featuring freshly baked fudgy brownies, Miso Blondies, and chocolate-and-vanilla Cookies & Cream Sandwiches, this collection inlcludes Chef Lisa's versions of time-honored treats in a custom-designed, take-anywhere Summer Treat Tin.<\/p>",
             "description_size": "body-1",
-            "description_color": "#333333"
+            "description_color": "#333333",
+            "description_color_mobile": "#333"
           }
         },
         "4af6929c-0254-43be-b8ac-6f6f24e2709f": {
@@ -124,7 +131,8 @@
         "stack_on_mobile": false,
         "content__bg": "#333333",
         "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": true,
+        "custom_class": ""
       }
     },
     "f72cb3d9-4d68-4827-b7a3-beff27085607": {
@@ -354,8 +362,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": false,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "2",
@@ -392,8 +398,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": false,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "3",
@@ -416,7 +420,7 @@
     "156a4980-a379-4513-acbd-ad484c675407": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Curated-Gifts",
+        "section_id": "Curations",
         "heading": "Curations",
         "heading_desktop": 32,
         "heading_mobile": 22,
@@ -429,8 +433,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "5",
@@ -466,8 +468,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "5",
@@ -541,13 +541,14 @@
         "color_text": "#151515",
         "color_border": "#e2e2e2",
         "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": false,
+        "custom_class": ""
       }
     },
     "1b5c5610-485b-4345-a2c1-d055920e3473": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Bar-Sets",
+        "section_id": "Bars",
         "heading": "Bar Sets",
         "heading_desktop": 32,
         "heading_mobile": 22,
@@ -560,8 +561,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -597,8 +596,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -634,8 +631,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -671,8 +666,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -708,8 +701,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -745,8 +736,6 @@
         "show_short_product_desc": false,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": true,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -769,7 +758,7 @@
     "59319a80-6073-4db0-ade1-80b8b7f02126": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Pastries",
+        "section_id": "Pickups",
         "heading": "Pastries for Pickup Only",
         "heading_desktop": 32,
         "heading_mobile": 22,
@@ -782,8 +771,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "carousel",
         "columns_desktop": "5",
@@ -806,7 +793,7 @@
     "e96896ef-c364-4560-b177-b513b3ea7d26": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Hot-Chocolates",
+        "section_id": "Hot Chocolates",
         "heading": "Hot Chocolates",
         "heading_desktop": 32,
         "heading_mobile": 22,
@@ -819,8 +806,6 @@
         "show_short_product_desc": false,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -911,7 +896,7 @@
     "97c96ec7-6691-488b-82b9-e7c62955bda0": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Kits",
+        "section_id": "Virtual Experiences",
         "heading": "Kits for Virtual Events",
         "heading_desktop": 32,
         "heading_mobile": 22,
@@ -924,8 +909,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -961,8 +944,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -1067,8 +1048,6 @@
         "show_short_product_desc": false,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": true,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
@@ -1104,8 +1083,6 @@
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
-        "show_collaborator": false,
-        "enable_treatment": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
         "columns_desktop": "4",
