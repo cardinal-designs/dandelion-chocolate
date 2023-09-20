@@ -9,6 +9,11 @@
   display: block;
 }
 
+.product__list--wrap .block__header {
+  padding: 16px 0 25px;
+  border-bottom: 1px solid #333333;
+}
+
 .product__list--wrap .heading {
   font-size: 28px;
   font-weight: 400;
