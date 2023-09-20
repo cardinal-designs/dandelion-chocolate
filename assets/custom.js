@@ -310,27 +310,6 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 }
 
 $(document).ready(function () {
-  $('.Sub_Menu-Columns li a').on('click', function(event) {
-
-    $('html, body').hide();
-
-    if (window.location.hash) {
-        setTimeout(function() {
-            $('html, body').scrollTop(0).show();
-            $('html, body').animate({
-                scrollTop: $(window.location.hash).offset().top
-                }, 1000)
-        }, 0);
-    }
-    else {
-        $('html, body').show();
-    }
-});
-});
-
-
-
-$(document).ready(function () {
   var url = window.location.href;
   console.log(url);
   let page = url.substring(url.lastIndexOf('#') + 1);
