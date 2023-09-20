@@ -72,19 +72,30 @@
 					{% for block in section.blocks %}
 						{%- case block.type -%}
 							{%- when 'subheading' -%}
-								<p class="caption subheading sh2 mb-23" {{ block.shopify_attributes }} style="color: {{ block.settings.subheading_color }}">{{ block.settings.text }}</p>
+								<p class="caption subheading sh2 mb-23" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 							{%- when 'heading' -%}
-								<h3 class="heading {{ block.settings.heading_size }} mb-20" style="color: {{ block.settings.heading_color }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+								<h3 class="heading {{ block.settings.heading_size }} mb-20" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
 							{%- when 'text' -%}
-								<div class="rte {{ block.settings.description_size }} mb-44" style="color: {{ block.settings.description_color }}" {{ block.shopify_attributes }} {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+								<div class="rte {{ block.settings.description_size }} mb-44" {{ block.shopify_attributes }} {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}
 								{% if block.settings.button_text != blank %}
 									<a class="btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
                   					<a class="btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
 								{% endif %}
 							{% when 'space' %}
-		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+    		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
 						{%- endcase -%}
+                        {% style %}
+                          .image-with-text-overlay--content .caption {
+                            color: {{ block.settings.subheading_color }};
+                          }
+                          .image-with-text-overlay--content .heading {
+                            color: {{ block.settings.heading_color }};
+                          }
+                          .image-with-text-overlay--content .rte {
+                            color: {{ block.settings.description_color }};
+                          }
+                        {% endstyle %}
 					{% endfor %}
 				</div>
 			</div>
@@ -100,7 +111,7 @@
   .image-with-text-overlay-caption--box {
     background: {{ section.settings.mobile_caption_bg }};
   }
-  
+
   @media only screen and (min-width:768px) {
     
     .image-with-text-overlay-caption--box {
