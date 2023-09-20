@@ -238,6 +238,10 @@
     column-gap: 60px;
   }
 
+  .trip__image--text .section-image-with-text .row.full-width-spacing .columns {
+    max-width: 1152px;
+  }
+
 }
 
 @media only screen and (min-width: 1068px) {
