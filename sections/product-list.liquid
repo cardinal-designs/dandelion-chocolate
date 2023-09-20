@@ -7,7 +7,7 @@
 -%}
 
 <div class="{{ section_width }} product__list--wrap" id="section--{{ section.id }}">
-  <div class="product__items--wrap section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+  <div class="product__items--wrap row section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
    {% for block in section.blocks %}
      <div class="product__items">
       <div class="image__wrap">
