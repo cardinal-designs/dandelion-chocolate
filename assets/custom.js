@@ -334,7 +334,7 @@ document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
       behavior: "smooth",
     });
   });
-    console.log("el",ele.dataset.colId)
+    console.log("el",ele.currentTarget.dataset.colId)
   if(window.sessionStorage.getItem('scrolltosection')){
     if(ele.id == window.sessionStorage.getItem('scrolltosection')){
       ele.click();
