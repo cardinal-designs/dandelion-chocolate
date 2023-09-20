@@ -153,9 +153,5 @@
   .image__overlay--banner .image-with-text-overlay--content-inner {
     align-items: flex-start;
   }
-
-  .image__video--banner.image__overlay--banner .image-with-text-overlay--content-inner {
-    text-align: center;
-  }
-
+  
 }
