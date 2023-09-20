@@ -101,6 +101,10 @@
     line-height: 26px;
   }
 
+  .product__list--wrap .subheading {
+    font-size: 18px;
+  }
+
   .product__items--wrap {
     gap: 20px;
   }
