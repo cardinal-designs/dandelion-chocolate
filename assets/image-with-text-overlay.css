@@ -539,3 +539,13 @@
 .trip__image--overlay .image-with-text-overlay--content .heading {
   margin-bottom: 16px;
 }
+
+.trip__image--overlay .image-with-text-overlay--content .rte {
+  font-family: 'AGaramondPro';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
