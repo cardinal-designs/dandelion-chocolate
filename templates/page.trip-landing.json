@@ -88,7 +88,7 @@
         "text_position": "center",
         "text_alignment": "center",
         "color_bg": "#f5f6f5",
-        "color_text": "#151515",
+        "color_text": "#333333",
         "color_links": "#151515",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false,
