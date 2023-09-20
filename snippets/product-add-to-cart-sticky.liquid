@@ -8,9 +8,9 @@
     </div>
     <div class="product-add-to-cart-sticky--info">
 
-    {% if product.metafields.info.product_type != blank and product.metafields.info.percentage != blank %}   
+    {% if product.metafields.info.product_type != blank %}   
       <div class="card__type">
-        {{ product.metafields.info.percentage }}% {{ product.metafields.info.product_type }}
+        {{ product.metafields.info.product_type }}
       </div>       
     {% endif %}
     
