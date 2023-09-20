@@ -43,7 +43,7 @@
         "show_caption_box": true,
         "caption_over_banner": true,
         "caption_bg": "#000000CC",
-        "mobile_caption_bg": "#000000CC",
+        "mobile_caption_bg": "#fff",
         "stack_on_mobile": false,
         "content__bg": "#333333",
         "disable_top_spacing": true,
