@@ -44,15 +44,15 @@
        {%- endunless -%}
         <div class="block__buttons">
           {%- unless product.selected_or_first_available_variant.available -%}
-            <a class="btn btn--gold" href="#" role="button" title="sold out" {{ block.shopify_attributes }}><span>{{ 'products.product.sold_out' | t }}</span></a>        
+            <a class="btn btn--gold" href="#" role="button" title="sold out" {{ block.shopify_attributes }}><span>{{ 'products.product.sold_out' | t }}</span></a>   
           {% else %}
             {% if block.settings.button_link != blank %}
               <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
             {% endif %}
-             {% if block.settings.button_link != blank %}
-                <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
-            {% endif %}
           {%- endunless -%}
+           {% if block.settings.button_link != blank %}
+              <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
+          {% endif %}
         </div>
        </div>
       {% style %}
