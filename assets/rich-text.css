@@ -33,3 +33,15 @@
     max-width: 1000px; }
   .rich-text.text-width-grid .rich-text__inner {
     max-width: 1380px; }
+
+/*================ Trip Landing ================*/
+
+.rich-text__inner .icon {
+  margin-bottom: 16px;
+  width: 30px;
+  height: 30px;
+}
+
+.rich-text__inner .icon img {
+  margin: 0;
+}
