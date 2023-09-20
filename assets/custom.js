@@ -320,19 +320,7 @@ $(document).ready(function () {
     top: sectionScrolll.offsetTop - 50,
     behavior: "smooth",
   });
-
-  var href_value = window.location.href.split('#');
-  var href_id = document.getElementById(href_value);
-  console.log('href_id', href_id);
-  window.scroll({
-    top: href_id.offsetTop - 90,
-    behavior: "smooth",
-  });
-  
 });
-
-
-
 
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
@@ -353,6 +341,12 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
       top: sectionId.offsetTop - 72,
       behavior: "smooth",
     });
+    if(window.sessionStorage.getItem('scrolltosection')){
+    if(el.id == window.sessionStorage.getItem('scrolltosection')){
+      el.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
   })
 })
 
