@@ -38,7 +38,6 @@
                         {%- when 'icon' -%}
                             <div class="icon">
     							{%- if block.settings.icon != blank -%}
-                                  {{ block.settings.icon }}uuuu
     								{%- liquid
     									assign icon = block.settings.icon
     									assign master_width = icon.src.width | append: 'x' | append: icon.src.height
