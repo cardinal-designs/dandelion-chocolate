@@ -36,17 +36,19 @@
 								</div>
 							{%- endif -%}
                         {%- when 'icon' -%}
-							{%- if block.settings.icon != blank -%}
-								{%- liquid
-									assign icon = block.settings.icon
-									assign master_width = icon.src.width | append: 'x' | append: icon.src.height
-									render 'responsive-image', icon: icon, sizes: master_width
-								-%}
-							{%- else -%}
-								<div class="thb-placeholder">
-									{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-								</div>
-							{%- endif -%}
+                            <div class="icon">
+    							{%- if block.settings.icon != blank -%}
+    								{%- liquid
+    									assign icon = block.settings.icon
+    									assign master_width = icon.src.width | append: 'x' | append: icon.src.height
+    									render 'responsive-image', icon: icon, sizes: master_width
+    								-%}
+    							{%- else -%}
+    								<div class="thb-placeholder">
+    									{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+    								</div>
+    							{%- endif -%}
+                            </div>
 						{%- when 'subheading' -%}
 							<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 						{%- when 'heading' -%}
