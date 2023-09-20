@@ -541,6 +541,7 @@
   line-height: 53px;
   letter-spacing: 0.1em;
   text-transform: capitalize;
+  font-weight: 400;
 }
 
 .trip__image--overlay .image-with-text-overlay--content .rte * {
