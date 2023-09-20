@@ -1,20 +1,12 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
-    "shogun-helper",
     "main"
   ]
 }
