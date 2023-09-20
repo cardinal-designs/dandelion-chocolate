@@ -51,6 +51,10 @@
   margin: 0;
 }
 
+.product__list--wrap .block__buttons {
+  padding-top: 20px;
+}
+
 .product__list--wrap .block__buttons a {
   display: block;
 }
