@@ -106,7 +106,10 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_text": "Shop Now",
             "button_link": "#",
-            "button_style": "btn--white",
+            "button_style": "btn--gold",
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_style_2": "btn--white",
             "caption_color": "#333333",
             "heading_color": "#333333",
             "text_color": "#333333"
@@ -121,6 +124,9 @@
             "button_text": "Shop Now",
             "button_link": "",
             "button_style": "btn--white",
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_style_2": "btn--white",
             "caption_color": "#ffffff",
             "heading_color": "#ffffff",
             "text_color": "#ffffff"
