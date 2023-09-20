@@ -69,6 +69,10 @@
   letter-spacing: 0em;
 }
 
+.trip__rich--text .rte em {
+  font-family: AGaramondPro;
+}
+
 .trip__rich--text .rich-text__inner {
   max-width: 662px;
 }
