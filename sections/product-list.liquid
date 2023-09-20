@@ -36,12 +36,14 @@
             <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
           </div>
         {% endif %}
-        {% if block.settings.button_link != blank %}
-          <div class="block__buttons">
+        <div class="block__buttons">
+          {% if block.settings.button_link != blank %}
             <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
-            <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
-          </div>
         {% endif %}
+         {% if block.settings.button_link != blank %}
+            <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
+        {% endif %}
+        </div>
        </div>
       {% style %}
         #block--{{ block.id }} .subheading {
