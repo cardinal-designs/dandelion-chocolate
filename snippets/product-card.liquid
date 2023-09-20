@@ -142,9 +142,9 @@
       <div class="card__brand">{{ product_card_product.metafields.info.vendor_name }}</div>
     {%- endif -%}
   
-    {% if product_card_product.metafields.info.product_type != blank or product_card_product.metafields.info.percentage != blank %}   
+    {% if product_card_product.metafields.info.product_type != blank %}   
       <div class="card__type">
-        {{ product_card_product.metafields.info.percentage }}% {{ product_card_product.metafields.info.product_type }}
+        {{ product_card_product.metafields.info.product_type }}
       </div>       
     {% endif %}      
 
