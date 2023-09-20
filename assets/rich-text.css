@@ -86,5 +86,9 @@
   .trip__rich--text .rte * {
     letter-spacing: 0.02em;
   }
+
+  .trip__rich--text .heading {
+    margin-bottom: 12px;
+  }
   
 }
