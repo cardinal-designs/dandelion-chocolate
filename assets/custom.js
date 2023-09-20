@@ -331,9 +331,9 @@ document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
       behavior: "smooth",
     });
   })
-// })
+})
 
-// // document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
+document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
     let Id = el.currentTarget.getAttribute('data-col-Id'),
         sectionId = document.querySelector(`[id="${Id}"]`);
