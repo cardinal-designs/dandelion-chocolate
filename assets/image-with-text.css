@@ -238,7 +238,7 @@
     column-gap: 60px;
   }
 
-  .section-image-with-text .trip__image--text .row.full-width-spacing .columns {
+  .section-image-with-text .trip__image--text.row.full-width-spacing .columns {
     max-width: 1152px;
   }
 
