@@ -535,3 +535,7 @@
 .trip__image--overlay .image-with-text-overlay--content .rte {
   margin-bottom: 0;
 }
+
+.trip__image--overlay .image-with-text-overlay--content .heading {
+  margin-bottom: 16px;
+}
