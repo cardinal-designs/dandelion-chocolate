@@ -12,6 +12,10 @@
   display: block;
 }
 
+.product__list--wrap .image__wrap img {
+  width: 100%;
+}
+
 .product__list--wrap .block__header {
   padding: 16px 0 25px;
   border-bottom: 1px solid #333333;
