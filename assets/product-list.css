@@ -96,6 +96,14 @@
 
 @media screen and (max-width: 1067px) and (min-width: 768px) {
 
+  .product__list--wrap .heading {
+    font-size: 22px;
+  }
+
+  .product__items--wrap {
+    gap: 20px;
+  }
+
   .product__list--wrap .block__buttons {
     column-gap: 10px;
   }
