@@ -204,7 +204,7 @@
   .section-image-with-text .row.full-width-spacing {
     width: 100%;
     max-width: 100%;
-    padding: 0;
+    padding: 64px 0 85px;
     margin: 0;
   }
 
