@@ -269,5 +269,9 @@
     line-height: 32px;
     letter-spacing: 0.1em;
   }
+
+  .trip__image--text .image-with-text__content {
+    padding: 16px 0;
+  }
   
 }
