@@ -25,7 +25,7 @@
 			assign mobile_image_height = 500
 	endcase
 -%}
-<div class="row {{ section_width }}">
+<div class="row {{ section_width }} {{ section.settings.custom_class }}">
 	<div class="small-12 columns">
 		<image-with-text-overlay class="image_with--text-overlay image-with-text-overlay {% if section.settings.stack_on_mobile %}stack_on_mobile{% endif %} text-{{ text_alignment }} {{ mobile_height }} {{ desktop_height }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}{% if section.settings.caption_over_banner %} caption-over--mobile{% endif %}" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
 			<div class="image-with-text-overlay--bg">
@@ -367,6 +367,11 @@
       "id": "disable_bottom_spacing",
       "default": false,
       "label": "Remove bottom spacing"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
     }
   ],
   "blocks": [
