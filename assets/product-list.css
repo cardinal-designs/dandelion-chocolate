@@ -124,5 +124,12 @@
   
 }
 
+@media only screen and (max-width: 767px) {
+  
+  .product__items--wrap {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 
+}
 
