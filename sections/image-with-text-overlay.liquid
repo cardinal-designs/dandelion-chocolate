@@ -95,6 +95,17 @@
                           .image-with-text-overlay--content .rte {
                             color: {{ block.settings.description_color }};
                           }
+                          @media screen and (max-width: 767px) {
+                            .image-with-text-overlay--content .caption {
+                              color: {{ block.settings.subheading_color }};
+                            }
+                            .image-with-text-overlay--content .heading {
+                              color: {{ block.settings.heading_color }};
+                            }
+                            .image-with-text-overlay--content .rte {
+                              color: {{ block.settings.description_color }};
+                            }
+                          }
                         {% endstyle %}
 					{% endfor %}
 				</div>
@@ -406,8 +417,14 @@
         {
           "type": "color",
           "id": "subheading_color",
-          "label": "Subheading Color",
+          "label": "Subheading Color(Desktop)",
           "default": "#6b6b6b"
+        },
+        {
+          "type": "color",
+          "id": "subheading_color_mobile",
+          "label": "Subheading Color(Mobile)",
+          "default": "#333"
         }
       ]
     },
@@ -445,8 +462,14 @@
         {
           "type": "color",
           "id": "heading_color",
-          "label": "Heading Color",
+          "label": "Heading Color(Desktop)",
           "default": "#333333"
+        },
+        {
+          "type": "color",
+          "id": "heading_color_mobile",
+          "label": "heading Color(Mobile)",
+          "default": "#333"
         }
       ]
     },
@@ -484,8 +507,14 @@
         {
           "type": "color",
           "id": "description_color",
-          "label": "Description Color",
+          "label": "Description Color(Desktop)",
           "default": "#333333"
+        },
+        {
+          "type": "color",
+          "id": "description_color_mobile",
+          "label": "description Color(Mobile)",
+          "default": "#333"
         }
       ]
     },
