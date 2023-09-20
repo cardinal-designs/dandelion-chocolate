@@ -272,6 +272,10 @@
     padding: 0;
   }
 
+  .trip__image--text .image-with-text__content {
+    padding: 0 20px;
+  }
+
   .trip__image--text .image-with-text__content--inner .heading {
     font-size: 24px;
     line-height: 32px;
