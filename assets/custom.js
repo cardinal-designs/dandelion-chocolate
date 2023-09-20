@@ -336,6 +336,7 @@ document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((el
   });
 
   if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
     if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
       ele.click();
       window.sessionStorage.removeItem("scrolltosection");
