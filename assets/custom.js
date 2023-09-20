@@ -328,7 +328,7 @@ $(document).ready(function () {
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
     el.preventDefault();
-    console.log(el.currentTarget.getAttribute('data-col-Id'))
+    console.log(document.querySelector(`[id="${el.currentTarget.getAttribute('data-col-Id')}"]`))
     return;
     let Id = el.currentTarget.getAttribute('data-col-Id'),
         sectionId = document.querySelector(`[id="${Id}"]`);
