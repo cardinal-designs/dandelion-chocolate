@@ -324,6 +324,10 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 //   });
 // });
 
+$('html,body').animate({
+  scrollTop: $(window.location.hash).offset().top
+});
+
 $(document).ready(function () {
   var url = window.location.href;
   console.log(url);
