@@ -327,16 +327,13 @@ $(document).ready(function () {
 
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
-   
-    console.log(document.querySelector(`[id="${el.currentTarget.getAttribute('data-col-Id').trim()}"]`))
-    return;
     let Id = el.currentTarget.getAttribute('data-col-Id'),
         sectionId = document.querySelector(`[id="${Id}"]`);
     window.scroll({
       top: sectionId.offsetTop - 90,
       behavior: "smooth",
     });
-    console.log('ele',ele)
+    console.log('ele',ele);
     if(window.sessionStorage.getItem('scrolltosection')){
     if(ele.id == window.sessionStorage.getItem('scrolltosection')){
       ele.click();
