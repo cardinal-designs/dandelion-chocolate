@@ -34,47 +34,18 @@
         <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
       </div>
     {% endif %}
-    
-    {% if section.settings.image_url %}
-      {% for block in section.blocks %}
-        {% if block.settings.button_link != blank %}
-          <a href="{{ block.settings.button_link }}" class="image__url--redirect" aria-label="{{ block.settings.button_text | escape }}"></a>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-    <div class="image-with-text-overlay--content content-{{ content_position }}">
-      
-      <div class="image-with-text-overlay--content-inner">
-        {% for block in section.blocks %}
-          {%- case block.type -%}
-            {%- when 'subheading' -%}
-              <p class="caption" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
-            {%- when 'heading' -%}
-              <h3 class="{{ block.settings.heading_size }} heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.text | newline_to_br }}</h3>
-            {%- when 'text' -%}
-              <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
-            {%- when 'button' -%}
-              {% if block.settings.button_text != blank %}
-                <a class="btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
-                <a class="btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
-              {% endif %}
-          {%- endcase -%}
-        {% endfor %}
+    {% if block.settings.button_link != blank %}
+      <div class="block__buttons">
+        <a class="btn {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
       </div>
-    </div>
+    {% endif %}
   </div>
 </div>
-<script src="{{ 'image-with-text-overlay.js' | asset_url }}" defer="defer"></script>
+
 
 {% style %}
-
-  .image__overlay--banner .image-with-text-overlay--content:before {
-    background: {{ section.settings.content_bg }};
-    opacity: {{ content_overlay_opacity | divided_by: 100.0 }};
-  }
-
   {% for block in section.blocks %}
-
+    
     #section--{{ section.id }} .caption {
       color: {{ block.settings.caption_color | color_modify: 'alpha', 0.80 }}
     }
@@ -86,14 +57,12 @@
       }
       
     }
-
   {% endfor %}
-  
 {% endstyle %}
 
 {% schema %}
 {
-  "name": "Image Text Hero",
+  "name": "Product List",
   "settings": [
     {
       "type": "select",
@@ -116,162 +85,10 @@
       "label": "Section width"
     },
     {
-      "type": "header",
-      "content": "Background Image"
-    },
-    {
-      "type": "checkbox",
-      "id": "image_url",
-      "label": "Add URL over Image",
-      "default": false
-    },
-    {
       "type": "image_picker",
       "id": "image",
-      "label": "Image",
+      "label": "Product Image",
       "info": "2800 x 650 .jpg recommended."
-    },
-    {
-      "type": "header",
-      "content": "Common Settings"
-    },
-    {
-      "type": "select",
-      "id": "desktop_height",
-      "label": "Desktop height",
-      "options": [
-        {
-          "value": "desktop-height-450",
-          "label": "450px"
-        },
-        {
-          "value": "desktop-height-520",
-          "label": "520px"
-        },
-        {
-          "value": "desktop-height-550",
-          "label": "550px"
-        },
-        {
-          "value": "desktop-height-650",
-          "label": "650px"
-        },
-        {
-          "value": "desktop-height-700",
-          "label": "700px"
-        },
-        {
-          "value": "desktop-height-750",
-          "label": "750px"
-        },
-        {
-          "value": "desktop-height-800",
-          "label": "800px"
-        },
-        {
-          "value": "desktop-height-full",
-          "label": "Full screen"
-        }
-      ],
-      "default": "desktop-height-650"
-    },
-    {
-      "type": "select",
-      "id": "mobile_height",
-      "label": "Mobile height",
-      "options": [
-        {
-          "value": "mobile-height-auto",
-          "label": "Adapt to content"
-        },
-        {
-          "value": "mobile-height-350",
-          "label": "350px"
-        },
-        {
-          "value": "mobile-height-400",
-          "label": "400px"
-        },
-        {
-          "value": "mobile-height-450",
-          "label": "450px"
-        },
-        {
-          "value": "mobile-height-500",
-          "label": "500px"
-        },
-        {
-          "value": "mobile-height-full",
-          "label": "Full screen"
-        }
-      ],
-      "default": "mobile-height-500"
-    },
-    {
-      "type": "select",
-      "id": "content_position",
-      "label": "Content position",
-      "options": [
-        {
-          "value": "middle-left",
-          "label": "Middle left"
-        },
-        {
-          "value": "middle-center",
-          "label": "Middle center"
-        },
-        {
-          "value": "middle-right",
-          "label": "Middle right"
-        }
-      ],
-      "default": "middle-center"
-    },
-    {
-      "type": "select",
-      "id": "text_alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "center",
-      "label": "Content alignment"
-    },
-    {
-      "type": "range",
-      "id": "overlay_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Image Overlay opacity",
-      "default": 30
-    },
-    {
-      "type": "range",
-      "id": "content_overlay_opacity",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Content Overlay opacity",
-      "default": 30
-    },
-    {
-      "type": "color",
-      "id": "content_bg",
-      "label": "Content Overlay Color",
-      "default": "#000"
     },
     {
       "type": "header",
@@ -416,30 +233,6 @@
             }
           ],
           "default": "btn--white"
-        },
-        {
-          "type": "select",
-          "id": "mobile_button_style",
-          "label": "Mobile Button Style",
-          "options": [
-            {
-              "value": "btn--gray",
-              "label": "Gray Button"
-            },
-            {
-              "value": "btn--gold",
-              "label": "Gold Button"
-            },
-            {
-              "value": "btn--light-gold",
-              "label": "Light Gold Button"
-            },
-            {
-              "value": "btn--outline",
-              "label": "Gray Outline Button"
-            }
-          ],
-          "default": "btn--gold"
         }
       ]
     }
@@ -447,21 +240,7 @@
   "max_blocks": 6,
   "presets": [
     {
-      "name": "Image Text Hero",
-      "blocks": [
-        {
-          "type": "subheading"
-        },
-        {
-          "type": "heading"
-        },
-        {
-          "type": "text"
-        },
-        {
-          "type": "button"
-        }
-      ]
+      "name": "Product List"
     }
   ]
 }
