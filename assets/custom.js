@@ -334,9 +334,9 @@ document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
       behavior: "smooth",
     });
   });
-    console.log("el",ele.getAttribute('data-col-Id'))
+
   if(window.sessionStorage.getItem('scrolltosection')){
-    if(ele.id == window.sessionStorage.getItem('scrolltosection')){
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
       ele.click();
       window.sessionStorage.removeItem("scrolltosection");
     }
