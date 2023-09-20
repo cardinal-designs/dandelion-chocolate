@@ -317,11 +317,10 @@ $(document).ready(function () {
   
   let sectionScrolll = document.querySelector(`[id="${page}"]`);
   if(sectionScrolll){
-  window.scroll({
-    top: sectionScrolll.offsetTop - 50,
-    behavior: "smooth",
-  });
-    
+    window.scroll({
+      top: sectionScrolll.offsetTop - 50,
+      behavior: "smooth",
+    });
   }
 });
 
