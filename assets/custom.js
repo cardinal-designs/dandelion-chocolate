@@ -332,7 +332,7 @@ $(document).ready(function () {
   
   let sectionScrolll = document.querySelector(`[id="${page}"]`);
   window.scroll({
-    top: sectionScrolll.offsetTop - 50,
+    top: sectionScrolll.offsetTop - 200,
     behavior: "smooth",
   });
 });
