@@ -264,6 +264,10 @@
 
 @media only screen and (max-width: 767px) {
 
+  .trip__image--text {
+    padding: 0;
+  }
+
   .trip__image--text .image-with-text__content--inner .heading {
     font-size: 24px;
     line-height: 32px;
