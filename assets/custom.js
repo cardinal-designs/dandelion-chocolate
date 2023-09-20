@@ -338,7 +338,7 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
     let Id = el.currentTarget.getAttribute('data-col-Id'),
         sectionId = document.querySelector(`[id="${Id}"]`);
     window.scroll({
-      top: sectionId.offsetTop- 72,
+      top: sectionId.offsetTop - 72,
       behavior: "smooth",
     });
   })
