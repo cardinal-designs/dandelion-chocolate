@@ -97,7 +97,7 @@
                         {% endif %}
                       {% endfor %}   
                       {%- endif -%}
-                      <a {% if page.handle == "shop" %}href="javascript:void(0);"{% else %}href="{{ colLink.url }}"{% endif %} data-col-Id="{{ colLink.url | split: '#' | last }}"  title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
+                      <a {% if page.handle == "shop" %}href="javascript:void(0);"{% else %}href="{{ colLink.url }}" onclick="window.sessionStorage.setItem('scrolltosection','{{ colLink.title }}')" {% endif %} data-col-Id="{{ colLink.title }}"  title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
                     </li>
                   {%- endfor -%}
                 </ul>
