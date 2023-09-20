@@ -8,37 +8,39 @@
 
 <div class="{{ section_width }} product__list--wrap" id="section--{{ section.id }}">
   <div class="section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
-    <div class="image__wrap">
-      {% if image %}
-        {%- liquid
-          assign small_width = image.src.height | times: '375' | divided_by: image.src.width
-          assign master_width = image.src.width | append: 'x' | append: image.src.height
-          assign width = '375x' | append: small_width | append: ',' | append: master_width
-          assign class = ''
-        -%}
-        {%- render 'responsive-image', image: image, sizes: width, class: class -%}
-      {% else %}
-        {{ 'product-1' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-      {% endif %}
-    </div>
-    <div class="block__header">
-      {% if block.settings.heading != blank %}
-        <h3 class="{{ block.settings.heading_size }} heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.heading | newline_to_br }}</h3>
-      {% endif %}
-      {% if block.settings.subheading != blank %}
-        <p class="caption" {{ block.shopify_attributes }}>{{ block.settings.subheading }}</p>  
-      {% endif %}
-    </div>
-    {% if block.settings.text != blank %}
-      <div class="block__description">
-        <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
+   {% for block in section.blocks %}
+      <div class="image__wrap">
+        {% if image %}
+          {%- liquid
+            assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+            assign master_width = image.src.width | append: 'x' | append: image.src.height
+            assign width = '375x' | append: small_width | append: ',' | append: master_width
+            assign class = ''
+          -%}
+          {%- render 'responsive-image', image: image, sizes: width, class: class -%}
+        {% else %}
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+        {% endif %}
       </div>
-    {% endif %}
-    {% if block.settings.button_link != blank %}
-      <div class="block__buttons">
-        <a class="btn {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
+      <div class="block__header">
+        {% if block.settings.heading != blank %}
+          <h3 class="{{ block.settings.heading_size }} heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.heading | newline_to_br }}</h3>
+        {% endif %}
+        {% if block.settings.subheading != blank %}
+          <p class="caption" {{ block.shopify_attributes }}>{{ block.settings.subheading }}</p>  
+        {% endif %}
       </div>
-    {% endif %}
+      {% if block.settings.text != blank %}
+        <div class="block__description">
+          <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
+        </div>
+      {% endif %}
+      {% if block.settings.button_link != blank %}
+        <div class="block__buttons">
+          <a class="btn {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
 
