@@ -562,6 +562,10 @@
 
 @media only screen and (max-width: 767px) {
 
+  .trip__image--overlay .image-with-text-overlay--content-inner {
+    padding: 17px 20px 38px;
+  }
+
   .trip__image--overlay .image-with-text-overlay--content .heading {
     font-size: 28px;
     line-height: 37px;
