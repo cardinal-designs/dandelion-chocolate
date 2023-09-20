@@ -33,5 +33,5 @@
   letter-spacing: 0.02em;
   text-align: center;
   margin: 9px 0 0;
-  text-transform: capitalize;
+  text-transform: initial;
 }
