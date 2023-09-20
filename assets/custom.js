@@ -325,7 +325,7 @@ $(document).ready(function () {
   }
 });
 
-document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
+document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
     let Id = el.currentTarget.getAttribute('data-col-Id'),
         sectionId = document.querySelector(`[id="${Id}"]`);
