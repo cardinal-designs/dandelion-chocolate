@@ -101,6 +101,7 @@
         "3c094f3f-5685-4688-9d3a-da54e8b478e1": {
           "type": "product",
           "settings": {
+            "product": "",
             "subheading": "Add a tagline",
             "heading": "Heading",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -118,6 +119,7 @@
         "b4bcc115-9ed1-4ca5-9ad5-272870d521ac": {
           "type": "product",
           "settings": {
+            "product": "hawaii-trip",
             "subheading": "Add a tagline",
             "heading": "Heading",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
