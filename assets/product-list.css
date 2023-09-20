@@ -154,5 +154,11 @@
     line-height: 32px;
   }
 
+  .product__list--wrap .subheading {
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    margin: 4px 0 0;
+  }
+
 }
 
