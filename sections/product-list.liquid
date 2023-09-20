@@ -85,12 +85,6 @@
       "label": "Section width"
     },
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Product Image",
-      "info": "2800 x 650 .jpg recommended."
-    },
-    {
       "type": "header",
       "content": "Spacing"
     },
@@ -109,10 +103,20 @@
   ],
   "blocks": [
     {
-      "type": "subheading",
-      "name": "Subheading",
+      "type": "product",
+      "name": "Product Details",
       "limit": 1,
       "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Product Image",
+          "info": "2800 x 650 .jpg recommended."
+        },
         {
           "type": "header",
           "content": "subheading"
