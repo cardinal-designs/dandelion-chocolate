@@ -17,8 +17,8 @@
                 {% assign collectionImage = link.object %}
                 <img src="{{ collectionImage.image | img_url: '350x' }}">
               {% else %}
-                {% assign page = link.object %}
-                <img src="{{ page.metafields.custom.mega_menu_image.value | img_url: '350x' }}">
+                {% assign pageCol = link.object %}
+                <img src="{{ pageCol.metafields.custom.mega_menu_image.value | img_url: '350x' }}">
               {% endif %}
               <p class="sh2">{{ link.title }}</p>
               <span>{%- render 'svg-icons' with 'thb-mobile-menu-forward-v2' -%}</span>
@@ -63,7 +63,6 @@
                 </li>
               {% endcomment %}
 
-{{ page }}
                 <li class="sub__menu--navigation {% if link.title contains 'Chocolate' or link.title contains 'Events' %} child__menu--image {% endif %} {% if colLink.active %} active{% endif %}" role="none">
                     <a {% if page.handle == "shop" %}href="javascript:void(0);" {% else %} href="{{ colLink.url }}" onclick="window.sessionStorage.setItem('scrolltosection','{{ colLink.title }}')" {% endif %} data-col-Id="{{ colLink.title }}">
                       {% if link.title contains 'Chocolate' %}
