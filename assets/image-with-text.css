@@ -242,6 +242,10 @@
     max-width: 1152px;
   }
 
+  .trip__image--text .image-with-text__inner {
+    width: auto;
+  }
+
 }
 
 @media only screen and (min-width: 1068px) {
