@@ -42,7 +42,7 @@
     								{%- liquid
     									assign icon = block.settings.icon
     									assign master_width = icon.src.width | append: 'x' | append: icon.src.height
-    									render 'responsive-image', icon: icon, sizes: master_width
+    									render 'responsive-image', image: icon, sizes: master_width
     								-%}
     							{%- else -%}
     								<div class="thb-placeholder">
