@@ -4,6 +4,13 @@
   gap: 60px;
 }
 
-.product__items--wrap svg.placeholder_svg_tag {
+.product__list--wra svg.placeholder_svg_tag {
   border: 1px solid;
+}
+
+.product__list--wrap .heading {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0.05em;
 }
