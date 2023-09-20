@@ -313,7 +313,6 @@ $(document).ready(function () {
 
   var url = window.location.href;
   console.log(url);
-  $('.Sub_Menu-Columns li a').on('click', function(event) {
     var navScrollTo = url.split('#');
     console.log(navScrollTo);
 
@@ -323,7 +322,7 @@ $(document).ready(function () {
       scrollTop: scrollToTop
     });
     event.preventDefault();
-  });
+
 });
 
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
