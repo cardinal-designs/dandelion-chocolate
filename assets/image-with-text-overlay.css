@@ -527,3 +527,7 @@
   min-height: inherit;
   object-fit: cover;
 }
+
+.trip__image--overlay .image-with-text-overlay--content-inner.content-width-large {
+  max-width: 800px;
+}
