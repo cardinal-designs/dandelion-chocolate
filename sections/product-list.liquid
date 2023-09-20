@@ -46,8 +46,14 @@
         </div>
        </div>
       {% style %}
+        #block--{{ block.id }} .heading {
+          color: {{ block.settings.heading_color }}
+        }
         #block--{{ block.id }} .subheading {
           color: {{ block.settings.caption_color }}
+        }
+        #block--{{ block.id }} .block__description * {
+          color: {{ block.settings.text_color }}
         }
       {% endstyle %}
     {% endfor %}
