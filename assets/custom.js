@@ -309,29 +309,29 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
   document.body.classList.add("safari__specific--css");
 }
 
-$(document).ready(function () {
-  var url = window.location.href;
-  console.log(url);
-  let page = url.substring(url.lastIndexOf('#') + 1);
-  console.log(page);
+// $(document).ready(function () {
+//   var url = window.location.href;
+//   console.log(url);
+//   let page = url.substring(url.lastIndexOf('#') + 1);
+//   console.log(page);
   
-  let sectionScrolll = document.querySelector(`[id="${page}"]`);
-  window.scroll({
-    top: sectionScrolll.offsetTop - 50,
-    behavior: "smooth",
-  });
-});
+//   let sectionScrolll = document.querySelector(`[id="${page}"]`);
+//   window.scroll({
+//     top: sectionScrolll.offsetTop - 50,
+//     behavior: "smooth",
+//   });
+// });
 
-document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
-  ele.addEventListener('click',function(el){
-    let Id = el.currentTarget.getAttribute('data-col-Id'),
-        sectionId = document.querySelector(`[id="${Id}"]`);
-    window.scroll({
-      top: sectionId.offsetTop - 50,
-      behavior: "smooth",
-    });
-  })
-})
+// document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
+//   ele.addEventListener('click',function(el){
+//     let Id = el.currentTarget.getAttribute('data-col-Id'),
+//         sectionId = document.querySelector(`[id="${Id}"]`);
+//     window.scroll({
+//       top: sectionId.offsetTop - 50,
+//       behavior: "smooth",
+//     });
+//   })
+// })
 
 document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
