@@ -320,35 +320,23 @@ $(document).ready(function () {
     top: sectionScrolll.offsetTop - 50,
     behavior: "smooth",
   });
-
-  
-  
 });
-
-$(window).load(function () {
-    setTimeout(function() {
-        var href_value = window.location.href.split('#');
-        var href_id = document.getElementById(href_value[1]);
-        console.log('href_id', href_id);
-        window.scroll({
-          top: href_id.offsetTop - 90,
-          behavior: "smooth",
-        });
-    },1000)
-    
-})
-
-
-
 
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
+    el.preventDefault();
     let Id = el.currentTarget.getAttribute('data-col-Id'),
         sectionId = document.querySelector(`[id="${Id}"]`);
     window.scroll({
       top: sectionId.offsetTop - 90,
       behavior: "smooth",
     });
+    if(window.sessionStorage.getItem('scrolltosection')){
+    if(ele.id == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
   })
 })
 
