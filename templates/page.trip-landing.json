@@ -37,7 +37,7 @@
         "desktop_height": "desktop-height-500",
         "mobile_height": "mobile-height-auto",
         "content_width": "medium",
-        "content_position": "bottom-center",
+        "content_position": "middle-center",
         "text_alignment": "center",
         "overlay_opacity": 0,
         "show_caption_box": true,
