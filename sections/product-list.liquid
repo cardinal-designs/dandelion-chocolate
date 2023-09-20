@@ -9,7 +9,7 @@
 <div class="{{ section_width }} product__list--wrap" id="section--{{ section.id }}">
   <div class="product__items--wrap row section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
    {% for block in section.blocks %}
-     <div class="product__items">
+     <div class="product__items" id="block--{{ block.id }}">
       <div class="image__wrap">
         {% if image %}
           {%- liquid
@@ -42,19 +42,17 @@
         </div>
       {% endif %}
      </div>
+    {% style %}
+      #block--{{ block.id }} .caption {
+        color: {{ block.settings.caption_color }}
+      }
+      {% endstyle %}
     {% endfor %}
   </div>
 </div>
 
 {% style %}
-  
-  {% for block in section.blocks %}
-    
-    #section--{{ section.id }} .caption {
-      color: {{ block.settings.caption_color }}
-    }
 
-  {% endfor %}
   
 {% endstyle %}
 
