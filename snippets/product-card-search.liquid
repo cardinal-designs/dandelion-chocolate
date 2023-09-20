@@ -32,7 +32,7 @@
     {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' |append: product_small.id -%}
 
     <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
-      {% if product_small.metafields.info.product_type != blank or product_small.metafields.info.percentage != blank %}   
+      {% if product_small.metafields.info.product_type != blank %}   
         <div class="card__type">
           {{ product_small.metafields.info.product_type }}
         </div>       
