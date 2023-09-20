@@ -531,3 +531,7 @@
 .trip__image--overlay .image-with-text-overlay--content-inner.content-width-large {
   max-width: 800px;
 }
+
+.trip__image--overlay .image-with-text-overlay--content .rte {
+  margin-bottom: 0;
+}
