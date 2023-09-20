@@ -154,4 +154,8 @@
     align-items: flex-start;
   }
 
+  .image__text-hero .image-with-text-overlay--content-inner p.caption {
+    margin-left: 0;  
+  }
+  
 }
