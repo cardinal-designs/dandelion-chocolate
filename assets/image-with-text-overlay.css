@@ -516,3 +516,14 @@
   }
   
 }
+
+/*================ Trip Landing ================*/
+
+.trip__image--overlay .image-with-text-overlay--bg {
+  min-height: inherit;
+}
+
+.trip__image--overlay .image-with-text-overlay--bg img {
+  min-height: inherit;
+  object-fit: cover;
+}
