@@ -309,24 +309,23 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
   document.body.classList.add("safari__specific--css");
 }
 
-// $(document).ready(function () {
-//   $('.Sub_Menu-Columns li a').on('click', function(event) {
-//     console.log('Clicked');
-//     var navScrollTo = $(this).attr('href').split('#');
-//     console.log('navScrollTo', navScrollTo[1]);
+$(document).ready(function() {
+    $('html, body').hide();
 
-//     var scrollToTop = $('#' + navScrollTo[1]).offset().top - 90;  
-//     console.log('navScrollTo222', scrollToTop);
-//     $('html, body').animate({
-//       scrollTop: scrollToTop
-//     });
-//     event.preventDefault();
-//   });
-// });
-
-$('html,body').animate({
-  scrollTop: $(window.location.hash).offset().top
+    if (window.location.hash) {
+        setTimeout(function() {
+            $('html, body').scrollTop(0).show();
+            $('html, body').animate({
+                scrollTop: $(window.location.hash).offset().top
+                }, 1000)
+        }, 0);
+    }
+    else {
+        $('html, body').show();
+    }
 });
+
+
 
 $(document).ready(function () {
   var url = window.location.href;
