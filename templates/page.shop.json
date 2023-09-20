@@ -8,7 +8,7 @@
           "settings": {
             "text": "",
             "subheading_color": "#d3a741",
-            "subheading_color_mobile": "#333"
+            "subheading_color_mobile": "#333333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-1": {
@@ -17,7 +17,7 @@
             "text": "Single-Origin S’Mores Kit",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2": {
@@ -26,7 +26,7 @@
             "text": "<p>Three origins of chocolate Large Chips, plenty of house-made graham crackers and marshmallows, plus instructions — for a gooey, crispy-crunchy s’more at home or outdoors<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3": {
@@ -75,7 +75,7 @@
           "settings": {
             "text": "FRESHLY BAKED",
             "subheading_color": "#d3a741",
-            "subheading_color_mobile": "#333"
+            "subheading_color_mobile": "#333333"
           }
         },
         "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3": {
@@ -84,7 +84,7 @@
             "text": "Summer Treat Tin",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "1c54a7df-956d-4754-add0-db32fb0b4e9e": {
@@ -93,7 +93,7 @@
             "text": "<p>Featuring freshly baked fudgy brownies, Miso Blondies, and chocolate-and-vanilla Cookies & Cream Sandwiches, this collection inlcludes Chef Lisa's versions of time-honored treats in a custom-designed, take-anywhere Summer Treat Tin.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         },
         "4af6929c-0254-43be-b8ac-6f6f24e2709f": {
@@ -931,7 +931,7 @@
     "b489c90a-18dd-4ef0-a616-2a2dfd9808c2": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Baking",
+        "section_id": "Pantry & Baking",
         "heading": "Pantry and Baking",
         "heading_desktop": 32,
         "heading_mobile": 22,
