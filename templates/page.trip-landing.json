@@ -60,7 +60,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Info_Icon_dd2777b8-4482-4925-a8e9-31715fc08e1b.png",
-            "retina": true
+            "retina": false
           }
         },
         "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-heading-1": {
