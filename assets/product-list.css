@@ -53,10 +53,14 @@
 
 .product__list--wrap .block__buttons {
   padding-top: 20px;
+  display: flex;
+  column-gap: 22px;
 }
 
 .product__list--wrap .block__buttons a {
   display: block;
+  flex: 0 1 50%;
+  border-radius: unset;
 }
 
 
