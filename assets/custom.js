@@ -316,12 +316,6 @@ $(document).ready(function () {
     var navScrollTo = url.split('#');
     console.log(navScrollTo);
 
-    var scrollToTop = $('#' + navScrollTo[1]).offset().top - 90;  
-    console.log('navScrollTo222', scrollToTop);
-    $('html, body').animate({
-      scrollTop: scrollToTop
-    });
-    event.preventDefault();
 
 });
 
