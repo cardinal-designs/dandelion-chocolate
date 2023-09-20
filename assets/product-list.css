@@ -68,6 +68,11 @@
   border-color: #FFCA24;
 }
 
+.product__list--wrap .block__buttons a.btn--gold:hover {
+  color: #FFCA24;
+  border-color: #FFCA24;
+}
+
 
 
 
