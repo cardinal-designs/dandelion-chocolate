@@ -320,7 +320,18 @@ $(document).ready(function () {
     top: sectionScrolll.offsetTop - 50,
     behavior: "smooth",
   });
+
+  var href_value = window.location.href.split('#');
+  var href_id = document.getElementById(href_value);
+  window.scroll({
+    top: href_id.offsetTop - 90,
+    behavior: "smooth",
+  });
+  
 });
+
+
+
 
 document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
