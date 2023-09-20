@@ -49,10 +49,45 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "3c1730b0-58ef-40e6-b5c5-62c14faf849f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "ADVENTURE DISCLAIMER",
+            "size": "h3"
+          }
+        },
+        "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dandelion Trips are not for the faint of heart. You will get mosquito bites, and mud on your boots. If that sounds like your kind of adventure, you’re in the right place. <\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-heading-1",
+        "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-text-1"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#f5f6f5",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
     "main",
-    "a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56"
+    "a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56",
+    "3c1730b0-58ef-40e6-b5c5-62c14faf849f"
   ]
 }
