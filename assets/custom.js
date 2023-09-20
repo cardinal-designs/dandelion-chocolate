@@ -324,7 +324,8 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 //   });
 // });
 
-$(document).ready(function () {
+$(window).load(function() {
+
   var url = window.location.href;
   console.log(url);
   let page = url.substring(url.lastIndexOf('#') + 1);

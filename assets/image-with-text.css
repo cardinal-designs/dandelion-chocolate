@@ -243,7 +243,11 @@
   }
 
   .trip__image--text .image-with-text__inner {
-    width: auto;
+    width: auto !important;
+  }
+
+  .trip__image--text .image-with-text__content.image-with-text__inner {
+    padding: 0;
   }
 
 }
