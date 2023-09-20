@@ -333,14 +333,14 @@ document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
       top: sectionId.offsetTop - 90,
       behavior: "smooth",
     });
+  });
     console.log('ele',ele);
-    if(window.sessionStorage.getItem('scrolltosection')){
+  if(window.sessionStorage.getItem('scrolltosection')){
     if(ele.id == window.sessionStorage.getItem('scrolltosection')){
       ele.click();
       window.sessionStorage.removeItem("scrolltosection");
     }
   }
-  })
 })
 
 document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
