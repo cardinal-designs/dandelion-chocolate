@@ -551,3 +551,11 @@
   letter-spacing: 0.04em;
   text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+  
+  .trip__image--overlay .image-with-text-overlay-caption--box {
+    padding: 44px 40px;
+  }
+  
+}
