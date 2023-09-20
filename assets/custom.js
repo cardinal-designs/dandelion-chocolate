@@ -323,6 +323,7 @@ $(document).ready(function () {
 
   var href_value = window.location.href.split('#');
   var href_id = document.getElementById(href_value);
+  console.log('href_id', href_id);
   window.scroll({
     top: href_id.offsetTop - 90,
     behavior: "smooth",
