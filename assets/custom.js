@@ -352,6 +352,14 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
       behavior: "smooth",
     });
   })
+
+  if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
 })
 
 $(document).ready(function() {
