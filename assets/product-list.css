@@ -129,6 +129,7 @@
   .product__items--wrap {
     grid-template-columns: 1fr;
     gap: 50px;
+    padding-top: 16px;
   }
 
   .product__list--wrap .block__buttons {
