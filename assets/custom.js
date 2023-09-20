@@ -334,7 +334,7 @@ document.querySelectorAll('.Sub_Menu-Columns li a').forEach((ele)=>{
       behavior: "smooth",
     });
   });
-    console.log('ele',ele);
+    console.log('ele',ele.dataset);
   if(window.sessionStorage.getItem('scrolltosection')){
     if(ele.id == window.sessionStorage.getItem('scrolltosection')){
       ele.click();
