@@ -63,6 +63,10 @@
   border-radius: unset;
 }
 
+.product__list--wrap .block__buttons a.btn--gold {
+  background-color: #FFCA24;
+}
+
 
 
 
