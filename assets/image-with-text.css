@@ -215,6 +215,21 @@
   
 }
 
+.trip__image--text .image-with-text__content--inner .heading {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.trip__image--text .image-with-text__content--inner .rte * {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
 @media only screen and (min-width: 1068px) {
   
   .trip__image--text .image-with-text__content {
