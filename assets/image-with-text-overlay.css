@@ -540,7 +540,7 @@
   margin-bottom: 16px;
 }
 
-.trip__image--overlay .image-with-text-overlay--content .rte {
+.trip__image--overlay .image-with-text-overlay--content .rte * {
   font-family: 'AGaramondPro';
   font-size: 24px;
   font-style: italic;
