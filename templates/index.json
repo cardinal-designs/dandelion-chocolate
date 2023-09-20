@@ -438,7 +438,8 @@
           "disabled": true,
           "settings": {
             "text": "DIRECT TRADE",
-            "subheading_color": "#ffffff"
+            "subheading_color": "#ffffff",
+            "subheading_color_mobile": "#333"
           }
         },
         "template--15975893827724__c13ec1ed-028d-49b9-840e-e227bcaad30a-16896703952d3b2776-1": {
@@ -446,7 +447,8 @@
           "settings": {
             "text": "ETHICAL SOURCING",
             "heading_size": "h1",
-            "heading_color": "#ffffff"
+            "heading_color": "#ffffff",
+            "heading_color_mobile": "#333"
           }
         },
         "template--15975893827724__c13ec1ed-028d-49b9-840e-e227bcaad30a-16896703952d3b2776-2": {
@@ -454,7 +456,8 @@
           "settings": {
             "text": "<p>We source our cocoa beans directly, with boots on the ground (usually Greg's) at each farm. <\/p><p>We are friends with our producers and on average pay over $7,000\/ton.<\/p>",
             "description_size": "body",
-            "description_color": "#ffffff"
+            "description_color": "#ffffff",
+            "description_color_mobile": "#333"
           }
         },
         "template--15975893827724__c13ec1ed-028d-49b9-840e-e227bcaad30a-16896703952d3b2776-3": {
@@ -500,7 +503,8 @@
         "stack_on_mobile": true,
         "content__bg": "#333333",
         "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": true,
+        "custom_class": ""
       }
     },
     "f2cb92da-bdb5-44fa-8b49-1b79e94a0b15": {
@@ -644,7 +648,7 @@
         "color_text": "#333333",
         "heading": "VISIT US",
         "image": "shopify:\/\/shop_images\/cafe_setting_7495c0b8-4645-4452-9b76-622102440400.png",
-        "mobile_image": "shopify:\/\/shop_images\/cafe_setting_7495c0b8-4645-4452-9b76-622102440400.png",
+        "mobile_image": "shopify:\/\/shop_images\/cafe_setting_21e61b62-b1ba-4cd6-98cd-a86ed0eae675.png",
         "image_link": "shopify:\/\/pages\/visit-us",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
@@ -658,7 +662,8 @@
           "settings": {
             "text": "TOURS, CLASSES, & EVENTS",
             "heading_size": "h1",
-            "heading_color": "#ffffff"
+            "heading_color": "#ffffff",
+            "heading_color_mobile": "#333"
           }
         },
         "template--15975893827724__1627fb3e-f5c6-4d8c-8843-5b818899b71b-1689671710ea1a6d61-2": {
@@ -666,7 +671,8 @@
           "settings": {
             "text": "<p>Explore chocolate-inspired activities, classes, and tours curated for your occasion at our 16th Street Factory and beyond. <br\/><\/p>",
             "description_size": "body",
-            "description_color": "#ffffff"
+            "description_color": "#ffffff",
+            "description_color_mobile": "#333"
           }
         },
         "template--15975893827724__1627fb3e-f5c6-4d8c-8843-5b818899b71b-1689671710ea1a6d61-3": {
@@ -711,7 +717,8 @@
         "stack_on_mobile": true,
         "content__bg": "#333333",
         "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": true,
+        "custom_class": ""
       }
     },
     "7cb08fd4-ad98-4437-8d49-49f6fe76311a": {
