@@ -86,7 +86,7 @@
                       {% assign ImageMegaMenu = block.settings.megamenu_image %}
                       {% assign navigationTitle = colLink.title | handleize %}
                         {% if navigationTitle == ImageTitle %}
-                          <a class="image__menu" href="javascript:void(0);" data-col-Id="{{ colLink.url | split: '#' | last }}" aria-label="image menu link">
+                          <a class="image__menu" {% if page.handle == "shop" %}href="javascript:void(0);"{% else %}href="{{ colLink.url }}"{% endif %} data-col-Id="{{ colLink.url | split: '#' | last }}" aria-label="image menu link">
                             {%- if ImageMegaMenu != blank -%}
                               <img src="{{ ImageMegaMenu | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
                             {%- else -%}
@@ -97,7 +97,7 @@
                         {% endif %}
                       {% endfor %}   
                       {%- endif -%}
-                      <a href="javascript:void(0);" data-col-Id="{{ colLink.url | split: '#' | last }}"  title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
+                      <a {% if page.handle == "shop" %}href="javascript:void(0);"{% else %}href="{{ colLink.url }}"{% endif %} data-col-Id="{{ colLink.url | split: '#' | last }}"  title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
                     </li>
                   {%- endfor -%}
                 </ul>
