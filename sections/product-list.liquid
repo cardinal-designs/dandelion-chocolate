@@ -22,16 +22,19 @@
       {% endif %}
     </div>
     <div class="block__header">
-      {% if block.settings.text != blank %}
-        <h3 class="{{ block.settings.heading_size }} heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.text | newline_to_br }}</h3>
+      {% if block.settings.heading != blank %}
+        <h3 class="{{ block.settings.heading_size }} heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.heading | newline_to_br }}</h3>
       {% endif %}
       {% if block.settings.subheading != blank %}
         <p class="caption" {{ block.shopify_attributes }}>{{ block.settings.subheading }}</p>  
       {% endif %}
     </div>
-    <div class="block__description">
-      <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
-    </div>
+    {% if block.settings.text != blank %}
+      <div class="block__description">
+        <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
+      </div>
+    {% endif %}
+    
     {% if section.settings.image_url %}
       {% for block in section.blocks %}
         {% if block.settings.button_link != blank %}
