@@ -576,7 +576,6 @@
   .trip__image--overlay .image-with-text-overlay--content .rte * {
     font-size: 18px;
     line-height: 21px;
-    letter-spacing: 0.08em;
     text-transform: lowercase;
   }
   
