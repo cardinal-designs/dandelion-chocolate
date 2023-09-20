@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+  margin-top: 78px;
+  margin-bottom: 118px;
 }
 
 .product__list--wrap svg.placeholder_svg_tag {
