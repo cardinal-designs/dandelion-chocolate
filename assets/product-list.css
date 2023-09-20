@@ -73,6 +73,10 @@
   border-color: #FFCA24;
 }
 
+.product__list--wrap .sold__out--btn {
+  opacity: 0.5
+}
+
 
 
 
