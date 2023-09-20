@@ -66,7 +66,6 @@
   font-size: 18px; 
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
 }
 
 .trip__rich--text .rte em {
@@ -75,4 +74,16 @@
 
 .trip__rich--text .rich-text__inner {
   max-width: 662px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .trip__rich--text .rich-text {
+    padding: 26px 0;
+  }
+
+  .trip__rich--text .rte * {
+    letter-spacing: 0.02em;
+  }
+  
 }
