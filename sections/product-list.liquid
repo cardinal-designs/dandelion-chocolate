@@ -8,40 +8,29 @@
 
 <div class="{{ section_width }} product__list--wrap" id="section--{{ section.id }}">
   <div class="section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
-    <div class="image-with-text-overlay--bg parallax--{{ image_parallax }}">
+    <div class="image__wrap">
       {% if image %}
         {%- liquid
           assign small_width = image.src.height | times: '375' | divided_by: image.src.width
           assign master_width = image.src.width | append: 'x' | append: image.src.height
           assign width = '375x' | append: small_width | append: ',' | append: master_width
           assign class = ''
-          if image_parallax
-            assign class = 'thb-parallax-image'
-          endif
-
-          if section.settings.mobile_image
-            assign class = class | append: ' image-with-text-overlay--desktop'
-          endif
         -%}
         {%- render 'responsive-image', image: image, sizes: width, class: class -%}
       {% else %}
         {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
       {% endif %}
-      {%- if section.settings.mobile_image -%}
-        {%- liquid
-          assign image = section.settings.mobile_image
-          assign master_width = image.src.width | append: 'x' | append: image.src.height
-          assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
-
-          assign class = ''
-          if image_parallax
-              assign class = 'thb-parallax-image'
-          endif
-
-          assign class = class | append: ' image-with-text-overlay--mobile'
-          render 'responsive-image', image: image, sizes: width, class: class
-        -%}
-      {%- endif -%}
+    </div>
+    <div class="block__header">
+      {% if block.settings.text != blank %}
+        <h3 class="{{ block.settings.heading_size }} heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.text | newline_to_br }}</h3>
+      {% endif %}
+      {% if block.settings.subheading != blank %}
+        <p class="caption" {{ block.shopify_attributes }}>{{ block.settings.subheading }}</p>  
+      {% endif %}
+    </div>
+    <div class="block__description">
+      <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
     </div>
     {% if section.settings.image_url %}
       {% for block in section.blocks %}
@@ -140,21 +129,8 @@
       "info": "2800 x 650 .jpg recommended."
     },
     {
-      "type": "image_picker",
-      "id": "mobile_image",
-      "label": "Mobile image (optional)",
-      "info": "375 x 650 .jpg recommended."
-    },
-    {
       "type": "header",
       "content": "Common Settings"
-    },
-    {
-      "type": "checkbox",
-      "id": "image_parallax",
-      "default": false,
-      "label": "Enable parallax",
-      "info": "Animations must be enabled in theme settings"
     },
     {
       "type": "select",
