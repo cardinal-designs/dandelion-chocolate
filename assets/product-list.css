@@ -3,3 +3,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
 }
+
+.product__items--wrap svg.placeholder_svg_tag {
+  border: 1px solid;
+}
