@@ -346,10 +346,6 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   })
 })
 
-
-
-
-
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
   
