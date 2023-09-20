@@ -2763,7 +2763,9 @@ scroll-shadow {
   .desktop-height-550 {
     min-height: 550px;
   }
-
+  .desktop-height-500 {
+    min-height: 500px;
+  }
 }
 
 @media only screen and (min-width:768px) {
