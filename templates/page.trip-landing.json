@@ -102,8 +102,9 @@
           "type": "product",
           "settings": {
             "product": "",
-            "subheading": "Add a tagline",
-            "heading": "Heading",
+            "image": "shopify:\/\/shop_images\/Hawaii_Image.png",
+            "heading": "Hawai’i",
+            "subheading": "September 10th-16th, 2023",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_text": "Register Now",
             "button_link": "#",
@@ -120,8 +121,9 @@
           "type": "product",
           "settings": {
             "product": "hawaii-trip",
-            "subheading": "Add a tagline",
+            "image": "shopify:\/\/shop_images\/Hawaii_Image_1.png",
             "heading": "Heading",
+            "subheading": "Add a tagline",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "button_text": "JOIN THE WAITLIST",
             "button_link": "#",
