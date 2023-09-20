@@ -313,10 +313,14 @@ $(document).ready(function () {
 
   var url = window.location.href;
   console.log(url);
-  var page = url.substring(url.lastIndexOf('#') + 1);
+  let page = url.substring(url.lastIndexOf('#') + 1);
   console.log(page);
-
-
+  
+  let sectionScrolll = document.querySelector(`[id="${page}"]`);
+    window.scroll({
+      top: sectionScrolll.offsetTop - 50,
+      behavior: "smooth",
+    });
 
 });
 
