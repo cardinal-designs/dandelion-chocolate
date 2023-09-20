@@ -60,7 +60,7 @@
 .product__list--wrap .block__buttons a {
   display: block;
   flex: 0 1 50%;
-  border-radius: unset;
+  border-radius: 6px;
 }
 
 .product__list--wrap .block__buttons a.btn--gold {
