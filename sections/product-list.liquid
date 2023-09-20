@@ -51,16 +51,13 @@
   {% for block in section.blocks %}
     
     #section--{{ section.id }} .caption {
-      color: {{ block.settings.caption_color | color_modify: 'alpha', 0.80 }}
+      color: {{ block.settings.caption_color }}
     }
   
-    @media screen and (max-width: 767px) { 
-  
-      #section--{{ section.id }} .caption {
-        color: {{ block.settings.caption_color | color_modify: 'alpha', 0.60 }}
-      }
-      
+    #section--{{ section.id }} .heading {
+      color: {{ block.settings.heading_color }}
     }
+  
   {% endfor %}
 {% endstyle %}
 
