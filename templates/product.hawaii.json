@@ -27,7 +27,8 @@
           "settings": {
             "heading": "PRICE",
             "content": "$1k deposit per person, pricing BELOW",
-            "description": ""
+            "description": "",
+            "mobile_description": ""
           }
         },
         "d8a89294-9c04-416c-b804-9db174465275": {
@@ -35,7 +36,8 @@
           "settings": {
             "heading": "DURATION",
             "content": "7 DAYS",
-            "description": ""
+            "description": "",
+            "mobile_description": ""
           }
         },
         "6db822eb-0a1f-466f-b2a0-b21c6e99958f": {
@@ -44,6 +46,7 @@
             "heading": "KNOWLEDGE LEVEL",
             "content": "",
             "description": "This trip is accessible to beginner and advanced chocolate enthusiasts.",
+            "mobile_description": "",
             "icon": "shopify:\/\/shop_images\/Group_149.png"
           }
         },
@@ -53,6 +56,7 @@
             "heading": "activity level",
             "content": "",
             "description": "This trip involves walking around muddy farms, but no incline hiking.",
+            "mobile_description": "",
             "icon": "shopify:\/\/shop_images\/Group_149.png"
           }
         },
@@ -62,6 +66,7 @@
             "heading": "comfort level",
             "content": "",
             "description": "No camping involved, guests will be staying at an oceanside villa.",
+            "mobile_description": "No camping involved, guests will be staying at a hotel.",
             "icon": "shopify:\/\/shop_images\/Group_148.png"
           }
         }
