@@ -175,6 +175,21 @@
   #{{ section.id }} {
     background-color: {{ section.settings.bg_color }};
   }
+
+  #{{ section.id }} {
+    background: {{ section.settings.color_bg }};
+    padding-top : {{ section.settings.top_spacing_desktop }}px;
+    padding-bottom : {{ section.settings.top_spacing_desktop }}px;
+  }
+
+  @media only screen and (max-width: 767px) {
+      
+    #{{ section.id }} {
+      padding-top : {{ section.settings.top_spacing_mobile }}px;
+      padding-bottom : {{ section.settings.top_spacing_mobile }}px;
+    }
+    
+  }
   
 {% endstyle %}
 
@@ -214,19 +229,51 @@
     },
     {
       "type": "header",
-      "content": "Spacing"
+      "content": "Desktop Spacing"
     },
     {
-        "type": "checkbox",
-        "id": "disable_top_spacing",
-        "default": false,
-        "label": "Remove top spacing"
+      "type": "range",
+      "id": "top_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
     },
     {
-        "type": "checkbox",
-        "id": "disable_bottom_spacing",
-        "default": false,
-        "label": "Remove bottom spacing"
+      "type": "range",
+      "id": "bottom_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Mobile Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
     }
   ],
   "presets": [
