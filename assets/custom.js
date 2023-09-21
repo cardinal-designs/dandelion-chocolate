@@ -401,7 +401,7 @@ $(document).ready(function() {
     $('.read_more').show();
   });
 
-  $('.variant-selects select').each(function(){
+  $('variant-selects select').each(function(){
       var $this = $(this), numberOfOptions = $(this).children('option').length;
     
       $this.addClass('select-hidden'); 
