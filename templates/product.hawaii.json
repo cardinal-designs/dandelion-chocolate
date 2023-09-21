@@ -675,9 +675,11 @@
         "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
+        "section_heading_color": "#333",
+        "section_rte_color": "#80714E",
         "color_text": "#333333",
         "top_spacing_desktop": 46,
-        "bottom_spacing_desktop": 40,
+        "bottom_spacing_desktop": 76,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
@@ -703,9 +705,10 @@
         "content_position": "text-left",
         "color_bg": "#f5f6f5",
         "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 72,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
       }
     },
     "5fd41698-5e2f-44e7-826a-3f18ca8c73c4": {
