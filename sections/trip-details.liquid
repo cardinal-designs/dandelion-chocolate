@@ -86,18 +86,15 @@
 							{% when 'space' %}
         		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
 							{% when 'tab' %}
-                              <div class="accordion" {{ block.shopify_attributes }}>
-                                <div id="Details-{{ block.id }}-{{ section.id }}">
-                                    <div>
-                                        {{ block.settings.heading | default: block.settings.page.title }}
-                                        <span></span>
-                                    </div>
-                                    <div class="collapsible__content accordion__content rte" id="Accordion-{{ block.id }}-{{ section.id }}">
-                                        {{ block.settings.content }}
-                                        {{ block.settings.page.content }}
-                                    </div>
-                                </div>
+                            <div>
+                              <div>
+                                {{ block.settings.heading | default: block.settings.page.title }}
                               </div>
+                              <div class="collapsible__content accordion__content rte" id="Accordion-{{ block.id }}-{{ section.id }}">
+                                {{ block.settings.content }}
+                                {{ block.settings.page.content }}
+                              </div>
+                            </div>
 						{%- endcase -%}
 					{%- endfor -%}
 				</div>
