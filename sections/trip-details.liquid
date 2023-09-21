@@ -88,11 +88,10 @@
 							{% when 'tab' %}
                             <div>
                               <div>
-                                {{ block.settings.heading | default: block.settings.page.title }}
+                                {{ block.settings.heading }}
                               </div>
                               <div class="collapsible__content accordion__content rte" id="Accordion-{{ block.id }}-{{ section.id }}">
                                 {{ block.settings.content }}
-                                {{ block.settings.page.content }}
                               </div>
                             </div>
 						{%- endcase -%}
