@@ -20,7 +20,7 @@
       <div class="">
         <div class="row align-stretch pricing__blocks-main {% if mobile_swipe %}mobile__swiper{% endif %}">
           {%- for block in section.blocks -%}
-            <div id="content__{{ block.id }}" class="pricing__blocks" style="color: {{ block.settings.background_color }}">
+            <div id="content__{{ block.id }}" class="pricing__blocks" style="background-color: {{ block.settings.background_color }}">
               {% if block.settings.title != blank %}
                 <h4 style="color: {{ block.settings.heading_color }}" class="{{ heading_size }} custom__{{ heading_size }} heading">{{ block.settings.title | newline_to_br }}</h4>
               {% endif %}
