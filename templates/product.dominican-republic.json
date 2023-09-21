@@ -217,6 +217,7 @@
       "settings": {
         "section_heading": "",
         "image": "shopify:\/\/shop_images\/dr-trip-review.png",
+        "image_mobile": "shopify:\/\/shop_images\/Hawaii_Image_3.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
@@ -443,7 +444,7 @@
           "type": "caption",
           "settings": {
             "caption": "Month 5-11, 2023",
-            "caption_color": "#A28D5B"
+            "caption_color": "#a28d5b"
           }
         },
         "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-text-1": {
