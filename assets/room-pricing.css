@@ -1,4 +1,7 @@
-
+.pricing__blocks-main {
+  max-width: 1010px;
+  margin: 0 auto;
+}
 
 .room__pricing-section {
   padding: 44px 0;
