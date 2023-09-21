@@ -172,6 +172,7 @@
         "3b14e301-016f-4183-a287-458a9b6a5acf"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Image_3.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "grid",
