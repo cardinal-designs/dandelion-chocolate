@@ -337,5 +337,10 @@
   .trip__image--text .image-with-text__content {
     padding: 16px 20px 25px;
   }
+
+  .trip__content-heading {
+    font-size: 28px;
+    line-height: 37px;
+  }
   
 }
