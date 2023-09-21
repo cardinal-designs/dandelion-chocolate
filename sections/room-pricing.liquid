@@ -33,6 +33,16 @@
     </div>
 
     <div class="pricing__blocks-main">
+      {%- if section.settings.sub_heading != blank -%}
+        <div class="text-center">
+          <h2 class="custom__heading" style="color: {{ section.settings.sub_heading_color }}">{{ section.settings.sub_heading }}</h2>
+        </div>
+      {%- endif -%}
+      {%- if section.settings.description != blank -%}
+        <div class="text-center">
+          <h2 class="custom__heading" style="color: {{ section.settings.description_color }}">{{ section.settings.description }}</h2>
+        </div>
+      {%- endif -%}      
     </div>
     
     <div class="product-variants">
