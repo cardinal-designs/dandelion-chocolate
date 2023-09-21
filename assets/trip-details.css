@@ -240,7 +240,7 @@
   .trip__details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
+    column-gap: 40px;
     margin-top: 48px;
   }
 

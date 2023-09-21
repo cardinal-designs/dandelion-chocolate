@@ -463,6 +463,51 @@
       "settings": {
       }
     },
+    "c320dd8b-64e1-431f-b0be-71de066cb294": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Trip Overview"
+          }
+        },
+        "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>On this trip, you’ll visit cacao farms on the islands of O‘ahu and Kaua‘i, visit chocolate makers and taste their chocolate, and get to experience the local Hawai’ian culture through planned excursions. During your week in Hawai’i, you’ll be staying at our beautiful oceanside house and enjoying meals cooked by local chefs. <br\/><br\/>This trip is seven days, including arrival and departure days, as well as a free day for solo exploration. Due to the origin, this trip has an educational focus on the genetics of cacao, and you’ll also learn about the cacao cultivation process and chocolate making in general. <\/p>"
+          }
+        },
+        "7f3b50c6-2695-4bdb-ab1d-7c9c2dac1a59": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>FEATURED ACTIVITIES<\/h3><ul><li>Visit cacao farms on Kaua‘i and O‘ahu <\/li><li>Visit Manoa and Lonahana chocolate makers<\/li><li>Taste fresh cacao pods<\/li><li>Private chocolate tasting<\/li><li>Tropical fruit tasting<\/li><li>Understand the cultivation process for cacao<\/li><li>Visit the largest cultural museum in Hawai’i<br\/><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-heading-1",
+        "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-text-1",
+        "7f3b50c6-2695-4bdb-ab1d-7c9c2dac1a59"
+      ],
+      "settings": {
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "custom_class": ""
+      }
+    },
     "2ce9257a-6328-4df3-a10f-cf0ab39fa690": {
       "type": "custom-contact-form",
       "settings": {
@@ -487,6 +532,7 @@
     "1662552569cce2536d",
     "product-recommendations",
     "1693215725f4a695df",
+    "c320dd8b-64e1-431f-b0be-71de066cb294",
     "2ce9257a-6328-4df3-a10f-cf0ab39fa690"
   ]
 }
