@@ -395,33 +395,27 @@
     "c07fff9c-b92e-44b5-9c0c-f181b828d047": {
       "type": "custom-image-with-text",
       "blocks": {
-        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Add a tagline"
-          }
-        },
         "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "Why the Dominican Republic?",
             "heading_size": "large"
           }
         },
         "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>The Dominican Republic is one of the top 10 cocoa producers on the globe, producing the largest amount of organic certified cocoa in the world. Because the cocoa is centrally fermented rather than farm-fermented, guests will get to see this large-scale fermentation process and learn how it creates a higher quality of cocoa. <br\/><br\/>Dandelion first starting sourcing from Zorzal Estate in 2013 and has been going on origin trips to this location since 2016. On your trip, you’ll get to meet chocolate makers and farmers who help create the chocolate you love. <\/p>"
           }
         }
       },
       "block_order": [
-        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-subheading-1",
         "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-heading-1",
         "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-text-1"
       ],
       "settings": {
         "section_heading": "",
+        "image": "shopify:\/\/shop_images\/why-dr.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
@@ -429,8 +423,8 @@
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "color_text": "#151515",
-        "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "top_spacing_desktop": 66,
+        "bottom_spacing_desktop": 100,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
@@ -438,42 +432,53 @@
     "245588c4-1950-4236-9898-049a5000a006": {
       "type": "custom-image-with-text",
       "blocks": {
-        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Add a tagline"
-          }
-        },
         "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "Hawaii",
             "heading_size": "large"
+          }
+        },
+        "4a76ee1f-aa72-400f-a7fb-3c200bd5a559": {
+          "type": "caption",
+          "settings": {
+            "caption": "Month 5-11, 2023",
+            "caption_color": "#A28D5B"
           }
         },
         "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Visit Hawaiian cacao farms and chocolate makers, sample cacao and tropical fruit at its place of origin, and experience local Hawaiian culture.<\/p>"
+          }
+        },
+        "88179e13-947d-47fe-81e5-8cf0838616ff": {
+          "type": "button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_link": "",
+            "button_style": "btn"
           }
         }
       },
       "block_order": [
-        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-subheading-1",
         "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-heading-1",
-        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-text-1"
+        "4a76ee1f-aa72-400f-a7fb-3c200bd5a559",
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-text-1",
+        "88179e13-947d-47fe-81e5-8cf0838616ff"
       ],
       "settings": {
         "section_heading": "",
+        "image": "shopify:\/\/shop_images\/pricing.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
-        "layout": "image_first",
-        "content_position": "text-left",
-        "color_bg": "#ffffff",
+        "layout": "text_first",
+        "content_position": "text-center",
+        "color_bg": "#f5f6f5",
         "color_text": "#151515",
-        "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 56,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
