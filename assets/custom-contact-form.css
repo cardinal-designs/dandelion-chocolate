@@ -1,5 +1,4 @@
 .custom__contact-form .section-header--content h2 {
-  color: #ffffff;
   font-size: 30px;
   font-weight: 400;
   line-height: 40px;
@@ -12,7 +11,7 @@
   padding: 0 20px;
 }
 
-.row.no-padding {
+.custom__contact-form-inner #contact_form .row.no-padding {
   padding: 0;
   margin: 0 -15px;
 }
