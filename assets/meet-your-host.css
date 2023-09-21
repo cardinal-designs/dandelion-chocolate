@@ -39,3 +39,10 @@
   font-family: 'AGaramondPro';
 }
 
+@media only screen and (max-width: 767px) {
+
+  .hosts__list {
+    flex-wrap:wrap;
+  }
+  
+}

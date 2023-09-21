@@ -52,6 +52,7 @@
   font-weight: 600;
   line-height: 21.6px;
   padding: 11px 16px;
+  cursor: pointer;
 }
 
 .select-options li {
