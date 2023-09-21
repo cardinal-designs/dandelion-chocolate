@@ -13,10 +13,11 @@
 -%}
 <div id="{{ section.id }}" class="room__pricing-section">
   <div class="row">
+    <div class="small-12 columns">
       {%- if section.settings.heading != blank -%}
         <h2 class="custom__heading text-center" style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h2>
       {%- endif -%}
-      <div class="row align-stretch pricing__blocks-main {% if mobile_swipe %}mobile__swiper{% endif %}">
+      <div class="pricing__blocks-main {% if mobile_swipe %}mobile__swiper{% endif %}">
         {%- for block in section.blocks -%}
           <div id="content__{{ block.id }}" class="pricing__blocks" style="background-color: {{ block.settings.background_color }}">
             {% if block.settings.title != blank %}
@@ -97,7 +98,7 @@
 	  {%- endif -%}
 	</div>
       
-    
+    </div>
   </div>
 </div>
 
