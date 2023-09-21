@@ -73,6 +73,10 @@
   min-width: 349px;
 }
 
+.choose__pricing {
+  margin-top: 37px;
+}
+
 @media only screen and (min-width: 768px) {
   
   .pricing__blocks-main {
