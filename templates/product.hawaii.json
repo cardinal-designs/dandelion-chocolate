@@ -53,6 +53,14 @@
             "content": "",
             "description": "This trip involves walking around muddy farms, but no incline hiking."
           }
+        },
+        "4e9eb666-fa8b-4b9e-9ed0-8ddb160de3fe": {
+          "type": "tab",
+          "settings": {
+            "heading": "comfort level",
+            "content": "Content",
+            "description": "No camping involved, guests will be staying at an oceanside villa."
+          }
         }
       },
       "block_order": [
@@ -61,7 +69,8 @@
         "8d1de5c2-d448-44ef-8517-ab73f99098d7",
         "d8a89294-9c04-416c-b804-9db174465275",
         "6db822eb-0a1f-466f-b2a0-b21c6e99958f",
-        "ed1369b2-0195-4438-8fef-9e3182f27ae9"
+        "ed1369b2-0195-4438-8fef-9e3182f27ae9",
+        "4e9eb666-fa8b-4b9e-9ed0-8ddb160de3fe"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
