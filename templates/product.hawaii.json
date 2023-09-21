@@ -1,15 +1,5 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {
-      }
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "breadcrumbs": {
       "type": "breadcrumbs",
       "disabled": true,
@@ -514,8 +504,6 @@
     }
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
     "breadcrumbs",
     "main-product",
     "16623877721f33fb14",
