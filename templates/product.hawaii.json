@@ -581,7 +581,7 @@
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
-        "section_width": "full-width-row-full",
+        "section_width": "full-width-spacing",
         "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
