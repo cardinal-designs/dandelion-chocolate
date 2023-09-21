@@ -1194,6 +1194,16 @@ html{
   padding-left: 1.2rem;
 }
 
+.custom__description a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #D3A741;
+  margin-top: 9px;
+}
+
 .custom__h6 {
   font-family: Saa Series F D;
   font-size: 20px;

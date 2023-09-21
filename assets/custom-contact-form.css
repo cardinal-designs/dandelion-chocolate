@@ -27,3 +27,8 @@
   line-height: 27px;
   letter-spacing: .02em;
 }
+
+.custom__contact-form .field label {
+  position: relative;
+  padding: 0;
+}
