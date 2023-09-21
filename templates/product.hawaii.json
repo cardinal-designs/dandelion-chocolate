@@ -497,7 +497,7 @@
         "video_controls": true,
         "height": "adapt",
         "desktop_image_width": "medium",
-        "section_width": "grid",
+        "section_width": "full-width-spacing",
         "layout": "text_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
