@@ -35,8 +35,9 @@
         "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-text-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
         "use_video": false,
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "",
         "video_autoplay": true,
         "video_controls": true,
         "height": "adapt",
