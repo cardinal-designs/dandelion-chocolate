@@ -42,8 +42,16 @@
           "type": "tab",
           "settings": {
             "heading": "KNOWLEDGE LEVEL",
-            "content": "Content",
+            "content": "",
             "description": "This trip is accessible to beginner and advanced chocolate enthusiasts."
+          }
+        },
+        "ed1369b2-0195-4438-8fef-9e3182f27ae9": {
+          "type": "tab",
+          "settings": {
+            "heading": "activity level",
+            "content": "",
+            "description": "This trip involves walking around muddy farms, but no incline hiking."
           }
         }
       },
@@ -52,7 +60,8 @@
         "525e8941-8a4e-469a-9012-ed6256889b0b",
         "8d1de5c2-d448-44ef-8517-ab73f99098d7",
         "d8a89294-9c04-416c-b804-9db174465275",
-        "6db822eb-0a1f-466f-b2a0-b21c6e99958f"
+        "6db822eb-0a1f-466f-b2a0-b21c6e99958f",
+        "ed1369b2-0195-4438-8fef-9e3182f27ae9"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
