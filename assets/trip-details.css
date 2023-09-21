@@ -231,10 +231,6 @@
   letter-spacing: normal;
 }
 
-.trip__details-main .row {
-  padding: 0 135px;
-}
-
 .trip__content-subheading {
   color: #53595C;
   font-family: Garamond Premier Pro;
@@ -295,6 +291,14 @@
 
   .trip__image--text .image-with-text__content.image-with-text__inner {
     padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1367px) {
+
+  .trip__details-main .row {
+    padding: 0 135px;
   }
 
 }
