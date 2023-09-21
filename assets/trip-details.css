@@ -280,7 +280,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 40px;
-    margin-top: 48px;
+    margin: 48px 0;
   }
 
   .section-image-with-text .trip__image--text.row.full-width-spacing .columns {
