@@ -251,6 +251,43 @@
       "label": "Section width"
     },
     {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "Image first"
+        },
+        {
+          "value": "text_first",
+          "label": "Image second"
+        }
+      ],
+      "default": "image_first",
+      "label": "Desktop image placement",
+      "info": "Image first is the default mobile layout."
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Desktop content alignment",
+      "options": [
+        {
+          "value": "text-center",
+          "label": "Center"
+        },
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        }
+      ],
+      "default": "text-left"
+    },
+    {
       "type": "header",
       "content": "Colors"
     },
@@ -265,6 +302,28 @@
       "id": "color_text",
       "label": "Text",
       "default": "#151515"
+    },
+    {
+      "type": "color",
+      "id": "color_border",
+      "label": "Borders",
+      "default": "#e2e2e2"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "Remove top spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "Remove bottom spacing"
     },
     {
       "type": "text",
