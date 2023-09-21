@@ -28,7 +28,7 @@
         "video_controls": false,
         "height": "adapt",
         "desktop_image_width": "large",
-        "section_width": "full-width-spacing",
+        "section_width": "grid",
         "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
@@ -421,7 +421,7 @@
           "settings": {
             "text": "SUBHEADING",
             "subheading_color": "#6b6b6b",
-            "subheading_color_mobile": "#333"
+            "subheading_color_mobile": "#333333"
           }
         },
         "16636686835e8f94d4-1": {
@@ -430,7 +430,7 @@
             "text": "IMAGE WITH TEXT OVERLAY",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "83c3ef40-7ca5-4f79-8e21-16fcbebbc991": {
@@ -439,7 +439,7 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "description_size": "medium",
             "description_color": "#333333",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         },
         "c6ec8484-f95c-4682-a344-ab918c10cab4": {
