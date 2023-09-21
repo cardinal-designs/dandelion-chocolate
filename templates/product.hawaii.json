@@ -690,13 +690,23 @@
         "template--16034458370188__5531d97c-1d89-4613-b7cc-3cf1f12a4e4d-host-detail-1": {
           "type": "host-detail",
           "settings": {
-            "heading": "Heading",
-            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+            "image": "shopify:\/\/shop_images\/Greg_D_Alesandre.png",
+            "heading": "Greg D’Alesandre",
+            "description": "<p>Chocolate Sourcerer at Dandelion Chocolate<\/p>"
+          }
+        },
+        "caed3006-4475-4e47-bcfe-3f564b8c45a5": {
+          "type": "host-detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stephen_Durfee.png",
+            "heading": "Stephen Durfee",
+            "description": "<p>Chocolate Curriculum Director at Dandelion Chocolate<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16034458370188__5531d97c-1d89-4613-b7cc-3cf1f12a4e4d-host-detail-1"
+        "template--16034458370188__5531d97c-1d89-4613-b7cc-3cf1f12a4e4d-host-detail-1",
+        "caed3006-4475-4e47-bcfe-3f564b8c45a5"
       ],
       "settings": {
         "heading": "Meet Your Host",
