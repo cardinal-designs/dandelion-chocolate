@@ -275,7 +275,7 @@
   .trip__details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    column-gap: 20px;
     margin: 48px 0;
   }
 
@@ -291,6 +291,14 @@
 
   .trip__image--text .image-with-text__content.image-with-text__inner {
     padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 991px) {
+  
+  .trip__details {
+    column-gap: 40px;
   }
 
 }
