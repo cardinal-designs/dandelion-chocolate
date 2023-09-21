@@ -1171,6 +1171,16 @@ html{
   letter-spacing: 0.56px;
 }
 
+.trip__content-heading {
+  color: #333;
+  font-family: Playfair Display;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: initial;
+}
+
 /***** General CSS End *****/
 
 @media screen and (max-width: 767px) {
