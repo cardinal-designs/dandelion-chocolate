@@ -37,6 +37,11 @@
   width: 100%;
 }
 
+.select-options {
+  margin: 0;
+  list-style: none;
+}
+
 .select-styled,
 .select-options li {
   color: #333;
@@ -44,21 +49,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
-}
-
-.select-options {
-  margin: 0;
-  list-style: none;
-}
-
-.select-styled, .select-options li {
-  color: #333;
-  font-family: Garamond Premiere Pro;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  line-height: 21.6px;
   padding: 11px 16px;
 }
 
