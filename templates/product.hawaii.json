@@ -29,12 +29,30 @@
             "content": "$1k deposit per person, pricing BELOW",
             "description": "Description"
           }
+        },
+        "d8a89294-9c04-416c-b804-9db174465275": {
+          "type": "tab",
+          "settings": {
+            "heading": "DURATION",
+            "content": "7 DAYS",
+            "description": "Description"
+          }
+        },
+        "6db822eb-0a1f-466f-b2a0-b21c6e99958f": {
+          "type": "tab",
+          "settings": {
+            "heading": "KNOWLEDGE LEVEL",
+            "content": "Content",
+            "description": "This trip is accessible to beginner and advanced chocolate enthusiasts."
+          }
         }
       },
       "block_order": [
         "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-heading-1",
         "525e8941-8a4e-469a-9012-ed6256889b0b",
-        "8d1de5c2-d448-44ef-8517-ab73f99098d7"
+        "8d1de5c2-d448-44ef-8517-ab73f99098d7",
+        "d8a89294-9c04-416c-b804-9db174465275",
+        "6db822eb-0a1f-466f-b2a0-b21c6e99958f"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
