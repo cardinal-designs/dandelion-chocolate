@@ -71,6 +71,7 @@
 
 .product-submit.custom__btn {
   min-width: 349px;
+  border-radius: 0;
 }
 
 .choose__pricing {
