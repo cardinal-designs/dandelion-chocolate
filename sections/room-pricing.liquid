@@ -7,12 +7,11 @@
 	assign heading_size = section.settings.heading_size
 	assign mobile_swipe = section.settings.mobile_swipe
 	assign image_ratio = section.settings.image_ratio
-	assign text_alignment = section.settings.text_alignment
 	assign show_progress_bar = section.settings.show_progress_bar
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
 -%}
-<div class="text-{{ text_alignment }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+<div class="section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
   <div class="row{% if full_width %} full-width-row{% endif %}">
     <div class="small-12 columns">
       {%- if section.settings.heading != blank -%}
@@ -92,26 +91,6 @@
       "id": "full_width",
       "label": "Make section full width",
       "default": true
-    },
-    {
-      "type": "select",
-      "id": "text_alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "left",
-      "label": "Content alignment"
     },
     {
       "type": "select",
