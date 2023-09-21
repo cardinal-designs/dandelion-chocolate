@@ -170,6 +170,12 @@
   text-align: right;
 }
 
+.trip__details-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 @media only screen and (min-width: 768px) {
 
   .trip__details {

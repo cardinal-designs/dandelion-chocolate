@@ -17,9 +17,9 @@
 	endif
 -%}
 
-<div id="section--{{ section.id }}" class="row {{ section_width }} {{ section.settings.custom_class }}">
+<div id="section--{{ section.id }}" class="row {{ section_width }}">
   <div class="small-12 columns">
-    <div class="trip__schedule--section grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }}  style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text | color_extract: 'red' }}, {{ color_text | color_extract: 'green' }}, {{ color_text | color_extract: 'blue' }}; --bg-body: {{ color_bg }};--color-border: {{ color_border }}">
+    <div class="trip__schedule--section grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }}">
       <div class="trip__schedule--header">
         <h3 class="section_heading">{{ section.settings.heading }}</h3> 
         <p class="section_description">{{ section.settings.description }}</h3>
