@@ -1182,6 +1182,15 @@ html{
   margin-bottom: 6px;
 }
 
+.trip__details-heading {
+  color: #53595C;
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
 /***** General CSS End *****/
 
 @media screen and (max-width: 767px) {
