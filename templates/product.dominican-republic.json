@@ -117,7 +117,8 @@
           "type": "tab",
           "settings": {
             "heading": "PRICE",
-            "content": "$2,500 \/ PERSON",
+            "content": "<p>$2,500 \/ PERSON<\/p>",
+            "mobile_content": "",
             "description": "",
             "mobile_description": ""
           }
@@ -126,7 +127,8 @@
           "type": "tab",
           "settings": {
             "heading": "DURATION",
-            "content": "6 DAYS",
+            "content": "<p>6 DAYS<\/p>",
+            "mobile_content": "",
             "description": "",
             "mobile_description": ""
           }
@@ -136,7 +138,8 @@
           "settings": {
             "heading": "KNOWLEDGE LEVEL",
             "content": "",
-            "description": "This trip is process-heavy, with in-depth information on fermentation and more.",
+            "mobile_content": "",
+            "description": "<p>This trip is process-heavy, with in-depth information on fermentation and more.<\/p>",
             "mobile_description": "",
             "icon": "shopify:\/\/shop_images\/Group_149_5cc1a90d-ae16-4a8b-93a3-312ef937349c.png"
           }
@@ -146,7 +149,8 @@
           "settings": {
             "heading": "activity level",
             "content": "",
-            "description": "This trip involves hours of hilly hiking through muddy terrain, in hot weather.",
+            "mobile_content": "",
+            "description": "<p>This trip involves hours of hilly hiking through muddy terrain, in hot weather.<\/p>",
             "mobile_description": "",
             "icon": "shopify:\/\/shop_images\/Group_147.png"
           }
@@ -156,7 +160,8 @@
           "settings": {
             "heading": "comfort level",
             "content": "",
-            "description": "Guests will stay on a nature reserve for one night. `",
+            "mobile_content": "",
+            "description": "<p>Guests will stay on a nature reserve for one night. `<\/p>",
             "mobile_description": "",
             "icon": "shopify:\/\/shop_images\/Group_149.png"
           }
@@ -437,7 +442,7 @@
           "type": "heading",
           "settings": {
             "text": "Hawaii",
-            "heading_size": "large"
+            "heading_size": "small"
           }
         },
         "4a76ee1f-aa72-400f-a7fb-3c200bd5a559": {
