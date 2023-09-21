@@ -35,6 +35,7 @@
       <div class="row no-padding">
         <div class="small-12 medium-6 columns">
           <div class="field">
+            <label for="ContactFormName">{{ 'sections.contact.form.name' | t }}</label>      
             <input
               type="text"
               id="ContactFormName"
@@ -42,11 +43,11 @@
               class="full"
               placeholder="{{ 'sections.contact.form.name' | t | escape }}"
             >
-            <label for="ContactFormName">{{ 'sections.contact.form.name' | t }}</label>
           </div>
         </div>
         <div class="small-12 medium-6 columns">
           <div class="field">
+            <label for="ContactFormEmail">{{ 'sections.contact.form.email' | t }}</label>      
             <input
               type="email"
               id="ContactFormEmail"
@@ -55,12 +56,12 @@
               placeholder="{{ 'sections.contact.form.email' | t | escape }}"
               required
             >
-            <label for="ContactFormEmail">{{ 'sections.contact.form.email' | t }}</label>
           </div>
         </div>
         {%- if show_phone_number -%}
           <div class="small-12 medium-12 columns">
             <div class="field">
+              <label for="ContactFormPhone">{{ 'sections.contact.form.phone' | t }}</label>          
               <input
                 type="tel"
                 id="ContactFormPhone"
@@ -68,7 +69,6 @@
                 class="full"
                 placeholder="{{ 'sections.contact.form.phone' | t | escape }}"
               >
-              <label for="ContactFormPhone">{{ 'sections.contact.form.phone' | t }}</label>
             </div>
           </div>
         {%- endif -%}
@@ -86,6 +86,7 @@
               <div class="small-12 columns">
                 <div class="field">
                   {%- if block.settings.use_long_text -%}
+                    <label for="{{ block.id }}">{{ block.settings.title | escape }}</label>                    
                     <textarea
                       id="{{ block.id }}"
                       name="contact[{{ field_title | escape }}]"
@@ -98,8 +99,8 @@
                         required
                       {% endif -%}
                     ></textarea>
-                    <label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
                   {%- else -%}
+                    <label for="{{ block.id }}">{{ block.settings.title | escape }}</label>                    
                     <input
                       id="{{ block.id }}"
                       type="text"
@@ -111,7 +112,6 @@
                         required
                       {% endif %}
                     >
-                    <label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
                   {%- endif -%}
                 </div>
               </div>
@@ -125,6 +125,7 @@
               -%}
               <div class="small-12 columns">
                 <div class="field select">
+                  <label for="{{ block.id }}">{{ block.settings.title | escape }}</label>            
                   <select
                     class="full"
                     name="contact[{{ field_title | escape }}]"
@@ -137,7 +138,6 @@
                       <option value="{{ trim_value | escape }}">{{ trim_value | escape }}</option>
                     {%- endfor -%}
                   </select>
-                  <label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
                 </div>
               </div>
               {%- assign field_index = field_index | plus: 1 -%}
@@ -145,6 +145,7 @@
         {%- endfor -%}
         <div class="small-12 medium-12 columns">
           <div class="field">
+            <label for="ContactFormMessage">{{ 'sections.contact.form.comment' | t }}</label>            
             <textarea
               rows="10"
               id="ContactFormMessage"
@@ -152,7 +153,6 @@
               class="full"
               placeholder="{{ 'sections.contact.form.comment' | t | escape }}"
             ></textarea>
-            <label for="ContactFormMessage">{{ 'sections.contact.form.comment' | t }}</label>
           </div>
         </div>
         <div class="small-12 medium-12 columns">
