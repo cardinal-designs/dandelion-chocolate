@@ -27,7 +27,7 @@
           "settings": {
             "heading": "PRICE",
             "content": "$1k deposit per person, pricing BELOW",
-            "description": "Description"
+            "description": ""
           }
         },
         "d8a89294-9c04-416c-b804-9db174465275": {
@@ -616,6 +616,8 @@
         "bcdd4437-802b-45cb-8e16-155a5f3f9257"
       ],
       "settings": {
+        "heading": "Heading",
+        "description": "Description",
         "section_width": "grid",
         "layout": "image_first",
         "content_position": "text-left",
