@@ -676,10 +676,10 @@
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "color_text": "#333333",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false,
-        "custom_class": ""
+        "top_spacing_desktop": 46,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
       }
     },
     "5531d97c-1d89-4613-b7cc-3cf1f12a4e4d": {
