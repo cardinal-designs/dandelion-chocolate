@@ -41,8 +41,8 @@
 			<div class="image-with-text__content image-with-text__inner">
 				<div class="image-with-text__content--inner">
 					{%- for block in section.blocks -%}
-                        <h3 class="heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
-                        <div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                        <h3 class="heading" {{ block.shopify_attributes }}>{{ block.settings.heading | newline_to_br }}</h3>
+                        <div class="rte" {{ block.shopify_attributes }}>{{ block.settings.description }}</div>
 					{%- endfor -%}
 				</div>
 			</div>
