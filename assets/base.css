@@ -1182,7 +1182,8 @@ html{
   margin-bottom: 6px;
 }
 
-.trip__details-heading {
+.trip__details-heading,
+.trip__details-content-text {
   color: #53595C;
   font-family: Saa Series F D;
   font-size: 14px;
