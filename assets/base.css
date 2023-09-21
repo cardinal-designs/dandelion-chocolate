@@ -1182,6 +1182,14 @@ html{
   margin-bottom: 6px;
 }
 
+.custom__h6 {
+  font-family: Saa Series F D;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3px;
+}
+
 .trip__details-heading,
 .trip__details-content-text {
   color: #53595C;
