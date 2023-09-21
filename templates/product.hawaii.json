@@ -462,6 +462,16 @@
       ],
       "settings": {
       }
+    },
+    "2ce9257a-6328-4df3-a10f-cf0ab39fa690": {
+      "type": "custom-contact-form",
+      "settings": {
+        "heading": "BE IN TOUCH",
+        "description": "<p>Please let us know if you have any questions and we'll be happy to be in touch. We have limited room availability at the villa, so if you have a room in mind, please contact us with the room option you’d like to reserve, as well as how many are in your party, or if you’ll be traveling alone.<br\/><\/p>",
+        "show_phone_number": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -476,6 +486,7 @@
     "16625458859c68803a",
     "1662552569cce2536d",
     "product-recommendations",
-    "1693215725f4a695df"
+    "1693215725f4a695df",
+    "2ce9257a-6328-4df3-a10f-cf0ab39fa690"
   ]
 }

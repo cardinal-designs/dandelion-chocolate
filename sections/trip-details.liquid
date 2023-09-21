@@ -97,7 +97,7 @@
 
                           {% if block.settings.content != blank %}
                             <span class="trip__details-content-icon">
-                              {{ block.settings.content }}
+                              {{ block.settings.icon | image_tag: width: '50x' }}
                             </span>
                           {% endif %}
                           
