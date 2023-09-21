@@ -1173,12 +1173,22 @@ html{
 
 .custom__heading {
   color: #333;
+  font-family: Playfair Display;
   font-size: 32px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.64px;
   text-transform: initial;
   margin-bottom: 6px;
+}
+
+.custom__description,
+.custom__description  * {
+  font-family: 'Garamond Premiere Pro';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: normal;
 }
 
 .custom__h6 {
