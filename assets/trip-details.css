@@ -231,6 +231,10 @@
   letter-spacing: normal;
 }
 
+.trip__details-main .row {
+  padding: 0 135px;
+}
+
 @media only screen and (min-width: 768px) {
 
   .trip__details {
