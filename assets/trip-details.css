@@ -260,8 +260,12 @@
     padding: 10px 20px;
   }
 
-  .trip__details-heading, .trip__details-content-text {
+  .trip__details-heading {
     line-height: 16.8px;
   }
-  
+ 
+  .trip__details-content-text {
+    line-height: 21px;
+  }
+   
 }

@@ -86,6 +86,10 @@
   .trip__schedule--wrap .trip__schedule--items {
     flex: 0 1 100%;
   }
+  
+  .schedule__detail {
+    margin-bottom: 37px;
+  }
 
   .schedule__detail .heading {
     font-size: 18px;
