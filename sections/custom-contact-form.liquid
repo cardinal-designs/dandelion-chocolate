@@ -11,7 +11,7 @@
   endif
 -%}
 {{- 'custom-contact-form.css' | asset_url | stylesheet_tag -}}
-<div id="{{ section.id }}" class="custom__contact-form contact-form">
+<div id="section-{{ section.id }}" class="custom__contact-form contact-form">
   <div class="custom__contact-form-inner">
     {% render 'section-header',
       section_heading: section_heading,
@@ -167,13 +167,13 @@
 
 {% style %}
 
-  #{{ section.id }} {
+  #section-{{ section.id }} {
     background-color: {{ section.settings.bg_color }};
   }
 
-  #{{ section.id }} h2, 
-  #{{ section.id }} .rte,
-  #{{ section.id }} .field label  {
+  #section-{{ section.id }} h2, 
+  #section-{{ section.id }} .rte,
+  #section-{{ section.id }} .field label  {
     color: {{ section.settings.text_color }};
   }
 
@@ -185,7 +185,7 @@
 
   @media only screen and (max-width: 767px) {
       
-    #{{ section.id }} {
+    #section-{{ section.id }} {
       padding-top : {{ section.settings.top_spacing_mobile }}px;
       padding-bottom : {{ section.settings.bottom_spacing_mobile }}px;
     }
