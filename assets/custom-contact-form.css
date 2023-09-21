@@ -40,7 +40,8 @@
   margin-bottom: 10px;
 }
 
-.custom__contact-form .field input {
+.custom__contact-form .field input,
+.custom__contact-form .field textarea {
   margin-bottom: 37px;
 }
 
