@@ -126,5 +126,11 @@
     letter-spacing: 0.05em;
     margin-bottom: 6px;
   }
+
+  .custom__image--text .caption {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+  }
   
 }
