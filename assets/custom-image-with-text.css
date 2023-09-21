@@ -137,5 +137,9 @@
   .custom__image--text .custom__btn {
     margin: 21px 0 0;
   }
+
+  .custom__image--text .section_heading {
+    margin-bottom: 27px;
+  }
   
 }
