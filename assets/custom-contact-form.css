@@ -49,3 +49,7 @@
 .custom__contact-form .section-header {
   margin-bottom: 40px;
 }
+
+.custom__contact-form input:focus-visible {
+  outline: none;
+}
