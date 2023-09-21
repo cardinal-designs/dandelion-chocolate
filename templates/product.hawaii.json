@@ -143,7 +143,7 @@
         "heading_color": "#333333",
         "heading": "Available Rooms & Pricing",
         "full_width": true,
-        "heading_size": "h5",
+        "heading_size": "h6",
         "mobile_swipe": false,
         "show_progress_bar": true,
         "disable_top_spacing": false,
