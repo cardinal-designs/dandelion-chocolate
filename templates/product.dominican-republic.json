@@ -485,7 +485,7 @@
         "color_text": "#333333",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 56,
-        "top_spacing_mobile": 40,
+        "top_spacing_mobile": 24,
         "bottom_spacing_mobile": 40
       }
     },
