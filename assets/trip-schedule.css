@@ -75,3 +75,12 @@
 .schedule__detail .rte p {
   font-family: 'AGaramondPro';
 }
+
+@media only screen and (max-width: 1067px) {
+
+  .trip__schedule--wrap .trip__schedule--items {
+    flex: 0 1 100%;
+    row-gap: 23px;
+  }
+  
+}
