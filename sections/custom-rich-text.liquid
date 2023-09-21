@@ -18,7 +18,7 @@
 		assign solid_button_label = '#ffffff'
 	endif
 -%}
-<div id="#section-{{ section.id }}" class="row {{ section_width }} {{ section.settings.custom_class }} custom__rich-text">
+<div id="section-{{ section.id }}" class="row {{ section_width }} {{ section.settings.custom_class }} custom__rich-text">
   <div class="small-12 columns">
     <div class="rich-text text-{{ text_alignment }} text-position-{{ text_position }} text-width-{{ text_width }} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"style="--color-bg: {{ color_bg }}; --color-text: {{ color_text }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }}; --solid-button-label: {{ solid_button_label }}; --bg-body: {{ color_bg }}; --color-accent: {{ color_links }}; --color-accent-rgb:  {{ color_links | color_extract: 'red' }}, {{ color_links | color_extract: 'green' }}, {{ color_links | color_extract: 'blue' }};">
       <div class="rich-text__inner">
