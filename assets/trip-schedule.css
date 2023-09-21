@@ -31,3 +31,11 @@
   line-height: 27px;
   letter-spacing: 0.02em;
 }
+
+.schedule__detail {
+  margin-bottom: 40px;
+}
+
+.schedule__detail:last-child {
+  margin-bottom: 0;
+}
