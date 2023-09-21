@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   background: var(--color-bg, #fff);
+  margin: 0;
 }
 
 @media only screen and (min-width:768px) {
@@ -63,104 +64,6 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-.image-with-text__content {
-  width: 100%;
-  flex-grow: 1;
-  padding: 25px;
-}
-
-.image-with-text__content .btn {
-  margin-top: 15px;
-  display: inline-block;
-}
-
-@media only screen and (min-width:768px) {
-  
-  .image-with-text__content {
-    padding: 45px;
-  }
-
-}
-
-@media only screen and (min-width:1068px) {
-  
-  .image-with-text__content {
-    padding: 70px;
-  }
-
-}
-
-.image-with-text__content svg {
-  width: 100px;
-  height: 100px;
-  fill: var(--bg-body, #fff);
-  opacity: 0.5;
-  background: var(--color-accent);
-  margin-bottom: 20px;
-}
-
-.image-with-text__content--inner {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.image-with-text__content__image {
-  margin-bottom: 30px;
-}
-
-.image-with-text__content p,
-.image-with-text__content h3 {
-  color: var(--color-text, --color-body);
-}
-
-.image-with-text__content .text-button {
-  color: var(--color-text, --color-body);
-}
-
-.image-with-text__content .text-button:before {
-  background: rgba(var(--color-text-rgb), 0.4);
-}
-
-.image-with-text__content .text-button:after {
-  background: var(--color-text, --color-body);
-}
-
-.image-with-text__content .accordion summary {
-  color: var(--color-text, --color-body);
-}
-
-.image-with-text__content .accordion summary span:before,
-.image-with-text__content .accordion summary span:after {
-  background: var(--color-text, --color-body);
-}
-
-.template-page-shop .section-image-with-text {
-  border-top: 1px solid #666666;
-}
-
-.template-page-shop .image-with-text__content--inner .subheading {
-  font-family: 'Saa Series F D';
-  letter-spacing: 0.15em;
-  color: #DCB251;
-  font-size: 14px;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.template-page-shop .image-with-text__content--inner .heading {
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: 0.04em;
-}
-
-.template-page-shop .image-with-text__content--inner .rte p {
-  line-height: 120%;
-}
-
-.template-page-shop .image-with-text__content .btn {
-  margin-top: 10px;
 }
 
 @media only screen and (min-width:768px) {
