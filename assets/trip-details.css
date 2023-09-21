@@ -1,4 +1,4 @@
-.image-with-text {
+.trip__details {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -7,13 +7,13 @@
 
 @media only screen and (min-width:768px) {
   
-  .image-with-text {
+  .trip__details {
     flex-wrap: nowrap;
   }
 
 }
 
-.image-with-text.text_first {
+.trip__details.text_first {
   flex-direction: row-reverse;
 }
 
