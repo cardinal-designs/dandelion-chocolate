@@ -523,7 +523,8 @@
         "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Trip Overview"
+            "text": "Trip Overview",
+            "heading_size": "large"
           }
         },
         "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-text-1": {
@@ -566,7 +567,8 @@
         "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Pricing for This Trip"
+            "text": "Pricing for This Trip",
+            "heading_size": "large"
           }
         },
         "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-text-1": {
@@ -731,7 +733,8 @@
         "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Why Hawai’i?"
+            "text": "Why Hawai’i?",
+            "heading_size": "large"
           }
         },
         "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1": {
@@ -767,13 +770,15 @@
         "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text"
+            "text": "Image with text",
+            "heading_size": "small"
           }
         },
         "df16449c-352a-49e3-b91a-e3981e929f1e": {
           "type": "caption",
           "settings": {
-            "caption_color": "#A28D5B"
+            "caption": "Caption",
+            "caption_color": "#a28d5b"
           }
         },
         "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-text-1": {
