@@ -28,6 +28,14 @@
   margin-bottom: 30px;
 }
 
+.room__pricing-section-inner .product-variants {
+  border: 1px solid #CCC;
+  background: #FFF;
+  max-width: 552px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   
   .pricing__blocks-main {
