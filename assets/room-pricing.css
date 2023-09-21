@@ -118,6 +118,10 @@
   .room__pricing {
     padding: 0 20px;
   }
+
+  .product-submit.custom__btn {
+    min-width: 335px;
+  }
   
 }
 
