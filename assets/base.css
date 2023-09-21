@@ -1194,6 +1194,10 @@ html{
   padding-left: 1.2rem;
 }
 
+.custom__description strong {
+  font-weight: 600;
+}
+
 .custom__description a {
   font-family: Saa Series F D;
   font-size: 14px;
