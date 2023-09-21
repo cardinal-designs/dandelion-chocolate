@@ -10,3 +10,11 @@
 .trip__schedule-media svg {
  border: 1px solid; 
 }
+
+.trip__schedule--text--inner .heading {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
