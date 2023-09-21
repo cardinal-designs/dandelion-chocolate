@@ -1,3 +1,7 @@
+.custom__image--text .image-with-text {
+  background: transparent;
+}
+
 .custom__image--text .image-with-text__content--inner .heading {
   margin-bottom: 20px;
 }
