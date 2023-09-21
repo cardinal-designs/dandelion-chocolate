@@ -1,3 +1,7 @@
+.meet__host--header {
+  margin-bottom: 37px;
+}
+
 .hosts__list {
   display: flex;
   justify-content: center;
@@ -6,4 +10,8 @@
 
 .meet__host--items {
   flex: 0 1 350px;
+}
+
+.meet__host-media svg {
+  border: 1px solid;
 }
