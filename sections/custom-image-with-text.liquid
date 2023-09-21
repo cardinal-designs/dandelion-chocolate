@@ -44,7 +44,7 @@
 				</div>
                 {% endcapture %}
                 {% capture mobile_image %}
-                  <div class="image-with-text__image-media aspect-ratio aspect-ratio--{{ height }} hide__desktop" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 61 }}%;">
+                  <div class="image-with-text__image-media aspect-ratio aspect-ratio--{{ height }} hide__desktop" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 60.5 }}%;">
     					{%- if image_mobile != blank -%}
     						{%- liquid
     							assign small_height = image_mobile.src.height | times: '690' | divided_by: image_mobile.src.width
