@@ -1,4 +1,5 @@
 {{- 'rich-text.css' | asset_url | stylesheet_tag -}}
+{{- 'custom-rich-text.css' | asset_url | stylesheet_tag -}}
 {%- liquid
 	assign section_width = section.settings.section_width
 	assign text_width = section.settings.text_width
