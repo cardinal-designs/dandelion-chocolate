@@ -80,11 +80,17 @@
 
   .trip__schedule--wrap {
     flex-wrap: wrap;
+    row-gap: 23px;
   }
 
   .trip__schedule--wrap .trip__schedule--items {
     flex: 0 1 100%;
-    row-gap: 23px;
+  }
+
+  .schedule__detail .heading {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
   }
   
 }
