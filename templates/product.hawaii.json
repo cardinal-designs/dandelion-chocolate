@@ -86,7 +86,7 @@
         "section_width": "grid",
         "layout": "image_first",
         "content_position": "text-left",
-        "color_bg": "rgba(0,0,0,0)",
+        "color_bg": "#f5f6f5",
         "color_text": "#151515",
         "color_border": "#e2e2e2",
         "disable_top_spacing": false,

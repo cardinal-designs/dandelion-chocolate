@@ -22,3 +22,12 @@
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
+
+.trip__schedule--text--inner .rte,
+.trip__schedule--text--inner .rte * {
+  font-family: Garamond Premiere Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+}
