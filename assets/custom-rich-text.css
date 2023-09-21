@@ -9,6 +9,11 @@
 
 .custom__rich-text .custom__description ul {
   padding-left: 30px;
+  margin: 0;
+}
+
+.custom__rich-text .rich-text .rte {
+  margin-bottom: 0;
 }
 
 .custom__rich-text .custom__description ul li {
