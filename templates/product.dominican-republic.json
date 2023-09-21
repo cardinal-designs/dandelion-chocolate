@@ -291,19 +291,60 @@
         "template--16034682503308__50f46e25-67ed-4484-8fac-50a49618f982-day-schedule-1": {
           "type": "day-schedule",
           "settings": {
-            "heading": "Heading",
-            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+            "heading": "DAY 1 - ARRIVAL",
+            "description": "<p>Fly into Puerto Plata, settle into your room, meet everyone, and get an overview of the agenda for the week.<\/p>"
+          }
+        },
+        "3777b8e0-b53b-469c-a05a-0777e16e4838": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 2 - ZORZAL FERMENTORIUM & RESERVA ZORZAL",
+            "description": "<p>We start early with a 2-hour drive down to visit Zorzal’s Fermentorium where you’ll see how cocoa is fermented and dried. After stopping for lunch in the back of a local chef’s home, we’ll drive to visit Reserva Zorzal, where we’ll learn about the private reserve and its protected area policy.<\/p>"
+          }
+        },
+        "dac75cda-53fd-468a-a1a8-34dd3eda190f": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 3 - RESERVA ZORZAL",
+            "description": "<p>We’ll spend the first part of our day continuing to explore and learn about Reserve Zorzal. Then we’ll drive back to our lodgings for the evening to settle into our cozy beds. <\/p>"
+          }
+        },
+        "485dd3f2-99f1-414f-96ec-2626f1421fa8": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 4 - FREE DAY",
+            "description": "<p>This is a day to do whatever you’d like to do: go kite surfing, surfing, caving or kayaking. Or just relax and read a book!<\/p>"
+          }
+        },
+        "fecb9499-d09f-418e-9a68-52bb2766e490": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 5 - TOUR A COOPERATIVE",
+            "description": "<p>On our last full day, we will tour Conocado, one of the largest cacao cooperatives in the Dominican Republic, and learn about fair trade and other environmental certifications.<\/p>"
+          }
+        },
+        "db60871d-05a8-41cf-99e2-01d5b72f89a8": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 6 - DEPARTURE",
+            "description": "<p>On the last day, we’ll depart from the Dominican Republic with an understanding of cacao production and a sunkissed glow from spending a week in the tropics.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16034682503308__50f46e25-67ed-4484-8fac-50a49618f982-day-schedule-1"
+        "template--16034682503308__50f46e25-67ed-4484-8fac-50a49618f982-day-schedule-1",
+        "3777b8e0-b53b-469c-a05a-0777e16e4838",
+        "dac75cda-53fd-468a-a1a8-34dd3eda190f",
+        "485dd3f2-99f1-414f-96ec-2626f1421fa8",
+        "fecb9499-d09f-418e-9a68-52bb2766e490",
+        "db60871d-05a8-41cf-99e2-01d5b72f89a8"
       ],
       "settings": {
-        "heading": "Heading",
-        "description": "Description",
+        "heading": "A Preview of Your Day to Day",
+        "description": "Schedule Subject to Change",
+        "image": "shopify:\/\/shop_images\/dr-trip-schedule.png",
         "section_width": "full-width-spacing",
-        "layout": "image_first",
+        "layout": "text_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "section_heading_color": "#333333",
@@ -321,7 +362,7 @@
         "template--16034682503308__fb25055f-8e63-47d5-9717-784e9e1f1e45-host-detail-1": {
           "type": "host-detail",
           "settings": {
-            "heading": "Heading",
+            "heading": "DAY 1 - ARRIVAL",
             "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
           }
         }
