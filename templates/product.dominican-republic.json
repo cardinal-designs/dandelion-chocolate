@@ -384,7 +384,7 @@
         "section_width": "full-width-spacing",
         "layout": "image_first",
         "content_position": "text-left",
-        "color_bg": "#ffffff",
+        "color_bg": "#f5f6f5",
         "color_text": "#333333",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 72,
