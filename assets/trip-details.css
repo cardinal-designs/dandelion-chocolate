@@ -235,6 +235,16 @@
   padding: 0 135px;
 }
 
+.trip__content-subheading {
+  color: #53595C;
+  font-family: Garamond Premier Pro;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;  
+}
+
 @media only screen and (min-width: 768px) {
 
   .trip__details {
