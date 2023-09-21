@@ -8,7 +8,6 @@
 	assign desktop_layout = section.settings.layout
 	assign color_bg = section.settings.color_bg
 	assign color_text = section.settings.color_text
-	assign color_border = section.settings.color_border
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
 
@@ -159,31 +158,52 @@
       "default": "#151515"
     },
     {
-      "type": "color",
-      "id": "color_border",
-      "label": "Borders",
-      "default": "#e2e2e2"
+      "type": "header",
+      "content": "Desktop Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
     },
     {
       "type": "header",
-      "content": "Spacing"
+      "content": "Mobile Spacing"
     },
     {
-      "type": "checkbox",
-      "id": "disable_top_spacing",
-      "default": false,
-      "label": "Remove top spacing"
+      "type": "range",
+      "id": "top_spacing_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
     },
     {
-      "type": "checkbox",
-      "id": "disable_bottom_spacing",
-      "default": false,
-      "label": "Remove bottom spacing"
-    },
-    {
-      "type": "text",
-      "id": "custom_class",
-      "label": "Custom Class"
+      "type": "range",
+      "id": "bottom_spacing_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
     }
   ],
   "blocks": [
