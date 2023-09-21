@@ -248,5 +248,10 @@
   .trip__details-main .row .columns {
     padding: 0;
   }
+
+  .trip__image--with-content {
+    width: 100%;
+    padding: 20px 10px;
+  }
   
 }
