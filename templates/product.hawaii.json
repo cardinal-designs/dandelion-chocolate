@@ -545,6 +545,7 @@
         "7f3b50c6-2695-4bdb-ab1d-7c9c2dac1a59"
       ],
       "settings": {
+        "section_heading": "",
         "image": "shopify:\/\/shop_images\/trip-overview.png",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -594,6 +595,7 @@
         "397c2bdf-7bdb-42f5-96e6-7614675e7826"
       ],
       "settings": {
+        "section_heading": "",
         "image": "shopify:\/\/shop_images\/pricing.png",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -677,8 +679,8 @@
         "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
-        "section_heading_color": "#333",
-        "section_rte_color": "#80714E",
+        "section_heading_color": "#333333",
+        "section_rte_color": "#80714e",
         "color_text": "#333333",
         "top_spacing_desktop": 46,
         "bottom_spacing_desktop": 76,
@@ -744,6 +746,7 @@
         "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1"
       ],
       "settings": {
+        "section_heading": "",
         "image": "shopify:\/\/shop_images\/why-hawaii.png",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -758,29 +761,29 @@
         "bottom_spacing_mobile": 40
       }
     },
-    "848b3a66-1a28-487c-b2f0-4d344ea92251": {
-      "type": "image-with-text",
+    "dda2a186-d5fb-4b7d-a1a9-61620e53504c": {
+      "type": "custom-image-with-text",
       "blocks": {
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-heading-1": {
+        "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Dominican Republic",
-            "heading_size": "h3"
+            "text": "Image with text"
           }
         },
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-subheading-1": {
-          "type": "subheading",
+        "df16449c-352a-49e3-b91a-e3981e929f1e": {
+          "type": "caption",
           "settings": {
-            "text": "Add a tagline"
+            "text": "Caption",
+            "caption_color": "#A28D5B"
           }
         },
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-text-1": {
+        "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-text-1": {
           "type": "text",
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
-        "4933c72d-e9f3-4523-93d5-7c315b43db30": {
+        "be6386f4-5799-4dd9-b8d0-2bc2e3a1e804": {
           "type": "button",
           "settings": {
             "button_text": "Shop Now",
@@ -791,27 +794,24 @@
         }
       },
       "block_order": [
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-heading-1",
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-subheading-1",
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-text-1",
-        "4933c72d-e9f3-4523-93d5-7c315b43db30"
+        "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-heading-1",
+        "df16449c-352a-49e3-b91a-e3981e929f1e",
+        "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-text-1",
+        "be6386f4-5799-4dd9-b8d0-2bc2e3a1e804"
       ],
       "settings": {
-        "use_video": false,
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "video_autoplay": true,
-        "video_controls": true,
+        "section_heading": "",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
         "layout": "text_first",
-        "content_position": "text-center",
-        "color_bg": "#f5f6f5",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
         "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false,
-        "custom_class": ""
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
       }
     },
     "2ce9257a-6328-4df3-a10f-cf0ab39fa690": {
@@ -848,7 +848,7 @@
     "a01b6235-c38a-46a5-8f03-041b1c2ca3e7",
     "5531d97c-1d89-4613-b7cc-3cf1f12a4e4d",
     "5fd41698-5e2f-44e7-826a-3f18ca8c73c4",
-    "848b3a66-1a28-487c-b2f0-4d344ea92251",
+    "dda2a186-d5fb-4b7d-a1a9-61620e53504c",
     "2ce9257a-6328-4df3-a10f-cf0ab39fa690"
   ]
 }
