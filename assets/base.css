@@ -1286,6 +1286,11 @@ html{
     font-size: 20px;
     line-height: 24px;
   }
+
+  .custom__sh1 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
   
 }
 
