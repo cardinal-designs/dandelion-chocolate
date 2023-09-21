@@ -570,13 +570,27 @@
         "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The cost for the Hawai’i Origin Trip ranges from $3,750 to $5,000 per person, depending on the room a guest books at our oceanside villa. <br\/><a href=\"#\" title=\"#\">SEE ROOM OPTIONS<br\/><\/a><strong><br\/>The cost also covers:<\/strong><\/p><ul><li>Internal travel and transportation between scheduled activities. <\/li><li>Meals and any planned cultural excursions. We will do our best to accommodate food allergies or restrictions. <\/li><li>Guests are responsible for their own flight in and out of Honolulu International Airport, as well as lunch (and any activities they decide to enjoy) on their free day. <br\/><\/li><\/ul>"
+            "text": "<p>The cost for the Hawai’i Origin Trip ranges from $3,750 to $5,000 per person, depending on the room a guest books at our oceanside villa. <br\/><a href=\"#\" title=\"#\">SEE ROOM OPTIONS<br\/><br\/><\/a><\/p>"
+          }
+        },
+        "f7aca756-7b47-451a-bc63-3be5807d6e33": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The cost also covers:<\/strong><\/p>"
+          }
+        },
+        "397c2bdf-7bdb-42f5-96e6-7614675e7826": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Internal travel and transportation between scheduled activities. <\/li><li>Meals and any planned cultural excursions. We will do our best to accommodate food allergies or restrictions. <\/li><li>Guests are responsible for their own flight in and out of Honolulu International Airport, as well as lunch (and any activities they decide to enjoy) on their free day. <br\/><\/li><\/ul>"
           }
         }
       },
       "block_order": [
         "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-heading-1",
-        "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-text-1"
+        "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-text-1",
+        "f7aca756-7b47-451a-bc63-3be5807d6e33",
+        "397c2bdf-7bdb-42f5-96e6-7614675e7826"
       ],
       "settings": {
         "height": "adapt",
