@@ -63,6 +63,10 @@
   background-position: 96% 50%;
 }
 
+.trip__cart-btn {
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   
   .pricing__blocks-main {
