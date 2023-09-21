@@ -116,9 +116,9 @@
           "type": "column",
           "settings": {
             "content_bg": "#000",
-            "title": "Column",
+            "title": "QUEEN-sized",
             "heading_color": "#333",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<ul><li>5 available rooms<\/li><li>Shared bathrooms<\/li><li>$3750 per person + $250 for single occupancy<\/li><\/ul>",
             "text_color": "#333"
           }
         },
@@ -126,9 +126,9 @@
           "type": "column",
           "settings": {
             "content_bg": "#000",
-            "title": "Column",
+            "title": "KING-sized",
             "heading_color": "#333",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<ul><li>2 available rooms<\/li><li>En suite bathrooms<\/li><li>$4500 per person + $500 for single occupancy<\/li><\/ul>",
             "text_color": "#333"
           }
         }
@@ -143,7 +143,7 @@
         "heading_color": "#333333",
         "heading": "Available Rooms & Pricing",
         "full_width": true,
-        "text_alignment": "left",
+        "text_alignment": "center",
         "heading_size": "h5",
         "mobile_swipe": false,
         "show_progress_bar": true,
