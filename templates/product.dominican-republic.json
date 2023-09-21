@@ -1,15 +1,5 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {
-      }
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "breadcrumbs": {
       "type": "breadcrumbs",
       "disabled": true,
@@ -149,21 +139,13 @@
         "enable_treatment": true,
         "show_short_product_desc": true
       }
-    },
-    "shogun-below": {
-      "type": "shogun-below",
-      "settings": {
-      }
     }
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
     "breadcrumbs",
     "main-product",
     "16623877721f33fb14",
     "166237435211863a49",
-    "product-recommendations",
-    "shogun-below"
+    "product-recommendations"
   ]
 }
