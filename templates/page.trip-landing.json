@@ -169,11 +169,8 @@
         "template--16033892335756__b6e016f2-c0cf-41c9-8d86-2900267a72a8-text-1"
       ],
       "settings": {
+        "section_heading": "",
         "image": "shopify:\/\/shop_images\/Hawaii_Image_d8d6739d-def6-4069-84c0-673fc089c732.jpg",
-        "use_video": false,
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "video_autoplay": true,
-        "video_controls": true,
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
@@ -181,10 +178,10 @@
         "content_position": "text-left",
         "color_bg": "#f5f6f5",
         "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false,
-        "custom_class": ""
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0
       }
     }
   },
