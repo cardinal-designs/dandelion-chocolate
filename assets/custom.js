@@ -453,7 +453,7 @@ $(document).ready(function() {
        var addtoCart = $('.product-information button[type="submit"]').attr('disabled');
        console.log(addtoCart)
        if (addtoCart){
-         $('.product-submit').text('sold-out');
+         $('.product-submit').text('SOLD OUT');
          $('.product-submit').attr('disabled','disabled');
        } else {
          $('.product-submit').text('RESERVE YOUR SPOT');
