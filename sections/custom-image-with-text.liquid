@@ -55,7 +55,7 @@
 								<div class="rte custom__description" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}
 								{% if block.settings.button_text != blank %}
-									<a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+									<a class="btn custom__btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
 								{% endif %}
 						{%- endcase -%}
 					{%- endfor -%}
