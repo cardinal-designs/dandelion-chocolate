@@ -19,7 +19,7 @@
 <div id="section--{{ section.id }}" class="row {{ section_width }}">
   <div class="small-12 columns">
     <div class="trip__schedule--section grid--image-{{ desktop_image_width }} {{ content_position }}">
-      <div class="trip__schedule--header">
+      <div class="trip__schedule--header hide__mobile">
         <h3 class="section_heading custom__heading text-center">{{ section.settings.heading }}</h3> 
         <p class="section_description">{{ section.settings.description }}</h3>
       </div>
@@ -40,6 +40,10 @@
         </div>
           {%- endif -%}
         <div class="trip__schedule--text trip__schedule--items">
+          <div class="trip__schedule--header hide__desktop">
+            <h3 class="section_heading custom__heading text-center">{{ section.settings.heading }}</h3> 
+            <p class="section_description">{{ section.settings.description }}</h3>
+          </div>
           <div class="trip__schedule--text--inner">
             {%- for block in section.blocks -%}
               <div class="schedule__detail">
