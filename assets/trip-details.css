@@ -239,7 +239,7 @@
 
   .trip__details {
     display: grid;
-    grid-template-columns: 0.96fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 60px;
   }
 
