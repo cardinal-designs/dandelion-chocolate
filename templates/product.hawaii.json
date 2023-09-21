@@ -105,31 +105,31 @@
         "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-1": {
           "type": "column",
           "settings": {
-            "content_bg": "#000",
+            "content_bg": "#000000",
             "title": "FULL-sized",
-            "heading_color": "#333",
+            "heading_color": "#333333",
             "text": "<ul><li>2 available single-occupancy room<\/li><li>Shared bathrooms<\/li><li>$3750 per person<\/li><\/ul>",
-            "text_color": "#333"
+            "text_color": "#333333"
           }
         },
         "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-2": {
           "type": "column",
           "settings": {
-            "content_bg": "#000",
+            "content_bg": "#000000",
             "title": "QUEEN-sized",
-            "heading_color": "#333",
+            "heading_color": "#333333",
             "text": "<ul><li>5 available rooms<\/li><li>Shared bathrooms<\/li><li>$3750 per person + $250 for single occupancy<\/li><\/ul>",
-            "text_color": "#333"
+            "text_color": "#333333"
           }
         },
         "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-3": {
           "type": "column",
           "settings": {
-            "content_bg": "#000",
+            "content_bg": "#000000",
             "title": "KING-sized",
-            "heading_color": "#333",
+            "heading_color": "#333333",
             "text": "<ul><li>2 available rooms<\/li><li>En suite bathrooms<\/li><li>$4500 per person + $500 for single occupancy<\/li><\/ul>",
-            "text_color": "#333"
+            "text_color": "#333333"
           }
         }
       },
@@ -139,11 +139,10 @@
         "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-3"
       ],
       "settings": {
-        "section_bg": "#FFFDF9",
+        "section_bg": "#fffdf9",
         "heading_color": "#333333",
         "heading": "Available Rooms & Pricing",
         "full_width": true,
-        "text_alignment": "center",
         "heading_size": "h5",
         "mobile_swipe": false,
         "show_progress_bar": true,
@@ -705,17 +704,17 @@
     "848b3a66-1a28-487c-b2f0-4d344ea92251": {
       "type": "image-with-text",
       "blocks": {
+        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Dominican Republic",
+            "heading_size": "h3"
+          }
+        },
         "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-subheading-1": {
           "type": "subheading",
           "settings": {
             "text": "Add a tagline"
-          }
-        },
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text",
-            "heading_size": "h3"
           }
         },
         "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-text-1": {
@@ -723,12 +722,22 @@
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
+        },
+        "4933c72d-e9f3-4523-93d5-7c315b43db30": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "btn",
+            "mobile_button_style": "btn"
+          }
         }
       },
       "block_order": [
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-subheading-1",
         "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-heading-1",
-        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-text-1"
+        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-subheading-1",
+        "template--16034458370188__848b3a66-1a28-487c-b2f0-4d344ea92251-text-1",
+        "4933c72d-e9f3-4523-93d5-7c315b43db30"
       ],
       "settings": {
         "use_video": false,
@@ -738,8 +747,8 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "grid",
-        "layout": "image_first",
-        "content_position": "text-left",
+        "layout": "text_first",
+        "content_position": "text-center",
         "color_bg": "#ffffff",
         "color_text": "#151515",
         "color_border": "#e2e2e2",
