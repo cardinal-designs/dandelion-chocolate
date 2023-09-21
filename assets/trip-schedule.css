@@ -28,6 +28,8 @@
 
 .trip__schedule--wrap .trip__schedule--items {
   flex: 1;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .trip__schedule-media svg {
