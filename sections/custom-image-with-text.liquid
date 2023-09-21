@@ -59,8 +59,8 @@
     				</div>
                 {% endcapture %}
 
-                {{ image_desktop }}
                 {%- if image_mobile != blank -%}
+                  {{ image_desktop }}
                   {{ image_mobile }}
                 {% else %}
                   {{ image_desktop }}
