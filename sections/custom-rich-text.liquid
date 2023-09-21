@@ -18,56 +18,56 @@
 	endif
 -%}
 <div class="row {{ section_width }} {{ section.settings.custom_class }} custom__rich-text">
-	<div class="small-12 columns">
-		<div class="rich-text text-{{ text_alignment }} text-position-{{ text_position }} text-width-{{ text_width }} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"style="--color-bg: {{ color_bg }}; --color-text: {{ color_text }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }}; --solid-button-label: {{ solid_button_label }}; --bg-body: {{ color_bg }}; --color-accent: {{ color_links }}; --color-accent-rgb:  {{ color_links | color_extract: 'red' }}, {{ color_links | color_extract: 'green' }}, {{ color_links | color_extract: 'blue' }};">
-			<div class="rich-text__inner">
-				{% for block in section.blocks %}
-					{%- case block.type -%}
-						{%- when 'image' -%}
-							{%- if block.settings.image != blank -%}
-								{%- liquid
-									assign image = block.settings.image
-									assign master_width = image.src.width | append: 'x' | append: image.src.height
-									render 'responsive-image', image: image, sizes: master_width, retina: block.settings.retina
-								-%}
-							{%- else -%}
-								<div class="thb-placeholder">
-									{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-								</div>
-							{%- endif -%}
-                        {%- when 'icon' -%}
-                            <div class="icon">
-    							{%- if block.settings.icon != blank -%}
-    								{%- liquid
-    									assign icon = block.settings.icon
-    									assign master_width = icon.src.width | append: 'x' | append: icon.src.height
-    									render 'responsive-image', image: icon, sizes: master_width
-    								-%}
-    							{%- else -%}
-    								<div class="thb-placeholder">
-    									{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-    								</div>
-    							{%- endif -%}
-                            </div>
-						{%- when 'subheading' -%}
-							<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
-						{%- when 'heading' -%}
-							<h3 class="{{ block.settings.size }} heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
-						{%- when 'text' -%}
-							<div class="rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-						{%- when 'button' -%}
-						{% if block.settings.link_label != blank %}
-							<a class="button{% if block.settings.button_outline %} outline{%- endif -%}" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><span>{{ block.settings.link_label }}</span></a>
-						{% endif %}
-						{%- when 'text-button' -%}
-						{% if block.settings.link_label != blank %}
-							<a class="text-button" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.link_label }}</a>
-						{% endif %}
-					{%- endcase -%}
-				{% endfor %}
-			</div>
-		</div>
-	</div>
+  <div class="small-12 columns">
+    <div class="rich-text text-{{ text_alignment }} text-position-{{ text_position }} text-width-{{ text_width }} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"style="--color-bg: {{ color_bg }}; --color-text: {{ color_text }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }}; --solid-button-label: {{ solid_button_label }}; --bg-body: {{ color_bg }}; --color-accent: {{ color_links }}; --color-accent-rgb:  {{ color_links | color_extract: 'red' }}, {{ color_links | color_extract: 'green' }}, {{ color_links | color_extract: 'blue' }};">
+      <div class="rich-text__inner">
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'image' -%}
+              {%- if block.settings.image != blank -%}
+                {%- liquid
+                    assign image = block.settings.image
+                    assign master_width = image.src.width | append: 'x' | append: image.src.height
+                    render 'responsive-image', image: image, sizes: master_width, retina: block.settings.retina
+                -%}
+              {%- else -%}
+                <div class="thb-placeholder">
+                  {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+                </div>
+              {%- endif -%}
+            {%- when 'icon' -%}
+              <div class="icon">
+                {%- if block.settings.icon != blank -%}
+                  {%- liquid
+                    assign icon = block.settings.icon
+                    assign master_width = icon.src.width | append: 'x' | append: icon.src.height
+                    render 'responsive-image', image: icon, sizes: master_width
+                  -%}
+                {%- else -%}
+                  <div class="thb-placeholder">
+                    {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- when 'subheading' -%}
+              <p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+            {%- when 'heading' -%}
+              <h3 class="{{ block.settings.size }} heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+            {%- when 'text' -%}
+              <div class="rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+            {%- when 'button' -%}
+              {% if block.settings.link_label != blank %}
+                <a class="button{% if block.settings.button_outline %} outline{%- endif -%}" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><span>{{ block.settings.link_label }}</span></a>
+              {% endif %}
+            {%- when 'text-button' -%}
+              {% if block.settings.link_label != blank %}
+                <a class="text-button" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.link_label }}</a>
+              {% endif %}
+          {%- endcase -%}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}
