@@ -105,7 +105,6 @@
         "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-1": {
           "type": "column",
           "settings": {
-            "content_bg": "#000000",
             "title": "FULL-sized",
             "heading_color": "#777779",
             "text": "<ul><li>2 available single-occupancy room<\/li><li>Shared bathrooms<\/li><li>$3750 per person<\/li><\/ul>",
@@ -115,7 +114,6 @@
         "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-2": {
           "type": "column",
           "settings": {
-            "content_bg": "#000000",
             "title": "QUEEN-sized",
             "heading_color": "#777779",
             "text": "<ul><li>5 available rooms<\/li><li>Shared bathrooms<\/li><li>$3750 per person + $250 for single occupancy<\/li><\/ul>",
@@ -125,7 +123,6 @@
         "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-3": {
           "type": "column",
           "settings": {
-            "content_bg": "#000000",
             "title": "KING-sized",
             "heading_color": "#777779",
             "text": "<ul><li>2 available rooms<\/li><li>En suite bathrooms<\/li><li>$4500 per person + $500 for single occupancy<\/li><\/ul>",
@@ -144,7 +141,7 @@
         "heading": "Available Rooms & Pricing",
         "full_width": true,
         "heading_size": "h6",
-        "mobile_swipe": false,
+        "mobile_swipe": true,
         "show_progress_bar": true,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
