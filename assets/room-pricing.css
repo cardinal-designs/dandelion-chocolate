@@ -139,6 +139,10 @@
   .product-submit.custom__btn {
     min-width: 335px;
   }
+
+  .choose__pricing {
+    margin-top: 29px;
+  }
   
 }
 
