@@ -1,1 +1,8 @@
-trip-schedule
+.trip__schedule--wrap {
+  display: flex;
+}
+
+.trip__schedule--wrap .trip__schedule--items {
+  flex: 1;
+  column-gap: 38px;
+}

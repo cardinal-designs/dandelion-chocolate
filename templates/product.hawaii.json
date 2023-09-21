@@ -52,7 +52,8 @@
           "settings": {
             "heading": "activity level",
             "content": "",
-            "description": "This trip involves walking around muddy farms, but no incline hiking."
+            "description": "This trip involves walking around muddy farms, but no incline hiking.",
+            "icon": "shopify:\/\/shop_images\/Group_149.png"
           }
         },
         "4e9eb666-fa8b-4b9e-9ed0-8ddb160de3fe": {
@@ -60,7 +61,8 @@
           "settings": {
             "heading": "comfort level",
             "content": "Content",
-            "description": "No camping involved, guests will be staying at an oceanside villa."
+            "description": "No camping involved, guests will be staying at an oceanside villa.",
+            "icon": "shopify:\/\/shop_images\/Group_148.png"
           }
         }
       },
