@@ -19,6 +19,7 @@
 		assign ratio = image.aspect_ratio
 	endif
 -%}
+
 <div id="{{ section.id }}" class="row {{ section_width }} {{ section.settings.custom_class }} custom__image--text">
 	<div class="small-12 columns">
 		<div class="image-with-text grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text | color_extract: 'red' }}, {{ color_text | color_extract: 'green' }}, {{ color_text | color_extract: 'blue' }}; --bg-body: {{ color_bg }};">
@@ -62,8 +63,19 @@
 
 {% style %}
 
-  #{{ section.id }}.row.full-width-spacing {
+  #{{ section.id }} {
     background: {{ section.settings.color_bg }};
+    padding-top : {{ section.settings.top_spacing_desktop }};
+    padding-bottom : {{ section.settings.top_spacing_desktop }};
+  }
+
+  @media only screen and (max-width: 767px) {
+      
+    #{{ section.id }} {
+      padding-top : {{ section.settings.top_spacing_mobile }};
+      padding-bottom : {{ section.settings.top_spacing_mobile }};
+    }
+    
   }
   
 {% endstyle %}
@@ -203,24 +215,51 @@
     },
     {
       "type": "header",
-      "content": "Spacing"
+      "content": "Desktop Spacing"
     },
     {
-      "type": "checkbox",
-      "id": "disable_top_spacing",
-      "default": false,
-      "label": "Remove top spacing"
+      "type": "range",
+      "id": "top_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
     },
     {
-      "type": "checkbox",
-      "id": "disable_bottom_spacing",
-      "default": false,
-      "label": "Remove bottom spacing"
+      "type": "range",
+      "id": "bottom_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
     },
     {
-      "type": "text",
-      "id": "custom_class",
-      "label": "Custom Class"
+      "type": "header",
+      "content": "Mobile Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
     }
   ],
   "blocks": [
