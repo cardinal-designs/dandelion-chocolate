@@ -5,7 +5,6 @@
 	assign image = section.settings.image
 	assign content_position = section.settings.content_position
 	assign desktop_image_width = section.settings.desktop_image_width
-	assign desktop_layout = section.settings.layout
 	assign color_bg = section.settings.color_bg
 	assign color_text = section.settings.color_text
 	assign disable_top_spacing = section.settings.disable_top_spacing
@@ -19,7 +18,7 @@
 
 <div id="section--{{ section.id }}" class="row {{ section_width }}">
   <div class="small-12 columns">
-    <div class="trip__schedule--section grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }}">
+    <div class="trip__schedule--section grid--image-{{ desktop_image_width }} {{ content_position }}">
       <div class="trip__schedule--header">
         <h3 class="section_heading custom__heading text-center">{{ section.settings.heading }}</h3> 
         <p class="section_description">{{ section.settings.description }}</h3>
@@ -128,23 +127,6 @@
       ],
       "default": "full-width-spacing",
       "label": "Section width"
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "options": [
-        {
-          "value": "image_first",
-          "label": "Image first"
-        },
-        {
-          "value": "text_first",
-          "label": "Image second"
-        }
-      ],
-      "default": "image_first",
-      "label": "Desktop image placement",
-      "info": "Image first is the default mobile layout."
     },
     {
       "type": "select",
