@@ -43,6 +43,7 @@
 
   .hosts__list {
     flex-wrap:wrap;
+    row-gap: 51px;
   }
   
 }
