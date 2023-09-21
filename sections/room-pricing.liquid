@@ -34,14 +34,11 @@
 
     <div class="choose__pricing">
       {%- if section.settings.sub_heading != blank -%}
-        <div class="text-center">
-          <h2 class="custom__sub-heading" style="color: {{ section.settings.sub_heading_color }}">{{ section.settings.sub_heading }}</h2>
-        </div>
+        <h2 class="custom__sub-heading" style="color: {{ section.settings.sub_heading_color }}">{{ section.settings.sub_heading }}</h2>
       {%- endif -%}
+      
       {%- if section.settings.description != blank -%}
-        <div class="text-center">
-          <h2 class="custom__sh1" style="color: {{ section.settings.description_color }}">{{ section.settings.description }}</h2>
-        </div>
+        <h2 class="custom__sh1" style="color: {{ section.settings.description_color }}">{{ section.settings.description }}</h2>
       {%- endif -%}      
     </div>
     
