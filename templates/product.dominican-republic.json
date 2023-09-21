@@ -349,8 +349,8 @@
         "section_heading_color": "#333333",
         "section_rte_color": "#80714e",
         "color_text": "#151515",
-        "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "top_spacing_desktop": 54,
+        "bottom_spacing_desktop": 62,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
