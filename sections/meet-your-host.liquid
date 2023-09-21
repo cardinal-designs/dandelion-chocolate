@@ -2,7 +2,6 @@
 
 {%- liquid
 	assign section_width = section.settings.section_width
-	assign image = section.settings.image
 	assign content_position = section.settings.content_position
 	assign desktop_image_width = section.settings.desktop_image_width
 	assign desktop_layout = section.settings.layout
@@ -27,6 +26,7 @@
           <div class="meet__host--wrap meet__host--items">
             <div class="meet__host--image">
               <div class="meet__host-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+                {% assign image = block.settings.image %}
                 {%- if image != blank -%}
                     {%- liquid
                         assign small_height = image.src.height | times: '690' | divided_by: image.src.width
