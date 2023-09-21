@@ -253,5 +253,9 @@
     width: 100%;
     padding: 10px 20px;
   }
+
+  .trip__details-heading, .trip__details-content-text {
+    line-height: 16.8px;
+  }
   
 }
