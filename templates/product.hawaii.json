@@ -16,19 +16,16 @@
             "heading_size": "h3"
           }
         },
-        "b77855fb-cb05-4042-9cc5-97dfe5c16f36": {
-          "type": "collapsible_tab",
+        "525e8941-8a4e-469a-9012-ed6256889b0b": {
+          "type": "subheading",
           "settings": {
-            "heading": "Collapsible row",
-            "open": false,
-            "content": "",
-            "page": ""
+            "text": "September 10–16, 2023"
           }
         }
       },
       "block_order": [
         "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-heading-1",
-        "b77855fb-cb05-4042-9cc5-97dfe5c16f36"
+        "525e8941-8a4e-469a-9012-ed6256889b0b"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
