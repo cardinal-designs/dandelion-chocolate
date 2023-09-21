@@ -295,20 +295,21 @@
 
 }
 
-@media only screen and (min-width: 1367px) {
-
-  .trip__details-main .row {
-    padding: 0 135px;
-  }
-
-}
-
 @media only screen and (min-width: 1068px) {
   
   .trip__image--text .image-with-text__content {
     padding: 0 60px;
   }
   
+}
+
+
+@media only screen and (min-width: 1367px) {
+
+  .trip__details-main .row {
+    padding: 0 135px;
+  }
+
 }
 
 @media only screen and (max-width: 1066px) {
