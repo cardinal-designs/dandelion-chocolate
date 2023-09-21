@@ -97,6 +97,137 @@
         "holiday_shipping": false
       }
     },
+    "32b970ff-9ce3-4304-92d9-38d56fe8871b": {
+      "type": "trip-details",
+      "blocks": {
+        "dbc76c40-999c-4797-afce-22051f51a343": {
+          "type": "heading",
+          "settings": {
+            "text": "Zorzal Estate, Dominican Republic",
+            "heading_size": "h3"
+          }
+        },
+        "template--16034682503308__32b970ff-9ce3-4304-92d9-38d56fe8871b-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Coming 2024"
+          }
+        },
+        "36c106b6-252b-4096-a388-72e932627d6f": {
+          "type": "tab",
+          "settings": {
+            "heading": "PRICE",
+            "content": "$2,500 \/ PERSON",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "3c23ecd4-aa4c-4c78-9fcc-d72b37ff4d8b": {
+          "type": "tab",
+          "settings": {
+            "heading": "DURATION",
+            "content": "6 DAYS",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "828f9ae4-1be8-484f-b6d3-f5762e115b00": {
+          "type": "tab",
+          "settings": {
+            "heading": "KNOWLEDGE LEVEL",
+            "content": "",
+            "description": "This trip is process-heavy, with in-depth information on fermentation and more.",
+            "mobile_description": "",
+            "icon": "shopify:\/\/shop_images\/Group_149_5cc1a90d-ae16-4a8b-93a3-312ef937349c.png"
+          }
+        },
+        "87af2d84-53fa-4373-8355-19427215ba41": {
+          "type": "tab",
+          "settings": {
+            "heading": "activity level",
+            "content": "",
+            "description": "This trip involves hours of hilly hiking through muddy terrain, in hot weather.",
+            "mobile_description": "",
+            "icon": "shopify:\/\/shop_images\/Group_147.png"
+          }
+        },
+        "3b14e301-016f-4183-a287-458a9b6a5acf": {
+          "type": "tab",
+          "settings": {
+            "heading": "comfort level",
+            "content": "",
+            "description": "Guests will stay on a nature reserve for one night. `",
+            "mobile_description": "",
+            "icon": "shopify:\/\/shop_images\/Group_149.png"
+          }
+        }
+      },
+      "block_order": [
+        "dbc76c40-999c-4797-afce-22051f51a343",
+        "template--16034682503308__32b970ff-9ce3-4304-92d9-38d56fe8871b-subheading-1",
+        "36c106b6-252b-4096-a388-72e932627d6f",
+        "3c23ecd4-aa4c-4c78-9fcc-d72b37ff4d8b",
+        "828f9ae4-1be8-484f-b6d3-f5762e115b00",
+        "87af2d84-53fa-4373-8355-19427215ba41",
+        "3b14e301-016f-4183-a287-458a9b6a5acf"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "custom_class": ""
+      }
+    },
+    "ac9531b6-74a6-4679-b261-617e4022c1dc": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_size": "large"
+          }
+        },
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-subheading-1",
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-heading-1",
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-text-1"
+      ],
+      "settings": {
+        "section_heading": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
     "139a823f-816a-453f-b7cc-090192aba72d": {
       "type": "custom-rich-text",
       "blocks": {
@@ -151,12 +282,176 @@
         "enable_treatment": true,
         "show_short_product_desc": true
       }
+    },
+    "50f46e25-67ed-4484-8fac-50a49618f982": {
+      "type": "trip-schedule",
+      "blocks": {
+        "template--16034682503308__50f46e25-67ed-4484-8fac-50a49618f982-day-schedule-1": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "Heading",
+            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__50f46e25-67ed-4484-8fac-50a49618f982-day-schedule-1"
+      ],
+      "settings": {
+        "heading": "Heading",
+        "description": "Description",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "section_heading_color": "#333",
+        "section_rte_color": "#80714E",
+        "color_text": "#151515",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
+    "fb25055f-8e63-47d5-9717-784e9e1f1e45": {
+      "type": "meet-your-host",
+      "blocks": {
+        "template--16034682503308__fb25055f-8e63-47d5-9717-784e9e1f1e45-host-detail-1": {
+          "type": "host-detail",
+          "settings": {
+            "heading": "Heading",
+            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__fb25055f-8e63-47d5-9717-784e9e1f1e45-host-detail-1"
+      ],
+      "settings": {
+        "heading": "Heading",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#333",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
+    "c07fff9c-b92e-44b5-9c0c-f181b828d047": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_size": "large"
+          }
+        },
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-subheading-1",
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-heading-1",
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-text-1"
+      ],
+      "settings": {
+        "section_heading": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
+    "245588c4-1950-4236-9898-049a5000a006": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_size": "large"
+          }
+        },
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-subheading-1",
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-heading-1",
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-text-1"
+      ],
+      "settings": {
+        "section_heading": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
+    "de91fbc7-f0bb-41fe-a17d-79d7f75acfae": {
+      "type": "custom-contact-form",
+      "settings": {
+        "bg_color": "#53595C",
+        "text_color": "#ffffff",
+        "heading": "Contact form",
+        "description": "<p>Add a short description for this section<\/p>",
+        "show_phone_number": true,
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
     }
   },
   "order": [
     "breadcrumbs",
     "main-product",
+    "32b970ff-9ce3-4304-92d9-38d56fe8871b",
+    "ac9531b6-74a6-4679-b261-617e4022c1dc",
     "139a823f-816a-453f-b7cc-090192aba72d",
-    "product-recommendations"
+    "product-recommendations",
+    "50f46e25-67ed-4484-8fac-50a49618f982",
+    "fb25055f-8e63-47d5-9717-784e9e1f1e45",
+    "c07fff9c-b92e-44b5-9c0c-f181b828d047",
+    "245588c4-1950-4236-9898-049a5000a006",
+    "de91fbc7-f0bb-41fe-a17d-79d7f75acfae"
   ]
 }
