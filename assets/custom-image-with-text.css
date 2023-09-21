@@ -132,5 +132,9 @@
     line-height: 19px;
     letter-spacing: 0.05em;
   }
+
+  .custom__image--text .custom__btn {
+    margin: 21px 0 0;
+  }
   
 }
