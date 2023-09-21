@@ -5,3 +5,9 @@
   line-height: 40px;
   letter-spacing: .05em;  
 }
+
+.custom__contact-form-inner {
+  max-width: 917px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
