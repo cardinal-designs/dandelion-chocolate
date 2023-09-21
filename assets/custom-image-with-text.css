@@ -52,6 +52,10 @@
     padding: 0;
   }
 
+  .custom__image--text .image-with-text__content--inner {
+    max-width: 100%;
+  }
+
   .custom__image--text .columns {
     padding: 0;
   }
