@@ -201,14 +201,14 @@
 
 @media only screen and (min-width:768px) { 
   
-  .section-image-with-text .row.full-width-spacing {
+  .trip__details-main .row.full-width-spacing {
     width: 100%;
     max-width: 100%;
     padding: 64px 0 85px;
     margin: 0;
   }
 
-  .section-image-with-text .row.full-width-spacing .columns {
+  .trip__details-main .row.full-width-spacing .columns {
     max-width: 1440px;
     margin: 0 auto;
   }
