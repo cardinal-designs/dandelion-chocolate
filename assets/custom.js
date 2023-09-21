@@ -449,9 +449,8 @@ $(document).ready(function() {
         $list.find('li.is-selected').removeClass('is-selected');
         $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
         $list.hide();
-        console.log($this.find('option[value="'+$(this).attr('rel')+'"]'));
       });
-
+$('.product-variants').append('<button class="product-submit">RESERVE YOUR SPOT</button>')
     
       $(document).click(function() {
           $styledSelect.removeClass('active');
