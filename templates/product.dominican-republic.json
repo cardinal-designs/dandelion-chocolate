@@ -100,40 +100,24 @@
     "139a823f-816a-453f-b7cc-090192aba72d": {
       "type": "custom-rich-text",
       "blocks": {
-        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading for this section"
-          }
-        },
         "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Talk about your brand",
+            "text": "The Price of This Trip Includes",
             "size": "h3"
           }
         },
         "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<ul><li>Lodging for the extent of the trip at our beach-front condos where each guest will stay in their own room.<\/li><li>Transportation between scheduled activities <\/li><li>Meals and any planned cultural excursions. We will accommodate any food allergies or restrictions. <\/li><li>Guests are responsible for their own flight in and out of Puerto Plato International Airport, as well as any activities they decide to do on their free day. <br\/><\/li><\/ul>",
             "size": "text-size-regular"
-          }
-        },
-        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-button-1": {
-          "type": "button",
-          "settings": {
-            "link_label": "Learn More",
-            "link": "",
-            "button_outline": false
           }
         }
       },
       "block_order": [
-        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-subheading-1",
         "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-heading-1",
-        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-text-1",
-        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-button-1"
+        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-text-1"
       ],
       "settings": {
         "section_width": "full-width-row",
