@@ -1,3 +1,21 @@
+.trip__schedule--section .section_heading {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.trip__schedule--section .section_description {
+  font-family: 'AGaramondPro';
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
 .trip__schedule--wrap {
   display: flex;
   column-gap: 38px;
