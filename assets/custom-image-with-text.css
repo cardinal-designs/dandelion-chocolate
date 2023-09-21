@@ -33,6 +33,7 @@
   font-weight: 400;
   line-height: 37px;
   letter-spacing: 0.02em;
+  margin-bottom: 9px;
 }
 
 @media only screen and (min-width: 768px) {
