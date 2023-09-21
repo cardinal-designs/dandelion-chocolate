@@ -61,7 +61,7 @@
   padding: 12px 16px;
 }
 
-.select-styled, .select-options li {
+.select-options li {
   border-top: 1px solid #cccccc;
 }
 
