@@ -22,18 +22,13 @@
           {%- for block in section.blocks -%}
             <div id="content__{{ block.id }}" class="">
               {% if block.settings.title != blank %}
-                <h4 class="{{ heading_size }} custom__{{ heading_size }} heading">{{ block.settings.title | newline_to_br }}</h4>
+                <h4 style="color: {{ block.settings.heading_color }}" class="{{ heading_size }} custom__{{ heading_size }} heading">{{ block.settings.title | newline_to_br }}</h4>
               {% endif %}
 
               {% if block.settings.text != blank %}
                 <div class="rte" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
               {% endif %}
             </div>
-            {%- style -%}
-              #content__{{ block.id }} .heading {
-                color: {{ block.settings.heading_color }};
-              }                        
-            {%- endstyle -%}
           {%- endfor -%}
         </div>
       </div>
