@@ -451,7 +451,13 @@ $(document).ready(function() {
         $list.hide();
 
        var addtoCart = $('.single-add-to-cart-button').attr('disabled');
-       console.log(addtoCart);
+       if (addtoCart){
+         $('.product-submit').text('sold-out');
+         $('.product-submit').attr('disabled','disabled');
+       } else {
+         $('.product-submit').text('RESERVE YOUR SPOT');
+         $('.product-submit').RemoveAttr('disabled');
+       }
       });
   
     
