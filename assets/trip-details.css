@@ -233,7 +233,7 @@
 
 @media only screen and (min-width: 768px) {
 
-  .trip__image--text .image-with-text {
+  .trip__details {
     display: grid;
     grid-template-columns: 0.96fr 1fr;
     column-gap: 60px;
