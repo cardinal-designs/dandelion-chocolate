@@ -262,6 +262,10 @@
   border-top: 1px solid #333333;
 }
 
+.trip__details-content-text {
+  max-width: 410px;
+}
+
 @media only screen and (min-width: 768px) {
 
   .trip__details {
