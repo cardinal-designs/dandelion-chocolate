@@ -451,6 +451,7 @@ $(document).ready(function() {
         $list.hide();
 
        var addtoCart = $('.product-information button[type="submit"]').attr('disabled');
+       console.log(addtoCart)
        if (addtoCart){
          $('.product-submit').text('sold-out');
          $('.product-submit').attr('disabled','disabled');
