@@ -14,6 +14,16 @@
   letter-spacing: 0.05em;
 }
 
+.custom__image--text .caption {
+  font-family: 'AGaramondPro';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #A28D5B;
+  margin: 0 0 22px
+}
+
 @media only screen and (min-width: 768px) {
 
   .custom__image--text .image-with-text {
