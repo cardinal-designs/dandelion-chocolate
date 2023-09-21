@@ -110,6 +110,14 @@
     line-height: 16.8px;
     padding: 14px 16px;
   }
+
+  .room__pricing-section-inner {
+    padding: 0;
+  }
+
+  .room__pricing {
+    padding: 0 20px;
+  }
   
 }
 
