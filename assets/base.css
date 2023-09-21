@@ -1191,6 +1191,10 @@ html{
   letter-spacing: normal;
 }
 
+.custom__description ul {
+  padding-left: 1.2rem;
+}
+
 .custom__h6 {
   font-family: Saa Series F D;
   font-size: 20px;
