@@ -11,7 +11,7 @@
   endif
 -%}
 {{- 'contact-form.css' | asset_url | stylesheet_tag -}}
-<div class="contact-form section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+<div id="{{ section.id }}" class="contact-form section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
   <div class="row">
     <div class="small-12 columns">
       {% render 'section-header',
@@ -170,10 +170,24 @@
   </div>
 </div>
 
+{% style %}
+
+  #{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+  
+{% endstyle %}
+
 {% schema %}
 {
   "name": "Custom Contact form",
   "settings": [
+    {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#53595C"
+    },
     {
         "type": "text",
         "id": "heading",
