@@ -104,5 +104,12 @@
   .custom__image--text .image-with-text__content {
     padding: 16px 20px 25px;
   }
+
+  .custom__image--text .image-with-text__content--inner h4 {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.12em;
+    margin: 31px 0 10px;
+  }
   
 }
