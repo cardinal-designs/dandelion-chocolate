@@ -73,6 +73,11 @@
     margin: 0 0 10px;
   }
 
+  .trip__schedule--section .section_description {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
   .trip__schedule--wrap {
     flex-wrap: wrap;
     row-gap: 23px;

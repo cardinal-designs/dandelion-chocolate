@@ -1217,16 +1217,6 @@ html{
   letter-spacing: .15em;
 }
 
-.trip__details-heading,
-.trip__details-content-text {
-  color: #53595C;
-  font-family: Saa Series F D;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2.1px;
-}
-
 .custom__btn {
   border-radius: 6px;
   border: 0px solid #D3A741;
