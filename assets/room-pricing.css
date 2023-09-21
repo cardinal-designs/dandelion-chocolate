@@ -37,3 +37,12 @@
   }
   
 }
+
+@media only screen and (max-width: 1007px) {
+
+  .pricing__blocks ul {
+    padding: 0 0 0 30px;
+    margin: 0;
+  }
+
+}
