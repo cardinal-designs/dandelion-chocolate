@@ -20,6 +20,7 @@
     display: grid;
     grid-template-columns: 0.96fr 1fr;
     column-gap: 60px;
+    margin: 0;
   }
 
   .section-image-with-text .custom__image--text.row.full-width-spacing .columns {
