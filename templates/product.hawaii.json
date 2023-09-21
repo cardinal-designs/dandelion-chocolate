@@ -770,14 +770,14 @@
         "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "Dominican Republic",
             "heading_size": "small"
           }
         },
         "df16449c-352a-49e3-b91a-e3981e929f1e": {
           "type": "caption",
           "settings": {
-            "caption": "Caption",
+            "caption": "April 5–11, 2023",
             "caption_color": "#a28d5b"
           }
         },
@@ -804,6 +804,7 @@
       ],
       "settings": {
         "section_heading": "Other Origin Trips",
+        "image": "shopify:\/\/shop_images\/Hawaii_Image_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
