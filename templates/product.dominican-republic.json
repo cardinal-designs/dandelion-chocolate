@@ -344,7 +344,6 @@
         "description": "Schedule Subject to Change",
         "image": "shopify:\/\/shop_images\/dr-trip-schedule.png",
         "section_width": "full-width-spacing",
-        "layout": "text_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "section_heading_color": "#333333",
@@ -362,23 +361,33 @@
         "template--16034682503308__fb25055f-8e63-47d5-9717-784e9e1f1e45-host-detail-1": {
           "type": "host-detail",
           "settings": {
-            "heading": "DAY 1 - ARRIVAL",
-            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+            "image": "shopify:\/\/shop_images\/Greg_D_Alesandre.png",
+            "heading": "Greg D’Alesandre",
+            "description": "<p>Chocolate Sourcerer at Dandelion Chocolate<\/p>"
+          }
+        },
+        "c3686f99-9c3b-4d89-8732-0c1c8259a33c": {
+          "type": "host-detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stephen_Durfee.png",
+            "heading": "Stephen Durfee",
+            "description": "<p>Chocolate Curriculum Director at Dandelion Chocolate<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16034682503308__fb25055f-8e63-47d5-9717-784e9e1f1e45-host-detail-1"
+        "template--16034682503308__fb25055f-8e63-47d5-9717-784e9e1f1e45-host-detail-1",
+        "c3686f99-9c3b-4d89-8732-0c1c8259a33c"
       ],
       "settings": {
-        "heading": "Heading",
+        "heading": "Meet Your Hosts",
         "section_width": "full-width-spacing",
         "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "color_text": "#333333",
-        "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 72,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
