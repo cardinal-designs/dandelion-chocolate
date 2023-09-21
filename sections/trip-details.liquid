@@ -86,13 +86,13 @@
 							{% when 'space' %}
         		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
 							{% when 'tab' %}
-                            <div>
-                              <div>
+                            <div class="trip__detail-content">
+                              <span class="trip__detail-heading">
                                 {{ block.settings.heading }}
-                              </div>
-                              <div class="collapsible__content accordion__content rte" id="Accordion-{{ block.id }}-{{ section.id }}">
+                              </span>
+                              <span class="trip__detail-content-text">
                                 {{ block.settings.content }}
-                              </div>
+                              </span>
                             </div>
 						{%- endcase -%}
 					{%- endfor -%}
