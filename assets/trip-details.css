@@ -264,6 +264,15 @@
   justify-content: space-between;
 }
 
+.trip__details-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px solid #333333;
+}
+
 @media only screen and (min-width: 768px) {
 
   .trip__details {
