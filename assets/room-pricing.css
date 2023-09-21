@@ -36,6 +36,15 @@
   width: 100%;
 }
 
+.select-styled, .select-options li {
+  color: #333;
+  font-family: Garamond Premiere Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 @media only screen and (min-width: 768px) {
   
   .pricing__blocks-main {
