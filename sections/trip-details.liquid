@@ -78,22 +78,17 @@
                               <h3 class="{{ block.settings.heading_size }} heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
                             {%- when 'text' -%}
                               <div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-							{%- when 'button' -%}
-                              {% if block.settings.button_text != blank %}
-                                <a class="btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
-                                <a class="btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
-                              {% endif %}
 							{% when 'space' %}
-        		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+            		          <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
 							{% when 'tab' %}
-                            <div class="trip__detail-content">
-                              <span class="trip__detail-heading">
-                                {{ block.settings.heading }}
-                              </span>
-                              <span class="trip__detail-content-text">
-                                {{ block.settings.content }}
-                              </span>
-                            </div>
+                              <div class="trip__detail-content">
+                                <span class="trip__detail-heading">
+                                  {{ block.settings.heading }}
+                                </span>
+                                <span class="trip__detail-content-text">
+                                  {{ block.settings.content }}
+                                </span>
+                              </div>
 						{%- endcase -%}
 					{%- endfor -%}
 				</div>
@@ -314,24 +309,6 @@
   ],
   "blocks": [
     {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "checkbox",
-          "id": "retina",
-          "label": "Enable retina",
-          "default": true,
-          "info": "Image will be displayed at half the size, making it look crisp on retina screens."
-        }
-      ]
-    },
-    {
       "type": "subheading",
       "name": "Subheading",
       "settings": [
@@ -392,80 +369,6 @@
       ]
     },
     {
-      "type": "button",
-      "name": "Button",
-      "settings": [
-        {
-          "id": "button_text",
-          "type": "text",
-          "label": "Button label",
-          "default": "Shop Now",
-          "info": "Leave the label blank to hide the button."
-        },
-        {
-          "id": "button_link",
-          "type": "url",
-          "label": "Button link"
-        },
-        {
-          "type": "select",
-          "id": "button_style",
-          "label": "Button Style",
-          "options": [
-            {
-              "value": "btn",
-              "label": "Default Button"
-            },
-            {
-              "value": "btn--outline",
-              "label": "Outline button"
-            },
-            {
-              "value": "btn--gold",
-              "label": "Gold button"
-            },
-            {
-              "value": "btn--gray",
-              "label": "Gray button"
-            },
-            {
-              "value": "btn--light-gold",
-              "label": "Light gold button"
-            }
-          ],
-          "default": "btn"
-        },
-        {
-          "type": "select",
-          "id": "mobile_button_style",
-          "label": "Mobile Button Style",
-          "options": [
-            {
-              "value": "btn",
-              "label": "Default Button"
-            },
-            {
-              "value": "btn--outline",
-              "label": "Outline button"
-            },
-            {
-              "value": "btn--gold",
-              "label": "Gold button"
-            },
-            {
-              "value": "btn--gray",
-              "label": "Gray button"
-            },
-            {
-              "value": "btn--light-gold",
-              "label": "Light gold button"
-            }
-          ],
-          "default": "btn"
-        }
-      ]
-    },
-    {
       "type": "space",
       "name": "Empty space",
       "settings": [
@@ -501,7 +404,7 @@
         },
         {
           "type": "textarea",
-          "id": "desscription",
+          "id": "description",
           "default": "Description",
           "label": "Heading"
         }
