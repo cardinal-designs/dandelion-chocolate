@@ -431,8 +431,8 @@
         "color_text": "#333333",
         "top_spacing_desktop": 66,
         "bottom_spacing_desktop": 100,
-        "top_spacing_mobile": 40,
-        "bottom_spacing_mobile": 40
+        "top_spacing_mobile": 44,
+        "bottom_spacing_mobile": 48
       }
     },
     "245588c4-1950-4236-9898-049a5000a006": {

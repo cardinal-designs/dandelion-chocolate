@@ -114,6 +114,14 @@
     text-align: left;
   }
 
+  .choose__pricing .custom__sh1 {
+    margin-bottom: 13px; 
+  }
+
+  .room__pricing-section-inner .product-variants {
+    margin: 0 auto;
+  }
+  
   .select-styled, .select-options li {
     font-size: 14px;
     line-height: 16.8px;
