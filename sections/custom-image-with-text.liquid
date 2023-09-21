@@ -29,7 +29,7 @@
 		<div class="image-with-text grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }}">
 			<div class="image-with-text__image image-with-text__inner">
                 {% capture desktop_image %}
-				<div class="image-with-text__image-media aspect-ratio aspect-ratio--{{ height }} {%- unless image_mobile != blank -%}hide__mobile{% endunless %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+				<div class="image-with-text__image-media aspect-ratio aspect-ratio--{{ height }} {%- if image_mobile != blank -%}hide__mobile{% else %}{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
 					{%- if image != blank -%}
 						{%- liquid
 							assign small_height = image.src.height | times: '690' | divided_by: image.src.width
