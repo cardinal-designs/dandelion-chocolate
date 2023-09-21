@@ -807,7 +807,7 @@
         "description": "<p>Please let us know if you have any questions and we'll be happy to be in touch. We have limited room availability at the villa, so if you have a room in mind, please contact us with the room option you’d like to reserve, as well as how many are in your party, or if you’ll be traveling alone.<br\/><\/p>",
         "show_phone_number": true,
         "top_spacing_desktop": 60,
-        "bottom_spacing_desktop": 40,
+        "bottom_spacing_desktop": 116,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
