@@ -7,6 +7,14 @@
   text-transform: capitalize;
 }
 
+.custom__image--text .image-with-text__content--inner h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  margin: 37px 0 15px;
+}
+
 .custom__image--text .image-with-text__content--inner .rte * {
   font-size: 18px;
   font-weight: 400;
