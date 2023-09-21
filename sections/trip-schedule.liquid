@@ -63,8 +63,16 @@
     padding-bottom : {{ section.settings.top_spacing_desktop }}px;
   }
 
-  .trip__schedule--section * {
+  #section--{{ section.id }} .trip__schedule--section * {
     color : {{ section.settings.color_text }};
+  }
+
+  #section--{{ section.id }} .section_heading {
+    color : {{ section.settings.section_heading_color }};
+  }
+
+  #section--{{ section.id }} .section_description {
+    color : {{ section.settings.section_rte_color }};
   }
 
   @media only screen and (max-width: 767px) {
@@ -167,6 +175,18 @@
       "id": "color_bg",
       "label": "Background",
       "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "section_heading_color",
+      "label": "Section Heading",
+      "default": "#333"
+    },
+    {
+      "type": "color",
+      "id": "section_rte_color",
+      "label": "Section Description",
+      "default": "#80714E"
     },
     {
       "type": "color",
