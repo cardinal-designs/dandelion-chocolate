@@ -1476,6 +1476,10 @@ product-add-to-cart-sticky .variations fieldset {
   background-color: #FFFDF9;
 }
 
+.template-product-hawaii #main-content {
+  background-color: #ffffff;
+}
+
 /*================ Accordion ================*/
 
 d.meta__accordion--list,
