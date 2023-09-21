@@ -41,6 +41,10 @@
 
 @media only screen and (max-width: 767px) {
 
+  .meet__host--header {
+    margin-bottom: 26px;
+  }
+
   .hosts__list {
     flex-wrap:wrap;
     row-gap: 51px;
