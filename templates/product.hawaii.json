@@ -612,33 +612,65 @@
         "template--16034458370188__a01b6235-c38a-46a5-8f03-041b1c2ca3e7-day-schedule-1": {
           "type": "day-schedule",
           "settings": {
-            "heading": "Heading",
-            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+            "heading": "DAY 1 - ARRIVAL",
+            "description": "<p>Fly into Hawai’i, settle into your room, meet everyone, and get an overview of the agenda for the week.<\/p>"
           }
         },
         "3c48a68e-f48d-4f7b-aee9-4021b728795c": {
           "type": "day-schedule",
           "settings": {
-            "heading": "Heading",
-            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+            "heading": "DAY 2 - MANOA DAY",
+            "description": "<p>We’ll start by visiting the Kamananui Farm in the morning before having lunch at the Waiahole Poi Factory. In the afternoon we’ll pop over to Manoa Chocolate to see their chocolate-making process. <\/p>"
           }
         },
         "bcdd4437-802b-45cb-8e16-155a5f3f9257": {
           "type": "day-schedule",
           "settings": {
-            "heading": "Heading",
-            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+            "heading": "DAY 3 - VISIT KAUA‘I",
+            "description": "<p>In the morning we’ll catch a flight to the island of Kaua‘i to tour the Lydgate cacao farm. We’ll then visit the beautiful small town of Hanalei on the coast of Kaua‘i before flying back to the house for dinner. <\/p>"
+          }
+        },
+        "7b89e385-f84a-43b1-8cfc-c6177dd23dba": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 4 - VISIT HAWAI’I",
+            "description": "<p>On this day we’ll start the morning by exploring the forests and nature of O’ahu before spending the afternoon at the Bishop Museum, Hawaii’s largest natural and cultural history museum. <\/p>"
+          }
+        },
+        "14b1de17-d6db-4a6f-ba0f-f6b74fc2d9a3": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 5 - FREE DAY",
+            "description": "<p>This is a day to do whatever you’d like to do: go kite surfing, snorkeling, or kayaking! Or just relax and read a book?<\/p>"
+          }
+        },
+        "64a32d81-6483-4147-aa3e-b97a55ec3935": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 6 - VISIT MORE MAKERS",
+            "description": "<p>On our final full day we’ll visit the Lonohana small-batch chocolate factory in the morning and head over to the “breadbasket of O‘ahu” to see the 21 Degrees boutique cacao farm.<\/p>"
+          }
+        },
+        "0d81759b-bdc9-4e8b-8955-edf91496021f": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 7 - DEPARTURE",
+            "description": "<p>We’ll say goodbye to Hawai’i with a better understanding of cocoa production and a sun-kissed glow from spending a week in the Islands.<br\/><\/p>"
           }
         }
       },
       "block_order": [
         "template--16034458370188__a01b6235-c38a-46a5-8f03-041b1c2ca3e7-day-schedule-1",
         "3c48a68e-f48d-4f7b-aee9-4021b728795c",
-        "bcdd4437-802b-45cb-8e16-155a5f3f9257"
+        "bcdd4437-802b-45cb-8e16-155a5f3f9257",
+        "7b89e385-f84a-43b1-8cfc-c6177dd23dba",
+        "14b1de17-d6db-4a6f-ba0f-f6b74fc2d9a3",
+        "64a32d81-6483-4147-aa3e-b97a55ec3935",
+        "0d81759b-bdc9-4e8b-8955-edf91496021f"
       ],
       "settings": {
-        "heading": "Heading",
-        "description": "Description",
+        "heading": "A Preview of Your Day to Day",
+        "description": "Schedule Subject to Change",
         "section_width": "grid",
         "layout": "image_first",
         "content_position": "text-left",
