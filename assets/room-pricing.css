@@ -99,6 +99,11 @@
   .pricing__blocks:last-child {
     margin-bottom: 0;
   }
+
+  .choose__pricing .custom__sub-heading,
+  .choose__pricing .custom__sh1 {
+    text-align: left;
+  }
   
 }
 
