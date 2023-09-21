@@ -176,6 +176,17 @@
   flex-wrap: wrap;
 }
 
+.trip__details-heading,
+.trip__details-content-text,
+.trip__details-content-text p {
+  color: #53595C;
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
 @media only screen and (min-width: 768px) {
 
   .trip__details {
