@@ -30,6 +30,10 @@
     margin: 0;
   }
 
+  .template-product .section-image-with-text .custom__image--text.row.full-width-spacing .columns {
+    max-width: 1260px;
+  }
+
   .section-image-with-text .custom__image--text.row.full-width-spacing .columns {
     max-width: 1242px;
     padding-left: 60px;
