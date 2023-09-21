@@ -63,13 +63,6 @@
   margin-bottom: 0;
 }
 
-.schedule__detail .heading {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-}
-
 .schedule__detail .rte p {
   font-family: 'AGaramondPro';
 }
@@ -97,6 +90,10 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.1em;
+  }
+
+  .trip__schedule--text--inner .heading {
+    
   }
   
 }

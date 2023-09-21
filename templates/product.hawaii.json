@@ -82,7 +82,9 @@
         "88a32717-f86c-4cd9-a5b9-49d8f009ac6b",
         "f6206b2a-e143-4f36-ae40-2c2130ef00e6"
       ],
-      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
         "full_width": true,
         "enable_sticky_info": true,
@@ -118,7 +120,8 @@
           "type": "tab",
           "settings": {
             "heading": "PRICE",
-            "content": "$1k deposit per person, pricing BELOW",
+            "content": "<p>$1k deposit per person, pricing BELOW<\/p>",
+            "mobile_content": "",
             "description": "",
             "mobile_description": ""
           }
@@ -127,7 +130,8 @@
           "type": "tab",
           "settings": {
             "heading": "DURATION",
-            "content": "7 DAYS",
+            "content": "<p>7 DAYS<\/p>",
+            "mobile_content": "",
             "description": "",
             "mobile_description": ""
           }
@@ -137,7 +141,8 @@
           "settings": {
             "heading": "KNOWLEDGE LEVEL",
             "content": "",
-            "description": "This trip is accessible to beginner and advanced chocolate enthusiasts.",
+            "mobile_content": "",
+            "description": "<p>This trip is accessible to beginner and advanced chocolate enthusiasts.<\/p>",
             "mobile_description": "",
             "icon": "shopify:\/\/shop_images\/Group_149.png"
           }
@@ -147,7 +152,8 @@
           "settings": {
             "heading": "activity level",
             "content": "",
-            "description": "This trip involves walking around muddy farms, but no incline hiking.",
+            "mobile_content": "",
+            "description": "<p>This trip involves walking around muddy farms, but no incline hiking.<\/p>",
             "mobile_description": "",
             "icon": "shopify:\/\/shop_images\/Group_149.png"
           }
@@ -157,8 +163,9 @@
           "settings": {
             "heading": "comfort level",
             "content": "",
-            "description": "No camping involved, guests will be staying at an oceanside villa.",
-            "mobile_description": "No camping involved, guests will be staying at a hotel.",
+            "mobile_content": "",
+            "description": "<p>No camping involved, guests will be staying at an oceanside villa.<\/p>",
+            "mobile_description": "<p>No camping involved, guests will be staying at a hotel.<\/p>",
             "icon": "shopify:\/\/shop_images\/Group_148.png"
           }
         }
