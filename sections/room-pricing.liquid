@@ -18,7 +18,7 @@
         <h2 class="custom__heading text-center" style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h2>
       {%- endif -%}
       <div class="">
-        <div class="row align-stretch no-padding {% if mobile_swipe %}mobile__swiper{% endif %}">
+        <div class="row align-stretch pricing__blocks-main {% if mobile_swipe %}mobile__swiper{% endif %}">
           {%- for block in section.blocks -%}
             <div id="content__{{ block.id }}" class="pricing__blocks" style="color: {{ block.settings.background_color }}">
               {% if block.settings.title != blank %}
