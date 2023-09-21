@@ -28,7 +28,7 @@
         {% endif %}
 		<div class="image-with-text grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }}">
 			<div class="image-with-text__image image-with-text__inner">
-                {% capture image_desktop %}
+                {% capture desktop_image %}
 				<div class="image-with-text__image-media aspect-ratio aspect-ratio--{{ height }} {%- unless image_mobile != blank -%}hide__mobile{% endunless %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
 					{%- if image != blank -%}
 						{%- liquid
@@ -43,7 +43,7 @@
 					{%- endif -%}
 				</div>
                 {% endcapture %}
-                {% capture image_mobile %}
+                {% capture mobile_image %}
                   <div class="image-with-text__image-media aspect-ratio aspect-ratio--{{ height }} hide__desktop" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
     					{%- if image_mobile != blank -%}
     						{%- liquid
@@ -61,11 +61,11 @@
 
                 {%- if image_mobile != blank -%}
                   aaaaaa
-                  {{ image_desktop }}
-                  {{ image_mobile }}
+                  {{ desktop_image }}
+                  {{ mobile_image }}
                 {% else %}
                   bbbbb
-                  {{ image_desktop }}
+                  {{ desktop_image }}
                 {% endif %}
 			</div>
 			<div class="image-with-text__content image-with-text__inner">
