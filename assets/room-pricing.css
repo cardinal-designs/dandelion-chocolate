@@ -40,6 +40,7 @@
 .select-options {
   margin: 0;
   list-style: none;
+  display: none;
 }
 
 .select-styled,
