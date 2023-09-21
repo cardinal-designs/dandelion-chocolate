@@ -1236,10 +1236,11 @@ html{
   text-align: center;
   font-family: Saa Series F D;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 2.1px;
+  height: auto;
+  min-height: 46px;
 }
 
 .custom__btn::before {
