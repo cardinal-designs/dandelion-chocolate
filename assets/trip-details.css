@@ -244,7 +244,8 @@
     line-height: 24px;
   }
 
-  .trip__details-main .row {
+  .trip__details-main .row,
+  .trip__details-main .row .columns {
     padding: 0;
   }
   
