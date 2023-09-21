@@ -474,7 +474,7 @@
         "88179e13-947d-47fe-81e5-8cf0838616ff"
       ],
       "settings": {
-        "section_heading": "",
+        "section_heading": "Other Origin Trips",
         "image": "shopify:\/\/shop_images\/pricing.png",
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -482,7 +482,7 @@
         "layout": "text_first",
         "content_position": "text-center",
         "color_bg": "#f5f6f5",
-        "color_text": "#151515",
+        "color_text": "#333333",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 56,
         "top_spacing_mobile": 40,
