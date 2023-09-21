@@ -1255,6 +1255,17 @@ html{
   font-weight: 400;
   line-height: 28.8px;
   text-transform: initial;
+  margin-bottom: 13px;
+}
+
+.custom__sh1 {
+  color: #53595C;
+  text-align: center;
+  font-family: 'AGaramondPro';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: .02em;
 }
 
 /***** General CSS End *****/
