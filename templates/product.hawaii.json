@@ -773,7 +773,6 @@
         "df16449c-352a-49e3-b91a-e3981e929f1e": {
           "type": "caption",
           "settings": {
-            "text": "Caption",
             "caption_color": "#A28D5B"
           }
         },
@@ -788,8 +787,7 @@
           "settings": {
             "button_text": "Shop Now",
             "button_link": "",
-            "button_style": "btn",
-            "mobile_button_style": "btn"
+            "button_style": "btn--gold"
           }
         }
       },
@@ -808,8 +806,8 @@
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "color_text": "#151515",
-        "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 56,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
