@@ -314,7 +314,7 @@
 @media only screen and (min-width: 1068px) {
   
   .trip__image--text .image-with-text__content {
-    padding: 60px;
+    padding: 0 60px;
   }
   
 }
