@@ -28,7 +28,7 @@
         "video_controls": false,
         "height": "adapt",
         "desktop_image_width": "large",
-        "section_width": "grid",
+        "section_width": "full-width-spacing",
         "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
