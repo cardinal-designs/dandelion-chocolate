@@ -59,3 +59,7 @@
   line-height: normal;
   letter-spacing: 2.1px;
 }
+
+.custom__btn::before {
+  display: none;
+}

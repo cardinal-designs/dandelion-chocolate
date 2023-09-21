@@ -25,8 +25,9 @@
         <p class="section_description">{{ section.settings.description }}</h3>
       </div>
       <div class="trip__schedule--wrap">
+        {%- if image != blank -%}
         <div class="trip__schedule--image trip__schedule--items">
-          {%- if image != blank -%}
+          
             <div class="trip__schedule-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
               {%- liquid
                   assign small_height = image.src.height | times: '690' | divided_by: image.src.width
@@ -36,8 +37,9 @@
               -%}
               {%- render 'responsive-image', image: image, sizes: width -%}
             </div>
-          {%- endif -%}
+          
         </div>
+          {%- endif -%}
         <div class="trip__schedule--text trip__schedule--items">
           <div class="trip__schedule--text--inner">
             {%- for block in section.blocks -%}
