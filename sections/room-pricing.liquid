@@ -30,104 +30,104 @@
           </div>
         {%- endfor -%}
       </div>
-                 {%- unless product.has_only_default_variant -%}
-                    {% assign is_disabled = block.settings.variant_is_disabled %}
-                    <variant-selects
-                      id="variant-selects-{{ section.id }}"
-                      class="no-js-hidden"
-                      data-section="{{ section.id }}"
-                      data-url="{{ product.url }}"
-                      data-is-disabled="{{ is_disabled }}"
-                    >
-                      <div class="variations" {{ block.shopify_attributes }}>
-                        {%- for option in product.options_with_values -%}
-                          {%- liquid
-                            assign option_name = option.name | downcase | escape
-                            assign option_type = block.settings.picker_type
-                            assign picker_type = option_type
+      {%- unless product.has_only_default_variant -%}
+        {% assign is_disabled = block.settings.variant_is_disabled %}
+        <variant-selects
+          id="variant-selects-{{ section.id }}"
+          class="no-js-hidden"
+          data-section="{{ section.id }}"
+          data-url="{{ product.url }}"
+          data-is-disabled="{{ is_disabled }}"
+        >
+          <div class="variations" {{ block.shopify_attributes }}>
+            {%- for option in product.options_with_values -%}
+              {%- liquid
+                assign option_name = option.name | downcase | escape
+                assign option_type = block.settings.picker_type
+                assign picker_type = option_type
 
-                            if block.settings.color_picker
-                              if option_name contains 'color' or option_name contains 'colour' or option_name contains 'couleur'
-                                assign option_type = 'color'
-                              endif
-                            endif
-                            unless block.settings.color_picker
-                              assign color_picker = false
-                            endunless
-                          -%}
-                          {%- liquid
-                            assign option_slug = option.name | downcase
-                            assign sizing_link = ''
-                          -%}
-                          {%- if option_slug == 'size' -%}
-                            {%- if block.settings.sizing_guide_text != '' -%}
-                              {%- capture sizing_link -%}
-                                <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}">
-                                  <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button" type="button" aria-haspopup="dialog">
-                                  {% render 'svg-icons-inline', icon: block.settings.sizing_guide_icon %}<span>{{ block.settings.sizing_guide_text }}</span></button>
-                                </modal-opener>
-                                {%- endcapture -%}
-                                {%- capture sizing_popup -%}
-                                  <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal">
-                                  <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
-                                    <div class="product-popup-modal__content-header">
-                                      <h5>{{ block.settings.sizing_guide_page.title }}</h5>
-                                      <button id="ModalClose-{{ block.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'svg-icons' with 'close' %}</button>
-                                    </div>
-                                    <scroll-shadow>
-                                      <div class="product-popup-modal__content-info">
-                                        {{ block.settings.sizing_guide_page.content }}
-                                      </div>
-                                    </scroll-shadow>
-                                  </div>
-                                </modal-dialog>
-                              {%- endcapture -%}
-                            {%- endif -%}
-                          {%- endif -%}
-                          {% render 'product-option',
-                            option_type: option_type,
-                            product: product,
-                            option: option,
-                            forloop: forloop,
-                            product_form_id: product_form_id,
-                            sizing_link: sizing_link
-                          %}
-                        {%- endfor -%}
+                if block.settings.color_picker
+                  if option_name contains 'color' or option_name contains 'colour' or option_name contains 'couleur'
+                    assign option_type = 'color'
+                  endif
+                endif
+                unless block.settings.color_picker
+                  assign color_picker = false
+                endunless
+              -%}
+              {%- liquid
+                assign option_slug = option.name | downcase
+                assign sizing_link = ''
+              -%}
+              {%- if option_slug == 'size' -%}
+                {%- if block.settings.sizing_guide_text != '' -%}
+                  {%- capture sizing_link -%}
+                    <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}">
+                      <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button" type="button" aria-haspopup="dialog">
+                      {% render 'svg-icons-inline', icon: block.settings.sizing_guide_icon %}<span>{{ block.settings.sizing_guide_text }}</span></button>
+                    </modal-opener>
+                    {%- endcapture -%}
+                    {%- capture sizing_popup -%}
+                      <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal">
+                      <div role="dialog" aria-label="{{ block.settings.sizing_guide_text }}" aria-modal="true" class="product-popup-modal__content" tabindex="-1">
+                        <div class="product-popup-modal__content-header">
+                          <h5>{{ block.settings.sizing_guide_page.title }}</h5>
+                          <button id="ModalClose-{{ block.id }}" type="button" class="product-popup-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'svg-icons' with 'close' %}</button>
+                        </div>
+                        <scroll-shadow>
+                          <div class="product-popup-modal__content-info">
+                            {{ block.settings.sizing_guide_page.content }}
+                          </div>
+                        </scroll-shadow>
                       </div>
-                      <script type="application/json">
-                        {{ product.variants | json }}
-                      </script>
-                    </variant-selects>
-                  {%- endunless -%}
-                  <noscript class="product-form__noscript-wrapper-{{ section.id }}">
-                    <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
-                      <label for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
-                      <div class="select">
-                        <select
-                          name="id"
-                          id="Variants-{{ section.id }}"
-                          class="select__select"
-                          form="{{ product_form_id }}"
-                        >
-                          {%- for variant in product.variants -%}
-                            <option
-                              {% if variant == product.selected_or_first_available_variant %}
-                                selected="selected"
-                              {% endif %}
-                              {% if variant.available == false %}
-                                disabled
-                              {% endif %}
-                              value="{{ variant.id }}"
-                            >
-                              {{ variant.title }}
-                              {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
-                              - {{ variant.price | money | strip_html }}
-                            </option>
-                          {%- endfor -%}
-                        </select>
-                      </div>
-                    </div>
-                  </noscript>
+                    </modal-dialog>
+                  {%- endcapture -%}
+                {%- endif -%}
+              {%- endif -%}
+              {% render 'product-option',
+                option_type: option_type,
+                product: product,
+                option: option,
+                forloop: forloop,
+                product_form_id: product_form_id,
+                sizing_link: sizing_link
+              %}
+            {%- endfor -%}
+          </div>
+          <script type="application/json">
+            {{ product.variants | json }}
+          </script>
+        </variant-selects>
+      {%- endunless -%}
+      <noscript class="product-form__noscript-wrapper-{{ section.id }}">
+        <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
+          <label for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
+          <div class="select">
+            <select
+              name="id"
+              id="Variants-{{ section.id }}"
+              class="select__select"
+              form="{{ product_form_id }}"
+            >
+              {%- for variant in product.variants -%}
+                <option
+                  {% if variant == product.selected_or_first_available_variant %}
+                    selected="selected"
+                  {% endif %}
+                  {% if variant.available == false %}
+                    disabled
+                  {% endif %}
+                  value="{{ variant.id }}"
+                >
+                  {{ variant.title }}
+                  {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                  - {{ variant.price | money | strip_html }}
+                </option>
+              {%- endfor -%}
+            </select>
+          </div>
+        </div>
+      </noscript>
       
     </div>
   </div>
