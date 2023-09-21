@@ -102,9 +102,16 @@
                           {% endif %}
                           
                         </div>
-                        <div class="trip__details-description">
-                           {{ block.settings.description }}
-                        </div>
+                        {% if block.settings.description != blank %}
+                          <div class="trip__details-description hide__mobile">
+                             {{ block.settings.description }}
+                          </div>
+                        {% endif %}                          
+                        {% if block.settings.mobile_description != blank %}
+                          <div class="trip__details-description hide__desktop">
+                             {{ block.settings.mobile_description }}
+                          </div>
+                        {% endif %}                       
                       </div>
                   {%- endcase -%}
                 {%- endfor -%}
