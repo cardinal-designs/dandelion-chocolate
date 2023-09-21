@@ -32,7 +32,7 @@
       {%- endfor -%}
     </div>
     {%- assign product_form_id = 'product-form-' | append: section.id -%}
-    <div class="product-add-to-cart-sticky--content">
+    <div class="pricing__blocks-add-cart">
       {%- unless product.has_only_default_variant -%}
       <variant-selects  id="variant-selects-{{ section.id }}--sticky" class="no-js-hidden variant-selects--sticky" data-section="{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
         <div class="variations">
