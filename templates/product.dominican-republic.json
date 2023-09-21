@@ -124,7 +124,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "left",
-        "color_bg": "transparent",
+        "color_bg": "#f5f6f5",
         "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": false,
