@@ -19,3 +19,9 @@
 .custom__contact-form .section-header--content {
   max-width: 100%;
 }
+
+.custom__contact-form .section-header--content .rte p {
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: .02em;
+}

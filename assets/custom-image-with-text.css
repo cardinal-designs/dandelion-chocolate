@@ -10,14 +10,6 @@
   margin: 37px 0 15px;
 }
 
-.custom__image--text .image-with-text__content--inner .rte * {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  letter-spacing: normal;
-}
-
-
 .custom__image--text .image-with-text__content--inner .rte li {
   letter-spacing: 0.05em;
 }
