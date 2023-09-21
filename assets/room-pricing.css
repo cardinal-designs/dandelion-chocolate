@@ -104,6 +104,12 @@
   .choose__pricing .custom__sh1 {
     text-align: left;
   }
+
+  .select-styled, .select-options li {
+    font-size: 14px;
+    line-height: 16.8px;
+    padding: 14px 16px;
+  }
   
 }
 
