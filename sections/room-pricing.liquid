@@ -11,7 +11,7 @@
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
 -%}
-<div class="section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+<div id="{{ section.id }}" class="section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
   <div class="row{% if full_width %} full-width-row{% endif %}">
     <div class="small-12 columns">
       {%- if section.settings.heading != blank -%}
@@ -56,7 +56,7 @@
 
 {% style %}
 
-  .room__pricing {
+  #{{ section.id }}.room__pricing {
     background-color: {{ section.settings.section_bg }};
   }
   
