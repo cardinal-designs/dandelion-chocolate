@@ -458,6 +458,6 @@ $(document).ready(function() {
       });
   
   });
-  $('.product-variants').append('<button class="product-submit">RESERVE YOUR SPOT</button>')
+  $('.product-variants').after('<button class="product-submit">RESERVE YOUR SPOT</button>')
   
 });
