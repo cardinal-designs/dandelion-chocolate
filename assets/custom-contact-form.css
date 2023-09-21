@@ -39,3 +39,7 @@
   height: auto;
   margin-bottom: 10px;
 }
+
+.custom__contact-form .field input {
+  margin-bottom: 37px;
+}
