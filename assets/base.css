@@ -1241,6 +1241,7 @@ html{
   letter-spacing: 2.1px;
   height: auto;
   min-height: 46px;
+  padding: 0px 40px;
 }
 
 .custom__btn::before {
