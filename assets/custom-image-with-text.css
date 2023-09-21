@@ -17,9 +17,8 @@
 @media only screen and (min-width: 768px) {
 
   .custom__image--text .image-with-text {
-    display: grid;
-    grid-template-columns: 0.96fr 1fr;
-    column-gap: 60px;
+    display: flex;
+    column-gap: 40px;
     margin: 0;
   }
 
@@ -30,7 +29,7 @@
   }
 
   .custom__image--text .image-with-text__inner {
-    width: auto !important;
+    flex: 1;
   }
 
   .custom__image--text .image-with-text__content.image-with-text__inner {
