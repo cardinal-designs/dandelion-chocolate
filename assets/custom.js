@@ -450,7 +450,7 @@ $(document).ready(function() {
         $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
         $list.hide();
 
-       var addtoCart = $('.single-add-to-cart-button').prop('disabled');
+       var addtoCart = $('.single-add-to-cart-button').attr('disabled');
        console.log(addtoCart);
       });
   
