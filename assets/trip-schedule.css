@@ -66,6 +66,10 @@
 }
 
 .schedule__detail .heading {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
   margin: 12px 0 9px;
 }
 
