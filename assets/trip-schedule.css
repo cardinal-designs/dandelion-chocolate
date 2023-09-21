@@ -79,7 +79,7 @@
 @media only screen and (max-width: 1067px) {
 
   .trip__schedule--wrap {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .trip__schedule--wrap .trip__schedule--items {
