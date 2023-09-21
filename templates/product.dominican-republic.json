@@ -492,8 +492,8 @@
         "heading": "JOIN THE WAITLIST FOR ANNOUNCEMENTS",
         "description": "<p>To be the first to receive updates on the next trip to Zorzal Estate, please fill out the form below, and we'll be in touch. We're also happy to answer any questions in the meantime.<\/p>",
         "show_phone_number": true,
-        "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "top_spacing_desktop": 60,
+        "bottom_spacing_desktop": 100,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
