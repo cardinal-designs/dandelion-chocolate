@@ -14,3 +14,12 @@
 .custom__rich-text .custom__description ul li {
   margin-bottom: 4px;
 }
+
+@media screen and (max-width: 767px) {
+  
+  .custom__heading {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+}
