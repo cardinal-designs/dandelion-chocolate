@@ -1255,8 +1255,6 @@ html{
     display: none !important;
   }
 
-  @media only screen and (max-width: 767px) {
-
   .custom__heading {
     font-size: 28px;
     line-height: 37px;
