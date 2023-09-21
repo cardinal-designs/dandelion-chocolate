@@ -46,21 +46,6 @@
   margin-bottom: 37px;
 }
 
-.custom__btn {
-  border-radius: 6px;
-  border: 0px solid #D3A741;
-  background: #FFC600;
-  width: auto;
-  color: #333;
-  text-align: center;
-  font-family: Saa Series F D;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 2.1px;
-}
-
-.custom__btn::before {
-  display: none;
+.custom__contact-form .section-header {
+  margin-bottom: 40px;
 }
