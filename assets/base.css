@@ -1192,6 +1192,12 @@ html{
   letter-spacing: 2.1px;
 }
 
+.trip__details-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /***** General CSS End *****/
 
 @media screen and (max-width: 767px) {
