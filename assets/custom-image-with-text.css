@@ -111,5 +111,9 @@
     letter-spacing: 0.12em;
     margin: 31px 0 10px;
   }
+
+  .template-product .custom__image--text .image-with-text__image img {
+    padding: 0 15px;
+  }
   
 }
