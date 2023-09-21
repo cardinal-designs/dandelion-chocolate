@@ -90,6 +90,19 @@
   
 }
 
+@media only screen and (max-width: 767px) {
+  
+  .pricing__blocks {
+    margin-bottom: 20px;
+  }
+   
+  .pricing__blocks:last-child {
+    margin-bottom: 0;
+  }
+  
+}
+
+
 @media only screen and (max-width: 1007px) {
 
   .pricing__blocks ul {
