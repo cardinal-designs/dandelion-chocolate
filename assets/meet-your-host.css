@@ -14,6 +14,7 @@
 
 .meet__host-media svg {
   border: 1px solid;
+  display: block;
 }
 
 .meet__host--header .section_heading {
