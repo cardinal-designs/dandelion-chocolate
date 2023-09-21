@@ -245,6 +245,14 @@
   letter-spacing: 1px;  
 }
 
+.trip__details-description {
+  color: #76797B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1.28px;
+}
+
 @media only screen and (min-width: 768px) {
 
   .trip__details {
