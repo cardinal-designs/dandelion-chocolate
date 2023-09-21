@@ -808,7 +808,7 @@
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
         "layout": "text_first",
-        "content_position": "text-left",
+        "content_position": "text-center",
         "color_bg": "#ffffff",
         "color_text": "#151515",
         "top_spacing_desktop": 50,
