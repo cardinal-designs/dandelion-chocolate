@@ -25,6 +25,10 @@
   margin: 0;
 }
 
+.host__detail .heading {
+  margin-top: 12px;
+}
+
 .host__detail .custom__description * {
   font-family: 'AGaramondPro';
 }
