@@ -25,7 +25,7 @@
         {% if section.settings.section_heading != blank %}
           <h2 class="section_heading custom__heading">{{ section.settings.section_heading }}</h3> 
         {% endif %}
-		<div class="image-with-text grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text | color_extract: 'red' }}, {{ color_text | color_extract: 'green' }}, {{ color_text | color_extract: 'blue' }}; --bg-body: {{ color_bg }};">
+		<div class="image-with-text grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }}">
 			<div class="image-with-text__image image-with-text__inner">
 				<div class="image-with-text__image-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
 					{%- if image != blank -%}
@@ -72,6 +72,10 @@
     background: {{ section.settings.color_bg }};
     padding-top : {{ section.settings.top_spacing_desktop }}px;
     padding-bottom : {{ section.settings.bottom_spacing_desktop }}px;
+  }
+
+  #section--{{ section.id }} * {
+    color: {{ color_text }};
   }
 
   @media only screen and (max-width: 767px) {
