@@ -25,8 +25,8 @@
         <h3 class="section_heading">{{ section.settings.heading }}</h3> 
       </div>
       {%- for block in section.blocks -%}
-      <div class="meet__host--wrap">
-        <div class="meet__host--image meet__host--items">
+      <div class="meet__host--wrap meet__host--items">
+        <div class="meet__host--image">
           <div class="meet__host-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
             {%- if image != blank -%}
                 {%- liquid
@@ -41,7 +41,7 @@
             {%- endif -%}
           </div>
         </div>
-        <div class="meet__host--text meet__host--items">
+        <div class="meet__host--text">
           <div class="meet__host--text--inner">
             <div class="schedule__detail">
               <h3 class="heading" {{ block.shopify_attributes }}>{{ block.settings.heading | newline_to_br }}</h3>
