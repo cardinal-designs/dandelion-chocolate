@@ -489,8 +489,8 @@
       "settings": {
         "bg_color": "#53595c",
         "text_color": "#ffffff",
-        "heading": "Contact form",
-        "description": "<p>Add a short description for this section<\/p>",
+        "heading": "JOIN THE WAITLIST FOR ANNOUNCEMENTS",
+        "description": "<p>To be the first to receive updates on the next trip to Zorzal Estate, please fill out the form below, and we'll be in touch. We're also happy to answer any questions in the meantime.<\/p>",
         "show_phone_number": true,
         "top_spacing_desktop": 40,
         "bottom_spacing_desktop": 40,
