@@ -444,13 +444,13 @@ $(document).ready(function() {
     // Dispatch the 'change' event on the select element
     var changeEvent = new Event('change', { bubbles: true });
     selectElement.dispatchEvent(changeEvent);
-
+  
        
         $list.find('li.is-selected').removeClass('is-selected');
         $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
         $list.hide();
       });
-$('.product-variants').append('<button class="product-submit">RESERVE YOUR SPOT</button>')
+  
     
       $(document).click(function() {
           $styledSelect.removeClass('active');
@@ -458,5 +458,6 @@ $('.product-variants').append('<button class="product-submit">RESERVE YOUR SPOT<
       });
   
   });
+  $('.product-variants').append('<button class="product-submit">RESERVE YOUR SPOT</button>')
   
 });
