@@ -554,7 +554,7 @@
                     </h1>
                     {% if product.metafields.info.below_title != blank %}
                       <div class="below_title">
-                        {{ product.metafields.info.below_title | metafield_tag }}
+                        {{ product.metafields.info.below_title.value | metafield_tag }}
                       </div>
                     {% endif %}
                     {% if product.metafields.info.subtitle != blank %}
