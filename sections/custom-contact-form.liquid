@@ -167,17 +167,17 @@
 
 {% style %}
 
-  #{{ section.id }} {
+  #section--{{ section.id }} {
     background-color: {{ section.settings.bg_color }};
   }
 
-  #{{ section.id }} h2, 
-  #{{ section.id }} .rte,
-  #{{ section.id }} .field label  {
+  #section--{{ section.id }} h2, 
+  #section--{{ section.id }} .rte,
+  #section--{{ section.id }} .field label  {
     color: {{ section.settings.text_color }};
   }
 
-  #{{ section.id }} {
+  #section--{{ section.id }} {
     background: {{ section.settings.color_bg }};
     padding-top : {{ section.settings.top_spacing_desktop }}px;
     padding-bottom : {{ section.settings.bottom_spacing_desktop }}px;
@@ -185,7 +185,7 @@
 
   @media only screen and (max-width: 767px) {
       
-    #{{ section.id }} {
+    #section--{{ section.id }} {
       padding-top : {{ section.settings.top_spacing_mobile }}px;
       padding-bottom : {{ section.settings.bottom_spacing_mobile }}px;
     }
