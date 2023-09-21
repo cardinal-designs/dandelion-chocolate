@@ -82,6 +82,7 @@
         "88a32717-f86c-4cd9-a5b9-49d8f009ac6b",
         "f6206b2a-e143-4f36-ae40-2c2130ef00e6"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "enable_sticky_info": true,
@@ -173,10 +174,6 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
-        "use_video": false,
-        "video": "",
-        "video_autoplay": false,
-        "video_controls": false,
         "height": "adapt",
         "desktop_image_width": "large",
         "section_width": "grid",
@@ -234,7 +231,9 @@
         "heading_color": "#333333",
         "heading": "Available Rooms & Pricing",
         "full_width": true,
-        "heading_size": "h6"
+        "heading_size": "h6",
+        "sub_heading": "Choose your room to reserve & pay your deposit.",
+        "description": "Please choose the single occupancy option if you will be traveling alone."
       }
     },
     "16623877721f33fb14": {
@@ -678,7 +677,6 @@
         "heading": "A Preview of Your Day to Day",
         "description": "Schedule Subject to Change",
         "section_width": "grid",
-        "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "section_heading_color": "#333333",
