@@ -545,6 +545,7 @@
         "7f3b50c6-2695-4bdb-ab1d-7c9c2dac1a59"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/trip-overview.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
@@ -593,6 +594,7 @@
         "397c2bdf-7bdb-42f5-96e6-7614675e7826"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/pricing.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
@@ -742,6 +744,7 @@
         "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/why-hawaii.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
