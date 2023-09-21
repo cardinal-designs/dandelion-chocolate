@@ -147,46 +147,6 @@
         "disable_bottom_spacing": false
       }
     },
-    "c83322d0-443f-485d-a94f-5614c132fe1c": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--16033892335756__c83322d0-443f-485d-a94f-5614c132fe1c-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "What Is an Origin Trip?",
-            "heading_size": "h3"
-          }
-        },
-        "template--16033892335756__c83322d0-443f-485d-a94f-5614c132fe1c-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We call our Origin Trips “cocoa matchmaking,” because they’re all about letting our guests and sourcing partners connect over a deep love of chocolate. These trips are usually week-long visits to the farms where we source our cocoa. We typically take up to about 12 people (with a minimum age of 16), so we can keep the experience personal and interactive. Origin Trips aren’t just classes — they’re a balance of education and entertainment. <br\/><br\/>If you participate in an Origin Trip, you’ll get to enjoy cacao in its natural habitat, learn about the chocolate-making process, build relationships with fellow chocolate lovers, and step outside of your comfort zone.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16033892335756__c83322d0-443f-485d-a94f-5614c132fe1c-heading-1",
-        "template--16033892335756__c83322d0-443f-485d-a94f-5614c132fe1c-text-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Hawaii_Image.jpg",
-        "use_video": false,
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "video_autoplay": true,
-        "video_controls": true,
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "section_width": "full-width-spacing",
-        "layout": "image_first",
-        "content_position": "text-left",
-        "color_bg": "#f5f6f5",
-        "color_text": "#333333",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true,
-        "custom_class": "trip__image--text"
-      }
-    },
     "b6e016f2-c0cf-41c9-8d86-2900267a72a8": {
       "type": "custom-image-with-text",
       "blocks": {
@@ -233,7 +193,6 @@
     "a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56",
     "3c1730b0-58ef-40e6-b5c5-62c14faf849f",
     "94b4c291-eb0b-4556-a13c-b6ebf4f76ba1",
-    "c83322d0-443f-485d-a94f-5614c132fe1c",
     "b6e016f2-c0cf-41c9-8d86-2900267a72a8"
   ]
 }
