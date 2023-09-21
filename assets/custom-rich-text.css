@@ -10,3 +10,7 @@
 .custom__rich-text .custom__description ul {
   padding-left: 30px;
 }
+
+.custom__rich-text .custom__description ul li {
+  margin-bottom: 4px;
+}
