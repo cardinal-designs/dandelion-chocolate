@@ -34,7 +34,7 @@
         "buy_buttons"
       ],
       "custom_css": [
-
+        ".thb-product-detail.product {display: none;}"
       ],
       "settings": {
         "full_width": true,
