@@ -72,7 +72,7 @@
           "settings": {
             "heading": "PRICE",
             "content": "<p>$1k deposit per person, pricing BELOW<\/p>",
-            "mobile_content": "",
+            "mobile_content": "<p>$1k deposit, <br\/>PRICING BELOW<\/p>",
             "description": "",
             "mobile_description": ""
           }
