@@ -32,6 +32,7 @@
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .host__detail .custom__description * {
