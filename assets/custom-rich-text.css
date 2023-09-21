@@ -6,3 +6,7 @@
 .custom__rich-text .rich-text__inner h3 {
   margin-bottom: 24px;
 }
+
+.custom__rich-text .custom__description ul {
+  padding-left: 30px;
+}
