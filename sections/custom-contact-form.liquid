@@ -10,7 +10,7 @@
     assign form_class = 'contact-form--has-no-blocks'
   endif
 -%}
-{{- 'contact-form.css' | asset_url | stylesheet_tag -}}
+{{- 'custom-contact-form.css' | asset_url | stylesheet_tag -}}
 <div id="{{ section.id }}" class="custom__contact-form contact-form section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
   <div class="row">
     <div class="small-12 columns">
