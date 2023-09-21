@@ -541,50 +541,6 @@
         "custom_class": ""
       }
     },
-    "5fd41698-5e2f-44e7-826a-3f18ca8c73c4": {
-      "type": "custom-image-with-text",
-      "blocks": {
-        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "Why Hawai’i?"
-          }
-        },
-        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Hawai’i is the only state in the United States that grows cacao, due to its climate and location near the Equator. Some of the most expensive cocoa in the world comes from Hawai’i, and the farms are tightly managed in contrast to other cacao farms across the world.<br\/><br\/>Dandelion first sourced beans from Hawai’i in 2020, and has since been developing relationships with several local farms and chocolate makers. On your trip, you’ll get to visit these farms and meet the people responsible for providing some of the chocolate you love at Dandelion. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-heading-1",
-        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "section_width": "grid",
-        "layout": "image_first",
-        "content_position": "text-left",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "color_border": "#e2e2e2",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false,
-        "custom_class": ""
-      }
-    },
-    "2ce9257a-6328-4df3-a10f-cf0ab39fa690": {
-      "type": "custom-contact-form",
-      "settings": {
-        "heading": "BE IN TOUCH",
-        "description": "<p>Please let us know if you have any questions and we'll be happy to be in touch. We have limited room availability at the villa, so if you have a room in mind, please contact us with the room option you’d like to reserve, as well as how many are in your party, or if you’ll be traveling alone.<br\/><\/p>",
-        "show_phone_number": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
     "a01b6235-c38a-46a5-8f03-041b1c2ca3e7": {
       "type": "trip-schedule",
       "blocks": {
@@ -628,6 +584,77 @@
         "disable_bottom_spacing": false,
         "custom_class": ""
       }
+    },
+    "5531d97c-1d89-4613-b7cc-3cf1f12a4e4d": {
+      "type": "meet-your-host",
+      "blocks": {
+        "template--16034458370188__5531d97c-1d89-4613-b7cc-3cf1f12a4e4d-host-detail-1": {
+          "type": "host-detail",
+          "settings": {
+            "heading": "Heading",
+            "description": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__5531d97c-1d89-4613-b7cc-3cf1f12a4e4d-host-detail-1"
+      ],
+      "settings": {
+        "heading": "Meet Your Host",
+        "description": "Description",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "5fd41698-5e2f-44e7-826a-3f18ca8c73c4": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Hawai’i?"
+          }
+        },
+        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hawai’i is the only state in the United States that grows cacao, due to its climate and location near the Equator. Some of the most expensive cocoa in the world comes from Hawai’i, and the farms are tightly managed in contrast to other cacao farms across the world.<br\/><br\/>Dandelion first sourced beans from Hawai’i in 2020, and has since been developing relationships with several local farms and chocolate makers. On your trip, you’ll get to visit these farms and meet the people responsible for providing some of the chocolate you love at Dandelion. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-heading-1",
+        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "custom_class": ""
+      }
+    },
+    "2ce9257a-6328-4df3-a10f-cf0ab39fa690": {
+      "type": "custom-contact-form",
+      "settings": {
+        "heading": "BE IN TOUCH",
+        "description": "<p>Please let us know if you have any questions and we'll be happy to be in touch. We have limited room availability at the villa, so if you have a room in mind, please contact us with the room option you’d like to reserve, as well as how many are in your party, or if you’ll be traveling alone.<br\/><\/p>",
+        "show_phone_number": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -645,8 +672,9 @@
     "1693215725f4a695df",
     "c320dd8b-64e1-431f-b0be-71de066cb294",
     "66a28de1-9eb9-41de-8ea9-76a7246fd21e",
+    "a01b6235-c38a-46a5-8f03-041b1c2ca3e7",
+    "5531d97c-1d89-4613-b7cc-3cf1f12a4e4d",
     "5fd41698-5e2f-44e7-826a-3f18ca8c73c4",
-    "2ce9257a-6328-4df3-a10f-cf0ab39fa690",
-    "a01b6235-c38a-46a5-8f03-041b1c2ca3e7"
+    "2ce9257a-6328-4df3-a10f-cf0ab39fa690"
   ]
 }
