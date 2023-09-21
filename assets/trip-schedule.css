@@ -86,14 +86,12 @@
     margin-bottom: 37px;
   }
 
-  .schedule__detail .heading {
+  .trip__schedule--text--inner .heading {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.1em;
-  }
-
-  .trip__schedule--text--inner .heading {
-    
+    padding-bottom: 14px;
+    margin-bottom: 18px;
   }
   
 }
