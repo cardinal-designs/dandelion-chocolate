@@ -90,6 +90,15 @@
   
 }
 
+@media only screen and (max-width: 1007px) {
+
+  .pricing__blocks ul {
+    padding: 0 0 0 30px;
+    margin: 0;
+  }
+
+}
+
 @media only screen and (max-width: 767px) {
   
   .pricing__blocks {
@@ -125,12 +134,10 @@
   
 }
 
+@media only screen and (max-width: 374px) {
 
-@media only screen and (max-width: 1007px) {
-
-  .pricing__blocks ul {
-    padding: 0 0 0 30px;
-    margin: 0;
+  .product-submit.custom__btn {
+    min-width: 100%;
   }
-
+  
 }

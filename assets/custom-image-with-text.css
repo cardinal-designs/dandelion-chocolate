@@ -119,5 +119,12 @@
   .template-product .custom__image--text .image-with-text__image img {
     padding: 0 20px;
   }
+
+  .custom__image--text .custom__heading.small {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
   
 }
