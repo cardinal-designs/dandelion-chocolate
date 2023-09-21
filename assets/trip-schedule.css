@@ -6,3 +6,7 @@
   flex: 1;
   column-gap: 38px;
 }
+
+.trip__schedule-media svg {
+ border: 1px solid; 
+}
