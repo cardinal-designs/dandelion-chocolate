@@ -450,7 +450,7 @@ $(document).ready(function() {
         $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
         $list.hide();
 
-       var addtoCart = $('.single-add-to-cart-button').attr('disabled');
+       var addtoCart = $('.product-information button[type="submit"]').attr('disabled');
        if (addtoCart){
          $('.product-submit').text('sold-out');
          $('.product-submit').attr('disabled','disabled');
