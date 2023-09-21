@@ -9,30 +9,16 @@
     "69a6822c-194c-4e18-865f-2331884aa76c": {
       "type": "trip-details",
       "blocks": {
-        "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Add a tagline"
-          }
-        },
         "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "Hawai’i",
             "heading_size": "h3"
-          }
-        },
-        "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-subheading-1",
-        "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-heading-1",
-        "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-text-1"
+        "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-heading-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
