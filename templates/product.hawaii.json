@@ -581,7 +581,7 @@
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
-        "section_width": "grid",
+        "section_width": "full-width-spacing",
         "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
@@ -755,12 +755,15 @@
     "2ce9257a-6328-4df3-a10f-cf0ab39fa690": {
       "type": "custom-contact-form",
       "settings": {
-        "bg_color": "#53595C",
+        "bg_color": "#53595c",
+        "text_color": "#ffffff",
         "heading": "BE IN TOUCH",
         "description": "<p>Please let us know if you have any questions and we'll be happy to be in touch. We have limited room availability at the villa, so if you have a room in mind, please contact us with the room option you’d like to reserve, as well as how many are in your party, or if you’ll be traveling alone.<br\/><\/p>",
         "show_phone_number": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
       }
     }
   },
