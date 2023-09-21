@@ -106,9 +106,9 @@
           "type": "column",
           "settings": {
             "content_bg": "#000",
-            "title": "Column",
+            "title": "FULL-sized",
             "heading_color": "#333",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<ul><li>2 available single-occupancy room<\/li><li>Shared bathrooms<\/li><li>$3750 per person<\/li><\/ul>",
             "text_color": "#333"
           }
         },
@@ -141,7 +141,7 @@
       "settings": {
         "section_bg": "#FFFDF9",
         "heading_color": "#333333",
-        "heading": "Multicolumn",
+        "heading": "Available Rooms & Pricing",
         "full_width": true,
         "text_alignment": "left",
         "heading_size": "h5",
