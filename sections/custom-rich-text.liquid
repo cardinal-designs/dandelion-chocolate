@@ -55,7 +55,7 @@
             {%- when 'heading' -%}
               <h3 class="{{ block.settings.size }} heading custom__heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
             {%- when 'text' -%}
-              <div class="custom__rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div class="custom__description rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {% if block.settings.link_label != blank %}
                 <a class="button{% if block.settings.button_outline %} outline{%- endif -%}" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><span>{{ block.settings.link_label }}</span></a>
