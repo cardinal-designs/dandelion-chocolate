@@ -19,7 +19,7 @@
 <div id="section--{{ section.id }}" class="row {{ section_width }} trip__schedule">
   <div class="small-12 columns">
     <div class="trip__schedule--section grid--image-{{ desktop_image_width }} {{ content_position }}">
-      <div class="trip__schedule--header hide__mobile">
+      <div class="trip__schedule--header hide-mobile">
         {% if section.settings.heading != blank %}
           <h3 class="section_heading custom__heading text-center">{{ section.settings.heading }}</h3>
         {% endif %}
@@ -30,8 +30,7 @@
       </div>
       <div class="trip__schedule--wrap">
         {%- if image != blank -%}
-        <div class="trip__schedule--image trip__schedule--items">
-          
+          <div class="trip__schedule--image trip__schedule--items">
             <div class="trip__schedule-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
               {%- liquid
                   assign small_height = image.src.height | times: '690' | divided_by: image.src.width
@@ -40,14 +39,13 @@
                   assign width = '690x' | append: small_height | append: ',' | append: '1340x' | append: mid_height | append: ',' | append: master_width
               -%}
               {%- render 'responsive-image', image: image, sizes: width -%}
-            </div>
-          
-        </div>
-          {%- endif -%}
+            </div>    
+          </div>
+        {%- endif -%}
         <div class="trip__schedule--text trip__schedule--items">
-          <div class="trip__schedule--header hide__desktop">
+          <div class="trip__schedule--header hide-desktop">
             <h3 class="section_heading custom__heading">{{ section.settings.heading }}</h3> 
-            <p class="section_description">{{ section.settings.description }}</h3>
+            <p class="section_description">{{ section.settings.description }}</p>
           </div>
           <div class="trip__schedule--text--inner">
             {%- for block in section.blocks -%}
