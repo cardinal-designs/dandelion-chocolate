@@ -65,7 +65,10 @@
                           <div class="icon_items">
                             {% assign icon = 'icon_' | append: i %}
                             {% assign icon_svg = block.settings[icon]  %}
-                            {{  icon_svg }}<br>
+                            {% assign icon_text = 'icon_text' | append: i %}
+                            {% assign icon_text_value = block.settings[icon_text]  %}
+                            {{  icon_svg }}
+                            {{  icon_text_value }}
                           </div>
                         {% endfor %}
                       </div>
