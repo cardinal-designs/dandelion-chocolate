@@ -253,7 +253,7 @@
         "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-text-1": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Lodging for the extent of the trip at our beach-front condos where each guest will stay in their own room.<\/li><li>Transportation between scheduled activities <\/li><li>Meals and any planned cultural excursions. We will accommodate any food allergies or restrictions. <\/li><li>Guests are responsible for their own flight in and out of Puerto Plato International Airport, as well as any activities they decide to do on their free day. <br\/><\/li><\/ul>",
+            "text": "<ul><li>Lodging for the extent of the trip at our beach-front condos where each guest will stay in their own room.<\/li><li>Transportation between scheduled activities <\/li><li>Meals and any planned cultural excursions. <em>We will accommodate any food allergies or restrictions.<\/em> <\/li><li>Guests are responsible for their own flight in and out of Puerto Plato International Airport, as well as any activities they decide to do on their free day. <br\/><\/li><\/ul>",
             "size": "text-size-regular"
           }
         }
