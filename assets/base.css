@@ -1326,6 +1326,10 @@ heightwidthauto {
   padding: 16px 0 22px;
 }
 
+.classes__events--wrap .icon__row--wrap {
+  column-gap: 83px;
+}
+
 .icon__row--wrap .icon_items {
   text-align: center
 }
