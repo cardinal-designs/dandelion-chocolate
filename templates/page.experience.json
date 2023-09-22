@@ -126,10 +126,10 @@
         "b5ab71e0-e033-4440-ac0a-a4b9229f9ce9": {
           "type": "button",
           "settings": {
-            "button_text": "Shop Now",
+            "button_text": "BOOK NOW",
             "button_link": "#",
-            "button_style": "btn--white",
-            "button_text_2": "Shop Now",
+            "button_style": "btn--gold",
+            "button_text_2": "PRIVATE TOURS",
             "button_link_2": "#",
             "button_style_2": "btn--white"
           }
