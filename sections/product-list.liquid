@@ -5,7 +5,12 @@
 -%}
 
 <div class="{{ section_width }} product__list--wrap" id="section--{{ section.id }}" style="background: {{ section.settings.bg_color }};">
-  <div class="product__items--wrap row">
+  <div class="row">
+    <div class="trip__schedule--header hide__mobile">
+      <h3 class="section_heading custom__heading text-center">{{ section.settings.heading }}</h3> 
+      <p class="section_description text-center">{{ section.settings.description }}</h3>
+    </div>
+    <div class="product__items--wrap">
    {% for block in section.blocks %}
      {% assign image = block.settings.image %}
      <div class="product__items" id="block--{{ block.id }}">
@@ -74,6 +79,7 @@
           }
         {% endstyle %}
     {% endfor %}
+  </div>
   </div>
 </div>
 
