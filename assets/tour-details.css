@@ -3,6 +3,10 @@
   column-gap: 22px;
 }
 
+.tour__details--wrap .icon_items {
+  text-align: center
+}
+
 .tour__details--wrap .btn_wrap {
   display: flex;
   column-gap: 15px;
