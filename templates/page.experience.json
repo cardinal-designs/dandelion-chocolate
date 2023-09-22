@@ -56,6 +56,12 @@
     "f4712471-0799-4fe2-b4e3-949d0cf2366f": {
       "type": "tour-details",
       "blocks": {
+        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "TOURS"
+          }
+        },
         "237399f0-b61b-4ea5-beae-c3cda838e818": {
           "type": "icon",
           "settings": {
@@ -71,23 +77,61 @@
             "icon_text_5": ""
           }
         },
-        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-heading-1": {
-          "type": "heading",
-          "settings": {
-            "text": "TOURS"
-          }
-        },
         "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Walk through our historic brick 16th Street factory with an expert Chocolate Educator: View our entire production line, and enjoy plenty of samples, from fresh cacao pulp to finished chocolate. Weekdays until 2 p.m., you're likely to see our Chocolate Makers in action, and catch the aroma of freshly roasting cocoa beans. On weekends, we have the factory to ourselves; we'll dive deeper into chocolate history, as well as our own sourcing and production processes. Both tour versions include lots of chocolate tasting.<br\/><\/p>"
+          }
+        },
+        "32557fc8-04e6-4770-b8c4-69c3f6a96c65": {
+          "type": "tab",
+          "settings": {
+            "heading": "LOCATION",
+            "content": "<p>16TH STREET FACTORY<\/p>",
+            "mobile_content": "",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "18771e08-1a7d-4704-9144-31673d36385e": {
+          "type": "tab",
+          "settings": {
+            "heading": "STARTING AT",
+            "content": "<p>$20 \/ PERSON<\/p>",
+            "mobile_content": "",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "c0386a10-9867-4b0f-b579-896c84486bd0": {
+          "type": "tab",
+          "settings": {
+            "heading": "DAYS OFFERED",
+            "content": "<p>TUESDAY – SUNDAY: 11AM, 3PM, 5PM<\/p>",
+            "mobile_content": "",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "a2f6124b-6c41-4eef-9c54-0a6b38c6c608": {
+          "type": "tab",
+          "settings": {
+            "heading": "available upon request",
+            "content": "<p>GIFTS, DRINKS, PASTRIES, TASTINGS, SITE RENTAL<\/p>",
+            "mobile_content": "",
+            "description": "",
+            "mobile_description": ""
           }
         }
       },
       "block_order": [
-        "237399f0-b61b-4ea5-beae-c3cda838e818",
         "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-heading-1",
-        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-text-1"
+        "237399f0-b61b-4ea5-beae-c3cda838e818",
+        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-text-1",
+        "32557fc8-04e6-4770-b8c4-69c3f6a96c65",
+        "18771e08-1a7d-4704-9144-31673d36385e",
+        "c0386a10-9867-4b0f-b579-896c84486bd0",
+        "a2f6124b-6c41-4eef-9c54-0a6b38c6c608"
       ],
       "settings": {
         "height": "adapt",
