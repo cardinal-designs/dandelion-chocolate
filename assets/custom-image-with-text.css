@@ -145,5 +145,9 @@
   .other__origin-trips.custom__image--text .image-with-text__content {
     padding: 24px 20px 0;
   }
+
+  .other__origin-trips.custom__image--text .image-with-text__content--inner {
+    text-align: left;
+  }
   
 }
