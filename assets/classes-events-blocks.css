@@ -23,3 +23,10 @@
   column-gap: 54px;
   row-gap: 47px;
 }
+
+.classes__events--wrap svg {
+  padding: 50px;
+  fill: var(--bg-body, #fff);
+  opacity: .5;
+  background: var(--color-accent);
+}
