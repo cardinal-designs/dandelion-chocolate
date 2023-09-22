@@ -72,6 +72,13 @@
                           </div>
                         {% endfor %}
                       </div>
+                    {% when 'button' %}
+                      {% if block.settings.button_link != blank %}
+                        <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
+                      {% endif %}
+                      {% if block.settings.button_link_2 != blank %}
+                        <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
+                      {% endif %}
                     {% when 'tab' %}
                       <div class="trip__details-content">
                         <div class="trip__details-content-inner">
