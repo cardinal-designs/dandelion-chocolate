@@ -1,6 +1,8 @@
 .tour__details--wrap .icon__wrap {
   display: flex;
   column-gap: 22px;
+  border-bottom: 1px solid #333;
+  padding: 16px 0 22px;
 }
 
 .tour__details--wrap .icon_items {
