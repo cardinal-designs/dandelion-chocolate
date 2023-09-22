@@ -18,6 +18,7 @@
 
 .custom__rich-text .custom__description ul li {
   margin-bottom: 4px;
+  letter-spacing: .02em;
 }
 
 .custom__rich-text .button {
