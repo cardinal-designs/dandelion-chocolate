@@ -7,6 +7,7 @@
   line-height: 21.6px;
   font-size: 18px;
   position:relative;
+  list-style: none;
 }
 
 .pricing__blocks ul li:before {
