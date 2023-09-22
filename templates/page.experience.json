@@ -154,14 +154,135 @@
         "color_bg": "#ffffff",
         "color_text": "#151515",
         "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1a35a150-8134-4c0b-a964-d99346503ff1": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading for this section"
+          }
+        },
+        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Talk about your brand",
+            "size": "h3"
+          }
+        },
+        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "size": "text-size-regular"
+          }
+        },
+        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-button-1": {
+          "type": "button",
+          "settings": {
+            "link_label": "Learn More",
+            "link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-subheading-1",
+        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-heading-1",
+        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-text-1",
+        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-button-1"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "transparent",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
         "disable_bottom_spacing": false,
-        "custom_class": ""
+        "custom_class": "",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
+    "a51a022b-7652-4eae-b8a3-43c6fe1fe47c": {
+      "type": "product-list",
+      "blocks": {
+        "template--16035013656716__a51a022b-7652-4eae-b8a3-43c6fe1fe47c-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "heading": "Heading",
+            "subheading": "Add a tagline",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "btn--white",
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_style_2": "btn--white",
+            "caption_color": "#333",
+            "heading_color": "#333",
+            "text_color": "#333"
+          }
+        },
+        "template--16035013656716__a51a022b-7652-4eae-b8a3-43c6fe1fe47c-product-2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "heading": "Heading",
+            "subheading": "Add a tagline",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "btn--white",
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_style_2": "btn--white",
+            "caption_color": "#333",
+            "heading_color": "#333",
+            "text_color": "#333"
+          }
+        }
+      },
+      "block_order": [
+        "template--16035013656716__a51a022b-7652-4eae-b8a3-43c6fe1fe47c-product-1",
+        "template--16035013656716__a51a022b-7652-4eae-b8a3-43c6fe1fe47c-product-2"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "4c884aeb-0b85-4eac-872c-697925d2f0ae": {
+      "type": "custom-contact-form",
+      "settings": {
+        "bg_color": "#53595C",
+        "text_color": "#ffffff",
+        "heading": "Contact form",
+        "description": "<p>Add a short description for this section<\/p>",
+        "show_phone_number": true,
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
       }
     }
   },
   "order": [
     "main",
     "26f6b9c0-d869-4b3f-8c5e-8f09e7f68590",
-    "f4712471-0799-4fe2-b4e3-949d0cf2366f"
+    "f4712471-0799-4fe2-b4e3-949d0cf2366f",
+    "1a35a150-8134-4c0b-a964-d99346503ff1",
+    "a51a022b-7652-4eae-b8a3-43c6fe1fe47c",
+    "4c884aeb-0b85-4eac-872c-697925d2f0ae"
   ]
 }

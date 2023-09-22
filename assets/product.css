@@ -2370,6 +2370,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   display: flex !important;
 }
 
+.shelf__life {
+  display: flex;
+}
+
 @media only screen and (min-width: 768px) { 
   
   .merch__icons.multi__merch--icons {
