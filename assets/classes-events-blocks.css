@@ -60,6 +60,7 @@
 
 .classes__events--wrap .block__buttons {
   display: flex;
+  column-gap: 20px;
 }
 
 .classes__events--wrap .btn {
