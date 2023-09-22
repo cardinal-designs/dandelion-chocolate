@@ -132,6 +132,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/hawaii_3_1.png",
         "height": "adapt",
         "desktop_image_width": "large",
         "section_width": "grid",
@@ -251,7 +252,8 @@
         "top_spacing_desktop": 68,
         "bottom_spacing_desktop": 68,
         "top_spacing_mobile": 40,
-        "bottom_spacing_mobile": 40
+        "bottom_spacing_mobile": 40,
+        "custom_class": ""
       }
     },
     "66a28de1-9eb9-41de-8ea9-76a7246fd21e": {
@@ -302,7 +304,8 @@
         "top_spacing_desktop": 70,
         "bottom_spacing_desktop": 50,
         "top_spacing_mobile": 40,
-        "bottom_spacing_mobile": 40
+        "bottom_spacing_mobile": 40,
+        "custom_class": ""
       }
     },
     "a01b6235-c38a-46a5-8f03-041b1c2ca3e7": {
@@ -413,6 +416,7 @@
         "content_position": "text-left",
         "color_bg": "#f5f6f5",
         "color_text": "#333333",
+        "color_sub_text": "#333",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 72,
         "top_spacing_mobile": 40,
@@ -449,11 +453,12 @@
         "layout": "image_first",
         "content_position": "text-left",
         "color_bg": "#ffffff",
-        "color_text": "#151515",
+        "color_text": "#333333",
         "top_spacing_desktop": 76,
         "bottom_spacing_desktop": 80,
         "top_spacing_mobile": 40,
-        "bottom_spacing_mobile": 40
+        "bottom_spacing_mobile": 40,
+        "custom_class": ""
       }
     },
     "dda2a186-d5fb-4b7d-a1a9-61620e53504c": {
@@ -507,7 +512,8 @@
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 56,
         "top_spacing_mobile": 40,
-        "bottom_spacing_mobile": 40
+        "bottom_spacing_mobile": 40,
+        "custom_class": ""
       }
     },
     "2ce9257a-6328-4df3-a10f-cf0ab39fa690": {
