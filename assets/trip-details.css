@@ -136,7 +136,8 @@
   letter-spacing: 1px;  
 }
 
-.trip__details-description {
+.trip__details-description,
+.trip__details-description p {
   color: #76797b;
   font-size: 16px;
   font-weight: 400;
