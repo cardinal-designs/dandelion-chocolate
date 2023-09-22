@@ -31,6 +31,12 @@
   background: var(--color-accent);
 }
 
+.classes__events--wrap .detail_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
 .classes__events--wrap .details-heading, 
 .classes__events--wrap .details-content-text, 
 .classes__events--wrap .details-content-text p {
