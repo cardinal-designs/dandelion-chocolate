@@ -1259,7 +1259,8 @@ heightwidthauto {
 }
 
 .custom__description,
-.custom__description  * {
+.custom__description  *,
+.custom__description p {
   font-family: 'Garamond Premiere Pro';
   font-size: 18px;
   font-weight: 400;
