@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.trip__image--with-content .custom__btn {
+  padding: 17px 46px 9px;  
+}
+
 @media only screen and (min-width:768px) {
   
   .trip__details {
