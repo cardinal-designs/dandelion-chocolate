@@ -2,6 +2,10 @@
   margin: 0 0 35px;
 }
 
+.section-image-with-text .trip__schedule.row.full-width-spacing .columns {
+  max-width: 1166px !important;
+}
+
 .trip__schedule--section .section_heading {
   margin: 0 0 12px;
 }
