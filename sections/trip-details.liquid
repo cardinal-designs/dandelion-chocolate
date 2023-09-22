@@ -49,16 +49,22 @@
               assign mobile_master_width = mobile_image.src.width | append: 'x' | append: mobile_image.src.height
               assign mobile_width = '690x' | append: mobile_small_height | append: ',' | append: '1340x' | append: mobile_mid_height | append: ',' | append: mobile_master_width
             -%}
+            {% if image != blank %}
+              <div class="hide-mobile">
+                {%- render 'responsive-image', image: image, sizes: width -%}
+              </div>
+            {% endif %}
 
-            <div class="hide-mobile">
-              {%- render 'responsive-image', image: image, sizes: width -%}
-            </div>
-
+            {% if mobile_image != blank %}
             <div class="hide-desktop">
               {%- render 'responsive-image', image: mobile_image, sizes: mobile_width -%}
-            </div>       
-          {%- else -%}
-            {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+            </div>   
+            {% else %}
+              <div class="hide-desktop">
+                 {%- render 'responsive-image', image: image, sizes: width -%}
+              </div>                 
+            {% endif %}
+
           {%- endunless -%}
         </div>
       </div>
