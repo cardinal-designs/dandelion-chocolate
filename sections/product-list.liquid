@@ -83,6 +83,28 @@
   </div>
 </div>
 
+{% style %}
+
+  #section--{{ section.id }} {
+    padding-top : {{ section.settings.top_spacing_desktop }}px;
+    padding-bottom : {{ section.settings.bottom_spacing_desktop }}px;
+  }
+
+  #section--{{ section.id }} * {
+    color: {{ color_text }};
+  }
+
+  @media only screen and (max-width: 767px) {
+      
+    #section--{{ section.id }} {
+      padding-top : {{ section.settings.top_spacing_mobile }}px;
+      padding-bottom : {{ section.settings.bottom_spacing_mobile }}px;
+    }
+    
+  }
+  
+{% endstyle %}
+
 
 {% schema %}
 {
