@@ -56,3 +56,9 @@
 .event__item:last-child .count:after {
   display: none;
 } 
+
+.step__text {
+  margin-top: 20px;
+  padding: 0 25px;
+  text-align: center;
+}

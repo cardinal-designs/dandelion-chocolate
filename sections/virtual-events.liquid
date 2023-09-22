@@ -5,7 +5,7 @@
   assign section_width = section.settings.section_width
 -%}
 
-<div class="{{ section_width }} classes__events--wrap" id="section--{{ section.id }}">
+<div class="{{ section_width }} virtual__events--wrap classes__events--wrap" id="section--{{ section.id }}">
   <div class="section__header">
     {% if section.settings.section_heading != blank %}
       <h2 class="section__heading text-center">{{ section.settings.section_heading }}</h2>
