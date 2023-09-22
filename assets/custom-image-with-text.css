@@ -149,5 +149,9 @@
   .other__origin-trips.custom__image--text .image-with-text__content--inner {
     text-align: left;
   }
+
+  .other__origin-trips.custom__image--text .section_heading {
+    margin-bottom: 24px;
+  }
   
 }
