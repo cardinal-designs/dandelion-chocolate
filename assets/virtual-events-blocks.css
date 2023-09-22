@@ -105,3 +105,12 @@
   min-width: 310px;
   min-height: 46px;
 }
+
+.virtual__events--wrap .section__footer {
+  width: 100%;
+  margin-top: 46px;
+}
+
+.virtual__events--wrap .section__footer p {
+  margin; 0;
+}
