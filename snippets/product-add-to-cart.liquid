@@ -134,7 +134,8 @@
     <div class="merch__icons {% if merch_icons_count > 1 %}multi__merch--icons{% endif %}">
       {% if product.metafields.custom.merch_icons.value != blank %}
         {% for merch_icon in product.metafields.custom.merch_icons.value %}
-          {% assign merch_text = merch_icon | downcase | strip %}
+          {% assign merch_text = merch_icon | downcase %}
+          {{ merch_text }}
           <div class="product__ctarow product__free-shipping">
             <div class="product__ctacol--icon">
               <div class="icon--extra-large icon--circle" >
