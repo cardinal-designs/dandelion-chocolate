@@ -11,8 +11,10 @@
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
 -%}
+
 <div id="section-{{ section.id }}" class="room__pricing-section">
-  <div class="room__pricing-section-inner">
+  <div id="room__pricing-section">
+    <div class="room__pricing-section-inner">
     {%- if section.settings.heading != blank -%}
       <div class="text-center">
         <h2 class="custom__heading" style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h2>
@@ -45,6 +47,7 @@
     <div class="product-variants">
     </div>
     
+  </div>
   </div>
 </div>
 
