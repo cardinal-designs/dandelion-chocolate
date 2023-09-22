@@ -39,6 +39,19 @@
               <p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.subheading }}</p>  
             {% endif %}
           </div>
+
+          <div class="icon__wrap">
+            {% for i in (1..5) %}
+              <div class="icon_items">
+                {% assign icon = 'icon_' | append: i %}
+                {% assign icon_svg = block.settings[icon]  %}
+                {% assign icon_text = 'icon_text_' | append: i %}
+                {% assign icon_text_value = block.settings[icon_text]  %}
+                {{  icon_svg }}
+                <p>{{  icon_text_value }}</p>
+              </div>
+            {% endfor %}
+          </div>
          
           {% if block.settings.text != blank %}
             <div class="block__description">
@@ -158,12 +171,87 @@
       "settings": [
         {
           "type": "header",
-          "content": "Product"
+          "content": "Icons"
         },
         {
-          "type": "product",
-          "id": "product",
-          "label": "product"
+          "type": "header",
+          "content": "Icon 1"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_1",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_1",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Icon 2"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_2",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_2",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Icon 3"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_3",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_3",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Icon 4"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_4",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_4",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Icon 5"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_5",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_5",
+          "label": "Icon Text",
+          "default": "Icon Text"
         },
         {
           "type": "header",
