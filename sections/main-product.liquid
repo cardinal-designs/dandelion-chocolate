@@ -705,12 +705,8 @@
                           {% assign merch_icon_name = merch_icon | downcase %}
                           {% if merch_icon_name == 'Add Gift Notes at Checkout' %}
                             {% render 'icon-gift-wrap' %}
-                          {% elsif merch_icon_name == 'organic' %}
-                            {% render 'icon-organic' %}
                           {% elsif merch_icon_name == 'free shipping' %}
                             {% render 'icon-pickup' %}
-                          {% elsif merch_icon_name == 'wholesale' %}
-                            {% render 'icon-wholesale' %}
                           {% endif %}
                         {% endcapture %}
                         <div>
