@@ -137,7 +137,9 @@
   margin-bottom: 23px
 }
 
-
+.trip__details-content:last-child {
+  border-bottom: 1px solid #333;
+}
 
 .trip__details-description,
 .trip__details-description p {

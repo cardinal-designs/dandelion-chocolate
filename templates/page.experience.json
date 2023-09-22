@@ -177,10 +177,10 @@
             "detail_heading": "Heading",
             "detail_content": "<p>Content<\/p>",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_text": "Shop Now",
+            "button_text": "RESERVE",
             "button_link": "#",
             "button_style": "btn--gold",
-            "button_text_2": "Shop Now",
+            "button_text_2": "MAKE THIS PRIVATE",
             "button_link_2": "#",
             "button_style_2": "btn--white",
             "caption_color": "#333333",
@@ -227,8 +227,8 @@
         "section_width": "full-width-row",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false,
-        "bg_color": "#F5F6F5",
-        "text_color": "#333"
+        "bg_color": "#f5f6f5",
+        "text_color": "#333333"
       }
     },
     "1a35a150-8134-4c0b-a964-d99346503ff1": {
