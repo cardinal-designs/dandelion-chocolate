@@ -1285,6 +1285,10 @@ heightwidthauto {
   padding-left: 28px;
 }
 
+.custom__description p {
+  letter-spacing: .02em;
+}
+
 .custom__description ul li {
   position: relative;
   list-style: none;
