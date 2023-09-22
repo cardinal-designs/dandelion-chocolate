@@ -84,6 +84,10 @@
   text-align: center;
 }
 
+.room__pricing-section-inner .custom__heading {
+  letter-spacing: .05em;
+}
+
 @media only screen and (min-width: 768px) {
   
   .pricing__blocks-main {
