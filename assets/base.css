@@ -1304,6 +1304,7 @@ heightwidthauto {
 
 .custom__description strong {
   font-weight: 600;
+  letter-spacing: .02em;
 }
 
 .custom__description a {
