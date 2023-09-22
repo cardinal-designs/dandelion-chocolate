@@ -58,8 +58,12 @@
 
 {% style %}
 
-  .meet__host--section * {
+  .meet__host--section .heading {
     color: {{ section.settings.color_text }};
+  }
+
+  .meet__host--section .custom__description {
+    color: {{ section.settings.color_sub_text }};
   }
 
   #section--{{ section.id }} {
@@ -162,6 +166,12 @@
       "type": "color",
       "id": "color_text",
       "label": "Text",
+      "default": "#333"
+    },
+    {
+      "type": "color",
+      "id": "color_sub_text",
+      "label": "Sub Text",
       "default": "#333"
     },
     {
