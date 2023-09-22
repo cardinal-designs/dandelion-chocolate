@@ -63,9 +63,8 @@
                       <div class="icon__wrap">
                         {% for i in (1..5) %}
                           <div class="icon_items">
-                                    {% assign icon = "icon_" | append: i  %}
-          {{ icon }}yyyy
-                            {{ block.settings | append:icon }}yyuu
+                            {% assign icon = "icon_" | append: i  %}
+                            {{ block.settings | append:icon }}
                           </div>
                         {% endfor %}
                       </div>
