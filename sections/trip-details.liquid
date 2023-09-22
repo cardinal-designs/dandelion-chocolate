@@ -43,12 +43,7 @@
               assign width = '690x' | append: small_height | append: ',' | append: '1340x' | append: mid_height | append: ',' | append: master_width
             -%}
             
-            {%- liquid
-              assign mobile_small_height = mobile_image.src.height | times: '690' | divided_by: mobile_image.src.width
-              assign mobile_mid_height = mobile_image.src.height | times: '1340' | divided_by: mobile_image.src.width
-              assign mobile_master_width = mobile_image.src.width | append: 'x' | append: mobile_image.src.height
-              assign mobile_width = '690x' | append: mobile_small_height | append: ',' | append: '1340x' | append: mobile_mid_height | append: ',' | append: mobile_master_width
-            -%}
+
             {% if image != blank %}
               <div class="hide-mobile">
                 {%- render 'responsive-image', image: image, sizes: width -%}
