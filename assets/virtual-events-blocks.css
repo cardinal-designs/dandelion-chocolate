@@ -61,5 +61,8 @@
 .virtual__events--wrap .step__text {
   margin-top: 20px;
   padding: 0 25px;
-  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.04em;
 }
