@@ -1293,8 +1293,8 @@ heightwidthauto {
 .custom__description ul li::before {
   content: '';
   position: absolute;
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   background-color: #333333;
   border-radius: 50%;
   left: -18px;

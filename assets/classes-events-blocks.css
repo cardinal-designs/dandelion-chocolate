@@ -69,4 +69,8 @@
   flex: 1;
 }
 
+.classes__events--wrap .text__wrap {
+  padding: 16px 20px;
+}
+
 
