@@ -58,8 +58,13 @@
   margin: 0;
 }
 
+.classes__events--wrap .block__buttons {
+  display: flex;
+}
+
 .classes__events--wrap .btn {
   border-radius: 6px;
+  flex: 1;
 }
 
 
