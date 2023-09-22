@@ -58,4 +58,8 @@
   margin: 0;
 }
 
+.classes__events--wrap .btn {
+  border-radius: 6px;
+}
+
 
