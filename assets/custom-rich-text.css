@@ -21,6 +21,12 @@
   letter-spacing: .02em;
 }
 
+.custom__rich-text .custom__description ul li em {
+  font-style: normal;
+  font-family: 'AGaramondPro';
+  letter-spacing: .04em;
+}
+
 .custom__rich-text .button {
   margin-top: 26px;
   min-height: 40px;
