@@ -516,7 +516,7 @@
         "color_text": "#151515",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 56,
-        "top_spacing_mobile": 40,
+        "top_spacing_mobile": 30,
         "bottom_spacing_mobile": 40,
         "custom_class": ""
       }
