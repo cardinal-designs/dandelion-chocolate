@@ -33,7 +33,7 @@
 .event__item .count:after {
   content: '';
   background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/line-new.png?v=1695379062);
-  width: 50%;
+  width: calc(50% - 30px);
   height: 10px;
   display: block;
   position: absolute;
@@ -44,7 +44,7 @@
 .event__item .count:before {
   content: '';
   background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/line-new.png?v=1695379062);
-  width: 50%;
+  width: calc(50% - 30px);
   height: 10px;
   display: block;
   position: absolute;
