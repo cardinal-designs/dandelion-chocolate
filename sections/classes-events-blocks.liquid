@@ -52,6 +52,20 @@
               </div>
             {% endfor %}
           </div>
+
+          <div class="detail_row">
+           {% if block.settings.heading != blank %}
+              <span class="trip__details-heading">
+                {{ block.settings.detail_heading }}
+              </span>
+            {% endif %}
+          
+            {% if block.settings.content != blank %}
+              <span class="trip__details-content-text hide__mobile">
+                {{ block.settings.detail_content }}
+              </span>
+            {% endif %}
+          </div>
          
           {% if block.settings.text != blank %}
             <div class="block__description">
@@ -252,6 +266,23 @@
           "id": "icon_text_5",
           "label": "Icon Text",
           "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Detail Row"
+        },
+        {
+          "type": "text",
+          "id": "detail_heading",
+          "default": "Heading",
+          "info": "Include a heading that explains the content.",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "detail_content",
+          "info": "Include a heading that explains the content.",
+          "label": "Content"
         },
         {
           "type": "header",
