@@ -6,7 +6,10 @@
 }
 
 .product__list--wrap svg.placeholder_svg_tag {
-  border: 1px solid;
+  padding: 50px;
+  fill: var(--bg-body, #fff);
+  opacity: .5;
+  background: var(--color-accent);
   display: block;
 }
 
