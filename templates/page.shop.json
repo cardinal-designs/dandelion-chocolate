@@ -818,7 +818,7 @@
     "97c96ec7-6691-488b-82b9-e7c62955bda0": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Kits",
+        "section_id": "Virtual Experiences",
         "heading": "Kits for Virtual Events",
         "heading_desktop": 32,
         "heading_mobile": 22,
@@ -855,7 +855,7 @@
     "b489c90a-18dd-4ef0-a616-2a2dfd9808c2": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Baking",
+        "section_id": "Pantry & Baking",
         "heading": "Pantry and Baking",
         "heading_desktop": 32,
         "heading_mobile": 22,
