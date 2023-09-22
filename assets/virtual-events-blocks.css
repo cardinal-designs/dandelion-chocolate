@@ -65,6 +65,7 @@
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .virtual__events--wrap .section__header {
