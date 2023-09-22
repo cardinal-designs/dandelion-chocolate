@@ -51,29 +51,33 @@
           </div>
 
           <div class="detail_row">
-           {% if block.settings.detail_heading != blank %}
-              <span class="details-heading">
-                {{ block.settings.detail_heading }}
-              </span>
-            {% endif %}
-          
-            {% if block.settings.detail_content != blank %}
-              <span class="details-content-text">
-                {{ block.settings.detail_content }}
-              </span>
-            {% endif %}
+            <div class="detail_row--item">
+             {% if block.settings.detail_heading != blank %}
+                <span class="details-heading">
+                  {{ block.settings.detail_heading }}
+                </span>
+              {% endif %}
+            
+              {% if block.settings.detail_content != blank %}
+                <span class="details-content-text">
+                  {{ block.settings.detail_content }}
+                </span>
+              {% endif %}
+            </div>
 
-            {% if block.settings.detail_heading != blank %}
-              <span class="details-heading">
-                {{ block.settings.detail_heading }}
-              </span>
-            {% endif %}
-          
-            {% if block.settings.detail_content != blank %}
-              <span class="details-content-text">
-                {{ block.settings.detail_content }}
-              </span>
-            {% endif %}
+            <div class="detail_row--item">
+              {% if block.settings.detail_heading != blank %}
+                <span class="details-heading">
+                  {{ block.settings.detail_heading }}
+                </span>
+              {% endif %}
+            
+              {% if block.settings.detail_content != blank %}
+                <span class="details-content-text">
+                  {{ block.settings.detail_content }}
+                </span>
+              {% endif %}
+            </div>
           </div>
          
           {% if block.settings.text != blank %}
