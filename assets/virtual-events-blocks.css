@@ -72,6 +72,10 @@
   width: 100%;
 }
 
+.virtual__events--wrap .block__buttons {
+  flex-direction: column;
+}
+
 .virtual__events--wrap .link__wrap {
   flex-direction: column;
 }
