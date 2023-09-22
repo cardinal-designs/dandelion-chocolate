@@ -140,6 +140,7 @@
 
   .event__steps {
     flex-direction: column;
+    row-gap: 30px;
   }
 
   .event__item {
