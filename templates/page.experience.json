@@ -15,7 +15,7 @@
             "text": "Tours & Events",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "template--16035013656716__26f6b9c0-d869-4b3f-8c5e-8f09e7f68590-text-1": {
@@ -24,7 +24,7 @@
             "text": "<p>personalized classes, tours, and experiences, guided by our chocolate education team<br\/><\/p>",
             "description_size": "body",
             "description_color": "#333333",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         }
       },
@@ -36,7 +36,7 @@
         "section_width": "full-width-row-full",
         "image_url": false,
         "image": "shopify:\/\/shop_images\/Header_Image_Experience.png",
-        "desktop_height": "desktop-height-450",
+        "desktop_height": "desktop-height-400",
         "mobile_height": "mobile-height-350",
         "content_width": "medium",
         "content_position": "middle-center",
