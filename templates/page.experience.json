@@ -282,6 +282,85 @@
         "bottom_spacing_mobile": 40
       }
     },
+    "5fe58374-4107-44ed-b795-013be36150de": {
+      "type": "virtual-events",
+      "blocks": {
+        "template--16035013656716__5fe58374-4107-44ed-b795-013be36150de-product-1": {
+          "type": "product",
+          "settings": {
+            "heading": "Heading",
+            "icon_1": "",
+            "icon_text_1": "Icon Text",
+            "icon_2": "",
+            "icon_text_2": "Icon Text",
+            "icon_3": "",
+            "icon_text_3": "Icon Text",
+            "icon_4": "",
+            "icon_text_4": "Icon Text",
+            "icon_5": "",
+            "icon_text_5": "Icon Text",
+            "detail_heading": "Heading",
+            "detail_content": "<p>Content<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_text": "Order your kit",
+            "button_link": "#",
+            "button_style": "btn--gold",
+            "button_text_2": "Order your kit",
+            "button_link_2": "#",
+            "button_style_2": "btn--white",
+            "caption_color": "#333",
+            "heading_color": "#333",
+            "text_color": "#333"
+          }
+        },
+        "template--16035013656716__5fe58374-4107-44ed-b795-013be36150de-product-2": {
+          "type": "product",
+          "settings": {
+            "heading": "Heading",
+            "icon_1": "",
+            "icon_text_1": "Icon Text",
+            "icon_2": "",
+            "icon_text_2": "Icon Text",
+            "icon_3": "",
+            "icon_text_3": "Icon Text",
+            "icon_4": "",
+            "icon_text_4": "Icon Text",
+            "icon_5": "",
+            "icon_text_5": "Icon Text",
+            "detail_heading": "Heading",
+            "detail_content": "<p>Content<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "btn--white",
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_style_2": "btn--white",
+            "caption_color": "#333",
+            "heading_color": "#333",
+            "text_color": "#333"
+          }
+        }
+      },
+      "block_order": [
+        "template--16035013656716__5fe58374-4107-44ed-b795-013be36150de-product-1",
+        "template--16035013656716__5fe58374-4107-44ed-b795-013be36150de-product-2"
+      ],
+      "settings": {
+        "section_heading": "VIRTUAL EVENTS",
+        "section_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "section_width": "grid",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "bg_color": "#F5F6F5",
+        "block_color": "#fff",
+        "text_color": "#333",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
     "a51a022b-7652-4eae-b8a3-43c6fe1fe47c": {
       "type": "product-list",
       "blocks": {
@@ -358,6 +437,7 @@
     "f4712471-0799-4fe2-b4e3-949d0cf2366f",
     "bf46b30b-50a9-4f51-950d-e0f9dc4b32cf",
     "1a35a150-8134-4c0b-a964-d99346503ff1",
+    "5fe58374-4107-44ed-b795-013be36150de",
     "a51a022b-7652-4eae-b8a3-43c6fe1fe47c",
     "4c884aeb-0b85-4eac-872c-697925d2f0ae"
   ]
