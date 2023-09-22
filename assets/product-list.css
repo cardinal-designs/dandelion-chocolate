@@ -58,6 +58,7 @@
 .product__list--wrap .block__buttons {
   padding-top: 20px;
   display: flex;
+  justify-content: center;
   column-gap: 22px;
 }
 
