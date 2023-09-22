@@ -273,6 +273,10 @@
     margin-bottom: 16px
   }
 
+  .trip__details-description {
+    margin-top: 7px;
+  }
+
   .trip__details-main .row,
   .trip__details-main .row .columns {
     padding: 0;
