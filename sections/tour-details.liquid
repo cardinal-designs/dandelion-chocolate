@@ -64,8 +64,8 @@
                         {% for i in (1..5) %}
                           <div class="icon_items">
                             {% assign icon = "icon_" | append: i  %}
-                            {% assign icon1 = icon | append: i %}
-                            {{ icon }}tttt
+  
+                            {{ block.settings.icon }}
                           </div>
                         {% endfor %}
                       </div>
