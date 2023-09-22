@@ -59,6 +59,12 @@
                       <div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
                     {% when 'space' %}
                       <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+                    {% when 'icon' %}
+                      <div class="icon__wrap">
+                        {% for i in (1..5) %}
+                          {{ i }}
+                        {% endfor %}
+                      </div>
                     {% when 'tab' %}
                       <div class="trip__details-content">
                         <div class="trip__details-content-inner">
