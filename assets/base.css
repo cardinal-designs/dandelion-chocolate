@@ -1335,6 +1335,7 @@ heightwidthauto {
   height: 40px;
   padding: 0;
   background: transparent;
+  margin: 0 auto;
 }
 
 .icon__row--wrap .icon_items p {
