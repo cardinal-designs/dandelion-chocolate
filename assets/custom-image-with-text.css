@@ -48,6 +48,11 @@
   margin-bottom: 0;
 }
 
+.why__hawaii .custom__description,
+.why__hawaii .custom__description p {
+  letter-spacing: .05em;
+}
+
 @media only screen and (min-width: 768px) {
 
   .custom__image--text .image-with-text {
