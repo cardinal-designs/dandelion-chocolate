@@ -6,6 +6,7 @@
 .pricing__blocks ul li {
   line-height: 21.6px;
   font-size: 18px;
+  position:relative;
 }
 
 .room__pricing-section {
