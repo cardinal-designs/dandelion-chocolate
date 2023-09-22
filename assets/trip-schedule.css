@@ -111,4 +111,8 @@
     margin: 0 0 14px;
   }
 
+  .trip__schedule--header {
+    margin: 0 0 25px;
+  }
+
 }
