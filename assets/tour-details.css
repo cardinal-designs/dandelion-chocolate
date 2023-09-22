@@ -1,3 +1,9 @@
-.trip__image--with--content-inner .btn {
+.tour__details--wrap .btn_wrap {
+  display: flex;
+  column-gap: 15px;
+}
+
+.tour__details--wrap .btn {
   border-radius: 6px;
+  flex: 1;
 }
