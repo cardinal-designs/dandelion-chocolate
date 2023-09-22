@@ -42,18 +42,20 @@
 
           <div class="icon__row--wrap">
             {% for i in (1..5) %}
-              <div class="icon_items">
-                {% assign icon = 'icon_' | append: i %}
-                {% assign icon_svg = block.settings[icon] %}
-                {% assign icon_text = 'icon_text_' | append: i %}
-                {% assign icon_text_value = block.settings[icon_text] %}
-                {% if icon_svg != blank %}
-                  {{ icon_svg }}
-                {% endif %}
-                {% if icon_text_value != blank %}
-                  <p>{{ icon_text_value }}</p>
-                {% endif %}
-              </div>
+              {% assign icon = 'icon_' | append: i %}
+              {% assign icon_svg = block.settings[icon] %}
+              {% assign icon_text = 'icon_text_' | append: i %}
+              {% assign icon_text_value = block.settings[icon_text] %}
+                {% if icon_svg != blank or icon_text_value != blank %}
+                  <div class="icon_items">
+                    {% if icon_svg != blank %}
+                      {{ icon_svg }}
+                    {% endif %}
+                    {% if icon_text_value != blank %}
+                      <p>{{ icon_text_value }}</p>
+                    {% endif %}
+                  </div>
+                {% endif %}              
             {% endfor %}
           </div>
 
