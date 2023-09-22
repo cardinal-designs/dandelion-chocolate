@@ -1,12 +1,572 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{{- 'trip-details.css' | asset_url | stylesheet_tag -}}
+{{- 'tour-details.css' | asset_url | stylesheet_tag -}}
+
+{%- liquid
+	assign section_width = section.settings.section_width
+	assign image = section.settings.image
+	assign height = section.settings.height
+	assign content_position = section.settings.content_position
+	assign desktop_image_width = section.settings.desktop_image_width
+	assign desktop_layout = section.settings.layout
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	assign ratio = 1
+	if height == 'adapt' and image != blank
+		assign ratio = image.aspect_ratio
+	endif
+
+-%}
+<div id="{{ section.id }}" class="row {{ section_width }} tour__details--wrap">
+	<div class="small-12 columns">
+		<div class="trip__details grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text | color_extract: 'red' }}, {{ color_text | color_extract: 'green' }}, {{ color_text | color_extract: 'blue' }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }};--solid-button-label: {{ color_bg }};--bg-body: {{ color_bg }};">
+			<div class="trip__details--text-image">
+				<div class="trip__details--text-image-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+					{%- if image != blank -%}
+						{%- liquid
+							assign small_height = image.src.height | times: '690' | divided_by: image.src.width
+							assign mid_height = image.src.height | times: '1340' | divided_by: image.src.width
+							assign master_width = image.src.width | append: 'x' | append: image.src.height
+							assign width = '690x' | append: small_height | append: ',' | append: '1340x' | append: mid_height | append: ',' | append: master_width
+						-%}
+						{%- render 'responsive-image', image: image, sizes: width -%}
+					{%- else -%}
+						{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+					{%- endif -%}
+				</div>
+			</div>
+			<div class="trip__image--with-content">
+              <div class="trip__image--with--content-inner">
+                {%- for block in section.blocks -%}
+                  {%- case block.type -%}
+                    {%- when 'image' -%}
+                      <div class="image-with-text__content__image" {{ block.shopify_attributes }}>
+                        {%- if block.settings.image != blank -%}
+                          {% assign image = block.settings.image %}
+                          {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+                          {%- render 'responsive-image', image: image, sizes: master_width, retina: block.settings.retina -%}
+                        {%- else -%}
+                          {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+                        {%- endif -%}
+                      </div>
+                    {%- when 'subheading' -%}
+                      <p class="trip__content-subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+                    {%- when 'heading' -%}
+                      <h3 class="trip__content-heading custom__heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+                    {%- when 'text' -%}
+                      <div class="rte custom__description" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                    {% when 'space' %}
+                      <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+                    {% when 'icon' %}
+                      <div class="icon__row--wrap">
+                        {% for i in (1..5) %}
+                          <div class="icon_items">
+                            {% assign icon = 'icon_' | append: i %}
+                            {% assign icon_svg = block.settings[icon]  %}
+                            {% assign icon_text = 'icon_text_' | append: i %}
+                            {% assign icon_text_value = block.settings[icon_text]  %}
+                            {{  icon_svg }}
+                            <p>{{  icon_text_value }}</p>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    {% when 'button' %}
+                      <div class="btn_wrap">
+                        {% if block.settings.button_link != blank %}
+                          <a class="btn {% if block.settings.button_style == 'btn--gold' %}custom__btn{% else %}{{ block.settings.button_style }}{% endif %}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
+                        {% endif %}
+                        {% if block.settings.button_link_2 != blank %}
+                          <a class="btn {% if block.settings.button_style_2 == 'btn--gold' %}custom__btn{% else %}{{ block.settings.button_style_2 }}{% endif %}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
+                        {% endif %}
+                      </div>
+                    {% when 'tab' %}
+                      <div class="trip__details-content">
+                        <div class="trip__details-content-inner">
+                          {% if block.settings.heading != blank %}
+                            <span class="trip__details-heading">
+                              {{ block.settings.heading }}
+                            </span>
+                          {% endif %}
+
+                          {% if block.settings.content != blank %}
+                            <span class="trip__details-content-text hide__mobile">
+                              {{ block.settings.content }}
+                            </span>
+                          {% endif %}
+                    
+                          {% if block.settings.mobile_content != blank %}
+                            <span class="trip__details-content-text hide__desktop">
+                              {{ block.settings.mobile_content }}
+                            </span>
+                          {% else %}
+                            <span class="trip__details-content-text hide__desktop">
+                              {{ block.settings.content }}
+                            </span>                            
+                          {% endif %}
+                    
+                          {% if block.settings.icon != blank %}
+                            <span class="trip__details-content-icon">
+                              {{ block.settings.icon | image_url: width: 20 | image_tag }}
+                            </span>
+                          {% endif %}
+                          
+                        </div>
+                        {% if block.settings.description != blank %}
+                          <div class="trip__details-description hide__mobile">
+                             {{ block.settings.description }}
+                          </div>
+                        {% endif %}                          
+                        {% if block.settings.mobile_description != blank %}
+                          <div class="trip__details-description hide__desktop">
+                             {{ block.settings.mobile_description }}
+                          </div>
+                        {% endif %}                       
+                      </div>
+                  {%- endcase -%}
+                {%- endfor -%}
+              </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% style %}
+
+  #shopify-section-{{ section.id }} {
+    background: {{ section.settings.color_bg }};
   }
+  
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Tour Details",
+  "class": "tour__details-main",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1340 x 1340 .jpg recommended."
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "Adapt to image"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "adapt",
+      "label": "Image height"
+    },
+    {
+      "type": "select",
+      "id": "desktop_image_width",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium",
+      "label": "Desktop image width",
+      "info": "Image is automatically optimized for mobile."
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "full-width-spacing",
+          "label": "Full width, with spacing"
+        },
+        {
+          "value": "full-width-row",
+          "label": "Full width"
+        },
+        {
+          "value": "full-width-row-full",
+          "label": "Full width, no spacing"
+        }
+      ],
+      "default": "grid",
+      "label": "Section width"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "Image first"
+        },
+        {
+          "value": "text_first",
+          "label": "Image second"
+        }
+      ],
+      "default": "image_first",
+      "label": "Desktop image placement",
+      "info": "Image first is the default mobile layout."
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Desktop content alignment",
+      "options": [
+        {
+          "value": "text-center",
+          "label": "Center"
+        },
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        }
+      ],
+      "default": "text-left"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text",
+      "default": "#151515"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "Remove top spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "Remove bottom spacing"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "subheading",
+      "name": "Subheading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Add a tagline"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Image with text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Buttons"
+        },
+        {
+          "type": "header",
+          "content": "First Button"
+        },
+        {
+          "id": "button_text",
+          "type": "text",
+          "label": "Button label",
+          "default": "Shop Now",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "id": "button_link",
+          "type": "url",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Desktop Button Style",
+          "options": [
+            {
+              "value": "btn--white",
+              "label": "White Button"
+            },
+            {
+              "value": "btn--gray",
+              "label": "Gray Button"
+            },
+            {
+              "value": "btn--gold",
+              "label": "Gold Button"
+            },
+            {
+              "value": "btn--light-gold",
+              "label": "Light Gold Button"
+            },
+            {
+              "value": "btn--outline",
+              "label": "Gray Outline Button"
+            }
+          ],
+          "default": "btn--white"
+        },
+        {
+          "type": "header",
+          "content": "Second Button"
+        },
+        {
+          "id": "button_text_2",
+          "type": "text",
+          "label": "Button label",
+          "default": "Shop Now",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "id": "button_link_2",
+          "type": "url",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style_2",
+          "label": "Desktop Button Style",
+          "options": [
+            {
+              "value": "btn--white",
+              "label": "White Button"
+            },
+            {
+              "value": "btn--gray",
+              "label": "Gray Button"
+            },
+            {
+              "value": "btn--gold",
+              "label": "Gold Button"
+            },
+            {
+              "value": "btn--light-gold",
+              "label": "Light Gold Button"
+            },
+            {
+              "value": "btn--outline",
+              "label": "Gray Outline Button"
+            }
+          ],
+          "default": "btn--white"
+        }
+      ]
+    },
+    {
+      "type": "tab",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "info": "Include a heading that explains the content.",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "info": "Include a heading that explains the content.",
+          "label": "Content"
+        },
+        {
+          "type": "richtext",
+          "id": "mobile_content",
+          "info": "Include a heading that explains the content.",
+          "label": "Mobile Content"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "mobile_description",
+          "label": "Mobile Description"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
+      "type": "icon",
+      "name": "Icon",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Icon 1"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_1",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_1",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Icon 2"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_2",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_2",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Icon 3"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_3",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_3",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Icon 4"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_4",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_4",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        },
+        {
+          "type": "header",
+          "content": "Icon 5"
+        },
+        {
+          "type": "textarea",
+          "id": "icon_5",
+          "label": "Icon",
+          "info": "Add Icon Svg"
+        },
+        {
+          "type": "text",
+          "id": "icon_text_5",
+          "label": "Icon Text",
+          "default": "Icon Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tour Details",
+      "blocks": [
+        {
+          "type": "subheading"
+        },
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
