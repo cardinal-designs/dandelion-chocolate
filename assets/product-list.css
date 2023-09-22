@@ -90,7 +90,7 @@
 .product__list--header {
   width: 100%;
   max-width: 720px;
-  margin: 0 auto;
+  margin: 0 auto 52px;
 }
 
 .product__list--wrap .custom__heading {
@@ -107,6 +107,7 @@
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1199px) {
