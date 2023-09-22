@@ -155,6 +155,11 @@
       </div>
     {% endfor %}
   </div>
+    <div class="section__footer">
+      {% if section.settings.section_footer != blank %}
+        <div class="section__footer text-center">{{ section.settings.section_footer }}</div>
+      {% endif %}
+    </div>
   </div>
 </div>
 
@@ -197,6 +202,11 @@
       "id": "section_heading",
       "label": "Heading",
       "default": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "section_footer",
+      "label": "Footer Text"
     },
     {
       "type": "select",
