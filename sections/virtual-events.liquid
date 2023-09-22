@@ -125,16 +125,20 @@
                 ><span>{{ block.settings.button_text }}</span></a
               >
             {% endif %}
-            
+
             {% if block.settings.link_url != blank %}
-              <a
-                class="link__item"
-                href="{{ block.settings.link_url }}"
-                title="{{ block.settings.link_text | escape }}"
-                {{ block.shopify_attributes }}
-                ><span>{{ block.settings.link_text }}</span></a
-              >
+              <div class="link__Wrap">
+                  <p>Already ordered your kit?</p>
+                  <a
+                    class="link__item"
+                    href="{{ block.settings.link_url }}"
+                    title="{{ block.settings.link_text | escape }}"
+                    {{ block.shopify_attributes }}
+                    ><span>{{ block.settings.link_text }}</span></a
+                  >
+              </div>
             {% endif %}
+      
           </div>
         </div>
         {% style %}
