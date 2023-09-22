@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.pricing__blocks ul li {
+  line-height: 21.6px;
+}
+
 .room__pricing-section {
   padding: 44px 0;
   border-bottom: 1px solid #cccccc;
