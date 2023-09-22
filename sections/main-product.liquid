@@ -663,11 +663,11 @@
                           {% assign bar_icon_name = bar_icon | downcase %}
                           {% if bar_icon_name == 'kosher' %}
                             {% render 'icon-kosher' %}
-                          {% elsif bar_icon_name == 'gluten free' %}
+                          {% elsif bar_icon_name == 'gluten free' or bar_icon_name == 'Gluten-free' %}
                             {% render 'icon-gluten-free' %}
                           {% elsif bar_icon_name == 'soy free' %}
                             {% render 'icon-soy-free' %}
-                          {% elsif bar_icon_name == 'vegan' %}
+                          {% elsif bar_icon_name == 'vegan' or bar_icon_name == 'vegetarian' %}
                             {% render 'icon-vegan' %}
                           {% elsif bar_icon_name == 'direct sourced' %}
                             {% render 'icon-direct-sourced' %}
