@@ -30,3 +30,15 @@
   opacity: .5;
   background: var(--color-accent);
 }
+
+.classes__events--wrap .details-heading, 
+.classes__events--wrap .details-content-text, 
+.classes__events--wrap .details-content-text p {
+  color: #53595c;
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  margin: 0;
+}
