@@ -327,10 +327,14 @@
         "template--16035013656716__a51a022b-7652-4eae-b8a3-43c6fe1fe47c-product-2"
       ],
       "settings": {
-        "bg_color": "#f5f6f5",
+        "bg_color": "rgba(0,0,0,0)",
+        "heading": "ORIGIN TRIPS",
+        "description": "experience cacao farming and chocolate-making up-close and personal, while building relationships with other chocolate enthusiasts.",
         "section_width": "grid",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
       }
     },
     "4c884aeb-0b85-4eac-872c-697925d2f0ae": {
