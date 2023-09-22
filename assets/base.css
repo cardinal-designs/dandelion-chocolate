@@ -1268,7 +1268,7 @@ heightwidthauto {
   font-size: 32px;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.64px;
+  letter-spacing: .1em;
   text-transform: initial;
   margin-bottom: 6px;
 }
