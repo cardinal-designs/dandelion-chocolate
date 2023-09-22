@@ -86,6 +86,7 @@
                       {% assign ImageMegaMenu = block.settings.megamenu_image %}
                       {% assign navigationTitle = colLink.title | handleize %}
                         {% if navigationTitle == ImageTitle %}
+                         
                           <a class="image__menu" {% if page.handle == "shop" %}href="javascript:void(0);"{% else %}href="{{ colLink.url }}" onclick="window.sessionStorage.setItem('scrolltosection','{{ colLink.title }}')"{% endif %} data-col-Id="{{ colLink.title }}" aria-label="image menu link">
                             {%- if ImageMegaMenu != blank -%}
                               <img src="{{ ImageMegaMenu | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
@@ -97,7 +98,7 @@
                         {% endif %}
                       {% endfor %}   
                       {%- endif -%}
-                      <a href="{{ colLink.url }}" title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
+                      <a {% if page.handle == "shop" %}href="javascript:void(0);"{% else %}href="{{ colLink.url }}" onclick="window.sessionStorage.setItem('scrolltosection','{{ colLink.title }}')" {% endif %} data-col-Id="{{ colLink.title }}"  title="{{ colLink.title | escape }}" class="navigation__link" role="menuitem">{{ colLink.title }}</a>
                     </li>
                   {%- endfor -%}
                 </ul>
