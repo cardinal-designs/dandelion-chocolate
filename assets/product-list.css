@@ -87,6 +87,10 @@
   opacity: 0.5
 }
 
+.product__list--header {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1199px) {
 
   .product__list--wrap .block__buttons a {
