@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.event__item {
+  position: relative;
+}
+
 .event__item .count {
   position: relative;
 }

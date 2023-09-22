@@ -164,6 +164,10 @@
   .other__origin-trips.custom__image--text .section_heading {
     margin-bottom: 24px;
   }
+
+  .other__origin-trips .custom__description {
+    max-width: 100%;
+  }
   
 }
 
