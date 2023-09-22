@@ -656,6 +656,7 @@
                 
                   </dl>
                 {%- when 'icon_list' -%}
+                {{ product.metafields.custom.product_icons.value }}
                   {% if product.metafields.custom.product_icons.value != blank %}
                     <div class="bar-icons meta__bar--icons">
                       {% for bar_icon in product.metafields.custom.product_icons.value %}
