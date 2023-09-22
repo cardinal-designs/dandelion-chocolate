@@ -66,3 +66,7 @@
   line-height: 30px;
   letter-spacing: 0.04em;
 }
+
+.virtual__events--wrap .section__header {
+  width: 100%;
+}
