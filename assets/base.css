@@ -1323,6 +1323,8 @@ heightwidthauto {
 .icon__row--wrap .icon_items svg {
   width: 40px;
   height: 40px;
+  padding: 0;
+  background: transparent;
 }
 
 .icon__row--wrap .icon_items p {
