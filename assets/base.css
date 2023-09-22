@@ -1182,8 +1182,8 @@ html{
 .custom__btn {
   min-width: 280px;
   border-radius: 6px;
-  border: 0px solid #D3A741;
-  background: #FFC600;
+  border: 0;
+  background: #FFCA24;
   width: auto;
   color: #333;
   text-align: center;
