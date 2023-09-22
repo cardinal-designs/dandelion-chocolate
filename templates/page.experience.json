@@ -282,9 +282,9 @@
             "button_text_2": "MAKE THIS PRIVATE",
             "button_link_2": "#",
             "button_style_2": "btn--white",
-            "caption_color": "#333",
-            "heading_color": "#333",
-            "text_color": "#333"
+            "caption_color": "#333333",
+            "heading_color": "#333333",
+            "text_color": "#333333"
           }
         }
       },
@@ -304,7 +304,7 @@
         "block_color": "#ffffff",
         "text_color": "#333333",
         "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "bottom_spacing_desktop": 100,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
