@@ -157,6 +157,56 @@
         "disable_bottom_spacing": false
       }
     },
+    "bf46b30b-50a9-4f51-950d-e0f9dc4b32cf": {
+      "type": "classes-events-blocks",
+      "blocks": {
+        "template--16035013656716__bf46b30b-50a9-4f51-950d-e0f9dc4b32cf-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "heading": "Heading",
+            "subheading": "Add a tagline",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "btn--white",
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_style_2": "btn--white",
+            "caption_color": "#333",
+            "heading_color": "#333",
+            "text_color": "#333"
+          }
+        },
+        "template--16035013656716__bf46b30b-50a9-4f51-950d-e0f9dc4b32cf-product-2": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "heading": "Heading",
+            "subheading": "Add a tagline",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "btn--white",
+            "button_text_2": "Shop Now",
+            "button_link_2": "",
+            "button_style_2": "btn--white",
+            "caption_color": "#333",
+            "heading_color": "#333",
+            "text_color": "#333"
+          }
+        }
+      },
+      "block_order": [
+        "template--16035013656716__bf46b30b-50a9-4f51-950d-e0f9dc4b32cf-product-1",
+        "template--16035013656716__bf46b30b-50a9-4f51-950d-e0f9dc4b32cf-product-2"
+      ],
+      "settings": {
+        "section_width": "full-width-row",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "1a35a150-8134-4c0b-a964-d99346503ff1": {
       "type": "custom-rich-text",
       "blocks": {
@@ -200,7 +250,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": false,
@@ -228,9 +278,9 @@
             "button_text_2": "Shop Now",
             "button_link_2": "",
             "button_style_2": "btn--white",
-            "caption_color": "#333",
-            "heading_color": "#333",
-            "text_color": "#333"
+            "caption_color": "#333333",
+            "heading_color": "#333333",
+            "text_color": "#333333"
           }
         },
         "template--16035013656716__a51a022b-7652-4eae-b8a3-43c6fe1fe47c-product-2": {
@@ -246,9 +296,9 @@
             "button_text_2": "Shop Now",
             "button_link_2": "",
             "button_style_2": "btn--white",
-            "caption_color": "#333",
-            "heading_color": "#333",
-            "text_color": "#333"
+            "caption_color": "#333333",
+            "heading_color": "#333333",
+            "text_color": "#333333"
           }
         }
       },
@@ -265,7 +315,7 @@
     "4c884aeb-0b85-4eac-872c-697925d2f0ae": {
       "type": "custom-contact-form",
       "settings": {
-        "bg_color": "#53595C",
+        "bg_color": "#53595c",
         "text_color": "#ffffff",
         "heading": "Contact form",
         "description": "<p>Add a short description for this section<\/p>",
@@ -281,6 +331,7 @@
     "main",
     "26f6b9c0-d869-4b3f-8c5e-8f09e7f68590",
     "f4712471-0799-4fe2-b4e3-949d0cf2366f",
+    "bf46b30b-50a9-4f51-950d-e0f9dc4b32cf",
     "1a35a150-8134-4c0b-a964-d99346503ff1",
     "a51a022b-7652-4eae-b8a3-43c6fe1fe47c",
     "4c884aeb-0b85-4eac-872c-697925d2f0ae"
