@@ -151,6 +151,11 @@
   .pricing__blocks ul {
     padding: 0 0 0 25px;
   }
+
+  .room__pricing-section-inner .custom__heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
   
 }
 
