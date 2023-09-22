@@ -228,22 +228,21 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false,
         "bg_color": "#f5f6f5",
-        "text_color": "#333333"
+        "block_color": "#fff",
+        "text_color": "#333333",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
       }
     },
     "1a35a150-8134-4c0b-a964-d99346503ff1": {
       "type": "custom-rich-text",
       "blocks": {
-        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading for this section"
-          }
-        },
         "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Talk about your brand",
+            "text": "OFF-SITE EXPERIENCES",
             "size": "h3"
           }
         },
@@ -264,7 +263,6 @@
         }
       },
       "block_order": [
-        "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-subheading-1",
         "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-heading-1",
         "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-text-1",
         "template--16035013656716__1a35a150-8134-4c0b-a964-d99346503ff1-button-1"
@@ -275,11 +273,9 @@
         "text_position": "center",
         "text_alignment": "center",
         "color_bg": "rgba(0,0,0,0)",
-        "color_text": "#151515",
+        "color_text": "#333333",
         "color_links": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false,
-        "custom_class": "",
+        "custom_class": "rich__text--2",
         "top_spacing_desktop": 40,
         "bottom_spacing_desktop": 40,
         "top_spacing_mobile": 40,
