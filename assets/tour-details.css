@@ -1,3 +1,8 @@
+.tour__details--wrap .icon__wrap {
+  display: flex;
+  column-gap: 22px;
+}
+
 .tour__details--wrap .btn_wrap {
   display: flex;
   column-gap: 15px;
