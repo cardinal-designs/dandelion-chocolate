@@ -20,11 +20,18 @@
   margin-bottom: 4px;
 }
 
-.custom__rich-text .rich-text__inner .heading {
+.rich__text--2 .custom__rich-text .rich-text__inner .heading {
   font-size: 36px;
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.15em;
+}
+
+.rich__text--2 .custom__description * {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.04em;
 }
 
 @media screen and (max-width: 767px) {
