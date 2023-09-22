@@ -125,14 +125,14 @@
                 ><span>{{ block.settings.button_text }}</span></a
               >
             {% endif %}
-            {% if block.settings.button_link_2 != blank %}
+            
+            {% if block.settings.link_url != blank %}
               <a
-                class="btn {% if block.settings.button_style_2 == 'btn--gold' %}custom__btn{% else %}{{ block.settings.button_style_2 }}{% endif %}"
-                href="{{ block.settings.button_link_2 }}"
-                role="button"
-                title="{{ block.settings.button_text_2 | escape }}"
+                class="link__item"
+                href="{{ block.settings.link_url }}"
+                title="{{ block.settings.link_text | escape }}"
                 {{ block.shopify_attributes }}
-                ><span>{{ block.settings.button_text_2 }}</span></a
+                ><span>{{ block.settings.link_text }}</span></a
               >
             {% endif %}
           </div>
@@ -480,47 +480,19 @@
         },
         {
           "type": "header",
-          "content": "Second Button"
+          "content": "Link URL"
         },
         {
-          "id": "button_text_2",
+          "id": "link_text",
           "type": "text",
-          "label": "Button label",
+          "label": "Link label",
           "default": "Shop Now",
-          "info": "Leave the label blank to hide the button."
+          "info": "REGISTER FOR CLASS"
         },
         {
-          "id": "button_link_2",
+          "id": "link_url",
           "type": "url",
-          "label": "Button link"
-        },
-        {
-          "type": "select",
-          "id": "button_style_2",
-          "label": "Desktop Button Style",
-          "options": [
-            {
-              "value": "btn--white",
-              "label": "White Button"
-            },
-            {
-              "value": "btn--gray",
-              "label": "Gray Button"
-            },
-            {
-              "value": "btn--gold",
-              "label": "Gold Button"
-            },
-            {
-              "value": "btn--light-gold",
-              "label": "Light Gold Button"
-            },
-            {
-              "value": "btn--outline",
-              "label": "Gray Outline Button"
-            }
-          ],
-          "default": "btn--white"
+          "label": "Link URL"
         },
         {
           "type": "header",
