@@ -104,3 +104,11 @@
   }
   
 }
+
+@media only screen and (max-width: 767px) {
+
+  .trip__schedule--section .section_heading {
+    margin: 0 0 14px;
+  }
+
+}
