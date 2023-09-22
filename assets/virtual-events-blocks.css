@@ -6,6 +6,13 @@
   position: relative;
 }
 
+.event__steps {
+  display: flex;
+  max-width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .event__item .count {
   background: #333333;
   width: 60px;
