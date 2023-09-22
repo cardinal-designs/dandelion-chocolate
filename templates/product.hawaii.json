@@ -192,7 +192,11 @@
         "full_width": true,
         "heading_size": "h6",
         "sub_heading": "Choose your room to reserve & pay your deposit.",
-        "description": "Please choose the single occupancy option if you will be traveling alone."
+        "description": "Please choose the single occupancy option if you will be traveling alone.",
+        "top_spacing_desktop": 44,
+        "bottom_spacing_desktop": 44,
+        "top_spacing_mobile": 28,
+        "bottom_spacing_mobile": 40
       }
     },
     "product-recommendations": {
@@ -417,7 +421,7 @@
         "content_position": "text-left",
         "color_bg": "#f5f6f5",
         "color_text": "#333333",
-        "color_sub_text": "#333",
+        "color_sub_text": "#333333",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 72,
         "top_spacing_mobile": 40,
