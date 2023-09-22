@@ -2,6 +2,7 @@
 {%- liquid
 	assign section_width = section.settings.section_width
 	assign image = section.settings.image
+    assign image = section.settings.mobile_image
 	assign height = section.settings.height
 	assign content_position = section.settings.content_position
 	assign desktop_image_width = section.settings.desktop_image_width
@@ -19,104 +20,117 @@
 
 -%}
 <div id="{{ section.id }}" class="row {{ section_width }} {{ section.settings.custom_class }}">
-	<div class="small-12 columns">
-		<div class="trip__details grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text | color_extract: 'red' }}, {{ color_text | color_extract: 'green' }}, {{ color_text | color_extract: 'blue' }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }};--solid-button-label: {{ color_bg }};--bg-body: {{ color_bg }};--color-border: {{ color_border }}">
-			<div class="trip__details--text-image">
-				<div class="trip__details--text-image-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-					{%- if use_video -%}
-                      {%- if video_hosted != blank -%}
-                        {{ video_hosted | video_tag: autoplay: video_autoplay, loop: true, controls: video_controls, muted: video_autoplay, image_size: '690x' }}
-                      {%- elsif video != blank -%}
-                        {%- if video.type == 'youtube' -%}
-                          <iframe data-src="https://www.youtube.com/embed/{{ video.id }}?loop=1{%- if video_autoplay -%}&autoplay=1&mute=1{%- endif -%}&playlist={{ video.id }}&iv_load_policy=3&disablekb=1&controls={{ video_controls }}&playsinline=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
-                        {%- else -%}
-                          <iframe data-src="https://player.vimeo.com/video/{{ video.id }}{%- if video_autoplay -%}?background=1{%- endif -%}" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
-                        {%- endif -%}
-                      {%- endif -%}
-					{%- elsif image != blank -%}
-                      {%- liquid
-                          assign small_height = image.src.height | times: '690' | divided_by: image.src.width
-                          assign mid_height = image.src.height | times: '1340' | divided_by: image.src.width
-                          assign master_width = image.src.width | append: 'x' | append: image.src.height
-                          assign width = '690x' | append: small_height | append: ',' | append: '1340x' | append: mid_height | append: ',' | append: master_width
-                      -%}
-                      {%- render 'responsive-image', image: image, sizes: width -%}
-					{%- else -%}
-                      {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-					{%- endif -%}
-				</div>
-			</div>
-			<div class="trip__image--with-content">
-              <div class="trip__image--with--content-inner">
-                {%- for block in section.blocks -%}
-                  {%- case block.type -%}
-                    {%- when 'image' -%}
-                      <div class="image-with-text__content__image" {{ block.shopify_attributes }}>
-                        {%- if block.settings.image != blank -%}
-                          {% assign image = block.settings.image %}
-                          {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-                          {%- render 'responsive-image', image: image, sizes: master_width, retina: block.settings.retina -%}
-                        {%- else -%}
-                          {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-                        {%- endif -%}
-                      </div>
-                    {%- when 'subheading' -%}
-                      <p class="trip__content-subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
-                    {%- when 'heading' -%}
-                      <h3 class="{{ block.settings.heading_size }} trip__content-heading custom__heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
-                    {%- when 'text' -%}
-                      <div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-                    {% when 'space' %}
-                      <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
-                    {% when 'tab' %}
-                      <div class="trip__details-content">
-                        <div class="trip__details-content-inner">
-                          {% if block.settings.heading != blank %}
-                            <span class="trip__details-heading">
-                              {{ block.settings.heading }}
-                            </span>
-                          {% endif %}
+  <div class="small-12 columns">
+    <div class="trip__details grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text | color_extract: 'red' }}, {{ color_text | color_extract: 'green' }}, {{ color_text | color_extract: 'blue' }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }};--solid-button-label: {{ color_bg }};--bg-body: {{ color_bg }};--color-border: {{ color_border }}">
+      <div class="trip__details--text-image">
+        <div class="trip__details--text-image-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+          {%- if use_video -%}
+            {%- if video_hosted != blank -%}
+              {{ video_hosted | video_tag: autoplay: video_autoplay, loop: true, controls: video_controls, muted: video_autoplay, image_size: '690x' }}
+            {%- elsif video != blank -%}
+              {%- if video.type == 'youtube' -%}
+                <iframe data-src="https://www.youtube.com/embed/{{ video.id }}?loop=1{%- if video_autoplay -%}&autoplay=1&mute=1{%- endif -%}&playlist={{ video.id }}&iv_load_policy=3&disablekb=1&controls={{ video_controls }}&playsinline=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
+              {%- else -%}
+                <iframe data-src="https://player.vimeo.com/video/{{ video.id }}{%- if video_autoplay -%}?background=1{%- endif -%}" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
+              {%- endif -%}
+            {%- endif -%}
+          {%- elsif image != blank or mobile_image != blank -%}
+            {%- liquid
+                assign small_height = image.src.height | times: '690' | divided_by: image.src.width
+                assign mid_height = image.src.height | times: '1340' | divided_by: image.src.width
+                assign master_width = image.src.width | append: 'x' | append: image.src.height
+                assign width = '690x' | append: small_height | append: ',' | append: '1340x' | append: mid_height | append: ',' | append: master_width
+            -%}
+            
+            {%- liquid
+                assign mobile_small_height = mobile_image.src.height | times: '690' | divided_by: mobile_image.src.width
+                assign mobile_mid_height = mobile_image.src.height | times: '1340' | divided_by: mobile_image.src.width
+                assign mobile_master_width = mobile_image.src.width | append: 'x' | append: mobile_image.src.height
+                assign mobile_width = '690x' | append: mobile_small_height | append: ',' | append: '1340x' | append: mobile_mid_height | append: ',' | append: mobile_master_width
+            -%}
+            <div class="mobile__hide">
+              {%- render 'responsive-image', image: image, sizes: width -%}
+            </div>
 
-                          {% if block.settings.content != blank %}
-                            <span class="trip__details-content-text hide__mobile">
-                              {{ block.settings.content }}
-                            </span>
-                          {% endif %}
+            <div class="desktop__hide">
+              {%- render 'responsive-image', image: mobile_image, sizes: mobile_width -%}
+            </div>       
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="trip__image--with-content">
+        <div class="trip__image--with--content-inner">
+          {%- for block in section.blocks -%}
+            {%- case block.type -%}
+              {%- when 'image' -%}
+                <div class="image-with-text__content__image" {{ block.shopify_attributes }}>
+                  {%- if block.settings.image != blank -%}
+                    {% assign image = block.settings.image %}
+                    {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+                    {%- render 'responsive-image', image: image, sizes: master_width, retina: block.settings.retina -%}
+                  {%- else -%}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+                  {%- endif -%}
+                </div>
+              {%- when 'subheading' -%}
+                <p class="trip__content-subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+              {%- when 'heading' -%}
+                <h3 class="{{ block.settings.heading_size }} trip__content-heading custom__heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+              {%- when 'text' -%}
+                <div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              {% when 'space' %}
+                <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+              {% when 'tab' %}
+                <div class="trip__details-content">
+                  <div class="trip__details-content-inner">
+                    {% if block.settings.heading != blank %}
+                      <span class="trip__details-heading">
+                        {{ block.settings.heading }}
+                      </span>
+                    {% endif %}
+
+                    {% if block.settings.content != blank %}
+                      <span class="trip__details-content-text hide__mobile">
+                        {{ block.settings.content }}
+                      </span>
+                    {% endif %}
+              
+                    {% if block.settings.mobile_content != blank %}
+                      <span class="trip__details-content-text hide__desktop">
+                        {{ block.settings.mobile_content }}
+                      </span>
+                    {% else %}
+                      <span class="trip__details-content-text hide__desktop">
+                        {{ block.settings.content }}
+                      </span>                            
+                    {% endif %}
+              
+                    {% if block.settings.icon != blank %}
+                      <span class="trip__details-content-icon">
+                        {{ block.settings.icon | image_url: width: 20 | image_tag }}
+                      </span>
+                    {% endif %}
                     
-                          {% if block.settings.mobile_content != blank %}
-                            <span class="trip__details-content-text hide__desktop">
-                              {{ block.settings.mobile_content }}
-                            </span>
-                          {% else %}
-                            <span class="trip__details-content-text hide__desktop">
-                              {{ block.settings.content }}
-                            </span>                            
-                          {% endif %}
-                    
-                          {% if block.settings.icon != blank %}
-                            <span class="trip__details-content-icon">
-                              {{ block.settings.icon | image_url: width: 20 | image_tag }}
-                            </span>
-                          {% endif %}
-                          
-                        </div>
-                        {% if block.settings.description != blank %}
-                          <div class="trip__details-description hide__mobile">
-                             {{ block.settings.description }}
-                          </div>
-                        {% endif %}                          
-                        {% if block.settings.mobile_description != blank %}
-                          <div class="trip__details-description hide__desktop">
-                             {{ block.settings.mobile_description }}
-                          </div>
-                        {% endif %}                       
-                      </div>
-                  {%- endcase -%}
-                {%- endfor -%}
-              </div>
-			</div>
-		</div>
-	</div>
+                  </div>
+                  {% if block.settings.description != blank %}
+                    <div class="trip__details-description hide__mobile">
+                       {{ block.settings.description }}
+                    </div>
+                  {% endif %}                          
+                  {% if block.settings.mobile_description != blank %}
+                    <div class="trip__details-description hide__desktop">
+                       {{ block.settings.mobile_description }}
+                    </div>
+                  {% endif %}                       
+                </div>
+            {%- endcase -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% style %}
