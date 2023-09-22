@@ -65,6 +65,7 @@
                           <div class="icon_items">
                             {% assign icon = "icon_" | append: i  %}
                             {{ block.settings | append:icon }}
+                            {% break %}
                           </div>
                         {% endfor %}
                       </div>
