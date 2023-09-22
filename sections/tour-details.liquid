@@ -63,7 +63,8 @@
                       <div class="icon__wrap">
                         {% for i in (1..5) %}
                           <div class="icon_items">
-                            {% assign icon = block.settings.icon_ | plus: i %}
+                            {% assign icon = block.settings.icon_ | append: i %}
+                            {% assign icon1 = block.settings.icon_ | plus: icon %}
                             {{ icon }}tttt
                           </div>
                         {% endfor %}
