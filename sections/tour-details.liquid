@@ -56,7 +56,7 @@
                     {%- when 'heading' -%}
                       <h3 class="trip__content-heading custom__heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
                     {%- when 'text' -%}
-                      <div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                      <div class="rte custom__description" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
                     {% when 'space' %}
                       <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
                     {% when 'icon' %}
