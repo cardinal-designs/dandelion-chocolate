@@ -331,8 +331,8 @@
         "heading": "ORIGIN TRIPS",
         "description": "experience cacao farming and chocolate-making up-close and personal, while building relationships with other chocolate enthusiasts.",
         "section_width": "grid",
-        "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "top_spacing_desktop": 70,
+        "bottom_spacing_desktop": 88,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
