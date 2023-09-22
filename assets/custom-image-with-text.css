@@ -136,6 +136,7 @@
 
   .custom__image--text .custom__btn {
     margin: 21px 0 0;
+    min-width: 335px;
   }
 
   .custom__image--text .section_heading {
@@ -154,4 +155,12 @@
     margin-bottom: 24px;
   }
   
+}
+
+@media only screen and (max-width: 374px) {
+
+  .custom__image--text .custom__btn {
+    min-width: 100%;
+  }
+
 }
