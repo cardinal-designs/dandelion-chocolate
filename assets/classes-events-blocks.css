@@ -67,6 +67,7 @@
 .classes__events--wrap .btn {
   border-radius: 6px;
   flex: 1;
+  min-width: auto;
 }
 
 .classes__events--wrap .text__wrap {
