@@ -89,6 +89,7 @@
 
 .product__list--header {
   width: 100%;
+  max-width: 672px;
 }
 
 @media only screen and (max-width: 1199px) {
