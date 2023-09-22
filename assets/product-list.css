@@ -5,6 +5,10 @@
   max-width: 1220px;
 }
 
+.product__list--wrap .row {
+  justify-content: center;
+}
+
 .product__list--wrap svg.placeholder_svg_tag {
   padding: 50px;
   fill: var(--bg-body, #fff);
