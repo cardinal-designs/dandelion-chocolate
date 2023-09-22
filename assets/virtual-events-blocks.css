@@ -127,10 +127,15 @@
   text-decoration-thickness: 1px;
 }
 
-@media screen and (max-width: 1067px) {  
+@media screen and (max-width: 767px) {  
 
   .virtual__events--wrap .step__text {
     padding: 0 15px;
+  }
+
+  .event__item .count:before,
+  .event__item .count:after {
+    display: none;
   }
   
 }
