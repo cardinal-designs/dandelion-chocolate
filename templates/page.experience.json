@@ -407,6 +407,7 @@
           "type": "product",
           "settings": {
             "product": "",
+            "image": "shopify:\/\/shop_images\/pricing.png",
             "heading": "Hawaii",
             "subheading": "Dates TBD",
             "text": "<p>Visit Hawaiian cacao farms and chocolate makers, sample cacao and tropical fruit at its place of origin, and experience local Hawaiian culture.<\/p>",
@@ -425,6 +426,7 @@
           "type": "product",
           "settings": {
             "product": "",
+            "image": "shopify:\/\/shop_images\/Image_3.png",
             "heading": "Dominican Republic",
             "subheading": "June 11–16, 2023",
             "text": "<p>Dive deep into the cocoa fermentation process, hike to and spend the night on a cacao farm and bird sanctuary, learn about cacao genetics, and more.<br\/><\/p>",
