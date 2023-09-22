@@ -9,6 +9,12 @@
 
 .tour__details--wrap .icon_items p {
   margin: 0;
+  font-family: Saa Series E D;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
 }
 
 .tour__details--wrap .btn_wrap {
