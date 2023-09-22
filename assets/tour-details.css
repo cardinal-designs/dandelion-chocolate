@@ -8,6 +8,7 @@
 .tour__details--wrap .btn {
   border-radius: 6px;
   flex: 1;
+  min-width: auto;
 }
 
 .tour__details--wrap .trip__details-content-text {
