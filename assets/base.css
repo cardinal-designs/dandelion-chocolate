@@ -1324,6 +1324,7 @@ heightwidthauto {
   column-gap: 22px;
   border-bottom: 1px solid #333;
   padding: 16px 0 22px;
+  justify-content: center
 }
 
 .classes__events--wrap .icon__row--wrap {
