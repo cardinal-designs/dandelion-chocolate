@@ -452,13 +452,15 @@ $(document).ready(function() {
 
        var addtoCart = $('.product-information button[type="submit"]').text();
        console.log(addtoCart.trim())
-       if (addtoCart){
-         $('.product-submit').text('SOLD OUT');
-         $('.product-submit').attr('disabled','disabled');
-       } else {
-         $('.product-submit').text('RESERVE YOUR SPOT');
-         $('.product-submit').RemoveAttr('disabled');
-       }
+       setTimeout(function(){
+         if (addtoCart){
+           $('.product-submit').text('SOLD OUT');
+           $('.product-submit').attr('disabled','disabled');
+         } else {
+           $('.product-submit').text('RESERVE YOUR SPOT');
+           $('.product-submit').RemoveAttr('disabled');
+         }
+       },3000)
       });
   
     
