@@ -137,5 +137,13 @@
   .event__item .count:after {
     display: none;
   }
+
+  .event__steps {
+    flex-direction: column;
+  }
+
+  .event__item {
+    flex: 0 1 100%;
+  }
   
 }
