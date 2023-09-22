@@ -2,9 +2,6 @@
 
 {%- liquid
   assign section_width = section.settings.section_width
-  assign disable_top_spacing = section.settings.disable_top_spacing
-  assign disable_bottom_spacing = section.settings.disable_bottom_spacing
-  
 -%}
 
 <div class="{{ section_width }} classes__events--wrap" id="section--{{ section.id }}">
@@ -16,7 +13,7 @@
       <p class="section__description text-center">{{ section.settings.section_description }}</p>
     {% endif %}
   </div>
-  <div class="block__items--wrap row section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+  <div class="block__items--wrap row">
    {% for block in section.blocks %}
      {% assign image = block.settings.image %}
      <div class="block__items" id="block--{{ block.id }}">
