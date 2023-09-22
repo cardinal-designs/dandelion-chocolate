@@ -6,10 +6,6 @@
   position: relative;
 }
 
-.event__item .count {
-  position: relative;
-}
-
 .event__steps {
   display: flex;
   max-width: 1150px;
