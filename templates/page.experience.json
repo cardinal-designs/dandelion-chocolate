@@ -6,18 +6,10 @@
       "settings": {
       }
     },
-    "d5f3fc94-6ae1-45ef-86c7-ffc3df641c55": {
-      "type": "image-with-text-overlay",
+    "26f6b9c0-d869-4b3f-8c5e-8f09e7f68590": {
+      "type": "custom-image-overlay",
       "blocks": {
-        "template--16035013656716__d5f3fc94-6ae1-45ef-86c7-ffc3df641c55-subheading-1": {
-          "type": "subheading",
-          "settings": {
-            "text": "Add a tagline",
-            "subheading_color": "#6b6b6b",
-            "subheading_color_mobile": "#333"
-          }
-        },
-        "template--16035013656716__d5f3fc94-6ae1-45ef-86c7-ffc3df641c55-heading-1": {
+        "template--16035013656716__26f6b9c0-d869-4b3f-8c5e-8f09e7f68590-heading-1": {
           "type": "heading",
           "settings": {
             "text": "Image with text overlay",
@@ -26,7 +18,7 @@
             "heading_color_mobile": "#333"
           }
         },
-        "template--16035013656716__d5f3fc94-6ae1-45ef-86c7-ffc3df641c55-text-1": {
+        "template--16035013656716__26f6b9c0-d869-4b3f-8c5e-8f09e7f68590-text-1": {
           "type": "text",
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -34,28 +26,17 @@
             "description_color": "#333333",
             "description_color_mobile": "#333"
           }
-        },
-        "template--16035013656716__d5f3fc94-6ae1-45ef-86c7-ffc3df641c55-button-1": {
-          "type": "button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "btn",
-            "mobile_button_style": "btn"
-          }
         }
       },
       "block_order": [
-        "template--16035013656716__d5f3fc94-6ae1-45ef-86c7-ffc3df641c55-subheading-1",
-        "template--16035013656716__d5f3fc94-6ae1-45ef-86c7-ffc3df641c55-heading-1",
-        "template--16035013656716__d5f3fc94-6ae1-45ef-86c7-ffc3df641c55-text-1",
-        "template--16035013656716__d5f3fc94-6ae1-45ef-86c7-ffc3df641c55-button-1"
+        "template--16035013656716__26f6b9c0-d869-4b3f-8c5e-8f09e7f68590-heading-1",
+        "template--16035013656716__26f6b9c0-d869-4b3f-8c5e-8f09e7f68590-text-1"
       ],
       "settings": {
-        "section_width": "grid",
+        "section_width": "full-width-row-full",
         "image_url": false,
-        "desktop_height": "desktop-height-650",
-        "mobile_height": "mobile-height-500",
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-350",
         "content_width": "medium",
         "content_position": "bottom-center",
         "text_alignment": "center",
@@ -74,6 +55,6 @@
   },
   "order": [
     "main",
-    "d5f3fc94-6ae1-45ef-86c7-ffc3df641c55"
+    "26f6b9c0-d869-4b3f-8c5e-8f09e7f68590"
   ]
 }
