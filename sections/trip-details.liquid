@@ -120,17 +120,20 @@
                         {{ block.settings.icon | image_url: width: 20 | image_tag }}
                       </span>
                     {% endif %}
-                    
                   </div>
                   {% if block.settings.description != blank %}
-                    <div class="trip__details-description hide__mobile">
+                    <div class="trip__details-description hide-mobile">
                        {{ block.settings.description }}
                     </div>
                   {% endif %}                          
                   {% if block.settings.mobile_description != blank %}
-                    <div class="trip__details-description hide__desktop">
+                    <div class="trip__details-description hide-desktop">
                        {{ block.settings.mobile_description }}
                     </div>
+                  {% else %}
+                    <div class="trip__details-description hide-desktop">
+                      {{ block.settings.description }}
+                    </div>                    
                   {% endif %}                       
                 </div>
             {%- endcase -%}
