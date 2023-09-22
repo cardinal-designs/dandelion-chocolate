@@ -52,10 +52,53 @@
         "disable_bottom_spacing": true,
         "custom_class": ""
       }
+    },
+    "f4712471-0799-4fe2-b4e3-949d0cf2366f": {
+      "type": "tour-details",
+      "blocks": {
+        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_size": "h3"
+          }
+        },
+        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-subheading-1",
+        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-heading-1",
+        "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-text-1"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "custom_class": ""
+      }
     }
   },
   "order": [
     "main",
-    "26f6b9c0-d869-4b3f-8c5e-8f09e7f68590"
+    "26f6b9c0-d869-4b3f-8c5e-8f09e7f68590",
+    "f4712471-0799-4fe2-b4e3-949d0cf2366f"
   ]
 }
