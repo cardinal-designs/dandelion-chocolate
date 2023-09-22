@@ -53,3 +53,12 @@
 .custom__contact-form input:focus-visible {
   outline: none;
 }
+
+@media only screen and (max-width: 767px) {
+  
+  .custom__contact-form .section-header--content h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+}
