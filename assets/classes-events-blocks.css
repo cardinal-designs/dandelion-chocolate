@@ -29,6 +29,7 @@
   fill: var(--bg-body, #fff);
   opacity: .5;
   background: var(--color-accent);
+  display: block;
 }
 
 .classes__events--wrap .detail_row--item {

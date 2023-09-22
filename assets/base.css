@@ -1287,6 +1287,7 @@ heightwidthauto {
 
 .custom__description ul li {
   position: relative;
+  list-style: none;
 }
 
 .custom__description ul li::before {
