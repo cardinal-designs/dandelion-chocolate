@@ -29,137 +29,135 @@
       </div>
     </div>
     <div class="block__items--wrap">
-    {% for block in section.blocks %}
-      {% assign image = block.settings.image %}
-      <div class="block__items" id="block--{{ block.id }}">
-        <div class="image__wrap">
-          {% if image %}
-            {%- liquid
-              assign small_width = image.src.height | times: '375' | divided_by: image.src.width
-              assign master_width = image.src.width | append: 'x' | append: image.src.height
-              assign width = '375x' | append: small_width | append: ',' | append: master_width
-              assign class = ''
-            -%}
-            {%- render 'responsive-image', image: image, sizes: width, class: class -%}
-          {% else %}
-            {{ 'collection-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
-          {% endif %}
-        </div>
-
-        <div class="text__wrap">
-          <div class="block__header">
-            {% if block.settings.heading != blank %}
-              <h3 class="heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">
-                {{ block.settings.heading | newline_to_br }}
-              </h3>
+      {% for block in section.blocks %}
+        {% assign image = block.settings.image %}
+        <div class="block__items" id="block--{{ block.id }}">
+          <div class="image__wrap">
+            {% if image %}
+              {%- liquid
+                assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+                assign master_width = image.src.width | append: 'x' | append: image.src.height
+                assign width = '375x' | append: small_width | append: ',' | append: master_width
+                assign class = ''
+              -%}
+              {%- render 'responsive-image', image: image, sizes: width, class: class -%}
+            {% else %}
+              {{ 'collection-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
             {% endif %}
           </div>
-
-          <div class="icon__row--wrap">
-            {% for i in (1..5) %}
-              <div class="icon_items">
-                {% assign icon = 'icon_' | append: i %}
-                {% assign icon_svg = block.settings[icon] %}
-                {% assign icon_text = 'icon_text_' | append: i %}
-                {% assign icon_text_value = block.settings[icon_text] %}
-                {% if icon_svg != blank %}
-                  {{ icon_svg }}
+  
+          <div class="text__wrap">
+            <div class="block__header">
+              {% if block.settings.heading != blank %}
+                <h3 class="heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">
+                  {{ block.settings.heading | newline_to_br }}
+                </h3>
+              {% endif %}
+            </div>
+  
+            <div class="icon__row--wrap">
+              {% for i in (1..5) %}
+                <div class="icon_items">
+                  {% assign icon = 'icon_' | append: i %}
+                  {% assign icon_svg = block.settings[icon] %}
+                  {% assign icon_text = 'icon_text_' | append: i %}
+                  {% assign icon_text_value = block.settings[icon_text] %}
+                  {% if icon_svg != blank %}
+                    {{ icon_svg }}
+                  {% endif %}
+                  {% if icon_text_value != blank %}
+                    <p>{{ icon_text_value }}</p>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+  
+            <div class="detail_row">
+              <div class="detail_row--item">
+                {% if block.settings.detail_heading != blank %}
+                  <span class="details-heading">
+                    {{ block.settings.detail_heading }}
+                  </span>
                 {% endif %}
-                {% if icon_text_value != blank %}
-                  <p>{{ icon_text_value }}</p>
+  
+                {% if block.settings.detail_content != blank %}
+                  <span class="details-content-text">
+                    {{ block.settings.detail_content }}
+                  </span>
                 {% endif %}
               </div>
-            {% endfor %}
-          </div>
-
-          <div class="detail_row">
-            <div class="detail_row--item">
-              {% if block.settings.detail_heading != blank %}
-                <span class="details-heading">
-                  {{ block.settings.detail_heading }}
-                </span>
-              {% endif %}
-
-              {% if block.settings.detail_content != blank %}
-                <span class="details-content-text">
-                  {{ block.settings.detail_content }}
-                </span>
-              {% endif %}
-            </div>
-
-            <div class="detail_row--item">
-              {% if block.settings.detail_heading != blank %}
-                <span class="details-heading">
-                  {{ block.settings.detail_heading }}
-                </span>
-              {% endif %}
-
-              {% if block.settings.detail_content != blank %}
-                <span class="details-content-text">
-                  {{ block.settings.detail_content }}
-                </span>
-              {% endif %}
-            </div>
-          </div>
-
-          {% if block.settings.text != blank %}
-            <div class="block__description">
-              <div
-                class="description body-1"
-                {{ block.shopify_attributes }}
-                style="color: {{ block.settings.text_color }}"
-              >
-                {{ block.settings.text }}
+  
+              <div class="detail_row--item">
+                {% if block.settings.detail_heading != blank %}
+                  <span class="details-heading">
+                    {{ block.settings.detail_heading }}
+                  </span>
+                {% endif %}
+  
+                {% if block.settings.detail_content != blank %}
+                  <span class="details-content-text">
+                    {{ block.settings.detail_content }}
+                  </span>
+                {% endif %}
               </div>
             </div>
-          {% endif %}
-
-          <div class="block__buttons">
-            {% if block.settings.button_link != blank %}
-              <a
-                class="btn {% if block.settings.button_style == 'btn--gold' %}custom__btn{% else %}{{ block.settings.button_style }}{% endif %}"
-                href="{{ block.settings.button_link }}"
-                role="button"
-                title="{{ block.settings.button_text | escape }}"
-                {{ block.shopify_attributes }}
-                ><span>{{ block.settings.button_text }}</span></a
-              >
-            {% endif %}
-
-            {% if block.settings.link_url != blank %}
-              <div class="link__wrap">
-                  <p>Already ordered your kit?</p>
-                  <a
-                    class="link__item"
-                    href="{{ block.settings.link_url }}"
-                    title="{{ block.settings.link_text | escape }}"
-                    {{ block.shopify_attributes }}
-                    ><span>{{ block.settings.link_text }}</span></a
-                  >
+  
+            {% if block.settings.text != blank %}
+              <div class="block__description">
+                <div
+                  class="description body-1"
+                  {{ block.shopify_attributes }}
+                  style="color: {{ block.settings.text_color }}"
+                >
+                  {{ block.settings.text }}
+                </div>
               </div>
             {% endif %}
-      
+  
+            <div class="block__buttons">
+              {% if block.settings.button_link != blank %}
+                <a
+                  class="btn {% if block.settings.button_style == 'btn--gold' %}custom__btn{% else %}{{ block.settings.button_style }}{% endif %}"
+                  href="{{ block.settings.button_link }}"
+                  role="button"
+                  title="{{ block.settings.button_text | escape }}"
+                  {{ block.shopify_attributes }}
+                  ><span>{{ block.settings.button_text }}</span></a
+                >
+              {% endif %}
+  
+              {% if block.settings.link_url != blank %}
+                <div class="link__wrap">
+                    <p>Already ordered your kit?</p>
+                    <a
+                      class="link__item"
+                      href="{{ block.settings.link_url }}"
+                      title="{{ block.settings.link_text | escape }}"
+                      {{ block.shopify_attributes }}
+                      ><span>{{ block.settings.link_text }}</span></a
+                    >
+                </div>
+              {% endif %}
+        
+            </div>
           </div>
+          {% style %}
+            #block--{{ block.id }} .heading {
+              color: {{ block.settings.heading_color }}
+            }
+            #block--{{ block.id }} .subheading {
+              color: {{ block.settings.caption_color }}
+            }
+            #block--{{ block.id }} .block__description * {
+              color: {{ block.settings.text_color }}
+            }
+          {% endstyle %}
         </div>
-        {% style %}
-          #block--{{ block.id }} .heading {
-            color: {{ block.settings.heading_color }}
-          }
-          #block--{{ block.id }} .subheading {
-            color: {{ block.settings.caption_color }}
-          }
-          #block--{{ block.id }} .block__description * {
-            color: {{ block.settings.text_color }}
-          }
-        {% endstyle %}
-      </div>
-    {% endfor %}
-  </div>
-    <div class="section__footer">
-      {% if section.settings.section_footer != blank %}
-        <div class="section__footer text-center">{{ section.settings.section_footer }}</div>
-      {% endif %}
+      {% endfor %}
     </div>
+    {% if section.settings.section_footer != blank %}
+      <div class="section__footer text-center">{{ section.settings.section_footer }}</div>
+    {% endif %}
   </div>
 </div>
 
