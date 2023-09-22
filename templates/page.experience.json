@@ -346,6 +346,7 @@
       ],
       "settings": {
         "section_heading": "VIRTUAL EVENTS",
+        "section_footer": "<p>Please email <a href=\"mailto:events@dandelionchocolate.com \" title=\"mailto:events@dandelionchocolate.com \">events@dandelionchocolate.com <\/a>with any questions.<\/p>",
         "section_width": "grid",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false,
