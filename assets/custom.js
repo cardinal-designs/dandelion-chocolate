@@ -292,6 +292,44 @@ $(document).ready(function () {
   }
 });
 
+document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
+  ele.addEventListener('click',function(el){
+    let Id = el.currentTarget.getAttribute('data-col-Id'),
+        sectionId = document.querySelector(`[id="${Id}"]`);
+    window.scroll({
+      top: sectionId.offsetTop - 90,
+      behavior: "smooth",
+    });
+  });
+
+  if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
+});
+
+document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
+  ele.addEventListener('click',function(el){
+    let Id = el.currentTarget.getAttribute('data-col-Id'),
+        sectionId = document.querySelector(`[id="${Id}"]`);
+    window.scroll({
+      top: sectionId.offsetTop - 72,
+      behavior: "smooth",
+    });
+  })
+
+  if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
+});
+
 $(document).ready(function () {
 
   /*
