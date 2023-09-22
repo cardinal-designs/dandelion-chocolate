@@ -1339,8 +1339,8 @@ heightwidthauto {
 @media screen and (max-width: 767px) {
 
   .custom__heading {
-    font-size: 28px;
-    line-height: 37px;
+    font-size: 24px;
+    line-height: 32px;
   }
   
   .custom__sub-heading {
