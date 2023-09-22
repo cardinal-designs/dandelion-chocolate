@@ -51,3 +51,8 @@
   left: 0;
   top: 30px;
 }
+
+.event__item:first-child .count:before,
+.event__item:last-child .count:after {
+  display: none;
+} 
