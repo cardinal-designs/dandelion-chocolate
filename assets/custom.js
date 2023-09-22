@@ -278,14 +278,21 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 }
 
 $(document).ready(function () {
-  $('.Sub_Menu-Columns li').on('click', 'a', function(event) {
-    var navScrollTo = $($(this).attr('href'));
-    var scrollToTop = navScrollTo.offset().top - 50;  
-    $('html, body').animate({
-      scrollTop: scrollToTop 
+  var url = window.location.href;
+  console.log(url);
+  let page = url.substring(url.lastIndexOf('#') + 1);
+  console.log(page);
+  
+  let sectionScrolll = document.querySelector(`[id="${page}"]`);
+  if(sectionScrolll){
+    window.scroll({
+      top: sectionScrolll.offsetTop - 50,
+      behavior: "smooth",
     });
-    event.preventDefault();
-  });
+  }
+});
+
+$(document).ready(function () {
 
   /*
   Reference: http://jsfiddle.net/BB3JK/47/
