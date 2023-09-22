@@ -62,7 +62,10 @@
                     {% when 'icon' %}
                       <div class="icon__wrap">
                         {% for i in (1..5) %}
-                          {{ i }}
+                          <div class="icon_items">
+                            {% assign icon = block.settings.icon_ | append: i %}
+                            {{ icon }}tttt
+                          </div>
                         {% endfor %}
                       </div>
                     {% when 'tab' %}
