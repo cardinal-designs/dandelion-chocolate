@@ -16,3 +16,10 @@
   line-height: 36px;
   letter-spacing: 0.05em;
 }
+
+.classes__events--wrap .block__items--wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 54px;
+  row-gap: 47px;
+}
