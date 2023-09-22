@@ -1,12 +1,299 @@
+{{- 'product-list.css' | asset_url | stylesheet_tag -}}
+
+{%- liquid
+  assign section_width = section.settings.section_width
+  assign disable_top_spacing = section.settings.disable_top_spacing
+  assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+  
+-%}
+
+<div class="{{ section_width }} product__list--wrap" id="section--{{ section.id }}">
+  <div class="product__items--wrap row section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+   {% for block in section.blocks %}
+     {% assign image = block.settings.image %}
+     <div class="product__items" id="block--{{ block.id }}">
+        <div class="image__wrap">
+        {% if image %}
+        {%- liquid
+        assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+        assign master_width = image.src.width | append: 'x' | append: image.src.height
+        assign width = '375x' | append: small_width | append: ',' | append: master_width
+        assign class = ''
+        -%}
+        {%- render 'responsive-image', image: image, sizes: width, class: class -%}
+        {% else %}
+        {{ 'collection-2' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+        {% endif %}
+        </div>
+       
+        <div class="block__header">
+        {% if block.settings.heading != blank %}
+        <h3 class="heading" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }}">{{ block.settings.heading | newline_to_br }}</h3>
+        {% endif %}
+        {% if block.settings.subheading != blank %}
+        <p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.subheading }}</p>  
+        {% endif %}
+        </div>
+       
+        {% if block.settings.text != blank %}
+          <div class="block__description">
+            <div class="description body-1" {{ block.shopify_attributes }} style="color: {{ block.settings.text_color }}">{{ block.settings.text }}</div>
+          </div>
+        {% endif %}
+
+        {% assign product = block.settings.product %}
+        <div class="block__buttons">
+          {% if product != blank %}
+            {%- unless product.selected_or_first_available_variant.available -%}
+              <a class="btn btn--gold sold__out--btn" href="#" role="button" title="sold out" {{ block.shopify_attributes }}><span>{{ 'products.product.sold_out' | t }}</span></a>   
+            {% else %}
+              {% if block.settings.button_link != blank %}
+                <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
+              {% endif %}
+            {%- endunless -%}
+            {% if block.settings.button_link_2 != blank %}
+              <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
+            {% endif %}
+          {% else %}
+            {% if block.settings.button_link != blank %}
+              <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
+            {% endif %}
+            {% if block.settings.button_link_2 != blank %}
+              <a class="btn {{ block.settings.button_style_2 }}" href="{{ block.settings.button_link_2 }}" role="button" title="{{ block.settings.button_text_2 | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text_2 }}</span></a>        
+            {% endif %}
+          {% endif %}
+        </div>
+    </div>
+    
+        {% style %}
+          #block--{{ block.id }} .heading {
+            color: {{ block.settings.heading_color }}
+          }
+          #block--{{ block.id }} .subheading {
+            color: {{ block.settings.caption_color }}
+          }
+          #block--{{ block.id }} .block__description * {
+            color: {{ block.settings.text_color }}
+          }
+        {% endstyle %}
+    {% endfor %}
+  </div>
+</div>
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Classes Events Blocks",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "options": [
+        {
+          "value": "grid",
+          "label": "Grid"
+        },
+        {
+          "value": "full-width-row",
+          "label": "Full width"
+        },
+        {
+          "value": "full-width-row-full",
+          "label": "Full width, no spacing"
+        }
+      ],
+      "default": "grid",
+      "label": "Section width"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_top_spacing",
+      "default": false,
+      "label": "Remove top spacing"
+    },
+    {
+      "type": "checkbox",
+      "id": "disable_bottom_spacing",
+      "default": false,
+      "label": "Remove bottom spacing"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product Details",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Product"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "product"
+        },
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Product Image",
+          "info": "2800 x 650 .jpg recommended."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Add a tagline"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Buttons"
+        },
+        {
+          "type": "header",
+          "content": "First Button"
+        },
+        {
+          "id": "button_text",
+          "type": "text",
+          "label": "Button label",
+          "default": "Shop Now",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "id": "button_link",
+          "type": "url",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Desktop Button Style",
+          "options": [
+            {
+              "value": "btn--white",
+              "label": "White Button"
+            },
+            {
+              "value": "btn--gray",
+              "label": "Gray Button"
+            },
+            {
+              "value": "btn--gold",
+              "label": "Gold Button"
+            },
+            {
+              "value": "btn--light-gold",
+              "label": "Light Gold Button"
+            },
+            {
+              "value": "btn--outline",
+              "label": "Gray Outline Button"
+            }
+          ],
+          "default": "btn--white"
+        },
+        {
+          "type": "header",
+          "content": "Second Button"
+        },
+        {
+          "id": "button_text_2",
+          "type": "text",
+          "label": "Button label",
+          "default": "Shop Now",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "id": "button_link_2",
+          "type": "url",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style_2",
+          "label": "Desktop Button Style",
+          "options": [
+            {
+              "value": "btn--white",
+              "label": "White Button"
+            },
+            {
+              "value": "btn--gray",
+              "label": "Gray Button"
+            },
+            {
+              "value": "btn--gold",
+              "label": "Gold Button"
+            },
+            {
+              "value": "btn--light-gold",
+              "label": "Light Gold Button"
+            },
+            {
+              "value": "btn--outline",
+              "label": "Gray Outline Button"
+            }
+          ],
+          "default": "btn--white"
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "color",
+          "id": "caption_color",
+          "label": "Subheading",
+          "default": "#333"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading",
+          "default": "#333"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Description",
+          "default": "#333"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Classes Events Blocks",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
