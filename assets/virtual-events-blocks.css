@@ -100,3 +100,8 @@
 .virtual__events--wrap .text__wrap {
   padding: 16px 20px 38px;
 }
+
+.virtual__events--wrap .btn {
+  min-width: 310px;
+  min-height: 46px;
+}
