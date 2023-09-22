@@ -2366,6 +2366,10 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   line-height: 26px;
 }
 
+.multi__merch--icons .product__free-shipping {
+  display: block !important;
+}
+
 @media only screen and (min-width: 768px) { 
   
   .merch__icons.multi__merch--icons {
