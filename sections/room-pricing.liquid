@@ -13,7 +13,7 @@
 -%}
 
 <div id="section-{{ section.id }}" class="room__pricing-section">
-  <div id="room__pricing-section">
+  <div id="{{ section.settings.id }}">
     <div class="room__pricing-section-inner">
     {%- if section.settings.heading != blank -%}
       <div class="text-center">
@@ -187,6 +187,11 @@
       "unit": "px",
       "label": "Bottom Spacing",
       "default": 40
+    },
+    {
+      "type": "text",
+      "id": "id",
+      "label": "Add Custom ID"
     }
   ],
   "blocks": [
