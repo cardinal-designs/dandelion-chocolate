@@ -228,7 +228,7 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false,
         "bg_color": "#f5f6f5",
-        "block_color": "#fff",
+        "block_color": "#ffffff",
         "text_color": "#333333",
         "top_spacing_desktop": 40,
         "bottom_spacing_desktop": 40,
@@ -258,7 +258,7 @@
           "settings": {
             "link_label": "Learn More",
             "link": "",
-            "button_outline": false
+            "button_style": "btn--gold"
           }
         }
       },
