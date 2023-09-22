@@ -4,6 +4,7 @@
 
 .event__item {
   position: relative;
+  width: 100%;
 }
 
 .event__steps {
