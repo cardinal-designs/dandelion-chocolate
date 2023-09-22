@@ -9,7 +9,7 @@
 .event__steps {
   display: flex;
   max-width: 1150px;
-  padding: 0 20px;
+  padding: 0 20px 80px;
   margin: 0 auto;
 }
 
