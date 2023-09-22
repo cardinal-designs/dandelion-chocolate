@@ -1,4 +1,8 @@
-.event__counts div {
+.event__counts {
+  display: flex;
+}
+
+.event__counts .count {
   background: #333333;
   width: 60px;
   height: 60px;
