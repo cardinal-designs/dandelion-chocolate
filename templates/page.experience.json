@@ -313,9 +313,9 @@
             "button_text_2": "Shop Now",
             "button_link_2": "",
             "button_style_2": "btn--white",
-            "caption_color": "#333",
-            "heading_color": "#333",
-            "text_color": "#333"
+            "caption_color": "#333333",
+            "heading_color": "#333333",
+            "text_color": "#333333"
           }
         },
         "489468c5-af2d-4149-b224-46320ae6b9d6": {
@@ -344,9 +344,9 @@
             "button_text_2": "Shop Now",
             "button_link_2": "",
             "button_style_2": "btn--white",
-            "caption_color": "#333",
-            "heading_color": "#333",
-            "text_color": "#333"
+            "caption_color": "#333333",
+            "heading_color": "#333333",
+            "text_color": "#333333"
           }
         },
         "c1b651ee-2303-44a3-8d00-0ee364725524": {
@@ -375,9 +375,9 @@
             "button_text_2": "Shop Now",
             "button_link_2": "",
             "button_style_2": "btn--white",
-            "caption_color": "#333",
-            "heading_color": "#333",
-            "text_color": "#333"
+            "caption_color": "#333333",
+            "heading_color": "#333333",
+            "text_color": "#333333"
           }
         }
       },
@@ -475,7 +475,7 @@
             "detail_content_2": "<p>friday 3 pm<\/p>",
             "text": "<p>Our virtual truffle-making class is a fun, interactive activity to enjoy with family, friends, or teammates near and far. Learn the process of blending creamy ganache using our two-ingredient chocolate, then hand-roll your ganache into truffles. We’ll send you all necessary materials (including truffle toppings) to make a generous truffle batch — simply be ready to plunge your hands in chocolate.<br\/><\/p>",
             "button_text": "Order your kit",
-            "button_link": "#",
+            "button_link": "https:\/\/store.dandelionchocolate.com\/products\/make-your-own-truffles-kit?_pos=7&_sid=589831497&_ss=r",
             "button_style": "btn--gold",
             "link_text": "REGISTER FOR CLASS",
             "link_url": "#",
