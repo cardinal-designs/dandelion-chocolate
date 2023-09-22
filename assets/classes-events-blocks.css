@@ -31,7 +31,7 @@
   background: var(--color-accent);
 }
 
-.classes__events--wrap .detail_row {
+.classes__events--wrap .detail_row--item {
   display: flex;
   justify-content: space-between;
   padding: 14px 0;
