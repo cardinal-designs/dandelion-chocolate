@@ -56,6 +56,21 @@
     "f4712471-0799-4fe2-b4e3-949d0cf2366f": {
       "type": "tour-details",
       "blocks": {
+        "237399f0-b61b-4ea5-beae-c3cda838e818": {
+          "type": "icon",
+          "settings": {
+            "icon_1": "",
+            "icon_text_1": "Icon Text",
+            "icon_2": "",
+            "icon_text_2": "Icon Text",
+            "icon_3": "",
+            "icon_text_3": "Icon Text",
+            "icon_4": "",
+            "icon_text_4": "Icon Text",
+            "icon_5": "",
+            "icon_text_5": "Icon Text"
+          }
+        },
         "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-subheading-1": {
           "type": "subheading",
           "settings": {
@@ -77,6 +92,7 @@
         }
       },
       "block_order": [
+        "237399f0-b61b-4ea5-beae-c3cda838e818",
         "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-subheading-1",
         "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-heading-1",
         "template--16035013656716__f4712471-0799-4fe2-b4e3-949d0cf2366f-text-1"
@@ -89,7 +105,6 @@
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "color_text": "#151515",
-        "color_border": "#e2e2e2",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false,
         "custom_class": ""
