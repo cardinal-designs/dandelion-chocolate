@@ -353,8 +353,8 @@
         "bg_color": "#f5f6f5",
         "block_color": "#ffffff",
         "text_color": "#333333",
-        "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "top_spacing_desktop": 70,
+        "bottom_spacing_desktop": 50,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
