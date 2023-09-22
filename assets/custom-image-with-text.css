@@ -141,5 +141,9 @@
   .custom__image--text .section_heading {
     margin-bottom: 27px;
   }
+
+  .other__origin-trips.custom__image--text .image-with-text__content {
+    padding: 24px 20px 0;
+  }
   
 }
