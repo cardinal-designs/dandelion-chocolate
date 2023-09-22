@@ -12,7 +12,7 @@
         "template--16035013656716__26f6b9c0-d869-4b3f-8c5e-8f09e7f68590-heading-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
+            "text": "Tours & Events",
             "heading_size": "h1",
             "heading_color": "#333333",
             "heading_color_mobile": "#333"
@@ -21,8 +21,8 @@
         "template--16035013656716__26f6b9c0-d869-4b3f-8c5e-8f09e7f68590-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "description_size": "body-1",
+            "text": "<p>personalized classes, tours, and experiences, guided by our chocolate education team<br\/><\/p>",
+            "description_size": "body",
             "description_color": "#333333",
             "description_color_mobile": "#333"
           }
@@ -41,14 +41,14 @@
         "content_position": "middle-center",
         "text_alignment": "center",
         "overlay_opacity": 30,
-        "show_caption_box": false,
+        "show_caption_box": true,
         "caption_over_banner": false,
         "caption_bg": "",
         "mobile_caption_bg": "",
         "stack_on_mobile": false,
         "content__bg": "#333333",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
         "custom_class": ""
       }
     }
