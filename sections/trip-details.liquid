@@ -56,9 +56,9 @@
             {% endif %}
 
             {% if mobile_image != blank %}
-            <div class="hide-desktop">
-              {%- render 'responsive-image', image: mobile_image, sizes: mobile_width -%}
-            </div>   
+              <div class="hide-desktop">
+                {%- render 'responsive-image', image: mobile_image, sizes: mobile_width -%}
+              </div>   
             {% else %}
               <div class="hide-desktop">
                  {%- render 'responsive-image', image: image, sizes: width -%}
