@@ -9,6 +9,17 @@
   position:relative;
 }
 
+.pricing__blocks ul li:before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #333;
+  border-radius: 50%;
+  left: -18px;
+  top: 9px;
+}
+
 .room__pricing-section {
   border-bottom: 1px solid #cccccc;
 }
