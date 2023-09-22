@@ -11,7 +11,7 @@
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
 -%}
-<div id="{{ section.id }}" class="room__pricing-section">
+<div id="section-{{ section.id }}" class="room__pricing-section">
   <div class="room__pricing-section-inner">
     {%- if section.settings.heading != blank -%}
       <div class="text-center">
@@ -50,8 +50,19 @@
 
 {% style %}
 
-  #{{ section.id }} .row {
-    background-color: {{ section.settings.section_bg }};
+  #section-{{ section.id }} {
+    background: {{ section.settings.color_bg }};
+    padding-top : {{ section.settings.top_spacing_desktop }}px;
+    padding-bottom : {{ section.settings.bottom_spacing_desktop }}px;
+  }
+
+  @media only screen and (max-width: 767px) {
+      
+    #section-{{ section.id }} {
+      padding-top : {{ section.settings.top_spacing_mobile }}px;
+      padding-bottom : {{ section.settings.bottom_spacing_mobile }}px;
+    }
+    
   }
   
 {% endstyle %}
