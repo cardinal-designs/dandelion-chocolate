@@ -73,6 +73,7 @@
                         {% endfor %}
                       </div>
                     {% when 'button' %}
+                    aaa
                       {% if block.settings.button_link != blank %}
                         <a class="btn {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>        
                       {% endif %}
