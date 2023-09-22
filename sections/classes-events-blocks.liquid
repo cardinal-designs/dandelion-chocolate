@@ -59,7 +59,6 @@
             {% endif %}
         </div>
     </div>
-    
         {% style %}
           #block--{{ block.id }} .heading {
             color: {{ block.settings.heading_color }}
@@ -75,6 +74,17 @@
   </div>
 </div>
 
+{% style %}
+
+  #section--{{ section.id }} {
+    background: {{ section.settings.bg_color }};
+  }
+
+  #section--{{ section.id }} .section__header * {
+    background: {{ section.settings.text_color }};
+  }
+  
+{% endstyle %}
 
 {% schema %}
 {
@@ -127,6 +137,22 @@
       "id": "disable_bottom_spacing",
       "default": false,
       "label": "Remove bottom spacing"
+    },
+    {
+      "type": "header",
+      "content": "colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#F5F6F5"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Color",
+      "default": "#333"
     }
   ],
   "blocks": [
