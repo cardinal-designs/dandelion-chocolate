@@ -59,7 +59,7 @@
               {% endif %}
             {%- when 'text-button' -%}
               {% if block.settings.link_label != blank %}
-                <a class="text-button" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.link_label }}</a>
+                <a class="text-button {% if block.settings.button_style == 'btn--gold' %}custom__btn{% else %}{{ block.settings.button_style }}{% endif %}" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.link_label }}</a>
               {% endif %}
           {%- endcase -%}
         {% endfor %}
@@ -393,10 +393,32 @@
             "label": "Link"
           },
           {
-            "type": "checkbox",
-            "id": "button_outline",
-            "label": "Use outline button style",
-            "default": false
+            "type": "select",
+            "id": "button_style",
+            "label": "Desktop Button Style",
+            "options": [
+              {
+                "value": "btn--white",
+                "label": "White Button"
+              },
+              {
+                "value": "btn--gray",
+                "label": "Gray Button"
+              },
+              {
+                "value": "btn--gold",
+                "label": "Gold Button"
+              },
+              {
+                "value": "btn--light-gold",
+                "label": "Light Gold Button"
+              },
+              {
+                "value": "btn--outline",
+                "label": "Gray Outline Button"
+              }
+            ],
+            "default": "btn--white"
           }
         ]
       },
