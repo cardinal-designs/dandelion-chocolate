@@ -1192,8 +1192,8 @@ html{
   font-weight: 400;
   line-height: 16.8px;
   letter-spacing: 2.1px;
-  min-height: 53px;
-  padding: 17px 40px 9px;
+  min-height: auto;
+  padding: 20px 40px 17px;
 }
 
 .custom__btn::before {
