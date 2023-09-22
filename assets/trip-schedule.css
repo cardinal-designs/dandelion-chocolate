@@ -119,4 +119,9 @@
     margin-bottom: 30px;
   }
 
+  .trip__schedule--text--inner .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
 }
