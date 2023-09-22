@@ -21,6 +21,10 @@
   min-width: 100%;
 }
 
+.classes__events--wrap .block__items img {
+  width: 100%;;
+}
+
 .classes__events--wrap .block__items--wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
