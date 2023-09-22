@@ -14,6 +14,8 @@
 .tour__details--wrap .btn_wrap {
   display: flex;
   column-gap: 15px;
+  border-top: 1px solid #333;
+  padding-top: 19px;
 }
 
 .tour__details--wrap .btn {
@@ -25,6 +27,6 @@
   max-width: 60%;
 }
 
-.trip__image--with--content-inner .rte {
+.tour__details--wrap .trip__image--with--content-inner .rte {
   padding: 26px 0;
 }
