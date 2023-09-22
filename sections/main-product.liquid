@@ -625,7 +625,7 @@
                       <dt>INGREDIENTS & ALLERGENS</dt>
                       <dd>
                         <div class="ingredients__list--item">{{ product.metafields.info.ingredients | metafield_tag | newline_to_br }}</div>
-                        <div class="ingredients__list--item">{{ product.metafields.info.allergens | metafield_tag }}</div>
+                        <div class="ingredients__list--item shelf__life">Allergens: {{ product.metafields.info.allergens | metafield_tag }}</div>
                         <div class="ingredients__list--item">{{ product.metafields.info.allergen_facility | metafield_tag }}</div>
                       </dd>
                     {% endif %}
