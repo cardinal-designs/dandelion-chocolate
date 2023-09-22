@@ -309,7 +309,7 @@ document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((el
       window.sessionStorage.removeItem("scrolltosection");
     }
   }
-});
+})
 
 document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
