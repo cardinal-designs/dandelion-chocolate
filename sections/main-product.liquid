@@ -698,24 +698,7 @@
                       {% endfor %}
                     </div>
                   {% endif %}
-                  {% if product.metafields.custom.merch_icons.value != blank %}
-                    <div class="bar-icons meta__bar--icons">
-                      {% for merch_icon in product.metafields.custom.merch_icons.value %}
-                        {% capture merch_icon_img  %}
-                          {% assign merch_icon_name = merch_icon | downcase %}
-                          {% if merch_icon_name == 'Add Gift Notes at Checkout' %}
-                            {% render 'icon-gift-wrap' %}
-                          {% elsif merch_icon_name == 'free shipping' %}
-                            {% render 'icon-pickup' %}
-                          {% endif %}
-                        {% endcapture %}
-                        <div>
-                          {{ merch_icon_img }}
-                          <p>{{ merch_icon }}</p>
-                        </div>
-                      {% endfor %}
-                    </div>
-                  {% endif %}
+
                 
                 {%- when 'description' -%}
                   {% if product.metafields.info.special_message_location == 'Top' %}
