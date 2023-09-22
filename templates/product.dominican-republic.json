@@ -168,6 +168,14 @@
             "mobile_description": "",
             "icon": "shopify:\/\/shop_images\/Group_149.png"
           }
+        },
+        "b11093ea-5c51-4bbe-bf0b-5c921eb7e412": {
+          "type": "button",
+          "settings": {
+            "link_label": "JOIN WAITLIST FOR UPDATES",
+            "link": "",
+            "button_style": "btn--gold"
+          }
         }
       },
       "block_order": [
@@ -177,7 +185,8 @@
         "3c23ecd4-aa4c-4c78-9fcc-d72b37ff4d8b",
         "828f9ae4-1be8-484f-b6d3-f5762e115b00",
         "87af2d84-53fa-4373-8355-19427215ba41",
-        "3b14e301-016f-4183-a287-458a9b6a5acf"
+        "3b14e301-016f-4183-a287-458a9b6a5acf",
+        "b11093ea-5c51-4bbe-bf0b-5c921eb7e412"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Image_3.png",
@@ -394,7 +403,7 @@
         "content_position": "text-left",
         "color_bg": "#f5f6f5",
         "color_text": "#333333",
-        "color_sub_text": "#333",
+        "color_sub_text": "#333333",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 72,
         "top_spacing_mobile": 26,
