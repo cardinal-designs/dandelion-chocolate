@@ -22,6 +22,10 @@
 
 .custom__rich-text .button {
   margin-top: 26px;
+  min-height: 40px;
+  height: 100%;
+  padding: 14px 40px 7px;
+  min-width: 262px;
 }
 
 .rich__text--2 .custom__rich-text .rich-text__inner .heading {
