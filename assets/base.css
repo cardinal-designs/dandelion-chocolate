@@ -1195,6 +1195,7 @@ html{
   min-height: auto;
   padding: 20px 40px 17px;
   transition: all .25s cubic-bezier(.104,.204,.492,1);
+  height: auto;
 }
 
 .custom__btn:hover {
