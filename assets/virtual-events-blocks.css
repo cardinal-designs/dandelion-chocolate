@@ -74,10 +74,12 @@
 
 .virtual__events--wrap .block__buttons {
   flex-direction: column;
+  align-items: center;
 }
 
 .virtual__events--wrap .link__wrap {
   flex-direction: column;
+  margin-top: 17px;
 }
 
 .virtual__events--wrap .link__wrap p {
