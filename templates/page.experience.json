@@ -146,6 +146,7 @@
         "b5ab71e0-e033-4440-ac0a-a4b9229f9ce9"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Image_4.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "grid",
