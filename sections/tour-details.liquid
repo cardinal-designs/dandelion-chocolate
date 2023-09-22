@@ -23,17 +23,7 @@
 		<div class="trip__details grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text | color_extract: 'red' }}, {{ color_text | color_extract: 'green' }}, {{ color_text | color_extract: 'blue' }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }};--solid-button-label: {{ color_bg }};--bg-body: {{ color_bg }};--color-border: {{ color_border }}">
 			<div class="trip__details--text-image">
 				<div class="trip__details--text-image-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-					{%- if use_video -%}
-						{%- if video_hosted != blank -%}
-							{{ video_hosted | video_tag: autoplay: video_autoplay, loop: true, controls: video_controls, muted: video_autoplay, image_size: '690x' }}
-						{%- elsif video != blank -%}
-							{%- if video.type == 'youtube' -%}
-								<iframe data-src="https://www.youtube.com/embed/{{ video.id }}?loop=1{%- if video_autoplay -%}&autoplay=1&mute=1{%- endif -%}&playlist={{ video.id }}&iv_load_policy=3&disablekb=1&controls={{ video_controls }}&playsinline=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
-							{%- else -%}
-								<iframe data-src="https://player.vimeo.com/video/{{ video.id }}{%- if video_autoplay -%}?background=1{%- endif -%}" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
-							{%- endif -%}
-						{%- endif -%}
-					{%- elsif image != blank -%}
+					{%- if image != blank -%}
 						{%- liquid
 							assign small_height = image.src.height | times: '690' | divided_by: image.src.width
 							assign mid_height = image.src.height | times: '1340' | divided_by: image.src.width
