@@ -127,10 +127,10 @@
           "type": "button",
           "settings": {
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "#",
             "button_style": "btn--white",
             "button_text_2": "Shop Now",
-            "button_link_2": "",
+            "button_link_2": "#",
             "button_style_2": "btn--white"
           }
         }
