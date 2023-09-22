@@ -1196,6 +1196,10 @@ html{
   padding: 20px 40px 17px;
 }
 
+.custom__btn:hover {
+  background-color: #e3be66;
+}
+
 .custom__btn::before {
   display: none;
 }
