@@ -142,9 +142,14 @@
         "b4bcc115-9ed1-4ca5-9ad5-272870d521ac"
       ],
       "settings": {
+        "bg_color": "",
+        "heading": "",
+        "description": "",
         "section_width": "grid",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "top_spacing_desktop": 78,
+        "bottom_spacing_desktop": 118,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 50
       }
     },
     "b6e016f2-c0cf-41c9-8d86-2900267a72a8": {
@@ -181,7 +186,8 @@
         "top_spacing_desktop": 40,
         "bottom_spacing_desktop": 40,
         "top_spacing_mobile": 0,
-        "bottom_spacing_mobile": 0
+        "bottom_spacing_mobile": 0,
+        "custom_class": ""
       }
     }
   },
