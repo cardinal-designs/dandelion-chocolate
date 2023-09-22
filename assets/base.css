@@ -1307,6 +1307,7 @@ heightwidthauto {
   text-align: left;
   color: #d3a741 !important;
   margin-top: 9px;
+  display: inline-block;
 }
 
 .icon__row--wrap {
