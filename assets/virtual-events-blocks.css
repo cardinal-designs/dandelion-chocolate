@@ -57,7 +57,7 @@
   display: none;
 } 
 
-.step__text {
+.virtual__events--wrap .step__text {
   margin-top: 20px;
   padding: 0 25px;
   text-align: center;
