@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.event__item .count {
+  position: relative;
+}
+
 .event__item .count div {
   background: #333333;
   width: 60px;
