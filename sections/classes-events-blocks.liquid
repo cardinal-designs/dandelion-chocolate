@@ -139,6 +139,10 @@
     background: {{ section.settings.bg_color }};
   }
 
+  #section--{{ section.id }} .block__items {
+    background: {{ section.settings.block_color }};
+  }
+
   #section--{{ section.id }} .section__header * {
     color: {{ section.settings.text_color }};
   }
@@ -205,6 +209,12 @@
       "id": "bg_color",
       "label": "Background",
       "default": "#F5F6F5"
+    },
+    {
+      "type": "color",
+      "id": "block_color",
+      "label": "Block Background",
+      "default": "#fff"
     },
     {
       "type": "color",
