@@ -73,4 +73,6 @@
   padding: 16px 20px;
 }
 
-
+.classes__events--wrap .block__header .heading {
+  margin: 0;
+}
