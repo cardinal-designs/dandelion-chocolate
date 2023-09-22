@@ -1,3 +1,7 @@
+.classes__events--wrap .section__header {
+  padding: 0 20px;
+}
+
 .classes__events--wrap .section_heading {
   font-size: 36px;
   font-weight: 400;
