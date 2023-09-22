@@ -160,6 +160,10 @@
   width: 100%;
 }
 
+.trip__details-button {
+  margin-top: 24px;
+}
+
 .trip__details-content-inner {
   width: 100%;
   display: flex;
