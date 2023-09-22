@@ -136,6 +136,10 @@
                     </div>                    
                   {% endif %}                       
                 </div>
+              {%- when 'button' -%}
+              {% if block.settings.link_label != blank %}
+                <a class="button {% if block.settings.button_style == 'btn--gold' %}custom__btn{% else %}{{ block.settings.button_style }}{% endif %}" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><span>{{ block.settings.link_label }}</span></a>
+              {% endif %}          
             {%- endcase -%}
           {%- endfor -%}
         </div>
