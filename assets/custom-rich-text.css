@@ -20,6 +20,10 @@
   margin-bottom: 4px;
 }
 
+.custom__rich-text .button {
+  margin-top: 26px;
+}
+
 .rich__text--2 .custom__rich-text .rich-text__inner .heading {
   font-size: 36px;
   font-weight: 400;
