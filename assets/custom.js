@@ -454,7 +454,7 @@ $(document).ready(function() {
        
        setTimeout(function(){
          console.log(addtoCart.trim())
-         if (addtoCart.includes("Sold out");{
+         if (addtoCart.includes("Sold out")){
            $('.product-submit').text('SOLD OUT');
            $('.product-submit').attr('disabled','disabled');
          } else {
