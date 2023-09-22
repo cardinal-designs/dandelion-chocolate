@@ -112,5 +112,14 @@
 }
 
 .virtual__events--wrap .section__footer p {
-  margin; 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'AGaramondPro';
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+.virtual__events--wrap .section__footer a {
+  color: #D3A741;
 }
