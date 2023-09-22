@@ -88,15 +88,15 @@
               </div>
   
               <div class="detail_row--item">
-                {% if block.settings.detail_heading != blank %}
+                {% if block.settings.detail_heading_2 != blank %}
                   <span class="details-heading">
-                    {{ block.settings.detail_heading }}
+                    {{ block.settings.detail_heading_2 }}
                   </span>
                 {% endif %}
   
-                {% if block.settings.detail_content != blank %}
+                {% if block.settings.detail_content_2 != blank %}
                   <span class="details-content-text">
-                    {{ block.settings.detail_content }}
+                    {{ block.settings.detail_content_2 }}
                   </span>
                 {% endif %}
               </div>
@@ -432,6 +432,20 @@
         {
           "type": "richtext",
           "id": "detail_content",
+          "default": "<p>Content</p>",
+          "info": "Include a heading that explains the content.",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "detail_heading_2",
+          "default": "Heading",
+          "info": "Include a heading that explains the content.",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "detail_content_2",
           "default": "<p>Content</p>",
           "info": "Include a heading that explains the content.",
           "label": "Content"

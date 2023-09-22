@@ -141,10 +141,6 @@
   margin-bottom: 23px
 }
 
-.trip__details-content:last-child {
-  border-bottom: 1px solid #333;
-}
-
 .trip__details-description,
 .trip__details-description p {
   color: #76797b;
@@ -176,7 +172,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 15px 0;
-  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
 }
 
 .trip__details-content-text {
