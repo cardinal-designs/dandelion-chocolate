@@ -163,6 +163,8 @@
 
   .other__origin-trips.custom__image--text .section_heading {
     margin-bottom: 24px;
+    text-align: left;
+    padding-left: 20px;
   }
 
   .other__origin-trips .custom__description {
