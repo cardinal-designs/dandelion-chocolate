@@ -86,6 +86,11 @@
   margin: 0;
 }
 
+.classes__events--wrap .icon__row--wrap {
+
+  
+}
+
 @media screen and (max-width: 1067px) { 
 
   .classes__events--wrap .block__items--wrap {
