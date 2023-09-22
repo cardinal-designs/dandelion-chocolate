@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.event__item .count {
+.event__item .count div {
   background: #333333;
   width: 60px;
   height: 60px;
@@ -16,4 +16,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.event__item .count:after {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/line-new.png?v=1695379062);
+  width: 50%;
+  height: 10px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+.event__item .count:before {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/line-new.png?v=1695379062);
+  width: 50%;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 30px;
 }
