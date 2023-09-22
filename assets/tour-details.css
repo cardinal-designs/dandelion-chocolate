@@ -24,3 +24,7 @@
 .tour__details--wrap .trip__details-content-text {
   max-width: 60%;
 }
+
+.trip__image--with--content-inner .rte {
+  padding: 26px 0;
+}
