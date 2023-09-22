@@ -459,7 +459,7 @@ $(document).ready(function() {
            $('.product-submit').attr('disabled','disabled');
          } else {
            $('.product-submit').text('RESERVE YOUR SPOT');
-           $('.product-submit').RemoveAttr('disabled');
+           $('.product-submit').removeAttr('disabled');
          }
        },3000)
       });
