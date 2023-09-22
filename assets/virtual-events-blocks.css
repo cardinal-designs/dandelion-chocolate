@@ -72,8 +72,15 @@
   width: 100%;
 }
 
+.virtual__events--wrap .link__wrap {
+  flex-direction: column;
+}
 
-.virtual__events--wrap .link__wrap a{
+.virtual__events--wrap .link__wrap p {
+  margin: 0;
+}
+
+.virtual__events--wrap .link__wrap a {
   font-family: Saa Series E D;
   font-size: 14px;
   font-weight: 400;
