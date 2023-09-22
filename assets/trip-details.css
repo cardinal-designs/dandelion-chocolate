@@ -306,5 +306,10 @@
   .trip__details-content-icon {
     margin-top: -7px;
   }
+
+  .trip__details-description,
+  .trip__details-description p {
+    letter-spacing: .04em;
+  }
    
 }
