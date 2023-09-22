@@ -49,6 +49,8 @@
               assign mobile_master_width = mobile_image.src.width | append: 'x' | append: mobile_image.src.height
               assign mobile_width = '690x' | append: mobile_small_height | append: ',' | append: '1340x' | append: mobile_mid_height | append: ',' | append: mobile_master_width
             -%}
+
+          {{ section.settings.image }}
             <div class="mobile__hide">
               {%- render 'responsive-image', image: image, sizes: width -%}
             </div>
