@@ -90,6 +90,7 @@
 .product__list--header {
   width: 100%;
   max-width: 672px;
+  margin: 0 auto;
 }
 
 .product__list--wrap .section_description {
