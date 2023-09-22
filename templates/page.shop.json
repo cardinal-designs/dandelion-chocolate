@@ -454,7 +454,7 @@
     "1b5c5610-485b-4345-a2c1-d055920e3473": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Bar-Sets",
+        "section_id": "Bars",
         "heading": "Bar Sets",
         "heading_desktop": 32,
         "heading_mobile": 22,
@@ -676,7 +676,7 @@
     "59319a80-6073-4db0-ade1-80b8b7f02126": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Pastries",
+        "section_id": "Pickups",
         "heading": "Pastries for Pickup Only",
         "heading_desktop": 32,
         "heading_mobile": 22,
@@ -713,7 +713,7 @@
     "e96896ef-c364-4560-b177-b513b3ea7d26": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Hot-Chocolates",
+        "section_id": "Hot Chocolates",
         "heading": "Hot Chocolates",
         "heading_desktop": 32,
         "heading_mobile": 22,
