@@ -44,8 +44,13 @@
         {%- endif -%}
         <div class="trip__schedule--text trip__schedule--items">
           <div class="trip__schedule--header hide-desktop">
-            <h3 class="section_heading custom__heading">{{ section.settings.heading }}</h3> 
-            <p class="section_description">{{ section.settings.description }}</p>
+            {% if section.settings.heading != blank %}
+              <h3 class="section_heading custom__heading">{{ section.settings.heading }}</h3>
+            {% endif %}
+
+            {% if section.settings.description != blank %}
+              <p class="section_description">{{ section.settings.description }}</p>
+            {% endif %}            
           </div>
           <div class="trip__schedule--text--inner">
             {%- for block in section.blocks -%}
