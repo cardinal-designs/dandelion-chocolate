@@ -139,10 +139,6 @@
 </div>
 
 {% style %}
-  #section--{{ section.id }} {
-    background: {{ section.settings.bg_color }};
-  }
-
   #section--{{ section.id }} .block__items {
     background: {{ section.settings.block_color }};
   }
@@ -150,6 +146,26 @@
   #section--{{ section.id }} .section__header * {
     color: {{ section.settings.text_color }};
   }
+
+  #section--{{ section.id }} {
+    background: {{ section.settings.bg_color }};
+    padding-top : {{ section.settings.top_spacing_desktop }}px;
+    padding-bottom : {{ section.settings.bottom_spacing_desktop }}px;
+  }
+
+  #section--{{ section.id }} * {
+    color: {{ color_text }};
+  }
+
+  @media only screen and (max-width: 767px) {
+      
+    #section--{{ section.id }} {
+      padding-top : {{ section.settings.top_spacing_mobile }}px;
+      padding-bottom : {{ section.settings.bottom_spacing_mobile }}px;
+    }
+    
+  }
+  
 {% endstyle %}
 
 {% schema %}
@@ -225,6 +241,54 @@
       "id": "text_color",
       "label": "Color",
       "default": "#333"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Mobile Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing_mobile",
+      "min": 0,
+      "max": 140,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing_mobile",
+      "min": 0,
+      "max": 140,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
     }
   ],
   "blocks": [
