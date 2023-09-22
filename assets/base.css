@@ -1230,21 +1230,6 @@ html{
   .hide__mobile {
     display: none !important;
   }
-
-  .custom__heading {
-    font-size: 28px;
-    line-height: 37px;
-  }
-
-  .custom__sub-heading {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .custom__sh1 {
-    font-size: 16px;
-    line-height: 19.2px;
-  }
   
 }
 
@@ -1347,4 +1332,23 @@ heightwidthauto {
   line-height: 12px;
   letter-spacing: 0.05em;
   margin-top: 6px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .custom__heading {
+    font-size: 28px;
+    line-height: 37px;
+  }
+  
+  .custom__sub-heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .custom__sh1 {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
 }
