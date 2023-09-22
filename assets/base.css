@@ -1342,6 +1342,10 @@ heightwidthauto {
   margin-top: 6px;
 }
 
+.btn.custom__btn + .btn {
+  padding: 19px 46px 15px;
+}
+
 @media screen and (max-width: 767px) {
 
   .custom__heading {
