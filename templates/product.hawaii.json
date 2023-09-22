@@ -242,6 +242,7 @@
       "settings": {
         "section_heading": "",
         "image": "shopify:\/\/shop_images\/trip-overview.png",
+        "image_mobile": "shopify:\/\/shop_images\/lori_2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "section_width": "full-width-spacing",
