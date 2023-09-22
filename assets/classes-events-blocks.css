@@ -49,3 +49,13 @@
   letter-spacing: 2.1px;
   margin: 0;
 }
+
+.classes__events--wrap .block__description {
+  padding: 10px 0;
+}
+
+.classes__events--wrap .block__description p {
+  margin: 0;
+}
+
+
