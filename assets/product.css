@@ -2375,7 +2375,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 }
 
 .shelf__life .metafield-rich_text_field {
-  margin-top: -3px;
+  margin: -3px 5px 0px;
 }
 
 @media only screen and (min-width: 768px) { 
