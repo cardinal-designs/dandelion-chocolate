@@ -290,5 +290,9 @@
   .trip__details-content-text {
     line-height: 21px;
   }
+
+  .trip__details-content-icon {
+    margin-top: -7px;
+  }
    
 }
