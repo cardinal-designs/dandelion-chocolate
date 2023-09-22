@@ -46,8 +46,8 @@
         "caption_over_banner": false,
         "caption_bg": "#FFFFFFF2",
         "mobile_caption_bg": "",
-        "stack_on_mobile": false,
-        "content__bg": "#333333",
+        "stack_on_mobile": true,
+        "content__bg": "#ffffff",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
         "custom_class": ""
@@ -308,9 +308,9 @@
             "button_text_2": "Order your kit",
             "button_link_2": "#",
             "button_style_2": "btn--white",
-            "caption_color": "#333",
-            "heading_color": "#333",
-            "text_color": "#333"
+            "caption_color": "#333333",
+            "heading_color": "#333333",
+            "text_color": "#333333"
           }
         },
         "template--16035013656716__5fe58374-4107-44ed-b795-013be36150de-product-2": {
@@ -336,9 +336,9 @@
             "button_text_2": "Shop Now",
             "button_link_2": "",
             "button_style_2": "btn--white",
-            "caption_color": "#333",
-            "heading_color": "#333",
-            "text_color": "#333"
+            "caption_color": "#333333",
+            "heading_color": "#333333",
+            "text_color": "#333333"
           }
         }
       },
@@ -348,13 +348,12 @@
       ],
       "settings": {
         "section_heading": "VIRTUAL EVENTS",
-        "section_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
         "section_width": "grid",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false,
-        "bg_color": "#F5F6F5",
-        "block_color": "#fff",
-        "text_color": "#333",
+        "bg_color": "#f5f6f5",
+        "block_color": "#ffffff",
+        "text_color": "#333333",
         "top_spacing_desktop": 40,
         "bottom_spacing_desktop": 40,
         "top_spacing_mobile": 40,
