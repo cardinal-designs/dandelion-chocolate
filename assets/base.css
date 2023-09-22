@@ -1313,7 +1313,7 @@ heightwidthauto {
   line-height: 21px;
   letter-spacing: 0.1em;
   text-align: left;
-  color: #D3A741;
+  color: #d3a741 !important;
   margin-top: 9px;
 }
 
