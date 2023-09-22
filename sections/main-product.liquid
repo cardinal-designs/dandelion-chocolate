@@ -700,41 +700,21 @@
                   {% endif %}
                   {% if product.metafields.custom.merch_icons.value != blank %}
                     <div class="bar-icons meta__bar--icons">
-                      {% for bar_icon in product.metafields.custom.merch_icons.value %}
-                        {% capture bar_icon_img  %}
-                          {% assign bar_icon_name = bar_icon | downcase %}
-                          {% if bar_icon_name == 'kosher' %}
-                            {% render 'icon-kosher' %}
-                          {% elsif bar_icon_name == 'gluten free' %}
-                            {% render 'icon-gluten-free' %}
-                          {% elsif bar_icon_name == 'soy free' %}
-                            {% render 'icon-soy-free' %}
-                          {% elsif bar_icon_name == 'vegan' %}
-                            {% render 'icon-vegan' %}
-                          {% elsif bar_icon_name == 'direct sourced' %}
-                            {% render 'icon-direct-sourced' %}
-                          {% elsif bar_icon_name == 'two ingredients' %}
-                            {% render 'icon-cocoabean-sugar' %}
-                          {% elsif bar_icon_name == 'peanut free' %}
-                            {% render 'icon-peanut-free' %}
-                          {% elsif bar_icon_name == 'treenut free' or bar_icon_name == 'nut free' %}
-                            {% render 'icon-treenut-free' %}
-                          {% elsif bar_icon_name == 'dairy' %}
-                            {% render 'icon-dairy' %}
-                          {% elsif bar_icon_name == 'customizable' %}
-                            {% render 'icon-customizable' %}
-                          {% elsif bar_icon_name == 'gift wrap' or bar_icon_name == 'Add Gift Notes at Checkout' %}
+                      {% for merch_icon in product.metafields.custom.merch_icons.value %}
+                        {% capture merch_icon_img  %}
+                          {% assign bar_icon_name = merch_icon | downcase %}
+                          {% if merch_icon_name == 'Add Gift Notes at Checkout' %}
                             {% render 'icon-gift-wrap' %}
-                          {% elsif bar_icon_name == 'organic' %}
+                          {% elsif merch_icon_name == 'organic' %}
                             {% render 'icon-organic' %}
-                          {% elsif bar_icon_name == 'pick up' or bar_icon_name == 'free shipping' %}
+                          {% elsif merch_icon_name == 'free shipping' %}
                             {% render 'icon-pickup' %}
-                          {% elsif bar_icon_name == 'wholesale' %}
+                          {% elsif merch_icon_name == 'wholesale' %}
                             {% render 'icon-wholesale' %}
                           {% endif %}
                         {% endcapture %}
                         <div>
-                          {{ bar_icon_img }}
+                          {{ merch_icon_img }}
                           <p>{{ bar_icon }}</p>
                         </div>
                       {% endfor %}
