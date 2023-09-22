@@ -164,6 +164,10 @@
   margin-top: 24px;
 }
 
+.trip__content-subheading + .trip__details-content {
+  border-top: 1px solid #333333;
+}
+
 .trip__details-content-inner {
   width: 100%;
   display: flex;
