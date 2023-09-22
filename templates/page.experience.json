@@ -327,6 +327,7 @@
         "template--16035013656716__a51a022b-7652-4eae-b8a3-43c6fe1fe47c-product-2"
       ],
       "settings": {
+        "bg_color": "#f5f6f5",
         "section_width": "grid",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
