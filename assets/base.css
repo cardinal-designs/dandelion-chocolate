@@ -1194,6 +1194,7 @@ html{
   letter-spacing: 2.1px;
   min-height: auto;
   padding: 20px 40px 17px;
+  transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
 
 .custom__btn:hover {
