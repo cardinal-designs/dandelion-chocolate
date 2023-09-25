@@ -81,6 +81,11 @@
   .tour__details--wrap .trip__details-content {
     padding: 13.5px 0;
   }
+
+  .tour__details--wrap .btn_wrap {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
   
 }
 
