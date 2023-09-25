@@ -194,6 +194,10 @@
     padding: 13px 0 21px;
   }
 
+  .classes__events--wrap .btn {
+    padding: 17px 20px 13px!important;
+  }
+
   
   
 }
