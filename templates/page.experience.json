@@ -38,7 +38,7 @@
         "image": "shopify:\/\/shop_images\/Header_Image_Experience.png",
         "desktop_height": "desktop-height-400",
         "mobile_height": "mobile-height-350",
-        "content_width": "medium",
+        "content_width": "large",
         "content_position": "middle-center",
         "text_alignment": "center",
         "overlay_opacity": 0,
