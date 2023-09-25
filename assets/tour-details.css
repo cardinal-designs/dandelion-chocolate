@@ -120,6 +120,10 @@
   .tour__details--wrap .btn {
     padding: 15px 10px 11px!important;
   }
+
+  .tour__details--wrap .btn.btn--white {
+    padding: 13px 10px 9px!important;
+  }
   
 }
 
