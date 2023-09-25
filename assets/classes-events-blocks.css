@@ -70,8 +70,9 @@
 }
 
 .classes__events--wrap .block__buttons {
-  display: flex;
-  column-gap: 20px;
+  display: grid;
+  column-gap: 18px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .classes__events--wrap .btn {
@@ -79,6 +80,7 @@
   flex: 1;
   min-width: auto;
   border-width: 2px;
+  padding: 14px 20px 11px !important;
 }
 
 .classes__events--wrap .text__wrap {
