@@ -222,12 +222,6 @@
   letter-spacing: 0.04em;
 }
 
-.virtual__events--wrap .block__buttons {
-  display: grid;
-  column-gap: 18px;
-  grid-template-columns: 1fr 1fr;
-}
-
 .virtual__events--wrap .btn {
   border-radius: 6px;
   flex: 1;
