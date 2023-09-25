@@ -27,5 +27,9 @@
 }
 
 .tour__details--wrap  .image-with-text-overlay--content-inner.content-width-large {
-    max-width: 800px;
+  max-width: 800px;
+}
+
+.tour__details--wrap .trip__details {
+  margin: 0;
 }
