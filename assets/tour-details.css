@@ -50,9 +50,23 @@
 }
 
 @media only screen and (min-width: 768px) {
+  
   .tour__details--wrap .trip__details {
     display: grid;
     grid-template-columns: 1fr 0.91182fr;
     column-gap: 42px;
   }
+  
 }
+
+@media only screen and (max-width: 767px) {
+
+  .tour__details--wrap .trip__image--with-content {
+    padding: 17px 0 0;
+  }
+  
+}
+
+
+
+
