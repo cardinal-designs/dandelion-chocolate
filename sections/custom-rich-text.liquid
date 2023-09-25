@@ -56,7 +56,7 @@
               {% if block.settings.text_mobile != blank %}
                 <div class="custom__description rte {{ block.settings.size }} hide-desktop" {{ block.shopify_attributes }}>{{ block.settings.text_mobile }}</div>
               {% else %}
-                <div class="custom__description rte {{ block.settings.size }} hide-mobile" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                <div class="custom__description rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
               {% endif %}
         
             {%- when 'button' -%}
@@ -388,8 +388,7 @@
           {
             "type": "richtext",
             "id": "text_mobile",
-            "label": "Mobile Content",
-            "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "label": "Mobile Content"
           },
           {
             "type": "select",
