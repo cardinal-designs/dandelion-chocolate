@@ -265,6 +265,14 @@
     column-gap: 24px;
     row-gap: 24px;
   }
+
+  .virtual__events--wrap .details-heading, 
+  .virtual__events--wrap .details-content-text, 
+  .virtual__events--wrap .details-content-text p {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+  }
   
 }
 
@@ -326,14 +334,6 @@
     column-gap: 20px;
     justify-content: flex-start;
     padding: 13px 0 15px;
-  }
-
-  .virtual__events--wrap .details-heading, 
-  .virtual__events--wrap .details-content-text, 
-  .virtual__events--wrap .details-content-text p {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.1em;
   }
 
   .virtual__events--wrap .detail_row--item {
