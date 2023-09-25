@@ -150,6 +150,7 @@
 
   .virtual__events--wrap .step__text {
     padding: 0 15px;
+    margin-top: 16px;
   }
 
   .event__item .count:before,
