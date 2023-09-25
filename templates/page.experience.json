@@ -624,7 +624,7 @@
         "show_group_size": true,
         "show_date_requested": true,
         "top_spacing_desktop": 40,
-        "bottom_spacing_desktop": 40,
+        "bottom_spacing_desktop": 64,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
