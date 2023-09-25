@@ -127,6 +127,12 @@
     text-align: left;
   }
 
+  .classes__events--wrap .block__header .heading {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+  }
+
   .classes__events--wrap .section__description {
     font-size: 20px;
     line-height: 30px;
