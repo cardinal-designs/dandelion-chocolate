@@ -121,6 +121,10 @@
   .product__list--wrap .block__buttons a {
     font-size: 12px;
   }
+
+  .product__items--wrap {
+    column-gap: 20px;
+  }
   
 }
 
