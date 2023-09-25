@@ -123,13 +123,13 @@
   {% if section.settings.show_caption_box %}
     
   .custom__image--overlay .image-with-text-overlay--content {
-    background: {{ section.settings.mobile_caption_bg }};
+    background: {{ section.settings.mobile_caption_bg }} !important;
   }
 
   @media only screen and (min-width:768px) {
     
     .image-with-text-overlay-caption--box {
-      background: {{ section.settings.caption_bg }};
+      background: {{ section.settings.caption_bg }} !important; 
     }
     
   }
