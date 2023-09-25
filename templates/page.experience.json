@@ -404,8 +404,8 @@
         "color_text_icon": "#53595c",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 100,
-        "top_spacing_mobile": 40,
-        "bottom_spacing_mobile": 40
+        "top_spacing_mobile": 32,
+        "bottom_spacing_mobile": 26
       }
     },
     "1a35a150-8134-4c0b-a964-d99346503ff1": {
