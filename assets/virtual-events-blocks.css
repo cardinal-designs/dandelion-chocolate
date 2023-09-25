@@ -348,6 +348,7 @@
 
   .virtual__events--wrap .section__footer {
     margin-top: 28px;
+    padding: 0 20px;
   }
 
   .virtual__events--wrap .btn {
