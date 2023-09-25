@@ -63,6 +63,14 @@
   color: #fff;
 }
 
+.experience__contact-form .section-header--content h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+
 .experience__contact-form .field textarea {
   margin-bottom: 12px;
 }
