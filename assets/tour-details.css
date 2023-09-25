@@ -59,6 +59,14 @@
   
 }
 
+@media only screen and (max-width: 1199px) {
+
+  .tour__details--wrap .trip__details {
+    column-gap: 20px;
+  }
+  
+}
+
 @media only screen and (max-width: 1067px) {
 
   .tour__details--wrap .trip__image--with-content {
@@ -70,10 +78,6 @@
     line-height: 37px;
     letter-spacing: 0.05em;
     text-align: center;
-  }
-
-  .tour__details--wrap .trip__details {
-    column-gap: 20px;
   }
 
   .tour__details--wrap .trip__details-content-inner * {
