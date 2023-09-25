@@ -357,6 +357,11 @@
   .virtual__events--wrap .link__wrap {
     margin: 0;
   }
+
+  .virtual__events--wrap .link__wrap a {
+    margin-top: 9px;
+    display: block;
+  }
   
 }
 
