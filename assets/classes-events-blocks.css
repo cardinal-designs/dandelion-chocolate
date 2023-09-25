@@ -200,6 +200,7 @@
 
   .classes__events--wrap .btn {
     padding: 17px 20px 13px!important;
+    max-height: 46px;
   }
 
   .classes__events--wrap .btn.btn--white {
