@@ -150,6 +150,10 @@
     letter-spacing: 0.1em;
   }
 
+}
+
+@media screen and (max-width: 880px) { 
+
   .classes__events--wrap .icon__row--wrap {
     column-gap: 10px;
   }
