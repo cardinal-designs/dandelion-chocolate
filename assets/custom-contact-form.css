@@ -63,6 +63,10 @@
   color: #fff;
 }
 
+.experience__contact-form .field textarea {
+  margin-bottom: 12px;
+}
+
 @media only screen and (max-width: 767px) {
   
   .custom__contact-form .section-header--content h2 {
