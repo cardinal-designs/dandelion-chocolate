@@ -22,6 +22,7 @@
 
 .tour__details--wrap .trip__details {
   align-items: flex-start;
+  margin: 0;
 }
 
 .tour__details--wrap .icon__row--wrap {
@@ -30,10 +31,6 @@
 
 .tour__details--wrap  .image-with-text-overlay--content-inner.content-width-large {
   max-width: 800px;
-}
-
-.tour__details--wrap .trip__details {
-  margin: 0;
 }
 
 .tour__details--wrap .custom__heading {
@@ -45,4 +42,11 @@
 
 .tour__details--wrap .trip__details-content-inner * {
   letter-spacing: 0.1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .tour__details--wrap .trip__details {
+    display: grid;
+    grid-template-columns: 1fr 0.91182fr;
+  }
 }
