@@ -65,6 +65,7 @@
   .template-page-experience .rich__text--2 .custom__description * {
     font-size: 18px;
     line-height: 27px;
+    letter-spacing: normal;
   }
   
 }
