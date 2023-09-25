@@ -10,6 +10,7 @@
 
 .custom__image--overlay .image-with-text-overlay--content-inner.content-width-large {
   max-width: 800px;
+  background: transparent !important;
 }
 
 .custom__image--overlay .image-with-text-overlay--content .rte {
