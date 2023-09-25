@@ -1300,7 +1300,6 @@ heightwidthauto {
 
 .icon__row--wrap {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 22px;
   row-gap: 22px;
   border-bottom: 1px solid #333;
