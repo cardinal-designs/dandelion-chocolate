@@ -90,6 +90,10 @@
 
 .classes__events--wrap .block__header .heading {
   margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0.1em;
 }
 
 
