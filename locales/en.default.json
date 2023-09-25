@@ -145,6 +145,15 @@
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window"
     },
+    "giftcard": {
+      "email-immediate": "Email gift cards are delivered immediately upon checkout.",
+      "to": "To",
+      "to_placeholder": "Recipient email",
+      "note": "Message",
+      "note_placeholder": "Your gift message (500 character max)",
+      "from": "From",
+      "from_placeholder": "Your name"
+    },
     "facets": {
       "apply": "Apply",
       "clear": "Clear",
