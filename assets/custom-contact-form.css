@@ -93,7 +93,7 @@ input::-webkit-clear-button {
 }
 
 input::-webkit-calendar-picker-indicator {
-  color: red;
+  background: red;
   opacity: 1
 }
 
