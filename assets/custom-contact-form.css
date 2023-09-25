@@ -87,8 +87,16 @@
   text-align: center;
 }
 
-.experience__contact-form input::-webkit-calendar-picker-indicator {
-  color: #fff;
+input::-webkit-calendar-picker-indicator::after {
+  content: '';
+  display: block;
+  background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-08-512.png) no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -16px;
 }
 
 @media only screen and (max-width: 767px) {
