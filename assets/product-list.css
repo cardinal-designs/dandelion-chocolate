@@ -155,15 +155,6 @@
   .product__list--wrap .block__buttons a {
     font-size: 10px;
   }
-  
-}
-
-@media only screen and (max-width: 767px) {
-  
-  .product__items--wrap {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
 
   .product__list--wrap .block__buttons {
     row-gap: 12px;
@@ -174,6 +165,15 @@
   .product__list--wrap .block__buttons a {
     flex: 0 1 100%;
     font-size: 14px;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .product__items--wrap {
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
 
   .product__list--wrap .block__description {
