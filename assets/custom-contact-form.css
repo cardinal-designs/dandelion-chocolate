@@ -87,6 +87,10 @@
   text-align: center;
 }
 
+.experience__contact-form input::-webkit-calendar-picker-indicator {
+  color: #fff;
+}
+
 @media only screen and (max-width: 767px) {
   
   .custom__contact-form .section-header--content h2 {
