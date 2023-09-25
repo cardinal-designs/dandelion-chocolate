@@ -430,7 +430,7 @@
           "type": "button",
           "settings": {
             "link_label": "CONTACT US",
-            "link": "",
+            "link": "https:\/\/store.dandelionchocolate.com\/pages\/contact",
             "button_style": "btn--gold"
           }
         }
