@@ -422,6 +422,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Our classes, tastings, and events may be tailored into private, off-site experiences at your request. Please contact us to design your special experience.  <br\/><\/p>",
+            "text_mobile": "<p>All of our classes, tastings, and tours can be made into private off-site experiences at your request. Contact us to curate your experience.  <\/p>",
             "size": "text-size-regular"
           }
         },
