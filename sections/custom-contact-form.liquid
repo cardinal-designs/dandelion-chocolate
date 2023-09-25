@@ -2,8 +2,6 @@
   assign section_heading = section.settings.heading
   assign section_description = section.settings.description
   assign show_phone_number = section.settings.show_phone_number
-  assign show_group_size = section.settings.show_group_size
-  assign show_date_requested = section.settings.show_date_requested
   assign disable_top_spacing = section.settings.disable_top_spacing
   assign disable_bottom_spacing = section.settings.disable_bottom_spacing
   assign text_blocks = section.blocks | where: 'type', 'text'
@@ -75,34 +73,6 @@
             </div>
           </div>
         {%- endif -%}
-        {% if show_group_size %}
-        <div class="small-12 medium-6 columns">
-          <div class="field">
-            <label for="ContactFormPhone">{{ 'sections.contact.form.group_size' | t }}</label>          
-            <input
-              type="tel"
-              id="ContactFormGroupSize"
-              name="contact[group_size]"
-              class="full"
-              placeholder="{{ 'sections.contact.form.group_size' | t | escape }}"
-            >
-          </div>
-        </div>
-        {% endif %}
-        {% if show_date_requested %}
-        <div class="small-12 medium-6 columns">
-            <div class="field">
-              <label for="ContactFormDate">{{ 'sections.contact.form.date' | t }}</label>          
-              <input
-                type="date"
-                id="ContactFormDate"
-                name="contact[date]"
-                class="full"
-                placeholder="{{ 'sections.contact.form.date' | t | escape }}"
-              >
-            </div>
-          </div>
-        {% endif %}
         {%- for block in section.blocks -%}
           {%- liquid
             assign field_title = block.settings.title
@@ -259,18 +229,6 @@
         "id": "show_phone_number",
         "default": true,
         "label": "Show phone number"
-    },
-    {
-        "type": "checkbox",
-        "id": "show_group_size",
-        "default": true,
-        "label": "Show Group Size"
-    },
-    {
-        "type": "checkbox",
-        "id": "show_date_requested",
-        "default": true,
-        "label": "Show Date Requested"
     },
     {
       "type": "header",
