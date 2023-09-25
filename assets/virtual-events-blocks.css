@@ -287,6 +287,10 @@
   .virtual__events--wrap .block__items--wrap {
     column-gap: 10px;
   }
+
+  .virtual__events--wrap .icon__row--wrap .icon_items {
+    flex: 1;
+  }
   
 }
 
