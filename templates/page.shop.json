@@ -64,6 +64,69 @@
         "disable_bottom_spacing": true
       }
     },
+    "485c4745-3f2d-40d0-b235-4fb67da08280": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "63f6ee05-833c-4d92-8f36-68a5a4aaba64": {
+          "type": "subheading",
+          "settings": {
+            "text": "",
+            "subheading_color": "#d3a741"
+          }
+        },
+        "a3900c75-2989-470e-8780-e6951ed90bb3": {
+          "type": "heading",
+          "settings": {
+            "text": "Chocolate-Dipped Fig Truffles",
+            "heading_size": "h2",
+            "heading_color": "#333333"
+          }
+        },
+        "9dab5d34-c2e5-462d-9a1c-fed7fedd33f0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The figs are stuffed with creamy Camino Verde, Ecuador chocolate ganache infused with flavorful single-origin spices. Each dark-purplish, honey-flavored fig is then dipped in 70% Camino Verde, Ecuador chocolate, and garnished with edible gold leaf.<\/p>",
+            "description_size": "body-1",
+            "description_color": "#333333"
+          }
+        },
+        "88498ff6-7e62-4b55-b3e1-1da0541ded48": {
+          "type": "button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_link": "shopify:\/\/products\/chocolate-dipped-fig-truffles",
+            "button_style": "btn--gold",
+            "mobile_button_style": "btn--gold"
+          }
+        }
+      },
+      "block_order": [
+        "63f6ee05-833c-4d92-8f36-68a5a4aaba64",
+        "a3900c75-2989-470e-8780-e6951ed90bb3",
+        "9dab5d34-c2e5-462d-9a1c-fed7fedd33f0",
+        "88498ff6-7e62-4b55-b3e1-1da0541ded48"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image_url": true,
+        "image": "shopify:\/\/shop_images\/figs_desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/figs_mobile.jpg",
+        "desktop_height": "desktop-height-500",
+        "mobile_height": "mobile-height-635",
+        "content_width": "medium",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "overlay_opacity": 33,
+        "show_caption_box": true,
+        "caption_over_banner": true,
+        "caption_bg": "#fff",
+        "mobile_caption_bg": "#F5F6F5",
+        "stack_on_mobile": false,
+        "content__bg": "#333333",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "82e29b78-d5f5-4844-8417-2abc961b672a": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -107,6 +170,7 @@
         "1c54a7df-956d-4754-add0-db32fb0b4e9e",
         "4af6929c-0254-43be-b8ac-6f6f24e2709f"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
@@ -1035,6 +1099,7 @@
   },
   "order": [
     "2a732536-248e-4bfc-bf69-56eb0774b4df",
+    "485c4745-3f2d-40d0-b235-4fb67da08280",
     "82e29b78-d5f5-4844-8417-2abc961b672a",
     "f72cb3d9-4d68-4827-b7a3-beff27085607",
     "23f32bf8-b73d-4eef-9e20-5f299f6c3c2e",
