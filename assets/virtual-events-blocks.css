@@ -138,6 +138,10 @@
  margin-bottom: 40px; 
 }
 
+.virtual__events--wrap  .block__description {
+  padding-bottom: 20px;
+}
+
 @media screen and (max-width: 767px) {  
 
   .virtual__events--wrap .step__text {
