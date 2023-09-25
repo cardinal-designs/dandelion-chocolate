@@ -140,6 +140,14 @@
     grid-template-columns: 1fr;
     row-gap: 8px;
   }
+
+  .classes__events--wrap .details-heading, 
+  .classes__events--wrap .details-content-text, 
+  .classes__events--wrap .details-content-text p {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+  }
   
 }
 
@@ -175,14 +183,6 @@
   .classes__events--wrap .icon__row--wrap {
     justify-content: flex-start;
     padding: 13px 0 15px;
-  }
-
-  .classes__events--wrap .details-heading, 
-  .classes__events--wrap .details-content-text, 
-  .classes__events--wrap .details-content-text p {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.1em;
   }
 
   .classes__events--wrap .detail_row--item {
