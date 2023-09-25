@@ -262,13 +262,17 @@
 @media screen and (max-width: 1067px) { 
 
   .virtual__events--wrap .block__items--wrap {
-    grid-template-columns: 1fr;
+    column-gap: 24px;
     row-gap: 24px;
   }
   
 }
 
 @media screen and (max-width: 767px) {  
+
+  .virtual__events--wrap .block__items--wrap {
+    grid-template-columns: 1fr;
+  }
 
   .virtual__events--wrap .step__text {
     padding: 0 15px;
