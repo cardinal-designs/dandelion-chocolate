@@ -208,5 +208,9 @@
     line-height: 30px;
   }
 
+  .product__list--header {
+    margin: 0 auto 28px;
+  }
+
 }
 
