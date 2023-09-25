@@ -73,15 +73,27 @@
             </div>
           </div>
         {%- endif -%}
-          <div class="small-12 medium-6 columns">
+        <div class="small-12 medium-6 columns">
+          <div class="field">
+            <label for="ContactFormPhone">{{ 'sections.contact.form.group_size' | t }}</label>          
+            <input
+              type="tel"
+              id="ContactFormGroupSize"
+              name="contact[group_size]"
+              class="full"
+              placeholder="{{ 'sections.contact.form.group_size' | t | escape }}"
+            >
+          </div>
+        </div>
+        <div class="small-12 medium-6 columns">
             <div class="field">
-              <label for="ContactFormPhone">{{ 'sections.contact.form.group_size' | t }}</label>          
+              <label for="ContactFormDate">{{ 'sections.contact.form.date' | t }}</label>          
               <input
                 type="tel"
-                id="ContactFormGroupSize"
-                name="contact[group_size]"
+                id="ContactFormDate"
+                name="contact[date]"
                 class="full"
-                placeholder="{{ 'sections.contact.form.group_size' | t | escape }}"
+                placeholder="{{ 'sections.contact.form.date' | t | escape }}"
               >
             </div>
           </div>
