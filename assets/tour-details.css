@@ -10,10 +10,6 @@
   min-width: auto;
 }
 
-.tour__details--wrap .trip__details-content-text {
-  max-width: 57%;
-}
-
 .tour__details--wrap .trip__image--with--content-inner .rte {
   padding: 26px 0;
   border-bottom: 1px solid #333;
