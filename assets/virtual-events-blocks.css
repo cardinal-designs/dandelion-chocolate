@@ -352,6 +352,13 @@
 
   .virtual__events--wrap .btn {
     padding: 17px 20px 9px!important;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {  
+
+  .virtual__events--wrap .btn {
     width: 100%;
   }
   
