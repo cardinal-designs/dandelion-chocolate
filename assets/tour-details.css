@@ -7,14 +7,17 @@
   display: flex;
   column-gap: 15px;
   margin-top: 19px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .tour__details--wrap .btn {
   border-radius: 6px;
   flex: 1;
   min-width: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 14px 10px 10px !important;
+  min-height: auto;
+  line-height: 1;
 }
 
 .tour__details--wrap .trip__image--with--content-inner .rte {
