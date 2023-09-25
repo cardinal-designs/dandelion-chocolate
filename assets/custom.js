@@ -15,7 +15,8 @@ $(window).on("load resize orientationchange", function(){
       pageDots: false,
       adaptiveHeight: false,
       contain: true,
-      wrapAround: true
+      wrapAround: true,
+      groupCells: true
     });
   }
 });  
@@ -474,3 +475,96 @@ $(document).ready(function() {
   $('.product-variants').after('<div class="trip__cart-btn"><button class="product-submit custom__btn">RESERVE YOUR SPOT</button></div>')
   
 });
+
+document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
+  ele.addEventListener('click',function(el){
+    let Id = el.currentTarget.getAttribute('data-col-Id'),
+        sectionId = document.querySelector(`[id="${Id}"]`);
+    window.scroll({
+      top: sectionId.offsetTop - 72,
+      behavior: "smooth",
+    });
+  })
+
+  if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
+});
+
+$(document).ready(function () {
+
+  /*
+  Reference: http://jsfiddle.net/BB3JK/47/
+  */
+  
+  $('.product-information--inner .product-form__input select').each(function(){
+      var $this = $(this), numberOfOptions = $(this).children('option').length;
+    
+      $this.addClass('select-hidden'); 
+      $this.wrap('<div class="select"></div>');
+      $this.after('<div class="select-styled"></div>');
+  
+      var $styledSelect = $this.next('div.select-styled');
+      $styledSelect.text($this.children('option').eq(0).text());
+    
+      var $list = $('<ul />', {
+          'class': 'select-options'
+      }).insertAfter($styledSelect);
+    
+      for (var i = 0; i < numberOfOptions; i++) {
+          $('<li />', {
+              text: $this.children('option').eq(i).text(),
+              rel: $this.children('option').eq(i).val()
+          }).appendTo($list);
+          if ($this.children('option').eq(i).is(':selected')){
+            $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+          }
+      }
+    
+      var $listItems = $list.children('li');
+    
+      $styledSelect.click(function(e) {
+          e.stopPropagation();
+          $('div.select-styled.active').not(this).each(function(){
+              $(this).removeClass('active').next('ul.select-options').hide();
+          });
+          $(this).toggleClass('active').next('ul.select-options').toggle();
+      });
+    
+     $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('active');
+        var selectElement = $this[0];
+    selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
+    
+    // Dispatch the 'change' event on the select element
+    var changeEvent = new Event('change', { bubbles: true });
+    selectElement.dispatchEvent(changeEvent);
+
+       
+        $list.find('li.is-selected').removeClass('is-selected');
+        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+        $list.hide();
+        console.log($this.find('option[value="'+$(this).attr('rel')+'"]'));
+      });
+
+    
+      $(document).click(function() {
+          $styledSelect.removeClass('active');
+          $list.hide();
+      });
+  
+  });
+
+  var productsLength = $('.template-search #product-grid .column:visible').length;
+  var hiddenProducts = $('.hide-search').length;
+  if(productsLength && hiddenProducts){
+    $('.facets__label').text(productsLength+ " Results")
+  }
+})
+
+

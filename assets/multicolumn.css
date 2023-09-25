@@ -225,11 +225,20 @@
   }
 
   .multicolumn__2 .mobile__swiper .multicolumn__column {
-    width: 100%;    
+    width: 80%;
+    margin-right: 20px;
+  }
+
+  .multicolumn.multicolumn__2 .row {
+    padding-right: 0;
   }
 
   .multicolumn__2 .heading {
     margin-bottom: 12px;
+  }
+
+  .multicolumn__2 .flickity-slider {
+    margin-left: -20px; 
   }
   
 }

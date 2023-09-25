@@ -53,13 +53,25 @@
                     </div>
                   </a>
                 </div>
+                
                 <div class="product-cart-item-info">
-    
-                  {% if item.product.metafields.info.product_type != blank %}   
-                    <div class="card__type">
-                      {{ item.product.metafields.info.product_type }}
-                    </div>       
-                  {% endif %}     
+                
+                {% assign product_info = item.product.metafields.info %}        
+                {% assign is_chocolate_bar = false %}
+                {% if item.product.type and item.product.type == 'Chocolate Bar' %}
+                  {% assign is_chocolate_bar = true %}
+                {% endif %}
+                {% if item.product and item.product.type != 'Chocolate Bar' %}        
+                  <div class="card__type">{{ item.product.type }}
+                    {% unless is_chocolate_bar %}
+                      {% if product_info.percentage %}
+                      - {{ product_info.percentage }}%
+                      {% endif %}
+                    {% endunless %}
+                  </div>       
+                {%- elsif product.metafields.info.product_type != blank -%}
+                  <p class="card__type">{{ product.metafields.info.product_type }}</p> 
+                {% endif %}      
  
                   <a
                     href="{{ item.url }}"
@@ -114,7 +126,7 @@
                   {% unless item.variant.title contains 'Default' %}
                     <div class="product-cart-item-options">
                       {% for option in item.product.options %}
-                        {{ item.variant.options[forloop.index0] }}{% if forloop.last != true %},
+                        <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] }} {% if option == 'Size' and item.variant.metafields.custom.variant_subtitle != blank %}<span class="variant__info">({{ item.variant.metafields.custom.variant_subtitle }})</span>{% endif %} {% if forloop.last != true %},
                         {% endif %}
                       {% endfor %}
                     </div>

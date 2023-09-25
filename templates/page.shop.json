@@ -45,6 +45,7 @@
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2",
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
@@ -55,7 +56,70 @@
         "content_width": "medium",
         "content_position": "middle-left",
         "text_alignment": "left",
-        "overlay_opacity": 30,
+        "overlay_opacity": 33,
+        "show_caption_box": true,
+        "caption_over_banner": true,
+        "caption_bg": "#fff",
+        "mobile_caption_bg": "#F5F6F5",
+        "stack_on_mobile": false,
+        "content__bg": "#333333",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "485c4745-3f2d-40d0-b235-4fb67da08280": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "63f6ee05-833c-4d92-8f36-68a5a4aaba64": {
+          "type": "subheading",
+          "settings": {
+            "text": "",
+            "subheading_color": "#d3a741"
+          }
+        },
+        "a3900c75-2989-470e-8780-e6951ed90bb3": {
+          "type": "heading",
+          "settings": {
+            "text": "Chocolate-Dipped Fig Truffles",
+            "heading_size": "h2",
+            "heading_color": "#333333"
+          }
+        },
+        "9dab5d34-c2e5-462d-9a1c-fed7fedd33f0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The figs are stuffed with creamy Camino Verde, Ecuador chocolate ganache infused with flavorful single-origin spices. Each dark-purplish, honey-flavored fig is then dipped in 70% Camino Verde, Ecuador chocolate, and garnished with edible gold leaf.<\/p>",
+            "description_size": "body-1",
+            "description_color": "#333333"
+          }
+        },
+        "88498ff6-7e62-4b55-b3e1-1da0541ded48": {
+          "type": "button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_link": "shopify:\/\/products\/chocolate-dipped-fig-truffles",
+            "button_style": "btn--gold",
+            "mobile_button_style": "btn--gold"
+          }
+        }
+      },
+      "block_order": [
+        "63f6ee05-833c-4d92-8f36-68a5a4aaba64",
+        "a3900c75-2989-470e-8780-e6951ed90bb3",
+        "9dab5d34-c2e5-462d-9a1c-fed7fedd33f0",
+        "88498ff6-7e62-4b55-b3e1-1da0541ded48"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image_url": true,
+        "image": "shopify:\/\/shop_images\/figs_desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/figs_mobile.jpg",
+        "desktop_height": "desktop-height-500",
+        "mobile_height": "mobile-height-635",
+        "content_width": "medium",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "overlay_opacity": 31,
         "show_caption_box": true,
         "caption_over_banner": true,
         "caption_bg": "#FFFFFFF2",
@@ -72,6 +136,7 @@
       "blocks": {
         "69477bf6-7c61-4feb-b9a2-00992fbb7f42": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "FRESHLY BAKED",
             "subheading_color": "#d3a741",
@@ -81,7 +146,7 @@
         "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3": {
           "type": "heading",
           "settings": {
-            "text": "Summer Treat Tin",
+            "text": "Halva Bonbons",
             "heading_size": "h1",
             "heading_color": "#333333",
             "heading_color_mobile": "#333333"
@@ -90,7 +155,7 @@
         "1c54a7df-956d-4754-add0-db32fb0b4e9e": {
           "type": "text",
           "settings": {
-            "text": "<p>Featuring freshly baked fudgy brownies, Miso Blondies, and chocolate-and-vanilla Cookies & Cream Sandwiches, this collection inlcludes Chef Lisa's versions of time-honored treats in a custom-designed, take-anywhere Summer Treat Tin.<\/p>",
+            "text": "<p>Hand-crafted Seed + Mill sesame-seed halva tops velvety, cardamom-scented 70% Tumaco, Colombia chocolate ganache — all enrobed in Dandelion 70% House Blend chocolate, and finished with edible gold foil.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
             "description_color_mobile": "#333333"
@@ -100,8 +165,8 @@
           "type": "button",
           "settings": {
             "button_text": "Learn More",
-            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/summer-treat-tin",
-            "button_style": "btn--gold",
+            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/halva-bonbons",
+            "button_style": "btn--white",
             "mobile_button_style": "btn--gold"
           }
         }
@@ -116,17 +181,17 @@
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
-        "image": "shopify:\/\/shop_images\/STT_Banner_Image_9059ded3-d1fe-422e-8126-5796283049de.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Summer_Treats_Tin_-_Kitchen_-_Dandelion_Chocolate_2023.jpg",
+        "image": "shopify:\/\/shop_images\/Halva_Hero_bg.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Halva_Hero_mobile.jpg",
         "desktop_height": "desktop-height-500",
         "mobile_height": "mobile-height-635",
         "content_width": "medium",
         "content_position": "middle-left",
         "text_alignment": "left",
-        "overlay_opacity": 30,
+        "overlay_opacity": 0,
         "show_caption_box": true,
         "caption_over_banner": true,
-        "caption_bg": "#FFFFFFF2",
+        "caption_bg": "rgba(0,0,0,0)",
         "mobile_caption_bg": "#F5F6F5",
         "stack_on_mobile": false,
         "content__bg": "#333333",
@@ -138,28 +203,17 @@
     "f72cb3d9-4d68-4827-b7a3-beff27085607": {
       "type": "hero-section",
       "blocks": {
-        "21faf7fa-d9bb-426c-8bf5-6bd59841c49b": {
-          "type": "breadcrumb",
-          "settings": {
-          }
-        },
-        "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "A LIMITED-EDITION MOTHER’S DAY EXCLUSIVE"
-          }
-        },
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-1": {
           "type": "heading",
           "settings": {
-            "text": "Four-Ingredient  Tokyo GÂteau",
+            "text": "Chocolate-Dipped Fig Truffles",
             "heading_size": "h1"
           }
         },
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Created by Chef Mai and flown every spring directly from our kitchen <br\/>in Tokyo, in time for Mother’s Day. Created by Chef Mai and flown <br\/>every spring directly from our kitchen in Tokyo, in time for Mother’s <br\/>Day.<br\/><\/p>"
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra vitae congue eu consequat ac felis. Sollicitudin aliquam ultrices sagittis orci. <\/p>"
           }
         },
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-3": {
@@ -170,25 +224,12 @@
             "button_style": "btn--gold",
             "mobile_button_style": "btn--gold"
           }
-        },
-        "421fcbdc-d6db-4fcd-95f5-59c81d00517b": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "btn--outline",
-            "mobile_button_style": "btn--gold"
-          }
         }
       },
       "block_order": [
-        "21faf7fa-d9bb-426c-8bf5-6bd59841c49b",
-        "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-0",
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-1",
         "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-2",
-        "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-3",
-        "421fcbdc-d6db-4fcd-95f5-59c81d00517b"
+        "template--14864636575818__f72cb3d9-4d68-4827-b7a3-beff27085607-16853653111f3cc3b7-3"
       ],
       "disabled": true,
       "settings": {
@@ -200,76 +241,6 @@
         "mobile_height": "mobile-height-400",
         "content_width": "medium",
         "content_position": "middle-left",
-        "text_alignment": "left",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "9030161c-4222-47f2-8b32-ad7222b9b6f6": {
-      "type": "hero-section",
-      "blocks": {
-        "69e61948-4711-4254-adb8-1a48bbf02ffc": {
-          "type": "breadcrumb",
-          "settings": {
-          }
-        },
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "A LIMITED-EDITION MOTHER’S DAY EXCLUSIVE"
-          }
-        },
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-1": {
-          "type": "heading",
-          "settings": {
-            "text": "FouR-Ingredient  <br>Tokyo GÂteau",
-            "heading_size": "h2"
-          }
-        },
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Created by Chef Mai and flown every spring directly from our kitchen <br\/>in Tokyo, in time for Mother’s Day. Created by Chef Mai and flown <br\/>every spring directly from our kitchen in Tokyo, in time for Mother’s <br\/>Day.<br\/><\/p>"
-          }
-        },
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-3": {
-          "type": "button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "btn--outline",
-            "mobile_button_style": "btn--gold"
-          }
-        },
-        "6155959b-c5cd-43e9-aac4-9286c777d4d7": {
-          "type": "button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_link": "",
-            "button_style": "btn--outline",
-            "mobile_button_style": "btn--gold"
-          }
-        }
-      },
-      "block_order": [
-        "69e61948-4711-4254-adb8-1a48bbf02ffc",
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-0",
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-1",
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-2",
-        "template--14864636575818__9030161c-4222-47f2-8b32-ad7222b9b6f6-16851041488f3d8eb3-3",
-        "6155959b-c5cd-43e9-aac4-9286c777d4d7"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_width": "grid",
-        "image": "shopify:\/\/shop_images\/Shop-Banner-Image-2.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Shop-Banner-Mobile.jpg",
-        "image_parallax": false,
-        "desktop_height": "desktop-height-520",
-        "mobile_height": "mobile-height-400",
-        "content_width": "medium",
-        "content_position": "middle-right",
         "text_alignment": "left",
         "overlay_opacity": 0,
         "disable_top_spacing": true,
@@ -1105,9 +1076,9 @@
   },
   "order": [
     "2a732536-248e-4bfc-bf69-56eb0774b4df",
+    "485c4745-3f2d-40d0-b235-4fb67da08280",
     "82e29b78-d5f5-4844-8417-2abc961b672a",
     "f72cb3d9-4d68-4827-b7a3-beff27085607",
-    "9030161c-4222-47f2-8b32-ad7222b9b6f6",
     "23f32bf8-b73d-4eef-9e20-5f299f6c3c2e",
     "0fc540a0-78fa-4cd0-b59c-fd5c3cb2ebbe",
     "3a9ad542-713f-46b0-898c-18c8b4ae6799",

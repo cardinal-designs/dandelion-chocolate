@@ -5,7 +5,7 @@
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
 -%}
 
-<section class="carousel__quotes--wrapper" style="background-color: {{ section.settings.section_bg }}">
+<section class="carousel__quotes--wrapper {% unless section.settings.show_arrows_desktop %} hide__arrows-desktop{% endunless %} {% unless section.settings.show_arrows_mobile %} hide__arrows-mobile{% endunless %}" style="background-color: {{ section.settings.section_bg }}">
   <div class="row section-spacing{% if disable_top_spacing %}section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
     <div class="carousel__quotes--inner carousel__type--{{ section.settings.carousel_type }} carousel__align--{{ section.settings.carousel_alignment }}">
       {% for block in section.blocks %}
@@ -14,7 +14,7 @@
             {% if block.settings.logo != blank %}
               <div class="carousel__logo">
                 {{ block.settings.logo | image_url:width:original | image_tag }}
-              </div>
+              </div>           
             {% endif %}
           
             {% if block.settings.quotes != blank %}
@@ -28,7 +28,7 @@
                 {% if block.settings.author_logo != blank %}
                   {{ block.settings.author_logo | image_url:width:original | image_tag }}
                 {% else %}
-                  {{ block.settings.author }}
+                  <p class="caption">{{ block.settings.author }}</p>
                 {% endif %}
               </div>
             {% endunless %}
@@ -36,8 +36,11 @@
         </div>
       {% endfor %}
     </div>
-    <div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
-    <div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+
+    {%- if section.settings.show_arrows -%}
+      <div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+      <div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+    {%- endif -%}
   </div>
 </section>
 
@@ -94,6 +97,18 @@
         "id": "autoplay",
         "label": "Autoplay",
         "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_arrows_desktop",
+        "label": "Show Arrows Desktop",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_arrows_mobile",
+        "label": "Show Arrows Mobile",
+        "default": false
       },
       {
         "type": "text",

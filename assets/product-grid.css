@@ -144,11 +144,11 @@
 }
 
 .chocolate-bars .product-card .product-featured-image {
-  padding: 60px 0;
+  padding: 0;
 }
 
 .chocolate-bars .product-card .product-featured-image-link {
-  padding-bottom: 112%;
+  padding-bottom: 100%;
 }
 
 .chocolate-bars .product-card .product-featured-image-link img {

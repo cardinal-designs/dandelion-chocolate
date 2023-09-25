@@ -496,5 +496,9 @@
     width: 19px;
     height: 12px;
   }
+
+  .navigation__link {
+    font-size: 12px !important;
+  }
   
 }

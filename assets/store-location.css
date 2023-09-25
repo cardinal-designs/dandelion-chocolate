@@ -223,9 +223,11 @@
   .store__location--wrapper .content__right {
     padding: 10px 16px 0;
   }
+
+  .location__name,
+  .location__name p {
+    font-size: 28px;
+    line-height: 32px;
+  }
   
 }
-
-
-
-

@@ -874,20 +874,20 @@
 
 .product-add-to-cart-sticky {
   position: fixed;
-  bottom: 15px;
+  bottom: 27px;
   right: 15px;
   width: calc(100% - 30px);
   max-width: 532px;
   z-index: 31;
   background: var(--bg-body);
-  padding: 23px 25px;
+  padding: 21px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   transform: translateX(calc(100% + 50px)); }
   .product-add-to-cart-sticky.sticky--visible {
     transform: translateX(0%); }
   @media only screen and (min-width: 768px) {
     .product-add-to-cart-sticky {
-      bottom: 30px;
+      bottom: 110px;
       right: 30px; } }
   .product-add-to-cart-sticky--image {
     width: 48px;
@@ -934,7 +934,7 @@
       transform: rotateZ(90deg); }
   .product-add-to-cart-sticky--content {
     overflow: hidden;
-    padding-top: 11px; }
+    padding-top: 13px; }
     .product-add-to-cart-sticky--content.active {
       display: block; }
   .product-add-to-cart-sticky .product-form .add_to_cart_holder {
@@ -950,6 +950,10 @@
   text-transform: capitalize;
   font-size: 16px;
   font-weight: 400;
+}
+
+.product-add-to-cart-sticky--inner .product__detail .micro__info {
+  margin-bottom: 4px;
 }
 
 .safari__specific--css .product-add-to-cart-sticky--inner .product__detail { 
@@ -1711,8 +1715,8 @@ quantity-selector.quantity .plus svg {
 
 .chocolate__bar-product .product-add-to-cart-sticky--image {
   background-color: #F5F6F5;
-  width: 123px;
-  height: 123px;
+  width: 83px;
+  height: 83px;
   display: flex;
   align-items: center;
 }
@@ -1722,30 +1726,32 @@ quantity-selector.quantity .plus svg {
 }
 
 .chocolate__bar-product .product-add-to-cart-sticky--info {
-  flex: 0 0 calc(100% - 139px);
+  flex: 0 0 calc(100% - 99px);
 }
 
 .product-title-uppercase-true .product-add-to-cart-sticky--title {
   font-family: Garamond Premiere Pro;
   font-size: 24px;
+  line-height: 28px;
   font-weight: 400;
+  letter-spacing: normal;
 }
 
 .product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title {
-  font-family: OPTICaslonBold-Cond;
-  text-transform: uppercase;
+  text-transform: inherit;
   font-size: 20px;
-  line-height: 24px;
-  letter-spacing: .04em;
+  line-height: 22px;
+  letter-spacing: normal;
 }
 
 .product-add-to-cart-sticky--info .new-percentage {
-  margin-bottom: 2px;
-  font-size: 12px;
-  line-height: 14px;
-  color: #777779;
+  margin-bottom: 5px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #53595c;
   font-family: Saa Series F D;
   letter-spacing: .15em;
+  display: block;
 }
 
 .product-add-to-cart-sticky--info .price {
@@ -1935,6 +1941,9 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   font-size: 16px;
   font-family: 'Garamond';
   border-color: #cccccc;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='7' viewBox='0 0 16 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.999939L7.87508 5.99994L14.75 0.999939' stroke='%23333333' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
 }
 
 .template-product .rebuy-product-title {
@@ -2059,6 +2068,119 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   line-height: 1;
 }
 
+.variations .select-styled {
+  border: 1px solid var(--color-form-border);
+  padding: 14px 17px 14px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  background: transparent;
+  max-width: 100%;
+  border-radius: 0;
+  cursor: pointer;
+  font-family: 'Garamond Premiere Pro';
+  color: #333333;
+}
+
+.product-information .variations select {
+  display: none;
+}
+
+.product-information .variations .select-styled.active {
+  border-color: #A28D5B;
+}
+
+.product-information .variations .select-styled:before {
+  content: "";
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/down.svg?v=1694036187);
+  width: 20px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 53%;
+  transform: translateY(-50%);
+}
+
+variant-selects .product-form__input .select-arrow {
+  display: none;
+}
+
+.product-information ul.select-options {
+  display: none;
+  margin: 0;
+  padding: 8px;
+  background: #E3E5E6;
+  list-style: none;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.product-information ul.select-options li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-family: 'Garamond Premiere Pro';
+  padding: 8px;
+  padding-left: 37px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  color: #333333;
+}
+
+.product-information ul.select-options li:before {
+  content: '';
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/check.svg?v=1694036142);
+  width: 17px;
+  height: 14px;
+  display: none;
+  position: absolute;
+  left: 10px;
+  margin-right: 10px;
+}
+
+.product-information ul.select-options li:hover,
+.product-information ul.select-options li.is-selected {
+  background: #A28D5B;
+  color: #fff;
+}
+
+.product-information ul.select-options li:hover:before,
+.product-information ul.select-options li.is-selected:before {
+  display: block;
+}
+
+.product__testing-note {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 19.2px;
+  letter-spacing: 0.04em;  
+  font-family: 'AGaramondPro';
+  color: #777779;
+}
+
+.hide-rebuy .rebuy-widget {
+  display: none !important;
+}
+
+.variations .product-form__input--dropdown .select,
+.variations .product-form__input--dropdown select {
+  letter-spacing: .15em;
+  font-family: Saa Series F D;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 26px;
+}
+
 @media only screen and (max-width: 1200px) {
   
   .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
@@ -2106,7 +2228,31 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   .template-product .thb-product-detail .product-short-description p {
     font-size: 18px;
   }
-  
+
+  .product-add-to-cart-sticky {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .product-add-to-cart-sticky--info,
+  .product-add-to-cart-sticky--image,
+  .product-add-to-cart-sticky variant-selects {
+    display: none !important;
+  }
+
+  .product-add-to-cart-sticky--content .add_to_cart_holder .button {
+    min-height: 46px;
+  }
+
+  .product-add-to-cart-sticky--inner {
+    width: calc(100% - 74px);
+  }
+
+  .product-add-to-cart-sticky {
+    max-width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
