@@ -137,6 +137,7 @@
 
   .classes__events--wrap .icon__row--wrap {
     column-gap: 20px;
+    justify-content: flex-start;
   }
   
 }
