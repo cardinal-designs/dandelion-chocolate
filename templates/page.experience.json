@@ -613,8 +613,8 @@
       "settings": {
         "bg_color": "#53595C",
         "text_color": "#ffffff",
-        "heading": "Contact form",
-        "description": "<p>Add a short description for this section<\/p>",
+        "heading": "Request a Private Experience for Your Group",
+        "description": "<p>Most of our classes, tastings, and events may be made private for your group. Please submit the form below, telling us what sort of personalized experience you'd like to create, and we'll be in touch.<\/p>",
         "show_phone_number": true,
         "show_group_size": true,
         "show_date_requested": true,
