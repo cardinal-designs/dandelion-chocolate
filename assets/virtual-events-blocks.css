@@ -350,5 +350,9 @@
     margin-top: 28px;
   }
 
+  .virtual__events--wrap .btn {
+    padding: 17px 20px 9px!important;
+    width: 100%;
+  }
   
 }
