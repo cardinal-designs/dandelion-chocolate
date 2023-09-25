@@ -6,27 +6,27 @@
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-0": {
           "type": "subheading",
           "settings": {
-            "text": "",
-            "subheading_color": "#d3a741",
-            "subheading_color_mobile": "#333333"
+            "text": "LIMITED EDITION",
+            "subheading_color": "#a28d5b",
+            "subheading_color_mobile": "#a28d5b"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-1": {
           "type": "heading",
           "settings": {
-            "text": "Single-Origin S’Mores Kit",
+            "text": "FUJI-SAN ENSOKU COLLECTION",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333333"
+            "heading_color_mobile": "#333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Three origins of chocolate Large Chips, plenty of house-made graham crackers and marshmallows, plus instructions — for a gooey, crispy-crunchy s’more at home or outdoors<\/p>",
+            "text": "<p>Four vibrant bonbon varieties, rich with Dandelion single-origin chocolate, highlight mountain flavors in Japan. Silky chocolate-curry caramel, paprika-hazelnut praliné, and airy whipped strawberry pâte de fruit fillings pair beautifully with Dandelion 70% House Blend chocolate.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
-            "description_color_mobile": "#333333"
+            "description_color_mobile": "#333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3": {
@@ -45,26 +45,30 @@
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2",
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3"
       ],
-      "disabled": true,
+      "custom_css": [
+        ".image-with-text-overlay--content-inner .rte {margin-left: 0px;}",
+        "@media (max-width: 500px) {.image-with-text-overlay--content-inner {padding: 20px; } .mb-23 {width: 100%; }}"
+      ],
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
-        "image": "shopify:\/\/shop_images\/Desktop_S_mores.webp",
-        "mobile_image": "shopify:\/\/shop_images\/Mobile_Smores_Box_-_Summer_-_Dandelion_Chocolate_-_2023_1.webp",
+        "image": "shopify:\/\/shop_images\/Hero_-_Deux_Crane_-_Bonbons_-_Dandelion_Chocolate_-_2023.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Image_section_C.jpg",
         "desktop_height": "desktop-height-500",
         "mobile_height": "mobile-height-635",
         "content_width": "medium",
         "content_position": "middle-left",
         "text_alignment": "left",
-        "overlay_opacity": 33,
-        "show_caption_box": true,
+        "overlay_opacity": 0,
+        "show_caption_box": false,
         "caption_over_banner": true,
-        "caption_bg": "#fff",
+        "caption_bg": "",
         "mobile_caption_bg": "#F5F6F5",
         "stack_on_mobile": false,
-        "content__bg": "#333333",
+        "content__bg": "#ffffff",
         "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "disable_bottom_spacing": true,
+        "custom_class": ""
       }
     },
     "485c4745-3f2d-40d0-b235-4fb67da08280": {
@@ -74,7 +78,8 @@
           "type": "subheading",
           "settings": {
             "text": "",
-            "subheading_color": "#d3a741"
+            "subheading_color": "#d3a741",
+            "subheading_color_mobile": "#333"
           }
         },
         "a3900c75-2989-470e-8780-e6951ed90bb3": {
@@ -82,7 +87,8 @@
           "settings": {
             "text": "Chocolate-Dipped Fig Truffles",
             "heading_size": "h2",
-            "heading_color": "#333333"
+            "heading_color": "#333333",
+            "heading_color_mobile": "#333"
           }
         },
         "9dab5d34-c2e5-462d-9a1c-fed7fedd33f0": {
@@ -90,7 +96,8 @@
           "settings": {
             "text": "<p>The figs are stuffed with creamy Camino Verde, Ecuador chocolate ganache infused with flavorful single-origin spices. Each dark-purplish, honey-flavored fig is then dipped in 70% Camino Verde, Ecuador chocolate, and garnished with edible gold leaf.<\/p>",
             "description_size": "body-1",
-            "description_color": "#333333"
+            "description_color": "#333333",
+            "description_color_mobile": "#333"
           }
         },
         "88498ff6-7e62-4b55-b3e1-1da0541ded48": {
@@ -109,6 +116,7 @@
         "9dab5d34-c2e5-462d-9a1c-fed7fedd33f0",
         "88498ff6-7e62-4b55-b3e1-1da0541ded48"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": true,
@@ -140,7 +148,7 @@
           "settings": {
             "text": "FRESHLY BAKED",
             "subheading_color": "#d3a741",
-            "subheading_color_mobile": "#333333"
+            "subheading_color_mobile": "#333"
           }
         },
         "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3": {
@@ -149,7 +157,7 @@
             "text": "Halva Bonbons",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333333"
+            "heading_color_mobile": "#333"
           }
         },
         "1c54a7df-956d-4754-add0-db32fb0b4e9e": {
@@ -158,7 +166,7 @@
             "text": "<p>Hand-crafted Seed + Mill sesame-seed halva tops velvety, cardamom-scented 70% Tumaco, Colombia chocolate ganache — all enrobed in Dandelion 70% House Blend chocolate, and finished with edible gold foil.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
-            "description_color_mobile": "#333333"
+            "description_color_mobile": "#333"
           }
         },
         "4af6929c-0254-43be-b8ac-6f6f24e2709f": {
