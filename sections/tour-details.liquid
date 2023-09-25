@@ -152,6 +152,12 @@
     color: {{ color_text }};
   }
 
+  #section--{{ section.id }} .icon__row--wrap p,
+  #section--{{ section.id }} .icon__row--wrap p,
+  #section--{{ section.id }} .trip__details-content-inner * {
+    color: {{ section.settings.color_text_icon }};
+  }
+
   @media only screen and (max-width: 767px) {
       
     #section--{{ section.id }} {
@@ -294,7 +300,13 @@
       "type": "color",
       "id": "color_text",
       "label": "Text",
-      "default": "#151515"
+      "default": "#333"
+    },
+    {
+      "type": "color",
+      "id": "color_text_icon",
+      "label": "Icons and Row",
+      "default": "#53595C"
     },
     {
       "type": "header",
