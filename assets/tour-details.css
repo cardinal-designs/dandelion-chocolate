@@ -25,3 +25,7 @@
 .tour__details--wrap .icon__row--wrap {
   justify-content: flex-start;
 }
+
+.tour__details--wrap  .image-with-text-overlay--content-inner.content-width-large {
+    max-width: 800px;
+}
