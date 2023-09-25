@@ -49,7 +49,7 @@
   letter-spacing: 0.1em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1067px) {
   
   .tour__details--wrap .trip__details {
     display: grid;
