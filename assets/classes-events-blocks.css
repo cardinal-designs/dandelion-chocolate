@@ -152,5 +152,9 @@
   .classes__events--wrap .detail_row--item {
     padding: 12px 0;
   }
+
+  .classes__events--wrap .block__description {
+    padding: 13px 0 21px;
+  }
   
 }
