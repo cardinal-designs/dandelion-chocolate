@@ -128,10 +128,10 @@
           "type": "button",
           "settings": {
             "button_text": "BOOK NOW",
-            "button_link": "#",
+            "button_link": "https:\/\/www.exploretock.com\/dandelionchocolate\/experience\/363186\/dandelion-chocolate-factory-tour",
             "button_style": "btn--gold",
             "button_text_2": "PRIVATE TOURS",
-            "button_link_2": "#",
+            "button_link_2": "#custom__contact-form",
             "button_style_2": "btn--white"
           }
         }
