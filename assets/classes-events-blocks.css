@@ -123,6 +123,7 @@
     font-size: 28px;
     line-height: 37px;
     margin: 0;
+    text-align: left;
   }
 
   .classes__events--wrap .section__description {
@@ -136,6 +137,10 @@
 
   .classes__events--wrap .icon__row--wrap {
     column-gap: 20px;
+  }
+  
+  .tour__details--wrap .icon__row--wrap {
+    justify-content: flex-start;
   }
   
 }
