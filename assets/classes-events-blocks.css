@@ -130,6 +130,7 @@
 
   .classes__events--wrap .block__items--wrap {
     column-gap: 20px;
+    row-gap: 20px;
   }
 
 }
