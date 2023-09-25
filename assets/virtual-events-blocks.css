@@ -127,6 +127,10 @@
   text-decoration-thickness: 1px;
 }
 
+.virtual__events--wrap .section__heading {
+ margin-bottom: 40px; 
+}
+
 @media screen and (max-width: 767px) {  
 
   .virtual__events--wrap .step__text {
