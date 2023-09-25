@@ -251,11 +251,12 @@
 }
 
 @media screen and (max-width: 1199px) { 
-  
+
+  .virtual__events--wrap .icon__row--wrap,
   .virtual__events--wrap .block__items--wrap {
     column-gap: 20px;
   }
-  
+
 }
 
 
