@@ -87,6 +87,10 @@
     row-gap: 15px;
     margin-top: 15px;
   }
+
+  .tour__details--wrap .trip__details-content-inner br {
+    display: none;
+  }
   
 }
 
