@@ -91,19 +91,13 @@
   }
 
   .tour__details--wrap .btn_wrap {
+    grid-template-columns: 1fr;
     row-gap: 15px;
     margin-top: 15px;
   }
   
 }
 
-@media only screen and (max-width: 767px) {
-
-  .tour__details--wrap .btn_wrap {
-    grid-template-columns: 1fr;
-  }
-  
-}
 
 
 
