@@ -108,6 +108,14 @@
   letter-spacing: 0.1em;
 }
 
+@media screen and (max-width: 1067px) and (min-width: 768px) { 
+
+  .classes__events--wrap .btn {
+    padding: 14px 10px 11px!important;
+  }
+  
+}
+
 
 @media screen and (max-width: 1067px) { 
 
