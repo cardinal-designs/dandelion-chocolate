@@ -91,6 +91,10 @@
   .tour__details--wrap .trip__details-content-inner br {
     display: none;
   }
+
+  .tour__details--wrap .icon__row--wrap {
+    justify-content: center;
+  }
   
 }
 
