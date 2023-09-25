@@ -52,7 +52,13 @@
             {%- when 'heading' -%}
               <h3 class="{{ block.settings.size }} heading custom__heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
             {%- when 'text' -%}
-              <div class="custom__description rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div class="custom__description rte {{ block.settings.size }} hide-mobile" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              {% if block.settings.text_mobile != blank %}
+                <div class="custom__description rte {{ block.settings.size }} hide-desktop" {{ block.shopify_attributes }}>{{ block.settings.text_mobile }}</div>
+              {% else %}
+                <div class="custom__description rte {{ block.settings.size }} hide-mobile" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              {% endif %}
+        
             {%- when 'button' -%}
               {% if block.settings.link_label != blank %}
                 <a class="button {% if block.settings.button_style == 'btn--gold' %}custom__btn{% else %}{{ block.settings.button_style }}{% endif %}" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><span>{{ block.settings.link_label }}</span></a>
