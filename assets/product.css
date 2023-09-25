@@ -2379,7 +2379,8 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   margin: -2px 5px 0px;
 }
 
-.product-digitalgiftcard-form input {
+.product-digitalgiftcard-form input,
+.product-digitalgiftcard-form textarea {
   width: 100%;
 }
 
