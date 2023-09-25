@@ -6,7 +6,7 @@
 .tour__details--wrap .btn_wrap {
   display: flex;
   column-gap: 15px;
-  padding-top: 19px;
+  margin-top: 19px;
 }
 
 .tour__details--wrap .btn {
