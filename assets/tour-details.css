@@ -41,3 +41,7 @@
   letter-spacing: 0.1em;
   margin: 0;
 }
+
+.tour__details--wrap .trip__details-content-inner {
+  letter-spacing: 0.1em;
+}
