@@ -86,6 +86,11 @@
 
 .virtual__events--wrap .link__wrap p {
   margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .virtual__events--wrap .link__wrap a {
