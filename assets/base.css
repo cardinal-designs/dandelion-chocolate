@@ -1353,4 +1353,8 @@ select:focus-visible {
     line-height: 19.2px;
   }
 
+  .icon__row--wrap .icon_items p {
+    font-size: 8px;
+  }
+
 }
