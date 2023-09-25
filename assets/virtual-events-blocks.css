@@ -362,6 +362,10 @@
     margin-top: 9px;
     display: block;
   }
+
+  .virtual__events--wrap .link__wrap p {
+    letter-spacing: normal;
+  }
   
 }
 
