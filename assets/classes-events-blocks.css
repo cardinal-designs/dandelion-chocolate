@@ -76,6 +76,7 @@
   border-radius: 6px;
   flex: 1;
   min-width: auto;
+  border-width: 2px;
 }
 
 .classes__events--wrap .text__wrap {
