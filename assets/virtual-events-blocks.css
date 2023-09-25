@@ -70,6 +70,7 @@
 
 .virtual__events--wrap .section__header {
   width: 100%;
+  padding: 0;
 }
 
 .virtual__events--wrap .block__buttons {
