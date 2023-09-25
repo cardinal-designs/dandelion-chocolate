@@ -94,4 +94,8 @@
     line-height: 34px;
   }
 
+  .custom__contact-form .custom__btn {
+    width: 100%;
+  }
+
 }
