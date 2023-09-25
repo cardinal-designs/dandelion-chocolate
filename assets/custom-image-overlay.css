@@ -1,5 +1,6 @@
 .custom__image--overlay .image-with-text-overlay--bg {
   min-height: inherit;
+  padding-bottom: 0 !important;
 }
 
 .custom__image--overlay .image-with-text-overlay--bg img {
