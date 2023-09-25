@@ -78,7 +78,7 @@
   #section-{{ section.id }} .rte,
   #section-{{ section.id }} .field label,
   #section-{{ section.id }} .field input {
-    color: {{ section.settings.text_color }};
+    color: {{ section.settings.color_text }};
   }
 
   #section-{{ section.id }} {
@@ -92,6 +92,17 @@
     #section-{{ section.id }} {
       padding-top : {{ section.settings.top_spacing_mobile }}px;
       padding-bottom : {{ section.settings.bottom_spacing_mobile }}px;
+    }
+
+    #section-{{ section.id }} {
+      background-color: {{ section.settings.color_bg_mobile }};
+    }
+  
+    #section-{{ section.id }} h2, 
+    #section-{{ section.id }} .rte,
+    #section-{{ section.id }} .field label,
+    #section-{{ section.id }} .field input {
+      color: {{ section.settings.text_color_mobile }};
     }
     
   }
@@ -209,6 +220,28 @@
       {
         "type": "color",
         "id": "color_links",
+        "label": "Links",
+        "default": "#151515"
+      },
+      {
+        "type": "header",
+        "content": "Mobile Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_bg_mobile",
+        "label": "Background",
+        "default": "transparent"
+      },
+      {
+        "type": "color",
+        "id": "text_color_mobile",
+        "label": "Text",
+        "default": "#151515"
+      },
+      {
+        "type": "color",
+        "id": "color_links_mobile",
         "label": "Links",
         "default": "#151515"
       },
