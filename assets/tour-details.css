@@ -71,6 +71,12 @@
     letter-spacing: 0.05em;
     text-align: center;
   }
+
+  .tour__details--wrap .trip__details-content-inner * {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+  }
   
 }
 
