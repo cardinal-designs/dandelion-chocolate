@@ -60,5 +60,10 @@
     line-height: 37px;
     letter-spacing: 0.15em;
   }
+
+  .template-page-experience .rich__text--2 .custom__description * {
+    font-size: 18px;
+    line-height: 27px;
+  }
   
 }
