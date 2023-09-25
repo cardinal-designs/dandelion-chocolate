@@ -116,3 +116,12 @@
   }
   
 }
+
+@media screen and (max-width: 767px) { 
+
+  .classes__events--wrap .section__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+}
