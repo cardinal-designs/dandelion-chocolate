@@ -117,7 +117,7 @@
           "type": "tab",
           "settings": {
             "heading": "available upon request",
-            "content": "<p>GIFTS, DRINKS, PASTRIES, TASTINGS, SITE RENTAL<\/p>",
+            "content": "<p>GIFTS, DRINKS, PASTRIES,<br\/>TASTINGS, SITE RENTAL<\/p>",
             "mobile_content": "",
             "description": "",
             "mobile_description": ""
