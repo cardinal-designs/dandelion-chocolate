@@ -47,7 +47,7 @@
         "caption_over_banner": false,
         "caption_bg": "#FFFFFFF2",
         "mobile_caption_bg": "#F5F6F5",
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "content__bg": "#ffffff",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
