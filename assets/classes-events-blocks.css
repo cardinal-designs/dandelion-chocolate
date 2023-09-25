@@ -148,5 +148,9 @@
     line-height: 14px;
     letter-spacing: 0.1em;
   }
+
+  .classes__events--wrap .detail_row--item {
+    padding: 10px 0;
+  }
   
 }
