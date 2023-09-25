@@ -206,5 +206,9 @@
   .classes__events--wrap .btn.btn--white {
     padding: 14px 20px 11px!important
   }
+
+  .classes__events--wrap .icon__row--wrap {
+    column-gap: 20px;
+  }
   
 }
