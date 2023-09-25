@@ -20,29 +20,10 @@ $(window).on("load resize orientationchange", function(){
   }
 });  
 
-function matchHeight() {
-  var cols = document.querySelectorAll('[data-col]')
-  var encountered = []
-  for (i=0; i<cols.length; i++) {
-    var attr = cols[i].getAttribute('data-col')
-    if (encountered.indexOf(attr) == -1) {
-      encountered.push(attr)
-    }
-  }
-  for (set=0; set<encountered.length; set++) {
-    var col = document.querySelectorAll('[data-col="' + encountered[set] + '"]')
-    var group = []
-    for (i=0; i<col.length; i++) {
-      col[i].style.height = 'auto'
-      group.push(col[i].scrollHeight)
-    }
-    for (i=0; i<col.length; i++) {
-      col[i].style.height = Math.max.apply(Math, group) + 'px'
-    }
-  }
-}
-window.addEventListener('load', matchHeight);
-window.addEventListener('resize', matchHeight);
+
+$(document).ready(function(){
+    $('.block__description').matchHeight();
+})
 
 
 
