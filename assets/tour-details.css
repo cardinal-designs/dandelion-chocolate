@@ -1,3 +1,8 @@
+.tour__details--wrap .row {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
 .tour__details--wrap .btn_wrap {
   display: flex;
   column-gap: 15px;
