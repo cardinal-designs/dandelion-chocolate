@@ -113,6 +113,7 @@
 
   .classes__events--wrap .block__items--wrap {
     grid-template-columns: 1fr;
+    row-gap: 24px;
   }
   
 }
