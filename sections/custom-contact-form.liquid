@@ -73,6 +73,18 @@
             </div>
           </div>
         {%- endif -%}
+          <div class="small-12 medium-6 columns">
+            <div class="field">
+              <label for="ContactFormPhone">{{ 'sections.contact.form.group_size' | t }}</label>          
+              <input
+                type="tel"
+                id="ContactFormGroupSize"
+                name="contact[group_size]"
+                class="full"
+                placeholder="{{ 'sections.contact.form.group_size' | t | escape }}"
+              >
+            </div>
+          </div>
         {%- for block in section.blocks -%}
           {%- liquid
             assign field_title = block.settings.title
