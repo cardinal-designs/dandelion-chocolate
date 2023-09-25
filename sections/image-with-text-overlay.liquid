@@ -13,6 +13,8 @@
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
 
 	case mobile_height
+       when 'mobile-height-250'
+			assign mobile_image_height = 250
 		when 'mobile-height-350'
 			assign mobile_image_height = 350
 		when 'mobile-height-400'
@@ -25,7 +27,7 @@
 			assign mobile_image_height = 500
 	endcase
 -%}
-<div class="row {{ section_width }}">
+<div class="row {{ section_width }} {{ section.settings.custom_class }}">
 	<div class="small-12 columns">
 		<image-with-text-overlay class="image_with--text-overlay image-with-text-overlay {% if section.settings.stack_on_mobile %}stack_on_mobile{% endif %} text-{{ text_alignment }} {{ mobile_height }} {{ desktop_height }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}{% if section.settings.caption_over_banner %} caption-over--mobile{% endif %}" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
 			<div class="image-with-text-overlay--bg">
@@ -70,19 +72,41 @@
 					{% for block in section.blocks %}
 						{%- case block.type -%}
 							{%- when 'subheading' -%}
-								<p class="caption subheading sh2 mb-23" {{ block.shopify_attributes }} style="color: {{ block.settings.subheading_color }}">{{ block.settings.text }}</p>
+								<p class="caption subheading sh2 mb-23" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 							{%- when 'heading' -%}
-								<h3 class="heading {{ block.settings.heading_size }} mb-20" style="color: {{ block.settings.heading_color }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+								<h3 class="heading {{ block.settings.heading_size }} mb-20" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
 							{%- when 'text' -%}
-								<div class="rte {{ block.settings.description_size }} mb-44" style="color: {{ block.settings.description_color }}" {{ block.shopify_attributes }} {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+								<div class="rte {{ block.settings.description_size }} mb-44" {{ block.shopify_attributes }} {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}
 								{% if block.settings.button_text != blank %}
 									<a class="btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
                   					<a class="btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
 								{% endif %}
 							{% when 'space' %}
-		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+    		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
 						{%- endcase -%}
+                        {% style %}
+                          .image-with-text-overlay--content .caption {
+                            color: {{ block.settings.subheading_color }};
+                          }
+                          .image-with-text-overlay--content .heading {
+                            color: {{ block.settings.heading_color }};
+                          }
+                          .image-with-text-overlay--content .rte {
+                            color: {{ block.settings.description_color }};
+                          }
+                          @media screen and (max-width: 767px) {
+                            .image-with-text-overlay--content .caption {
+                              color: {{ block.settings.subheading_color_mobile }};
+                            }
+                            .image-with-text-overlay--content .heading {
+                              color: {{ block.settings.heading_color_mobile }};
+                            }
+                            .image-with-text-overlay--content .rte {
+                              color: {{ block.settings.description_color_mobile }};
+                            }
+                          }
+                        {% endstyle %}
 					{% endfor %}
 				</div>
 			</div>
@@ -98,7 +122,7 @@
   .image-with-text-overlay-caption--box {
     background: {{ section.settings.mobile_caption_bg }};
   }
-  
+
   @media only screen and (min-width:768px) {
     
     .image-with-text-overlay-caption--box {
@@ -203,6 +227,10 @@
         {
           "value": "mobile-height-auto",
           "label": "Adapt to content"
+        },
+        {
+          "value": "mobile-height-250",
+          "label": "250px"
         },
         {
           "value": "mobile-height-350",
@@ -367,6 +395,11 @@
       "id": "disable_bottom_spacing",
       "default": false,
       "label": "Remove bottom spacing"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
     }
   ],
   "blocks": [
@@ -384,8 +417,14 @@
         {
           "type": "color",
           "id": "subheading_color",
-          "label": "Subheading Color",
+          "label": "Subheading Color(Desktop)",
           "default": "#6b6b6b"
+        },
+        {
+          "type": "color",
+          "id": "subheading_color_mobile",
+          "label": "Subheading Color(Mobile)",
+          "default": "#333"
         }
       ]
     },
@@ -423,8 +462,14 @@
         {
           "type": "color",
           "id": "heading_color",
-          "label": "Heading Color",
+          "label": "Heading Color(Desktop)",
           "default": "#333333"
+        },
+        {
+          "type": "color",
+          "id": "heading_color_mobile",
+          "label": "heading Color(Mobile)",
+          "default": "#333"
         }
       ]
     },
@@ -462,8 +507,14 @@
         {
           "type": "color",
           "id": "description_color",
-          "label": "Description Color",
+          "label": "Description Color(Desktop)",
           "default": "#333333"
+        },
+        {
+          "type": "color",
+          "id": "description_color_mobile",
+          "label": "description Color(Mobile)",
+          "default": "#333"
         }
       ]
     },

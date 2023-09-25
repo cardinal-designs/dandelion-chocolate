@@ -15,16 +15,17 @@
 	endif
 -%}
 {%- if template == 'search' -%}
-   {% assign counter = 0 %}
-    {%- for item in search.results -%}
-      {% assign show = true %}
-      {% for tag in item.tags %}
-        {% if tag contains 'hide_from_search' %}
-          {% assign counter =  counter | plus: 1%}
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-  {% assign searchCount = search.results_count | minus: counter %}
+  {% assign hideCount = 0 %}
+  {% assign hideFromSearch = false %}
+  {%- for item in search.results -%} 
+  {% for tag in item.tags %}
+    {% if tag == 'hide_from_search' %}
+      {% assign hideCount = hideCount | plus: 1 %}
+      {% assign hideFromSearch = true %}
+    {% endif %}
+  {% endfor %}
+  {% endfor %}
+  
 	{%- liquid
 		assign show_collection_image = false
 		assign show_subcollections = false
@@ -32,9 +33,17 @@
 	-%}
 	{%- capture description %}
 		{% assign search_phrase = search.terms | replace: '*', '' %}
-		{% if '' != search_phrase %}
-			<p>{{ 'search.results_found' | t: count: searchCount, key: search_phrase }}</p>
+      {% if hideFromSearch %}
+        {% assign countSearch = search.results_count| minus: hideCount %}
+        {% if '' != search_phrase %}
+			<p>{{ 'search.results_found' | t: count: countSearch, key: search_phrase }}</p>
 		{% endif %}
+      {% else %}
+        {% if '' != search_phrase %}
+			<p>{{ 'search.results_found' | t: count: search.results_count, key: search_phrase }}</p>
+		{% endif %}
+      {% endif %}
+		
 	{%- endcapture -%}
  
 {%- endif -%}

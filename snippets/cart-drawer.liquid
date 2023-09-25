@@ -42,12 +42,11 @@
                 <div class="product-cart-item-image">
                   <a
                       href="{{ item.url }}">
-                    {% if item.image %}
+                    {% if item.product.metafields.image.cart_image_url != blank %}
+                      {%- render 'responsive-image', image: item.product.metafields.image.cart_image_url.value , sizes: '192x0' -%}
+                     {% else %}
+  
                       {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
-                    {% else %}
-                      <div class="thb-placeholder" style="width: 96px;">
-                        {{ 'product-1' | placeholder_svg_tag }}
-                      </div>
                     {% endif %}
                     <div class="loading-overlay">
                       {% render 'svg-icons' with 'thb-loading' %}
@@ -79,7 +78,7 @@
                     title="{{ item.product.title | escape }}"
                     class="cart-product-link">
                     {% if item.product.metafields.info.cart_title != blank %}
-                      {{ item.product.metafields.info.cart_title }}
+                      {{ item.product.metafields.info.cart_title | metafield_tag }}
                     {% else %}
                       {{ item.product.title }}
                     {% endif %}
@@ -88,6 +87,11 @@
                   {%- if item.product.metafields.info.tasting_notes != blank -%}
                     <div class="card__tasting-notes">{{ item.product.metafields.info.tasting_notes }}</div>
                   {%- endif -%}
+
+                  {%- if item.product.metafields.info.micro_info != blank -%}
+                    <div class="micro__copy">{{ item.product.metafields.info.micro_info }}</div>
+                  {%- endif -%}
+                  
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
                       <del>
@@ -112,11 +116,13 @@
                       </small>
                     {%- endif -%}
                   </span>
+              
                   {% if item.selling_plan_allocation %}
                     <div class="properties">
                       <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
                     </div>
                   {% endif %}
+              
                   {% unless item.variant.title contains 'Default' %}
                     <div class="product-cart-item-options">
                       {% for option in item.product.options %}

@@ -172,6 +172,11 @@
 							{%- when 'custom_liquid' -%}
 								{{ block.settings.custom_liquid }}
 							{%- when 'title' -%}
+                                {% if product.metafields.info.above_title != blank %}
+                                  <div class="above_title">
+                                    {{ product.metafields.info.above_title | metafield_tag }}
+                                  </div>
+                                {% endif %}
 								<div class="product-title-container" {{ block.shopify_attributes }}>
 									<h1 class="product-title uppercase--{{ block.settings.uppercase }}">{{ product.title }}</h1>
 									<div class="product-price-container">

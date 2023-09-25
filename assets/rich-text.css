@@ -33,3 +33,63 @@
     max-width: 1000px; }
   .rich-text.text-width-grid .rich-text__inner {
     max-width: 1380px; }
+
+/*================ Trip Landing ================*/
+
+.trip__rich--text .rich-text {
+  padding: 51px 0;  
+}
+
+.trip__rich--text .rich-text__inner .icon {
+  margin: 0 auto 16px;
+  width: 30px;
+  height: 30px;
+}
+
+.trip__rich--text .rich-text__inner .icon img {
+  margin: 0;
+}
+
+.trip__rich--text .heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.trip__rich--text .rte {
+  margin: 0;
+}
+
+.trip__rich--text .rte * {
+  font-family: Garamond;
+  font-size: 18px; 
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 27px;
+}
+
+.trip__rich--text .rte em {
+  font-family: AGaramondPro;
+}
+
+.trip__rich--text .rich-text__inner {
+  max-width: 662px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .trip__rich--text .rich-text {
+    padding: 26px 0;
+  }
+
+  .trip__rich--text .rte * {
+    letter-spacing: 0.02em;
+  }
+
+  .trip__rich--text .heading {
+    margin-bottom: 12px;
+  }
+  
+}

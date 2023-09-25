@@ -55,12 +55,10 @@
                     <div class="product-cart-item">
                       <div class="product-cart-item-image">
                         <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}">
-                          {% if item.image %}
-                            {%- render 'responsive-image', image: item.image, sizes: '168x0' -%}
-                          {% else %}
-                            <div class="thb-placeholder" style="width: 100px;">
-                              {{ 'product-1' | placeholder_svg_tag }}
-                            </div>
+                          {% if item.product.metafields.image.cart_image_url != blank %}
+                            {%- render 'responsive-image', image: item.product.metafields.image.cart_image_url.value , sizes: '192x0' -%}
+                           {% else %}
+                            {%- render 'responsive-image', image: item.image, sizes: '192x0' -%}
                           {% endif %}
                         </a>
                       </div>
@@ -74,9 +72,11 @@
                         </div>       
                       {% endif %}
  
-                      <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4">
+                      <a href="{{ item.product.url | within: collection }}" title="{{ item.product.title | escape }}" class="cart-product-link h4 {% if item.product.metafields.custom.product_title_fonts.value contains "OPTICaslonBold" or item.product.type == 'Chocolate Bar' %}opti__fonts{% endif %}">
                         {% if product_info.cart_title != blank %}
-                          {{ product_info.cart_title }}
+                          {{ product_info.cart_title | metafield_tag }}
+                        {% elsif product_info.title != blank %}
+                          {{ product_info.title | metafield_tag }}
                         {% else %}
                           {{ item.product.title }}
                         {% endif %}
@@ -85,7 +85,7 @@
                       {%- if product_info.tasting_notes != blank -%}
                         <div class="card__tasting-notes">{{ product_info.tasting_notes }}</div>
                       {%- endif -%}
-                        
+                
                       {% if item.selling_plan_allocation %}
                         <div class="properties">
                           <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>

@@ -61,22 +61,27 @@
               {% endif %}
             {% endfor %}
           
-            <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button btn button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false or sold_out %}disabled{% endif %}>
-              <span class="single-add-to-cart-button--text">
-                {%- if product.selected_or_first_available_variant.available and sold_out != true -%}
-                  {{ 'products.product.add_to_cart' | t }} ·
-                  <span class="product__price-main">{{ product.price | money }}</span>
-                {%- else -%}
-                  {{ 'products.product.sold_out' | t }}
-                {%- endif -%}
-              </span>
+          <button type="submit" name="add" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
+            <span class="single-add-to-cart-button--text">
+              {%- if product.selected_or_first_available_variant.available -%}
+                {{ 'products.product.add_to_cart' | t }} 
+              {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- endif -%}
+            </span>
               <span class="loading-overlay">
                 {% render 'svg-icons' with 'thb-loading' %}
               </span>
-            </button>
+              <span class="separator"> · </span>
+              <span class="product-price-container product__price-main">
+                <span class="no-js-hidden" id="price-{{ section.id }}">
+                  {% render 'product-price', product: product, use_variant: true, show_badges: false %}
+                </span>
+              </span>
+          </button>
             {%- if show_dynamic_checkout -%}
-              {{ form | payment_button }}
-            {%- endif -%}
+		      {{ form | payment_button }}
+		    {%- endif -%}
 		  </div>
 		</div>
 		{%- endform -%}
@@ -122,10 +127,42 @@
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 {% unless product.tags contains "pickup" %}   
   {% unless product.tags contains "gift card" %}      
-    <div class="product__ctarow product__free-shipping">
-      <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
-      <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}
-    </div>            
+    {% assign merch_icons_count = 0 %}
+    {% for merch_icon in product.metafields.custom.merch_icons.value %}
+      {% assign merch_icons_count = merch_icons_count | plus: 1 %}
+    {% endfor %}
+    <div class="merch__icons {% if merch_icons_count > 1 %}multi__merch--icons{% endif %}">
+      {% if product.metafields.custom.merch_icons.value != blank %}
+        {% for merch_icon in product.metafields.custom.merch_icons.value %}
+          {% assign merch_text = merch_icon | downcase %}
+          <div class="product__ctarow product__free-shipping">
+            <div class="product__ctacol--icon">
+              <div class="icon--extra-large icon--circle" >
+                {% if merch_text == 'free shipping' %}
+                  {% render 'icon-truck-2' %} 
+                {% elsif merch_text == 'add gift notes at checkout' or merch_text == 'add gift note at checkout' %}
+                  {% render 'icon-email' %} 
+                {% elsif  merch_text == 'contact us for corporate gifting' %}
+                  {% render 'icon-gift' %} 
+                {% else %}
+                {% endif %}
+              </div>
+            </div> 
+            <span class="">
+              {{ merch_text }} 
+              {% comment %}
+                {% if merch_text == 'free shipping' %}{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}{% endif %}
+              {% endcomment %}
+            </span>
+          </div>     
+        {% endfor %}
+      {% else %}
+        <div class="product__ctarow product__free-shipping">
+          <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle" >{% render 'icon-truck-2' %}</div></div>
+          <span class="">Free shipping{% if current_variant.price < 2500 %} on orders over $25.</span>{%endif%}
+        </div>   
+      {% endif %}
+    </div>
     {% if section.settings.holiday_shipping %}    
       <div class="product__ctarow product__holiday-shipping">    
       <div class="product__ctacol--icon"><div class="icon--extra-large icon--circle">{% render 'icon-calendar' %}</div></div>                              

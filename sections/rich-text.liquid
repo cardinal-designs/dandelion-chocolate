@@ -17,7 +17,7 @@
 		assign solid_button_label = '#ffffff'
 	endif
 -%}
-<div class="row {{ section_width }}">
+<div class="row {{ section_width }} {{ section.settings.custom_class }}">
 	<div class="small-12 columns">
 		<div class="rich-text text-{{ text_alignment }} text-position-{{ text_position }} text-width-{{ text_width }} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"style="--color-bg: {{ color_bg }}; --color-text: {{ color_text }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }}; --solid-button-label: {{ solid_button_label }}; --bg-body: {{ color_bg }}; --color-accent: {{ color_links }}; --color-accent-rgb:  {{ color_links | color_extract: 'red' }}, {{ color_links | color_extract: 'green' }}, {{ color_links | color_extract: 'blue' }};">
 			<div class="rich-text__inner">
@@ -35,10 +35,24 @@
 									{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
 								</div>
 							{%- endif -%}
+                        {%- when 'icon' -%}
+                            <div class="icon">
+    							{%- if block.settings.icon != blank -%}
+    								{%- liquid
+    									assign icon = block.settings.icon
+    									assign master_width = icon.src.width | append: 'x' | append: icon.src.height
+    									render 'responsive-image', image: icon, sizes: master_width
+    								-%}
+    							{%- else -%}
+    								<div class="thb-placeholder">
+    									{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+    								</div>
+    							{%- endif -%}
+                            </div>
 						{%- when 'subheading' -%}
 							<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 						{%- when 'heading' -%}
-							<h3 class="{{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+							<h3 class="{{ block.settings.size }} heading" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
 						{%- when 'text' -%}
 							<div class="rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 						{%- when 'button' -%}
@@ -185,7 +199,12 @@
 				"id": "disable_bottom_spacing",
 				"default": false,
 				"label": "Remove bottom spacing"
-			}
+			},
+        {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Custom Class"
+        }
     ],
 		"blocks": [
 			{
@@ -203,6 +222,17 @@
 						"label": "Enable retina",
 						"default": true,
 						"info": "Image will be displayed at half the size, making it look crisp on retina screens."
+					}
+				]
+			},
+            {
+				"type": "icon",
+				"name": "Icon",
+				"settings": [
+					{
+						"type": "image_picker",
+						"id": "icon",
+						"label": "Icon"
 					}
 				]
 			},

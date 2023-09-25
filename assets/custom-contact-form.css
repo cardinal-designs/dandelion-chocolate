@@ -1,0 +1,118 @@
+.custom__contact-form .section-header--content h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 20px;
+  letter-spacing: .05em;  
+}
+
+.custom__contact-form-inner {
+  max-width: 917px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.custom__contact-form-inner #contact_form .row.no-padding {
+  padding: 0;
+  margin: 0 -15px;
+}
+
+.custom__contact-form .section-header--content {
+  max-width: 100%;
+}
+
+.custom__contact-form .section-header--content .rte p,
+.custom__contact-form .section-header--content {
+  font-size: 18px;
+  margin-top: 0;
+  line-height: 27px;
+  letter-spacing: .02em;
+}
+
+.custom__contact-form .field label {
+  position: relative;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: .05em;
+  font-family: 'Garamond Premiere Pro';
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.custom__contact-form .field input,
+.custom__contact-form .field textarea {
+  margin-bottom: 37px;
+}
+
+.custom__contact-form .section-header {
+  margin-bottom: 40px;
+}
+
+.custom__contact-form input:focus-visible {
+  outline: none;
+}
+
+.custom__contact-form .field .contact__message {
+  font-family: 'AGaramondPro';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin: 0;
+}
+
+.experience__contact-form .section-header--content h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+
+.experience__contact-form .field textarea {
+  margin-bottom: 12px;
+}
+
+.experience__contact-form .section-header--content {
+  text-align: center;
+  max-width: 793px;
+  margin: 0 auto;
+}
+
+.experience__contact-form .submit__btn {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.custom__contact-form .field input[type="date"] {
+  color-scheme: dark;
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .custom__contact-form .section-header--content h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .custom__contact-form .custom__btn {
+    width: 100%;
+  }
+
+  .custom__contact-form-inner #contact_form .row.no-padding {
+    padding: 0;
+    margin: 0;
+  }
+
+  .experience__contact-form .submit__btn {
+    margin-top: 22px;
+  }
+
+  .custom__contact-form .field .contact__message {
+    font-size: 14px;
+  }
+
+}

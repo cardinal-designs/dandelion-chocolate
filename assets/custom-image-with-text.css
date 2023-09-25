@@ -1,0 +1,182 @@
+.custom__image--text .image-with-text {
+  background: transparent;
+}
+
+.custom__image--text .image-with-text__content--inner .heading {
+  margin-bottom: 20px;
+}
+
+.custom__image--text .image-with-text__content--inner h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  margin: 37px 0 15px;
+}
+
+.custom__image--text .image-with-text__content--inner .rte li {
+  letter-spacing: 0.05em;
+}
+
+.custom__image--text .caption {
+  font-family: 'AGaramondPro';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #a28d5b !important;
+  margin: 0 0 22px
+}
+
+.custom__image--text .section_heading {
+  margin-bottom: 38px;
+}
+
+.custom__image--text .custom__heading.small {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  margin-bottom: 9px;
+}
+
+.custom__image--text .custom__btn {
+  margin: 38px 0 0;
+}
+
+.custom__image--text  .custom__description ul {
+  margin-bottom: 0;
+}
+
+.why__hawaii .custom__description,
+.why__hawaii .custom__description p {
+  letter-spacing: .05em;
+}
+
+.other__origin-trips .custom__description {
+  max-width: 346px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .custom__image--text .image-with-text {
+    display: flex;
+    column-gap: 40px;
+    margin: 0;
+  }
+
+  .template-product .section-image-with-text .custom__image--text.row.full-width-spacing .columns {
+    max-width: 1260px;
+  }
+
+  .section-image-with-text .custom__image--text.row.full-width-spacing .columns {
+    max-width: 1242px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .custom__image--text .image-with-text__inner {
+    flex: 1;
+  }
+
+  .custom__image--text .image-with-text__content.image-with-text__inner {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1068px) {
+  
+  .custom__image--text .image-with-text__content {
+    padding: 60px;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+
+  .custom__image--text {
+    padding: 0;
+  }
+
+  .custom__image--text .image-with-text__content--inner {
+    max-width: 100%;
+  }
+
+  .custom__image--text .columns {
+    padding: 0;
+  }
+
+  .custom__image--text .image-with-text__content--inner .heading {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    margin-bottom: 12px;
+  }
+
+  .custom__image--text .image-with-text__content {
+    padding: 16px 20px 0;
+  }
+
+  .custom__image--text .image-with-text__content--inner h4 {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.12em;
+    margin: 31px 0 10px;
+  }
+
+  .template-product .custom__image--text .image-with-text__image img {
+    padding: 0 20px;
+  }
+
+  .custom__image--text .custom__heading.small {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+
+  .custom__image--text .caption {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    margin: 0 0 9px;
+  }
+
+  .custom__image--text .custom__btn {
+    margin: 21px 0 0;
+    min-width: 335px;
+  }
+
+  .custom__image--text .section_heading {
+    margin-bottom: 27px;
+  }
+
+  .other__origin-trips.custom__image--text .image-with-text__content {
+    padding: 24px 20px 0;
+  }
+
+  .other__origin-trips.custom__image--text .image-with-text__content--inner {
+    text-align: left;
+  }
+
+  .other__origin-trips.custom__image--text .section_heading {
+    margin-bottom: 24px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .other__origin-trips .custom__description {
+    max-width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 374px) {
+
+  .custom__image--text .custom__btn {
+    min-width: 100%;
+  }
+
+}

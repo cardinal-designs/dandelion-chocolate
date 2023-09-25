@@ -2,17 +2,200 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
-    "shogun-helper": {
-      "type": "shogun-helper",
+    "a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16033892335756__a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Origin Trips",
+            "heading_size": "h1",
+            "heading_color": "#ffffff",
+            "heading_color_mobile": "#333333"
+          }
+        },
+        "template--16033892335756__a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience cacao farming and chocolate making up close and personal, while building relationships with other chocolate lovers.<\/p>",
+            "description_size": "body-1",
+            "description_color": "#ffffff",
+            "description_color_mobile": "#333333"
+          }
+        }
+      },
+      "block_order": [
+        "template--16033892335756__a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56-heading-1",
+        "template--16033892335756__a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56-text-1"
+      ],
       "settings": {
+        "section_width": "full-width-row-full",
+        "image_url": false,
+        "image": "shopify:\/\/shop_images\/Banner_Image_55648867-10f1-4d34-a78b-6911ad0889a2.jpg",
+        "desktop_height": "desktop-height-500",
+        "mobile_height": "mobile-height-250",
+        "content_width": "large",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 0,
+        "show_caption_box": true,
+        "caption_over_banner": true,
+        "caption_bg": "#000000CC",
+        "mobile_caption_bg": "#fff",
+        "stack_on_mobile": false,
+        "content__bg": "#333333",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "custom_class": "trip__image--overlay"
+      }
+    },
+    "3c1730b0-58ef-40e6-b5c5-62c14faf849f": {
+      "type": "rich-text",
+      "blocks": {
+        "18348d12-375b-43ad-bdba-8330309b6c2f": {
+          "type": "icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Info_Icon_dd2777b8-4482-4925-a8e9-31715fc08e1b.png"
+          }
+        },
+        "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "ADVENTURE DISCLAIMER",
+            "size": "h3"
+          }
+        },
+        "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dandelion Trips are not for the faint of heart. You <em>will<\/em> get mosquito bites, and mud on your boots. If that sounds like your kind of adventure, you’re in the right place. <\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "18348d12-375b-43ad-bdba-8330309b6c2f",
+        "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-heading-1",
+        "template--16033892335756__3c1730b0-58ef-40e6-b5c5-62c14faf849f-text-1"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#f5f6f5",
+        "color_text": "#333333",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "custom_class": "trip__rich--text"
+      }
+    },
+    "94b4c291-eb0b-4556-a13c-b6ebf4f76ba1": {
+      "type": "product-list",
+      "blocks": {
+        "3c094f3f-5685-4688-9d3a-da54e8b478e1": {
+          "type": "product",
+          "settings": {
+            "product": "hawaii-trip",
+            "image": "shopify:\/\/shop_images\/Hawaii_Image.png",
+            "heading": "Hawai’i",
+            "subheading": "September 10th-16th, 2023",
+            "text": "<p>Visit Hawaiian cacao farms and chocolate makers, sample cacao and tropical fruit at its place of origin, and experience local Hawaiian culture.<\/p>",
+            "button_text": "Register Now",
+            "button_link": "#",
+            "button_style": "btn--gold",
+            "button_text_2": "Learn More",
+            "button_link_2": "\/products\/hawaii-trip",
+            "button_style_2": "btn--white",
+            "caption_color": "#53595c",
+            "heading_color": "#333333",
+            "text_color": "#333333"
+          }
+        },
+        "b4bcc115-9ed1-4ca5-9ad5-272870d521ac": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "image": "shopify:\/\/shop_images\/Hawaii_Image_1.png",
+            "heading": "Zorzal Estate, Dominican Republic",
+            "subheading": "Coming 2024",
+            "text": "<p>Travel to Zorzal Estate, and hike to and spend the night on a cacao farm and bird sanctuary. Dive deep into cacao farming, taste different varieties of fruit directly from trees, and learn about cacao genetics and fermentation.  <\/p>",
+            "button_text": "JOIN THE WAITLIST",
+            "button_link": "\/products\/dominican-republic-trip#jotform",
+            "button_style": "btn--gold",
+            "button_text_2": "Learn More",
+            "button_link_2": "#",
+            "button_style_2": "btn--white",
+            "caption_color": "#53595c",
+            "heading_color": "#333333",
+            "text_color": "#333333"
+          }
+        }
+      },
+      "block_order": [
+        "3c094f3f-5685-4688-9d3a-da54e8b478e1",
+        "b4bcc115-9ed1-4ca5-9ad5-272870d521ac"
+      ],
+      "settings": {
+        "bg_color": "",
+        "heading": "",
+        "description": "",
+        "section_width": "grid",
+        "top_spacing_desktop": 78,
+        "bottom_spacing_desktop": 118,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 50
+      }
+    },
+    "b6e016f2-c0cf-41c9-8d86-2900267a72a8": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16033892335756__b6e016f2-c0cf-41c9-8d86-2900267a72a8-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "What Is an Origin Trip?",
+            "heading_size": "h3"
+          }
+        },
+        "template--16033892335756__b6e016f2-c0cf-41c9-8d86-2900267a72a8-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We call our Origin Trips “cocoa matchmaking,” because they’re all about letting our guests and sourcing partners connect over a deep love of chocolate. These trips are usually week-long visits to the farms where we source our cocoa. We typically take up to about 12 people (with a minimum age of 16), so we can keep the experience personal and interactive. Origin Trips aren’t just classes — they’re a balance of education and entertainment. <br\/><br\/>If you participate in an Origin Trip, you’ll get to enjoy cacao in its natural habitat, learn about the chocolate-making process, build relationships with fellow chocolate lovers, and step outside of your comfort zone.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16033892335756__b6e016f2-c0cf-41c9-8d86-2900267a72a8-heading-1",
+        "template--16033892335756__b6e016f2-c0cf-41c9-8d86-2900267a72a8-text-1"
+      ],
+      "settings": {
+        "section_heading": "",
+        "image": "shopify:\/\/shop_images\/Hawaii_Image_d8d6739d-def6-4069-84c0-673fc089c732.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#f5f6f5",
+        "color_text": "#151515",
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
+        "top_spacing_mobile": 0,
+        "bottom_spacing_mobile": 0,
+        "custom_class": ""
       }
     }
   },
   "order": [
-    "shogun-helper",
-    "main"
+    "main",
+    "a9fc72c0-f03b-4e44-8a1c-ac15c0aa4c56",
+    "3c1730b0-58ef-40e6-b5c5-62c14faf849f",
+    "94b4c291-eb0b-4556-a13c-b6ebf4f76ba1",
+    "b6e016f2-c0cf-41c9-8d86-2900267a72a8"
   ]
 }

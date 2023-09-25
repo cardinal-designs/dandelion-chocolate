@@ -1,0 +1,57 @@
+.meet__host--header {
+  margin-bottom: 37px;
+}
+
+.hosts__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 38px;
+}
+
+.meet__host--items {
+  flex: 0 1 350px;
+}
+
+.meet__host-media svg {
+  border: 1px solid;
+  display: block;
+}
+
+.meet__host--header .section_heading {
+  margin: 0;
+}
+
+.meet__host-media img {
+  width: 100%;
+}
+
+.host__detail .heading {
+  margin-top: 12px;
+  margin-bottom: 3px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.host__detail .custom__description * {
+  font-family: 'AGaramondPro';
+}
+
+@media only screen and (max-width: 767px) {
+
+  .meet__host--header {
+    margin-bottom: 26px;
+  }
+
+  .meet__host--header .section_heading {
+    text-align: left;
+  }
+
+  .hosts__list {
+    flex-wrap:wrap;
+    row-gap: 51px;
+  }
+  
+}

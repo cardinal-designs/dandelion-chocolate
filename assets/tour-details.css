@@ -1,0 +1,138 @@
+.tour__details--wrap.row {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.tour__details--wrap .btn_wrap {
+  display: flex;
+  column-gap: 15px;
+  margin-top: 19px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tour__details--wrap .btn {
+  border-radius: 6px;
+  flex: 1;
+  min-width: auto;
+  padding: 14px 10px 10px !important;
+  min-height: auto;
+  line-height: 1;
+  border-width: 2px;
+}
+
+.tour__details--wrap .trip__image--with--content-inner .rte {
+  padding: 26px 0;
+  border-bottom: 1px solid #333;
+}
+
+.tour__details--wrap .trip__details {
+  align-items: flex-start;
+  margin: 0;
+}
+
+.tour__details--wrap .icon__row--wrap {
+  justify-content: flex-start;
+}
+
+.tour__details--wrap .icon__row--wrap .icon_items {
+  flex: initial;
+}
+
+.tour__details--wrap  .image-with-text-overlay--content-inner.content-width-large {
+  max-width: 800px;
+}
+
+.tour__details--wrap .custom__heading {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.tour__details--wrap .trip__details-content-inner * {
+  letter-spacing: 0.1em;
+}
+
+@media only screen and (min-width: 1067px) {
+  
+  .tour__details--wrap .trip__details {
+    display: grid;
+    grid-template-columns: 1fr 0.91182fr;
+    column-gap: 42px;
+  }
+  
+}
+
+@media only screen and (max-width: 1199px) {
+
+  .tour__details--wrap .trip__details {
+    column-gap: 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 1067px) {
+
+  .tour__details--wrap .trip__image--with-content {
+    padding: 17px 0 0;
+  }
+
+  .tour__details--wrap .custom__heading {
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .tour__details--wrap .trip__details-content-inner * {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+  }
+
+  .tour__details--wrap .trip__details-content {
+    padding: 13.5px 0;
+  }
+
+  .tour__details--wrap .trip__details-content-inner br {
+    display: none;
+  }
+
+  .tour__details--wrap .icon__row--wrap {
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  .tour__details--wrap .btn_wrap {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    margin-top: 15px;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) { 
+
+  .tour__details--wrap .trip__image--with--content-inner .rte {
+    padding: 18px 0;
+  }
+
+  .tour__details--wrap .trip__details-content-text {
+    max-width: 56%;
+  }
+
+  .tour__details--wrap .btn {
+    padding: 15px 10px 11px!important;
+  }
+
+  .tour__details--wrap .btn.btn--white {
+    padding: 13px 10px 9px!important;
+  }
+  
+}
+
+
+
+
+

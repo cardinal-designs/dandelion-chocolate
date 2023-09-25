@@ -1,0 +1,189 @@
+.pricing__blocks-main {
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+.pricing__blocks ul li {
+  line-height: 21.6px;
+  font-size: 18px;
+  position:relative;
+  list-style: none;
+}
+
+.pricing__blocks ul li:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #777779;
+  border-radius: 50%;
+  left: -18px;
+  top: 5px;
+}
+
+.room__pricing-section {
+  border-bottom: 1px solid #cccccc;
+}
+
+.room__pricing-section-inner {
+  padding: 0 20px;
+}
+
+.pricing__blocks {
+  padding: 20px 15px;
+}
+
+.pricing__blocks ul {
+  padding: 0px 0 0 25px;
+  margin: 0;
+}
+
+.pricing__blocks .custom__h6 {
+  margin-bottom: 10px;
+}
+
+.room__pricing-section .custom__heading {
+  margin-bottom: 30px;
+}
+
+.room__pricing-section-inner .product-variants {
+  border: 1px solid #CCC;
+  background: #FFF;
+  max-width: 552px;
+  margin: 22px auto 0;
+  width: 100%;
+}
+
+.select-options {
+  margin: 0;
+  list-style: none;
+  display: none;
+}
+
+.select-styled,
+.select-options li {
+  color: #333;
+  font-family: Garamond Premiere Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21.6px;
+  padding: 11px 16px;
+  cursor: pointer;
+}
+
+.select-options li {
+  border-top: 1px solid #cccccc;
+}
+
+.select-styled {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='9' viewBox='0 0 16 9' fill='none'%3E%3Cpath d='M2 2L8 8L14 2' stroke='%2353595C' stroke-width='2' stroke-linecap='square' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+}
+
+.trip__cart-btn {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.product-submit.custom__btn {
+  min-width: 349px;
+  border-radius: 0;
+  height: auto;
+  min-height: 46px;
+  padding: 15px 40px 9px
+}
+
+.choose__pricing {
+  margin-top: 37px;
+  text-align: center;
+}
+
+.room__pricing-section-inner .custom__heading {
+  letter-spacing: .05em;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .pricing__blocks-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+  
+}
+
+@media only screen and (max-width: 1007px) {
+
+  .pricing__blocks ul {
+    padding: 0 0 0 30px;
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .pricing__blocks {
+    margin-bottom: 20px;
+  }
+   
+  .pricing__blocks:last-child {
+    margin-bottom: 0;
+  }
+
+  .choose__pricing .custom__sub-heading,
+  .choose__pricing .custom__sh1 {
+    text-align: left;
+  }
+
+  .choose__pricing .custom__sh1 {
+    margin-bottom: 13px; 
+  }
+
+  .room__pricing-section-inner .product-variants {
+    margin: 0 auto;
+  }
+  
+  .select-styled, .select-options li {
+    font-size: 14px;
+    line-height: 16.8px;
+    padding: 14px 16px;
+  }
+
+  .room__pricing-section-inner {
+    padding: 0;
+  }
+
+  .room__pricing {
+    padding: 0 20px;
+  }
+
+  .product-submit.custom__btn {
+    min-width: 335px;
+  }
+
+  .choose__pricing {
+    margin-top: 29px;
+  }
+
+  .pricing__blocks ul {
+    padding: 0 0 0 25px;
+  }
+
+  .room__pricing-section-inner .custom__heading {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 28px;
+  }
+  
+}
+
+@media only screen and (max-width: 374px) {
+
+  .product-submit.custom__btn {
+    min-width: 100%;
+  }
+  
+}

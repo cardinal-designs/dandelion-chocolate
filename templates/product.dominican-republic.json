@@ -1,0 +1,534 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": true,
+            "show_products_rating": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "color_picker": true,
+            "variant_is_disabled": true,
+            "sizing_guide_text": "",
+            "sizing_guide_icon": "ruler",
+            "sizing_guide_page": "sizing-guide"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
+          "type": "side_panel",
+          "disabled": true,
+          "settings": {
+            "side_panel_1_label": "Materials",
+            "side_panel_1_icon": "leather",
+            "side_panel_1_page": "materials",
+            "side_panel_2_label": "Shipping & Returns",
+            "side_panel_2_icon": "box",
+            "side_panel_2_page": "shipping",
+            "side_panel_3_label": "Care Guide",
+            "side_panel_3_icon": "washing",
+            "side_panel_3_page": "care-guide"
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "88a32717-f86c-4cd9-a5b9-49d8f009ac6b": {
+          "type": "tab_list",
+          "settings": {
+          }
+        },
+        "f6206b2a-e143-4f36-ae40-2c2130ef00e6": {
+          "type": "icon_list",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "variant_picker",
+        "buy_buttons",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b",
+        "88a32717-f86c-4cd9-a5b9-49d8f009ac6b",
+        "f6206b2a-e143-4f36-ae40-2c2130ef00e6"
+      ],
+      "custom_css": [
+        ".thb-product-detail.product {display: none;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "enable_sticky_info": true,
+        "enable_sticky_add_to_cart": true,
+        "show_taxes_included": true,
+        "media_layout": "slider",
+        "display_slider_pagination": true,
+        "media_aspect_ratio": "adapt",
+        "display_captions": true,
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false,
+        "holiday_shipping": false
+      }
+    },
+    "32b970ff-9ce3-4304-92d9-38d56fe8871b": {
+      "type": "trip-details",
+      "blocks": {
+        "dbc76c40-999c-4797-afce-22051f51a343": {
+          "type": "heading",
+          "settings": {
+            "text": "Zorzal Estate, Dominican Republic",
+            "heading_size": "h3"
+          }
+        },
+        "template--16034682503308__32b970ff-9ce3-4304-92d9-38d56fe8871b-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "Coming 2024"
+          }
+        },
+        "36c106b6-252b-4096-a388-72e932627d6f": {
+          "type": "tab",
+          "settings": {
+            "heading": "PRICE",
+            "content": "<p>$2,500 \/ PERSON<\/p>",
+            "mobile_content": "",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "3c23ecd4-aa4c-4c78-9fcc-d72b37ff4d8b": {
+          "type": "tab",
+          "settings": {
+            "heading": "DURATION",
+            "content": "<p>6 DAYS<\/p>",
+            "mobile_content": "",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "828f9ae4-1be8-484f-b6d3-f5762e115b00": {
+          "type": "tab",
+          "settings": {
+            "heading": "KNOWLEDGE LEVEL",
+            "content": "",
+            "mobile_content": "",
+            "description": "<p>This trip is process-heavy, with in-depth information on fermentation and more.<\/p>",
+            "mobile_description": "",
+            "icon": "shopify:\/\/shop_images\/Group_149_5cc1a90d-ae16-4a8b-93a3-312ef937349c.png"
+          }
+        },
+        "87af2d84-53fa-4373-8355-19427215ba41": {
+          "type": "tab",
+          "settings": {
+            "heading": "activity level",
+            "content": "",
+            "mobile_content": "",
+            "description": "<p>This trip involves hours of hilly hiking through muddy terrain, in hot weather.<\/p>",
+            "mobile_description": "",
+            "icon": "shopify:\/\/shop_images\/Group_147.png"
+          }
+        },
+        "3b14e301-016f-4183-a287-458a9b6a5acf": {
+          "type": "tab",
+          "settings": {
+            "heading": "comfort level",
+            "content": "",
+            "mobile_content": "",
+            "description": "<p>Guests will stay on a nature reserve for one night. `<\/p>",
+            "mobile_description": "",
+            "icon": "shopify:\/\/shop_images\/Group_149.png"
+          }
+        },
+        "b11093ea-5c51-4bbe-bf0b-5c921eb7e412": {
+          "type": "button",
+          "settings": {
+            "link_label": "JOIN WAITLIST FOR UPDATES",
+            "link": "https:\/\/www.dandelionchocolate.com\/products\/dominican-republic-trip?view=dominican-republic#custom__contact-form",
+            "button_style": "btn--gold"
+          }
+        }
+      },
+      "block_order": [
+        "dbc76c40-999c-4797-afce-22051f51a343",
+        "template--16034682503308__32b970ff-9ce3-4304-92d9-38d56fe8871b-subheading-1",
+        "36c106b6-252b-4096-a388-72e932627d6f",
+        "3c23ecd4-aa4c-4c78-9fcc-d72b37ff4d8b",
+        "828f9ae4-1be8-484f-b6d3-f5762e115b00",
+        "87af2d84-53fa-4373-8355-19427215ba41",
+        "3b14e301-016f-4183-a287-458a9b6a5acf",
+        "b11093ea-5c51-4bbe-bf0b-5c921eb7e412"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Image_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#f5f6f5",
+        "color_text": "#333333",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "custom_class": ""
+      }
+    },
+    "ac9531b6-74a6-4679-b261-617e4022c1dc": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Trip Overview",
+            "heading_size": "large"
+          }
+        },
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Because cocoa in the Dominican Republic is fermented centrally instead of at individual farms, this trip dives deep into the process by visiting two fermentaries. The trip also includes a day of hiking to a cacao farm and certified bird sanctuary, where guests will learn all about cacao genetics, taste varieties of cocoa, enjoy a campfire, and spend the night on the reserve. Additional activities include visiting farms and chocolate makers, birdwatching, sampling local Dominican food and culture, and more. <br\/><br\/>This trip is six days long, including arrival and departure days. Minimum age to participate is 16 years old. <\/p>"
+          }
+        },
+        "3107bfb4-563f-4f61-a912-33598056dae0": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>FEATURED ACTIVITIES<\/h4><ul><li>Spend the night at a bird sanctuary and cacao farm<\/li><li>Visit a local chocolate maker<\/li><li>Taste a variety of cocoa fresh off the farm<\/li><li>Visit two fermentaries and two cacao farms<\/li><li>Learn about cacao genetics and cultivation techniques<\/li><li>Enjoy a free day of canyoning, swimming, deep-sea fishing, surfing, and more (not included in the trip price)<\/li><li>Taste Dominican food and experience local culture<br\/><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-heading-1",
+        "template--16034682503308__ac9531b6-74a6-4679-b261-617e4022c1dc-text-1",
+        "3107bfb4-563f-4f61-a912-33598056dae0"
+      ],
+      "settings": {
+        "section_heading": "",
+        "image": "shopify:\/\/shop_images\/dr-trip-review.png",
+        "image_mobile": "shopify:\/\/shop_images\/Hawaii_Image_3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#333333",
+        "top_spacing_desktop": 74,
+        "bottom_spacing_desktop": 100,
+        "top_spacing_mobile": 32,
+        "bottom_spacing_mobile": 38,
+        "custom_class": ""
+      }
+    },
+    "139a823f-816a-453f-b7cc-090192aba72d": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The Price of This Trip Includes",
+            "size": "h3"
+          }
+        },
+        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Lodging for the extent of the trip at our beach-front condos where each guest will stay in their own room.<\/li><li>Transportation between scheduled activities <\/li><li>Meals and any planned cultural excursions. <em>We will accommodate any food allergies or restrictions.<\/em> <\/li><li>Guests are responsible for their own flight in and out of Puerto Plato International Airport, as well as any activities they decide to do on their free day. <br\/><\/li><\/ul>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-heading-1",
+        "template--16034682503308__139a823f-816a-453f-b7cc-090192aba72d-text-1"
+      ],
+      "settings": {
+        "section_width": "full-width-row",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "color_bg": "#f5f6f5",
+        "color_text": "#333333",
+        "color_links": "#333333",
+        "custom_class": "",
+        "top_spacing_desktop": 88,
+        "bottom_spacing_desktop": 88,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 48
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_left": true,
+        "description": "<p>Combine your style with these products<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "show_collaborator": true,
+        "enable_treatment": true,
+        "show_short_product_desc": true
+      }
+    },
+    "50f46e25-67ed-4484-8fac-50a49618f982": {
+      "type": "trip-schedule",
+      "blocks": {
+        "template--16034682503308__50f46e25-67ed-4484-8fac-50a49618f982-day-schedule-1": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 1 - ARRIVAL",
+            "description": "<p>Fly into Puerto Plata, settle into your room, meet everyone, and get an overview of the agenda for the week.<\/p>"
+          }
+        },
+        "3777b8e0-b53b-469c-a05a-0777e16e4838": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 2 - ZORZAL FERMENTORIUM & RESERVA ZORZAL",
+            "description": "<p>We start early with a 2-hour drive down to visit Zorzal’s Fermentorium where you’ll see how cocoa is fermented and dried. After stopping for lunch in the back of a local chef’s home, we’ll drive to visit Reserva Zorzal, where we’ll learn about the private reserve and its protected area policy.<\/p>"
+          }
+        },
+        "dac75cda-53fd-468a-a1a8-34dd3eda190f": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 3 - RESERVA ZORZAL",
+            "description": "<p>We’ll spend the first part of our day continuing to explore and learn about Reserve Zorzal. Then we’ll drive back to our lodgings for the evening to settle into our cozy beds. <\/p>"
+          }
+        },
+        "485dd3f2-99f1-414f-96ec-2626f1421fa8": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 4 - FREE DAY",
+            "description": "<p>This is a day to do whatever you’d like to do: go kite surfing, surfing, caving or kayaking. Or just relax and read a book!<\/p>"
+          }
+        },
+        "fecb9499-d09f-418e-9a68-52bb2766e490": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 5 - TOUR A COOPERATIVE",
+            "description": "<p>On our last full day, we will tour Conocado, one of the largest cacao cooperatives in the Dominican Republic, and learn about fair trade and other environmental certifications.<\/p>"
+          }
+        },
+        "db60871d-05a8-41cf-99e2-01d5b72f89a8": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 6 - DEPARTURE",
+            "description": "<p>On the last day, we’ll depart from the Dominican Republic with an understanding of cacao production and a sunkissed glow from spending a week in the tropics.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__50f46e25-67ed-4484-8fac-50a49618f982-day-schedule-1",
+        "3777b8e0-b53b-469c-a05a-0777e16e4838",
+        "dac75cda-53fd-468a-a1a8-34dd3eda190f",
+        "485dd3f2-99f1-414f-96ec-2626f1421fa8",
+        "fecb9499-d09f-418e-9a68-52bb2766e490",
+        "db60871d-05a8-41cf-99e2-01d5b72f89a8"
+      ],
+      "settings": {
+        "heading": "A Preview of Your Day to Day",
+        "description": "Schedule Subject to Change",
+        "image": "shopify:\/\/shop_images\/dr-trip-schedule.png",
+        "section_width": "full-width-spacing",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "section_heading_color": "#333333",
+        "section_rte_color": "#80714e",
+        "color_text": "#333333",
+        "top_spacing_desktop": 54,
+        "bottom_spacing_desktop": 62,
+        "top_spacing_mobile": 28,
+        "bottom_spacing_mobile": 28
+      }
+    },
+    "fb25055f-8e63-47d5-9717-784e9e1f1e45": {
+      "type": "meet-your-host",
+      "blocks": {
+        "template--16034682503308__fb25055f-8e63-47d5-9717-784e9e1f1e45-host-detail-1": {
+          "type": "host-detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Greg_D_Alesandre.png",
+            "heading": "Greg D’Alesandre",
+            "description": "<p>Chocolate Sourcerer at Dandelion Chocolate<\/p>"
+          }
+        },
+        "c3686f99-9c3b-4d89-8732-0c1c8259a33c": {
+          "type": "host-detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stephen_Durfee.png",
+            "heading": "Stephen Durfee",
+            "description": "<p>Chocolate Curriculum Director at Dandelion Chocolate<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__fb25055f-8e63-47d5-9717-784e9e1f1e45-host-detail-1",
+        "c3686f99-9c3b-4d89-8732-0c1c8259a33c"
+      ],
+      "settings": {
+        "heading": "Meet Your Hosts",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#f5f6f5",
+        "color_text": "#333333",
+        "color_sub_text": "#333333",
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 72,
+        "top_spacing_mobile": 26,
+        "bottom_spacing_mobile": 36
+      }
+    },
+    "c07fff9c-b92e-44b5-9c0c-f181b828d047": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Why the Dominican Republic?",
+            "heading_size": "large"
+          }
+        },
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Dominican Republic is one of the top 10 cocoa producers on the globe, producing the largest amount of organic certified cocoa in the world. Because the cocoa is centrally fermented rather than farm-fermented, guests will get to see this large-scale fermentation process and learn how it creates a higher quality of cocoa. <br\/><br\/>Dandelion first starting sourcing from Zorzal Estate in 2013 and has been going on origin trips to this location since 2016. On your trip, you’ll get to meet chocolate makers and farmers who help create the chocolate you love. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-heading-1",
+        "template--16034682503308__c07fff9c-b92e-44b5-9c0c-f181b828d047-text-1"
+      ],
+      "settings": {
+        "section_heading": "",
+        "image": "shopify:\/\/shop_images\/why-dr.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#333333",
+        "top_spacing_desktop": 66,
+        "bottom_spacing_desktop": 100,
+        "top_spacing_mobile": 44,
+        "bottom_spacing_mobile": 48,
+        "custom_class": ""
+      }
+    },
+    "245588c4-1950-4236-9898-049a5000a006": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Hawaii",
+            "heading_size": "small"
+          }
+        },
+        "4a76ee1f-aa72-400f-a7fb-3c200bd5a559": {
+          "type": "caption",
+          "settings": {
+            "caption": "Month 5-11, 2023",
+            "caption_color": "#a28d5b"
+          }
+        },
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Visit Hawaiian cacao farms and chocolate makers, sample cacao and tropical fruit at its place of origin, and experience local Hawaiian culture.<\/p>"
+          }
+        },
+        "88179e13-947d-47fe-81e5-8cf0838616ff": {
+          "type": "button",
+          "settings": {
+            "button_text": "Learn More",
+            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/hawaii-trip?view=hawaii",
+            "button_style": "btn"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-heading-1",
+        "4a76ee1f-aa72-400f-a7fb-3c200bd5a559",
+        "template--16034682503308__245588c4-1950-4236-9898-049a5000a006-text-1",
+        "88179e13-947d-47fe-81e5-8cf0838616ff"
+      ],
+      "settings": {
+        "section_heading": "Other Origin Trips",
+        "image": "shopify:\/\/shop_images\/pricing.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "text_first",
+        "content_position": "text-center",
+        "color_bg": "#f5f6f5",
+        "color_text": "#333333",
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 56,
+        "top_spacing_mobile": 24,
+        "bottom_spacing_mobile": 40,
+        "custom_class": "other__origin-trips"
+      }
+    },
+    "de91fbc7-f0bb-41fe-a17d-79d7f75acfae": {
+      "type": "custom-contact-form",
+      "settings": {
+        "bg_color": "#53595c",
+        "text_color": "#ffffff",
+        "heading": "JOIN THE WAITLIST FOR ANNOUNCEMENTS",
+        "description": "<p>To be the first to receive updates on the next trip to Zorzal Estate, please fill out the form below, and we'll be in touch. We're also happy to answer any questions in the meantime.<\/p>",
+        "show_phone_number": true,
+        "top_spacing_desktop": 60,
+        "bottom_spacing_desktop": 100,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "32b970ff-9ce3-4304-92d9-38d56fe8871b",
+    "ac9531b6-74a6-4679-b261-617e4022c1dc",
+    "139a823f-816a-453f-b7cc-090192aba72d",
+    "product-recommendations",
+    "50f46e25-67ed-4484-8fac-50a49618f982",
+    "fb25055f-8e63-47d5-9717-784e9e1f1e45",
+    "c07fff9c-b92e-44b5-9c0c-f181b828d047",
+    "245588c4-1950-4236-9898-049a5000a006",
+    "de91fbc7-f0bb-41fe-a17d-79d7f75acfae"
+  ]
+}

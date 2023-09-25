@@ -162,6 +162,13 @@ document.addEventListener("DOMContentLoaded", function() {
   var flickityItems = document.querySelectorAll(".product-images__slide");
 
   var elem = document.querySelector('.carousel-main');
+  // var getPosition = parseInt($('.media__gallery').attr('data-position')) - 1;
+  // if(getPosition){
+  //   $('#Product-Slider .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider .product-images__slide:eq(0)");
+  //   $('#Product-Slider-Thumbanils .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider-Thumbanils .product-images__slide:eq(0)");
+    
+  // }
+  
   var flkty2 = new Flickity(elem);
   
   var flkty1 = new Flickity(flickityContainer, {
@@ -177,6 +184,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Accordion 
 var accordionContainer = document.querySelector("dl.accordion-list");
+var duration = 300;
+if(accordionContainer){
+  accordionContainer.addEventListener("click", function(event) {
+    if (event.target.tagName === "DT" && !event.target.classList.contains("active")) {
+      var activeDt = accordionContainer.querySelector("dt.active");
+      
+      if (activeDt) {
+        activeDt.classList.remove("active");
+        slideUp(activeDt.nextElementSibling)
+      }
+      event.target.classList.add("active");
+      slideDown(event.target.nextElementSibling)
+    } else if (event.target.tagName === "DT" && event.target.classList.contains("active")) {
+      var activeDt = accordionContainer.querySelector("dt.active");
+      
+      if (activeDt) {
+        activeDt.classList.remove("active");
+        slideUp(activeDt.nextElementSibling)
+      }
+    
+    }
+  });
+}
+
+// Accordion 
+var accordionContainer = document.querySelector("dl.meta__accordion--list");
 var duration = 300;
 if(accordionContainer){
   accordionContainer.addEventListener("click", function(event) {
@@ -328,6 +361,138 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
       window.sessionStorage.removeItem("scrolltosection");
     }
   }
+})
+
+$(document).ready(function() {
+  var desc = $('.meta__product--description').html();
+  
+  var read_more = '<div class="rm_grad" style="">&nbsp;</div><div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div>';
+  $('.meta__product--description .metafield-rich_text_field').html('<div class="short_description">' + desc + read_more + "</dl>");
+  $('.read_less').hide();
+  
+  var og_height = $('.short_description').innerHeight();
+
+  console.log(og_height);
+
+  if( og_height > 300 ) {
+    $('.short_description').css({"max-height": "300px"});
+    $('.short_description .metafield-rich_text_field').css({"max-height": "300px"});
+  } 
+  else {
+    $('.read_more').hide();
+    $('.read_less').hide();
+    $('.rm_grad').hide();
+  }
+  
+  $('.read_more').on('click', function() {
+    $('.short_description').animate({ "max-height": og_height});
+    $('.short_description .metafield-rich_text_field').animate({ "max-height": og_height});
+    $(this).hide();
+    $('.short_description').addClass('expanded');
+    $('.read_less').show();
+    $('.rm_grad').hide();
+  });
+  
+  $('.read_less').on('click', function() {
+    $('.short_description').animate({ "max-height": "300px"});
+    $('.short_description .metafield-rich_text_field').animate({ "max-height": "300px"});
+    $(this).hide();
+    $('.short_description').removeClass('expanded');
+    $('.rm_grad').show(); 
+    $('.read_more').show();
+  });
+
+  $('.product-information variant-selects select').each(function(){
+      var $this = $(this), numberOfOptions = $(this).children('option').length;
+    
+      $this.addClass('select-hidden'); 
+      $this.wrap('<div class="select"></div>');
+      $('.product-variants').append('<div class="select-styled"></div>');
+  
+      var $styledSelect = $('.product-variants').find('div.select-styled');
+      $styledSelect.text($this.children('option').eq(0).text());
+    
+      var $list = $('<ul />', {
+          'class': 'select-options'
+      }).insertAfter($styledSelect);
+    
+      for (var i = 0; i < numberOfOptions; i++) {
+          $('<li />', {
+              text: $this.children('option').eq(i).text(),
+              rel: $this.children('option').eq(i).val()
+          }).appendTo($list);
+          if ($this.children('option').eq(i).is(':selected')){
+            $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+          }
+      }
+    
+      var $listItems = $list.children('li');
+    
+      $styledSelect.click(function(e) {
+          e.stopPropagation();
+          $('div.select-styled.active').not(this).each(function(){
+              $(this).removeClass('active').next('ul.select-options').hide();
+          });
+          $(this).toggleClass('active').next('ul.select-options').toggle();
+      });
+    
+     $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('active');
+        var selectElement = $this[0];
+    selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
+    
+    // Dispatch the 'change' event on the select element
+    var changeEvent = new Event('change', { bubbles: true });
+    selectElement.dispatchEvent(changeEvent);
+  
+       
+        $list.find('li.is-selected').removeClass('is-selected');
+        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+        $list.hide();
+
+       var addtoCart = $('.product-information button[type="submit"]').text();
+       
+       setTimeout(function(){
+         console.log(addtoCart.trim())
+         if (addtoCart.includes("Sold out")){
+           $('.product-submit').text('SOLD OUT');
+           $('.product-submit').attr('disabled','disabled');
+         } else {
+           $('.product-submit').text('RESERVE YOUR SPOT');
+           $('.product-submit').removeAttr('disabled');
+         }
+       },3000)
+      });
+  
+    
+      $(document).click(function() {
+          $styledSelect.removeClass('active');
+          $list.hide();
+      });
+  
+  });
+  $('.product-variants').after('<div class="trip__cart-btn"><button class="product-submit custom__btn">RESERVE YOUR SPOT</button></div>')
+  
+});
+
+document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
+  ele.addEventListener('click',function(el){
+    let Id = el.currentTarget.getAttribute('data-col-Id'),
+        sectionId = document.querySelector(`[id="${Id}"]`);
+    window.scroll({
+      top: sectionId.offsetTop - 72,
+      behavior: "smooth",
+    });
+  })
+
+  if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
 });
 
 $(document).ready(function () {
@@ -401,6 +566,5 @@ $(document).ready(function () {
     $('.facets__label').text(productsLength+ " Results")
   }
 })
-
 
 

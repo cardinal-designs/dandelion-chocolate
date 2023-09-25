@@ -1,0 +1,131 @@
+.trip__schedule--header {
+  margin: 0 0 35px;
+}
+
+.section-image-with-text .trip__schedule.row.full-width-spacing .columns {
+  max-width: 1166px !important;
+}
+
+.trip__schedule--section .section_heading {
+  margin: 0 0 12px;
+}
+
+.trip__schedule--section .section_description {
+  font-family: 'AGaramondPro';
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.trip__schedule--wrap {
+  display: flex;
+  column-gap: 38px;
+}
+
+.trip__schedule--wrap .trip__schedule--items {
+  flex: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.trip__schedule-media svg {
+ border: 1px solid; 
+}
+
+.trip__schedule--image img {
+  width: 100%;
+}
+
+.trip__schedule--text--inner .heading {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin: 0 0 9px;
+  border-bottom: 1px solid #ccc;
+}
+
+.trip__schedule--text--inner .rte,
+.trip__schedule--text--inner .rte * {
+  font-family: Garamond Premiere Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+}
+
+.schedule__detail {
+  margin-bottom: 40px;
+}
+
+.schedule__detail:last-child {
+  margin-bottom: 0;
+}
+
+.schedule__detail .rte p {
+  font-family: 'Garamond Premiere Pro';
+}
+
+@media only screen and (max-width: 1067px) {
+
+  .trip__schedule--section .section_heading {
+    margin: 0 0 10px;
+  }
+
+  .trip__schedule--section .section_description {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .trip__schedule--wrap {
+    flex-wrap: wrap;
+    row-gap: 23px;
+  }
+
+  .trip__schedule--wrap .trip__schedule--items {
+    flex: 0 1 100%;
+  }
+
+  .trip__schedule--header {
+    margin: 0 0 30px;
+  }
+
+  .schedule__detail {
+    margin-bottom: 37px;
+  }
+
+  .trip__schedule--text--inner .heading {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+
+  .trip__schedule--section .section_heading {
+    margin: 0 0 14px;
+  }
+
+  .trip__schedule--header {
+    margin: 0 0 25px;
+  }
+
+  .schedule__detail {
+    margin-bottom: 30px;
+  }
+
+  .trip__schedule--text--inner .heading {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+}

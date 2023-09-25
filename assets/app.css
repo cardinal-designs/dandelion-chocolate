@@ -2703,7 +2703,15 @@ scroll-shadow {
   .mobile-height-350 {
     min-height: 350px;
   }
+}
 
+@media only screen and (max-width:767px) {
+  .mobile-height-250 {
+    min-height: 250px;
+  }
+  .mobile-height-300 {
+    min-height: 300px;
+  }
 }
 
 @media only screen and (max-width:767px) {
@@ -2756,14 +2764,18 @@ scroll-shadow {
   .desktop-height-450 {
     min-height: 450px;
   }
-
+  .desktop-height-400 {
+    min-height: 400px;
+  }
 }
 
 @media only screen and (min-width:768px) {
   .desktop-height-550 {
     min-height: 550px;
   }
-
+  .desktop-height-500 {
+    min-height: 500px;
+  }
 }
 
 @media only screen and (min-width:768px) {
@@ -4305,7 +4317,7 @@ input[type="submit"][disabled] {
   pointer-events: none;
 }
 
-.button[disabled] span:not(.loading-overlay),
+.button[disabled] > span:not(.loading-overlay),
 input[type="submit"][disabled] span:not(.loading-overlay) {
   opacity: 0.5;
 }
@@ -5163,9 +5175,19 @@ select.resize-select {
 .cart-drawer--recommendations .product-cart-item .cart-product-link {
   text-transform: capitalize;
   color: #333;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 21.6px;
+  letter-spacing: normal;
+}
+
+.cart-drawer--recommendations .product-cart-item .cart-product-link .opti__fonts {
+  text-transform: capitalize;
+  color: #333;
   font-size: 16px;
   margin-bottom: 5px;
   font-family: OPTICaslonBold-Cond;
+  text-transform: uppercase;
   line-height: 20.48px;
   letter-spacing: .04em;
 }
@@ -5869,19 +5891,22 @@ input[type="radio"],
 .side-panel-content .product-cart-item .card__tasting-notes {
   font-size: 14px;
   margin-bottom: 0;
-  line-height: 16.8px;
-  color: #777779;
-  font-family: 'AGaramondPro';
-  letter-spacing: .04em;
-}
-
-.product-cart-item .card__tasting-notes {
-  font-size: 16px;
-  margin-bottom: 0;
   line-height: 19.2px;
   color: #777779;
   font-family: 'AGaramondPro';
   letter-spacing: .04em;
+  text-transform: lowercase;
+}
+
+.cart-drawer--recommendations--container .card__tasting-notes,
+.side-panel-content .card__tasting-notes {
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 16.8px;
+  color: #777779;
+  font-family: 'AGaramondPro';
+  letter-spacing: .04em;
+  text-transform: lowercase;
 }
 
 .cart-drawer--recommendations--container .product__ctarow {
@@ -5923,6 +5948,11 @@ input[type="radio"],
   letter-spacing: .15em; 
 }
 
+.side-panel-content .quantity.small-qty {
+  padding: 0 25px;
+  border-radius: 5px;
+}
+
 .side-panel-content .card__type {
   color: #53595C;
   font-size: 10px;
@@ -5945,4 +5975,32 @@ input[type="radio"],
 
 .template-search .hide-search {
   display: none !important;
+}
+
+.micro__copy {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px 0 8px;
+  text-transform: initial;
+  font-family: Garamond Premiere Pro;
+}
+
+.product-cart-item .micro__copy {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 5px 0 5px;
+  text-transform: initial;
+  font-family: Garamond Premiere Pro;
+}
+
+.side-panel-content--inner .product__country {
+  font-family: Saa Series F D;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.4px;
+  color: #855338;
+  margin: 6px 0;
+  letter-spacing: .15em;
 }

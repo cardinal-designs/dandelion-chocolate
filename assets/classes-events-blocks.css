@@ -1,0 +1,219 @@
+.classes__events--wrap .section__header {
+  padding: 0 20px;
+}
+
+.classes__events--wrap .section__heading {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+}
+
+.classes__events--wrap .section__description {
+  font-family: 'AGaramondPro';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  margin: 36px 0 40px;
+}
+
+.classes__events--wrap .block__items {
+  min-width: 100%;
+}
+
+.classes__events--wrap .block__items img {
+  width: 100%;;
+}
+
+.classes__events--wrap .block__items--wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 54px;
+  row-gap: 47px;
+  max-width: 1294px;
+  margin: 0 auto;
+}
+
+.classes__events--wrap svg {
+  padding: 50px;
+  fill: var(--bg-body, #fff);
+  opacity: .5;
+  background: var(--color-accent);
+  display: block;
+}
+
+.classes__events--wrap .detail_row--item {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #333;
+}
+
+.classes__events--wrap .details-content-text {
+  text-align: right;
+}
+
+.classes__events--wrap .details-heading, 
+.classes__events--wrap .details-content-text, 
+.classes__events--wrap .details-content-text p {
+  color: #53595c;
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.classes__events--wrap .block__description {
+  padding: 10px 0;
+}
+
+.classes__events--wrap .block__description p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+}
+
+.classes__events--wrap .block__buttons {
+  display: grid;
+  column-gap: 18px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.classes__events--wrap .btn {
+  border-radius: 6px;
+  flex: 1;
+  min-width: auto;
+  border-width: 2px;
+  padding: 14px 20px 11px !important;
+}
+
+.classes__events--wrap .text__wrap {
+  padding: 16px 20px 24px;
+}
+
+.classes__events--wrap .block__header .heading {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0.1em;
+}
+
+.classes__events--wrap .icon__row--wrap {
+  column-gap: 70px;
+}
+
+.classes__events--wrap  .icon_items p {
+  letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) { 
+
+  .classes__events--wrap .btn {
+    padding: 14px 10px 11px!important;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+}
+
+@media screen and (max-width: 1199px) {  
+
+  .classes__events--wrap .icon__row--wrap {
+    column-gap: 20px;
+  }
+
+  .classes__events--wrap .block__items--wrap {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 1067px) { 
+
+  .classes__events--wrap .block__buttons {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  .classes__events--wrap .details-heading, 
+  .classes__events--wrap .details-content-text, 
+  .classes__events--wrap .details-content-text p {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+  }
+
+}
+
+@media screen and (max-width: 880px) { 
+
+  .classes__events--wrap .icon__row--wrap {
+    column-gap: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 767px) { 
+
+  .classes__events--wrap .section__heading {
+    font-size: 28px;
+    line-height: 37px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .classes__events--wrap .block__header .heading {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+  }
+
+  .classes__events--wrap .section__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 4px 0 22px;
+  }
+
+  .classes__events--wrap .block__items--wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .classes__events--wrap .text__wrap {
+    padding: 12px 16px 24px;
+  }
+
+  .classes__events--wrap .icon__row--wrap {
+    justify-content: flex-start;
+    padding: 13px 0 15px;
+    column-gap: 20px;
+  }
+
+  .classes__events--wrap .detail_row--item {
+    padding: 12px 0;
+  }
+
+  .classes__events--wrap .block__description {
+    padding: 13px 0 21px;
+  }
+
+  .classes__events--wrap .btn {
+    padding: 17px 20px 13px!important;
+    max-height: 46px;
+  }
+
+  .classes__events--wrap .btn.btn--white {
+    padding: 14px 20px 11px!important
+  }
+
+  .classes__events--wrap .icon__row--wrap .icon_items {
+    flex: 1;
+  }
+  
+}

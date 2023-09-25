@@ -7,8 +7,9 @@
 
 
 .product-form {
-  margin-top: 30px;
-  display: block; }
+  margin-top: 20px;
+  display: block; 
+}
 
 .add_to_cart_holder {
   display: flex;
@@ -124,7 +125,7 @@
       font-weight: 400;
       line-height: 18px;
       letter-spacing: 0.15em;
-      color: #94949C;
+      color: #94949C; 
     }
       .variations fieldset .form__label__value {
         font-weight: 400;
@@ -372,19 +373,18 @@
     margin-top: 40px; } }
 
 .thb-product-detail .product-title-container {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; 
+}
 
-.thb-product-detail .product-title {
+.thb-product-detail .product-title,
+.thb-product-detail .product-title * {
+  font-family: 'CaslonSB-BoldCondensed' !important;
   font-weight: 500;
   margin-bottom: 10px;
   color: #333;
   font-size: 40px;
   line-height: normal;
   letter-spacing: .04em;
-}
-
-.thb-product-detail .product-title.uppercase--true {
-  text-transform: uppercase;
 }
 
 .thb-product-detail .product-title a {
@@ -410,12 +410,12 @@
   border-bottom: 1px solid var(--color-border); }
 
 .thb-product-detail .product-price-container .price {
-  font-size: 13px;
+  font-size: 14px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   letter-spacing: .15em;
-  color: #53595C;
+  color: #666;
 }
 
 .thb-product-detail .product-price-container .price .unit-price {
@@ -435,7 +435,8 @@
 .thb-product-detail .product-price-container .badge {
   margin-right: 5px;
   height: 23px;
-  padding: 0 11px; }
+  padding: 3px 11px 0;
+}
 
 .thb-product-detail .star-rating-container {
   display: block;
@@ -457,7 +458,7 @@
 
 .thb-product-detail .product-short-description {
   font-size: 0.9375rem;
-  margin-bottom: 30px; 
+  margin-bottom: 43px; 
 }
 
 .thb-product-detail .product-short-description p,
@@ -1290,8 +1291,9 @@ product-add-to-cart-sticky .variations fieldset {
 }
 
 .product .product-information {
-  max-width: 438px;
+  max-width: 472px;
   margin: 0 auto;
+  width: 100%; 
 }
 
 .thb-product-detail .product-short-description {
@@ -1305,7 +1307,7 @@ product-add-to-cart-sticky .variations fieldset {
 .product .quantity.buttons_added .qty,
 .product .quantity .minus, .quantity .plus {
   width: 52px;
-  height: 52px;
+  height: 46px;
   background: transparent !important;
 }
 
@@ -1327,6 +1329,9 @@ product-add-to-cart-sticky .variations fieldset {
   border-radius: 30px;
   background-color: #E2C465 !important;
   border: 0;
+  margin: 0;
+  padding-top: 4px;
+  font-size: 13px;
   transition: all .25s cubic-bezier(.104,.204,.492,1);
 }
 
@@ -1337,6 +1342,10 @@ product-add-to-cart-sticky .variations fieldset {
 .product .add_to_cart_holder .button:hover {
   background-color: #a48b55 !important;
   color: #fff !important;
+}
+
+.product .add_to_cart_holder .button:hover .product__price-main span.price .amount {
+  color: #fff !important;  
 }
 
 .product .product-button--link {
@@ -1362,9 +1371,10 @@ product-add-to-cart-sticky .variations fieldset {
 }
 
 .product__country {
-  font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;
+  font-family: 'Saa Series F D';
   font-size: 16px;
   line-height: 1;
+  font-weight: 400;
   letter-spacing: .15em;
   color: #b76a23;
   margin-bottom: 20px;
@@ -1406,6 +1416,7 @@ product-add-to-cart-sticky .variations fieldset {
 .product__free-shipping span {
   color: #4a4a4a;
   font-size: 18px;
+  text-transform: capitalize;
 }
 
 .product__detail {
@@ -1445,6 +1456,8 @@ product-add-to-cart-sticky .variations fieldset {
   text-transform: uppercase;
 }
 
+.product__chocolate_maker_name,
+.product__batch_number,
 .product__harvest_year {
   color: #333;
   font-family: Saa Series F D;
@@ -1454,6 +1467,7 @@ product-add-to-cart-sticky .variations fieldset {
   letter-spacing: .15em;  
 }
 
+.meta__new--percentage,
 .new-percentage {
   margin-bottom: 10px;
   color: #666;
@@ -1466,8 +1480,13 @@ product-add-to-cart-sticky .variations fieldset {
   background-color: #FFFDF9;
 }
 
+.template-product-hawaii #main-content {
+  background-color: #ffffff;
+}
+
 /*================ Accordion ================*/
 
+d.meta__accordion--list,
 dl.accordion-list {
   background-color: transparent;
   border: none;
@@ -1486,25 +1505,30 @@ dl.accordion-list {
   margin-top: 30px;
 }
 
+.product dl.meta__accordion--list dt,
 .product dl.accordion-list dt {
   text-transform: uppercase;
   border-top: 1px solid #333;
-  padding: 13px 5px 7px;
+  padding: 17px 5px 11px;
   letter-spacing: .15em;
   font-size: 13px;
   font-family: Saa Series F D !important;
   margin: 0;
   color: #666666;
+  cursor: pointer;
 }
 
+.product dl.meta__accordion--list dt span,
 .product dl.accordion-list dt span {
   font-size: 13px !important;
 }
 
+dl.meta__accordion--list dt:hover
 dl.accordion-list dt:hover {
   background-color: rgba(255, 198, 0, 0.5); 
 }
 
+dl.meta__accordion--list dt:after,
 dl.accordion-list dt:after {
   content: '＋';
   font-weight: bold;
@@ -1515,10 +1539,12 @@ dl.accordion-list dt:after {
   text-shadow: 0 0 0 #A28D5B; 
 }
 
+dl.meta__accordion--list dt.active:after,
 dl.accordion-list dt.active:after {
   content: '－'; 
 }
 
+dl.meta__accordion--list dd,
 dl.accordion-list dd {
   padding: 5px 5px 15px 5px;
   display: none;
@@ -1613,13 +1639,14 @@ dl.accordion-list dd {
 }
 
 quantity-selector.quantity .minus svg {
-  width: 12px;
-  height: 4px;
+  width: 10px;
+  height: 3px;
+  margin-bottom: 2px;
 }
 
 quantity-selector.quantity .plus svg {
-  width: 18px;
-  height: 12px;
+  width: 13px;
+  height: 9px;
 }
 
 .quantity .minus svg,
@@ -1652,7 +1679,7 @@ quantity-selector.quantity .plus svg {
 .short_description p {
   font-size: 18px;
   line-height: 140%;
-  color: #333333;
+  color: #000;
   letter-spacing: 0.02em;
 }
 
@@ -1669,6 +1696,7 @@ quantity-selector.quantity .plus svg {
   font-family: Saa Series F D !important;
   letter-spacing: .15em;
   font-size: 14px;
+  margin: 0;
 }
 
 .thb-product-detail .product-short-description p {
@@ -1789,6 +1817,27 @@ quantity-selector.quantity .plus svg {
   .add_to_cart_holder .quantity {
     margin-left: 0;
     margin-right: 0;
+    width: 101px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+
+  .add_to_cart_holder quantity-selector.quantity .minus svg {
+    width: 10px;
+    height: 3px;
+  }
+
+  .add_to_cart_holder  quantity-selector.quantity .plus svg {
+    width: 16px;
+    height: 9px;
+  }
+
+  .product .quantity.buttons_added .qty,
+  .product .quantity .minus, .quantity .plus {
+    width: 40px;
+    height: 46px;
   }
 
   .product .add_to_cart_holder .button {
@@ -1838,10 +1887,6 @@ quantity-selector.quantity .plus svg {
 
   .product__detail {
     padding: 10px 0;  
-  }
-
-  .thb-product-detail .product-title-container {
-    margin-bottom: 10px;
   }
 
   #Product-Slider-Thumbanils .product-images__slide {
@@ -2216,4 +2261,326 @@ variant-selects .product-form__input .select-arrow {
     margin-bottom: 30px !important;
   }
     
+}
+
+
+
+/* Metafield css updates */
+
+.above_title p {
+  margin: 0;
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.15em;
+  color: #A28D5B;
+}
+
+.subtitle p {
+  font-family: 'AGaramondPro';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+
+.merch__icons {
+  margin-bottom: 30px;
+}
+
+.merch__icons.multi__merch--icons .product__ctarow {
+  margin-bottom: 0;
+}
+
+.merch__icons.multi__merch--icons .product__free-shipping span {
+  font-family: Saa Series F D;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.special__message--wrap {
+  background: #F5F1DB;
+  padding: 15px 9px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: 'Garamond Premiere Pro';
+}
+
+.special__message--wrap:before {
+  content: "";
+  background-image: url(/cdn/shop/files/info-circle.png?v=1694164023);
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 3px;
+}
+
+.meta__tasting--notes,
+.meta__tasting--notes * {
+  font-family: 'AGaramondPro';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #B76A23;
+  text-transform: lowercase;
+}
+
+.meta__accordion--list * {
+  font-family: Garamond Premiere Pro;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: normal;
+}
+
+.meta__accordion--list p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+.ingredients__list--item {
+  margin-bottom: 10px;
+}
+
+.ingredients__list--item a {
+  color: #DCB251;
+  text-decoration: underline;
+}
+
+.ingredients__list--item:last-child {
+  margin-bottom: 0;
+}
+
+.meta__bar--icons {
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+ 
+.meta__bar--icons svg,
+.meta__bar--icons img {
+  width: 32px;
+  filter: invert(60%) sepia(9%) saturate(1645%) hue-rotate(4deg) brightness(93%) contrast(82%);
+}
+
+.meta__bar--icons div {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.meta__bar--icons p {
+  font-family: 'SAA Series FD', 'Open sans';
+  text-transform: uppercase;
+  font-size: 7px;
+  letter-spacing: 0px;
+  line-height: 8px;
+  color: #A28D5B;
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.product__tasting-note {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 19.2px;
+  letter-spacing: .04em;
+  font-family: AGaramondPro;
+  color: #777779;
+  text-transform: lowercase;
+  margin-bottom: 14px;
+}
+
+.product-information--inner .new-percentage {
+  display: none;
+}
+
+.meta__new--percentage {
+  margin: 0;  
+  letter-spacing: .15em;
+}
+
+.product__detail--wrap {
+  font-family: SaaSeries,Saa Series FD,Open Sans,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: .15em;
+  color: var(--charcoal-black);
+  border-top: 1px solid var(--charcoal-black);
+  border-bottom: 1px solid var(--charcoal-black);
+  padding: 10px 0;
+  margin: 0 0 20px;
+  font-weight: 500;
+}
+
+.short_description {
+  margin-bottom: 54px;
+}
+
+.short_description.expanded {
+  margin-bottom: 0;
+}
+
+.short_description .metafield-rich_text_field {
+  overflow: hidden;
+}
+
+.short_description .metafield-rich_text_field p:last-child {
+  margin: 0;
+}
+
+.meta__product--description .rm_grad {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.meta__product--description .read_less {
+  margin-top: 5px;
+}
+
+.sticky__add-to-cart {
+  display: inline-block;
+}
+
+.below_title p {
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: .15em;
+  text-align: left;
+  color: #cfa545;
+  margin: 10px 0 20px;
+  border-top: 1px solid #CFA545;
+  border-bottom: 1px solid #CFA545;
+  padding: 11px 0 4px;
+}
+
+.hide-rebuy .rebuy-widget {
+  display: none !important;
+}
+
+.product__price-main {
+  display: inline-block;
+}
+
+.product__price-main span.price .amount {
+  color: #333333;
+  transition: all .40s linear;
+  font-size: 13px;
+}
+
+.product__price-main .price {
+  font-size: 13px;
+}
+
+.product__price-main span {
+  opacity: 1;
+}
+
+.short_description .metafield-rich_text_field p:empty {
+  display: none;
+}
+
+.variations .product-form__input--dropdown .select,
+.variations .product-form__input--dropdown select {
+  letter-spacing: .15em;
+  font-family: Saa Series F D;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 26px;
+}
+
+.multi__merch--icons .product__free-shipping {
+  display: flex !important;
+}
+
+.shelf__life {
+  display: flex;
+}
+
+.shelf__life .metafield-rich_text_field,
+.shelf__life .metafield-single_line_text_field {
+  margin: -2px 5px 0px;
+}
+
+.product-digitalgiftcard-form input,
+.product-digitalgiftcard-form textarea {
+  width: 100%;
+}
+
+.product-digitalgiftcard-form input:focus-visible,
+.product-digitalgiftcard-form textarea:focus-visible {
+  outline: none;
+}
+
+@media only screen and (min-width: 768px) { 
+  
+  .merch__icons.multi__merch--icons {
+    display: flex;
+  }
+  
+  .merch__icons.multi__merch--icons .product__ctarow {
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) { 
+
+  .merch__icons.multi__merch--icons {
+    margin-top: 20px;
+  }
+
+  .product__free-shipping {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .thb-product-detail .product-short-description {
+    margin-bottom: 20px;
+  }
+
+  .short_description {
+    margin-bottom: 34px;
+  }
+  
+  .meta__bar--icons {
+    display: flex;
+  }
+
+  .meta__bar--icons div {
+    flex: 0 1 16.66%;
+    max-width: 16.66%;
+    margin: 0;
+  }
+
+  .meta__bar--icons.bar-icons p {
+    margin-top: 0px!important;
+    font-size: 7px!important;
+  }
+  
 }

@@ -1,0 +1,554 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "color_picker": true,
+            "variant_is_disabled": true,
+            "sizing_guide_text": "",
+            "sizing_guide_icon": "ruler",
+            "sizing_guide_page": "sizing-guide"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "buy_buttons"
+      ],
+      "custom_css": [
+        ".thb-product-detail.product {display: none;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "enable_sticky_info": true,
+        "enable_sticky_add_to_cart": true,
+        "show_taxes_included": true,
+        "media_layout": "slider",
+        "display_slider_pagination": true,
+        "media_aspect_ratio": "adapt",
+        "display_captions": true,
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false,
+        "holiday_shipping": false
+      }
+    },
+    "69a6822c-194c-4e18-865f-2331884aa76c": {
+      "type": "trip-details",
+      "blocks": {
+        "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Hawai’i",
+            "heading_size": "h3"
+          }
+        },
+        "525e8941-8a4e-469a-9012-ed6256889b0b": {
+          "type": "subheading",
+          "settings": {
+            "text": "September 10–16, 2023"
+          }
+        },
+        "8d1de5c2-d448-44ef-8517-ab73f99098d7": {
+          "type": "tab",
+          "settings": {
+            "heading": "PRICE",
+            "content": "<p>$1k deposit per person, pricing BELOW<\/p>",
+            "mobile_content": "<p>$1k deposit, <br\/>PRICING BELOW<\/p>",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "d8a89294-9c04-416c-b804-9db174465275": {
+          "type": "tab",
+          "settings": {
+            "heading": "DURATION",
+            "content": "<p>7 DAYS<\/p>",
+            "mobile_content": "",
+            "description": "",
+            "mobile_description": ""
+          }
+        },
+        "6db822eb-0a1f-466f-b2a0-b21c6e99958f": {
+          "type": "tab",
+          "settings": {
+            "heading": "KNOWLEDGE LEVEL",
+            "content": "",
+            "mobile_content": "",
+            "description": "<p>This trip is accessible to beginner and advanced chocolate enthusiasts.<\/p>",
+            "mobile_description": "",
+            "icon": "shopify:\/\/shop_images\/Group_149.png"
+          }
+        },
+        "ed1369b2-0195-4438-8fef-9e3182f27ae9": {
+          "type": "tab",
+          "settings": {
+            "heading": "activity level",
+            "content": "",
+            "mobile_content": "",
+            "description": "<p>This trip involves walking around muddy farms, but no incline hiking.<\/p>",
+            "mobile_description": "",
+            "icon": "shopify:\/\/shop_images\/Group_149.png"
+          }
+        },
+        "4e9eb666-fa8b-4b9e-9ed0-8ddb160de3fe": {
+          "type": "tab",
+          "settings": {
+            "heading": "comfort level",
+            "content": "",
+            "mobile_content": "",
+            "description": "<p>No camping involved, guests will be staying at an oceanside villa.<\/p>",
+            "mobile_description": "<p>No camping involved, guests will be staying at a hotel.<\/p>",
+            "icon": "shopify:\/\/shop_images\/Group_148.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__69a6822c-194c-4e18-865f-2331884aa76c-heading-1",
+        "525e8941-8a4e-469a-9012-ed6256889b0b",
+        "8d1de5c2-d448-44ef-8517-ab73f99098d7",
+        "d8a89294-9c04-416c-b804-9db174465275",
+        "6db822eb-0a1f-466f-b2a0-b21c6e99958f",
+        "ed1369b2-0195-4438-8fef-9e3182f27ae9",
+        "4e9eb666-fa8b-4b9e-9ed0-8ddb160de3fe"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Image_d6600e00-79f7-4fe2-9ba8-9fb41ab2249a.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/hawaii_3_1.png",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#f5f6f5",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "custom_class": ""
+      }
+    },
+    "26bf04f7-8b1b-4813-8dde-6e054a22309c": {
+      "type": "room-pricing",
+      "blocks": {
+        "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-1": {
+          "type": "column",
+          "settings": {
+            "background_color": "#f5f6f5",
+            "title": "FULL-sized",
+            "heading_color": "#777779",
+            "text": "<ul><li>2 available single-occupancy room<\/li><li>Shared bathrooms<\/li><li>$3750 per person<\/li><\/ul>",
+            "text_color": "#777779"
+          }
+        },
+        "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-2": {
+          "type": "column",
+          "settings": {
+            "background_color": "#f5f6f5",
+            "title": "QUEEN-sized",
+            "heading_color": "#777779",
+            "text": "<ul><li>5 available rooms<\/li><li>Shared bathrooms<\/li><li>$3750 per person + $250 for single occupancy<\/li><\/ul>",
+            "text_color": "#777779"
+          }
+        },
+        "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-3": {
+          "type": "column",
+          "settings": {
+            "background_color": "#f5f6f5",
+            "title": "KING-sized",
+            "heading_color": "#777779",
+            "text": "<ul><li>2 available rooms<\/li><li>En suite bathrooms<\/li><li>$4500 per person + $500 for single occupancy<\/li><\/ul>",
+            "text_color": "#777779"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-1",
+        "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-2",
+        "template--16034458370188__26bf04f7-8b1b-4813-8dde-6e054a22309c-column-3"
+      ],
+      "settings": {
+        "section_bg": "#ffffff",
+        "heading_color": "#333333",
+        "heading": "Available Rooms & Pricing",
+        "full_width": true,
+        "heading_size": "h6",
+        "sub_heading": "Choose your room to reserve & pay your deposit.",
+        "description": "Please choose the single occupancy option if you will be traveling alone.",
+        "top_spacing_desktop": 44,
+        "bottom_spacing_desktop": 44,
+        "top_spacing_mobile": 28,
+        "bottom_spacing_mobile": 38,
+        "id": "room__pricing-section"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_left": true,
+        "description": "<p>Combine your style with these products<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
+        "show_collaborator": true,
+        "enable_treatment": true,
+        "show_short_product_desc": true
+      }
+    },
+    "c320dd8b-64e1-431f-b0be-71de066cb294": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Trip Overview",
+            "heading_size": "large"
+          }
+        },
+        "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>On this trip, you’ll visit cacao farms on the islands of O‘ahu and Kaua‘i, visit chocolate makers and taste their chocolate, and get to experience the local Hawai’ian culture through planned excursions. During your week in Hawai’i, you’ll be staying at our beautiful oceanside house and enjoying meals cooked by local chefs. <br\/><br\/>This trip is seven days, including arrival and departure days, as well as a free day for solo exploration. Due to the origin, this trip has an educational focus on the genetics of cacao, and you’ll also learn about the cacao cultivation process and chocolate making in general. <\/p>"
+          }
+        },
+        "7f3b50c6-2695-4bdb-ab1d-7c9c2dac1a59": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>FEATURED ACTIVITIES<\/h4><ul><li>Visit cacao farms on Kaua‘i and O‘ahu <\/li><li>Visit Manoa and Lonahana chocolate makers<\/li><li>Taste fresh cacao pods<\/li><li>Private chocolate tasting<\/li><li>Tropical fruit tasting<\/li><li>Understand the cultivation process for cacao<\/li><li>Visit the largest cultural museum in Hawai’i<br\/><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-heading-1",
+        "template--16034458370188__c320dd8b-64e1-431f-b0be-71de066cb294-text-1",
+        "7f3b50c6-2695-4bdb-ab1d-7c9c2dac1a59"
+      ],
+      "settings": {
+        "section_heading": "",
+        "image": "shopify:\/\/shop_images\/trip-overview.png",
+        "image_mobile": "shopify:\/\/shop_images\/lori_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#333333",
+        "top_spacing_desktop": 68,
+        "bottom_spacing_desktop": 68,
+        "top_spacing_mobile": 36,
+        "bottom_spacing_mobile": 36,
+        "custom_class": ""
+      }
+    },
+    "66a28de1-9eb9-41de-8ea9-76a7246fd21e": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Pricing for This Trip",
+            "heading_size": "large"
+          }
+        },
+        "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The cost for the Hawai’i Origin Trip ranges from $3,750 to $5,000 per person, depending on the room a guest books at our oceanside villa. <br\/><a href=\"https:\/\/www.dandelionchocolate.com\/products\/hawaii-trip?view=hawaii#room__pricing-section\" title=\"https:\/\/www.dandelionchocolate.com\/products\/hawaii-trip?view=hawaii#room__pricing-section\">SEE ROOM OPTIONS<br\/><br\/><\/a><\/p>"
+          }
+        },
+        "f7aca756-7b47-451a-bc63-3be5807d6e33": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>The cost also covers:<\/strong><\/p>"
+          }
+        },
+        "397c2bdf-7bdb-42f5-96e6-7614675e7826": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Internal travel and transportation between scheduled activities. <\/li><li>Meals and any planned cultural excursions. We will do our best to accommodate food allergies or restrictions. <\/li><li>Guests are responsible for their own flight in and out of Honolulu International Airport, as well as lunch (and any activities they decide to enjoy) on their free day. <br\/><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-heading-1",
+        "template--16034458370188__66a28de1-9eb9-41de-8ea9-76a7246fd21e-text-1",
+        "f7aca756-7b47-451a-bc63-3be5807d6e33",
+        "397c2bdf-7bdb-42f5-96e6-7614675e7826"
+      ],
+      "settings": {
+        "section_heading": "",
+        "image": "shopify:\/\/shop_images\/pricing.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#f5f6f5",
+        "color_text": "#333333",
+        "top_spacing_desktop": 70,
+        "bottom_spacing_desktop": 50,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40,
+        "custom_class": ""
+      }
+    },
+    "a01b6235-c38a-46a5-8f03-041b1c2ca3e7": {
+      "type": "trip-schedule",
+      "blocks": {
+        "template--16034458370188__a01b6235-c38a-46a5-8f03-041b1c2ca3e7-day-schedule-1": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 1 - ARRIVAL",
+            "description": "<p>Fly into Hawai’i, settle into your room, meet everyone, and get an overview of the agenda for the week.<\/p>"
+          }
+        },
+        "3c48a68e-f48d-4f7b-aee9-4021b728795c": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 2 - MANOA DAY",
+            "description": "<p>We’ll start by visiting the Kamananui Farm in the morning before having lunch at the Waiahole Poi Factory. In the afternoon we’ll pop over to Manoa Chocolate to see their chocolate-making process. <\/p>"
+          }
+        },
+        "bcdd4437-802b-45cb-8e16-155a5f3f9257": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 3 - VISIT KAUA‘I",
+            "description": "<p>In the morning we’ll catch a flight to the island of Kaua‘i to tour the Lydgate cacao farm. We’ll then visit the beautiful small town of Hanalei on the coast of Kaua‘i before flying back to the house for dinner. <\/p>"
+          }
+        },
+        "7b89e385-f84a-43b1-8cfc-c6177dd23dba": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 4 - VISIT HAWAI’I",
+            "description": "<p>On this day we’ll start the morning by exploring the forests and nature of O’ahu before spending the afternoon at the Bishop Museum, Hawaii’s largest natural and cultural history museum. <\/p>"
+          }
+        },
+        "14b1de17-d6db-4a6f-ba0f-f6b74fc2d9a3": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 5 - FREE DAY",
+            "description": "<p>This is a day to do whatever you’d like to do: go kite surfing, snorkeling, or kayaking! Or just relax and read a book?<\/p>"
+          }
+        },
+        "64a32d81-6483-4147-aa3e-b97a55ec3935": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 6 - VISIT MORE MAKERS",
+            "description": "<p>On our final full day we’ll visit the Lonohana small-batch chocolate factory in the morning and head over to the “breadbasket of O‘ahu” to see the 21 Degrees boutique cacao farm.<\/p>"
+          }
+        },
+        "0d81759b-bdc9-4e8b-8955-edf91496021f": {
+          "type": "day-schedule",
+          "settings": {
+            "heading": "DAY 7 - DEPARTURE",
+            "description": "<p>We’ll say goodbye to Hawai’i with a better understanding of cocoa production and a sun-kissed glow from spending a week in the Islands.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__a01b6235-c38a-46a5-8f03-041b1c2ca3e7-day-schedule-1",
+        "3c48a68e-f48d-4f7b-aee9-4021b728795c",
+        "bcdd4437-802b-45cb-8e16-155a5f3f9257",
+        "7b89e385-f84a-43b1-8cfc-c6177dd23dba",
+        "14b1de17-d6db-4a6f-ba0f-f6b74fc2d9a3",
+        "64a32d81-6483-4147-aa3e-b97a55ec3935",
+        "0d81759b-bdc9-4e8b-8955-edf91496021f"
+      ],
+      "settings": {
+        "heading": "A Preview of Your Day to Day",
+        "description": "Schedule Subject to Change",
+        "section_width": "grid",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "section_heading_color": "#333333",
+        "section_rte_color": "#80714e",
+        "color_text": "#333333",
+        "top_spacing_desktop": 46,
+        "bottom_spacing_desktop": 76,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
+    "5531d97c-1d89-4613-b7cc-3cf1f12a4e4d": {
+      "type": "meet-your-host",
+      "blocks": {
+        "template--16034458370188__5531d97c-1d89-4613-b7cc-3cf1f12a4e4d-host-detail-1": {
+          "type": "host-detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Greg_D_Alesandre.png",
+            "heading": "Greg D’Alesandre",
+            "description": "<p>Chocolate Sourcerer at Dandelion Chocolate<\/p>"
+          }
+        },
+        "caed3006-4475-4e47-bcfe-3f564b8c45a5": {
+          "type": "host-detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stephen_Durfee.png",
+            "heading": "Stephen Durfee",
+            "description": "<p>Chocolate Curriculum Director at Dandelion Chocolate<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__5531d97c-1d89-4613-b7cc-3cf1f12a4e4d-host-detail-1",
+        "caed3006-4475-4e47-bcfe-3f564b8c45a5"
+      ],
+      "settings": {
+        "heading": "Meet Your Host",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#f5f6f5",
+        "color_text": "#333333",
+        "color_sub_text": "#53595c",
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 72,
+        "top_spacing_mobile": 30,
+        "bottom_spacing_mobile": 10
+      }
+    },
+    "5fd41698-5e2f-44e7-826a-3f18ca8c73c4": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Hawai’i?",
+            "heading_size": "large"
+          }
+        },
+        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hawai’i is the only state in the United States that grows cacao, due to its climate and location near the Equator. Some of the most expensive cocoa in the world comes from Hawai’i, and the farms are tightly managed in contrast to other cacao farms across the world.<br\/><br\/>Dandelion first sourced beans from Hawai’i in 2020, and has since been developing relationships with several local farms and chocolate makers. On your trip, you’ll get to visit these farms and meet the people responsible for providing some of the chocolate you love at Dandelion. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-heading-1",
+        "template--16034458370188__5fd41698-5e2f-44e7-826a-3f18ca8c73c4-text-1"
+      ],
+      "settings": {
+        "section_heading": "",
+        "image": "shopify:\/\/shop_images\/why-hawaii.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#333333",
+        "top_spacing_desktop": 76,
+        "bottom_spacing_desktop": 80,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40,
+        "custom_class": "why__hawaii"
+      }
+    },
+    "dda2a186-d5fb-4b7d-a1a9-61620e53504c": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Dominican Republic",
+            "heading_size": "small"
+          }
+        },
+        "df16449c-352a-49e3-b91a-e3981e929f1e": {
+          "type": "caption",
+          "settings": {
+            "caption": "April 5–11, 2023",
+            "caption_color": "#a28d5b"
+          }
+        },
+        "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dive deep into the cacao-fermentation process, hike to and spend the night on a cacao farm and bird sanctuary, learn about cocoa genetics, and more.Typography<\/p>"
+          }
+        },
+        "be6386f4-5799-4dd9-b8d0-2bc2e3a1e804": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/dominican-republic-trip?view=dominican-republic",
+            "button_style": "btn--gold"
+          }
+        }
+      },
+      "block_order": [
+        "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-heading-1",
+        "df16449c-352a-49e3-b91a-e3981e929f1e",
+        "template--16034458370188__dda2a186-d5fb-4b7d-a1a9-61620e53504c-text-1",
+        "be6386f4-5799-4dd9-b8d0-2bc2e3a1e804"
+      ],
+      "settings": {
+        "section_heading": "Other Origin Trips",
+        "image": "shopify:\/\/shop_images\/Hawaii_Image_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-spacing",
+        "layout": "text_first",
+        "content_position": "text-center",
+        "color_bg": "#f5f6f5",
+        "color_text": "#333333",
+        "top_spacing_desktop": 50,
+        "bottom_spacing_desktop": 56,
+        "top_spacing_mobile": 30,
+        "bottom_spacing_mobile": 40,
+        "custom_class": "other__origin-trips"
+      }
+    },
+    "2ce9257a-6328-4df3-a10f-cf0ab39fa690": {
+      "type": "custom-contact-form",
+      "settings": {
+        "bg_color": "#53595c",
+        "text_color": "#ffffff",
+        "heading": "BE IN TOUCH",
+        "description": "<p>Please let us know if you have any questions and we'll be happy to be in touch. We have limited room availability at the villa, so if you have a room in mind, please contact us with the room option you’d like to reserve, as well as how many are in your party, or if you’ll be traveling alone.<br\/><\/p>",
+        "show_phone_number": true,
+        "top_spacing_desktop": 60,
+        "bottom_spacing_desktop": 116,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "69a6822c-194c-4e18-865f-2331884aa76c",
+    "26bf04f7-8b1b-4813-8dde-6e054a22309c",
+    "product-recommendations",
+    "c320dd8b-64e1-431f-b0be-71de066cb294",
+    "66a28de1-9eb9-41de-8ea9-76a7246fd21e",
+    "a01b6235-c38a-46a5-8f03-041b1c2ca3e7",
+    "5531d97c-1d89-4613-b7cc-3cf1f12a4e4d",
+    "5fd41698-5e2f-44e7-826a-3f18ca8c73c4",
+    "dda2a186-d5fb-4b7d-a1a9-61620e53504c",
+    "2ce9257a-6328-4df3-a10f-cf0ab39fa690"
+  ]
+}

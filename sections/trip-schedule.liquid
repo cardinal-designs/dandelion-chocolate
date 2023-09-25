@@ -1,0 +1,276 @@
+{{- 'trip-schedule.css' | asset_url | stylesheet_tag -}}
+
+{%- liquid
+	assign section_width = section.settings.section_width
+	assign image = section.settings.image
+	assign content_position = section.settings.content_position
+	assign desktop_image_width = section.settings.desktop_image_width
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	assign ratio = 1
+	if height == 'adapt' and image != blank
+		assign ratio = image.aspect_ratio
+	endif
+-%}
+
+<div id="section--{{ section.id }}" class="row {{ section_width }} trip__schedule">
+  <div class="small-12 columns">
+    <div class="trip__schedule--section grid--image-{{ desktop_image_width }} {{ content_position }}">
+      <div class="trip__schedule--header hide-mobile">
+        {% if section.settings.heading != blank %}
+          <h3 class="section_heading custom__heading text-center">{{ section.settings.heading }}</h3>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <p class="section_description text-center">{{ section.settings.description }}</p>
+        {% endif %}        
+      </div>
+      <div class="trip__schedule--wrap">
+        {%- if image != blank -%}
+          <div class="trip__schedule--image trip__schedule--items">
+            <div class="trip__schedule-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+              {%- liquid
+                  assign small_height = image.src.height | times: '690' | divided_by: image.src.width
+                  assign mid_height = image.src.height | times: '1340' | divided_by: image.src.width
+                  assign master_width = image.src.width | append: 'x' | append: image.src.height
+                  assign width = '690x' | append: small_height | append: ',' | append: '1340x' | append: mid_height | append: ',' | append: master_width
+              -%}
+              {%- render 'responsive-image', image: image, sizes: width -%}
+            </div>    
+          </div>
+        {%- endif -%}
+        <div class="trip__schedule--text trip__schedule--items">
+          <div class="trip__schedule--header hide-desktop">
+            {% if section.settings.heading != blank %}
+              <h3 class="section_heading custom__heading">{{ section.settings.heading }}</h3>
+            {% endif %}
+
+            {% if section.settings.description != blank %}
+              <p class="section_description">{{ section.settings.description }}</p>
+            {% endif %}            
+          </div>
+          <div class="trip__schedule--text--inner">
+            {%- for block in section.blocks -%}
+              <div class="schedule__detail">
+                {% if block.settings.heading != blank %}
+                  <h3 class="heading" {{ block.shopify_attributes }}>{{ block.settings.heading | newline_to_br }}</h3>
+                {% endif %}
+
+                {% if block.settings.description != blank %}
+                  <div class="rte custom__description" {{ block.shopify_attributes }}>{{ block.settings.description }}</div>
+                {% endif %}                  
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% style %}
+  
+  #section--{{ section.id }} {
+    background: {{ section.settings.color_bg }};
+    padding-top : {{ section.settings.top_spacing_desktop }}px;
+    padding-bottom : {{ section.settings.bottom_spacing_desktop }}px;
+  }
+
+  #section--{{ section.id }} .trip__schedule--section * {
+    color : {{ section.settings.color_text }};
+  }
+
+  #section--{{ section.id }} .section_heading {
+    color : {{ section.settings.section_heading_color }};
+  }
+
+  #section--{{ section.id }} .section_description {
+    color : {{ section.settings.section_rte_color }};
+  }
+
+  @media only screen and (max-width: 767px) {
+      
+    #section--{{ section.id }} {
+      padding-top : {{ section.settings.top_spacing_mobile }}px;
+      padding-bottom : {{ section.settings.bottom_spacing_mobile }}px;
+    }
+    
+  }
+
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Trip Schedule",
+  "class": "section-image-with-text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1340 x 1340 .jpg recommended."
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "options": [
+        {
+          "value": "full-width-spacing",
+          "label": "Full width, with spacing"
+        },
+        {
+          "value": "full-width-row-full",
+          "label": "Full width, no spacing"
+        }
+      ],
+      "default": "full-width-spacing",
+      "label": "Section width"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Desktop content alignment",
+      "options": [
+        {
+          "value": "text-center",
+          "label": "Center"
+        },
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        }
+      ],
+      "default": "text-left"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "color_bg",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "section_heading_color",
+      "label": "Section Heading",
+      "default": "#333"
+    },
+    {
+      "type": "color",
+      "id": "section_rte_color",
+      "label": "Section Description",
+      "default": "#80714E"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "Text",
+      "default": "#151515"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing_desktop",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Mobile Spacing"
+    },
+    {
+      "type": "range",
+      "id": "top_spacing_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Top Spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "bottom_spacing_mobile",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Spacing",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "day-schedule",
+      "name": "Day Schedule",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Heading",
+          "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trip Schedule",
+      "blocks": [
+        {
+          "type": "day-schedule"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
