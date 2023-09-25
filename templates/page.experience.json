@@ -403,7 +403,7 @@
         "text_color": "#333333",
         "color_text_icon": "#53595c",
         "top_spacing_desktop": 50,
-        "bottom_spacing_desktop": 100,
+        "bottom_spacing_desktop": 126,
         "top_spacing_mobile": 32,
         "bottom_spacing_mobile": 26
       }
