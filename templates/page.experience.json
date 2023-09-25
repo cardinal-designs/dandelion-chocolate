@@ -154,6 +154,7 @@
         "content_position": "text-left",
         "color_bg": "#ffffff",
         "color_text": "#333333",
+        "color_text_icon": "#53595C",
         "top_spacing_desktop": 72,
         "bottom_spacing_desktop": 60,
         "top_spacing_mobile": 40,
@@ -399,6 +400,7 @@
         "bg_color": "#f5f6f5",
         "block_color": "#ffffff",
         "text_color": "#333333",
+        "color_text_icon": "#53595C",
         "top_spacing_desktop": 50,
         "bottom_spacing_desktop": 100,
         "top_spacing_mobile": 40,
@@ -593,6 +595,7 @@
     },
     "4c884aeb-0b85-4eac-872c-697925d2f0ae": {
       "type": "custom-contact-form",
+      "disabled": true,
       "settings": {
         "bg_color": "#53595c",
         "text_color": "#ffffff",
@@ -601,6 +604,22 @@
         "show_phone_number": true,
         "top_spacing_desktop": 46,
         "bottom_spacing_desktop": 64,
+        "top_spacing_mobile": 40,
+        "bottom_spacing_mobile": 40
+      }
+    },
+    "6f3df7c7-aa20-49e4-89ef-129c86068a1b": {
+      "type": "experience-contact-form",
+      "settings": {
+        "bg_color": "#53595C",
+        "text_color": "#ffffff",
+        "heading": "Contact form",
+        "description": "<p>Add a short description for this section<\/p>",
+        "show_phone_number": true,
+        "show_group_size": true,
+        "show_date_requested": true,
+        "top_spacing_desktop": 40,
+        "bottom_spacing_desktop": 40,
         "top_spacing_mobile": 40,
         "bottom_spacing_mobile": 40
       }
@@ -614,6 +633,7 @@
     "1a35a150-8134-4c0b-a964-d99346503ff1",
     "5fe58374-4107-44ed-b795-013be36150de",
     "a51a022b-7652-4eae-b8a3-43c6fe1fe47c",
-    "4c884aeb-0b85-4eac-872c-697925d2f0ae"
+    "4c884aeb-0b85-4eac-872c-697925d2f0ae",
+    "6f3df7c7-aa20-49e4-89ef-129c86068a1b"
   ]
 }
