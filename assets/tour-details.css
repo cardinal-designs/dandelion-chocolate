@@ -18,6 +18,7 @@
   padding: 14px 10px 10px !important;
   min-height: auto;
   line-height: 1;
+  border-width: 2px;
 }
 
 .tour__details--wrap .trip__image--with--content-inner .rte {
