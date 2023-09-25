@@ -72,6 +72,10 @@
     text-align: center;
   }
 
+  .tour__details--wrap .trip__details {
+    column-gap: 20px;
+  }
+
   .tour__details--wrap .trip__details-content-inner * {
     font-size: 12px;
     line-height: 14px;
