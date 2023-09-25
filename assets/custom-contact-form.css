@@ -98,4 +98,9 @@
     width: 100%;
   }
 
+  .custom__contact-form-inner #contact_form .row.no-padding {
+    padding: 0;
+    margin: 0;
+  }
+
 }
