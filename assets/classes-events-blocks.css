@@ -188,6 +188,7 @@
   .classes__events--wrap .icon__row--wrap {
     justify-content: flex-start;
     padding: 13px 0 15px;
+    column-gap: 20px;
   }
 
   .classes__events--wrap .detail_row--item {
@@ -207,8 +208,8 @@
     padding: 14px 20px 11px!important
   }
 
-  .classes__events--wrap .icon__row--wrap {
-    column-gap: 20px;
+  .classes__events--wrap .icon__row--wrap .icon_items {
+    flex: 1;
   }
   
 }
