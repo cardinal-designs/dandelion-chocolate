@@ -71,6 +71,7 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
 
     {% render 'social-meta-tags' %}
     <link rel="stylesheet" href="{{ 'font-face.css' | asset_url }}" defer="defer" preload >
+    {{ 'product.css' | asset_url | stylesheet_tag }}
     {{ 'app.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'shogun.css' | asset_url | stylesheet_tag }}
@@ -125,6 +126,7 @@ window.TriplePixelData={TripleName:"dandelion-chocolate.myshopify.com",ver:"1.9"
 
     <script src="{{ 'vendor.min.js' | asset_url }}"></script>
     <script src="{{ 'jquery.min.js' | asset_url }}"></script>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js' crossorigin = "anonymous">
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
 
     <!-- Lucky Orange -->
