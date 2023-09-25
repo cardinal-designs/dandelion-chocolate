@@ -528,9 +528,10 @@
       "settings": {
         "section_heading": "VIRTUAL EVENTS",
         "section_footer": "<p>Please email <a href=\"mailto:events@dandelionchocolate.com \" title=\"mailto:events@dandelionchocolate.com \">events@dandelionchocolate.com <\/a>with any questions.<\/p>",
+        "step_1": "To take part in our virtual classes, first purchase your class’s corresponding set in our web store.",
+        "step_2": "Your class materials will be shipped to you, along with a URL to sign up (and a discount code to bring your registration fee down to $0)",
+        "step_3": "Sign up for your class and choose a time that works for you. Enjoy!",
         "section_width": "grid",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false,
         "bg_color": "#f5f6f5",
         "block_color": "#ffffff",
         "text_color": "#333333",
