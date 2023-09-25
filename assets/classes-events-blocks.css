@@ -139,8 +139,4 @@
     column-gap: 20px;
   }
   
-  .tour__details--wrap .icon__row--wrap {
-    justify-content: flex-start;
-  }
-  
 }
