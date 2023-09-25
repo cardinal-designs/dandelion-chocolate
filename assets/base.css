@@ -1309,7 +1309,6 @@ heightwidthauto {
 
 .icon__row--wrap .icon_items {
   text-align: center;
-  flex: 1;
 }
 
 .icon__row--wrap .icon_items svg {
