@@ -671,7 +671,7 @@
         "template--15975893827724__1627fb3e-f5c6-4d8c-8843-5b818899b71b-1689671710ea1a6d61-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Explore chocolate-inspired activities, classes, and tours curated for your occasion at our 16th Street Factory and beyond. <br\/><\/p>",
+            "text": "<p>Explore chocolate-inspired activities, classes, and tours curated for your occasion, at our 16th Street factory and beyond. <br\/><\/p>",
             "description_size": "body",
             "description_color": "#ffffff",
             "description_color_mobile": "#333333"
@@ -756,7 +756,7 @@
         "enable_carousel": false,
         "subheading": "BAKING",
         "subheading_mobile": "",
-        "heading": "Recipes that feature single-origin, two-ingredient chocolate for your kitchen",
+        "heading": "Recipes for your kitchen, featuring single-origin, two-ingredient chocolate",
         "button_text_1": "MORE RECIPES",
         "button_link_1": "shopify:\/\/pages\/recipes",
         "button_style_1": "btn",
