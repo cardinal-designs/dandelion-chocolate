@@ -48,5 +48,6 @@
   .tour__details--wrap .trip__details {
     display: grid;
     grid-template-columns: 1fr 0.91182fr;
+    column-gap: 42px;
   }
 }
