@@ -198,6 +198,8 @@
     padding: 17px 20px 13px!important;
   }
 
-  
+  .classes__events--wrap .btn.btn--white {
+    padding: 14px 20px 11px!important
+  }
   
 }
