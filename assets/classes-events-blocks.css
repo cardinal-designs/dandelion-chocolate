@@ -30,6 +30,8 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 54px;
   row-gap: 47px;
+  max-width: 1294px;
+  margin: 0 auto;
 }
 
 .classes__events--wrap svg {
@@ -87,10 +89,6 @@
   margin: 0;
 }
 
-.classes__events--wrap .icon__row--wrap {
-
-  
-}
 
 @media screen and (max-width: 1067px) { 
 
