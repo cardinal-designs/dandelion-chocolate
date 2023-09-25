@@ -138,6 +138,7 @@
   .classes__events--wrap .icon__row--wrap {
     column-gap: 20px;
     justify-content: flex-start;
+    padding: 13px 0 15px;
   }
   
 }
