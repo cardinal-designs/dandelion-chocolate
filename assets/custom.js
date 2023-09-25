@@ -20,6 +20,20 @@ $(window).on("load resize orientationchange", function(){
   }
 });  
 
+jQuery(".same-height").each(function () {
+  function e() {
+    jQuery(".same-height").css("height", "auto");
+    var e = -1;
+    jQuery(".same-height").each(function () {
+        var t = jQuery(this).outerHeight();
+        e = t > e ? t : e
+    }), jQuery(".same-height").css("height", e)
+  }
+  jQuery(this), jQuery(window).on("load resize orientationchange", e)
+})
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", function () {
     if (document.querySelector(".checkoutMethodContainer")?.classList.contains("shipping")) {
