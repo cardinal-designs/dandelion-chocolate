@@ -36,6 +36,7 @@
         "section_width": "full-width-row-full",
         "image_url": false,
         "image": "shopify:\/\/shop_images\/Header_Image_Experience.png",
+        "mobile_image": "shopify:\/\/shop_images\/Truffles_3031_2.png",
         "desktop_height": "desktop-height-400",
         "mobile_height": "mobile-height-350",
         "content_width": "large",
