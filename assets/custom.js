@@ -20,13 +20,6 @@ $(window).on("load resize orientationchange", function(){
   }
 });  
 
-
-$(document).ready(function(){
-    $('.block__description').matchHeight();
-})
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", function () {
     if (document.querySelector(".checkoutMethodContainer")?.classList.contains("shipping")) {
