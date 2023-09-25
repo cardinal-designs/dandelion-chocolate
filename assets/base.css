@@ -1343,6 +1343,10 @@ select:focus-visible {
   .icon__row--wrap {
     column-gap: 10px;
   }
+
+  .icon__row--wrap .icon_items {
+    flex: 1;
+  }
   
 }
 
@@ -1361,10 +1365,6 @@ select:focus-visible {
   .custom__sh1 {
     font-size: 16px;
     line-height: 19.2px;
-  }
-
-  .icon__row--wrap .icon_items {
-    flex: 1;
   }
 
   .icon__row--wrap .icon_items p {
