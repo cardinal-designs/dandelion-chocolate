@@ -536,7 +536,7 @@
         "text_color": "#333333",
         "top_spacing_desktop": 70,
         "bottom_spacing_desktop": 50,
-        "top_spacing_mobile": 40,
+        "top_spacing_mobile": 34,
         "bottom_spacing_mobile": 40
       }
     },
