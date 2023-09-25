@@ -24,7 +24,7 @@
             "text": "<p>personalized classes, tours, and experiences, guided by our chocolate education team<br\/><\/p>",
             "description_size": "body",
             "description_color": "#53595c",
-            "description_color_mobile": "#53595c"
+            "description_color_mobile": "#333333"
           }
         }
       },
@@ -623,10 +623,10 @@
         "show_phone_number": true,
         "show_group_size": true,
         "show_date_requested": true,
-        "top_spacing_desktop": 40,
+        "top_spacing_desktop": 46,
         "bottom_spacing_desktop": 64,
-        "top_spacing_mobile": 40,
-        "bottom_spacing_mobile": 40
+        "top_spacing_mobile": 24,
+        "bottom_spacing_mobile": 70
       }
     }
   },
