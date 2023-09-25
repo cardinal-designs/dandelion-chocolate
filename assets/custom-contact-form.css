@@ -107,4 +107,8 @@
     margin-top: 22px;
   }
 
+  .custom__contact-form .field .contact__message {
+    font-size: 14px;
+  }
+
 }
