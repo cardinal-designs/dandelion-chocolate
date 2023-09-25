@@ -59,7 +59,7 @@
   
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1067px) {
 
   .tour__details--wrap .trip__image--with-content {
     padding: 17px 0 0;
@@ -82,18 +82,25 @@
     padding: 13.5px 0;
   }
 
-  .tour__details--wrap .btn_wrap {
-    grid-template-columns: 1fr;
-    row-gap: 15px;
-    margin-top: 15px;
-  }
-
   .tour__details--wrap .trip__details-content-inner br {
     display: none;
   }
 
   .tour__details--wrap .icon__row--wrap {
     justify-content: center;
+  }
+
+  .tour__details--wrap .btn_wrap {
+    row-gap: 15px;
+    margin-top: 15px;
+  }
+  
+}
+
+@media only screen and (max-width: 767px) {
+
+  .tour__details--wrap .btn_wrap {
+    grid-template-columns: 1fr;
   }
   
 }
