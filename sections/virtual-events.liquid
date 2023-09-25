@@ -12,18 +12,24 @@
         <h2 class="section__heading text-center">{{ section.settings.section_heading }}</h2>
       {% endif %}
       <div class="event__steps">
-        <div class="event__item">
-          <div class="count">1</div>
-          <div class="step__text">To take part in our virtual classes, first purchase your class’s corresponding set in our web store.</div>
-        </div>
-        <div class="event__item">
-          <div class="count">2</div>
-          <div class="step__text">Your class materials will be shipped to you, along with a URL to sign up (and a discount code to bring your registration fee down to $0)</div>
-        </div>
-        <div class="event__item">
-          <div class="count">3</div>
-          <div class="step__text">Sign up for your class and choose a time that works for you. Enjoy!</div>
-        </div>
+        {% if section.settings.step_1 != blank %}
+          <div class="event__item">
+            <div class="count">1</div>
+            <div class="step__text">{{ section.settings.step_1 }}</div>
+          </div>
+        {% endif %}
+        {% if section.settings.step_2 != blank %}
+          <div class="event__item">
+            <div class="count">2</div>
+            <div class="step__text">{{ section.settings.step_2 }}</div>
+          </div>
+        {% endif %}
+        {% if section.settings.step_3 != blank %}
+          <div class="event__item">
+            <div class="count">3</div>
+            <div class="step__text">{{ section.settings.step_3 }}</div>
+          </div>
+        {% endif %}
       </div>
     </div>
     <div class="block__items--wrap">
