@@ -1355,7 +1355,7 @@ select:focus-visible {
 
   .icon__row--wrap .icon_items p {
     font-size: 8px;
-    margin: 0;
+    margin: 6px 0 0;
   }
 
 }
