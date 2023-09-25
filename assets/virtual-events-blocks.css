@@ -283,7 +283,8 @@
 
 @media screen and (max-width: 880px) {  
 
-  .virtual__events--wrap .icon__row--wrap, .virtual__events--wrap .block__items--wrap {
+  .virtual__events--wrap .icon__row--wrap, 
+  .virtual__events--wrap .block__items--wrap {
     column-gap: 10px;
   }
   
