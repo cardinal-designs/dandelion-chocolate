@@ -450,8 +450,8 @@
         "custom_class": "rich__text--2",
         "top_spacing_desktop": 64,
         "bottom_spacing_desktop": 64,
-        "top_spacing_mobile": 40,
-        "bottom_spacing_mobile": 40
+        "top_spacing_mobile": 24,
+        "bottom_spacing_mobile": 34
       }
     },
     "5fe58374-4107-44ed-b795-013be36150de": {
