@@ -118,6 +118,14 @@
   
 }
 
+@media screen and (max-width: 1199px) {  
+
+  .classes__events--wrap .icon__row--wrap {
+    column-gap: 20px;
+  }
+  
+}
+
 @media screen and (max-width: 767px) { 
 
   .classes__events--wrap .section__heading {
@@ -144,7 +152,6 @@
   }
 
   .classes__events--wrap .icon__row--wrap {
-    column-gap: 20px;
     justify-content: flex-start;
     padding: 13px 0 15px;
   }
