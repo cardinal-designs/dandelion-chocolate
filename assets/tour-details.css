@@ -64,6 +64,13 @@
   .tour__details--wrap .trip__image--with-content {
     padding: 17px 0 0;
   }
+
+  .tour__details--wrap .custom__heading {
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
   
 }
 
