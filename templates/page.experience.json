@@ -447,6 +447,8 @@
         "color_bg": "rgba(0,0,0,0)",
         "color_text": "#333333",
         "color_links": "#333333",
+        "color_bg_mobile": "#333333",
+        "text_color_mobile": "#ffffff",
         "custom_class": "rich__text--2",
         "top_spacing_desktop": 64,
         "bottom_spacing_desktop": 64,
