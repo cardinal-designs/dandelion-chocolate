@@ -149,6 +149,10 @@
     line-height: 14px;
     letter-spacing: 0.1em;
   }
+
+  .classes__events--wrap .icon__row--wrap {
+    column-gap: 10px;
+  }
   
 }
 
