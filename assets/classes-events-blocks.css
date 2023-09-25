@@ -50,6 +50,10 @@
   border-bottom: 1px solid #333;
 }
 
+.classes__events--wrap .details-content-text {
+  text-align: right;
+}
+
 .classes__events--wrap .details-heading, 
 .classes__events--wrap .details-content-text, 
 .classes__events--wrap .details-content-text p {
