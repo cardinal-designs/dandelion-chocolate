@@ -40,14 +40,12 @@
             {% endif %}
           </div>
 
-          <div class="icon__row--wrap ttttt">
+          <div class="icon__row--wrap">
             {% for i in (1..5) %}
               {% assign icon = 'icon_' | append: i %}
               {% assign icon_svg = block.settings[icon] %}
               {% assign icon_text = 'icon_text_' | append: i %}
               {% assign icon_text_value = block.settings[icon_text] %}
-              {{ icon_svg }}tttt
-              {{ icon_text_value }}yyyy
                 {% if icon_svg != blank or icon_text_value != blank %}
                   <div class="icon_items">
                     {% if icon_svg != blank %}
