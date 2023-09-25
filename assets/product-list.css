@@ -156,6 +156,10 @@
     font-size: 10px;
   }
 
+}
+
+@media only screen and (max-width: 1067px) {
+
   .product__list--wrap .block__buttons {
     row-gap: 12px;
     flex-wrap: wrap;
