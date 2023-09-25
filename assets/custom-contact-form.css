@@ -55,6 +55,7 @@
 }
 
 .custom__contact-form .field .contact__message {
+  font-family: 'AGaramondPro';
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
