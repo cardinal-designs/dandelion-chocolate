@@ -7,6 +7,12 @@
   margin-bottom: 24px;
 }
 
+.template-page-experience .custom__rich-text .rich-text__inner h3 {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.15em;
+}
+
 .custom__rich-text .custom__description ul {
   padding-left: 30px;
   margin: 0;
