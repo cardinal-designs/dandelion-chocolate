@@ -52,3 +52,13 @@
   line-height: 36px;
   letter-spacing: 0.04em;
 }
+
+@media screen and (max-width: 767px) { 
+
+  .template-page-experience .custom__rich-text .rich-text__inner h3 {
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.15em;
+  }
+  
+}
