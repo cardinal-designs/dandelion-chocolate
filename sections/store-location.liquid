@@ -112,7 +112,7 @@
                         {% if current_time >= midnight and current_time <= specific_time %}
                           <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ settings[mon_am] | replace: ".5", ":30" }}AM - {{ settings[mon_pm] | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[mon_am] | replace: ".5", ":30" }}AM – {{ settings[mon_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% elsif day == "tuesday" %}
                         {% assign current_time = "now" | date: "%s" %}
@@ -157,7 +157,7 @@
                         {% if current_time >= midnight and current_time <= specific_time %}
                           <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ settings[sat_am] | replace: ".5", ":30" }}AM - {{ settings[sat_pm] | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[sat_am] | replace: ".5", ":30" }}AM – {{ settings[sat_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% elsif day == "sunday" %}
                         {% assign current_time = "now" | date: "%s" %}
@@ -166,7 +166,7 @@
                         {% if current_time >= midnight and current_time <= specific_time %}
                           <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                         {% else %}  
-                          <span class="opened">Open today: {{ settings[sun_am] | replace: ".5", ":30" }}AM - {{ settings[sun_pm] | replace: ".5", ":30" }}PM</span>
+                          <span class="opened">Open today: {{ settings[sun_am] | replace: ".5", ":30" }}AM – {{ settings[sun_pm] | replace: ".5", ":30" }}PM</span>
                         {% endif %}
                       {% endif %}
                     {% endif %}
@@ -180,7 +180,7 @@
                       {% if current_time >= midnight and current_time <= specific_time %}
                         <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ settings[mon_am] | replace: ".5", ":30" }}AM - {{ settings[mon_pm] | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[mon_am] | replace: ".5", ":30" }}AM – {{ settings[mon_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "tuesday" %}
                       {% assign current_time = "now" | date: "%s" %}
@@ -189,7 +189,7 @@
                       {% if current_time >= midnight and current_time <= specific_time %}
                         <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ settings[tue_am] | replace: ".5", ":30" }}AM - {{ settings[tue_pm] | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[tue_am] | replace: ".5", ":30" }}AM – {{ settings[tue_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "wednesday" %}
                       {% assign current_time = "now" | date: "%s" %}
@@ -198,7 +198,7 @@
                       {% if current_time >= midnight and current_time <= specific_time %}
                         <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ settings[wed_am] | replace: ".5", ":30" }}AM - {{ settings[wed_pm] | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[wed_am] | replace: ".5", ":30" }}AM – {{ settings[wed_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "thursday" %}
                       {% assign current_time = "now" | date: "%s" %}
@@ -207,7 +207,7 @@
                       {% if current_time >= midnight and current_time <= specific_time %}
                         <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ settings[thu_am] | replace: ".5", ":30" }}AM - {{ settings[thu_pm] | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[thu_am] | replace: ".5", ":30" }}AM – {{ settings[thu_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "friday" %}
                       {% assign current_time = "now" | date: "%s" %}
@@ -216,7 +216,7 @@
                       {% if current_time >= midnight and current_time <= specific_time %}
                         <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ settings[fri_am] | replace: ".5", ":30" }}AM - {{ settings[fri_pm] | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[fri_am] | replace: ".5", ":30" }}AM – {{ settings[fri_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "saturday" %}
                       {% assign current_time = "now" | date: "%s" %}
@@ -225,7 +225,7 @@
                       {% if current_time >= midnight and current_time <= specific_time %}
                         <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ settings[sat_am] | replace: ".5", ":30" }}AM - {{ settings[sat_pm] | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[sat_am] | replace: ".5", ":30" }}AM – {{ settings[sat_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% elsif day == "sunday" %}
                       {% assign current_time = "now" | date: "%s" %}
@@ -234,7 +234,7 @@
                       {% if current_time >= midnight and current_time <= specific_time %}
                         <span class="temp-close">Closed now; opens today at {{ settings[mon_am] | replace: ".5", ":30" }}AM  </span>
                       {% else %}  
-                        <span class="opened">Open today: {{ settings[sun_am] | replace: ".5", ":30" }}AM - {{ settings[sun_pm] | replace: ".5", ":30" }}PM</span>
+                        <span class="opened">Open today: {{ settings[sun_am] | replace: ".5", ":30" }}AM – {{ settings[sun_pm] | replace: ".5", ":30" }}PM</span>
                       {% endif %}
                     {% endif %}
                     
