@@ -7,13 +7,12 @@
       {%- endif -%}
     </div>
     <div class="product-add-to-cart-sticky--info">
-
-    {% if product.metafields.info.product_type != blank %}   
-      <div class="card__type">
-        {{ product.metafields.info.product_type }}
-      </div>       
-    {% endif %}
-    
+      {% if product.metafields.info.product_type != blank %}   
+        <div class="card__type">
+          {{ product.metafields.info.product_type }}
+        </div>       
+      {% endif %}
+      
       <div class="product-add-to-cart-sticky--title {% if product.type == 'Chocolate Bar' %}product__sticky-title{% endif %}">
         {% if product.metafields.info.origin != blank %}
           {{ product.metafields.info.origin }}
@@ -21,7 +20,7 @@
           {{ product.title }}
         {% endif %}
       </div>
-
+  
       {% if product.metafields.info.tasting_notes != blank %}
         <div class="product__detail">
           <div class="product__tasting-note">{{ product.metafields.info.tasting_notes }}</div>
