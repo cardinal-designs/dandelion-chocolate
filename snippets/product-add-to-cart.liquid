@@ -131,7 +131,7 @@
     {% for merch_icon in product.metafields.custom.merch_icons.value %}
       {% assign merch_icons_count = merch_icons_count | plus: 1 %}
     {% endfor %}
-    <div class="merch__icons multi__merch--icons">
+    <div class="merch__icons multi__merch--icons {% if merch_icons_count < 2 %}single__merch--icons{% endif %}">
       {% if product.metafields.custom.merch_icons.value != blank %}
         {% for merch_icon in product.metafields.custom.merch_icons.value %}
           {% assign merch_text = merch_icon | downcase %}
