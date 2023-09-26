@@ -131,7 +131,7 @@
   </figure>
   <div class="product-card-info">
 
-    {%- if section.settings.vendor_name -%}
+    {%- if show_vendor -%}
       {%- if product_card_product.metafields.info.vendor_name != blank -%}
         <div class="card__brand">{{ product_card_product.metafields.info.vendor_name }}</div>
       {%- endif -%}
