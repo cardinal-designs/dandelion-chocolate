@@ -197,7 +197,7 @@
   font-size: 36px;
   letter-spacing: normal;
   line-height: 120%;
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 .header .full-menu .thb-full-menu .Custom_SubMenu--Section .Sub_Menu-Left .Sub_Menu-Heading.uppercase {
