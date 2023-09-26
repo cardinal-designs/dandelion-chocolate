@@ -59,6 +59,7 @@
   {% assign offsetValue = 1 %}
 {% endif %}
 {% for image in product.images %}
+{{ image.id }} --- {{ product.metafields.custom.product_featured_image }}
     {% if image.id == product.metafields.custom.product_featured_image %}
       {% assign position = image.position %}
   {% endif %}
