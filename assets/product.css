@@ -2535,6 +2535,10 @@ variant-selects .product-form__input .select-arrow {
   outline: none;
 }
 
+.product__detail + .product__detail .product__tasting-note {
+  margin: 0;
+}
+
 @media only screen and (min-width: 768px) { 
   
   .merch__icons.multi__merch--icons {
