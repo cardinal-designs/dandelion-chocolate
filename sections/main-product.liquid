@@ -58,12 +58,10 @@
 {% if hostile == true %}
   {% assign offsetValue = 1 %}
 {% endif %}
-{% for media in product.media %}
-  {% if media.media_type == 'image' %}
-    {{ media.preview_image.id }}----
+{% for media in product.images %}
+    {{ media.id }}----
     {% if media.id == product.metafields.custom.product_featured_image %}
       {% assign position = media.position %}
-    {% endif %}
   {% endif %}
 {% endfor %}
 
