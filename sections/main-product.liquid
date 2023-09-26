@@ -60,7 +60,7 @@
 {% endif %}
 {% for media in product.media %}
   {% if media.media_type == 'image' %}
-    {{ media.id }}----
+    {{ media.preview_image.id }}----
     {% if media.id == product.metafields.custom.product_featured_image %}
       {% assign position = media.position %}
     {% endif %}
