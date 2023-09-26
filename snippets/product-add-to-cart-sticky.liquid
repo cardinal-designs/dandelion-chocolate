@@ -14,19 +14,19 @@
       </div>       
     {% endif %}
     
-      <div class="product-add-to-cart-sticky--title {% if product.type == 'Chocolate Bar' %}product__sticky-title{% endif %}">
-        {% if product.metafields.info.origin != blank %}
-          {{ product.metafields.info.origin }}
-        {% else %}
-          {{ product.title }}
-        {% endif %}
-      </div>
+    <div class="product-add-to-cart-sticky--title {% if product.type == 'Chocolate Bar' %}product__sticky-title{% endif %}">
+      {% if product.metafields.info.origin != blank %}
+        {{ product.metafields.info.origin }}
+      {% else %}
+        {{ product.title }}
+      {% endif %}
+    </div>
 
-      {% if product.metafields.info.tasting_notes != blank %}
-        <div class="product__detail">
-          <div class="product__tasting-note">{{ product.metafields.info.tasting_notes }}</div>
-        </div>
-      {% endif %}  
+    {% if product.metafields.info.tasting_notes != blank %}
+      <div class="product__detail">
+        <div class="product__tasting-note">{{ product.metafields.info.tasting_notes }}</div>
+      </div>
+    {% endif %}
     </div>
     <div class="product-add-to-cart-sticky--content">
       {%- unless product.has_only_default_variant -%}
