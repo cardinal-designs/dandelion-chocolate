@@ -14,8 +14,8 @@
       {% endif %}
       
       <div class="product-add-to-cart-sticky--title {% if product.type == 'Chocolate Bar' %}product__sticky-title{% endif %}">
-        {% if product.metafields.info.origin != blank %}
-          {{ product.metafields.info.origin }}
+        {% if product.metafields.info.cart_title != blank %}
+          {{ product.metafields.info.cart_title | metafield_tag }}
         {% else %}
           {{ product.title }}
         {% endif %}
