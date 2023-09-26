@@ -2548,6 +2548,10 @@ variant-selects .product-form__input .select-arrow {
   position: absolute;
 }
 
+.template-product .rebuy-widget .rebuy-product-block .rebuy-product-media a.rebuy-product-image {
+  padding-bottom: 100%;
+}
+
 @media only screen and (min-width: 768px) { 
   
   .merch__icons.multi__merch--icons {
