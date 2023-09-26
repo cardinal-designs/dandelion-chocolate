@@ -380,7 +380,7 @@
 .thb-product-detail .product-title * {
   font-family: 'CaslonSB-BoldCondensed' !important;
   font-weight: 500;
-  margin-bottom: 6px;
+  margin: 6px 0;
   color: #333;
   font-size: 40px;
   line-height: normal;
