@@ -330,6 +330,7 @@
   letter-spacing: normal;
   line-height: normal;
   font-weight: 400;
+  text-transform: initial;
 }
 
 .metafield-rich_text_field p {
