@@ -17,7 +17,7 @@
             "text": "FUJI-SAN ENSOKU COLLECTION",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2": {
@@ -26,7 +26,7 @@
             "text": "<p>Four vibrant bonbon varieties, rich with Dandelion single-origin chocolate, highlight mountain flavors in Japan. Silky chocolate-curry caramel, paprika-hazelnut praliné, and airy whipped strawberry pâte de fruit fillings pair beautifully with Dandelion 70% House Blend chocolate.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         },
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3": {
@@ -79,7 +79,7 @@
           "settings": {
             "text": "",
             "subheading_color": "#d3a741",
-            "subheading_color_mobile": "#333"
+            "subheading_color_mobile": "#333333"
           }
         },
         "a3900c75-2989-470e-8780-e6951ed90bb3": {
@@ -88,7 +88,7 @@
             "text": "Chocolate-Dipped Fig Truffles",
             "heading_size": "h2",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "9dab5d34-c2e5-462d-9a1c-fed7fedd33f0": {
@@ -97,7 +97,7 @@
             "text": "<p>The figs are stuffed with creamy Camino Verde, Ecuador chocolate ganache infused with flavorful single-origin spices. Each dark-purplish, honey-flavored fig is then dipped in 70% Camino Verde, Ecuador chocolate, and garnished with edible gold leaf.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         },
         "88498ff6-7e62-4b55-b3e1-1da0541ded48": {
@@ -148,7 +148,7 @@
           "settings": {
             "text": "FRESHLY BAKED",
             "subheading_color": "#d3a741",
-            "subheading_color_mobile": "#333"
+            "subheading_color_mobile": "#333333"
           }
         },
         "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3": {
@@ -157,7 +157,7 @@
             "text": "Halva Bonbons",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "1c54a7df-956d-4754-add0-db32fb0b4e9e": {
@@ -166,7 +166,7 @@
             "text": "<p>Hand-crafted Seed + Mill sesame-seed halva tops velvety, cardamom-scented 70% Tumaco, Colombia chocolate ganache — all enrobed in Dandelion 70% House Blend chocolate, and finished with edible gold foil.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         },
         "4af6929c-0254-43be-b8ac-6f6f24e2709f": {
@@ -340,6 +340,7 @@
         "collection": "bars",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -376,6 +377,7 @@
         "collection": "bars",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": false,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -411,6 +413,7 @@
         "collection": "curated-sets-1",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -446,6 +449,7 @@
         "collection": "gifts-1",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": false,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -539,6 +543,7 @@
         "collection": "bar-gift-sets",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -574,6 +579,7 @@
         "collection": "classic-chocolate-1",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -609,6 +615,7 @@
         "collection": "well-balanced-chocolate-bars",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -644,6 +651,7 @@
         "collection": "bold-unexpected-chocolate-bars",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -679,6 +687,7 @@
         "collection": "high-percentage-chocolate-bars",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -714,6 +723,7 @@
         "collection": "treats",
         "show_short_product_desc": false,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -749,6 +759,7 @@
         "collection": "local-sf-delivery",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "carousel",
@@ -784,6 +795,7 @@
         "collection": "hot-chocolates",
         "show_short_product_desc": false,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -887,6 +899,7 @@
         "collection": "chocolate-experiences",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -922,6 +935,7 @@
         "collection": "pantry-baking",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -1026,6 +1040,7 @@
         "collection": "merchandise",
         "show_short_product_desc": false,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
@@ -1061,6 +1076,7 @@
         "collection": "books",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
+        "show_vendor": true,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
