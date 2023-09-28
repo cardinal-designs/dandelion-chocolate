@@ -1,0 +1,27 @@
+{% comment %}
+ Digital gift cards
+{% endcomment %}
+ {% if product.id == 171066294299 or product.id == 1871046574150 %}         
+    {% assign kind = 'Shipped' %}
+    {% for option in product.options_with_values %}
+      {% if option.name == 'Delivery Method' %}
+        {% assign kind = option.selected_value | replace: " (physical card)", "" %}      
+      {% endif %}
+    {% endfor %}  
+  <div class="product-digitalgiftcard-form {{kind | replace: ' ', '-' }}">  
+    <div>
+      <label for="from">{{'products.giftcard.from' | t}}</label>
+      <input type="text" id="from" name="properties[from]" placeholder="{{'products.giftcard.from_placeholder' | t}}" maxlength="25" required>
+    </div>
+    <div>
+      <label for="to">{{'products.giftcard.to' | t}}</label>
+      <input type="email" id="to" name="properties[to]" placeholder="{{'products.giftcard.to_placeholder' | t}}" required>
+    </div>
+    <div>
+      <label for="note">{{'products.giftcard.note' | t}}</label>
+      <textarea type="text" id="note" maxlength="500" name="properties[message]" placeholder="{{'products.giftcard.note_placeholder' | t}}" required></textarea>
+    </div>
+    <label class="digitalgiftcard__deliverytime">{{'products.giftcard.email-immediate' | t}}</label> 
+    <input type="hidden" id="delivery-date" name="properties[delivers]" value="immediately">
+  </div>
+ {% endif %}
