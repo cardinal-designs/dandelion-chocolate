@@ -122,13 +122,13 @@
                       <span class="selling-plan">{{ item.selling_plan_allocation.selling_plan.name }}</span>
                     </div>
                   {% endif %}
-
+              
                   {% for p in item.properties %}
                     <div class="product-cart-item-options">
                       <span><strong>{{ p.first }}:</strong> {{ p.last }}</span>
                     </div>
                   {% endfor %}
-              
+
                   {% unless item.variant.title contains 'Default' %}
                     <div class="product-cart-item-options">
                       {% for option in item.product.options %}
