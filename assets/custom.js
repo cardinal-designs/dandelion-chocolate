@@ -530,8 +530,20 @@ $(document).ready(function () {
       }
     }
   }
+
+
+
   
-  $(".product-form__input .gift-dropdown").change(updateDigitalGiftCardForm);
+
+  const checkDiv = setInterval(() => {
+    if($('.product-form__input .gift-dropdown').length > 0) {
+      clearInterval(checkDiv);
+      $(".product-form__input .gift-dropdown").change(updateDigitalGiftCardForm);
+    } 
+  }, 100); 
+  
+  
+  
   
   // $(function (e) {
   //   updateDigitalGiftCardForm();
