@@ -499,9 +499,7 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
 
 $(document).ready(function () {
 
-
-  
-/* Gift Card */
+  /* Gift Card */
 
   function updateDigitalGiftCardForm() {
     var digitalGiftCardInput = $(".product-form__input .gift-dropdown");
@@ -531,25 +529,12 @@ $(document).ready(function () {
     }
   }
 
-
-
-  
-
   const checkDiv = setInterval(() => {
     if($('.product-form__input .gift-dropdown').length > 0) {
       clearInterval(checkDiv);
       $(".product-form__input .gift-dropdown").change(updateDigitalGiftCardForm);
     } 
   }, 100); 
-  
-  
-  
-  
-  // $(function (e) {
-  //   updateDigitalGiftCardForm();
-  // });
-  
-  
   
   /*
   Reference: http://jsfiddle.net/BB3JK/47/
