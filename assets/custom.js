@@ -595,6 +595,8 @@ $(document).ready(function () {
       $styledSelect.removeClass('active');
       $list.hide();
     });
+
+    updateDigitalGiftCardForm();
   
   });
 
@@ -603,5 +605,5 @@ $(document).ready(function () {
   if(productsLength && hiddenProducts){
     $('.facets__label').text(productsLength+ " Results")
   }
-
+  updateDigitalGiftCardForm();
 })
