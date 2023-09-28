@@ -527,12 +527,10 @@ $(document).ready(function () {
     }
   }
 
-  const checkDiv = setInterval(() => {
-    if($('.product-form__input .select-hidden').length > 0) {
-      clearInterval(checkDiv);
-      $(".product-form__input .select-hidden").change(updateDigitalGiftCardForm);
-    } 
-  }, 100); 
+  $(".product-form #Delivery-Method").change(updateDigitalGiftCardForm);
+  $(function (e) {
+    updateDigitalGiftCardForm();
+  });
   
   /*  Reference: http://jsfiddle.net/BB3JK/47/  */
   
@@ -540,7 +538,6 @@ $(document).ready(function () {
     var $this = $(this), numberOfOptions = $(this).children('option').length;
   
     $this.addClass('select-hidden'); 
-    $this.addClass('gift-dropdown');
     $this.wrap('<div class="select"></div>');
     $this.after('<div class="select-styled"></div>');
 
