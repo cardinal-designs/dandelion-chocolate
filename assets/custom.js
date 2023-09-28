@@ -527,7 +527,7 @@ $(document).ready(function () {
     }
   }
 
-  $(".product-form #Delivery-Method").change(updateDigitalGiftCardForm);
+  $(".product-form .select-hidden").change(updateDigitalGiftCardForm);
   $(function (e) {
     updateDigitalGiftCardForm();
   });
