@@ -405,7 +405,7 @@ $(document).ready(function() {
   $('.product-information variant-selects select').each(function(){
       var $this = $(this), numberOfOptions = $(this).children('option').length;
     
-      $this.addClass('select-hidden'); 
+      $this.addClass('select-hidden', 'gift-dropdwon'); 
       $this.wrap('<div class="select"></div>');
       $('.product-variants').append('<div class="select-styled"></div>');
   
