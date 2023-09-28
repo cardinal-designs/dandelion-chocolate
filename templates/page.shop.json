@@ -47,7 +47,7 @@
       ],
       "custom_css": [
         ".image-with-text-overlay--content-inner .rte {margin-left: 0px;}",
-        ".image-with-text-overlay--content {padding-left: 60px !important;}",
+        "@media (min: 768px) {.image-with-text-overlay--content {padding-left: 60px !important;}}",
         "@media (max-width: 500px) {.image-with-text-overlay--content-inner {padding: 20px !important; } .mb-23 {width: 100% !important; }}"
       ],
       "settings": {
