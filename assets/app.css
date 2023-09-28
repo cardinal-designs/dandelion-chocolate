@@ -6009,10 +6009,6 @@ input[type="radio"],
   display: none;
 }
 
-.product-digitalgiftcard-form {
-  display: none;  
-}
-
 .product-digitalgiftcard-form.Email {
   display: block;
 }
