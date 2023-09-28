@@ -595,9 +595,7 @@ $(document).ready(function () {
       $styledSelect.removeClass('active');
       $list.hide();
     });
-
-    updateDigitalGiftCardForm();
-  
+    
   });
 
   var productsLength = $('.template-search #product-grid .column:visible').length;
@@ -605,5 +603,5 @@ $(document).ready(function () {
   if(productsLength && hiddenProducts){
     $('.facets__label').text(productsLength+ " Results")
   }
-  updateDigitalGiftCardForm();
+
 })
