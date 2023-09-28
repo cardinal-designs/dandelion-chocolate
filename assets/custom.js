@@ -534,9 +534,7 @@ $(document).ready(function () {
     } 
   }, 100); 
   
-  /*
-  Reference: http://jsfiddle.net/BB3JK/47/
-  */
+  /*  Reference: http://jsfiddle.net/BB3JK/47/  */
   
   $('.product-information--inner .product-form__input select').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
