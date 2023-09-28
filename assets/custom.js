@@ -527,10 +527,12 @@ $(document).ready(function () {
     }
   }
 
-  $(".product-form .select-hidden").change(updateDigitalGiftCardForm);
-  $(function (e) {
-    updateDigitalGiftCardForm();
-  });
+  const checkDiv = setInterval(() => {
+    if($('.product-form__input .select-hidden').length > 0) {
+      clearInterval(checkDiv);
+      $(".product-form__input .select-hidden").change(updateDigitalGiftCardForm);
+    } 
+  }, 100); 
   
   /*  Reference: http://jsfiddle.net/BB3JK/47/  */
   
