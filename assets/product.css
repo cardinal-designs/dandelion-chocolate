@@ -2272,6 +2272,15 @@ variant-selects .product-form__input .select-arrow {
   .template-product .rebuy-product-block {
     margin-bottom: 30px !important;
   }
+
+  .variations .select-styled {
+    font-size: 13px;
+  }
+
+  .product-information .variations .select-styled:before {
+    width: 10px;
+  }
+  
     
 }
 
