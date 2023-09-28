@@ -500,7 +500,7 @@ $(document).ready(function () {
   /* Gift Card */
 
   function updateDigitalGiftCardForm() {
-    var digitalGiftCardInput = $(".product-form__input .gift-dropdown");
+    var digitalGiftCardInput = $(".product-form__input .select-hidden");
     var digitalGiftCardForm = $(".product-digitalgiftcard-form");
     if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
       var val = $(digitalGiftCardInput).val();
@@ -528,9 +528,9 @@ $(document).ready(function () {
   }
 
   const checkDiv = setInterval(() => {
-    if($('.product-form__input .gift-dropdown').length > 0) {
+    if($('.product-form__input .select-hidden').length > 0) {
       clearInterval(checkDiv);
-      $(".product-form__input .gift-dropdown").change(updateDigitalGiftCardForm);
+      $(".product-form__input .select-hidden").change(updateDigitalGiftCardForm);
     } 
   }, 100); 
   
