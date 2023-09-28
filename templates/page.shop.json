@@ -155,18 +155,18 @@
         "34b3f4ae-aee3-47b8-8c01-b502a4cca4b3": {
           "type": "heading",
           "settings": {
-            "text": "Halva Bonbons",
+            "text": "CHOCOLATE-DIPPED FIG TRUFFLES",
             "heading_size": "h1",
-            "heading_color": "#333333",
+            "heading_color": "#ffffff",
             "heading_color_mobile": "#333333"
           }
         },
         "1c54a7df-956d-4754-add0-db32fb0b4e9e": {
           "type": "text",
           "settings": {
-            "text": "<p>Hand-crafted Seed + Mill sesame-seed halva tops velvety, cardamom-scented 70% Tumaco, Colombia chocolate ganache — all enrobed in Dandelion 70% House Blend chocolate, and finished with edible gold foil.<\/p>",
+            "text": "<p>Inspired by the classic Ecuadorian confection Dulce de Higos, with locally-sourced black Mission figs. Each plump fig is filled with creamy, spice-infused chocolate ganache for an enticing union of taste and texture. <\/p>",
             "description_size": "body-1",
-            "description_color": "#333333",
+            "description_color": "#ffffff",
             "description_color_mobile": "#333333"
           }
         },
@@ -174,8 +174,8 @@
           "type": "button",
           "settings": {
             "button_text": "Learn More",
-            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/halva-bonbons",
-            "button_style": "btn--white",
+            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/chocolate-dipped-fig-truffles",
+            "button_style": "btn--light-gold",
             "mobile_button_style": "btn--gold"
           }
         }
@@ -190,8 +190,8 @@
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": false,
-        "image": "shopify:\/\/shop_images\/Halva_Hero_bg.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Halva_Hero_mobile.jpg",
+        "image": "shopify:\/\/shop_images\/Banner_Image_2.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Banner_Image_2_fa19a984-231f-44aa-9059-e1f5499d4fb5.jpg",
         "desktop_height": "desktop-height-500",
         "mobile_height": "mobile-height-635",
         "content_width": "medium",
@@ -206,6 +206,79 @@
         "content__bg": "#333333",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true,
+        "custom_class": ""
+      }
+    },
+    "c9758861-e49d-4bfb-8eef-4b7354052481": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "A collaboration with Feve",
+            "subheading_color": "#e7d081",
+            "subheading_color_mobile": "#333"
+          }
+        },
+        "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "CHOCOLATE-COVERED QUARTET",
+            "heading_size": "h2",
+            "heading_color": "#ffffff",
+            "heading_color_mobile": "#333"
+          }
+        },
+        "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Crafted in collaboration with long-time San Francisco friend Feve Chocolates, four classic confections are richly coated with our fudgy 70% Camino Verde, Ecuador chocolate, for an irresistible bean-to-bar quartet, presented in a custom-designed, reusable gift box.<\/p>",
+            "description_size": "body-1",
+            "description_color": "#ffffff",
+            "description_color_mobile": "#333"
+          }
+        },
+        "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-button-1": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/chocolate-covered-quartet",
+            "button_style": "btn--light-gold",
+            "mobile_button_style": "btn--light-gold"
+          }
+        }
+      },
+      "block_order": [
+        "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-subheading-1",
+        "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-heading-1",
+        "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-text-1",
+        "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-button-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text-overlay--content-inner .rte {margin-left: 0px;}",
+        "@media (min-width: 768px) {.image-with-text-overlay--content {padding-left: 60px !important; }}",
+        "@media (max-width: 500px) {.image-with-text-overlay--content-inner {padding: 20px !important; } .mb-23 {width: 100% !important; }}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image_url": false,
+        "image": "shopify:\/\/shop_images\/Banner_Image_3_a4579a15-86b4-47c3-9cf0-5c229b349a37.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/quartet.webp",
+        "desktop_height": "desktop-height-500",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "overlay_opacity": 0,
+        "show_caption_box": false,
+        "caption_over_banner": false,
+        "caption_bg": "",
+        "mobile_caption_bg": "",
+        "stack_on_mobile": true,
+        "content__bg": "#ffffff",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false,
         "custom_class": ""
       }
     },
@@ -323,80 +396,6 @@
         "quote_text_color": "#ffffff",
         "quote_border_color": "#A6A6A6",
         "section_bg": "#fffdf9"
-      }
-    },
-    "3a9ad542-713f-46b0-898c-18c8b4ae6799": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "heading": "SIMPLE collection grid with 2 product blocks",
-        "heading_desktop": 32,
-        "heading_mobile": 22,
-        "enable_mobile_heading": false,
-        "mobile_heading": "",
-        "description": "",
-        "full_width": false,
-        "hide_cta_mobile": true,
-        "collection": "bars",
-        "show_short_product_desc": true,
-        "show_compare_at_price": false,
-        "show_vendor": true,
-        "show_all_products": false,
-        "display_type": "grid",
-        "mobile_display_type": "grid",
-        "columns_desktop": "2",
-        "different_column_grid_layout": "2\/4",
-        "quote_enable": false,
-        "mobile_swipe": false,
-        "quickview_cartbutton": "addtocart",
-        "product_limit": "2",
-        "show_progress_bar": false,
-        "show_view_all": false,
-        "quote": "<p>“Each of Dandelion’s single-origin bars is unique to its terroir—the Dominican is nutty and bright, the Liberian earthy and umami-rich—and helps sustain the inhabitants (feathered and not) of the land.”<\/p>",
-        "author": "— VOGUE",
-        "quote_bg_color": "#a09b86",
-        "quote_text_color": "#ffffff",
-        "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9",
-        "custom_class": ""
-      }
-    },
-    "04652f7a-eb2b-44e9-bd78-48dfa269aaf6": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "heading": "SIMPLE collection grid with 3 product blocks",
-        "heading_desktop": 32,
-        "heading_mobile": 22,
-        "enable_mobile_heading": false,
-        "mobile_heading": "",
-        "description": "",
-        "full_width": false,
-        "hide_cta_mobile": true,
-        "collection": "bars",
-        "show_short_product_desc": true,
-        "show_compare_at_price": false,
-        "show_vendor": true,
-        "show_all_products": false,
-        "display_type": "grid",
-        "mobile_display_type": "grid",
-        "columns_desktop": "3",
-        "different_column_grid_layout": "2\/4",
-        "quote_enable": false,
-        "mobile_swipe": false,
-        "quickview_cartbutton": "addtocart",
-        "product_limit": "2",
-        "show_progress_bar": false,
-        "show_view_all": true,
-        "quote": "",
-        "author": "",
-        "quote_bg_color": "#a09b86",
-        "quote_text_color": "#ffffff",
-        "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9",
-        "custom_class": ""
       }
     },
     "156a4980-a379-4513-acbd-ad484c675407": {
@@ -1103,11 +1102,10 @@
     "2a732536-248e-4bfc-bf69-56eb0774b4df",
     "485c4745-3f2d-40d0-b235-4fb67da08280",
     "82e29b78-d5f5-4844-8417-2abc961b672a",
+    "c9758861-e49d-4bfb-8eef-4b7354052481",
     "f72cb3d9-4d68-4827-b7a3-beff27085607",
     "23f32bf8-b73d-4eef-9e20-5f299f6c3c2e",
     "0fc540a0-78fa-4cd0-b59c-fd5c3cb2ebbe",
-    "3a9ad542-713f-46b0-898c-18c8b4ae6799",
-    "04652f7a-eb2b-44e9-bd78-48dfa269aaf6",
     "156a4980-a379-4513-acbd-ad484c675407",
     "dcf58d18-7582-499d-bd3f-754d9d7ffd73",
     "51d1d361-7e0e-4d04-845a-dd6159e4b3ad",
