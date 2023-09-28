@@ -124,9 +124,9 @@
                   {% endif %}
 
                   {% for p in item.properties %}
-
-                    <p><strong>{{ p.first }} : </strong> <span>{{ p.last }}</span></p>
-                    
+                    <div class="product-cart-item-options">
+                      <span><strong>{{ p.first }}:</strong> {{ p.last }}</span>
+                    </div>
                   {% endfor %}
               
                   {% unless item.variant.title contains 'Default' %}
