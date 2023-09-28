@@ -495,8 +495,44 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   }
 });
 
+/* Gift Card */
+
+function updateDigitalGiftCardForm() {
+  var digitalGiftCardInput = $(".product-form__input .gift-dropdown");
+  var digitalGiftCardForm = $(".product-digitalgiftcard-form");
+  if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
+    var val = $(digitalGiftCardInput).val();
+    // console.log(val);
+    if (val == "Email") {
+      digitalGiftCardForm.addClass("Email");
+      digitalGiftCardForm.removeClass("Shipped");
+      $(
+        ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
+      ).prop("required", true);
+      $(
+        ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
+      ).prop("disabled", false);
+    } else {
+      digitalGiftCardForm.removeClass("Email");
+      digitalGiftCardForm.addClass("Shipped");
+      $(
+        ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
+      ).prop("required", false);
+      $(
+        ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
+      ).prop("disabled", true);
+    }
+  }
+}
+
 $(document).ready(function () {
 
+  $(".product-form__input .gift-dropdown").change(updateDigitalGiftCardForm);
+  
+  $(function (e) {
+    updateDigitalGiftCardForm();
+  });
+  
   /*
   Reference: http://jsfiddle.net/BB3JK/47/
   */
@@ -567,38 +603,3 @@ $(document).ready(function () {
     $('.facets__label').text(productsLength+ " Results")
   }
 })
-
-/* Gift Card */
-
-function updateDigitalGiftCardForm() {
-  var digitalGiftCardInput = $(".product-form__input .gift-dropdown");
-  var digitalGiftCardForm = $(".product-digitalgiftcard-form");
-  if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
-    var val = $(digitalGiftCardInput).val();
-    // console.log(val);
-    if (val == "Email") {
-      digitalGiftCardForm.addClass("Email");
-      digitalGiftCardForm.removeClass("Shipped");
-      $(
-        ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
-      ).prop("required", true);
-      $(
-        ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
-      ).prop("disabled", false);
-    } else {
-      digitalGiftCardForm.removeClass("Email");
-      digitalGiftCardForm.addClass("Shipped");
-      $(
-        ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
-      ).prop("required", false);
-      $(
-        ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
-      ).prop("disabled", true);
-    }
-  }
-}
-
-$(".product-form__input .gift-dropdown").change(updateDigitalGiftCardForm);
-$(function (e) {
-  updateDigitalGiftCardForm();
-});
