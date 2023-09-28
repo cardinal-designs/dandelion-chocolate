@@ -570,7 +570,7 @@ $(document).ready(function () {
 /* Gift Card */
 
 function updateDigitalGiftCardForm() {
-  var digitalGiftCardInput = $("..variations .select-styled");
+  var digitalGiftCardInput = $(".product-form #Delivery-Method");
   var digitalGiftCardForm = $(".product-digitalgiftcard-form");
   if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
     var val = $(digitalGiftCardInput).val();
@@ -597,7 +597,7 @@ function updateDigitalGiftCardForm() {
   }
 }
 
-$(".variations .select-styled").change(updateDigitalGiftCardForm);
+$(".product-form #Delivery-Method").change(updateDigitalGiftCardForm);
 $(function (e) {
   updateDigitalGiftCardForm();
 });
