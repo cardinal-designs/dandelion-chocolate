@@ -2279,6 +2279,7 @@ variant-selects .product-form__input .select-arrow {
 
   .product-information .variations .select-styled:before {
     width: 10px;
+    right: 10px;
   }
     
 }
