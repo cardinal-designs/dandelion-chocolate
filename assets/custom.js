@@ -603,6 +603,5 @@ $(document).ready(function () {
   if(productsLength && hiddenProducts){
     $('.facets__label').text(productsLength+ " Results")
   }
-  
-  updateDigitalGiftCardForm();
+
 })
