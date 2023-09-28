@@ -870,6 +870,7 @@
                   </side-panel-links>
                 {%- when 'gift_card' -%}
                   {% render 'product-form-digital-card', product: product %}
+                
                 {%- when 'buy_buttons' -%}
                   {% if product.metafields.custom.alternative_add_to_cart_button_link != blank %}
                     <div class="product-button--link">
