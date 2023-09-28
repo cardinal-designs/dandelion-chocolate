@@ -504,7 +504,8 @@ $(document).ready(function () {
   $('.product-information--inner .product-form__input select').each(function(){
       var $this = $(this), numberOfOptions = $(this).children('option').length;
     
-      $this.addClass('select-hidden', 'gift-dropdown'); 
+      $this.addClass('select-hidden'); 
+      $this.addClass('gift-dropdown'); 
       $this.wrap('<div class="select"></div>');
       $this.after('<div class="select-styled"></div>');
   
