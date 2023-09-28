@@ -500,7 +500,7 @@ $(document).ready(function () {
   /* Gift Card */
 
   function updateDigitalGiftCardForm() {
-    var digitalGiftCardInput = $(".product-form__input .gift-dropdown");
+    var digitalGiftCardInput = $(".product-information .variations select");
     var digitalGiftCardForm = $(".product-digitalgiftcard-form");
     if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
       var val = $(digitalGiftCardInput).val();
@@ -528,9 +528,9 @@ $(document).ready(function () {
   }
 
   const checkDiv = setInterval(() => {
-    if($('.product-form__input .gift-dropdown').length > 0) {
+    if($('.product-information .variations select').length > 0) {
       clearInterval(checkDiv);
-      $(".product-form__input .gift-dropdown").change(updateDigitalGiftCardForm);
+      $(".product-information .variations select").change(updateDigitalGiftCardForm);
     } 
   }, 100); 
   
@@ -540,7 +540,6 @@ $(document).ready(function () {
     var $this = $(this), numberOfOptions = $(this).children('option').length;
   
     $this.addClass('select-hidden'); 
-    $this.addClass('gift-dropdown');
     $this.wrap('<div class="select"></div>');
     $this.after('<div class="select-styled"></div>');
 
