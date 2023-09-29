@@ -2085,15 +2085,15 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   color: #333333;
 }
 
-.product-information .variations select,.product-add-to-cart-sticky .variations select{
+.product-information .variations select{
   display: none;
 }
 
-.product-information .variations .select-styled.active,.product-add-to-cart-sticky .variations .select-styled.active{
+.product-information .variations .select-styled.active{
   border-color: #A28D5B;
 }
 
-.product-information .variations .select-styled:before,.product-add-to-cart-sticky .variations .select-styled:before{
+.product-information .variations .select-styled:before{
   content: "";
   background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/down.svg?v=1694036187);
   width: 20px;
