@@ -1677,7 +1677,7 @@ quantity-selector.quantity .plus svg {
 }
 
 .short_description p {
-  font-size: 18px;
+  font-size: 18px; 
   line-height: 140%;
   color: #000;
   letter-spacing: 0.02em;
