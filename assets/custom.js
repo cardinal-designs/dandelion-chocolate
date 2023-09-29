@@ -497,6 +497,42 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
 
 $(document).ready(function () {
 
+    function updateDigitalGiftCardForm() {
+      function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
+          var val = digitalGiftCardInput.val();
+          if (val == "Email") {
+              digitalGiftCardForm.addClass("Email").removeClass("Shipped");
+          } else {
+              digitalGiftCardForm.removeClass("Email").addClass("Shipped");
+          }
+  
+          var formElements = digitalGiftCardForm.find("input, textarea");
+          formElements.prop("required", val == "Email");
+          formElements.prop("disabled", val != "Email");
+      }
+  
+      function initializeListener(selector) {
+          var digitalGiftCardInput = $(selector + " .variations select");
+          var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
+  
+          if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
+              digitalGiftCardInput.change(function () {
+                  handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
+              });
+          }
+      }
+  
+      initializeListener(".product-information");
+      initializeListener(".product-add-to-cart-sticky");
+  }
+  
+  const checkDiv = setInterval(() => {
+      if ($('.product-information .variations select').length > 0 || $('.product-add-to-cart-sticky .variations select').length > 0) {
+          clearInterval(checkDiv);
+          updateDigitalGiftCardForm();
+      }
+  }, 100);
+
   /*
   Reference: http://jsfiddle.net/BB3JK/47/
   */
