@@ -77,7 +77,7 @@
                     <li class="pl-10 pr-10{% if colLink.active %} active{% endif %}" role="none">
                       {%- if colLink.type contains 'collection_link' -%}
                         <a href="{{ colLink.url }}">
-                          <img src="{{ collectionFeatured.image | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
+                          <img loading='lazy' src="{{ collectionFeatured.image | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
                         </a>
                       {%- else -%}
                     
