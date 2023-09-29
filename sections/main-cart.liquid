@@ -101,7 +101,6 @@
                           {%- assign itemProperties = item.properties -%}
                         {% endif %}
 
-
                         {% for p in itemProperties %}
                           {% assign first_character_in_key = p.first | truncate: 1, '' %}
                           {% unless p.last == blank or first_character_in_key == '_' %}
