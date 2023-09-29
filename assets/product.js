@@ -770,7 +770,6 @@ if (!customElements.get('product-add-to-cart-sticky')) {
                 _this.classList.add('sticky--visible');
               }
             }
-            console.log(entry.target, form)
             if (entry.target === form) {
               let boundingRect = form.getBoundingClientRect();
 
