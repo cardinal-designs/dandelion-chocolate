@@ -603,6 +603,7 @@ $(document).ready(function () {
   $('.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea').on('keypress', function () {
       var newValue = $(this).val();
       var inputField = $(this).attr('name');
+    console.log('newValue',newValue);
       console.log('inputField',inputField);
       $('[name="' + inputField + '"]').val(newValue);
   });
