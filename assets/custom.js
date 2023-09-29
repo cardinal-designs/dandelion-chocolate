@@ -600,11 +600,11 @@ $(document).ready(function () {
     $('.facets__label').text(productsLength+ " Results")
   }
 
-  $('.product-digitalgiftcard-form input').on('keypress', function () {
+  $('.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea').on('keypress', function () {
       const newValue = $(this).val();
       const inputField = $(this).attr('name');
       console.log('inputField',inputField);
-      $('input[name="' + inputField + '"]').val(newValue);
+      $('[name="' + inputField + '"]').val(newValue);
   });
 
 })
