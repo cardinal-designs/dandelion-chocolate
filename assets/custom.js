@@ -600,7 +600,8 @@ $(document).ready(function () {
     $('.facets__label').text(productsLength+ " Results")
   }
 
-  $(document).on('keypress','.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea', function () {
+  $(document).on('keypress','.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea', function (e) {
+      e.preventDefault();
       var newValue = $(this).val();
       var inputField = $(this).attr('name');
     console.log('newValue',newValue);
