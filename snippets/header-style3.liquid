@@ -7,7 +7,7 @@
 {% if header_settings.logo %}
   <a href="/" class="logolink">
     <img
-        src="{{ header_settings.logo | image_url }}"
+        loading='lazy' src="{{ header_settings.logo | image_url }}"
         class="logoimg"
         alt="{{ header_settings.logo.alt | default: shop.name | escape }}"
         width="{{ header_settings.logo.width }}"
@@ -21,7 +21,7 @@
         endif
     -%}
     <img
-        src="{{ light_logo | image_url }}"
+        loading='lazy' src="{{ light_logo | image_url }}"
         class="logoimg logoimg--light"
         alt="{{ header_settings.logo.alt | default: shop.name | escape }}"
         width="{{ header_settings.logo.width }}"
