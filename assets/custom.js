@@ -601,8 +601,8 @@ $(document).ready(function () {
   }
 
   $('.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea').on('keypress', function () {
-      const newValue = $(this).val();
-      const inputField = $(this).attr('name');
+      var newValue = $(this).val();
+      var inputField = $(this).attr('name');
       console.log('inputField',inputField);
       $('[name="' + inputField + '"]').val(newValue);
   });
