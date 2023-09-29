@@ -1,8 +1,7 @@
-{% assign product_section_id = section.id | append:'--sticky' %}
-{%- assign product_form_id = 'product-form-' | append: product_section_id -%}
+{%- assign product_form_id = 'product-form-' | append: section.id -%}
 <product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
   <div class="product-add-to-cart-sticky--inner {% if product.type == 'Chocolate Bar' or product.tags contains 'Ingredients' %}chocolate__bar-product{% endif %}">
-    <div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}">
+    <div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
       {%- if media -%}
         {%- render 'responsive-image', image: media, sizes: '96x96' -%}
       {%- endif -%}
@@ -37,7 +36,7 @@
     </div>
     <div class="product-add-to-cart-sticky--content">
       {%- unless product.has_only_default_variant -%}
-      <variant-selects  id="variant-selects-{{ section.id }}" class="no-js-hidden variant-selects--sticky" data-section="{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
+      <variant-selects  id="variant-selects-{{ section.id }}--sticky" class="no-js-hidden variant-selects--sticky" data-section="{{ section.id }}" data-url="{{ product.url }}" data-sticky="1" data-is-disabled="{{ is_disabled }}">
           <div class="variations">
               {%- for option in product.options_with_values -%}
                   {%- liquid
@@ -79,7 +78,7 @@
                         {% render 'svg-icons' with 'thb-loading' %}
                       </span>
                       <span class="separator"> · </span>
-                      <div id="price-btn-{{ section.id }}" class="sticky__add-to-cart">
+                      <div id="price-btn-{{ section.id }}--sticky" class="sticky__add-to-cart">
                         {% render 'product-price', product: product, use_variant: true, show_badges: false %}
                       </div>
                   </button>
