@@ -2024,6 +2024,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   bottom: 24%;
   opacity: 1;
   visibility: visible;
+  z-index: 1;
 }
 
 .template-product .rebuy-product-block {
