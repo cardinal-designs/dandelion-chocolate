@@ -102,6 +102,7 @@
   {%- endif -%}
 	{%- if product != blank -%}
 		{%- form 'product', product, id: 'product-form-installment', class: 'installment' -%}
+            {% render 'product-form-digital-card', product: product, product_form_id: product_form_id %}
 			<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 			{{ form | payment_terms }}
 		{%- endform -%}
