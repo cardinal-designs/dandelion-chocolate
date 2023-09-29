@@ -531,6 +531,12 @@ $(document).ready(function () {
     if($('.product-information .variations select').length > 0) {
       clearInterval(checkDiv);
       $(".product-information .variations select").change(updateDigitalGiftCardForm);
+
+      if(document.querySelector(".product-information .variations select").value == "Email"){
+        console.log(document.querySelector("ul.select-options [rel='Email']"));
+        document.querySelector("ul.select-options [rel='Email']").click();
+      }
+      
     } 
   }, 100); 
   
