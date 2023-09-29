@@ -501,6 +501,7 @@ $(document).ready(function () {
 
   function updateDigitalGiftCardForm() {
       function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
+        console.log('digitalGiftCardInput',digitalGiftCardInput);
           var val = digitalGiftCardInput.val();
           if (val == "Email") {
               digitalGiftCardForm.addClass("Email").removeClass("Shipped");
