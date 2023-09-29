@@ -2194,7 +2194,12 @@ variant-selects .product-form__input .select-arrow {
   .template-product .rebuy-widget-content .primary-title {
     font-size: 36px;
   }
-
+  .product-information .variations .select-styled:before,.product-add-to-cart-sticky .variations .select-styled:before{
+    width: 14px;
+    height: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 @media only screen and (max-width: 1067px) {
