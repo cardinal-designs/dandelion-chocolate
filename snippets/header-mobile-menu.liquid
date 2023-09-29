@@ -96,6 +96,7 @@
     {%- endif -%}
     {%- if header_settings.mobile_secondary_menu -%}
       <div class="mobile-secondary-menu">
+        <a href="{{ header_settings.button_url }}" class="btn btn--gold full--width">{{ header_settings.button_label }}</a>
         <ul class="mobile__secondary-menu--inr">
           {%- for link in header_settings.mobile_secondary_menu.links -%}
             <li class="{% if link.active %} active{% endif %}">
@@ -119,7 +120,6 @@
             </li>
           {%- endif -%}
         </ul>
-        <a href="{{ header_settings.button_url }}" class="btn btn--gold full--width">{{ header_settings.button_label }}</a>
       </div>
     {%- endif -%}
     {%- if header_settings.mobile_promo_image -%}
