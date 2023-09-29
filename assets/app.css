@@ -6004,3 +6004,10 @@ input[type="radio"],
   margin: 6px 0;
   letter-spacing: .15em;
 }
+.product-digitalgiftcard-form {
+  display: none;
+}
+
+.product-digitalgiftcard-form.Email {
+  display: block;
+}
