@@ -531,6 +531,7 @@ $(document).ready(function () {
   const checkDiv = setInterval(() => {
       if ($('.product-information .variations select').length > 0 || $('.product-add-to-cart-sticky .variations select').length > 0) {
           clearInterval(checkDiv);
+          console.log('Length',$('.product-add-to-cart-sticky .variations select').length)
           updateDigitalGiftCardForm();
       }
   }, 100);
