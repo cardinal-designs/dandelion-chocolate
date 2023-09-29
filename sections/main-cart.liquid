@@ -112,9 +112,7 @@
                           {% endunless %}
                         {% endfor %}
                       </div>
-                        <p class="cart-item__meta-variant" data-cart-item-property-list>
-                            {{ item.variant.title | replace: 'Default Title', '' }}
-                        </p>
+
                       {% unless item.variant.title contains 'Default' %}
                         <div class="product-cart-item-options">
                           {% for option in item.product.options %}
