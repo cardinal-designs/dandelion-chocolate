@@ -100,7 +100,10 @@
                         {% if property_size > 0 %}
                           {%- assign itemProperties = item.properties -%}
                         {% endif %}
-      
+
+                        <p class="cart-item__meta-variant" data-cart-item-variant-title>
+                            {{ item.variant.title | replace: 'Default Title', '' }}
+                        </p>
                         {% for p in itemProperties %}
                           {% assign first_character_in_key = p.first | truncate: 1, '' %}
                           {% unless p.last == blank or first_character_in_key == '_' %}
