@@ -504,7 +504,6 @@ $(document).ready(function () {
     var digitalGiftCardForm = $(".product-digitalgiftcard-form");
     if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
       var val = $(digitalGiftCardInput).val();
-      // console.log(val);
       if (val == "Email") {
         digitalGiftCardForm.addClass("Email");
         digitalGiftCardForm.removeClass("Shipped");
@@ -530,8 +529,7 @@ $(document).ready(function () {
   const checkDiv = setInterval(() => {
     if($('.product-information .variations select').length > 0) {
       clearInterval(checkDiv);
-      $(".product-information .variations select").change(updateDigitalGiftCardForm);
-      
+      $(".product-information .variations select").change(updateDigitalGiftCardForm);      
     } 
   }, 100); 
   
