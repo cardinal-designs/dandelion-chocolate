@@ -402,76 +402,76 @@ $(document).ready(function() {
     $('.read_more').show();
   });
 
-  $('.product-information variant-selects select,.product-add-to-cart-sticky variant-selects select').each(function(){
-      var $this = $(this), numberOfOptions = $(this).children('option').length;
+  // $('.product-information variant-selects select,.product-add-to-cart-sticky variant-selects select').each(function(){
+  //     var $this = $(this), numberOfOptions = $(this).children('option').length;
     
-      $this.addClass('select-hidden'); 
-      $this.wrap('<div class="select"></div>');
-      $('.product-variants').append('<div class="select-styled"></div>');
+  //     $this.addClass('select-hidden'); 
+  //     $this.wrap('<div class="select"></div>');
+  //     $('.product-variants').append('<div class="select-styled"></div>');
   
-      var $styledSelect = $('.product-variants').find('div.select-styled');
-      $styledSelect.text($this.children('option').eq(0).text());
+  //     var $styledSelect = $('.product-variants').find('div.select-styled');
+  //     $styledSelect.text($this.children('option').eq(0).text());
     
-      var $list = $('<ul />', {
-          'class': 'select-options'
-      }).insertAfter($styledSelect);
+  //     var $list = $('<ul />', {
+  //         'class': 'select-options'
+  //     }).insertAfter($styledSelect);
     
-      for (var i = 0; i < numberOfOptions; i++) {
-          $('<li />', {
-              text: $this.children('option').eq(i).text(),
-              rel: $this.children('option').eq(i).val()
-          }).appendTo($list);
-          if ($this.children('option').eq(i).is(':selected')){
-            $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
-          }
-      }
+  //     for (var i = 0; i < numberOfOptions; i++) {
+  //         $('<li />', {
+  //             text: $this.children('option').eq(i).text(),
+  //             rel: $this.children('option').eq(i).val()
+  //         }).appendTo($list);
+  //         if ($this.children('option').eq(i).is(':selected')){
+  //           $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+  //         }
+  //     }
     
-      var $listItems = $list.children('li');
+  //     var $listItems = $list.children('li');
     
-      $styledSelect.click(function(e) {
-          e.stopPropagation();
-          $('div.select-styled.active').not(this).each(function(){
-              $(this).removeClass('active').next('ul.select-options').hide();
-          });
-          $(this).toggleClass('active').next('ul.select-options').toggle();
-      });
+  //     $styledSelect.click(function(e) {
+  //         e.stopPropagation();
+  //         $('div.select-styled.active').not(this).each(function(){
+  //             $(this).removeClass('active').next('ul.select-options').hide();
+  //         });
+  //         $(this).toggleClass('active').next('ul.select-options').toggle();
+  //     });
     
-     $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        var selectElement = $this[0];
-    selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
+  //    $listItems.click(function(e) {
+  //       e.stopPropagation();
+  //       $styledSelect.text($(this).text()).removeClass('active');
+  //       var selectElement = $this[0];
+  //   selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
     
-    // Dispatch the 'change' event on the select element
-    var changeEvent = new Event('change', { bubbles: true });
-    selectElement.dispatchEvent(changeEvent);
+  //   // Dispatch the 'change' event on the select element
+  //   var changeEvent = new Event('change', { bubbles: true });
+  //   selectElement.dispatchEvent(changeEvent);
   
        
-        $list.find('li.is-selected').removeClass('is-selected');
-        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
-        $list.hide();
+  //       $list.find('li.is-selected').removeClass('is-selected');
+  //       $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+  //       $list.hide();
 
-       var addtoCart = $('.product-information button[type="submit"]').text();
+  //      var addtoCart = $('.product-information button[type="submit"]').text();
        
-       setTimeout(function(){
-         console.log(addtoCart.trim())
-         if (addtoCart.includes("Sold out")){
-           $('.product-submit').text('SOLD OUT');
-           $('.product-submit').attr('disabled','disabled');
-         } else {
-           $('.product-submit').text('RESERVE YOUR SPOT');
-           $('.product-submit').removeAttr('disabled');
-         }
-       },3000)
-      });
+  //      setTimeout(function(){
+  //        console.log(addtoCart.trim())
+  //        if (addtoCart.includes("Sold out")){
+  //          $('.product-submit').text('SOLD OUT');
+  //          $('.product-submit').attr('disabled','disabled');
+  //        } else {
+  //          $('.product-submit').text('RESERVE YOUR SPOT');
+  //          $('.product-submit').removeAttr('disabled');
+  //        }
+  //      },3000)
+  //     });
   
     
-      $(document).click(function() {
-          $styledSelect.removeClass('active');
-          $list.hide();
-      });
+  //     $(document).click(function() {
+  //         $styledSelect.removeClass('active');
+  //         $list.hide();
+  //     });
   
-  });
+  // });
   $('.product-variants').after('<div class="trip__cart-btn"><button class="product-submit custom__btn">RESERVE YOUR SPOT</button></div>')
   
 });
