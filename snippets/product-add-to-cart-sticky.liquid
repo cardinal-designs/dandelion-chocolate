@@ -55,10 +55,23 @@
               {{ product.variants | json }}
           </script>
       </variant-selects>
-      {% render 'product-form-digital-card', product: product, product_form_id: product_form_id %}
+     
       {%- endunless -%}
       {%- if product != blank -%}
         <product-form class="product-form" data-sticky="1" data-section="{{ section.id }}">
+            {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+              {% render 'product-form-digital-card', product: product, product_form_id: product_form_id %}  
+        		<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+              {%- if enable_sticky_add_to_cart -%}
+                <input type="hidden" class="sticky_product_id_default" value="{{ product.selected_or_first_available_variant.id }}">
+              {%- if product.metafields.custom.sticky_product != blank -%}
+                {% assign product = product.metafields.custom.sticky_product.value %}
+                <input type="hidden" class="sticky_product_id" value="{{ product.selected_or_first_available_variant.id }}">
+              {%- else -%}
+                <input type="hidden" class="sticky_product_id" value="{{ product.selected_or_first_available_variant.id }}">
+              {%- endif -%}
+               {% endif %} 
+            {% endform %}
               <div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
             {% render 'svg-icons' with 'thb-error' %}
             <span class="product-form__error-message"></span>
