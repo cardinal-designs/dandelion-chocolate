@@ -540,7 +540,7 @@ if (!customElements.get('product-form')) {
   customElements.define('product-form', class ProductForm extends HTMLElement {
     constructor() {
       super();
-      console.log(this)
+      // console.log(this)
       this.sticky = this.dataset.sticky;
       // this.form = document.getElementById(`product-form-${this.dataset.section}`);
       this.form = this.querySelector('form');
@@ -576,7 +576,6 @@ if (!customElements.get('product-form')) {
       };
       let formData = new FormData(this.form);
 
-      console.log('This',this);
       formData.append('sections', this.getSectionsToRender().map((section) => section.section));
       formData.append('sections_url', window.location.pathname);
       config.body = formData;
@@ -761,7 +760,7 @@ if (!customElements.get('product-add-to-cart-sticky')) {
     setupObservers() {
       let _this = this,
         observer = new IntersectionObserver(function(entries) {
-          
+          // console.log(entries.target)
           entries.forEach((entry) => {
             if (entry.target === footer) {
               if (entry.intersectionRatio > 0) {
@@ -770,8 +769,6 @@ if (!customElements.get('product-add-to-cart-sticky')) {
                 _this.classList.add('sticky--visible');
               }
             }
-            console.log('Entry',entry.target);
-            console.log('Form',form);
             if (entry.target === form) {
               let boundingRect = form.getBoundingClientRect();
 
