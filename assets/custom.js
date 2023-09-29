@@ -410,8 +410,7 @@ $(document).ready(function() {
       $('.product-variants').append('<div class="select-styled"></div>');
   
       var $styledSelect = $('.product-variants').find('div.select-styled');
-      $styledSelect.text($this.children('option').eq(0).text());
-    
+      
       var $list = $('<ul />', {
           'class': 'select-options'
       }).insertAfter($styledSelect);
@@ -422,6 +421,7 @@ $(document).ready(function() {
               rel: $this.children('option').eq(i).val()
           }).appendTo($list);
           if ($this.children('option').eq(i).is(':selected')){
+            $styledSelect.text($this.children('option').eq(i).val());
             $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
           }
       }
