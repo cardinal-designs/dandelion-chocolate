@@ -546,7 +546,8 @@ $(document).ready(function () {
     $this.after('<div class="select-styled"></div>');
 
     var $styledSelect = $this.next('div.select-styled');
-    
+    $styledSelect.text($this.children('option').eq(0).text());
+  
     var $list = $('<ul />', {
         'class': 'select-options'
     }).insertAfter($styledSelect);
@@ -557,8 +558,7 @@ $(document).ready(function () {
         rel: $this.children('option').eq(i).val()
       }).appendTo($list);
       if ($this.children('option').eq(i).is(':selected')){
-        $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected');
-        $styledSelect.text($this.children('option').eq(i).val());
+        $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
       }
     }
     
