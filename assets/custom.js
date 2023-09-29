@@ -501,26 +501,26 @@ $(document).ready(function () {
 
   function updateDigitalGiftCardForm() {
     var digitalGiftCardInput = $(".product-information .variations select");
-    var digitalGiftCardForm = $(".product-digitalgiftcard-form");
+    var digitalGiftCardForm = $(".product-information .product-digitalgiftcard-form");
     if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
       var val = $(digitalGiftCardInput).val();
       if (val == "Email") {
         digitalGiftCardForm.addClass("Email");
         digitalGiftCardForm.removeClass("Shipped");
         $(
-          ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
+          ".product-information .product-digitalgiftcard-form input,.product-information .product-digitalgiftcard-form textarea"
         ).prop("required", true);
         $(
-          ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
+          ".product-information .product-digitalgiftcard-form input,.product-information .product-digitalgiftcard-form textarea"
         ).prop("disabled", false);
       } else {
         digitalGiftCardForm.removeClass("Email");
         digitalGiftCardForm.addClass("Shipped");
         $(
-          ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
+          ".product-information .product-digitalgiftcard-form input,.product-information .product-digitalgiftcard-form textarea"
         ).prop("required", false);
         $(
-          ".product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea"
+          ".product-information .product-digitalgiftcard-form input,.product-information .product-digitalgiftcard-form textarea"
         ).prop("disabled", true);
       }
     }
