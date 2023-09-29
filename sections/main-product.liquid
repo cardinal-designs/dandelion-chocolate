@@ -646,14 +646,8 @@
                     {% if product.metafields.info.storage_instructions != blank or product.metafields.info.shelf_life != blank %}
                       <dt>ADDITIONAL INFORMATION</dt>
                       <dd>
-
-                        {% if product.metafields.info.storage_instructions != blank %}
-                          <div class="ingredients__list--item shelf__life">Storage instructions: {{ product.metafields.info.storage_instructions | metafield_tag }}</div>
-                        {% endif %}
-
-                        {% if product.metafields.info.shelf_life != blank %}
-                          <div class="ingredients__list--item shelf__life">Shelf life:  {{ product.metafields.info.shelf_life | metafield_tag }} </div>
-                        {% endif %}
+                        <div class="ingredients__list--item shelf__life">Storage instructions: {{ product.metafields.info.storage_instructions | metafield_tag }}</div>
+                        <div class="ingredients__list--item shelf__life">Shelf life:  {{ product.metafields.info.shelf_life | metafield_tag }} </div>
                       </dd>
                     {% endif %}
                 
@@ -876,7 +870,7 @@
                   </side-panel-links>
                 
                 {%- when 'gift_card' -%}
-                   
+                  {% render 'product-form-digital-card', product: product, product_form_id: product_form_id %}
                 
                 {%- when 'buy_buttons' -%}
                   {% if product.metafields.custom.alternative_add_to_cart_button_link != blank %}
