@@ -771,6 +771,7 @@ if (!customElements.get('product-add-to-cart-sticky')) {
               }
             }
             console.log('Entry',entry.target);
+            console.log('Form',form);
             if (entry.target === form) {
               let boundingRect = form.getBoundingClientRect();
 
