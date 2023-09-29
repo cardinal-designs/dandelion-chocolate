@@ -599,6 +599,14 @@ $(document).ready(function () {
   if(productsLength && hiddenProducts){
     $('.facets__label').text(productsLength+ " Results")
   }
+
+  $('.product-digitalgiftcard-form input').on('keypress', function () {
+      const newValue = $(this).val();
+      const inputField = $(this).attr('name');
+      // Update the value of the second input with the same class
+      $(inputField).val(newValue);
+  });
+
 })
 
-
+ 
