@@ -604,8 +604,7 @@ $(document).ready(function () {
       const newValue = $(this).val();
       const inputField = $(this).attr('name');
       console.log('inputField',inputField);
-      // Update the value of the second input with the same class
-      $(inputField).val(newValue);
+      $('input[name="' + inputField + '"]').val(newValue);
   });
 
 })
