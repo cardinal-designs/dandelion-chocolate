@@ -2201,7 +2201,7 @@ variant-selects .product-form__input .select-arrow {
     padding: 14px 10px;
   }
 
-  .product-information .variations .select-styled:before,.product-add-to-cart-sticky .variations .select-styled:before{
+  .product-information .variations .select-styled:before{
     width: 14px;
     height: 8px;
     background-size: contain;
