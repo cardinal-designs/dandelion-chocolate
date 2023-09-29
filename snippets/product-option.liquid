@@ -3,7 +3,7 @@
 		assign appended = '--sticky'
 	endif
 -%}
-{%- case option_type -%}
+{%- case option_type -%} 
 {%- when 'dropdown' -%}
 	<fieldset class="product-form__input product-form__input--dropdown">
 		<div class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}{{ appended }}">
