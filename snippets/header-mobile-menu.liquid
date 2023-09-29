@@ -15,10 +15,10 @@
             <summary class="parent-link sh2">
               {%- if link.type contains 'collection_link' -%}
                 {% assign collectionImage = link.object %}
-                <img src="{{ collectionImage.image | img_url: '350x' }}">
+                <img loading='lazy' src="{{ collectionImage.image | img_url: '350x' }}">
               {% else %}
                 {% assign pageCol = link.object %}
-                <img src="{{ pageCol.metafields.custom.mega_menu_image.value | img_url: '350x' }}">
+                <img loading='lazy' src="{{ pageCol.metafields.custom.mega_menu_image.value | img_url: '350x' }}">
               {% endif %}
               <p class="sh2">{{ link.title }}</p>
               <span>{%- render 'svg-icons' with 'thb-mobile-menu-forward-v2' -%}</span>
@@ -28,7 +28,7 @@
                 <button class="sh2">
                   {% if link.type contains 'collection_link' %}
                     {% assign collectionImage1 = link.object %}
-                      <img src="{{ collectionImage1.image | img_url: '350x' }}">
+                      <img loading='lazy' src="{{ collectionImage1.image | img_url: '350x' }}">
                   {% endif %}
                     <span>{%- render 'svg-icons' with 'thb-mobile-menu-back-v2' -%}</span> 
                     <p class="sh2">{{ link.title }}</p>
@@ -71,7 +71,7 @@
                         {% capture image_setting %}events_image_{{ forloop.index }}{% endcapture %}
                       {% endif %}
                       {% assign image = settings[image_setting] %}
-                      <img src="{{ image | img_url: '350x' }}">
+                      <img loading='lazy' src="{{ image | img_url: '350x' }}">
                       <p class="navigation__link">{{ colLink.title }}</p>
                     </a>
                 </li>
@@ -82,10 +82,10 @@
           <a href="{{ link.url }}" title="{{ link.title | escape }}">
             {% if link.type contains 'collection_link' %}
               {% assign collectionImage2 = link.object %}
-              <img src="{{ collectionImage2.image | img_url: '350x' }}">
+              <img loading='lazy' src="{{ collectionImage2.image | img_url: '350x' }}">
             {% else %}
               {% assign page = link.object %}
-              <img src="{{ page.metafields.custom.mega_menu_image.value | img_url: '350x' }}">
+              <img loading='lazy' src="{{ page.metafields.custom.mega_menu_image.value | img_url: '350x' }}">
             {% endif %}
             <p class="sh2">{{ link.title }}</p>
           </a>
