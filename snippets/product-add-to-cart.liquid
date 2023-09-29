@@ -19,7 +19,6 @@
       <span class="product-form__error-message"></span>
     </div>
 		{%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-        {% render 'product-form-digital-card', product: product, product_form_id: product_form_id %}  
 		<input type="hidden" name="id" class="default-product-input" value="{{ product.selected_or_first_available_variant.id }}" disabled>
 		{%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
@@ -103,7 +102,7 @@
   {%- endif -%}
 	{%- if product != blank -%}
 		{%- form 'product', product, id: 'product-form-installment', class: 'installment' -%}
-           <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+			<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 			{{ form | payment_terms }}
 		{%- endform -%}
 	{%- endif -%}
