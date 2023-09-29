@@ -402,7 +402,7 @@ $(document).ready(function() {
     $('.read_more').show();
   });
 
-  $('.product-information variant-selects select').each(function(){
+  $('.product-information variant-selects select,.product-add-to-cart-sticky variant-selects select').each(function(){
       var $this = $(this), numberOfOptions = $(this).children('option').length;
     
       $this.addClass('select-hidden'); 
