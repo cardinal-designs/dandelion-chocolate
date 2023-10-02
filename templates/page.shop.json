@@ -217,7 +217,7 @@
           "settings": {
             "text": "A collaboration with Feve",
             "subheading_color": "#e7d081",
-            "subheading_color_mobile": "#333"
+            "subheading_color_mobile": "#333333"
           }
         },
         "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-heading-1": {
@@ -226,7 +226,7 @@
             "text": "CHOCOLATE-COVERED QUARTET",
             "heading_size": "h2",
             "heading_color": "#ffffff",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-text-1": {
@@ -235,7 +235,7 @@
             "text": "<p>Crafted in collaboration with long-time San Francisco friend Feve Chocolates, four classic confections are richly coated with our fudgy 70% Camino Verde, Ecuador chocolate, for an irresistible bean-to-bar quartet, presented in a custom-designed, reusable gift box.<\/p>",
             "description_size": "body-1",
             "description_color": "#ffffff",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         },
         "template--16011450613900__c9758861-e49d-4bfb-8eef-4b7354052481-button-1": {
@@ -923,7 +923,7 @@
     "b489c90a-18dd-4ef0-a616-2a2dfd9808c2": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Pantry & Baking",
+        "section_id": "Pantry",
         "heading": "Pantry and Baking",
         "heading_desktop": 32,
         "heading_mobile": 22,
