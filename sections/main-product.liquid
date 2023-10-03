@@ -646,8 +646,12 @@
                     {% if product.metafields.info.storage_instructions != blank or product.metafields.info.shelf_life != blank %}
                       <dt>ADDITIONAL INFORMATION</dt>
                       <dd>
-                        <div class="ingredients__list--item shelf__life">Storage instructions: {{ product.metafields.info.storage_instructions | metafield_tag }}</div>
-                        <div class="ingredients__list--item shelf__life">Shelf life:  {{ product.metafields.info.shelf_life | metafield_tag }} </div>
+                        {% if product.metafields.info.storage_instructions != blank %}
+                          <div class="ingredients__list--item shelf__life">Storage instructions: {{ product.metafields.info.storage_instructions | metafield_tag }}</div>
+                        {% endif %}
+                        {% if product.metafields.info.shelf_life != blank %}
+                          <div class="ingredients__list--item shelf__life">Shelf life: {{ product.metafields.info.shelf_life | metafield_tag }}</div>
+                        {% endif %}
                       </dd>
                     {% endif %}
                 
@@ -674,7 +678,7 @@
                             {% render 'icon-peanut-free' %}
                           {% elsif bar_icon_name == 'treenut free' or bar_icon_name == 'nut free' %}
                             {% render 'icon-treenut-free' %}
-                          {% elsif bar_icon_name == 'dairy' %}
+                          {% elsif bar_icon_name == 'dairy' or bar_icon_name == 'dairy free' %}
                             {% render 'icon-dairy' %}
                           {% elsif bar_icon_name == 'customizable' %}
                             {% render 'icon-customizable' %}
@@ -868,6 +872,10 @@
                       >
                     {%- endif -%}
                   </side-panel-links>
+                
+                {%- when 'gift_card' -%}
+                  {% render 'product-form-digital-card', product: product, product_form_id: product_form_id %}
+                
                 {%- when 'buy_buttons' -%}
                   {% if product.metafields.custom.alternative_add_to_cart_button_link != blank %}
                     <div class="product-button--link">
@@ -1586,7 +1594,11 @@
         }
       ]
     },
-		{
+    {
+      "type": "gift_card",
+      "name": "Gift Card"
+    },
+    {
       "type": "buy_buttons",
       "name": "Product form",
       "limit": 1,

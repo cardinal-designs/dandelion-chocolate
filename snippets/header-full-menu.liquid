@@ -77,7 +77,7 @@
                     <li class="pl-10 pr-10{% if colLink.active %} active{% endif %}" role="none">
                       {%- if colLink.type contains 'collection_link' -%}
                         <a href="{{ colLink.url }}">
-                          <img src="{{ collectionFeatured.image | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
+                          <img loading='lazy' src="{{ collectionFeatured.image | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
                         </a>
                       {%- else -%}
                     
@@ -89,7 +89,7 @@
                          
                           <a class="image__menu" {% if page.handle == "shop" %}href="javascript:void(0);"{% else %}href="{{ colLink.url }}" onclick="window.sessionStorage.setItem('scrolltosection','{{ colLink.title }}')"{% endif %} data-col-Id="{{ colLink.title }}" aria-label="image menu link">
                             {%- if ImageMegaMenu != blank -%}
-                              <img src="{{ ImageMegaMenu | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
+                              <img src="{{ ImageMegaMenu | img_url: '450x' }}" class="heightwidthauto" height="300" width="300" loading="lazy">
                             {%- else -%}
                              {{ 'product-1' | placeholder_svg_tag }}                 
                             {%- endif -%}
