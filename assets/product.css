@@ -2585,6 +2585,10 @@ variant-selects .product-form__input .select-arrow {
   min-height: 100px;
 }
 
+.sold-out .sticky__add-to-cart {
+  opacity: .5;
+}
+
 @media only screen and (min-width: 768px) { 
   
   .merch__icons.multi__merch--icons {
