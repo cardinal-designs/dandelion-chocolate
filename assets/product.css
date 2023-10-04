@@ -2318,6 +2318,15 @@ variant-selects .product-form__input .select-arrow {
   margin-bottom: 0;
 }
 
+.multi__merch--icons.double__merch--icons {
+  column-gap: 50px;
+}
+
+.multi__merch--icons.double__merch--icons .product__ctarow {
+  width: auto;
+  flex: unset;
+}
+
 .merch__icons.multi__merch--icons .product__free-shipping span {
   font-family: Saa Series F D;
   font-size: 10px;
