@@ -2580,6 +2580,10 @@ variant-selects .product-form__input .select-arrow {
   margin: 0;
 }
 
+.product-add-to-cart-sticky textarea {
+  min-height: 90px;
+}
+
 .product__detail + .product__detail .product__tasting-note {
   margin: 0;
 }
