@@ -120,17 +120,15 @@
                         </div>
                       {% endif %}
 
-                      {% unless item.variant.title contains 'Default' %}
-                        {% if item.variant.title contains 'shipping' %}
-                          <div class="product-cart-item-options">
-                            {% for option in item.product.options %}
-                              <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}}
-                              <br>
-                            {% endfor %}
-                          </div>
-                        {% endif %}
-                      {% endunless %}
-                        
+                      {% if item.variant.title contains 'shipping' %}
+                        <div class="product-cart-item-options">
+                          {% for option in item.product.options %}
+                            <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}}
+                            <br>
+                          {% endfor %}
+                        </div>
+                      {% endif %}
+
                       {% unless item.variant.title contains 'Default' or item.variant.title contains 'Email' or item.variant.title contains 'shipping' %}
                         <div class="product-cart-item-options">
                           {% for option in item.product.options %}
