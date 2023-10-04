@@ -88,7 +88,7 @@
                         {% if navigationTitle == ImageTitle %}
                           {% assign full_url = request.host | append: request.path %}
                           {{ full_url }}
-                          <a class="image__menu" {% if link.title == "Shop" %} {% if request.path contains '/shop' %}href="#{{ colLink.title | replace: " ", "-" }}"{% else %}href="{{ full_url }}/#{{ colLink.title | replace: " ", "-" }}"{% endif %}{% else %}href="{{ colLink.url }}"{% endif %} data-col-Id="{{ colLink.title }}" aria-label="image menu link">
+                          <a class="image__menu" {% if link.title == "Shop" %} {% if request.path contains '/shop' %}href="#{{ colLink.title | replace: " ", "-" }}"{% else %}href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" }}"{% endif %}{% else %}href="{{ colLink.url }}"{% endif %} data-col-Id="{{ colLink.title }}" aria-label="image menu link">
                             {%- if ImageMegaMenu != blank -%}
                               <img src="{{ ImageMegaMenu | img_url: '450x' }}" class="heightwidthauto" height="300" width="300">
                             {%- else -%}
