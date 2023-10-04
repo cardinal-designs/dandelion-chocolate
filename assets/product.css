@@ -2211,6 +2211,60 @@ variant-selects .product-form__input .select-arrow {
   line-height: 26px;
 }
 
+.product-digitalgiftcard-form input,
+.product-digitalgiftcard-form textarea {
+  width: 100%;
+}
+
+.product-digitalgiftcard-form input:focus-visible,
+.product-digitalgiftcard-form textarea:focus-visible {
+  outline: none;
+}
+
+.product-digitalgiftcard-form {
+  display: none;
+}
+
+.product-digitalgiftcard-form.Email {
+  display: block;
+}
+
+.product-digitalgiftcard-form label {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: .15em;
+  color: #94949c;
+}
+
+.product-digitalgiftcard-form div {
+  margin-bottom: 10px;
+}
+
+.product-digitalgiftcard-form .digitalgiftcard__deliverytime {
+  font-style: italic;
+  font-family: Garamond Premiere Pro;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-size: .9375rem;
+  color: var(--charcoal-black);
+}
+
+.product-digitalgiftcard-form div:nth-last-child(3) {
+  margin: 0;
+}
+
+.product-add-to-cart-sticky textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
 @media only screen and (max-width: 1200px) {
   
   .template-product .rebuy-widget-content .rebuy-product-info .rebuy-product-title {
@@ -2562,61 +2616,6 @@ variant-selects .product-form__input .select-arrow {
 .shelf__life .metafield-rich_text_field,
 .shelf__life .metafield-single_line_text_field {
   margin: -2px 5px 0px;
-}
-
-.product-digitalgiftcard-form input,
-.product-digitalgiftcard-form textarea {
-  width: 100%;
-}
-
-.product-digitalgiftcard-form input:focus-visible,
-.product-digitalgiftcard-form textarea:focus-visible {
-  outline: none;
-}
-
-
-.product-digitalgiftcard-form {
-  display: none;
-}
-
-.product-digitalgiftcard-form.Email {
-  display: block;
-}
-
-.product-digitalgiftcard-form label {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 9px;
-  text-transform: uppercase;
-  font-family: Saa Series F D;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: .15em;
-  color: #94949c;
-}
-
-.product-digitalgiftcard-form div {
-  margin-bottom: 10px;
-}
-
-.product-digitalgiftcard-form .digitalgiftcard__deliverytime {
-  font-style: italic;
-  font-family: Garamond Premiere Pro;
-  text-transform: capitalize;
-  letter-spacing: 0;
-  font-size: .9375rem;
-  color: var(--charcoal-black);
-}
-
-.product-digitalgiftcard-form div:nth-last-child(3) {
-  margin: 0;
-}
-
-.product-add-to-cart-sticky textarea {
-  min-height: 90px;
-  resize: vertical;
 }
 
 .product__detail + .product__detail .product__tasting-note {
