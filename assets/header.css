@@ -172,6 +172,7 @@
 .header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu.Custom_SubMenu--Section {
   white-space: normal;
   padding: 38px 0 37px;
+  transition: none;
 }
 
 .header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu.Custom_SubMenu--Section .Custom_SubMenu--Wrapper {
