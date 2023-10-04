@@ -1912,7 +1912,7 @@ quantity-selector.quantity .plus svg {
 }
 
 product-add-to-cart-sticky .variations fieldset .form__label,
-product-add-to-cart-sticky .variations fieldset .form__label {
+product-add-to-cart-sticky .product-digitalgiftcard-form label {
   font-family: Saa Series F D;
   font-size: 12px;
   letter-spacing: 0.05rem;
