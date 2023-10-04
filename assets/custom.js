@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
     prevNextButtons: true,
     pageDots: false, 
     wrapAround: false,
-    cellAlign: 'left',
+    cellAlign: 'center',
     contain: true
   });
 
