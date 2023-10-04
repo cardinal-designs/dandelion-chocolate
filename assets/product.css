@@ -2540,6 +2540,46 @@ variant-selects .product-form__input .select-arrow {
   outline: none;
 }
 
+
+.product-digitalgiftcard-form {
+  display: none;
+}
+
+.product-digitalgiftcard-form.Email {
+  display: block;
+}
+
+.product-digitalgiftcard-form label {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+  font-family: Saa Series F D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: .15em;
+  color: #94949c;
+}
+
+.product-digitalgiftcard-form div {
+  margin-bottom: 10px;
+}
+
+.product-digitalgiftcard-form .digitalgiftcard__deliverytime {
+  font-style: italic;
+  font-family: Garamond Premiere Pro;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-size: .9375rem;
+  color: var(--charcoal-black);
+}
+
+.product-digitalgiftcard-form div:nth-last-child(3) {
+  margin: 0;
+}
+
 .product__detail + .product__detail .product__tasting-note {
   margin: 0;
 }
