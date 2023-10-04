@@ -1911,7 +1911,7 @@ quantity-selector.quantity .plus svg {
 }
 
 .product-add-to-cart-sticky--inner .select-options {
-  height: 150px;
+  max-height: 150px;
   overflow-y: auto;
 }
 
