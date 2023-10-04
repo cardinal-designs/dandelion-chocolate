@@ -6012,3 +6012,7 @@ input[type="radio"],
 .product-digitalgiftcard-form.Email {
   display: block;
 }
+
+.thb-full-menu li.menu-item-has-children:hover:before {
+  display: none;
+}
