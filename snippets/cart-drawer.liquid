@@ -127,7 +127,9 @@
  
                     {%- assign itemProperties = 'template ' | split: ' ' -%}
                     {%- assign property_size = item.properties | size -%}
-  
+
+                    {{ item.properties }}
+                    
                     {% if property_size > 0 %}
                       {%- assign itemProperties = item.properties -%}
                     {% endif %}
