@@ -175,7 +175,8 @@
   transition: none;
 }
 
-.thb-full-menu li.menu-item-has-children:hover>.sub-menu {
+.thb-full-menu li.menu-item-has-children:hover > .sub-menu,
+.thb-full-menu li.menu-item-has-children:focus-within > .sub-menu.mega-menu-container {
   transition: all .25s cubic-bezier(.104,.204,.492,1) !important;
 }
 
