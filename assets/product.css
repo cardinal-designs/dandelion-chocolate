@@ -1911,6 +1911,7 @@ quantity-selector.quantity .plus svg {
   flex: 0 1 100%;
 }
 
+product-add-to-cart-sticky .variations fieldset .form__label,
 product-add-to-cart-sticky .variations fieldset .form__label {
   font-family: Saa Series F D;
   font-size: 12px;
