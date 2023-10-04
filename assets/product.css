@@ -1917,6 +1917,10 @@ product-add-to-cart-sticky .product-digitalgiftcard-form textarea {
   margin: 0;
 }
 
+product-add-to-cart-sticky .product-digitalgiftcard-form .digitalgiftcard__deliverytime {
+  margin-bottom: 15px;
+}
+
 product-add-to-cart-sticky .variations fieldset .form__label,
 product-add-to-cart-sticky .product-digitalgiftcard-form label {
   font-family: Saa Series F D;
