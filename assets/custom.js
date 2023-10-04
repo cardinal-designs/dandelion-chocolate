@@ -172,12 +172,12 @@ document.addEventListener("DOMContentLoaded", function() {
   var flkty2 = new Flickity(elem);
   
   var flkty1 = new Flickity(flickityContainer, {
-      asNavFor: '.carousel-main',
-      prevNextButtons: true,
-      pageDots: false, 
-      wrapAround: false,
-      cellAlign: 'left',
-      contain: true
+    asNavFor: '.carousel-main',
+    prevNextButtons: true,
+    pageDots: false, 
+    wrapAround: false,
+    cellAlign: 'center',
+    contain: true
   });
 
 });
