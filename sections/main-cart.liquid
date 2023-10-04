@@ -112,7 +112,7 @@
                             {% endunless %}
                           {% endfor %}
                           {% for option in item.product.options %}
-                            <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}} {% if option == 'Size' and item.variant.metafields.custom.variant_subtitle != blank %}<span class="variant__info"> ({{ item.variant.metafields.custom.variant_subtitle }})</span>{% endif %} 
+                            <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}}
                             <br>
                           {% endfor %}
                         </div>
