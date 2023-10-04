@@ -63,6 +63,10 @@
   margin: 0;
 }
 
+.thb-full-menu li.menu-item-has-children>a svg {
+  top: calc(50% - 2px);
+}
+
 .header .thb-full-menu li.menu-item-has-children > a.navigation__link {
   padding-right: 15px;
 }
