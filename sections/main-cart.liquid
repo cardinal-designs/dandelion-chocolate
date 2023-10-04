@@ -113,6 +113,7 @@
                           {% endfor %}
                           {% for option in item.product.options %}
                             <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}}
+                            <br>
                           {% endfor %}
                         </div>
                       {% endif %}
@@ -121,6 +122,7 @@
                         <div class="product-cart-item-options" data-cart-item-property-list>
                           {% for option in item.product.options %}
                             <span>{{ option }}</span>: {{ item.variant.options[forloop.index0] -}}
+                            <br>
                           {% endfor %}
                         </div>
                       {% endif %}
