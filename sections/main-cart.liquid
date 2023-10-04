@@ -114,10 +114,10 @@
                         </div>
                       {% endif %}
 
-                      {% if item.variant.title contains 'shipping' %}
+                      {% if item.variant.title contains 'For' %}
                         <div class="product-cart-item-options">
                           {% for option in item.product.options %}
-                            <span>Delivery Method</span>: Physical {% if option == 'shipping' and item.variant.metafields.custom.variant_subtitle != blank %}<span class="variant__info"> ({{ item.variant.metafields.custom.variant_subtitle }})</span>{% endif %} 
+                            <span>Delivery Method</span>: Physical {% if option == 'For' and item.variant.metafields.custom.variant_subtitle != blank %}<span class="variant__info"> ({{ item.variant.metafields.custom.variant_subtitle }})</span>{% endif %} 
                             <br>
                           {% endfor %}
                         </div>
