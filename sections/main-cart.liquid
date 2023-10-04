@@ -92,7 +92,7 @@
                         </div>
                       {% endif %}
 
-                      {% if item.variant.title contains 'Email' %}
+                      {% if item.variant.title contains 'Email' or item.variant.title contains 'email' %}
                         <div class="product-cart-item-options" data-cart-item-property-list>
  
                           {%- assign itemProperties = 'template ' | split: ' ' -%}
