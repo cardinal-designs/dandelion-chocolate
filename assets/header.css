@@ -176,7 +176,7 @@
 }
 
 .thb-full-menu li.menu-item-has-children:hover>.sub-menu {
-  transition: all .25s cubic-bezier(.104,.204,.492,1);
+  transition: all .25s cubic-bezier(.104,.204,.492,1) !important;
 }
 
 .header .full-menu .thb-full-menu li.menu-item-has-children>.sub-menu.Custom_SubMenu--Section .Custom_SubMenu--Wrapper {
