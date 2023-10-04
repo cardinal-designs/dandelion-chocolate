@@ -92,7 +92,7 @@
                         </div>
                       {% endif %}
 
-                      {% if item.variant.title contains 'Email' or item.variant.title contains 'email' %}
+
                         <div class="product-cart-item-options" data-cart-item-property-list>
  
                           {%- assign itemProperties = 'template ' | split: ' ' -%}
@@ -112,7 +112,7 @@
                             {% endunless %}
                           {% endfor %}
                         </div>
-                      {% endif %}
+    
 
                       {% unless item.variant.title contains 'Default' %}
                         <div class="product-cart-item-options">
