@@ -1911,7 +1911,9 @@ quantity-selector.quantity .plus svg {
   flex: 0 1 100%;
 }
 
-product-add-to-cart-sticky .product-digitalgiftcard-form div {
+product-add-to-cart-sticky .product-digitalgiftcard-form div,
+product-add-to-cart-sticky .product-digitalgiftcard-form input, 
+product-add-to-cart-sticky .product-digitalgiftcard-form textarea {
   margin: 0;
 }
 
