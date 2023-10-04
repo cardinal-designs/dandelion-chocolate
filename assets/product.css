@@ -2582,6 +2582,7 @@ variant-selects .product-form__input .select-arrow {
 
 .product-add-to-cart-sticky textarea {
   min-height: 90px;
+  resize: vertical;
 }
 
 .product__detail + .product__detail .product__tasting-note {
