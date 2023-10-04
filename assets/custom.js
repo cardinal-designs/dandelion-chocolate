@@ -604,13 +604,11 @@ $(document).ready(function () {
     $('.facets__label').text(productsLength+ " Results")
   }
 
-  /*
   $(document).on('input','.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea', function () {
       var newValue = $(this).val();
       var inputField = $(this).attr('name');
       $('[name="' + inputField + '"]').val(newValue);
   });
-  */
 
 })
 
