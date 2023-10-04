@@ -94,25 +94,25 @@
 
                       {% if item.variant.title contains 'Email' or item.variant.title contains 'shipping' %}
                         {% if item.variant.title contains 'Email' %}
-                        <div class="product-cart-item-options" data-cart-item-property-list>
- 
-                          {%- assign itemProperties = 'template ' | split: ' ' -%}
-                          {%- assign property_size = item.properties | size -%}
-        
-                          {% if property_size > 0 %}
-                            {%- assign itemProperties = item.properties -%}
-                          {% endif %}
-  
-                          {% for p in itemProperties %}
-                            {% assign first_character_in_key = p.first | truncate: 1, '' %}
-                            {% unless p.last == blank or first_character_in_key == '_' %}
-                              <div class="cart-drawer__item-property">
-                                <strong>{{ p.first | capitalize }}: </strong>
-                                <span>{{ p.last | capitalize }}</span>
-                              </div>
-                            {% endunless %}
-                          {% endfor %}
-                        </div>
+                          <div class="product-cart-item-options" data-cart-item-property-list>
+   
+                            {%- assign itemProperties = 'template ' | split: ' ' -%}
+                            {%- assign property_size = item.properties | size -%}
+          
+                            {% if property_size > 0 %}
+                              {%- assign itemProperties = item.properties -%}
+                            {% endif %}
+    
+                            {% for p in itemProperties %}
+                              {% assign first_character_in_key = p.first | truncate: 1, '' %}
+                              {% unless p.last == blank or first_character_in_key == '_' %}
+                                <div class="cart-drawer__item-property">
+                                  <strong>{{ p.first | capitalize }}: </strong>
+                                  <span>{{ p.last | capitalize }}</span>
+                                </div>
+                              {% endunless %}
+                            {% endfor %}
+                          </div>
                         {% else %}
                           <div class="product-cart-item-options">
                             {% for option in item.product.options %}
