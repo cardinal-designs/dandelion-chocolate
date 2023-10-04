@@ -504,10 +504,9 @@ $(document).ready(function () {
               digitalGiftCardForm.addClass("Email").removeClass("Shipped");
           } else {
               digitalGiftCardForm.removeClass("Email").addClass("Shipped");
-            $('.product-digitalgiftcard-form input').each(function() {
-              $(this).val('');
-            }).trigger('change');
-
+              $('.product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea').each(function() {
+                $(this).val('');
+              }).trigger('change');
           }
   
           var formElements = digitalGiftCardForm.find("input, textarea");
