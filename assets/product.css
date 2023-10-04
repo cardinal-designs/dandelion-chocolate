@@ -933,7 +933,6 @@
     .product-add-to-cart-sticky--inner.sticky-open .plus:before {
       transform: rotateZ(90deg); }
   .product-add-to-cart-sticky--content {
-    overflow: hidden;
     padding-top: 13px; }
     .product-add-to-cart-sticky--content.active {
       display: block; }
