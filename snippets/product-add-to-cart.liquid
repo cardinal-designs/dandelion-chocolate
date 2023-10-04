@@ -1,18 +1,17 @@
 <div {{ block.shopify_attributes }}>
-	{%- if product != blank -%}
-	{%- liquid
-      assign gift_card_recipient_feature_active = false
-      if block.settings.show_gift_card_recipient and product.gift_card?
-        assign gift_card_recipient_feature_active = true
-      endif
+{%- if product != blank -%}
+  {%- liquid
+    assign gift_card_recipient_feature_active = false
+    if block.settings.show_gift_card_recipient and product.gift_card?
+      assign gift_card_recipient_feature_active = true
+    endif
 
-      assign show_dynamic_checkout = false
-      if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
-        assign show_dynamic_checkout = true
-      endif
-    -%}
-      
-        
+    assign show_dynamic_checkout = false
+    if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
+      assign show_dynamic_checkout = true
+    endif
+  -%}
+
   <product-form class="product-form" data-section="{{ section.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
 		<div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
       {% render 'svg-icons' with 'thb-error' %}
@@ -131,7 +130,7 @@
     {% for merch_icon in product.metafields.custom.merch_icons.value %}
       {% assign merch_icons_count = merch_icons_count | plus: 1 %}
     {% endfor %}
-    <div class="merch__icons multi__merch--icons {% if merch_icons_count < 2 %}single__merch--icons{% endif %}">
+    <div class="merch__icons multi__merch--icons {% if merch_icons_count < 2 %}single__merch--icons{% endif %} {% if merch_icons_count == 2 %}double__merch--icons{% endif %}">
       {% if product.metafields.custom.merch_icons.value != blank %}
         {% for merch_icon in product.metafields.custom.merch_icons.value %}
           {% assign merch_text = merch_icon | downcase %}
