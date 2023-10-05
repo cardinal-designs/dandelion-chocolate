@@ -695,7 +695,7 @@ $(document).ready(function () {
       document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.add('mandatory-hidden');
       setTimeout(function(){
         document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
-      },1000);
+      },2000);
       $styledSelect.text($(this).text()).removeClass('active');
       var selectElement = $this[0];
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
