@@ -254,4 +254,8 @@
     padding: 20px;
   }
 
+  .thb-predictive-search--popular scroll-shadow {
+    margin-top: 10px;
+  }
+
 }
