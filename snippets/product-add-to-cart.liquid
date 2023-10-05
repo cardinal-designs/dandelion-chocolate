@@ -53,9 +53,8 @@
               </div>
             {%- endif -%}
           {% assign sold_out = false %}
-          {{ product.metafields.info.force_soldout }}
           {% if product.metafields.info.force_soldout == true %}
-             {% assign sold_out = true %}
+            {% assign sold_out = true %}
           {% endif %}
 
           {% unless sold_out == true %}
