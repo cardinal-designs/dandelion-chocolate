@@ -545,7 +545,7 @@ $(document).ready(function () {
             el.classList.add("is-selected");
           })
 
-          console.log(`[rel='${ currentElements[0].value }]`, "*********")
+          console.log(`[rel='${ currentElements[0].value }']`, "*********")
           
 
           // update delivery-date field
