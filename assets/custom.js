@@ -530,6 +530,37 @@ $(document).ready(function () {
 
 
         console.log(currentElements[0].value, toBeUpdated[0].value)
+
+        if(currentElements[0].value == "Email"){
+          toBeUpdated.classList.add("Email");
+          toBeUpdated.classList.remove("Shipped");
+
+          // update delivery-date field
+          const deliveryDateInput = document.querySelector('#delivery-date');
+          deliveryDateInput.value = 'immediately';
+          const changeEvent = new Event('change', {
+            bubbles: true,
+            cancelable: true
+          });
+          deliveryDateInput.dispatchEvent(changeEvent);
+
+        }
+        else{
+
+          toBeUpdated.classList.add("Shipped");
+          toBeUpdated.classList.remove("Email");
+
+          
+          // update delivery-date field
+          const deliveryDateInput = document.querySelector('#delivery-date');
+          deliveryDateInput.value = 'immediately';
+          const changeEvent = new Event('change', {
+            bubbles: true,
+            cancelable: true
+          });
+          deliveryDateInput.dispatchEvent(changeEvent);
+          
+        }
         
         
       }
