@@ -596,91 +596,48 @@ $(document).ready(function () {
 
 
 
-      // // Initialize a flag to prevent the click event from triggering again
-      // let preventClick = false;
+      // Initialize a flag to prevent the click event from triggering again
+      let preventClick = false;
       
-      // document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-      //   el.addEventListener("click", function (e) {
-      //     if (!preventClick) {
-      //       preventClick = true; // Set the flag to prevent further clicks
-      //       const relValue = e.currentTarget.getAttribute("rel");
-      //       const stickyElement = document.querySelector('[name="options[Amount--sticky]"]');
-      //       const correspondingLi = stickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
+      document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+        el.addEventListener("click", function (e) {
+          if (!preventClick) {
+            preventClick = true; // Set the flag to prevent further clicks
+            const relValue = e.currentTarget.getAttribute("rel");
+            const stickyElement = document.querySelector('[name="options[Amount--sticky]"]');
+            const correspondingLi = stickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
             
-      //       if (correspondingLi) {
-      //         correspondingLi.click();
-      //       }
+            if (correspondingLi) {
+              correspondingLi.click();
+            }
       
-      //       // Reset the flag after a brief delay (adjust the timeout as needed)
-      //       setTimeout(() => {
-      //         preventClick = false;
-      //       }, 500);
-      //     }
-      //   }, true);
-      // });
-      
-      // document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-      //   el.addEventListener("click", function (e) {
-      //     if (!preventClick) {
-      //       preventClick = true;
-      //       const relValue = e.currentTarget.getAttribute("rel");
-      //       const nonStickyElement = document.querySelector('[name="options[Amount]"]');
-      //       const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
-            
-      //       if (correspondingLi) {
-      //         correspondingLi.click();
-      //       }
-      
-      //       setTimeout(() => {
-      //         preventClick = false;
-      //       }, 500);
-      //     }
-      //   }, true);
-      // });
-
-
-
-
-
-
-
-      function handleClickOnAmount(e) {
-        const relValue = e.currentTarget.getAttribute("rel");
-        const targetSelector = e.currentTarget.getAttribute("data-target");
-        const targetElement = document.querySelector(targetSelector);
-        const correspondingLi = targetElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
-      
-        if (correspondingLi) {
-          correspondingLi.click();
-        }
-      }
-      
-      const nonStickyAmountElements = document.querySelectorAll('[name="options[Amount]"]').parentNode.querySelectorAll("ul li");
-      nonStickyAmountElements.forEach(el => {
-        el.addEventListener("click", handleClickOnAmount, true);
-        el.addEventListener("click", function removeClickHandler() {
-          el.removeEventListener("click", handleClickOnAmount, true);
-          el.removeEventListener("click", removeClickHandler, true);
+            // Reset the flag after a brief delay (adjust the timeout as needed)
+            setTimeout(() => {
+              preventClick = false;
+            }, 100);
+          }
         }, true);
-        el.setAttribute("data-target", '[name="options[Amount--sticky]"]');
       });
       
-      const stickyAmountElements = document.querySelectorAll('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li");
-      stickyAmountElements.forEach(el => {
-        el.addEventListener("click", handleClickOnAmount, true);
-        el.addEventListener("click", function removeClickHandler() {
-          el.removeEventListener("click", handleClickOnAmount, true);
-          el.removeEventListener("click", removeClickHandler, true);
-        }, true);
-        el.setAttribute("data-target", '[name="options[Amount]"]');
-      });
-      
-      
+      document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+        el.addEventListener("click", function (e) {
+          if (!preventClick) {
+            preventClick = true;
+            const relValue = e.currentTarget.getAttribute("rel");
+            const nonStickyElement = document.querySelector('[name="options[Amount]"]');
+            const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
             
+            if (correspondingLi) {
+              correspondingLi.click();
+            }
       
+            setTimeout(() => {
+              preventClick = false;
+            }, 100);
+          }
+        }, true);
+      });
 
-
-      
       
       
       
