@@ -580,28 +580,43 @@ $(document).ready(function () {
         }, true)
       });
 
-      document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+
+       document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function(e){
-          if(document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered"))
-          document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered");
           document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
         }, true);
       })
 
       document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function(e){
-          document.querySelectorAll(".product-form .price .amount").forEach(el => {
-            el.closest("button").classList.add('mandatory-hidden');
-          })
           document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
-
-          // setTimeout(function(){
-          //   document.querySelectorAll(".product-form .price .amount").forEach(el => {
-          //     document.querySelectorAll(".product-form .price .amount")[0].closest("button").classList.remove('mandatory-hidden');
-          //   })
-          // }, 1800);
         }, true);
       })
+      
+      
+      
+      // document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+      //   el.addEventListener("click", function(e){
+      //     if(document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered"))
+      //     document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered");
+      //     document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+      //   }, true);
+      // })
+
+      // document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+      //   el.addEventListener("click", function(e){
+      //     document.querySelectorAll(".product-form .price .amount").forEach(el => {
+      //       el.closest("button").classList.add('mandatory-hidden');
+      //     })
+      //     document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+
+      //     // setTimeout(function(){
+      //     //   document.querySelectorAll(".product-form .price .amount").forEach(el => {
+      //     //     document.querySelectorAll(".product-form .price .amount")[0].closest("button").classList.remove('mandatory-hidden');
+      //     //   })
+      //     // }, 1800);
+      //   }, true);
+      // })
 
 
     //   // Function to remove the class when updates stop
