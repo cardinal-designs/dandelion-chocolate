@@ -617,9 +617,9 @@ $(document).ready(function () {
               preventClick = false;
             }, 100);
 
-            setTimeout(function(){
-              document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
-            },1000);
+            // setTimeout(function(){
+            //   document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
+            // },1000);
             
           }
         }, true);
@@ -628,6 +628,7 @@ $(document).ready(function () {
       document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function (e) {
           if (!preventClick) {
+            document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.add('mandatory-hidden');
             preventClick = true;
             const relValue = e.currentTarget.getAttribute("rel");
             const nonStickyElement = document.querySelector('[name="options[Amount]"]');
@@ -648,6 +649,32 @@ $(document).ready(function () {
           }
         }, true);
       });
+
+
+      // Function to remove the class when updates stop
+      function removeClassWhenUpdatesStop() {
+        const targetElement = document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart");
+        targetElement.classList.remove('mandatory-hidden');
+      }
+      
+      // Create a MutationObserver to observe changes in the target element
+      const targetElement = document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart");
+      
+      const observer = new MutationObserver((mutationsList, observer) => {
+        // Check if updates have stopped (i.e., no more mutations)
+        if (mutationsList.length === 0) {
+          removeClassWhenUpdatesStop();
+          // Disconnect the observer since we don't need it anymore
+          observer.disconnect();
+        }
+      });
+      
+      // Configure the observer to watch for changes in attributes and childList
+      const config = { attributes: true, childList: true, subtree: true };
+      
+      // Start observing the target element
+      observer.observe(targetElement, config);
+      
 
       
       
