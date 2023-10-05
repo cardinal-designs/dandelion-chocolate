@@ -64,7 +64,7 @@
   {% endif %}
 {% endfor %}
 
-{{ collections["not-gift-cards"].products }}
+{{ collections.not-gift-cards}}
 {% paginate collections["not-gift-cards"].products by 10000 %}
   {% for product in collections["not-gift-cards"].products %}
 
