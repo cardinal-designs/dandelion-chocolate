@@ -530,47 +530,47 @@ $(document).ready(function () {
       initializeListener(".product-add-to-cart-sticky");
       
 
-      // function changeOtherForm(currentElements) {
-      //   console.log(currentElements[1].value);
+      function changeOtherForm(currentElements) {
+        // console.log(currentElements[1].value);
       
-      //   const isEmail = currentElements[0].value === "Email";
-      //   const modeClass = isEmail ? "Email" : "Shipped";
+        // const isEmail = currentElements[0].value === "Email";
+        // const modeClass = isEmail ? "Email" : "Shipped";
       
-      //   // Toggle class on elements
-      //   document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
-      //     el.classList.remove("Email", "Shipped");
-      //     el.classList.add(modeClass);
-      //   });
+        // // Toggle class on elements
+        // document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+        //   el.classList.remove("Email", "Shipped");
+        //   el.classList.add(modeClass);
+        // });
       
-      //   // Trigger click events on elements with specific attributes
-      //   document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
-      //     el.click();
-      //   });
+        // Trigger click events on elements with specific attributes
+        document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+          el.click();
+        });
       
-      //   // document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
-      //   //   el.click();
-      //   // });
+        document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
+          el.click();
+        });
       
-      //   // Update delivery-date field
-      //   const deliveryDateInput = document.querySelector('#delivery-date');
-      //   deliveryDateInput.value = 'immediately';
+        // // Update delivery-date field
+        // const deliveryDateInput = document.querySelector('#delivery-date');
+        // deliveryDateInput.value = 'immediately';
       
-      //   // Dispatch a change event
-      //   const changeEvent = new Event('change', {
-      //     bubbles: true,
-      //     cancelable: true
-      //   });
-      //   deliveryDateInput.dispatchEvent(changeEvent);
-      // }
+        // // Dispatch a change event
+        // const changeEvent = new Event('change', {
+        //   bubbles: true,
+        //   cancelable: true
+        // });
+        // deliveryDateInput.dispatchEvent(changeEvent);
+      }
 
-      // var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
-      // var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .variations select");
+      var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
+      var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .variations select");
       
-      // digitalGiftCardInput.forEach(el => {
-      //   el.addEventListener("change", function(e){
-      //     changeOtherForm(digitalGiftCardInput, digitalGiftCardForm)
-      //   }, true)
-      // })
+      digitalGiftCardInput.forEach(el => {
+        el.addEventListener("change", function(e){
+          changeOtherForm(digitalGiftCardInput, digitalGiftCardForm)
+        }, true)
+      })
 
       // digitalGiftCardForm.forEach(el => {
       //   el.addEventListener("change", function(e){
