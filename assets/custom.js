@@ -697,7 +697,6 @@ $(document).ready(function () {
     
     $listItems.click(function(e) {
       e.stopPropagation();
-      document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.add('mandatory-hidden');
       $styledSelect.text($(this).text()).removeClass('active');
       var selectElement = $this[0];
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
