@@ -624,7 +624,7 @@ document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelec
     if (!preventClick) {
       preventClick = true;
       document.querySelectorAll(".product-form .price .amount").forEach(el => {
-        el.closest(.closest(".sticky__add-to-cart").classList.add('mandatory-hidden'));
+        el.closest.closest(".sticky__add-to-cart").classList.add('mandatory-hidden'));
       })
       const relValue = e.currentTarget.getAttribute("rel");
       const nonStickyElement = document.querySelector('[name="options[Amount]"]');
@@ -635,7 +635,7 @@ document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelec
         
         setTimeout(function(){
         document.querySelectorAll(".product-form .price .amount").forEach(el => {
-          el.closest(.closest(".sticky__add-to-cart").classList.remove('mandatory-hidden'));
+          el.closest.closest(".sticky__add-to-cart").classList.remove('mandatory-hidden'));
         })
         },1800);
       }
