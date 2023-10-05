@@ -543,7 +543,7 @@ $(document).ready(function () {
           })
 
 
-          toBeUpdated[2].value = currentElements[1].value;
+          toBeUpdated[1].value = currentElements[1].value;
           
 
           // update delivery-date field
@@ -554,7 +554,7 @@ $(document).ready(function () {
             cancelable: true
           });
 
-          toBeUpdated[2].dispatchEvent(changeEvent);
+          toBeUpdated[1].dispatchEvent(changeEvent);
           
           deliveryDateInput.dispatchEvent(changeEvent);
 
@@ -573,7 +573,7 @@ $(document).ready(function () {
 
 
           
-          toBeUpdated[2].value = currentElements[1].value;
+          toBeUpdated[1].value = currentElements[1].value;
           
 
           // update delivery-date field
@@ -584,7 +584,7 @@ $(document).ready(function () {
             cancelable: true
           });
 
-          toBeUpdated[2].dispatchEvent(changeEvent);
+          toBeUpdated[1].dispatchEvent(changeEvent);
           
           deliveryDateInput.dispatchEvent(changeEvent);
           
