@@ -59,25 +59,33 @@
               {% break %}
             {% endif %}
           {% endfor %}
-          
-          <button type="submit" name="add" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
-            <span class="single-add-to-cart-button--text">
-              {%- if product.selected_or_first_available_variant.available -%}
-                {{ 'products.product.add_to_cart' | t }} 
-              {%- else -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- endif -%}
-            </span>
-              <span class="loading-overlay">
-                {% render 'svg-icons' with 'thb-loading' %}
+
+          {% unless sold_out == true %}
+            <button type="submit" name="add" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
+              <span class="single-add-to-cart-button--text">
+                {%- if product.selected_or_first_available_variant.available -%}
+                  {{ 'products.product.add_to_cart' | t }} 
+                {%- else -%}
+                  {{ 'products.product.sold_out' | t }}
+                {%- endif -%}
               </span>
-              <span class="separator"> · </span>
-              <span class="product-price-container product__price-main">
-                <span class="no-js-hidden" id="price-{{ section.id }}">
-                  {% render 'product-price', product: product, use_variant: true, show_badges: false %}
+                <span class="loading-overlay">
+                  {% render 'svg-icons' with 'thb-loading' %}
                 </span>
+                <span class="separator"> · </span>
+                <span class="product-price-container product__price-main">
+                  <span class="no-js-hidden" id="price-{{ section.id }}">
+                    {% render 'product-price', product: product, use_variant: true, show_badges: false %}
+                  </span>
+                </span>
+            </button>
+          {% else %}
+            <button type="submit" name="add" class="single-add-to-cart-button button outline sold-out" disabled form="{{ product_form_id }}">
+              <span class="single-add-to-cart-button--text">
+                {{ 'products.product.sold_out' | t }}
               </span>
-          </button>
+            </button>            
+          {% endunless %}
             {%- if show_dynamic_checkout -%}
 		      {{ form | payment_button }}
 		    {%- endif -%}
