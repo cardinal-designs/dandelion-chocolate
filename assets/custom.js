@@ -526,63 +526,37 @@ $(document).ready(function () {
       //     }
       // }
 
-      function changeOtherForm(currentElements, toBeUpdated){
-
-
-        console.log(currentElements[1].value, toBeUpdated[1].value)
-
-        if(currentElements[0].value == "Email"){
-
-          document.querySelectorAll(".product-digitalgiftcard-form").forEach(el => {
-            el.classList.add("Email");
-            el.classList.remove("Shipped");
-          })
-
-          document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-            el.click();
-          })
-          document.querySelectorAll(`[rel="${ currentElements[1].value }"]`).forEach(el => {
-            el.click();
-          })
-
-          // update delivery-date field
-          const deliveryDateInput = document.querySelector('#delivery-date');
-          deliveryDateInput.value = 'immediately';
-          const changeEvent = new Event('change', {
-            bubbles: true,
-            cancelable: true
-          });
-          deliveryDateInput.dispatchEvent(changeEvent);
-
-        }
-        else{
-
-          document.querySelectorAll(".product-digitalgiftcard-form").forEach(el => {
-            el.classList.add("Shipped");
-            el.classList.remove("Email");
-          })
-
-          document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-            el.click();
-          })
-          document.querySelectorAll(`[rel="${ currentElements[1].value }"]`).forEach(el => {
-            el.click();
-          })
-
-          
-          // update delivery-date field
-          const deliveryDateInput = document.querySelector('#delivery-date');
-          deliveryDateInput.value = 'immediately';
-          const changeEvent = new Event('change', {
-            bubbles: true,
-            cancelable: true
-          });
-          deliveryDateInput.dispatchEvent(changeEvent);
-          
-        }
-          // var formElements = document.querySelectorAll(".product-add-to-cart-sticky .variations select").find("input, textarea");
-          // formElements.prop("required", val == "Email");
-          // formElements.prop("disabled", val != "Email");
+      function changeOtherForm(currentElements) {
+        console.log(currentElements[1].value);
+      
+        const isEmail = currentElements[0].value === "Email";
+        const modeClass = isEmail ? "Email" : "Shipped";
+      
+        // Toggle class on elements
+        document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+          el.classList.remove("Email", "Shipped");
+          el.classList.add(modeClass);
+        });
+      
+        // Trigger click events on elements with specific attributes
+        document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+          el.click();
+        });
+      
+        document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
+          el.click();
+        });
+      
+        // Update delivery-date field
+        const deliveryDateInput = document.querySelector('#delivery-date');
+        deliveryDateInput.value = 'immediately';
+      
+        // Dispatch a change event
+        const changeEvent = new Event('change', {
+          bubbles: true,
+          cancelable: true
+        });
+        deliveryDateInput.dispatchEvent(changeEvent);
       }
 
 
