@@ -591,12 +591,12 @@ $(document).ready(function () {
       document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function(e){
           document.querySelectorAll(".product-form .price .amount").forEach(el => {
-            el.closest(.closest(".sticky__add-to-cart").classList.add('mandatory-hidden'));
+            el.closest.closest(".sticky__add-to-cart").classList.add('mandatory-hidden'));
           })
           document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
 
           document.querySelectorAll(".product-form .price .amount").forEach(el => {
-            el.closest(.closest(".sticky__add-to-cart").classList.remove('mandatory-hidden'));
+            el.closest.closest(".sticky__add-to-cart").classList.remove('mandatory-hidden'));
           })
           
         }, true);
