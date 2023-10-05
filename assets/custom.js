@@ -325,43 +325,88 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 //   }
 // });
 
-document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
-  ele.addEventListener('click',function(el){
-    let Id = el.currentTarget.getAttribute('href'),
-        sectionId = document.querySelector(`[id="${Id}"]`);
-    window.scroll({
-      top: sectionId.offsetTop - 90,
-      behavior: "smooth",
-    });
+
+
+// document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
+//   ele.addEventListener('click',function(el){
+//     let Id = el.currentTarget.getAttribute('href'),
+//         sectionId = document.querySelector(`[id="${Id}"]`);
+//     window.scroll({
+//       top: sectionId.offsetTop - 90,
+//       behavior: "smooth",
+//     });
+//   });
+
+//   if(window.sessionStorage.getItem('scrolltosection')){
+//     console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+//     if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+//       ele.click();
+//       window.sessionStorage.removeItem("scrolltosection");
+//     }
+//   }
+// })
+
+// document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
+//   ele.addEventListener('click',function(el){
+//     let Id = el.currentTarget.getAttribute('href'),
+//         sectionId = document.querySelector(`[id="${Id}"]`);
+//     window.scroll({
+//       top: sectionId.offsetTop - 72,
+//       behavior: "smooth",
+//     });
+//   })
+
+//   if(window.sessionStorage.getItem('scrolltosection')){
+//     console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+//     if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+//       ele.click();
+//       window.sessionStorage.removeItem("scrolltosection");
+//     }
+//   }
+// })
+
+
+HTML CSS JSResult Skip Results Iframe
+EDIT ON
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
   });
 
-  if(window.sessionStorage.getItem('scrolltosection')){
-    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
-    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
-      ele.click();
-      window.sessionStorage.removeItem("scrolltosection");
-    }
-  }
-})
 
-document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
-  ele.addEventListener('click',function(el){
-    let Id = el.currentTarget.getAttribute('href'),
-        sectionId = document.querySelector(`[id="${Id}"]`);
-    window.scroll({
-      top: sectionId.offsetTop - 72,
-      behavior: "smooth",
-    });
-  })
-
-  if(window.sessionStorage.getItem('scrolltosection')){
-    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
-    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
-      ele.click();
-      window.sessionStorage.removeItem("scrolltosection");
-    }
-  }
-})
+Resources1× 0.5× 0.25×Rerun
 
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
