@@ -583,18 +583,12 @@ $(document).ready(function () {
       document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function(e){
           document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
-          setTimeout(function(){
-            document.querySelector(".product-form .price .amount").style.display = "none";
-          },1000);
         }, true);
       })
 
       document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function(e){
           document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
-          setTimeout(function(){
-            document.querySelector(".product-form .price .amount").style.display = "none";
-          },1000);
         }, true);
       })
       
