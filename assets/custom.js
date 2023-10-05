@@ -626,6 +626,12 @@ $(document).ready(function () {
     });
     
     $listItems.click(function(e) {
+
+
+
+      console.log(e.currentTarget);
+
+      
       e.stopPropagation();
       $styledSelect.text($(this).text()).removeClass('active');
       var selectElement = $this[0];
