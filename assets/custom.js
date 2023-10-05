@@ -539,7 +539,9 @@ $(document).ready(function () {
         // Toggle class on elements
         document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
           el.classList.remove("Email", "Shipped");
-          el.classList.add(modeClass);
+          if(modeClass != "") {
+            el.classList.add(modeClass);
+          }
         });
       
         // // Trigger click events on elements with specific attributes
