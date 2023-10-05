@@ -500,10 +500,13 @@ $(document).ready(function () {
     function updateDigitalGiftCardForm() {
       function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
           var val = digitalGiftCardInput.val();
+        console.log(val)
           if (val == "Email") {
+            console.log("email", val)
               digitalGiftCardForm.addClass("Email").removeClass("Shipped");
             $('#delivery-date').val('immediately').trigger('change');
           } else {
+            console.log("no Email", val)
               digitalGiftCardForm.removeClass("Email").addClass("Shipped");
               $('.product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea').each(function() {
                 $(this).val('');
