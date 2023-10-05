@@ -526,12 +526,10 @@ $(document).ready(function () {
           }
       }
 
+      function changeOtherForm(currentElements, toBeUpdated){
 
 
-      function changeOtherForm(elems){
-
-
-        console.log(elems);
+        console.log(currentElements[0].value)
         
         
       }
@@ -542,13 +540,13 @@ $(document).ready(function () {
       
       digitalGiftCardInput.forEach(el => {
         el.addEventListener("change", function(e){
-          changeOtherForm(digitalGiftCardForm)
+          changeOtherForm(digitalGiftCardInput, digitalGiftCardForm)
         }, true)
       })
 
       digitalGiftCardForm.forEach(el => {
         el.addEventListener("change", function(e){
-          changeOtherForm(digitalGiftCardInput)
+          changeOtherForm(digitalGiftCardForm, digitalGiftCardInput)
         }, true)
       })
       
