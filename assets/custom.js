@@ -498,33 +498,33 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
 $(document).ready(function () {
 
     function updateDigitalGiftCardForm() {
-      function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
-          var val = digitalGiftCardInput.val();
-          if (val == "Email") {
-              digitalGiftCardForm.addClass("Email").removeClass("Shipped");
-            $('#delivery-date').val('immediately').trigger('change');
-          } else {
-              digitalGiftCardForm.removeClass("Email").addClass("Shipped");
-              $('.product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea').each(function() {
-                $(this).val('');
-              }).trigger('change');
-          }
+      // function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
+      //     var val = digitalGiftCardInput.val();
+      //     if (val == "Email") {
+      //         digitalGiftCardForm.addClass("Email").removeClass("Shipped");
+      //       $('#delivery-date').val('immediately').trigger('change');
+      //     } else {
+      //         digitalGiftCardForm.removeClass("Email").addClass("Shipped");
+      //         $('.product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea').each(function() {
+      //           $(this).val('');
+      //         }).trigger('change');
+      //     }
   
-          var formElements = digitalGiftCardForm.find("input, textarea");
-          formElements.prop("required", val == "Email");
-          formElements.prop("disabled", val != "Email");
-      }
+      //     var formElements = digitalGiftCardForm.find("input, textarea");
+      //     formElements.prop("required", val == "Email");
+      //     formElements.prop("disabled", val != "Email");
+      // }
   
-      function initializeListener(selector) {
-          var digitalGiftCardInput = $(selector + " .variations select");
-          var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
+      // function initializeListener(selector) {
+      //     var digitalGiftCardInput = $(selector + " .variations select");
+      //     var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
   
-          if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
-              digitalGiftCardInput.change(function (e) { 
-                  handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
-              });
-          }
-      }
+      //     if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
+      //         digitalGiftCardInput.change(function (e) { 
+      //             handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
+      //         });
+      //     }
+      // }
 
       function changeOtherForm(currentElements, toBeUpdated){
 
@@ -539,15 +539,8 @@ $(document).ready(function () {
           })
 
           document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-            // el.parentNode.querySelectorAll("li").forEach(elem => {
-            //   elem.classList.remove("is-selected");
-            // })
-             el.click();
-            // el.classList.add("is-selected");
+            el.click();
           })
-
-          console.log(`[rel='${ currentElements[0].value }']`, "*********")
-          
 
           // update delivery-date field
           const deliveryDateInput = document.querySelector('#delivery-date');
@@ -566,17 +559,9 @@ $(document).ready(function () {
             el.classList.remove("Email");
           })
 
-          console.log([rel='${ currentElements[0].value }'], "*********");
-
-         document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-
+          document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
             el.click();
-           
-          //  el.parentNode.querySelectorAll("li").forEach(elem => {
-          //   elem.classList.remove("is-selected");
-          // })
-          // el.classList.add("is-selected");
-        })
+          })
 
           
           // update delivery-date field
@@ -589,8 +574,9 @@ $(document).ready(function () {
           deliveryDateInput.dispatchEvent(changeEvent);
           
         }
-        
-        
+          var formElements = document.querySelectorAll(".product-add-to-cart-sticky .variations select").find("input, textarea");
+          formElements.prop("required", val == "Email");
+          formElements.prop("disabled", val != "Email");
       }
 
 
