@@ -574,9 +574,9 @@ $(document).ready(function () {
           deliveryDateInput.dispatchEvent(changeEvent);
           
         }
-          var formElements = document.querySelectorAll(".product-add-to-cart-sticky .variations select").find("input, textarea");
-          formElements.prop("required", val == "Email");
-          formElements.prop("disabled", val != "Email");
+          // var formElements = document.querySelectorAll(".product-add-to-cart-sticky .variations select").find("input, textarea");
+          // formElements.prop("required", val == "Email");
+          // formElements.prop("disabled", val != "Email");
       }
 
 
