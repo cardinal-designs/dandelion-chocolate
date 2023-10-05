@@ -50,16 +50,15 @@
 						>
 						<button class="plus" type="button" aria-label="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}">{% render 'svg-icons' with 'plus' %}</button>
 			    </quantity-selector>
-				</div>
-				{%- endif -%}
-            {% assign sold_out = false %}
-         
-            {% for tag in  product.tags %}
-              {% if tag == 'force_soldout' %}
-                {% assign sold_out = true %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
+              </div>
+            {%- endif -%}
+          {% assign sold_out = false %}
+          {% for tag in  product.tags %}
+            {% if tag == 'force_soldout' %}
+              {% assign sold_out = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
           
           <button type="submit" name="add" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
             <span class="single-add-to-cart-button--text">
