@@ -533,7 +533,7 @@ $(document).ready(function () {
 
         if(currentElements[0].value == "Email"){
           document.querySelector(".product-add-to-cart-sticky .product-digitalgiftcard-form").classList.add("Email");
-          toBeUpdated.classList.remove("Shipped");
+          document.querySelector(".product-add-to-cart-sticky .product-digitalgiftcard-form").classList.remove("Shipped");
 
           // update delivery-date field
           const deliveryDateInput = document.querySelector('#delivery-date');
@@ -547,8 +547,8 @@ $(document).ready(function () {
         }
         else{
 
-          toBeUpdated.classList.add("Shipped");
-          toBeUpdated.classList.remove("Email");
+          document.querySelector(".product-add-to-cart-sticky .product-digitalgiftcard-form").classList.add("Shipped");
+          document.querySelector(".product-add-to-cart-sticky .product-digitalgiftcard-form").classList.remove("Email");
 
           
           // update delivery-date field
