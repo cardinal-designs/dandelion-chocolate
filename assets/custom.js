@@ -543,9 +543,9 @@ $(document).ready(function () {
           el.click();
         });
       
-        document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
-          el.click();
-        });
+        // document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
+        //   el.click();
+        // });
       
         // Update delivery-date field
         const deliveryDateInput = document.querySelector('#delivery-date');
