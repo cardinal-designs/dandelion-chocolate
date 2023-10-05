@@ -6016,3 +6016,7 @@ input[type="radio"],
 .thb-full-menu li.menu-item-has-children:hover:before {
   display: none;
 }
+
+#chat-button {
+  right: 0px !important;
+}
