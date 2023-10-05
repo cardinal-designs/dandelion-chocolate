@@ -586,11 +586,11 @@ $(document).ready(function () {
       //   }, true);
       // })
 
-      // document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-      //   el.addEventListener("click", function(e){
-      //     document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
-      //   }, true);
-      // })
+      document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+        el.addEventListener("click", function(e){
+          document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+        }, true);
+      })
 
 
 
@@ -619,24 +619,24 @@ $(document).ready(function () {
         }, true);
       });
       
-      document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-        el.addEventListener("click", function (e) {
-          if (!preventClick) {
-            preventClick = true;
-            const relValue = e.currentTarget.getAttribute("rel");
-            const nonStickyElement = document.querySelector('[name="options[Amount]"]');
-            const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
+      // document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+      //   el.addEventListener("click", function (e) {
+      //     if (!preventClick) {
+      //       preventClick = true;
+      //       const relValue = e.currentTarget.getAttribute("rel");
+      //       const nonStickyElement = document.querySelector('[name="options[Amount]"]');
+      //       const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
             
-            if (correspondingLi) {
-              correspondingLi.click();
-            }
+      //       if (correspondingLi) {
+      //         correspondingLi.click();
+      //       }
       
-            setTimeout(() => {
-              preventClick = false;
-            }, 100);
-          }
-        }, true);
-      });
+      //       setTimeout(() => {
+      //         preventClick = false;
+      //       }, 100);
+      //     }
+      //   }, true);
+      // });
 
       
       
