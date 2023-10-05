@@ -25,7 +25,7 @@ if (!customElements.get('variant-selects')) {
     onVariantChange() {
       this.updateOptions();
       this.updateMasterId();
-      this.toggleAddButton(true, '', false);
+      this.toggleAddButton(true, '', false); 
       this.updatePickupAvailability();
       this.removeErrorMessage();
       this.updateVariantText();
@@ -773,7 +773,7 @@ if (!customElements.get('product-add-to-cart-sticky')) {
               let boundingRect = form.getBoundingClientRect();
 
               if (entry.intersectionRatio === 0 && window.scrollY > (boundingRect.top + boundingRect.height)) {
-                _this.formPassed = true;
+                _this.formPassed = false;
                 _this.classList.add('sticky--visible');
                 document.querySelector('.default-product-input').value = document.querySelector('.sticky_product_id').value
               } else if (entry.intersectionRatio === 1) {
