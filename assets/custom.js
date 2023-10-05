@@ -627,14 +627,10 @@ $(document).ready(function () {
     
     $listItems.click(function(e) {
 
-
-
-      console.log(e.currentTarget.closest("fieldset"));
-
       
       e.stopPropagation();
       $styledSelect.text($(this).text()).removeClass('active');
-      var selectElement = $this[0];
+      var selectElement = e.currentTarget.closest("fieldset");
 
       console.log(selectElement, "+++++");
       
