@@ -543,9 +543,9 @@ $(document).ready(function () {
         });
       
         // // Trigger click events on elements with specific attributes
-        // document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
-        //   el.click();
-        // });
+        document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+          el.click();
+        });
       
         // document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
         //   el.click();
