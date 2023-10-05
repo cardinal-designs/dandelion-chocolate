@@ -1,3 +1,8 @@
+{% assign stickySection = false %}
+{% if forStickySection %}
+  {% assign stickySection = true %}
+{% endif %}
+
 {% comment %}
  Digital gift cards
 {% endcomment %}
@@ -11,17 +16,17 @@
 <div class="product-digitalgiftcard-form {{kind | replace: ' ', '-' }}">  
   <div>
     <label for="from">{{'products.giftcard.from' | t}}</label>
-    <input type="text" id="from" name="properties[from]" placeholder="{{'products.giftcard.from_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
+    <input type="text" id="from" {% unless stickySection %}name="properties[from]" {% endunless %} placeholder="{{'products.giftcard.from_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
   </div>
   <div>
     <label for="to">{{'products.giftcard.to' | t}}</label>
-    <input type="email" id="to" name="properties[to]" placeholder="{{'products.giftcard.to_placeholder' | t}}" required form="{{ product_form_id }}">
+    <input type="email" id="to" {% unless stickySection %}name="properties[to]" {% endunless %} placeholder="{{'products.giftcard.to_placeholder' | t}}" required form="{{ product_form_id }}">
   </div>
   <div>
     <label for="note">{{'products.giftcard.note' | t}}</label>
-    <textarea type="text" id="note" maxlength="500" name="properties[message]" placeholder="{{'products.giftcard.note_placeholder' | t}}" required form="{{ product_form_id }}"></textarea>
+    <textarea type="text" id="note" maxlength="500" {% unless stickySection %}name="properties[message]" {% endunless %} placeholder="{{'products.giftcard.note_placeholder' | t}}" required form="{{ product_form_id }}"></textarea>
   </div>
   <label class="digitalgiftcard__deliverytime">{{'products.giftcard.email-immediate' | t}}</label> 
-  <input type="hidden" id="delivery-date" name="properties[delivers]" value="immediately" form="{{ product_form_id }}">
+  <input type="hidden" id="delivery-date" {% unless stickySection %}name="properties[delivers]" {% endunless %} value="immediately" form="{{ product_form_id }}">
 </div>
 {% endif %}
