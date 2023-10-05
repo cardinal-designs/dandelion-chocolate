@@ -553,8 +553,8 @@ $(document).ready(function () {
       })
       
   
-      initializeListener(".product-information");
-      initializeListener(".product-add-to-cart-sticky");
+      // initializeListener(".product-information");
+      // initializeListener(".product-add-to-cart-sticky");
   }
   
   const checkDiv = setInterval(() => {
