@@ -64,8 +64,8 @@
   {% endif %}
 {% endfor %}
 
+{{ collections["not-gift-cards"].products }}
 {% paginate collections["not-gift-cards"].products by 10000 %}
-asdasd
   {% for product in collections["not-gift-cards"].products %}
 
 --1{{ product.metafields.custom.product_featured_image }}
