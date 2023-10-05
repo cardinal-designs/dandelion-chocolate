@@ -604,33 +604,33 @@ $(document).ready(function () {
       })
 
 
-      // Function to remove the class when updates stop
-      function removeClassWhenUpdatesStop(targetElement) {
-        targetElement.classList.remove('mandatory-hidden');
-      }
+    //   // Function to remove the class when updates stop
+    //   function removeClassWhenUpdatesStop(targetElement) {
+    //     targetElement.classList.remove('mandatory-hidden');
+    //   }
       
-      // Common ancestor element whose child elements you want to observe
-      const commonAncestorElement = document.querySelector("product-form .price");
+    //   // Common ancestor element whose child elements you want to observe
+    //   const commonAncestorElement = document.querySelector("product-form .price");
       
-      // Create a MutationObserver to observe changes in child elements
-      const observer = new MutationObserver((mutationsList) => {
-        // Check if updates have stopped for each target element
-        for (const mutation of mutationsList) {
-          const targetElement = mutation.target.closest("button");
-          if (targetElement) {
-            removeClassWhenUpdatesStop(targetElement);
-          }
-          else{
-            targetElement.classList.add('mandatory-hidden');
-          }
-        }
-      });
+    //   // Create a MutationObserver to observe changes in child elements
+    //   const observer = new MutationObserver((mutationsList) => {
+    //     // Check if updates have stopped for each target element
+    //     for (const mutation of mutationsList) {
+    //       const targetElement = mutation.target.closest("button");
+    //       if (targetElement) {
+    //         removeClassWhenUpdatesStop(targetElement);
+    //       }
+    //       else{
+    //         targetElement.classList.add('mandatory-hidden');
+    //       }
+    //     }
+    //   });
 
-// Configure the observer to watch for changes in childList (child elements)
-const config = { childList: true, subtree: true };
-
-// Start observing the common ancestor element
-observer.observe(commonAncestorElement, config);
+    // // Configure the observer to watch for changes in childList (child elements)
+    // const config = { childList: true, subtree: true };
+    
+    // // Start observing the common ancestor element
+    // observer.observe(commonAncestorElement, config);
 
   
 
