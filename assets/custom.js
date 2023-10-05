@@ -539,12 +539,8 @@ $(document).ready(function () {
           })
 
           document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-            // el.click();
+            el.click();
           })
-
-
-          toBeUpdated[1].value = currentElements[1].value;
-          
 
           // update delivery-date field
           const deliveryDateInput = document.querySelector('#delivery-date');
@@ -553,9 +549,6 @@ $(document).ready(function () {
             bubbles: true,
             cancelable: true
           });
-
-          toBeUpdated[1].dispatchEvent(changeEvent);
-          
           deliveryDateInput.dispatchEvent(changeEvent);
 
         }
@@ -567,15 +560,10 @@ $(document).ready(function () {
           })
 
           document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-            // el.click();
+            el.click();
           })
 
-
-
           
-          toBeUpdated[1].value = currentElements[1].value;
-          
-
           // update delivery-date field
           const deliveryDateInput = document.querySelector('#delivery-date');
           deliveryDateInput.value = 'immediately';
@@ -583,9 +571,6 @@ $(document).ready(function () {
             bubbles: true,
             cancelable: true
           });
-
-          toBeUpdated[1].dispatchEvent(changeEvent);
-          
           deliveryDateInput.dispatchEvent(changeEvent);
           
         }
