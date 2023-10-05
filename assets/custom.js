@@ -369,7 +369,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 $('a[href^="#"]').click(function(event) {
   var id = $(this).attr("href");
   var offset = 0;
-  var target = $(id).offset().top - offset - 50
+  var target = $(id).offset().top - offset - 80
   $('html, body').animate({
     scrollTop:target
   }, 500);
@@ -377,11 +377,9 @@ $('a[href^="#"]').click(function(event) {
 });
 
 $(function(){
-  // get hash value
   var hash = window.location.hash;
-  // now scroll to element with that id
   $('html, body').animate({ 
-    scrollTop: $(hash).offset().top - 50
+    scrollTop: $(hash).offset().top - 80
   });
 });
 
