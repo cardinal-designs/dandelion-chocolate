@@ -1,9 +1,10 @@
 
+
+{{ stickySection | json }}
+
 {% unless stickySection %}
   {% assign stickySection = false %}
 {% endunless %}
-
-{{ stickySection | json }}
 
 {% comment %}
  Digital gift cards
