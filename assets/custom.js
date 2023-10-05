@@ -577,6 +577,23 @@ $(document).ready(function () {
           changeOtherForm(digitalGiftCardForm, digitalGiftCardInput)
         }, true)
       })
+
+
+
+
+      document.querySelectorAll(".product-information .variations select")[1].addEventListener("change", function(e){
+        e.currentTarget.closest("div").querySelector(".select-styled").innerText = e.currentTarget.value;        
+      }, true)
+
+       document.querySelectorAll(".product-add-to-cart-sticky .variations select")[1].addEventListener("change", function(e){
+        e.currentTarget.closest("div").querySelector(".select-styled").innerText = e.currentTarget.value;
+      }, true)
+
+      
+
+      // document.querySelectorAll(".product-information .variations select")[1].closest("div").querySelector(".select-styled").innerText = $(this).attr('rel');
+      // document.querySelectorAll(".product-add-to-cart-sticky .variations select")[1].closest("div").querySelector(".select-styled").innerText = $(this).attr('rel');
+      
       
   
 
@@ -641,15 +658,6 @@ $(document).ready(function () {
       $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
       $list.hide();
       console.log($this.find('option[value="'+$(this).attr('rel')+'"]'));
-
-
-
-      document.querySelectorAll(".product-information .variations select")[1].closest("div").querySelector(".select-styled").innerText = $(this).attr('rel');
-      document.querySelectorAll(".product-add-to-cart-sticky .variations select")[1].closest("div").querySelector(".select-styled").innerText = $(this).attr('rel');
-
-      
-
-      
     });
 
     $(document).click(function() {
