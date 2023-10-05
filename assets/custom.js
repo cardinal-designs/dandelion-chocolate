@@ -534,7 +534,7 @@ $(document).ready(function () {
         // console.log(currentElements[1].value);
       
         const isEmail = currentElements[0].value === "Email";
-        const modeClass = isEmail ? "Email" : "Shipped";
+        const modeClass = isEmail ? "Email" : "";
       
         // Toggle class on elements
         document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
