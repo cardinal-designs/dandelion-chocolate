@@ -623,7 +623,9 @@ document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelec
   el.addEventListener("click", function (e) {
     if (!preventClick) {
       preventClick = true;
-      document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.add('mandatory-hidden');
+      document.querySelectorAll(".product-form .price .amount").forEach(el => {
+        el.closest(.closest(".sticky__add-to-cart").classList.add('mandatory-hidden'));
+      })
       const relValue = e.currentTarget.getAttribute("rel");
       const nonStickyElement = document.querySelector('[name="options[Amount]"]');
       const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
@@ -632,7 +634,9 @@ document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelec
         correspondingLi.click();
         
         setTimeout(function(){
-          document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
+        document.querySelectorAll(".product-form .price .amount").forEach(el => {
+          el.closest(.closest(".sticky__add-to-cart").classList.remove('mandatory-hidden'));
+        })
         },1800);
       }
 
