@@ -980,7 +980,8 @@
 {%- else -%}
   <input type="hidden" class="sticky_product_id" value="{{ product.selected_or_first_available_variant.id }}">
 {%- endif -%}
-  
+
+  {% comment %}
   {% render 'product-add-to-cart-sticky',
     product: product,
     media: first_image,
@@ -989,7 +990,7 @@
     form: form,
     is_disabled: is_disabled
   %}
-
+{% endcomment %}
 {%- endif -%}
 
 {{ sizing_popup }}
