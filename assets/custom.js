@@ -644,7 +644,7 @@ $(document).ready(function () {
 
             setTimeout(function(){
               document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
-            },1500);
+            },1800);
             
           }
         }, true);
