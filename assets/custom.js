@@ -565,9 +565,6 @@ $(document).ready(function () {
           document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
             el.click();
           })
-
-          console.log(document.querySelectorAll(`[rel="${ currentElements[1].value }"]`));
-          
           document.querySelectorAll(`[rel="${ currentElements[1].value }"]`).forEach(el => {
             el.click();
           })
