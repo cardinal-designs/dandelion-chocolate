@@ -623,12 +623,17 @@ document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelec
   el.addEventListener("click", function (e) {
     if (!preventClick) {
       preventClick = true;
+      document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.add('mandatory-hidden');
       const relValue = e.currentTarget.getAttribute("rel");
       const nonStickyElement = document.querySelector('[name="options[Amount]"]');
       const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
       
       if (correspondingLi) {
         correspondingLi.click();
+        
+        setTimeout(function(){
+          document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
+        },1800);
       }
 
       setTimeout(() => {
