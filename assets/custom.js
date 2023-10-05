@@ -515,16 +515,43 @@ $(document).ready(function () {
           formElements.prop("disabled", val != "Email");
       }
   
-      function initializeListener(selector) {
-          var digitalGiftCardInput = $(selector + " .variations select");
-          var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
+      // function initializeListener(selector) {
+      //     var digitalGiftCardInput = $(selector + " .variations select");
+      //     var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
   
-          if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
-              digitalGiftCardInput.change(function () {
-                  handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
-              });
-          }
+      //     if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
+      //         digitalGiftCardInput.change(function () { 
+      //             handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
+      //         });
+      //     }
+      // }
+
+
+
+      function changeOtherForm(elems){
+
+
+        console.log(elems);
+        
+        
       }
+
+
+      var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
+      var digitalGiftCardForm = $(".product-add-to-cart-sticky .product-digitalgiftcard-form");
+      
+      digitalGiftCardInput.forEach(el => {
+        el.addEventListener("change", function(e){
+          changeOtherForm(digitalGiftCardForm)
+        }, true)
+      })
+
+      digitalGiftCardForm.forEach(el => {
+        el.addEventListener("change", function(e){
+          changeOtherForm(digitalGiftCardInput)
+        }, true)
+      })
+      
   
       initializeListener(".product-information");
       initializeListener(".product-add-to-cart-sticky");
