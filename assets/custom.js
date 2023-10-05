@@ -620,6 +620,9 @@ const observer = new MutationObserver((mutationsList) => {
     if (targetElement) {
       removeClassWhenUpdatesStop(targetElement);
     }
+    else{
+      targetElement.classList.add('mandatory-hidden');
+    }
   }
 });
 
