@@ -126,6 +126,10 @@
   color: var(--charcoal-black);
 }
 
+.thb-predictive-search--label {
+  display: none;
+}
+
 .addtocart__small--wrapper {
   position: relative;
   left: 0;
