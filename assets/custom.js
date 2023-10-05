@@ -542,12 +542,10 @@ $(document).ready(function () {
         document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
           el.click();
         });
-
-        setTimeOut(function(){
-          document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
-            el.click();
-          });
-        }, 100);
+      
+        document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
+          el.click();
+        });
       
         // Update delivery-date field
         const deliveryDateInput = document.querySelector('#delivery-date');
