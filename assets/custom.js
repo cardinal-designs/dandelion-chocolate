@@ -630,7 +630,7 @@ $(document).ready(function () {
       $styledSelect.text($(this).text()).removeClass('active');
       var selectElement = $this[0];
 
-      console.log(selectElement);
+      console.log(selectElement, "+++++");
       
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
 
