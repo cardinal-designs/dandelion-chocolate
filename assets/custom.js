@@ -578,6 +578,9 @@ $(document).ready(function () {
     $listItems.click(function(e) {
       e.stopPropagation();
       $styledSelect.text($(this).text()).removeClass('active');
+
+      console.log($this);
+      
       var selectElement = $this[0];
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
 
