@@ -634,6 +634,11 @@ $(document).ready(function () {
             setTimeout(() => {
               preventClick = false;
             }, 100);
+
+            setTimeout(function(){
+              document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
+            },1000);
+            
           }
         }, true);
       });
