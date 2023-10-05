@@ -598,6 +598,7 @@ $(document).ready(function () {
 
       // Initialize a flag to prevent the click event from triggering again
       let preventClick = false;
+      let preventClickOne = false;
       
       document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function (e) {
@@ -621,8 +622,8 @@ $(document).ready(function () {
       
       document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function (e) {
-          if (!preventClick) {
-            preventClick = true;
+          if (!preventClickOne) {
+            preventClickOne = true;
             const relValue = e.currentTarget.getAttribute("rel");
             const nonStickyElement = document.querySelector('[name="options[Amount]"]');
             const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
@@ -632,7 +633,7 @@ $(document).ready(function () {
             }
       
             setTimeout(() => {
-              preventClick = false;
+              preventClickOne = false;
             }, 500);
           }
         }, true);
