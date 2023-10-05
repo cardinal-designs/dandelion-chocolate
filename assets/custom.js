@@ -532,7 +532,7 @@ $(document).ready(function () {
         console.log(currentElements[0].value, toBeUpdated[0].value)
 
         if(currentElements[0].value == "Email"){
-          toBeUpdated.classList.add("Email");
+          document.querySelector(".product-add-to-cart-sticky .product-digitalgiftcard-form").classList.add("Email");
           toBeUpdated.classList.remove("Shipped");
 
           // update delivery-date field
