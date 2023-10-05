@@ -597,52 +597,46 @@ $(document).ready(function () {
 
 
       // Initialize a flag to prevent the click event from triggering again
-      let preventClick = false;
-      
-      document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-        el.addEventListener("click", function (e) {
-          if (!preventClick) {
-            document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.add('mandatory-hidden');
-            preventClick = true; // Set the flag to prevent further clicks
-            const relValue = e.currentTarget.getAttribute("rel");
-            const stickyElement = document.querySelector('[name="options[Amount--sticky]"]');
-            const correspondingLi = stickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
-            
-            if (correspondingLi) {
-              correspondingLi.click();
-            }
-      
-            // Reset the flag after a brief delay (adjust the timeout as needed)
-            setTimeout(() => {
-              preventClick = false;
-            }, 100);
-          }
-        }, true);
-      });
-      
-      document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-        el.addEventListener("click", function (e) {
-          if (!preventClick) {
-            preventClick = true;
-            const relValue = e.currentTarget.getAttribute("rel");
-            const nonStickyElement = document.querySelector('[name="options[Amount]"]');
-            const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
-            
-            if (correspondingLi) {
-              correspondingLi.click();
-            }
-      
-            setTimeout(() => {
-              preventClick = false;
-            }, 100);
+let preventClick = false;
 
-            setTimeout(function(){
-              document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
-            },1000);
-            
-          }
-        }, true);
-      });
+document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+  el.addEventListener("click", function (e) {
+    if (!preventClick) {
+      preventClick = true; // Set the flag to prevent further clicks
+      const relValue = e.currentTarget.getAttribute("rel");
+      const stickyElement = document.querySelector('[name="options[Amount--sticky]"]');
+      const correspondingLi = stickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
+      
+      if (correspondingLi) {
+        correspondingLi.click();
+      }
+
+      // Reset the flag after a brief delay (adjust the timeout as needed)
+      setTimeout(() => {
+        preventClick = false;
+      }, 100);
+    }
+  }, true);
+});
+
+document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+  el.addEventListener("click", function (e) {
+    if (!preventClick) {
+      preventClick = true;
+      const relValue = e.currentTarget.getAttribute("rel");
+      const nonStickyElement = document.querySelector('[name="options[Amount]"]');
+      const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
+      
+      if (correspondingLi) {
+        correspondingLi.click();
+      }
+
+      setTimeout(() => {
+        preventClick = false;
+      }, 100);
+    }
+  }, true);
+});
 
       
       
@@ -698,6 +692,7 @@ $(document).ready(function () {
     
     $listItems.click(function(e) {
       e.stopPropagation();
+      document.querySelector(".product-form .price .amount").classList.add('mandatory-hidden');
       $styledSelect.text($(this).text()).removeClass('active');
       var selectElement = $this[0];
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
