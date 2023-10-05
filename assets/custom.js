@@ -319,7 +319,7 @@ $(document).ready(function () {
   let sectionScrolll = document.querySelector(`[id="${page}"]`);
   if(sectionScrolll){
     window.scroll({
-      top: sectionScrolll.offsetTop - 50,
+      top: sectionScrolll.offsetTop + 50,
       behavior: "smooth",
     });
   }
@@ -330,7 +330,7 @@ document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((el
     let Id = el.currentTarget.getAttribute('href'),
         sectionId = document.querySelector(`[id="${Id}"]`);
     window.scroll({
-      top: sectionId.offsetTop - 90,
+      top: sectionId.offsetTop + 90,
       behavior: "smooth",
     });
   });
