@@ -634,7 +634,7 @@ $(document).ready(function () {
       
             setTimeout(() => {
               preventClickOne = false;
-            }, 500);
+            }, 1000);
           }
         }, true);
       });
