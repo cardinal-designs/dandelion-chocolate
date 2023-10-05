@@ -600,7 +600,6 @@ $(document).ready(function () {
               el.closest("button").classList.remove('mandatory-hidden');
             })
           }, 1800);
-          
         }, true);
       })
       
