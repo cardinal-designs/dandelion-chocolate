@@ -539,7 +539,7 @@ $(document).ready(function () {
           })
 
           document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-         console.log(el.parentNode);
+         console.log(el.parentNode.querySelector("li"));
             // el.parentNode.querySelector("li").forEach(elem => {
             //   elem.classList.remove("is-selected");
             // })
@@ -569,7 +569,7 @@ $(document).ready(function () {
           console.log([rel='${ currentElements[0].value }'], "*********");
 
          document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-         console.log(el.parentNode);
+         console.log(el.parentNode.querySelector("li"));
            // el.parentNode.querySelector("li").forEach(elem => {
           //   elem.classList.remove("is-selected");
           // })
