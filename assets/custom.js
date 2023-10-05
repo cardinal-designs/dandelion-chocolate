@@ -369,7 +369,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 $(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
   $('html, body').animate({
-    scrollTop: $($.attr(this, 'href')).offset().top + 50;
+    scrollTop: $($.attr(this, 'href')).offset().top + 50
   }, 500);
 });
 
