@@ -57,9 +57,6 @@
       </variant-selects>
       {%- endunless -%}
       {%- if product != blank -%}
-
-      sdsdsd
-      
         {% render 'product-form-digital-card', product: product, product_form_id: product_form_id, stickySection: "Hello" %}
         <product-form class="product-form" data-sticky="1" data-section="{{ section.id }}">
               <div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
