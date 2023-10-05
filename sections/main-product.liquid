@@ -67,8 +67,9 @@
 
 {% paginate collections.not-gift-cards.products by 10000 %}
   {% for collectionproduct in collections.not-gift-cards.products %}
-
+{% if collectionproduct.metafields.custom.product_featured_image != blank %}
 --1{{ collectionproduct.metafields.custom.product_featured_image }}
+  {% endif %}
     {% if collectionproduct.metafields.info.product_featured_image != blank %}
     --2{{ collectionproduct.metafields.info.product_featured_image }}
       {% endif %}
