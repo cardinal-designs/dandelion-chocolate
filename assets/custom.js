@@ -643,6 +643,7 @@ $(document).ready(function () {
     
     $listItems.click(function(e) {
       e.stopPropagation();
+      document.querySelector(".product-form .price .amount").style.display = "none";
       $styledSelect.text($(this).text()).removeClass('active');
       var selectElement = $this[0];
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
