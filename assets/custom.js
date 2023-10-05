@@ -310,39 +310,39 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
   document.body.classList.add("safari__specific--css");
 }
 
-$(document).ready(function () {
-  var url = window.location.href;
-  console.log(url);
-  let page = url.substring(url.lastIndexOf('#') + 1);
-  console.log(page);
+// $(document).ready(function () {
+//   var url = window.location.href;
+//   console.log(url);
+//   let page = url.substring(url.lastIndexOf('#') + 1);
+//   console.log(page);
   
-  let sectionScrolll = document.querySelector(`[id="${page}"]`);
-  if(sectionScrolll){
-    window.scroll({
-      top: sectionScrolll.offsetTop + 50,
-      behavior: "smooth",
-    });
-  }
-});
+//   let sectionScrolll = document.querySelector(`[id="${page}"]`);
+//   if(sectionScrolll){
+//     window.scroll({
+//       top: sectionScrolll.offsetTop - 50,
+//       behavior: "smooth",
+//     });
+//   }
+// });
 
-document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
-  ele.addEventListener('click',function(el){
-    let Id = el.currentTarget.getAttribute('href'),
-        sectionId = document.querySelector(`[id="${Id}"]`);
-    window.scroll({
-      top: sectionId.offsetTop + 90,
-      behavior: "smooth",
-    });
-  });
+// document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
+//   ele.addEventListener('click',function(el){
+//     let Id = el.currentTarget.getAttribute('href'),
+//         sectionId = document.querySelector(`[id="${Id}"]`);
+//     window.scroll({
+//       top: sectionId.offsetTop - 90,
+//       behavior: "smooth",
+//     });
+//   });
 
-  if(window.sessionStorage.getItem('scrolltosection')){
-    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
-    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
-      ele.click();
-      window.sessionStorage.removeItem("scrolltosection");
-    }
-  }
-})
+//   if(window.sessionStorage.getItem('scrolltosection')){
+//     console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+//     if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+//       ele.click();
+//       window.sessionStorage.removeItem("scrolltosection");
+//     }
+//   }
+// })
 
 document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
