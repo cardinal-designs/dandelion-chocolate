@@ -582,13 +582,23 @@ $(document).ready(function () {
 
       document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function(e){
-          document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+          if(!document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.contains("click-event-triggered")){
+            document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered");
+            document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+          }
         }, true);
       })
 
       document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function(e){
-          document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+          // document.querySelectorAll(".product-form .price .amount").forEach(el => {
+          //   el.closest(.closest(".sticky__add-to-cart").classList.add('mandatory-hidden'));
+          // })
+
+           if(!document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.contains("click-event-triggered")){
+            document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered");
+            document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+          }
         }, true);
       })
       
