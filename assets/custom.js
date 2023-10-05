@@ -520,37 +520,37 @@ $(document).ready(function () {
           var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
   
           if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
-              digitalGiftCardInput.change(function () { 
-                  handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
+              digitalGiftCardInput.change(function (e) { 
+                  handleUpdate(digitalGiftCardInput, digitalGiftCardForm, e);
               });
           }
       }
 
 
 
-      function changeOtherForm(elems){
+      // function changeOtherForm(elems){
 
 
-        console.log(elems);
+      //   console.log(elems);
         
         
-      }
+      // }
 
 
-      var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
-      var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .product-digitalgiftcard-form");
+      // var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
+      // var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .product-digitalgiftcard-form");
       
-      digitalGiftCardInput.forEach(el => {
-        el.addEventListener("change", function(e){
-          changeOtherForm(digitalGiftCardForm)
-        }, true)
-      })
+      // digitalGiftCardInput.forEach(el => {
+      //   el.addEventListener("change", function(e){
+      //     changeOtherForm(digitalGiftCardForm)
+      //   }, true)
+      // })
 
-      digitalGiftCardForm.forEach(el => {
-        el.addEventListener("change", function(e){
-          changeOtherForm(digitalGiftCardInput)
-        }, true)
-      })
+      // digitalGiftCardForm.forEach(el => {
+      //   el.addEventListener("change", function(e){
+      //     changeOtherForm(digitalGiftCardInput)
+      //   }, true)
+      // })
       
   
       initializeListener(".product-information");
