@@ -1,5 +1,5 @@
 <product-card class="product-cart-item">
-  <div class="product-cart-item-image">
+  <div class="product-cart-item-image test">
     {% if product_small.metafields.image.cart_image_url != blank %}
       <a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">
         {%- render 'responsive-image', image: product_small.metafields.image.cart_image_url.value , sizes: '192x0' -%}
