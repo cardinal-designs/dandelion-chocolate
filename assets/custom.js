@@ -539,7 +539,7 @@ $(document).ready(function () {
           })
 
           document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-            el.click();
+            // el.click();
           })
 
 
@@ -567,7 +567,7 @@ $(document).ready(function () {
           })
 
           document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-            el.click();
+            // el.click();
           })
 
 
