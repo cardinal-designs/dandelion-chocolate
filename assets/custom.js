@@ -665,7 +665,7 @@ $(document).ready(function () {
         if (mutationsList.length === 0) {
           removeClassWhenUpdatesStop();
           // Disconnect the observer since we don't need it anymore
-          observer.disconnect();
+          // observer.disconnect();
         }
       });
       
