@@ -67,10 +67,10 @@
 
 {% paginate collections.all.products by 10000 %}
   {{ collections.all.products}}
-  {% for product in collections.all.products %}
+  {% for collectionproduct in collections.all.products %}
 
---1{{ product.metafields.custom.product_featured_image }}
-    --2{{ product.metafields.info.product_featured_image }}
+--1{{ collectionproduct.metafields.custom.product_featured_image }}
+    --2{{ collectionproduct.metafields.info.product_featured_image }}
   {% endfor %}
 
 {% endpaginate %}
