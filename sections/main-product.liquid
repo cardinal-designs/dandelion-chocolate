@@ -65,9 +65,9 @@
 {% endfor %}
 
 
-{% paginate collections.all.products by 10000 %}
-  {{ collections.all.products | size}}
-  {% for collectionproduct in collections.all.products %}
+{% paginate collections.not-gift-cards.products by 10000 %}
+  {{ collections.not-gift-cards.products | size}}
+  {% for collectionproduct in collections.not-gift-cards.products %}
 
 --1{{ collectionproduct.metafields.custom.product_featured_image }}
     --2{{ collectionproduct.metafields.info.product_featured_image }}
