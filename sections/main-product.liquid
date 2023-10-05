@@ -69,7 +69,9 @@
   {% for collectionproduct in collections.not-gift-cards.products %}
 
 --1{{ collectionproduct.metafields.custom.product_featured_image }}
+    {% if collectionproduct.metafields.info.product_featured_image != blank %}
     --2{{ collectionproduct.metafields.info.product_featured_image }}
+      {% endif %}
   {% endfor %}
 
 {% endpaginate %}
