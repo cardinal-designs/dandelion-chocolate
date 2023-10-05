@@ -498,86 +498,88 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
 $(document).ready(function () {
 
     function updateDigitalGiftCardForm() {
-      // function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
-      //     var val = digitalGiftCardInput.val();
-      //     if (val == "Email") {
-      //         digitalGiftCardForm.addClass("Email").removeClass("Shipped");
-      //       $('#delivery-date').val('immediately').trigger('change');
-      //     } else {
-      //         digitalGiftCardForm.removeClass("Email").addClass("Shipped");
-      //         $('.product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea').each(function() {
-      //           $(this).val('');
-      //         }).trigger('change');
-      //     }
+      function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
+          var val = digitalGiftCardInput.val();
+          if (val == "Email") {
+              digitalGiftCardForm.addClass("Email").removeClass("Shipped");
+            $('#delivery-date').val('immediately').trigger('change');
+          } else {
+              digitalGiftCardForm.removeClass("Email").addClass("Shipped");
+              $('.product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea').each(function() {
+                $(this).val('');
+              }).trigger('change');
+          }
   
-      //     var formElements = digitalGiftCardForm.find("input, textarea");
-      //     formElements.prop("required", val == "Email");
-      //     formElements.prop("disabled", val != "Email");
-      // }
+          var formElements = digitalGiftCardForm.find("input, textarea");
+          formElements.prop("required", val == "Email");
+          formElements.prop("disabled", val != "Email");
+      }
   
-      // function initializeListener(selector) {
-      //     var digitalGiftCardInput = $(selector + " .variations select");
-      //     var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
+      function initializeListener(selector) {
+          var digitalGiftCardInput = $(selector + " .variations select");
+          var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
   
-      //     if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
-      //         digitalGiftCardInput.change(function (e) { 
-      //             handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
-      //         });
-      //     }
-      // }
-
-      function changeOtherForm(currentElements) {
-        console.log(currentElements[1].value);
-      
-        const isEmail = currentElements[0].value === "Email";
-        const modeClass = isEmail ? "Email" : "Shipped";
-      
-        // Toggle class on elements
-        document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
-          el.classList.remove("Email", "Shipped");
-          el.classList.add(modeClass);
-        });
-      
-        // Trigger click events on elements with specific attributes
-        document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
-          el.click();
-        });
-      
-        // document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
-        //   el.click();
-        // });
-      
-        // Update delivery-date field
-        const deliveryDateInput = document.querySelector('#delivery-date');
-        deliveryDateInput.value = 'immediately';
-      
-        // Dispatch a change event
-        const changeEvent = new Event('change', {
-          bubbles: true,
-          cancelable: true
-        });
-        deliveryDateInput.dispatchEvent(changeEvent);
+          if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
+              digitalGiftCardInput.change(function (e) { 
+                  handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
+              });
+          }
       }
 
-
-      var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
-      var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .variations select");
+      initializeListener(".product-information");
+      initializeListener(".product-add-to-cart-sticky");
       
-      digitalGiftCardInput.forEach(el => {
-        el.addEventListener("change", function(e){
-          changeOtherForm(digitalGiftCardInput, digitalGiftCardForm)
-        }, true)
-      })
 
-      digitalGiftCardForm.forEach(el => {
-        el.addEventListener("change", function(e){
-          changeOtherForm(digitalGiftCardForm, digitalGiftCardInput)
-        }, true)
-      })
+      // function changeOtherForm(currentElements) {
+      //   console.log(currentElements[1].value);
+      
+      //   const isEmail = currentElements[0].value === "Email";
+      //   const modeClass = isEmail ? "Email" : "Shipped";
+      
+      //   // Toggle class on elements
+      //   document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+      //     el.classList.remove("Email", "Shipped");
+      //     el.classList.add(modeClass);
+      //   });
+      
+      //   // Trigger click events on elements with specific attributes
+      //   document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+      //     el.click();
+      //   });
+      
+      //   // document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
+      //   //   el.click();
+      //   // });
+      
+      //   // Update delivery-date field
+      //   const deliveryDateInput = document.querySelector('#delivery-date');
+      //   deliveryDateInput.value = 'immediately';
+      
+      //   // Dispatch a change event
+      //   const changeEvent = new Event('change', {
+      //     bubbles: true,
+      //     cancelable: true
+      //   });
+      //   deliveryDateInput.dispatchEvent(changeEvent);
+      // }
+
+      // var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
+      // var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .variations select");
+      
+      // digitalGiftCardInput.forEach(el => {
+      //   el.addEventListener("change", function(e){
+      //     changeOtherForm(digitalGiftCardInput, digitalGiftCardForm)
+      //   }, true)
+      // })
+
+      // digitalGiftCardForm.forEach(el => {
+      //   el.addEventListener("change", function(e){
+      //     changeOtherForm(digitalGiftCardForm, digitalGiftCardInput)
+      //   }, true)
+      // })
       
   
-      // initializeListener(".product-information");
-      // initializeListener(".product-add-to-cart-sticky");
+
   }
   
   const checkDiv = setInterval(() => {
@@ -626,14 +628,9 @@ $(document).ready(function () {
     });
     
     $listItems.click(function(e) {
-
-      
       e.stopPropagation();
       $styledSelect.text($(this).text()).removeClass('active');
-      var selectElement = e.currentTarget.closest("fieldset");
-
-      console.log(selectElement, "+++++");
-      
+      var selectElement = $this[0];
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
 
       // Dispatch the 'change' event on the select element
