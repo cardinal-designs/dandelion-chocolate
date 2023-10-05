@@ -1,11 +1,7 @@
-
-
-{{ stickySection | json }}
-
-{% unless stickySection %}
-  {% assign stickySection = false %}
-{% endunless %}
-
+{% assign stickySection = false %}
+{% if stickySection %}
+  {% assign stickySection = true %}
+{% endif %}
 {% comment %}
  Digital gift cards
 {% endcomment %}
