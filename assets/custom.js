@@ -645,7 +645,7 @@ $(document).ready(function () {
 
 
       document.querySelectorAll(".product-information .variations select")[1].closest("div").querySelector(".select-styled").innerText = $(this).attr('rel');
-      document.querySelectorAll(".product-add-to-cart-sticky .variations select")[1].closest(div).querySelector(".select-styled").innerText = $(this).attr('rel');
+      document.querySelectorAll(".product-add-to-cart-sticky .variations select")[1].closest("div").querySelector(".select-styled").innerText = $(this).attr('rel');
 
       
 
