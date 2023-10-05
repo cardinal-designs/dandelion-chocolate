@@ -538,7 +538,7 @@ $(document).ready(function () {
 
 
       var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
-      var digitalGiftCardForm = $(".product-add-to-cart-sticky .product-digitalgiftcard-form");
+      var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .product-digitalgiftcard-form");
       
       digitalGiftCardInput.forEach(el => {
         el.addEventListener("change", function(e){
