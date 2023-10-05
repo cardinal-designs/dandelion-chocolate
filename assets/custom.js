@@ -545,7 +545,7 @@ $(document).ready(function () {
             el.classList.add("is-selected");
           })
 
-          
+          console.log([rel='${ currentElements[0].value }'], "*********")
           
 
           // update delivery-date field
@@ -565,10 +565,12 @@ $(document).ready(function () {
             el.classList.remove("Email");
           })
 
+          console.log([rel='${ currentElements[0].value }'], "*********");
+
          document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
-          el.parent.querySelector("li").forEach(elem => {
-            elem.classList.remove("is-selected");
-          })
+          // el.parent.querySelector("li").forEach(elem => {
+          //   elem.classList.remove("is-selected");
+          // })
           el.classList.add("is-selected");
         })
 
