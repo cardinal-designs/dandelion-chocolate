@@ -537,6 +537,15 @@ $(document).ready(function () {
             el.classList.add("Email");
             el.classList.remove("Shipped");
           })
+
+          document.querySelectorAll(`[rel='${ currentElements[0].value }']`).forEach(el => {
+            el.parent.querySelector("li").forEach(elem => {
+              elem.classList.remove("is-selected");
+            })
+            el.classList.add("is-selected");
+          })
+
+          
           
 
           // update delivery-date field
