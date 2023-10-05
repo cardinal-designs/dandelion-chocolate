@@ -112,7 +112,7 @@
                     {% assign hide_cta_mobile = hide_cta_mobile %}
 
                     {% assign sold_out = false %}
-                    {% if product.metafields.info.force_soldout == true %}
+                    {% if product_card_product.metafields.info.force_soldout == true %}
                       {% assign sold_out = true %}
                     {% endif %}
             
