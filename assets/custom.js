@@ -369,8 +369,10 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 $('a[href^="#"]').click(function(event) {
   var id = $(this).attr("href");
   var offset = 0;
-  var target = $(id).offset().top - offset; 
-  $('html, body').animate({scrollTop:target}, 500);
+  var target = $(id).offset().top - offset - 50
+  $('html, body').animate({
+    scrollTop:target
+  }, 500);
   event.preventDefault();
 });
 
@@ -378,7 +380,9 @@ $(function(){
   // get hash value
   var hash = window.location.hash;
   // now scroll to element with that id
-  $('html, body').animate({ scrollTop: $(hash).offset().top });
+  $('html, body').animate({ 
+    scrollTop: $(hash).offset().top - 50
+  });
 });
 
 $(document).ready(function() {
