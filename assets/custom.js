@@ -595,71 +595,48 @@ $(document).ready(function () {
 
 
 
-      function handleClickOnAmount(elements, targetSelector) {
-  elements.forEach(el => {
-    el.addEventListener("click", function (e) {
-      const relValue = e.currentTarget.getAttribute("rel");
-      const targetElement = document.querySelector(targetSelector);
-      const correspondingLi = targetElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
-
-      if (correspondingLi) {
-        correspondingLi.click();
-      }
-    }, true);
-  });
-}
-
-const nonStickyAmountElements = document.querySelectorAll('[name="options[Amount]"]').parentNode.querySelectorAll("ul li");
-handleClickOnAmount(nonStickyAmountElements, '[name="options[Amount--sticky]"]');
-
-const stickyAmountElements = document.querySelectorAll('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li");
-handleClickOnAmount(stickyAmountElements, '[name="options[Amount]"]');
-
-
-
-
 
       // Initialize a flag to prevent the click event from triggering again
-      // let preventClick = false;
+      let preventClick = false;
       
-      // document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-      //   el.addEventListener("click", function (e) {
-      //     if (!preventClick) {
-      //       preventClick = true; // Set the flag to prevent further clicks
-      //       const relValue = e.currentTarget.getAttribute("rel");
-      //       const stickyElement = document.querySelector('[name="options[Amount--sticky]"]');
-      //       const correspondingLi = stickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
+      document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+        el.addEventListener("click", function (e) {
+          if (!preventClick) {
+            preventClick = true; // Set the flag to prevent further clicks
+            const relValue = e.currentTarget.getAttribute("rel");
+            const stickyElement = document.querySelector('[name="options[Amount--sticky]"]');
+            const correspondingLi = stickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
             
-      //       if (correspondingLi) {
-      //         correspondingLi.click();
-      //       }
+            if (correspondingLi) {
+              correspondingLi.click();
+            }
       
-      //       // Reset the flag after a brief delay (adjust the timeout as needed)
-      //       setTimeout(() => {
-      //         preventClick = false;
-      //       }, 100);
-      //     }
-      //   }, true);
-      // });
+            // Reset the flag after a brief delay (adjust the timeout as needed)
+            setTimeout(() => {
+              preventClick = false;
+            }, 100);
+          }
+        }, true);
+      });
       
-      // document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-      //   el.addEventListener("click", function (e) {
-      //     if (!preventClick) {
-      //       preventClick = true;
-      //       const relValue = e.currentTarget.getAttribute("rel");
-      //       const nonStickyElement = document.querySelector('[name="options[Amount]"]');
-      //       const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
+      document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+        el.addEventListener("click", function (e) {
+          if (!preventClick) {
+            preventClick = true;
+            const relValue = e.currentTarget.getAttribute("rel");
+            const nonStickyElement = document.querySelector('[name="options[Amount]"]');
+            const correspondingLi = nonStickyElement.parentNode.querySelector(`ul li[rel='${relValue}']`);
             
-      //       if (correspondingLi) {
-      //         correspondingLi.click();
-      //       }
+            if (correspondingLi) {
+              correspondingLi.click();
+            }
       
-      //       setTimeout(() => {
-      //         preventClick = false;
-      //       }, 100);
-      //     }
-      //   }, true);
-      // });
+            setTimeout(() => {
+              preventClick = false;
+            }, 100);
+          }
+        }, true);
+      });
 
       
       
