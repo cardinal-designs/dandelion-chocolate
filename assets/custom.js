@@ -552,8 +552,8 @@ $(document).ready(function () {
         // });
       
         // // Update delivery-date field
-        // const deliveryDateInput = document.querySelector('#delivery-date');
-        // deliveryDateInput.value = 'immediately';
+        const deliveryDateInput = document.querySelector('#delivery-date');
+        deliveryDateInput.value = 'immediately';
       
         // // Dispatch a change event
         // const changeEvent = new Event('change', {
