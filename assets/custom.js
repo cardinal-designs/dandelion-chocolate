@@ -374,6 +374,13 @@ $('a[href^="#"]').click(function(event) {
   event.preventDefault();
 });
 
+$(function(){
+  // get hash value
+  var hash = window.location.hash;
+  // now scroll to element with that id
+  $('html, body').animate({ scrollTop: $(hash).offset().top });
+});
+
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
   
