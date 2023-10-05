@@ -246,3 +246,12 @@
 .search-drawer .side-panel-close svg path {
   stroke: #A38B55;
 }
+
+@media only screen and (max-width: 767px) {
+
+  .thb-predictive-search--label {
+    display: block;
+    padding: 20px;
+  }
+
+}
