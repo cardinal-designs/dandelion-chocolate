@@ -1891,7 +1891,7 @@ code,
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   scroll-padding-top: calc(var(--logo-height-mobile) + 106px);
   font-size: calc(var(--font-body-scale) * 16px);
 }
