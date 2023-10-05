@@ -529,7 +529,7 @@ $(document).ready(function () {
       function changeOtherForm(currentElements, toBeUpdated){
 
 
-        console.log(currentElements[0].value, toBeUpdated[0].value)
+        console.log(currentElements[1].value, toBeUpdated[1].value)
 
         if(currentElements[0].value == "Email"){
 
