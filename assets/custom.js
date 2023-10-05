@@ -530,87 +530,87 @@ $(document).ready(function () {
       initializeListener(".product-add-to-cart-sticky");
       
 
-      // function changeOtherForm(currentElements) {
-      //   // console.log(currentElements[1].value);
+      function changeOtherForm(currentElements) {
+        // console.log(currentElements[1].value);
       
-      //   const isEmail = currentElements[0].value === "Email";
-      //   const modeClass = isEmail ? "Email" : "";
+        const isEmail = currentElements[0].value === "Email";
+        const modeClass = isEmail ? "Email" : "";
       
-      //   // Toggle class on elements
-      //   document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
-      //     el.classList.remove("Email", "Shipped");
-      //     if(modeClass != "") {
-      //       el.classList.add(modeClass);
-      //     }
-      //   });
-      
-      //   // // Trigger click events on elements with specific attributes
-      //   document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
-      //     el.click();
-      //   });
-      
-      //   // document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
-      //   //   el.click();
-      //   // });
-      
-      //   // // Update delivery-date field
-      //   const deliveryDateInput = document.querySelector('#delivery-date');
-      //   deliveryDateInput.value = 'immediately';
-      
-      //   // // Dispatch a change event
-      //   // const changeEvent = new Event('change', {
-      //   //   bubbles: true,
-      //   //   cancelable: true
-      //   // });
-      //   // deliveryDateInput.dispatchEvent(changeEvent);
-      // }
-
-
-
-      function changeOtherForm(currentElements, toBeUpdated) {
-  console.log(currentElements[1].value, toBeUpdated[1].value);
-
-  // Define a flag to check if event listeners have been attached
-  let eventListenersAttached = false;
-
-  if (currentElements[0].value == "Email") {
-    document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
-      el.classList.add("Email");
-      el.classList.remove("Shipped");
-    });
-
-    document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
-      el.click();
-    });
-
-    // Attach event listeners only once
-    if (!eventListenersAttached) {
-      document.querySelectorAll(`[rel="${currentElements[1].value}"]`).forEach((el) => {
-        el.addEventListener("click", () => {
-          // update delivery-date field
-          const deliveryDateInput = document.querySelector("#delivery-date");
-          deliveryDateInput.value = "immediately";
-          const changeEvent = new Event("change", {
-            bubbles: true,
-            cancelable: true,
-          });
-          deliveryDateInput.dispatchEvent(changeEvent);
+        // Toggle class on elements
+        document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+          el.classList.remove("Email", "Shipped");
+          if(modeClass != "") {
+            el.classList.add(modeClass);
+          }
         });
-      });
+      
+        // // Trigger click events on elements with specific attributes
+        document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+          el.click();
+        });
+      
+        // document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
+        //   el.click();
+        // });
+      
+        // // Update delivery-date field
+        const deliveryDateInput = document.querySelector('#delivery-date');
+        deliveryDateInput.value = 'immediately';
+      
+        // // Dispatch a change event
+        // const changeEvent = new Event('change', {
+        //   bubbles: true,
+        //   cancelable: true
+        // });
+        // deliveryDateInput.dispatchEvent(changeEvent);
+      }
 
-      eventListenersAttached = true;
-    }
-  } else {
-    document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
-      el.classList.add("Shipped");
-      el.classList.remove("Email");
-    });
 
-    document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
-      el.click();
-    });
-  }
-}
+
+      // function changeOtherForm(currentElements, toBeUpdated) {
+      //   console.log(currentElements[1].value, toBeUpdated[1].value);
+      
+      //   // Define a flag to check if event listeners have been attached
+      //   let eventListenersAttached = false;
+      
+      //   if (currentElements[0].value == "Email") {
+      //     document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+      //       el.classList.add("Email");
+      //       el.classList.remove("Shipped");
+      //     });
+      
+      //     document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+      //       el.click();
+      //     });
+      
+      //     // Attach event listeners only once
+      //     if (!eventListenersAttached) {
+      //       document.querySelectorAll(`[rel="${currentElements[1].value}"]`).forEach((el) => {
+      //         el.addEventListener("click", () => {
+      //           // update delivery-date field
+      //           const deliveryDateInput = document.querySelector("#delivery-date");
+      //           deliveryDateInput.value = "immediately";
+      //           const changeEvent = new Event("change", {
+      //             bubbles: true,
+      //             cancelable: true,
+      //           });
+      //           deliveryDateInput.dispatchEvent(changeEvent);
+      //         });
+      //       });
+      
+      //       eventListenersAttached = true;
+      //     }
+      //   } else {
+      //     document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+      //       el.classList.add("Shipped");
+      //       el.classList.remove("Email");
+      //     });
+      
+      //     document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+      //       el.click();
+      //     });
+      //   }
+      // }
 
 
       
@@ -635,17 +635,17 @@ $(document).ready(function () {
       });
 
 
-      //  document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-      //   el.addEventListener("click", function(e){
-      //     document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
-      //   }, true);
-      // })
+       document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+        el.addEventListener("click", function(e){
+          document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+        }, true);
+      })
 
-      // document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
-      //   el.addEventListener("click", function(e){
-      //     document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
-      //   }, true);
-      // })
+      document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+        el.addEventListener("click", function(e){
+          document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+        }, true);
+      })
       
       
       
