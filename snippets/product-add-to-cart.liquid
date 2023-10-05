@@ -53,13 +53,10 @@
 				</div>
 				{%- endif -%}
             {% assign sold_out = false %}
-            {% for tag in  product.tags %}
-              {% if tag == 'force_soldout' %}
-                {% assign sold_out = true %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-          
+            {%- if product_card_product.metafields.info.force_soldout != blank -%}
+              {% assign sold_out = true %}
+            {%- endif %}          
+
           <button type="submit" name="add" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
             <span class="single-add-to-cart-button--text">
               {%- if product.selected_or_first_available_variant.available -%}
