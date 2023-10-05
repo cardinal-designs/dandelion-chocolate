@@ -518,16 +518,16 @@ $(document).ready(function () {
           formElements.prop("disabled", val != "Email");
       }
   
-      function initializeListener(selector) {
-          var digitalGiftCardInput = $(selector + " .variations select");
-          var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
+      // function initializeListener(selector) {
+      //     var digitalGiftCardInput = $(selector + " .variations select");
+      //     var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
   
-          if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
-              digitalGiftCardInput.change(function () {
-                  handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
-              });
-          }
-      }
+      //     if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
+      //         digitalGiftCardInput.change(function () {
+      //             handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
+      //         });
+      //     }
+      // }
   
       initializeListener(".product-information");
       initializeListener(".product-add-to-cart-sticky");
