@@ -581,13 +581,13 @@ $(document).ready(function () {
 
 
 
-      document.querySelectorAll(".product-information .variations select")[1].addEventListener("change", function(e){
-        e.currentTarget.closest("div").querySelector(".select-styled").innerText = e.currentTarget.value;        
-      }, true)
+      // document.querySelectorAll(".product-information .variations select")[1].addEventListener("change", function(e){
+      //   e.currentTarget.closest("div").querySelector(".select-styled").innerText = e.currentTarget.value;        
+      // }, true)
 
-       document.querySelectorAll(".product-add-to-cart-sticky .variations select")[1].addEventListener("change", function(e){
-        e.currentTarget.closest("div").querySelector(".select-styled").innerText = e.currentTarget.value;
-      }, true)
+      //  document.querySelectorAll(".product-add-to-cart-sticky .variations select")[1].addEventListener("change", function(e){
+      //   e.currentTarget.closest("div").querySelector(".select-styled").innerText = e.currentTarget.value;
+      // }, true)
 
       
 
