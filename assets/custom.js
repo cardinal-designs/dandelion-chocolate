@@ -615,7 +615,7 @@ $(document).ready(function () {
             // Reset the flag after a brief delay (adjust the timeout as needed)
             setTimeout(() => {
               preventClick = false;
-            }, 1000);
+            }, 500);
           }
         }, true);
       });
@@ -634,7 +634,7 @@ $(document).ready(function () {
       
             setTimeout(() => {
               preventClickOne = false;
-            }, 1000);
+            }, 500);
           }
         }, true);
       });
