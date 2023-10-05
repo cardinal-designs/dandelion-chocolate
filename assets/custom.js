@@ -629,7 +629,7 @@ $(document).ready(function () {
 
 
 
-      console.log(e.currentTarget);
+      console.log(e.currentTarget.closest("fieldset"));
 
       
       e.stopPropagation();
