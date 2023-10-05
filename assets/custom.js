@@ -610,7 +610,7 @@ function removeClassWhenUpdatesStop(targetElement) {
 }
 
 // Common ancestor element whose child elements you want to observe
-const commonAncestorElement = document.querySelector(".product-form .price");
+const commonAncestorElement = document.querySelector("product-form .price");
 
 // Create a MutationObserver to observe changes in child elements
 const observer = new MutationObserver((mutationsList) => {
