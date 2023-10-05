@@ -617,9 +617,9 @@ $(document).ready(function () {
               preventClick = false;
             }, 100);
 
-            // setTimeout(function(){
-            //   document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
-            // },1000);
+            setTimeout(function(){
+              document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
+            },1800);
             
           }
         }, true);
