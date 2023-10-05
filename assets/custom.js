@@ -327,7 +327,7 @@ $(document).ready(function () {
 
 document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
-    let Id = el.currentTarget.getAttribute('data-col-Id'),
+    let Id = el.currentTarget.getAttribute('href'),
         sectionId = document.querySelector(`[id="${Id}"]`);
     window.scroll({
       top: sectionId.offsetTop - 90,
@@ -346,7 +346,7 @@ document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((el
 
 document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
-    let Id = el.currentTarget.getAttribute('data-col-Id'),
+    let Id = el.currentTarget.getAttribute('href'),
         sectionId = document.querySelector(`[id="${Id}"]`);
     window.scroll({
       top: sectionId.offsetTop - 72,
