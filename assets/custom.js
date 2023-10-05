@@ -582,7 +582,7 @@ $(document).ready(function () {
 
       document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function(e){
-          if(document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered");)
+          if(document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered"))
           document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered");
           document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
         }, true);
