@@ -595,9 +595,11 @@ $(document).ready(function () {
           })
           document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
 
-          document.querySelectorAll(".product-form .price .amount").forEach(el => {
-            el.closest("button").classList.remove('mandatory-hidden');
-          })
+          setTimeout(function(){
+            document.querySelectorAll(".product-form .price .amount").forEach(el => {
+              el.closest("button").classList.remove('mandatory-hidden');
+            })
+          }, 1800);
           
         }, true);
       })
