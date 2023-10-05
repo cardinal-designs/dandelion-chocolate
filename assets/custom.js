@@ -365,7 +365,6 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 //   }
 // })
 
-
 $(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
   $('html, body').animate({
