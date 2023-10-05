@@ -6,7 +6,7 @@
           <input id="side-panel-search-input-mb" type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
         </fieldset>
       </form>
-      <button class="" id="search-results-submit-mobile">{%- render 'svg-icons' with 'search-v2' -%}</button>
+      <button class="" id="search-results-submit">{%- render 'svg-icons' with 'search-v2' -%}</button>
     </div>
   </div>
   {%- if settings.predictive_search_enabled -%}
