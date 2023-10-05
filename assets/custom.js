@@ -602,6 +602,7 @@ $(document).ready(function () {
       document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
         el.addEventListener("click", function (e) {
           if (!preventClick) {
+            document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.add('mandatory-hidden');
             preventClick = true; // Set the flag to prevent further clicks
             const relValue = e.currentTarget.getAttribute("rel");
             const stickyElement = document.querySelector('[name="options[Amount--sticky]"]');
@@ -615,6 +616,11 @@ $(document).ready(function () {
             setTimeout(() => {
               preventClick = false;
             }, 100);
+
+            setTimeout(function(){
+              document.querySelectorAll(".product-form .price .amount")[1].closest(".sticky__add-to-cart").classList.remove('mandatory-hidden');
+            },1000);
+            
           }
         }, true);
       });
