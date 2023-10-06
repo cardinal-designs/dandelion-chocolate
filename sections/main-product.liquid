@@ -632,9 +632,9 @@
                       <dd>
                         {% if product.metafields.info.product_weight_in_grams != blank %}
                           {% assign weight = product.metafields.info.product_weight_in_grams | divided_by: 28.35 %}
-                          <h5>{{ weight | round: 2 }}</h5>
+                          <h5>{{ weight | round }}</h5>
                           
-                          {{ weight }} oz ({{ product.metafields.info.product_weight_in_grams }} g)
+                          {{ weight | round }} oz ({{ product.metafields.info.product_weight_in_grams }} g)
                         {% endif %}
                       
                         {% if product.metafields.custom.product_weight_in_kilo != blank %}
