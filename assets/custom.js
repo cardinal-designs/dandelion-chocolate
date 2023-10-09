@@ -445,7 +445,7 @@ $(document).ready(function() {
 
 document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   ele.addEventListener('click',function(el){
-    let Id = el.currentTarget.getAttribute('data-col-Id'),
+    let Id = el.currentTarget.getAttribute('href'),
         sectionId = document.querySelector(`[id="${Id}"]`);
     window.scroll({
       top: sectionId.offsetTop - 72,
