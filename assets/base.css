@@ -3,14 +3,6 @@
 ==============================================================================*/
 
 /*================ Colors ================*/
-#gorgias-chat-container {
-  right: 50px !important;
-}
-
-#chat-window {
-  right: 50px !important;
-}
-
 :root {
   --dark-gray: #666666;
   --gray: #6B6B6B;
