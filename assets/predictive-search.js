@@ -110,12 +110,18 @@ class PredictiveSearch {
     this.predictiveSearchResults.innerHTML = resultsMarkup;
 
     let _this = this,
-      submitButton = this.container.querySelector('#search-results-submit');
+      submitButton = this.container.querySelector('#search-results-submit-button'),
+      submitButtonMobile = this.container.querySelector('#search-results-submit');
 
 
     submitButton.addEventListener('click', () => {
       _this.form.submit();
     });
+    
+    submitButtonMobile.addEventListener('click', () => {
+      _this.form.submit();
+    });
+    
   }
 
   close() {

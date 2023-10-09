@@ -519,11 +519,14 @@ span.facets__label {
   line-height: 15px;
 }
 
-.template-search .product-card .product-card-title {
-  text-transform: capitalize !important;
-  margin-bottom: 4px !important;
+.template-search .product-card .product-card-title,
+.template-search .product-card .product-card-title div p {
+  text-transform: capitalize!important;
+  margin-bottom: 4px!important;
   font-family: Garamond Premiere Pro;
-  font-weight: 400;
-  letter-spacing: normal;
+  font-size: 24px;
   color: #333;
+  letter-spacing: normal;
+  line-height: normal;
+  font-weight: 400;
 }

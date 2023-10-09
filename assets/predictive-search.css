@@ -31,7 +31,7 @@
   margin-bottom: 30px;
   line-height: 0; }
   .thb-predictive-search--popular scroll-shadow {
-    margin-left: -30px;
+    margin-left: -10px;
     width: calc(100% + 60px); }
   .thb-predictive-search--popular mark {
     background: none;
@@ -127,10 +127,12 @@
 }
 
 .addtocart__small--wrapper {
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
+  margin: 10px 0 0;
+  max-width: 200px;
 }
 
 .search-drawer .product-cart-item {
@@ -243,4 +245,17 @@
 
 .search-drawer .side-panel-close svg path {
   stroke: #A38B55;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .thb-predictive-search--label {
+    display: block;
+    padding: 20px;
+  }
+
+  .thb-predictive-search--popular scroll-shadow {
+    margin-top: 10px;
+  }
+
 }

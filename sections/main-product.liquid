@@ -21,9 +21,9 @@
   assign is_disabled = false
 
   assign ratio = 1
-  assign sizes = '375x375,550x550'
+  assign sizes = '375x375,1200x1200'
   if media_aspect_ratio == 'adapt'
-    assign sizes = '375x0,550x0'
+    assign sizes = '375x0,1200x0'
   elsif media_aspect_ratio == 'portrait'
     assign ratio = 1 | divided_by: 1.25
     assign sizes = '375x469,640x800'
@@ -142,7 +142,7 @@
         {% endfor %}
         {% endcomment %}
         
-        <div class="media__gallery" id="MediaGallery-{{ section.id }}" data-position= "{{ position }}">
+        <div class="media__gallery" id="MediaGallery-{{ section.id }}" data-position= "{{ position }}" data-offset="{{ offsetValue }}">
           <div class="product-image-container">
             <product-slider
               id="Product-Slider"
@@ -627,12 +627,12 @@
                       </dd>
                     {% endif %}
 
-                    {% if product.metafields.info.product_weight_in_grams != blank %}
+                    {% if product.metafields.info.product_weight_in_grams != blank or  product.metafields.info.product_weight_in_kilo %}
                       <dt>WEIGHT</dt>
                       <dd>
                         {% if product.metafields.info.product_weight_in_grams != blank %}
                           {% assign weight = product.metafields.info.product_weight_in_grams | divided_by: 28.35 %}
-                          {{ weight | round: 2 }} oz ({{ product.metafields.info.product_weight_in_grams }} g)
+                          {{ weight | round }} oz ({{ product.metafields.info.product_weight_in_grams }} g)
                         {% endif %}
                       
                         {% if product.metafields.custom.product_weight_in_kilo != blank %}
@@ -674,11 +674,11 @@
                             {% render 'icon-direct-sourced' %}
                           {% elsif bar_icon_name == 'two ingredients' %}
                             {% render 'icon-cocoabean-sugar' %}
-                          {% elsif bar_icon_name == 'peanut free' %}
+                          {% elsif bar_icon_name == 'peanut free' or bar_icon_name == 'peanut-free' %}
                             {% render 'icon-peanut-free' %}
-                          {% elsif bar_icon_name == 'treenut free' or bar_icon_name == 'nut free' %}
+                          {% elsif bar_icon_name == 'treenut free' or bar_icon_name == 'nut free' or bar_icon_name == 'nut-free' or bar_icon_name == 'treenut-free' %}
                             {% render 'icon-treenut-free' %}
-                          {% elsif bar_icon_name == 'dairy' or bar_icon_name == 'dairy free' %}
+                          {% elsif bar_icon_name == 'dairy' or bar_icon_name == 'dairy free' or bar_icon_name == 'dairy-free' %}
                             {% render 'icon-dairy' %}
                           {% elsif bar_icon_name == 'customizable' %}
                             {% render 'icon-customizable' %}
@@ -2326,30 +2326,30 @@
         }
       ]
     },
-		{
+    {
       "type": "sku",
       "name": "SKU",
       "settings": [
-				{
-					"type": "select",
-					"id": "sku_style",
-					"options": [
-						{
-							"value": "style_body",
-							"label": "Body"
-						},
-						{
-							"value": "subheading",
-							"label": "Subheading"
-						},
-						{
-							"value": "style_vendor",
-							"label": "Vendor"
-						}
-					],
-					"default": "style_vendor",
-					"label": "SKU style"
-				}
+        {
+          "type": "select",
+          "id": "sku_style",
+          "options": [
+              {
+                  "value": "style_body",
+                  "label": "Body"
+              },
+              {
+                  "value": "subheading",
+                  "label": "Subheading"
+              },
+              {
+                  "value": "style_vendor",
+                  "label": "Vendor"
+              }
+          ],
+          "default": "style_vendor",
+          "label": "SKU style"
+        }
       ]
     }
   ]
