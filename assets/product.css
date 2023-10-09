@@ -1931,7 +1931,7 @@ product-add-to-cart-sticky .product-digitalgiftcard-form textarea {
   background: transparent;
   max-width: 100%;
   border-radius: 0;
-  cursor: pointer;
+  cursor: auto;
   font-family: Garamond Premiere Pro;
   color: #333;
 }
