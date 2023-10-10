@@ -2910,7 +2910,6 @@ variant-selects .product-form__input .select-arrow {
 .meta__bar--icons {
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
-  justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 14px;
 }
