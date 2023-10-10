@@ -6045,3 +6045,11 @@ input[type="radio"],
   height: 20px;
   background: white;
 }
+
+.styled__checkbox:hover + label:before {
+  background: #f35429;
+}
+
+.styled__checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
