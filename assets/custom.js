@@ -321,7 +321,7 @@ $('a[href^="#"]').click(function(event) {
   $('html, body').animate({
     scrollTop:target
   }, 500);
-  $(this).siblings('.mega-menu-container').css({"visibility": "visible", "opacity": "1", "transform": "translateY(0)"});
+  $(this).siblings('.mega-menu-container').css({"display": "none"});
 });
 
 $(function(){
