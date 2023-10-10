@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   if(document.querySelectorAll(".gift-card-product-js-bind").length > 0){
-    document.querySelector(".gift-card-product-js-bind").addEventListener("click", fucntion(e){
+    document.querySelector(".gift-card-product-js-bind").addEventListener("click", function(e){
       e.preventDefault();
       var selectedDeliveryMethod = e.closest("product-add-to-cart-sticky").querySelector(`[name="options[Delivery Method--sticky]"]`).value;
       if(selectedDeliveryMethod == "Email"){
