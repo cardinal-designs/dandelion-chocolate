@@ -536,10 +536,14 @@ $(document).ready(function () {
         const modeClass = isEmail ? "Email" : "";
       
         // Toggle class on elements
-        document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+        document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {          
           el.classList.remove("Email", "Shipped");
           if(modeClass != "") {
             el.classList.add(modeClass);
+            el.display = "block";
+          }
+          else{
+            el.display = "none";
           }
         });
       
