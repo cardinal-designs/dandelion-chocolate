@@ -6026,7 +6026,8 @@ input[type="radio"],
 }
 
 .styled__checkbox {
-  
+  position: absolute;
+  opacity: 0;
 }
 
 .styled__checkbox  + label {
