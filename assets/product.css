@@ -2909,7 +2909,7 @@ variant-selects .product-form__input .select-arrow {
 
 .meta__bar--icons {
   display: grid;
-  grid-template-columns: repeat(6,16.6%) !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
   column-gap: 30px;
   margin: 20px -20px 14px;
 }
