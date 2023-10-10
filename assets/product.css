@@ -3138,6 +3138,7 @@ variant-selects .product-form__input .select-arrow {
   .meta__bar--icons {
     display: flex;
     flex-wrap: wrap;
+    margin: 20px -10px 14px;
   }
 
   .meta__bar--icons div {
