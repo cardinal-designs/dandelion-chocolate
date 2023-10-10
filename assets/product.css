@@ -3152,5 +3152,9 @@ variant-selects .product-form__input .select-arrow {
   .meta__bar--icons div {
     margin: 0 0 15px !important;
   }
+
+  .meta__bar--icons {
+    max-width: 100%;
+  }
   
 }
