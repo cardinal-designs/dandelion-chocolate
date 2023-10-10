@@ -2910,8 +2910,7 @@ variant-selects .product-form__input .select-arrow {
 .meta__bar--icons {
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
-  margin-top: 20px;
-  margin-bottom: 14px;
+  margin: 20px -20px 14px;
 }
 
 .meta__bar--icons svg,
