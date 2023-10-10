@@ -3748,7 +3748,6 @@ h6,
   visibility: visible;
   opacity: 1;
   transform: translateY(0px);
-  display: block !important;
 }
 
 .thb-full-menu li.menu-item-has-children:hover:before {
