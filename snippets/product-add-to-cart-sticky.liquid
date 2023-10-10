@@ -5,7 +5,7 @@
       {%- if media -%}
         test
         {%- render 'responsive-image', image: media, sizes: '96x96' -%}
-        {{ media | image_tag: width:original | image_url }}
+        {{ media | image_url: width:original |  image_tag }}
       {%- endif -%}
     </div>
     <div class="product-add-to-cart-sticky--info">
