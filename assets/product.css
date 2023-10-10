@@ -2915,7 +2915,7 @@ variant-selects .product-form__input .select-arrow {
 
 .meta__bar--icons svg,
 .meta__bar--icons img {
-  width: 32px;
+  width: 40px;
   filter: invert(60%) sepia(9%) saturate(1645%) hue-rotate(4deg) brightness(93%) contrast(82%);
   vertical-align: middle;
 }
