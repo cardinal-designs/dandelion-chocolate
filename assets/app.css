@@ -6047,10 +6047,6 @@ input[type="radio"],
   border: 1px solid #000000;
 }
 
-.styled__checkbox:hover + label:before {
-  background: #f35429;
-}
-
 .styled__checkbox:focus + label:before {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
@@ -6060,7 +6056,7 @@ input[type="radio"],
   position: absolute;
   left: 5px;
   top: 9px;
-  background: white;
+  background: #000000;
   width: 2px;
   height: 2px;
   box-shadow: 
