@@ -636,7 +636,7 @@ $(document).ready(function () {
       if(document.querySelectorAll(".gift-card-product-js-bind").length > 0){
         document.querySelector(".gift-card-product-js-bind").addEventListener("click", function(e){
           e.preventDefault();
-          var selectedDeliveryMethod = e.closest("product-add-to-cart-sticky").querySelector(`[name="options[Delivery Method--sticky]"]`).value;
+          var selectedDeliveryMethod = e.currentTarget.closest("product-add-to-cart-sticky").querySelector(`[name="options[Delivery Method--sticky]"]`).value;
           if(selectedDeliveryMethod == "Email"){
             $("html, body").animate({ scrollTop: 0 }, "slow");
           }
