@@ -66,7 +66,7 @@
               <div class="product-add-to-cart-container">
                   <div class="form-notification error" style="display:none;"></div>
                 <div class="add_to_cart_holder">
-                  <button type="submit" name="add" id="AddToCartSticky" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
+                  <button {% unless product.id == 171066294299 or product.id == 1871046574150 %} type="submit" name="add" id="AddToCartSticky" form="{{ product_form_id }}" {% else %} type="button" {% endunless %} class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                     <span class="single-add-to-cart-button--text">
                       {%- if product.selected_or_first_available_variant.available -%}
                         {{ 'products.product.add_to_cart' | t }} 
