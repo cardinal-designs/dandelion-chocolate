@@ -641,9 +641,7 @@ $(document).ready(function () {
             $("html, body").animate({ scrollTop: 0 }, "slow");
           }
           else{
-            var AddProdToCartEl = document.querySelector(`.product-information [form='${ e.currentTarget.dataset.form_id }'][type='submit']`);
-            const clickEvent = new Event('click');
-            AddProdToCartEl.dispatchEvent(clickEvent);
+            document.querySelector(`.product-information [form='${ e.currentTarget.dataset.form_id }'][type='submit']`).click();
           }
         })
       }
