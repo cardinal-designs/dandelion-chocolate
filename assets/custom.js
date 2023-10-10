@@ -322,7 +322,6 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
   $('html, body').animate({
     scrollTop:target
   }, 500);
-
 });
 
 $(function(){
