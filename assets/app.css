@@ -6024,3 +6024,13 @@ input[type="radio"],
 #chat-button {
   right: 0px !important;
 }
+
+.styled__checkbox {
+  
+}
+
+.styled__checkbox  + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
