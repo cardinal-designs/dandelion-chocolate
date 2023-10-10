@@ -317,7 +317,7 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
   $('.mega-menu-container').addClass('hidden');
   setTimeout(function() { 
     $('.mega-menu-container').removeClass('hidden');
-  }, 2000);
+  }, 500);
   
   event.preventDefault();
   var id = $(this).attr("href");
