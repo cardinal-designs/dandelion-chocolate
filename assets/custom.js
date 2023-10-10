@@ -501,7 +501,10 @@ $(document).ready(function () {
       function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
           var val = digitalGiftCardInput.val();
           if (val == "Email") {
-              digitalGiftCardForm.addClass("Email").removeClass("Shipped");
+
+            
+            
+            digitalGiftCardForm.addClass("Email").removeClass("Shipped");
             $('#delivery-date').val('immediately').trigger('change');
           } else {
               digitalGiftCardForm.removeClass("Email").addClass("Shipped");
