@@ -4580,6 +4580,10 @@ select.resize-select {
   position: relative;
 }
 
+.searchform fieldset input:focus-visible {
+  outline: none;
+}
+
 .searchform fieldset input {
   width: 100%;
   margin: 0;
