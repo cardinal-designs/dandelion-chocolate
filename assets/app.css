@@ -3750,6 +3750,10 @@ h6,
   transform: translateY(0px);
 }
 
+.mega-menu-container.hidden {
+  display: none;
+}
+
 .thb-full-menu li.menu-item-has-children:hover:before {
   content: attr(data-item-title);
   position: absolute;
