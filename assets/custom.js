@@ -315,7 +315,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 // Click event for any anchor tag that's href starts with #
 $('a[href^="#"]').click(function(event) {
   console.log('Test');
-  $(this).parent('.mega-menu-container').css({"display": "none"});
+  $(this).parents('.mega-menu-container').css({"display": "none"});
   event.preventDefault();
   var id = $(this).attr("href");
   var offset = 0;
