@@ -2920,6 +2920,10 @@ variant-selects .product-form__input .select-arrow {
   vertical-align: middle;
 }
 
+.meta__bar--icons.bar-icons p {
+  margin-top: 6px !important;  
+}
+
 .meta__bar--icons div {
   text-align: center;
   margin-bottom: 6px;
