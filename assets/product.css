@@ -887,8 +887,8 @@
     transform: translateX(0%); }
   @media only screen and (min-width: 768px) {
     .product-add-to-cart-sticky {
-      bottom: 110px;
-      right: 30px; } }
+      bottom: 28px;
+      right: 80px; } }
   .product-add-to-cart-sticky--image {
     width: 48px;
     margin-right: 16px;
