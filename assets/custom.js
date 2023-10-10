@@ -314,6 +314,8 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 
 // Click event for any anchor tag that's href starts with #
 $('a[href^="#"]').click(function(event) {
+  console.log('Test');
+  $(this).siblings('.mega-menu-container').css({"display": "none"});
   event.preventDefault();
   var id = $(this).attr("href");
   var offset = 0;
@@ -321,7 +323,7 @@ $('a[href^="#"]').click(function(event) {
   $('html, body').animate({
     scrollTop:target
   }, 500);
-  $(this).siblings('.mega-menu-container').css({"display": "none"});
+
 });
 
 $(function(){
