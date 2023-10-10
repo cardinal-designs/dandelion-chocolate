@@ -315,6 +315,10 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 // Click event for any anchor tag that's href starts with #
 $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event) {
   $('.mega-menu-container').addClass('hidden');
+  setTimeout(function() { 
+    $('.mega-menu-container').removeClass('hidden');
+  }, 2000);
+  
   event.preventDefault();
   var id = $(this).attr("href");
   var offset = 0;
