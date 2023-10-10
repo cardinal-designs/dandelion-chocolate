@@ -3751,7 +3751,7 @@ h6,
 }
 
 .mega-menu-container.hidden {
-  display: none;
+  display: none !important;
 }
 
 .thb-full-menu li.menu-item-has-children:hover:before {
