@@ -13,8 +13,7 @@ $(window).on("load resize orientationchange", function(){
     var flkty = new Flickity( elem, {
       prevNextButtons: false,
       pageDots: false,
-      adaptiveHeight: false,
-      contain: true,
+      adaptiveHeight: false,      contain: true,
       wrapAround: true,
       groupCells: true
     });
@@ -141,6 +140,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
   window.addEventListener('click', windowClickHandler);
+
+
+  if(document.querySelectorAll(".gift-card-product-js-bind").length > 0){
+    document.querySelector(".gift-card-product-js-bind").addEventListener("click", fucntion(e){
+      e.preventDefault();
+      var selectedDeliveryMethod = e.closest("product-add-to-cart-sticky").querySelector(`[name="options[Delivery Method--sticky]"]`).value;
+      if(selectedDeliveryMethod == "Email"){
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+      }
+    })
+  }
   
 });
 
