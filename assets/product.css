@@ -2922,7 +2922,8 @@ variant-selects .product-form__input .select-arrow {
 }
 
 .meta__bar--icons.bar-icons p {
-  margin-top: 6px !important;  
+  margin-top: 6px !important;
+  line-height: 100% !important;
 }
 
 .meta__bar--icons div {
