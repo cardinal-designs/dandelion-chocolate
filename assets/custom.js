@@ -641,9 +641,9 @@ $(document).ready(function () {
             $("html, body").animate({ scrollTop: 0 }, "slow");
           }
           else{
-
-            console.log(e.currentTarget.dataset.form_id);
-            
+            setTimeout(function(){
+              document.querySelector(`.product-information [form='${ e.currentTarget.dataset.form_id }'][type='submit']`).click();
+            }, 100)
           }
         })
       }
