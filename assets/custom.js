@@ -140,17 +140,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
   window.addEventListener('click', windowClickHandler);
-
-
-  if(document.querySelectorAll(".gift-card-product-js-bind").length > 0){
-    document.querySelector(".gift-card-product-js-bind").addEventListener("click", function(e){
-      e.preventDefault();
-      var selectedDeliveryMethod = e.closest("product-add-to-cart-sticky").querySelector(`[name="options[Delivery Method--sticky]"]`).value;
-      if(selectedDeliveryMethod == "Email"){
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-      }
-    })
-  }
   
 });
 
@@ -643,6 +632,16 @@ $(document).ready(function () {
           changeOtherForm(digitalGiftCardForm, digitalGiftCardInput)
         }, true)
       });
+
+      if(document.querySelectorAll(".gift-card-product-js-bind").length > 0){
+        document.querySelector(".gift-card-product-js-bind").addEventListener("click", function(e){
+          e.preventDefault();
+          var selectedDeliveryMethod = e.closest("product-add-to-cart-sticky").querySelector(`[name="options[Delivery Method--sticky]"]`).value;
+          if(selectedDeliveryMethod == "Email"){
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+          }
+        })
+      }
 
 
        document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
