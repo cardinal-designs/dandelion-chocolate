@@ -316,7 +316,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event) {
   $('.mega-menu-container').addClass('hidden');
 
-  setTimeout(function() { 
+  setTimeout(function() {
     $('.mega-menu-container').removeClass('hidden');
   }, 500);
   
