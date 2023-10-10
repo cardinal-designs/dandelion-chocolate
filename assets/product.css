@@ -3142,7 +3142,7 @@ variant-selects .product-form__input .select-arrow {
     margin-bottom: 34px;
   }
 
-  .meta__bar--icons {
+  body .bar-icons.meta__bar--icons {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
     column-gap: 16px;
   }
