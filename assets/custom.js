@@ -530,7 +530,7 @@ $(document).ready(function () {
       
 
       function changeOtherForm(currentElements) {
-        // console.log(currentElements[1].value);
+        console.log(currentElements[1].value);
       
         const isEmail = currentElements[0].value === "Email";
         const modeClass = isEmail ? "Email" : "";
