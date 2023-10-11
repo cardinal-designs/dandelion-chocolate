@@ -117,6 +117,12 @@
         "default": "1500"
       },
       {
+        "type": "text",
+        "id": "autoplay_speed_mobile",
+        "label": "Autoplay Speed Mobile",
+        "default": "2500"
+      },
+      {
         "type": "header",
         "content": "Spacing"
       },
@@ -179,6 +185,16 @@
     adaptiveHeight: false,
     {% if section.settings.autoplay %}
       autoPlay: {{ section.settings.autoplay_speed }}
-    {% endif %}
+    {% endif %},
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          {% if section.settings.autoplay %}
+            autoPlay: {{ section.settings.autoplay_speed_mobile }}
+          {% endif %}
+        }
+      }
+    ]
   });
 </script>
