@@ -187,9 +187,9 @@ const carousel = new FlickityResponsive('.carousel__quotes--inner', {
   {% endif %}
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 767,
       settings: {
-        prevNextButtons: false,
+        autoPlay: {{ section.settings.autoplay_speed_mobile }},
       }
     }
   ]
