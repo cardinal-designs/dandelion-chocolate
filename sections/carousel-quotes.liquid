@@ -183,7 +183,7 @@ const carousel = new FlickityResponsive('.carousel__quotes--inner', {
   pageDots: false,
   adaptiveHeight: false,
   {% if section.settings.autoplay %}
-    autoPlay: {{ section.settings.autoplay_speed }}
+    autoPlay: {{ section.settings.autoplay_speed }},
   {% endif %}
   responsive: [
     {
