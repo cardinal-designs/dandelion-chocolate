@@ -71,7 +71,7 @@
       {%- endif -%}
     </a>
     {% if quickview_cartbutton == 'addtocart' %}
-        <product-form class="product-form {% if hide_cta_mobile == true %}hide-mobile{% endif %}" data-section="{{ section.id }}--{{ product_card_product.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
+      <product-form class="product-form {% if hide_cta_mobile == true %}hide-mobile{% endif %}" data-section="{{ section.id }}--{{ product_card_product.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
           <div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
             {% render 'svg-icons' with 'thb-error' %}
             <span class="product-form__error-message"></span>
@@ -141,7 +141,7 @@
             </div>
           {%- endform -%}
         </product-form>
-     {% endif %}
+    {% endif %}
   </figure>
   <div class="product-card-info">
     {%- if show_vendor -%}
