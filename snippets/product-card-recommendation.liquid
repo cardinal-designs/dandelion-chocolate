@@ -68,10 +68,10 @@
               <div class="form-notification error" style="display:none;"></div>
               <div class="add_to_cart_holder {% if settings.show_secondary_btn_hover %}secondary__hover--enabled{% endif %}">
                 {%- if block.settings.show_quantity_selector -%}
-                    <div id="quantity-{{ section.id }}" {{ block.shopify_attributes }}>
+                  <div id="quantity-{{ section.id }}" {{ block.shopify_attributes }}>
                      <quantity-selector class="quantity">
                         <button class="minus" type="button" aria-label="{{ 'products.product.quantity.decrease' | t: product_card_product: product_card_product.title | escape }}">
-                            {% render 'svg-icons' with 'minus' %}
+                          {% render 'svg-icons' with 'minus' %}
                         </button>
                        <input
                           type="number"
@@ -102,23 +102,22 @@
                       <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button button outline {% unless product_card_product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                         <span class="single-add-to-cart-button--text">
                         {%- if product_card_product.selected_or_first_available_variant.available -%}
-  
                           {{ 'products.product.quick_add' | t }}
                         {%- else -%}
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
                         </span>
                         <span class="loading-overlay">
-                            {% render 'svg-icons' with 'thb-loading' %}
+                          {% render 'svg-icons' with 'thb-loading' %}
                         </span>
                       </button>
                     {% else %}
-                      <button type="submit" name="add" class="single-add-to-cart-button button outline sold-out" disabled form="{{ product_form_id }}">
-                        <span class="single-add-to-cart-button--text">
-                          {{ 'products.product.sold_out' | t }}
-                        </span>
-                      </button>            
-                    {% endunless %}
+                    <button type="submit" name="add" class="single-add-to-cart-button button outline sold-out" disabled form="{{ product_form_id }}">
+                      <span class="single-add-to-cart-button--text">
+                        {{ 'products.product.sold_out' | t }}
+                      </span>
+                    </button>            
+                  {% endunless %}
               </div>
             </div>
           {%- endform -%}
