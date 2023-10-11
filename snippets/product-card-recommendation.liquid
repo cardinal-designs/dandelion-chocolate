@@ -86,7 +86,7 @@
               {%- render 'gift-card-recipient-form', product: product_card_product, form: form, section: section -%}
             {%- endif -%}
             <div class="product-add-to-cart-container">
-                <div class="form-notification error" style="display:none;"></div>
+              <div class="form-notification error" style="display:none;"></div>
               <div class="add_to_cart_holder {% if settings.show_secondary_btn_hover %}secondary__hover--enabled{% endif %}">
                 {%- if block.settings.show_quantity_selector -%}
                     <div id="quantity-{{ section.id }}" {{ block.shopify_attributes }}>
@@ -113,18 +113,33 @@
                     </div>
                     {%- endif -%}
                     {% assign hide_cta_mobile = hide_cta_mobile %}
-                    <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button button outline {% unless product_card_product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
-                      <span class="single-add-to-cart-button--text">
-                      {%- if product_card_product.selected_or_first_available_variant.available -%}
-                        {{ 'products.product.add_to_cart' | t }}
-                      {%- else -%}
-                        {{ 'products.product.sold_out' | t }}
-                      {%- endif -%}
-                      </span>
-                      <span class="loading-overlay">
-                          {% render 'svg-icons' with 'thb-loading' %}
-                      </span>
-                    </button>
+
+                    {% assign sold_out = false %}
+                    {% if product_card_product.metafields.info.force_soldout == true %}
+                      {% assign sold_out = true %}
+                    {% endif %}
+            
+                    {% unless sold_out == true %}
+                      <button type="submit" name="add" id="AddToCart" class="single-add-to-cart-button button outline {% unless product_card_product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                        <span class="single-add-to-cart-button--text">
+                        {%- if product_card_product.selected_or_first_available_variant.available -%}
+  
+                          {{ 'products.product.quick_add' | t }}
+                        {%- else -%}
+                          {{ 'products.product.sold_out' | t }}
+                        {%- endif -%}
+                        </span>
+                        <span class="loading-overlay">
+                            {% render 'svg-icons' with 'thb-loading' %}
+                        </span>
+                      </button>
+                    {% else %}
+                      <button type="submit" name="add" class="single-add-to-cart-button button outline sold-out" disabled form="{{ product_form_id }}">
+                        <span class="single-add-to-cart-button--text">
+                          {{ 'products.product.sold_out' | t }}
+                        </span>
+                      </button>            
+                    {% endunless %}
               </div>
             </div>
           {%- endform -%}
