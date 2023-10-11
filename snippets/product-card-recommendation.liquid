@@ -63,15 +63,15 @@
           </button>
         {% endif %}
       
-			{%- if products_hover_images and product_card_product.images.size > 1 and settings.products_hover_dots -%}
-				<ul class="product-secondary-images-nav">
-        {%- for i in (1..products_hover_images_count) -%}
-					{%- if product_card_product.images[i] -%}
-          <li></li>
-					{%- endif -%}
-        {%- endfor %}
-				</ul>
-      {%- endif -%}
+        {%- if products_hover_images and product_card_product.images.size > 1 and settings.products_hover_dots -%}
+          <ul class="product-secondary-images-nav">
+            {%- for i in (1..products_hover_images_count) -%}
+              {%- if product_card_product.images[i] -%}
+                <li></li>
+              {%- endif -%}
+            {%- endfor %}
+          </ul>
+        {%- endif -%}
     </a>
     {% if quickview_cartbutton == 'addtocart' %}
         <product-form class="product-form {% if hide_cta_mobile == true %}hide-mobile{% endif %}" data-section="{{ section.id }}--{{ product_card_product.id }}" data-hide-errors="{{ gift_card_recipient_feature_active }}">
