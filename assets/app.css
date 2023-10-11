@@ -5981,6 +5981,16 @@ input[type="radio"],
 
 /***** Cart Drawer End *****/
 
+.product-card .product-card-title * {
+  font-family: Garamond Premiere Pro;
+  font-size: 24px;
+  color: #333;
+  letter-spacing: normal;
+  line-height: normal;
+  font-weight: 400;
+  text-transform: initial;
+}
+
 .template-search .hide-search {
   display: none !important;
 }
