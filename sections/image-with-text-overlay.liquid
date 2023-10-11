@@ -27,7 +27,7 @@
 			assign mobile_image_height = 500
 	endcase
 -%}
-<div class="row {{ section_width }} {{ section.settings.custom_class }}">
+<div id="{{ section.id }}" class="row {{ section_width }} {{ section.settings.custom_class }}">
 	<div class="small-12 columns">
 		<image-with-text-overlay class="image_with--text-overlay image-with-text-overlay {% if section.settings.stack_on_mobile %}stack_on_mobile{% endif %} text-{{ text_alignment }} {{ mobile_height }} {{ desktop_height }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}{% if section.settings.caption_over_banner %} caption-over--mobile{% endif %}" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
 			<div class="image-with-text-overlay--bg">
@@ -86,23 +86,27 @@
     		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
                       {%- endcase -%}
                         {% style %}
-                          .image-with-text-overlay--content .caption {
+                          #{{ section.id }} .image-with-text-overlay--content .caption {
                             color: {{ block.settings.subheading_color }};
                           }
-                          .image-with-text-overlay--content .heading {
+                          
+                          #{{ section.id }} .image-with-text-overlay--content .heading {
                             color: {{ block.settings.heading_color }};
                           }
-                          .image-with-text-overlay--content .rte {
+                          
+                          #{{ section.id }} .image-with-text-overlay--content .rte {
                             color: {{ block.settings.description_color }};
                           }
                           @media screen and (max-width: 767px) {
-                            .image-with-text-overlay--content .caption {
+                            #{{ section.id }} .image-with-text-overlay--content .caption {
                               color: {{ block.settings.subheading_color_mobile }};
                             }
-                            .image-with-text-overlay--content .heading {
+                            
+                            #{{ section.id }} .image-with-text-overlay--content .heading {
                               color: {{ block.settings.heading_color_mobile }};
                             }
-                            .image-with-text-overlay--content .rte {
+                            
+                            #{{ section.id }} .image-with-text-overlay--content .rte {
                               color: {{ block.settings.description_color_mobile }};
                             }
                           }
