@@ -178,15 +178,15 @@
 {% endschema %}
 
 <script>
-  var elem = document.querySelector('.carousel__quotes--inner');
-  var flkty = new Flickity( elem, {
-    prevNextButtons: true,
-    pageDots: false,
-    adaptiveHeight: false,
-    {% if section.settings.autoplay %}
-      autoPlay: {{ section.settings.autoplay_speed }}
-    {% endif %}
-  });
+  // var elem = document.querySelector('.carousel__quotes--inner');
+  // var flkty = new Flickity( elem, {
+  //   prevNextButtons: true,
+  //   pageDots: false,
+  //   adaptiveHeight: false,
+  //   {% if section.settings.autoplay %}
+  //     autoPlay: {{ section.settings.autoplay_speed }}
+  //   {% endif %}
+  // });
 
 const carousel = new FlickityResponsive('.carousel__quotes--inner', {
   pageDots: false,
