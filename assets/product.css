@@ -1934,6 +1934,7 @@ product-add-to-cart-sticky .product-digitalgiftcard-form textarea {
   cursor: auto;
   font-family: Garamond Premiere Pro;
   color: #333;
+  border: 1px solid #DEDEDE;
 }
 
 product-add-to-cart-sticky .product-digitalgiftcard-form .digitalgiftcard__deliverytime {
