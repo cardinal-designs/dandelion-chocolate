@@ -2657,7 +2657,7 @@ textarea:-ms-input-placeholder {
   font-size: 14px;
 }
 
-body input[type="text"]:placeholder {
+body input[type="text"]::placeholder {
   opacity: 1 !important;
   color: #333333 !important;
   display: block !important;
@@ -2665,9 +2665,9 @@ body input[type="text"]:placeholder {
   font-size: 14px;
 }
 
-input[type="text"]::placeholder {
+/* input[type="text"]::placeholder {
   color: red;
-}
+} */
 
 @media only screen and (min-width: 768px) { 
   
