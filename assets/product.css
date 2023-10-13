@@ -2665,10 +2665,6 @@ body input[type="text"]::placeholder {
   font-size: 14px;
 }
 
-/* input[type="text"]::placeholder {
-  color: red;
-} */
-
 @media only screen and (min-width: 768px) { 
   
   .merch__icons.multi__merch--icons {
