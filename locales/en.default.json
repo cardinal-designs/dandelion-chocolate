@@ -147,7 +147,7 @@
     },
     "giftcard": {
       "email-immediate": "Email gift cards are delivered immediately upon checkout.",
-      "to": "To",
+      "to": "Your Recipient’s Email",
       "to_placeholder": "Your Recipient’s Name",
       "to_email": "your recipient’s email",
       "note": "Message",
