@@ -2107,7 +2107,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 .variations .select-styled {
   border: 1px solid var(--color-form-border);
   padding: 14px 17px 14px;
-  height: 50px;
+  height: 45px;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
@@ -2221,6 +2221,10 @@ variant-selects .product-form__input .select-arrow {
 .product-digitalgiftcard-form input,
 .product-digitalgiftcard-form textarea {
   width: 100%;
+}
+
+.product-digitalgiftcard-form textarea {
+  min-height: 147px;
 }
 
 .product-digitalgiftcard-form input:focus-visible,
