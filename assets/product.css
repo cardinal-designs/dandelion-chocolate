@@ -2354,6 +2354,10 @@ variant-selects .product-form__input .select-arrow {
     margin-bottom: 28px;
   }
 
+  .variations fieldset {
+    margin: 0px 0 28px;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -2363,8 +2367,6 @@ variant-selects .product-form__input .select-arrow {
   }
     
 }
-
-
 
 /* Metafield css updates */
 
