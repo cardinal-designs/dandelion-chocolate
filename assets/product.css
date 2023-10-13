@@ -2644,7 +2644,7 @@ input[type="email"]::-webkit-input-placeholder,
 textarea:-moz-placeholder,
 textarea::-webkit-input-placeholder,
 textarea:-ms-input-placeholder {
-  opacity: 1
+  opacity: 1;
   color: #333333;
   display: block;
 }
