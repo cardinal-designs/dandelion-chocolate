@@ -21,15 +21,15 @@
   <div class="product-digitalgiftcard-form {{kind | replace: ' ', '-' }}">  
     <div>
       <label for="name">{{'products.giftcard.your_name' | t}}</label>
-      <input type="text" id="from" name="properties[name]" placeholder="{{'products.giftcard.your_name_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
+      <input type="text" id="name" name="properties[name]" placeholder="{{'products.giftcard.your_name_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
     </div>
     <div>
       <label for="recipient_name">{{'products.giftcard.recipient_name' | t}}</label>
-      <input type="text" id="from" name="properties[recipient_name]" placeholder="{{'products.giftcard.recipient_name_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
+      <input type="text" id="recipient_name" name="properties[recipient_name]" placeholder="{{'products.giftcard.recipient_name_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
     </div>
     <div>
       <label for="email">{{'products.giftcard.recipient_email' | t}}</label>
-      <input type="email" id="to" name="properties[email]" placeholder="{{'products.giftcard.recipient_email_placeholder' | t}}" required form="{{ product_form_id }}">
+      <input type="email" id="email" name="properties[email]" placeholder="{{'products.giftcard.recipient_email_placeholder' | t}}" required form="{{ product_form_id }}">
     </div>
     <div>
       <label for="note">{{'products.giftcard.note' | t}}</label>
