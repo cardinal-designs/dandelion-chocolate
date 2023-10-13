@@ -156,7 +156,8 @@
       "from_placeholder": "Your Name",
       "recipient_placeholder": "e.g. Sarah",
       "recipient_email": "name@email.com",
-      "name_placeholder": "So your recipient knows who their gift is from ..."
+      "name_placeholder": "So your recipient knows who their gift is from ...",
+      "message_placeholder": "This will be displayed in the email to your recipient (500 character max)"
     },
     "facets": {
       "apply": "Apply",

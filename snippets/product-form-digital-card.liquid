@@ -33,7 +33,7 @@
     </div>
     <div>
       <label for="note">{{'products.giftcard.note' | t}}</label>
-      <textarea type="text" id="note" maxlength="500" name="properties[message]" placeholder="{{'products.giftcard.note_placeholder' | t}}" required form="{{ product_form_id }}"></textarea>
+      <textarea type="text" id="note" maxlength="500" name="properties[message]" placeholder="{{'products.giftcard.message_placeholder' | t}}" required form="{{ product_form_id }}"></textarea>
     </div>
     <label class="digitalgiftcard__deliverytime">{{'products.giftcard.email-immediate' | t}}</label> 
     {% unless stickySection %}<input type="hidden" id="delivery-date" name="properties[delivers]" value="immediately" form="{{ product_form_id }}">{% endunless %}
