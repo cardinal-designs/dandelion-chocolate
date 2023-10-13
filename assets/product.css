@@ -2248,12 +2248,14 @@ variant-selects .product-form__input .select-arrow {
 }
 
 .product-digitalgiftcard-form .digitalgiftcard__deliverytime {
+  font-family: Garamond Premier Pro;
+  font-size: 16px;
   font-style: italic;
-  font-family: Garamond Premiere Pro;
-  text-transform: capitalize;
-  letter-spacing: 0;
-  font-size: .9375rem;
-  color: var(--charcoal-black);
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  color: #A28D5B;
+  text-transform: inherit;
 }
 
 .product-digitalgiftcard-form div:nth-last-child(3) {
