@@ -20,7 +20,7 @@
     {% endfor %}  
   <div class="product-digitalgiftcard-form {{kind | replace: ' ', '-' }}">  
     <div>
-      <label for="from">{{'products.giftcard.from' | t}}</label>
+      <label for="from">{{'products.giftcard.from_placeholder' | t}}</label>
       <input type="text" id="from" name="properties[from]" placeholder="{{'products.giftcard.from_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
     </div>
     <div>
