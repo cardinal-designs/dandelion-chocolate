@@ -2646,6 +2646,8 @@ input[type="email"]::placeholder,
 textarea::placeholder {
   color: #94949C;
   font-family: 'AGaramondPro';
+  font-size: 16px;
+  line-height: normal;
 }
 
 @media only screen and (min-width: 768px) { 
