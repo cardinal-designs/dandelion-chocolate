@@ -1921,20 +1921,21 @@ product-add-to-cart-sticky .product-digitalgiftcard-form textarea {
   margin: 0;
 }
 
-.product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea {
+.product-digitalgiftcard-form input,
+.product-digitalgiftcard-form textarea {
   padding: 14px 17px;
   height: 45px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
   letter-spacing: .02em;
   background: transparent;
   max-width: 100%;
   border-radius: 0;
   cursor: auto;
-  font-family: Garamond Premiere Pro;
-  color: #333;
   border: 1px solid #DEDEDE;
+  color: #94949C;
+  font-family: 'AGaramondPro';
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
 }
 
 .product-digitalgiftcard-form textarea {
