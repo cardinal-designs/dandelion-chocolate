@@ -146,7 +146,7 @@
       "xr_button_label": "View in your space, loads item in augmented reality window"
     },
     "giftcard": {
-      "email-immediate": "Email gift cards are delivered immediately upon checkout.",
+      "email-immediate": "Virtual gift cards are emailed immediately upon checkout.",
       "recipient_email": "Your Recipient’s Email",
       "recipient_name": "Your Recipient’s Name",
       "note": "GIFT MESSAGE",
