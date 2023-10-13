@@ -2641,28 +2641,11 @@ variant-selects .product-form__input .select-arrow {
   padding-bottom: 100%;
 }
 
-input[type="text"]:-moz-placeholder,
-input[type="text"]:-ms-input-placeholder,
-input[type="text"]::-webkit-input-placeholder,
-input[type="email"]:-ms-input-placeholder ,
-input[type="email"]:-moz-placeholder,
-input[type="email"]::-webkit-input-placeholder,
-textarea:-moz-placeholder,
-textarea::-webkit-input-placeholder,
-textarea:-ms-input-placeholder {
-  opacity: 1 !important;
-  color: #333333 !important;
-  display: block !important;
-  visibility: visible !important;
-  font-size: 14px;
-}
-
-body input[type="text"]::placeholder {
-  opacity: 1 !important;
-  color: #333333 !important;
-  display: block !important;
-  visibility: visible !important;
-  font-size: 14px;
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #94949C;
+  font-family: 'AGaramondPro';
 }
 
 @media only screen and (min-width: 768px) { 
