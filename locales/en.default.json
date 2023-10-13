@@ -155,6 +155,7 @@
       "from_label": "Your Name",
       "from_placeholder": "Your Name",
       "recipient_placeholder": "e.g. Sarah",
+      "recipient_email": "name@email.com",
       "name_placeholder": "So your recipient knows who their gift is from ..."
     },
     "facets": {
