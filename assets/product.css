@@ -2233,13 +2233,13 @@ variant-selects .product-form__input .select-arrow {
   display: flex;
   width: 100%;
   align-items: center;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   font-family: Saa Series F D;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 18px;
-  letter-spacing: .15em;
+  line-height: 15.6px;
+  letter-spacing: .10em;
   color: #777779;
 }
 
