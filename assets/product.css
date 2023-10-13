@@ -1937,6 +1937,10 @@ product-add-to-cart-sticky .product-digitalgiftcard-form textarea {
   border: 1px solid #DEDEDE;
 }
 
+.product-digitalgiftcard-form textarea {
+  margin-bottom: 19px;  
+}
+
 product-add-to-cart-sticky .product-digitalgiftcard-form .digitalgiftcard__deliverytime {
   margin-bottom: 15px;
 }
