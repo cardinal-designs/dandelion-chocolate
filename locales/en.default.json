@@ -149,6 +149,7 @@
       "email-immediate": "Email gift cards are delivered immediately upon checkout.",
       "to": "To",
       "to_placeholder": "Your Recipient’s Name",
+      "to_email": "your recipient’s email",
       "note": "Message",
       "note_placeholder": "Your gift message (500 character max)",
       "from": "From",
