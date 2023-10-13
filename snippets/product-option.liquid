@@ -14,6 +14,7 @@
 				id="Option-{{ section.id }}-{{ forloop.index0 }}{{ appended }}"
 				name="options[{{ option.name | escape | append: appended }}]"
 				form="{{ product_form_id }}"
+              class="select__class"
 			>
 		    {%- for value in option.values -%}
 		      <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
