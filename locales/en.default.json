@@ -152,7 +152,9 @@
       "note": "GIFT MESSAGE",
       "note_placeholder": "Your gift message (500 character max)",
       "from": "From",
-      "from_label": "Your Name"
+      "from_label": "Your Name",
+      "from_placeholder": "Your Name",
+      "to_placeholder": "Your Name"
     },
     "facets": {
       "apply": "Apply",
