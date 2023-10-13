@@ -154,8 +154,8 @@
       "from": "From",
       "from_label": "Your Name",
       "your_name": "Your Name",
-      "recipient_placeholder": "e.g. Sarah",
-      "recipient_email": "name@email.com",
+      "recipient_name_placeholder": "e.g. Sarah",
+      "recipient_email_placeholder": "name@email.com",
       "your_name_placeholder": "So your recipient knows who their gift is from ...",
       "message_placeholder": "This will be displayed in the email to your recipient (500 character max)"
     },
