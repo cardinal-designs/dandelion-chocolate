@@ -2267,6 +2267,7 @@ variant-selects .product-form__input .select-arrow {
   letter-spacing: 0.32px;
   color: #A28D5B;
   text-transform: inherit;
+  margin-top: 10px;
 }
 
 .product-digitalgiftcard-form div:nth-last-child(3) {
