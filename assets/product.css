@@ -2248,9 +2248,8 @@ variant-selects .product-form__input .select-arrow {
 }
 
 .product-digitalgiftcard-form .digitalgiftcard__deliverytime {
-  font-family: Garamond Premier Pro;
   font-size: 16px;
-  font-style: italic;
+  font-family: 'AGaramondPro'
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.32px;
