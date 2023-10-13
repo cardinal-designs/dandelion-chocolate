@@ -2646,9 +2646,11 @@ input[type="email"]::-webkit-input-placeholder,
 textarea:-moz-placeholder,
 textarea::-webkit-input-placeholder,
 textarea:-ms-input-placeholder {
-  opacity: 1;
-  color: #333333;
-  display: block;
+  opacity: 1 !important;
+  color: #333333 !important;
+  display: block !important;
+  visibility: visible !important;
+  font-size: 14px;
 }
 
 body input[type="text"]:placeholder {
