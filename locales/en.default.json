@@ -152,7 +152,6 @@
       "note": "GIFT MESSAGE",
       "note_placeholder": "Your gift message (500 character max)",
       "from": "From",
-      "from_label": "Your Name",
       "your_name": "Your Name",
       "recipient_name_placeholder": "e.g. Sarah",
       "recipient_email_placeholder": "name@email.com",
