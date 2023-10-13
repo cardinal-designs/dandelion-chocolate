@@ -112,7 +112,7 @@
   margin-bottom: 10px; }
   .variations fieldset {
     padding: 0;
-    margin: 0 0 27px;
+    margin: 0 0 30px;
     border: 0; }
     .variations fieldset .form__label {
       display: flex;
@@ -2251,7 +2251,7 @@ variant-selects .product-form__input .select-arrow {
 }
 
 .product-digitalgiftcard-form div {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .product-digitalgiftcard-form .digitalgiftcard__deliverytime {
