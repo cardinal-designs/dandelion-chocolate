@@ -154,7 +154,8 @@
       "from": "From",
       "from_label": "Your Name",
       "from_placeholder": "Your Name",
-      "to_placeholder": "Your Name"
+      "recipient_placeholder": "e.g. Sarah",
+      "name_placeholder": "So your recipient knows who their gift is from ..."
     },
     "facets": {
       "apply": "Apply",
