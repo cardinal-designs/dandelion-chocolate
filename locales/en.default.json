@@ -147,13 +147,12 @@
     },
     "giftcard": {
       "email-immediate": "Email gift cards are delivered immediately upon checkout.",
-      "to": "Your Recipient’s Email",
-      "to_placeholder": "Your Recipient’s Name",
       "to_email": "your recipient’s email",
+      "to_label": "Your Recipient’s Name",
       "note": "GIFT MESSAGE",
       "note_placeholder": "Your gift message (500 character max)",
       "from": "From",
-      "from_placeholder": "Your Name"
+      "from_label": "Your Name"
     },
     "facets": {
       "apply": "Apply",
