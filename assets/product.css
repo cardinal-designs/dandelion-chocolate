@@ -2648,6 +2648,7 @@ textarea::placeholder {
   font-family: 'AGaramondPro';
   font-size: 16px;
   line-height: normal;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 768px) { 
