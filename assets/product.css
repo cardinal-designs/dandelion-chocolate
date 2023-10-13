@@ -2128,9 +2128,9 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-color: #A28D5B;
 }
 
-.product-information .variations .select-styled:before,.product-add-to-cart-sticky .variations .select-styled:before{
+.product-information .variations .select-styled:before,.product-add-to-cart-sticky .variations .select-styled:before {
   content: "";
-  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/down.svg?v=1694036187);
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='9' viewBox='0 0 19 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5211 8.97911C9.50941 8.99068 9.49059 8.99068 9.4789 8.97911L0.458587 0.0513222C0.439536 0.032469 0.452887 1.98486e-07 0.479689 2.00829e-07L18.5203 1.77799e-06C18.5471 1.78033e-06 18.5605 0.0324706 18.5414 0.0513238L9.5211 8.97911Z' fill='%23A28D5B'/%3E%3C/svg%3E%0A");
   width: 20px;
   height: 10px;
   display: block;
@@ -2138,6 +2138,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   right: 20px;
   top: 53%;
   transform: translateY(-50%);
+  background-repeat: no-repeat;
 }
 
 variant-selects .product-form__input .select-arrow {
