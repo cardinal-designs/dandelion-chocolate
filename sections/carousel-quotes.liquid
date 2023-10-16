@@ -64,14 +64,14 @@
         "type": "select",
         "id": "carousel_type",
         "options": [
-            {
-                "value": "large",
-                "label": "Large"
-            },
-            {
-                "value": "small",
-                "label": "Small"
-            }
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "small",
+            "label": "Small"
+          }
         ],
         "default": "large",
         "label": "Display type"
@@ -80,14 +80,14 @@
         "type": "select",
         "id": "carousel_alignment",
         "options": [
-            {
-                "value": "center",
-                "label": "Center"
-            },
-            {
-                "value": "left",
-                "label": "Left"
-            }
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "left",
+            "label": "Left"
+          }
         ],
         "default": "left",
         "label": "Carousel Alignment"
@@ -115,6 +115,12 @@
         "id": "autoplay_speed",
         "label": "Autoplay Speed",
         "default": "1500"
+      },
+      {
+        "type": "text",
+        "id": "autoplay_speed_mobile",
+        "label": "Autoplay Speed Mobile",
+        "default": "5000"
       },
       {
         "type": "header",
@@ -172,13 +178,23 @@
 {% endschema %}
 
 <script>
-  var elem = document.querySelector('.carousel__quotes--inner');
-  var flkty = new Flickity( elem, {
-    prevNextButtons: true,
-    pageDots: false,
-    adaptiveHeight: false,
-    {% if section.settings.autoplay %}
-      autoPlay: {{ section.settings.autoplay_speed }}
-    {% endif %}
-  });
+const carousel = new FlickityResponsive('.carousel__quotes--inner', {
+  prevNextButtons: true,
+  pageDots: false,
+  adaptiveHeight: false,
+  {% if section.settings.autoplay %}
+    autoPlay: {{ section.settings.autoplay_speed }},
+  {% endif %}
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+      {% if section.settings.autoplay %}
+        autoPlay: {{ section.settings.autoplay_speed_mobile }},
+      {% endif %}
+      }
+    }
+  ]
+});
+  
 </script>

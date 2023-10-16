@@ -27,7 +27,7 @@
 			assign mobile_image_height = 500
 	endcase
 -%}
-<div class="row {{ section_width }} {{ section.settings.custom_class }}">
+<div id="{{ section.id }}" class="row {{ section_width }} {{ section.settings.custom_class }}">
 	<div class="small-12 columns">
 		<image-with-text-overlay class="image_with--text-overlay image-with-text-overlay {% if section.settings.stack_on_mobile %}stack_on_mobile{% endif %} text-{{ text_alignment }} {{ mobile_height }} {{ desktop_height }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}{% if section.settings.caption_over_banner %} caption-over--mobile{% endif %}" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
 			<div class="image-with-text-overlay--bg">
@@ -68,41 +68,45 @@
               {% endfor %}
             {% endif %}
 			<div class="image-with-text-overlay--content content-{{ content_position }}" >
-				<div class="image-with-text-overlay--content-inner {% if section.settings.show_caption_box %}image-with-text-overlay-caption--box{% endif %} content-width-{{ content_width }}">
+              <div class="image-with-text-overlay--content-inner {% if section.settings.show_caption_box %}image-with-text-overlay-caption--box{% endif %} content-width-{{ content_width }}">
 					{% for block in section.blocks %}
-						{%- case block.type -%}
-							{%- when 'subheading' -%}
-								<p class="caption subheading sh2 mb-23" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
-							{%- when 'heading' -%}
-								<h3 class="heading {{ block.settings.heading_size }} mb-20" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
-							{%- when 'text' -%}
-								<div class="rte {{ block.settings.description_size }} mb-44" {{ block.shopify_attributes }} {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-							{%- when 'button' -%}
-								{% if block.settings.button_text != blank %}
-									<a class="btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
-                  					<a class="btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
-								{% endif %}
-							{% when 'space' %}
+                      {%- case block.type -%}
+                        {%- when 'subheading' -%}
+                          <p class="caption subheading sh2 mb-23" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+                        {%- when 'heading' -%}
+                          <h3 class="heading {{ block.settings.heading_size }} mb-20" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+                        {%- when 'text' -%}
+                          <div class="rte {{ block.settings.description_size }} mb-44" {{ block.shopify_attributes }} {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+                        {%- when 'button' -%}
+                          {% if block.settings.button_text != blank %}
+                            <a class="btn hide__mobile {{ block.settings.button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+                            <a class="btn hide__desktop {{ block.settings.mobile_button_style }}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+                          {% endif %}
+                        {% when 'space' %}
     		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
-						{%- endcase -%}
+                      {%- endcase -%}
                         {% style %}
-                          .image-with-text-overlay--content .caption {
+                          #{{ section.id }} .image-with-text-overlay--content .caption {
                             color: {{ block.settings.subheading_color }};
                           }
-                          .image-with-text-overlay--content .heading {
+                          
+                          #{{ section.id }} .image-with-text-overlay--content .heading {
                             color: {{ block.settings.heading_color }};
                           }
-                          .image-with-text-overlay--content .rte {
+                          
+                          #{{ section.id }} .image-with-text-overlay--content .rte {
                             color: {{ block.settings.description_color }};
                           }
                           @media screen and (max-width: 767px) {
-                            .image-with-text-overlay--content .caption {
+                            #{{ section.id }} .image-with-text-overlay--content .caption {
                               color: {{ block.settings.subheading_color_mobile }};
                             }
-                            .image-with-text-overlay--content .heading {
+                            
+                            #{{ section.id }} .image-with-text-overlay--content .heading {
                               color: {{ block.settings.heading_color_mobile }};
                             }
-                            .image-with-text-overlay--content .rte {
+                            
+                            #{{ section.id }} .image-with-text-overlay--content .rte {
                               color: {{ block.settings.description_color_mobile }};
                             }
                           }
