@@ -711,8 +711,8 @@
     "97bfe32d-7c59-4678-8f00-3603fa489856": {
       "type": "featured-collection",
       "settings": {
-        "section_id": "Confections",
-        "heading": "Confections",
+        "section_id": "Treats",
+        "heading": "Treats",
         "heading_desktop": 32,
         "heading_mobile": 22,
         "enable_mobile_heading": false,
