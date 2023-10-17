@@ -66,7 +66,7 @@
                     <a 
                       {% if link.title contains "Shop" %}
                         {% if request.path contains '/shop' %}
-                          href="#{{ colLink.title | replace: " ", "-" }}"
+                          href="#{{ colLink.title | replace: " ", "-" | remove: "&" }}"
                         {% else %}
                           href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" }}"
                         {% endif %}
