@@ -444,8 +444,6 @@ $(document).ready(function() {
   $('.product-variants').after('<div class="trip__cart-btn"><button class="product-submit custom__btn">RESERVE YOUR SPOT</button></div>')
   
 });
-
-
 $(document).ready(function () {
   
   /* Gift Card */
