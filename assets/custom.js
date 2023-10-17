@@ -329,12 +329,8 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
 });
 
 $('.child__menu--image a[href^="#"]').click(function(event) {
-  console.log('Test');
-  $('.mobile-toggle-wrapper').addClass('active');
+  $('.mobile-toggle-wrapper').removeClass('active');
   $('.mobile-toggle-wrapper').removeAttribute('open');
-  setTimeout(function() { 
-    $('.mobile-toggle-wrapper').removeClass('active');
-  }, 500);
   
   event.preventDefault();
   var id = $(this).attr("href");
