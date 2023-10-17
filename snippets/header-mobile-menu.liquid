@@ -71,7 +71,11 @@
                           href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" }}"
                         {% endif %}
                       {% else %}
-                        href="{{ colLink.url }}"
+                        {% if link.url contains '#' %}
+                          href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" }}"
+                        {% else %}
+                          href="{{ colLink.url }}"
+                        {% endif %}
                       {% endif %}
                       data-col-Id="{{ colLink.title }}">
                       {% if link.title contains 'Chocolate' %}
