@@ -5186,6 +5186,8 @@ select.resize-select {
   margin-bottom: 5px;
   line-height: 21.6px;
   letter-spacing: normal;
+  max-height: 100px;
+  overflow: hidden;
 }
 
 .cart-drawer--recommendations .product-cart-item .cart-product-link .opti__fonts {
