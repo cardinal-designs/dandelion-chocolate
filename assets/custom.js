@@ -316,11 +316,9 @@ let anchorSelector = 'a[href^="#"]';
 
 // Collect all such anchor links
 let anchorList = document.querySelectorAll(anchorSelector);
-
 anchorList.forEach(link => {
   link.onclick = function (e) {
   e.preventDefault();
-    console.log('Test');
     let destination = 
       document.querySelector(this.hash);
       destination.scrollIntoView({
