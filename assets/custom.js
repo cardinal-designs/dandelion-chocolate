@@ -329,11 +329,11 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
 });
 
 $('.child__menu--image a[href^="#"]').click(function(event) {
+  event.preventDefault();
   console.log('Test');
   $('.mobile-toggle-wrapper').removeClass('active');
   $('.mobile-toggle-wrapper').removeAttribute('open');
-  
-  event.preventDefault();
+
   var id = $(this).attr("href");
   var offset = 0;
   var target = $(id).offset().top - offset - 85
