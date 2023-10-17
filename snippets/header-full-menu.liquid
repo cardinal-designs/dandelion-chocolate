@@ -107,6 +107,8 @@
                         {% endif %}
                       {% endfor %}   
                       {%- endif -%}
+
+                      {{ colLink.title }}
                       <a
                         {% if link.title == "Shop" %}
                           {% if request.path contains '/shop' %}
