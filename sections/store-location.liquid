@@ -88,7 +88,6 @@
                     {% assign dates = DateStringArray | split: ',' %}
                     {% assign sorted_dates = dates | sort %}
                     {% assign min_date = sorted_dates | first %}
-                    {{ min_date }}  
                     {% assign current_dateNext = min_date | date: "%Y-%m-%d" %}
                     
                     {% assign nextDate = current_dateNext | date: "%s" | plus: 86400 | date: "%m/%d" %}
