@@ -329,11 +329,6 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
 });
 
 $('.child__menu--image a[href^="#"]').click(function(event) {
-  $('.mega-menu-container').addClass('hidden');
-  setTimeout(function() { 
-    $('.mega-menu-container').removeClass('hidden');
-  }, 500);
-  
   event.preventDefault();
   var id = $(this).attr("href");
   var offset = 0;
