@@ -328,7 +328,7 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
   }, 500);
 });
 
-$('.sub__menu--navigation a[href^="#"]').click(function(event) {
+$('.sub__menu--navigation a').click(function(event) {
   console.log('Test');
   event.preventDefault();
   var id = $(this).attr("href");
