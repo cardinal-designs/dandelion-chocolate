@@ -347,6 +347,18 @@ anchorList.forEach(link => {
   }
 });
 
+$('.sub__menu--navigation a').click(function(event) {
+  $( ".mobile-toggle" ).trigger( "click" );
+  
+  event.preventDefault();
+  var id = $(this).attr("href");
+  var offset = 0;
+  var target = $(id).offset().top - offset - 85
+  $('html, body').animate({
+    scrollTop:target
+  }, 500);
+});
+
 $(window).load(function() {
   $(function(){
     var hash = window.location.hash;
