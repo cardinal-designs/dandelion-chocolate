@@ -331,7 +331,7 @@ var $root = $('html, body');
 $('.mega-menu-container a[href^="#"]').click(function () {
   $('.mega-menu-container').removeClass('hidden');
   $root.animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top
+    scrollTop: $( $.attr(this, 'href') ).offset().top - 85
   }, 500);
   return false;
 });
