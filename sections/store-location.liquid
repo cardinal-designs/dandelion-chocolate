@@ -86,13 +86,12 @@
         
                     {% assign dates = DateStringArray | split: ',' %}
                     {% assign sorted_dates = dates | sort %}
-                    
+                    {{ sorted_dates }}
                     {% assign min_date = sorted_dates | first %}
                       
                     {% assign current_dateNext = min_date | date: "%Y-%m-%d" %}
                     
                     {% assign nextDate = current_dateNext | date: "%s" | plus: 86400 | date: "%m/%d" %}
-                      {{ dates }}-----
                       {% for i in (1..close_date.size) %}
                         {% assign nextDateString = nextDate | date: '%s' %}
                         {% if sorted_dates contains nextDateString %}
