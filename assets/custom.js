@@ -329,7 +329,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 
 var $root = $('html, body');
 $('.mega-menu-container a[href^="#"]').click(function () {
-  $('.mega-menu-container').removeClass('hidden');
+$('.mega-menu-container').addClass('hidden');
   $root.animate({
     scrollTop: $( $.attr(this, 'href') ).offset().top - 85
   }, 500);
