@@ -329,6 +329,7 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
 });
 
 $('.child__menu--image a[href^="#"]').click(function(event) {
+  console.log('Test');
   $('.mobile-toggle-wrapper').removeClass('active');
   $('.mobile-toggle-wrapper').removeAttribute('open');
   
