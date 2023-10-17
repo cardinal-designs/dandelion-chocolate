@@ -312,24 +312,6 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
   document.body.classList.add("safari__specific--css");
 }
 
-// Click event for any anchor tag that's href starts with #
-// $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event) {
-//   $('.mega-menu-container').addClass('hidden');
-//   setTimeout(function() { 
-//     $('.mega-menu-container').removeClass('hidden');
-//   }, 500);
-  
-//   event.preventDefault();
-//   var id = $(this).attr("href");
-//   var offset = 0;
-//   var target = $(id).offset().top - offset - 85
-//   $('html, body').animate({
-//     scrollTop:target
-//   }, 500);
-// });
-
-// Define selector for selecting
-// anchor links with the hash
 let anchorSelector = 'a[href^="#"]';
 
 // Collect all such anchor links
@@ -345,18 +327,6 @@ anchorList.forEach(link => {
       behavior: 'smooth'
     });
   }
-});
-
-$('.sub__menu--navigation a').click(function(event) {
-  $( ".mobile-toggle" ).trigger( "click" );
-  
-  event.preventDefault();
-  var id = $(this).attr("href");
-  var offset = 0;
-  var target = $(id).offset().top - offset - 85
-  $('html, body').animate({
-    scrollTop:target
-  }, 500);
 });
 
 $(window).load(function() {
