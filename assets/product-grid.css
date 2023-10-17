@@ -805,6 +805,10 @@
   bottom: 16px;
 }
 
+.product-card .product-featured-image-link {
+  padding-bottom: 100% !important;
+}
+
 @media (forced-colors:active) {
   
   .rating {
