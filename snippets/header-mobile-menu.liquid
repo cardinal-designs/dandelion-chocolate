@@ -65,7 +65,7 @@
                 
                 <li class="sub__menu--navigation {% if link.title contains 'Chocolate' or link.title contains 'Events' %}child__menu--image{% endif %} {% if colLink.active %} active{% endif %}" role="none">
                     <a 
-                {{ colLink.title }}
+                {{ link.title }}
                       {% if link.title == "Shop" %}
                         {% if request.path contains '/shop' %}
                           href="#{{ colLink.title | replace: " ", "-" }}"
