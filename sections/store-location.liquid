@@ -99,6 +99,7 @@
         
                     {% if CurrentDateExist %}
                       {% assign oneDayAdded = closeDate | plus: 86400 | date: "%m/%d"  %}
+                  {{ closeDate }}----
                       {{ oneDayAdded }}
                       {% assign store = 'Closed today. ' | append: 'Opens next on ' | append: nextDate %}
                       <span class="closed">{{ store }}</span>
