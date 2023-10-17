@@ -337,7 +337,7 @@ $('.child__menu--image a[href^="#"]').click(function(event) {
   event.preventDefault();
   var id = $(this).attr("href");
   var offset = 0;
-  var target = $(id).offset().top - offset - 85
+  var target = $(id).offset().top - offset
   $('html, body').animate({
     scrollTop:target
   }, 500);
