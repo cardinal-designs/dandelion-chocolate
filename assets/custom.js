@@ -343,6 +343,7 @@ $('.mega-menu-container a[href^="#"]').click(function () {
 $('.sub__menu--navigation a[href^="#"]').click(function () {
   $('.mobile-toggle-wrapper').removeClass('active');
   $('.mobile-toggle-wrapper').removeAttr('open');
+  $('body').removeClass('overflow-hidden');
   $root.animate({
     scrollTop: $( $.attr(this, 'href') ).offset().top - 85
   }, 500);
@@ -352,6 +353,7 @@ $('.sub__menu--navigation a[href^="#"]').click(function () {
 $('.sub__menu--navigation a').click(function () {
   $('.mobile-toggle-wrapper').removeClass('active');
   $('.mobile-toggle-wrapper').removeAttr('open');
+  $('body').removeClass('overflow-hidden');
 });
 
 $(function(){
