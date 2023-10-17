@@ -72,7 +72,7 @@
                         {% endif %}
                       {% else %}
                         {% if link.url contains '#' %}
-                          href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" }}"
+                          href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" | remove: "&" }}"
                         {% else %}
                           href="{{ colLink.url }}"
                         {% endif %}
