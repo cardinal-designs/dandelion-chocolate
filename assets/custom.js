@@ -312,19 +312,27 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
   document.body.classList.add("safari__specific--css");
 }
 
-let anchorSelector = 'a[href^="#"]';
+// let anchorSelector = 'a[href^="#"]';
 
 // Collect all such anchor links
-let anchorList = document.querySelectorAll(anchorSelector);
-anchorList.forEach(link => {
-  link.onclick = function (e) {
-  e.preventDefault();
-    let destination = 
-      document.querySelector(this.hash);
-      destination.scrollIntoView({
-      behavior: 'smooth'
-    });
-  }
+// let anchorList = document.querySelectorAll(anchorSelector);
+// anchorList.forEach(link => {
+//   link.onclick = function (e) {
+//   e.preventDefault();
+//     let destination = 
+//       document.querySelector(this.hash);
+//       destination.scrollIntoView({
+//       behavior: 'smooth'
+//     });
+//   }
+// });
+
+var $root = $('html, body');
+$('a[href^="#"]').click(function () {
+  $root.animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top
+  }, 500);
+  return false;
 });
 
 $(function(){
