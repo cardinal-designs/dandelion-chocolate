@@ -351,6 +351,7 @@ $('.sub__menu--navigation a[href^="#"]').click(function () {
 
 $('.sub__menu--navigation a').click(function () {
   $('.mobile-toggle').trigger('click');
+  $('.mobile-toggle-wrapper').removeClass('active');
 });
 
 $(function(){
