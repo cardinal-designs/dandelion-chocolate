@@ -328,7 +328,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 // });
 
 var $root = $('html, body');
-$('a[href^="#"]').click(function () {
+$('.mega-menu-container a[href^="#"]').click(function () {
   $root.animate({
     scrollTop: $( $.attr(this, 'href') ).offset().top
   }, 500);
