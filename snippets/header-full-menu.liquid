@@ -89,7 +89,7 @@
                          <a class="image__menu {{ link.title }}"
                           {% if link.title == "Shop" %}
                             {% if request.path contains '/shop' %}
-                              href="#{{ colLink.title | replace: " ", "-" }}"
+                              href="{{ colLink.url }}"
                             {% else %}
                               href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" }}"
                             {% endif %}
