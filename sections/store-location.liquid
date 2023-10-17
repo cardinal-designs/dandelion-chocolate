@@ -79,7 +79,6 @@
                     
                       {% if closeDate == currentDate %}
                         {% assign CurrentDateExist = true %}
-                        {{ closeDate }}-----
                       {% else %}
                         {% assign DateStringArray = DateStringArray | append: closeDate | append: ',' %}
                       {% endif %}
