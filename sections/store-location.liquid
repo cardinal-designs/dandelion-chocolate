@@ -74,6 +74,7 @@
                   {% if settings[store_close_date] != blank %}
                     {% for date in close_date %}
                       {% assign closeDate = date | date: "%s" %}
+                      {{ closeDate }}-----
                       {% capture tmpDate %}{{ closeDate }}={{ date }}{% endcapture %}
                       {% assign DateStringArrayTmp = DateStringArrayTmp | append:tmpDate | append:',' %}
                     
