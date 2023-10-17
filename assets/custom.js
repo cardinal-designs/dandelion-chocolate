@@ -347,7 +347,7 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   }
 })
 
-$(document).ready(function() {
+$(window).load(function() {
   $(function(){
     var hash = window.location.hash;
     $('html, body').animate({ 
