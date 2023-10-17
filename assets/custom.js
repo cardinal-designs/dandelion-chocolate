@@ -341,7 +341,6 @@ $('.mega-menu-container a[href^="#"]').click(function () {
 });
 
 $('.sub__menu--navigation a[href^="#"]').click(function () {
-  console.log('Test');
   $('.mobile-toggle').trigger('click');
   $root.animate({
     scrollTop: $( $.attr(this, 'href') ).offset().top - 85
