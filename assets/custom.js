@@ -333,8 +333,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 let anchorSelector = 'a[href^="#"]';
 
 // Collect all such anchor links
-let anchorList = 
-  document.querySelectorAll(anchorSelector);
+let anchorList = document.querySelectorAll(anchorSelector);
 
 anchorList.forEach(link => {
   link.onclick = function (e) {
