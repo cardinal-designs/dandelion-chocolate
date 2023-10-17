@@ -78,7 +78,6 @@
                       {% assign DateStringArrayTmp = DateStringArrayTmp | append:tmpDate | append:',' %}
                     
                       {% if closeDate == currentDate %}
-                        {{ closeDate }} ---- {{ currentDate }}
                         {% assign CurrentDateExist = true %}
                       {% else %}
                         {% assign DateStringArray = DateStringArray | append: closeDate | append: ',' %}
@@ -99,10 +98,9 @@
                       {% endfor %}
         
                     {% if CurrentDateExist %}
-                      {% assign oneDayAdded = closeDate | plus: 86400 | date: "%m/%d"  %}
-                  {{ closeDate }}----{{ currentDate }}
+                      {% assign oneDayAdded = currentDate | plus: 86400 | date: "%m/%d"  %}
                       {{ oneDayAdded }}
-                      {% assign store = 'Closed today. ' | append: 'Opens next on ' | append: nextDate %}
+                      {% assign store = 'Closed today. ' | append: 'Opens next on ' | append: oneDayAdded %}
                       <span class="closed">{{ store }}</span>
                     {% else %}
                       
