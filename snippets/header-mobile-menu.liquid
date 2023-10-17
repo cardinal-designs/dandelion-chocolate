@@ -64,7 +64,16 @@
               {% endcomment %}
                 
                 <li class="sub__menu--navigation {% if link.title contains 'Chocolate' or link.title contains 'Events' %}child__menu--image{% endif %} {% if colLink.active %} active{% endif %}" role="none">
-                    <a href="{{ colLink.url }}" data-col-Id="{{ colLink.title }}">
+                    <a {% if link.title == "Shop" %}
+                        {% if request.path contains '/shop' %}
+                          href="#{{ colLink.title | replace: " ", "-" }}"
+                        {% else %}
+                            href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" }}"
+                        {% endif %}
+                      {% else %}
+                        href="{{ colLink.url }}"
+                      {% endif %}
+                      data-col-Id="{{ colLink.title }}">
                       {% if link.title contains 'Chocolate' %}
                         {% capture image_setting %}chocolate_image_{{ forloop.index }}{% endcapture %}
                       {% elsif link.title contains 'Events' %}
