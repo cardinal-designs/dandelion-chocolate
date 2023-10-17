@@ -68,7 +68,7 @@
                         {% if request.path contains '/shop' %}
                           href="#{{ colLink.title | replace: " ", "-" | remove: "&" }}"
                         {% else %}
-                          href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" }}"
+                          href="{{ link.url }}/#{{ colLink.title | replace: " ", "-" | remove: "&" }}"
                         {% endif %}
                       {% else %}
                         {% if link.url contains '#' %}
