@@ -340,6 +340,14 @@ $('.mega-menu-container a[href^="#"]').click(function () {
   return false;
 });
 
+$('.sub__menu--navigation a[href^="#"]').click(function () {
+  $('.mobile-toggle').trigger('click');
+  $root.animate({
+    scrollTop: $( $.attr(this, 'href') ).offset().top - 85
+  }, 500);
+  return false;
+});
+
 $(function(){
   var hash = window.location.hash;
   $('html, body').animate({ 
