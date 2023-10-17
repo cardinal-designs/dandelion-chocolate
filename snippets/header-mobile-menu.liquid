@@ -63,7 +63,7 @@
                 </li>
               {% endcomment %}
                 
-                <li class="sub__menu--navigation test {% if link.title contains 'Chocolate' or link.title contains 'Events' %}child__menu--image{% endif %} {% if colLink.active %} active{% endif %}" role="none">
+                <li class="sub__menu--navigation {% if link.title contains 'Chocolate' or link.title contains 'Events' %}child__menu--image{% endif %} {% if colLink.active %} active{% endif %}" role="none">
                     <a 
                       {% if link.title == "Shop" %}
                         {% if request.path contains '/shop' %}
