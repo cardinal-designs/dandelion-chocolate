@@ -330,9 +330,10 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
 
 $('.child__menu--image a[href^="#"]').click(function(event) {
   console.log('Test');
-  $('.mega-menu-container').addClass('hidden');
+  $('.mobile-toggle-wrapper').addClass('active');
+  $('.mobile-toggle-wrapper').removeAttribute('open');
   setTimeout(function() { 
-    $('.mega-menu-container').removeClass('hidden');
+    $('.mobile-toggle-wrapper').removeClass('active');
   }, 500);
   
   event.preventDefault();
