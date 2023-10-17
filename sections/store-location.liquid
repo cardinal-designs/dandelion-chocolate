@@ -78,6 +78,7 @@
                       {% assign DateStringArrayTmp = DateStringArrayTmp | append:tmpDate | append:',' %}
                     
                       {% if closeDate == currentDate %}
+                        {{ closeDate }} ---- {{ currentDate }}
                         {% assign CurrentDateExist = true %}
                       {% else %}
                         {% assign DateStringArray = DateStringArray | append: closeDate | append: ',' %}
