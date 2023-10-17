@@ -349,7 +349,6 @@ $('.child__menu--image a[href^="#"]').click(function(event) {
   }, 500);
 });
 
-
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
   
