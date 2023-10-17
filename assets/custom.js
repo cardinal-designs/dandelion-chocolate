@@ -335,6 +335,21 @@ $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event
   }, 500);
 });
 
+$('.child__menu--image a[href^="#"]').click(function(event) {
+  event.preventDefault();
+  console.log('Test');
+  $('.mobile-toggle-wrapper').removeClass('active');
+  $('.mobile-toggle-wrapper').removeAttribute('open');
+
+  var id = $(this).attr("href");
+  var offset = 0;
+  var target = $(id).offset().top - offset - 85
+  $('html, body').animate({
+    scrollTop:target
+  }, 500);
+});
+
+
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
   
