@@ -341,7 +341,6 @@ $('.mega-menu-container a[href^="#"]').click(function () {
 });
 
 $('.sub__menu--navigation a[href^="#"]').click(function () {
-  $('.mobile-toggle').trigger('click');
   $('.mobile-toggle-wrapper').removeClass('active');
   $root.animate({
     scrollTop: $( $.attr(this, 'href') ).offset().top - 85
@@ -350,7 +349,6 @@ $('.sub__menu--navigation a[href^="#"]').click(function () {
 });
 
 $('.sub__menu--navigation a').click(function () {
-  $('.mobile-toggle').trigger('click');
   $('.mobile-toggle-wrapper').removeClass('active');
 });
 
