@@ -347,12 +347,12 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
   }
 })
 
-// $(function(){
-//   var hash = window.location.hash;
-//   $('html, body').animate({ 
-//     scrollTop: $(hash).offset().top - 85
-//   });
-// });
+$(document).ready(function() {
+  var hash = window.location.hash;
+  $('html, body').animate({ 
+    scrollTop: $(hash).offset().top - 85
+  });
+});
 
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
