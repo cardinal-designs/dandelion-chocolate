@@ -348,9 +348,11 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
 })
 
 $(document).ready(function() {
-  var hash = window.location.hash;
-  $('html, body').animate({ 
-    scrollTop: $(hash).offset().top - 85
+  $(function(){
+    var hash = window.location.hash;
+    $('html, body').animate({ 
+      scrollTop: $(hash).offset().top - 85
+    });
   });
 });
 
