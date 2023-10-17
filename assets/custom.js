@@ -313,30 +313,48 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
 }
 
 // Click event for any anchor tag that's href starts with #
-$('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event) {
-  $('.mega-menu-container').addClass('hidden');
-  setTimeout(function() { 
-    $('.mega-menu-container').removeClass('hidden');
-  }, 500);
+// $('.mega-menu-container .Sub_Menu-Columns li a[href^="#"]').click(function(event) {
+//   $('.mega-menu-container').addClass('hidden');
+//   setTimeout(function() { 
+//     $('.mega-menu-container').removeClass('hidden');
+//   }, 500);
   
-  event.preventDefault();
-  var id = $(this).attr("href");
-  var offset = 0;
-  var target = $(id).offset().top - offset - 85
-  $('html, body').animate({
-    scrollTop:target
-  }, 500);
-});
+//   event.preventDefault();
+//   var id = $(this).attr("href");
+//   var offset = 0;
+//   var target = $(id).offset().top - offset - 85
+//   $('html, body').animate({
+//     scrollTop:target
+//   }, 500);
+// });
 
-$('.sub__menu--navigation a[href^="#"]').click(function(event) {
-  console.log('Test');
-  event.preventDefault();
-  var id = $(this).attr("href");
-  var offset = 0;
-  var target = $(id).offset().top - offset - 200
-  $('html, body').animate({
-    scrollTop:target
-  }, 500);
+// Define selector for selecting
+// anchor links with the hash
+let anchorSelector = 'a[href^="#"]';
+
+// Collect all such anchor links
+let anchorList = 
+    document.querySelectorAll(anchorSelector);
+ 
+// Iterate through each of the links
+anchorList.forEach(link => {
+    link.onclick = function (e) {
+
+        // Prevent scrolling if the
+        // hash value is blank
+        e.preventDefault();
+ 
+        // Get the destination to scroll to
+        // using the hash property
+        let destination = 
+            document.querySelector(this.hash);
+ 
+        // Scroll to the destination using
+        // scrollIntoView method
+        destination.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
 });
 
 $(window).load(function() {
