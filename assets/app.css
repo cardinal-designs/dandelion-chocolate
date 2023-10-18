@@ -5004,6 +5004,7 @@ select.resize-select {
   height: 100vh;
   position: relative;
   z-index: 5;
+  background-color: #ffffff;
 }
 
 .cart-drawer .side-panel-content {
