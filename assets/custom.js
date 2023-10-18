@@ -1,3 +1,18 @@
+/** Shopify CDN: Minification failed
+
+Line 51:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 52:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 53:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 54:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 72:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 73:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 74:2 Transforming const to the configured target environment ("es5") is not supported yet
+Line 120:4 Transforming let to the configured target environment ("es5") is not supported yet
+Line 121:4 Transforming let to the configured target environment ("es5") is not supported yet
+Line 145:2 Transforming const to the configured target environment ("es5") is not supported yet
+... and 15 more hidden warnings
+
+**/
 var elem = document.querySelector('.category__slider');
 var flkty = new Flickity( elem, {
   prevNextButtons: false,
@@ -13,8 +28,7 @@ $(window).on("load resize orientationchange", function(){
     var flkty = new Flickity( elem, {
       prevNextButtons: false,
       pageDots: false,
-      adaptiveHeight: false,
-      contain: true,
+      adaptiveHeight: false,      contain: true,
       wrapAround: true,
       groupCells: true
     });
@@ -162,9 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var flickityItems = document.querySelectorAll(".product-images__slide");
 
   var elem = document.querySelector('.carousel-main');
-  var getOffset = $('.media__gallery').attr('data-offset') ? parseInt($('.media__gallery').attr('data-offset')): 0;
-  var getPosition = parseInt($('.media__gallery').attr('data-position')) - 1 - getOffset;
-  
+  var getPosition = parseInt($('.media__gallery').attr('data-position')) - 1;
   if(getPosition){
     $('#Product-Slider .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider .product-images__slide:eq(0)");
     $('#Product-Slider-Thumbanils .product-images__slide:eq('+getPosition+')').insertBefore("#Product-Slider-Thumbanils .product-images__slide:eq(0)");
@@ -174,12 +186,12 @@ document.addEventListener("DOMContentLoaded", function() {
   var flkty2 = new Flickity(elem);
   
   var flkty1 = new Flickity(flickityContainer, {
-    asNavFor: '.carousel-main',
-    prevNextButtons: true,
-    pageDots: false, 
-    wrapAround: false,
-    cellAlign: 'center',
-    contain: true
+      asNavFor: '.carousel-main',
+      prevNextButtons: true,
+      pageDots: false, 
+      wrapAround: false,
+      cellAlign: 'left',
+      contain: true
   });
 
 });
@@ -312,58 +324,60 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
   document.body.classList.add("safari__specific--css");
 }
 
-// let anchorSelector = 'a[href^="#"]';
-
-// Collect all such anchor links
-// let anchorList = document.querySelectorAll(anchorSelector);
-// anchorList.forEach(link => {
-//   link.onclick = function (e) {
-//   e.preventDefault();
-//     let destination = 
-//       document.querySelector(this.hash);
-//       destination.scrollIntoView({
-//       behavior: 'smooth'
-//     });
-//   }
-// });
-
-var $root = $('html, body');
-$('.mega-menu-container a[href^="#"]').click(function () {
-  $('.mega-menu-container').addClass('hidden');
-  setTimeout(function() { 
-    $('.mega-menu-container').removeClass('hidden');
-  }, 500);
-    
-  $root.animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top - 85
-  }, 500);
-  return false;
-});
-
-$('.sub__menu--navigation a[href^="#"]').click(function () {
-  $('.mobile-toggle-wrapper').removeClass('active');
-  $('.mobile-toggle-wrapper').removeAttr('open');
-  $('body').removeClass('overflow-hidden');
-  $root.animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top - 85
-  }, 500);
-  return false;
-});
-
-$('.sub__menu--navigation a').click(function () {
-  $('.mobile-toggle-wrapper').removeClass('active');
-  $('.mobile-toggle-wrapper').removeAttr('open');
-  $('body').removeClass('overflow-hidden');
-});
-
-$(function(){
-  var hash = window.location.hash;
-  if(hash) {
-    $('html, body').animate({ 
-      scrollTop: $(hash).offset().top - 85
+$(document).ready(function () {
+  var url = window.location.href;
+  console.log(url);
+  let page = url.substring(url.lastIndexOf('#') + 1);
+  console.log(page);
+  
+  let sectionScrolll = document.querySelector(`[id="${page}"]`);
+  if(sectionScrolll){
+    window.scroll({
+      top: sectionScrolll.offsetTop - 50,
+      behavior: "smooth",
     });
   }
 });
+
+if(document.querySelector('.Sub_Menu-Columns')){
+  document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
+    ele.addEventListener('click',function(el){
+      let Id = el.currentTarget.getAttribute('href'),
+          sectionId = document.querySelector(`[id="${Id}"]`);
+      window.scroll({
+        top: sectionId.offsetTop - 90,
+        behavior: "smooth",
+      });
+    });
+  
+    if(window.sessionStorage.getItem('scrolltosection')){
+      console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+      if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+        ele.click();
+        window.sessionStorage.removeItem("scrolltosection");
+      }
+    }
+  })
+}
+
+document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
+  ele.addEventListener('click',function(el){
+    let Id = el.currentTarget.getAttribute('href'),
+        sectionId = document.querySelector(`[id="${Id}"]`);
+    window.scroll({
+      top: sectionId.offsetTop - 72,
+      behavior: "smooth",
+    });
+  })
+
+  if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
+})
 
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
@@ -371,7 +385,10 @@ $(document).ready(function() {
   var read_more = '<div class="rm_grad" style="">&nbsp;</div><div class="read_more" style="">Read more</div><div class="read_less" style="display: none;">Read less</div>';
   $('.meta__product--description .metafield-rich_text_field').html('<div class="short_description">' + desc + read_more + "</dl>");
   $('.read_less').hide();
+  
   var og_height = $('.short_description').innerHeight();
+
+  console.log(og_height);
 
   if( og_height > 300 ) {
     $('.short_description').css({"max-height": "300px"});
@@ -401,7 +418,7 @@ $(document).ready(function() {
     $('.read_more').show();
   });
 
-  $('.product-information variant-selects select,.product-add-to-cart-sticky variant-selects select').each(function(){
+   $('.product-information variant-selects select,.product-add-to-cart-sticky variant-selects select').each(function(){
       var $this = $(this), numberOfOptions = $(this).children('option').length;
     
       $this.addClass('select-hidden'); 
@@ -474,48 +491,268 @@ $(document).ready(function() {
   $('.product-variants').after('<div class="trip__cart-btn"><button class="product-submit custom__btn">RESERVE YOUR SPOT</button></div>')
   
 });
-$(document).ready(function () {
-  
-  /* Gift Card */
 
-function updateDigitalGiftCardForm() {
-    var digitalGiftCardInput = $(".product-information .variations select");
-    var digitalGiftCardForm = $(".product-information .product-digitalgiftcard-form");
-    if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
-      var val = $(digitalGiftCardInput).val();
-      if (val == "Email") {
-        digitalGiftCardForm.addClass("Email");
-        digitalGiftCardForm.removeClass("Shipped");
-        $(
-          ".product-information .product-digitalgiftcard-form input,.product-information .product-digitalgiftcard-form textarea"
-        ).prop("required", true);
-        $(
-          ".product-information .product-digitalgiftcard-form input,.product-information .product-digitalgiftcard-form textarea"
-        ).prop("disabled", false);
-      } else {
-        digitalGiftCardForm.removeClass("Email");
-        digitalGiftCardForm.addClass("Shipped");
-        $(
-          ".product-information .product-digitalgiftcard-form input,.product-information .product-digitalgiftcard-form textarea"
-        ).prop("required", false);
-        $(
-          ".product-information .product-digitalgiftcard-form input,.product-information .product-digitalgiftcard-form textarea"
-        ).prop("disabled", true);
-      }
+document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
+  ele.addEventListener('click',function(el){
+    let Id = el.currentTarget.getAttribute('data-col-Id'),
+        sectionId = document.querySelector(`[id="${Id}"]`);
+    window.scroll({
+      top: sectionId.offsetTop - 72,
+      behavior: "smooth",
+    });
+  })
+
+  if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
     }
   }
+});
 
+$(document).ready(function () {
+
+    function updateDigitalGiftCardForm() {
+      function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
+          var val = digitalGiftCardInput.val();
+          if (val == "Email") {
+            digitalGiftCardForm.addClass("Email").removeClass("Shipped");
+            $('#delivery-date').val('immediately').trigger('change');
+          } else {
+              digitalGiftCardForm.removeClass("Email").addClass("Shipped");
+              $('.product-digitalgiftcard-form input, .product-digitalgiftcard-form textarea').each(function() {
+                $(this).val('');
+              }).trigger('change');
+          }
+  
+          var formElements = digitalGiftCardForm.find("input, textarea");
+          formElements.prop("required", val == "Email");
+          formElements.prop("disabled", val != "Email");
+      }
+  
+      function initializeListener(selector) {
+          var digitalGiftCardInput = $(selector + " .variations select");
+          var digitalGiftCardForm = $(selector + " .product-digitalgiftcard-form");
+  
+          if (digitalGiftCardInput.length && digitalGiftCardForm.length) {
+              digitalGiftCardInput.change(function (e) { 
+                  handleUpdate(digitalGiftCardInput, digitalGiftCardForm);
+              });
+          }
+      }
+
+      initializeListener(".product-information");
+      initializeListener(".product-add-to-cart-sticky");
+      
+
+      function changeOtherForm(currentElements) {
+        // console.log(currentElements[1].value);
+      
+        const isEmail = currentElements[0].value === "Email";
+        const modeClass = isEmail ? "Email" : "";
+      
+        // Toggle class on elements
+        document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+          el.classList.remove("Email", "Shipped");
+          if(modeClass != "") {
+            el.classList.add(modeClass);
+          }
+        });
+      
+        // // Trigger click events on elements with specific attributes
+        document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+          el.click();
+        });
+      
+        // document.querySelectorAll(`[rel='${currentElements[1].value}']`).forEach((el) => {
+        //   el.click();
+        // });
+      
+        // // Update delivery-date field
+        const deliveryDateInput = document.querySelector('#delivery-date');
+        if(deliveryDateInput)
+        {
+          deliveryDateInput.value = 'immediately';
+        }
+        
+      
+        // // Dispatch a change event
+        // const changeEvent = new Event('change', {
+        //   bubbles: true,
+        //   cancelable: true
+        // });
+        // deliveryDateInput.dispatchEvent(changeEvent);
+      }
+
+
+
+      // function changeOtherForm(currentElements, toBeUpdated) {
+      //   console.log(currentElements[1].value, toBeUpdated[1].value);
+      
+      //   // Define a flag to check if event listeners have been attached
+      //   let eventListenersAttached = false;
+      
+      //   if (currentElements[0].value == "Email") {
+      //     document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+      //       el.classList.add("Email");
+      //       el.classList.remove("Shipped");
+      //     });
+      
+      //     document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+      //       el.click();
+      //     });
+      
+      //     // Attach event listeners only once
+      //     if (!eventListenersAttached) {
+      //       document.querySelectorAll(`[rel="${currentElements[1].value}"]`).forEach((el) => {
+      //         el.addEventListener("click", () => {
+      //           // update delivery-date field
+      //           const deliveryDateInput = document.querySelector("#delivery-date");
+      //           deliveryDateInput.value = "immediately";
+      //           const changeEvent = new Event("change", {
+      //             bubbles: true,
+      //             cancelable: true,
+      //           });
+      //           deliveryDateInput.dispatchEvent(changeEvent);
+      //         });
+      //       });
+      
+      //       eventListenersAttached = true;
+      //     }
+      //   } else {
+      //     document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
+      //       el.classList.add("Shipped");
+      //       el.classList.remove("Email");
+      //     });
+      
+      //     document.querySelectorAll(`[rel='${currentElements[0].value}']`).forEach((el) => {
+      //       el.click();
+      //     });
+      //   }
+      // }
+
+
+      
+      
+      
+      
+      
+
+      var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
+      var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .variations select");
+      
+      digitalGiftCardInput.forEach(el => {
+        el.addEventListener("change", function(e){
+          changeOtherForm(digitalGiftCardInput, digitalGiftCardForm)
+        }, true)
+      })
+
+      digitalGiftCardForm.forEach(el => {
+        el.addEventListener("change", function(e){
+          changeOtherForm(digitalGiftCardForm, digitalGiftCardInput)
+        }, true)
+      });
+
+      if(document.querySelectorAll(".gift-card-product-js-bind").length > 0){
+        document.querySelector(".gift-card-product-js-bind").addEventListener("click", function(e){
+          e.preventDefault();
+          var selectedDeliveryMethod = e.currentTarget.closest("product-add-to-cart-sticky").querySelector(`[name="options[Delivery Method--sticky]"]`).value;
+          if(selectedDeliveryMethod == "Email"){
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+          }
+          else{
+            document.querySelector(`.product-information [form='${ e.currentTarget.dataset.form_id }'][type='submit']`).click();
+          }
+        })
+      }
+
+      if(document.querySelector('[name="options[Amount]"]')) {
+        document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+          el.addEventListener("click", function(e){
+            document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+          }, true);
+        })
+      }
+       
+      if(document.querySelector('[name="options[Amount--sticky]"]')) {
+        document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+          el.addEventListener("click", function(e){
+            document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+          }, true);
+        })
+      }
+      
+      
+      
+      // document.querySelector('[name="options[Amount]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+      //   el.addEventListener("click", function(e){
+      //     if(document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered"))
+      //     document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).classList.add("click-event-triggered");
+      //     document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+      //   }, true);
+      // })
+
+      // document.querySelector('[name="options[Amount--sticky]"]').parentNode.querySelectorAll("ul li").forEach(el => {
+      //   el.addEventListener("click", function(e){
+      //     document.querySelectorAll(".product-form .price .amount").forEach(el => {
+      //       el.closest("button").classList.add('mandatory-hidden');
+      //     })
+      //     document.querySelector('[name="options[Amount]').parentNode.querySelector(`ul li[rel='${e.currentTarget.getAttribute("rel")}']`).click();
+
+      //     // setTimeout(function(){
+      //     //   document.querySelectorAll(".product-form .price .amount").forEach(el => {
+      //     //     document.querySelectorAll(".product-form .price .amount")[0].closest("button").classList.remove('mandatory-hidden');
+      //     //   })
+      //     // }, 1800);
+      //   }, true);
+      // })
+
+
+    //   // Function to remove the class when updates stop
+    //   function removeClassWhenUpdatesStop(targetElement) {
+    //     targetElement.classList.remove('mandatory-hidden');
+    //   }
+      
+    //   // Common ancestor element whose child elements you want to observe
+    //   const commonAncestorElement = document.querySelector("product-form .price");
+      
+    //   // Create a MutationObserver to observe changes in child elements
+    //   const observer = new MutationObserver((mutationsList) => {
+    //     // Check if updates have stopped for each target element
+    //     for (const mutation of mutationsList) {
+    //       const targetElement = mutation.target.closest("button");
+    //       if (targetElement) {
+    //         removeClassWhenUpdatesStop(targetElement);
+    //       }
+    //       else{
+    //         targetElement.classList.add('mandatory-hidden');
+    //       }
+    //     }
+    //   });
+
+    // // Configure the observer to watch for changes in childList (child elements)
+    // const config = { childList: true, subtree: true };
+    
+    // // Start observing the common ancestor element
+    // observer.observe(commonAncestorElement, config);
+
+  
+
+  }
+  
   const checkDiv = setInterval(() => {
-    if($('.product-information .variations select').length > 0) {
-      clearInterval(checkDiv);
-      $(".product-information .variations select").change(updateDigitalGiftCardForm);      
-    } 
-  }, 100); 
+      if ($('.product-information .variations select').length > 0 || $('.product-add-to-cart-sticky .variations select').length > 0) {
+          clearInterval(checkDiv);
+          updateDigitalGiftCardForm();
+      }
+  }, 100);
 
+  /*
+  Reference: http://jsfiddle.net/BB3JK/47/
+  */
   
-  /*  Reference: http://jsfiddle.net/BB3JK/47/  */
-  
-  $('.product-information--inner .product-form__input select,.product-add-to-cart-sticky .product-form__input select').each(function(){
+ $('.product-information--inner .product-form__input select,.product-add-to-cart-sticky .product-form__input select').each(function(){
     var $this = $(this), numberOfOptions = $(this).children('option').length;
   
     $this.addClass('select-hidden'); 
@@ -523,8 +760,7 @@ function updateDigitalGiftCardForm() {
     $this.after('<div class="select-styled"></div>');
 
     var $styledSelect = $this.next('div.select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
-  
+    
     var $list = $('<ul />', {
         'class': 'select-options'
     }).insertAfter($styledSelect);
@@ -535,6 +771,7 @@ function updateDigitalGiftCardForm() {
         rel: $this.children('option').eq(i).val()
       }).appendTo($list);
       if ($this.children('option').eq(i).is(':selected')){
+        $styledSelect.text($this.children('option').eq(i).val());
         $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
       }
     }
@@ -551,6 +788,7 @@ function updateDigitalGiftCardForm() {
     
     $listItems.click(function(e) {
       e.stopPropagation();
+      document.querySelector(".product-form .price .amount").classList.add('mandatory-hidden');
       $styledSelect.text($(this).text()).removeClass('active');
       var selectElement = $this[0];
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
@@ -577,14 +815,20 @@ function updateDigitalGiftCardForm() {
   if(productsLength && hiddenProducts){
     $('.facets__label').text(productsLength+ " Results")
   }
-});
 
+  $(document).on('input','.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea', function () {
+    var newValue = $(this).val();
+    var inputField = $(this).attr('name');
+    $('[name="' + inputField + '"]').val(newValue);
+  });
+})
 
 document.addEventListener("DOMContentLoaded", function () {
   const checkbox = document.querySelector("#gift__input");
   checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
       const inputValue = checkbox.value;
+      console.log(inputValue);
     }
   });
 });
@@ -600,26 +844,22 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   gift__input.addEventListener("change", function() {
-    console.log('Changed');
-    var GiftingSelect = document.querySelector("select.gifting-select.select-hidden"); 
+    var GiftingSelect = document.querySelector("select.gifting-select"); 
     var position_gift_image = document.getElementById('position_gift_image').value;
     var carousel_main = document.querySelector('.carousel-main');
     var flickityContainer = document.querySelector(".carousel-nav");
 
     if (gift__input.checked) {
-      console.log('Yes');
-      console.log(GiftingSelect);
       GiftingSelect.value = "Yes"; 
       GiftingSelect.dispatchEvent(new Event("change"));
       var flkty2 = new Flickity(carousel_main);
       if(GiftSelected) {
         flkty2.select( 0 );
       } else {
-        flkty2.select( position_gift_image - 1 );
+        flkty2.select( position_gift_image - 2 );
       }
+      
     } else {
-      console.log('No');
-      console.log(GiftingSelect);
       GiftingSelect.value = "No";
       GiftingSelect.dispatchEvent(new Event("change"));
       var flkty2 = new Flickity(carousel_main);
