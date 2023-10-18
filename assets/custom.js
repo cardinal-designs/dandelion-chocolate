@@ -21,25 +21,6 @@ $(window).on("load resize orientationchange", function(){
   }
 });  
 
-const carousel = new FlickityResponsive('.carousel__quotes--inner', {
-  prevNextButtons: true,
-  pageDots: false,
-  adaptiveHeight: false,
-  {% if section.settings.autoplay %}
-    autoPlay: {{ section.settings.autoplay_speed }},
-  {% endif %}
-  responsive: [
-    {
-      breakpoint: 767,
-      settings: {
-      {% if section.settings.autoplay %}
-        autoPlay: {{ section.settings.autoplay_speed_mobile }},
-      {% endif %}
-      }
-    }
-  ]
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("click", function () {
     if (document.querySelector(".checkoutMethodContainer")?.classList.contains("shipping")) {
