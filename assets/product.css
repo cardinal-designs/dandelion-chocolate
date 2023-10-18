@@ -1323,6 +1323,11 @@
   display: block;
 }
 
+.product-add-to-cart-sticky--inner .select-options {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
 .product-add-to-cart-sticky .product-form .add_to_cart_holder {
   margin-bottom: 0;
 }
