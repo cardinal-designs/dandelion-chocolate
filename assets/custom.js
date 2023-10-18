@@ -605,6 +605,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var flickityContainer = document.querySelector(".carousel-nav");
 
     if (gift__input.checked) {
+      console.log('Yes');
       GiftingSelect.value = "Yes"; 
       GiftingSelect.dispatchEvent(new Event("change"));
       var flkty2 = new Flickity(carousel_main);
@@ -614,6 +615,7 @@ document.addEventListener("DOMContentLoaded", function() {
         flkty2.select( position_gift_image - 2 );
       }
     } else {
+      console.log('No');
       GiftingSelect.value = "No";
       GiftingSelect.dispatchEvent(new Event("change"));
       var flkty2 = new Flickity(carousel_main);
