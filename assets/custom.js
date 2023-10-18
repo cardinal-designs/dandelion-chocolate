@@ -609,8 +609,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (gift__input.checked) {
       console.log('Yes');
       console.log(GiftingSelect);
-      $('.gifting-select').val('Yes').change();
-      //GiftingSelect.value = "Yes"; 
+      GiftingSelect.value = "Yes"; 
       GiftingSelect.dispatchEvent(new Event("change"));
       var flkty2 = new Flickity(carousel_main);
       if(GiftSelected) {
@@ -620,6 +619,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     } else {
       console.log('No');
+      console.log(GiftingSelect);
       GiftingSelect.value = "No";
       GiftingSelect.dispatchEvent(new Event("change"));
       var flkty2 = new Flickity(carousel_main);
