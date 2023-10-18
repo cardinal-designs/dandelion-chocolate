@@ -612,7 +612,6 @@ document.addEventListener("DOMContentLoaded", function() {
       } else {
         flkty2.select( position_gift_image - 2 );
       }
-      
     } else {
       GiftingSelect.value = "No";
       GiftingSelect.dispatchEvent(new Event("change"));
