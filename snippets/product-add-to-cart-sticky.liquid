@@ -3,7 +3,7 @@
   <div class="product-add-to-cart-sticky--inner {% if product.type == 'Chocolate Bar' or product.tags contains 'Ingredients' %}chocolate__bar-product{% endif %}">
     <div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
       {%- if media -%}
-        {{ media | image_url: width:'96x' |  image_tag }}
+        {%- render 'responsive-image', image: media, sizes: '96x96' -%}
       {%- endif -%}
     </div>
     <div class="product-add-to-cart-sticky--info">
@@ -55,25 +55,18 @@
               {{ product.variants | json }}
           </script>
       </variant-selects>
-      {% render 'product-form-digital-card', product: product, product_form_id: product_form_id %}
       {%- endunless -%}
       {%- if product != blank -%}
+
         <product-form class="product-form" data-sticky="1" data-section="{{ section.id }}">
               <div class="product-form__error-message-wrapper form-notification error" role="alert" hidden>
             {% render 'svg-icons' with 'thb-error' %}
             <span class="product-form__error-message"></span>
           </div>
-
-          {% assign sold_out = false %}
-          {% if product.metafields.info.force_soldout == true %}
-            {% assign sold_out = true %}
-          {% endif %}
-
-            <div class="product-add-to-cart-container">
-              <div class="form-notification error" style="display:none;"></div>
-              <div class="add_to_cart_holder">
-                {% unless sold_out == true %}
-                  <button type="submit" name="add" class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %} form="{{ product_form_id }}">
+              <div class="product-add-to-cart-container">
+                  <div class="form-notification error" style="display:none;"></div>
+                <div class="add_to_cart_holder">
+                  <button {% unless product.id == 171066294299 or product.id == 1871046574150 %} type="submit" name="add" id="AddToCartSticky" form="{{ product_form_id }}" {% else %} type="button" data-form_id="{{ product_form_id }}" {% endunless %} class="single-add-to-cart-button button outline {% unless product.selected_or_first_available_variant.available %}sold-out{% endunless %} {% if product.id == 171066294299 or product.id == 1871046574150 %} gift-card-product-js-bind{% endif %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                     <span class="single-add-to-cart-button--text">
                       {%- if product.selected_or_first_available_variant.available -%}
                         {{ 'products.product.add_to_cart' | t }} 
@@ -85,21 +78,12 @@
                         {% render 'svg-icons' with 'thb-loading' %}
                       </span>
                       <span class="separator"> · </span>
-                      <span class="product-price-container product__price-main">
-                        <span class="no-js-hidden" id="price-{{ section.id }}">
-                          {% render 'product-price', product: product, use_variant: true, show_badges: false %}
-                        </span>
-                      </span>
+                      <div id="price-btn-{{ section.id }}--sticky" class="sticky__add-to-cart">
+                        {% render 'product-price', product: product, use_variant: true, show_badges: false %}
+                      </div>
                   </button>
-                {% else %}
-                  <button type="submit" name="add" class="single-add-to-cart-button button outline sold-out" disabled form="{{ product_form_id }}">
-                    <span class="single-add-to-cart-button--text">
-                      {{ 'products.product.sold_out' | t }}
-                    </span>
-                  </button>            
-                {% endunless %}
+                </div>
               </div>
-            </div>
           </product-form>
       {%- else -%}
       <div class="product-form">
