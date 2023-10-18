@@ -1,27 +1,42 @@
+<style>
+  .mandatory-hidden {
+    display: none !important;
+  }
+</style>
+
+{% assign stickySection = false %}
+{% if forStickySection %}
+  {% assign stickySection = true %}
+{% endif %}
+
 {% comment %}
  Digital gift cards
 {% endcomment %}
 {% if product.id == 171066294299 or product.id == 1871046574150 %}         
-  {% assign kind = 'Shipped' %}
-  {% for option in product.options_with_values %}
-    {% if option.name == 'Delivery Method' %}
-      {% assign kind = option.selected_value | replace: " (physical card)", "" %}      
-    {% endif %}
-  {% endfor %}  
-<div class="product-digitalgiftcard-form {{kind | replace: ' ', '-' }}">  
-  <div>
-    <label for="from">{{'products.giftcard.from' | t}}</label>
-    <input type="text" id="from" name="properties[from]" placeholder="{{'products.giftcard.from_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
+    {% assign kind = 'Shipped' %}
+    {% for option in product.options_with_values %}
+      {% if option.name == 'Delivery Method' %}
+        {% assign kind = option.selected_value | replace: " (physical card)", "" %}      
+      {% endif %}
+    {% endfor %}  
+  <div class="product-digitalgiftcard-form {{kind | replace: ' ', '-' }}">  
+    <div>
+      <label for="name">{{'products.giftcard.your_name' | t}}</label>
+      <input type="text" id="name" name="properties[name]" placeholder="{{'products.giftcard.your_name_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
+    </div>
+    <div>
+      <label for="recipient_name">{{'products.giftcard.recipient_name' | t}}</label>
+      <input type="text" id="recipient_name" name="properties[recipient_name]" placeholder="{{'products.giftcard.recipient_name_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
+    </div>
+    <div>
+      <label for="email">{{'products.giftcard.recipient_email' | t}}</label>
+      <input type="email" id="email" name="properties[email]" placeholder="{{'products.giftcard.recipient_email_placeholder' | t}}" required form="{{ product_form_id }}">
+    </div>
+    <div>
+      <label for="note">{{'products.giftcard.note' | t}}</label>
+      <textarea type="text" id="note" maxlength="500" name="properties[message]" placeholder="{{'products.giftcard.message_placeholder' | t}}" required form="{{ product_form_id }}"></textarea>
+    </div>
+    <label class="digitalgiftcard__deliverytime">{{'products.giftcard.email-immediate' | t}}</label> 
+    {% unless stickySection %}<input type="hidden" id="delivery-date" name="properties[delivers]" value="immediately" form="{{ product_form_id }}">{% endunless %}
   </div>
-  <div>
-    <label for="to">{{'products.giftcard.to' | t}}</label>
-    <input type="email" id="to" name="properties[to]" placeholder="{{'products.giftcard.to_placeholder' | t}}" required form="{{ product_form_id }}">
-  </div>
-  <div>
-    <label for="note">{{'products.giftcard.note' | t}}</label>
-    <textarea type="text" id="note" maxlength="500" name="properties[message]" placeholder="{{'products.giftcard.note_placeholder' | t}}" required form="{{ product_form_id }}"></textarea>
-  </div>
-  <label class="digitalgiftcard__deliverytime">{{'products.giftcard.email-immediate' | t}}</label> 
-  <input type="hidden" id="delivery-date" name="properties[delivers]" value="immediately" form="{{ product_form_id }}">
-</div>
 {% endif %}
