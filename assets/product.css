@@ -2608,7 +2608,8 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-color: #A28D5B;
 }
 
-.product-information .variations .select-styled:before {
+.product-information .variations .select-styled:before,
+.product-add-to-cart-sticky .variations .select-styled:before {
   content: "";
   background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/down.svg?v=1694036187);
   width: 20px;
@@ -2624,7 +2625,8 @@ variant-selects .product-form__input .select-arrow {
   display: none;
 }
 
-.product-information ul.select-options {
+.product-information ul.select-options,
+.product-add-to-cart-sticky ul.select-options {
   display: none;
   margin: 0;
   padding: 8px;
@@ -2638,7 +2640,8 @@ variant-selects .product-form__input .select-arrow {
   z-index: 99;
 }
 
-.product-information ul.select-options li {
+.product-information ul.select-options li,
+.product-add-to-cart-sticky ul.select-options li {
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
@@ -2653,7 +2656,8 @@ variant-selects .product-form__input .select-arrow {
   color: #333333;
 }
 
-.product-information ul.select-options li:before {
+.product-information ul.select-options li:before,
+.product-add-to-cart-sticky ul.select-options li:before{ {
   content: '';
   background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/check.svg?v=1694036142);
   width: 17px;
@@ -2664,14 +2668,14 @@ variant-selects .product-form__input .select-arrow {
   margin-right: 10px;
 }
 
-.product-information ul.select-options li:hover,
-.product-information ul.select-options li.is-selected {
+.product-information ul.select-options li:hover,.product-add-to-cart-sticky ul.select-options li:hover,
+.product-information ul.select-options li.is-selected,.product-add-to-cart-sticky ul.select-options li.is-selected {
   background: #A28D5B;
   color: #fff;
 }
 
-.product-information ul.select-options li:hover:before,
-.product-information ul.select-options li.is-selected:before {
+.product-information ul.select-options li:hover:before,.product-add-to-cart-sticky ul.select-options li:hover:before,
+.product-information ul.select-options li.is-selected:before,.product-add-to-cart-sticky ul.select-options li.is-selected:before {
   display: block;
 }
 
