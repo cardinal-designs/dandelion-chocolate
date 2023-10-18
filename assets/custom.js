@@ -358,9 +358,11 @@ $('.sub__menu--navigation a').click(function () {
 
 $(function(){
   var hash = window.location.hash;
-  $('html, body').animate({ 
-    scrollTop: $(hash).offset().top - 85
-  });
+  if(hash) {
+    $('html, body').animate({ 
+      scrollTop: $(hash).offset().top - 85
+    });
+  }
 });
 
 $(document).ready(function() {
