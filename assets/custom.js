@@ -609,7 +609,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (gift__input.checked) {
       console.log('Yes');
       console.log(GiftingSelect);
-      GiftingSelect.val('Yes').change();
+      $('select.gifting-select.select-hidden').val('Yes').change();
       //GiftingSelect.value = "Yes"; 
       GiftingSelect.dispatchEvent(new Event("change"));
       var flkty2 = new Flickity(carousel_main);
