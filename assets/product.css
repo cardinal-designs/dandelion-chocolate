@@ -2600,11 +2600,11 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   color: #333333;
 }
 
-.product-information .variations select {
+.product-information .variations select,.product-add-to-cart-sticky .variations select{
   display: none;
 }
 
-.product-information .variations .select-styled.active {
+.product-information .variations .select-styled.active,.product-add-to-cart-sticky .variations .select-styled.active{
   border-color: #A28D5B;
 }
 
