@@ -3147,6 +3147,23 @@ variant-selects .product-form__input .select-arrow {
   outline: none;
 }
 
+.product-digitalgiftcard-form input,
+.product-digitalgiftcard-form textarea {
+  padding: 14px 17px;
+  height: 45px;
+  letter-spacing: .02em;
+  background: transparent;
+  max-width: 100%;
+  border-radius: 0;
+  cursor: auto;
+  border: 1px solid #DEDEDE;
+  color: #94949C;
+  font-family: 'AGaramondPro';
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+}
+
 .product__detail+.product__detail .product__tasting-note {
   margin: 0;
 }
