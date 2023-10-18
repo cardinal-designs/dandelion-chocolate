@@ -5,7 +5,7 @@
 -%}
 {%- case option_type -%}
 {%- when 'dropdown' -%}
-	<fieldset class="product-form__input product-form__input--dropdown" {% if option.name == 'Gifting' %} style="display: none;" {% endif %}>
+	<fieldset class="product-form__input product-form__input--dropdown" {% if option.name == 'Gifting' %}  {% endif %}>
 		<div class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}{{ appended }}">
 		  {{ option.name }}{{ sizing_link }}
 		</div>
