@@ -163,14 +163,14 @@
   display: flex;
   width: 100%;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   text-transform: uppercase;
   font-family: Saa Series F D;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 15.6px;
-  letter-spacing: .1em;
-  color: #777779;
+  line-height: 18px;
+  letter-spacing: 0.15em;
+  color: #94949C;
 }
 
 .variations fieldset .form__label__value {
@@ -2586,18 +2586,18 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 
 .variations .select-styled {
   border: 1px solid var(--color-form-border);
-  padding: 12px 17px 16px;
-  height: 45px;
+  padding: 14px 17px 14px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.02em;
   background: transparent;
   max-width: 100%;
   border-radius: 0;
   cursor: pointer;
-  color: #333;
   font-family: 'Garamond Premiere Pro';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: 0.36px;
+  color: #333333;
 }
 
 .product-information .variations select,.product-add-to-cart-sticky .variations select{
@@ -2608,10 +2608,9 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   border-color: #A28D5B;
 }
 
-.product-information .variations .select-styled:before,
-.product-add-to-cart-sticky .variations .select-styled:before {
+.product-information .variations .select-styled:before {
   content: "";
-  background-image: url("data:image/svg+xml,%3Csvg width='19' height='9' viewBox='0 0 19 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5211 8.97911C9.50941 8.99068 9.49059 8.99068 9.4789 8.97911L0.458587 0.0513222C0.439536 0.032469 0.452887 1.98486e-07 0.479689 2.00829e-07L18.5203 1.77799e-06C18.5471 1.78033e-06 18.5605 0.0324706 18.5414 0.0513238L9.5211 8.97911Z' fill='%23A28D5B'/%3E%3C/svg%3E%0A");
+  background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/down.svg?v=1694036187);
   width: 20px;
   height: 10px;
   display: block;
@@ -2619,15 +2618,13 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
   right: 20px;
   top: 53%;
   transform: translateY(-50%);
-  background-repeat: no-repeat;
 }
 
 variant-selects .product-form__input .select-arrow {
   display: none;
 }
 
-.product-information ul.select-options,
-.product-add-to-cart-sticky ul.select-options {
+.product-information ul.select-options {
   display: none;
   margin: 0;
   padding: 8px;
@@ -2641,8 +2638,7 @@ variant-selects .product-form__input .select-arrow {
   z-index: 99;
 }
 
-.product-information ul.select-options li,
-.product-add-to-cart-sticky ul.select-options li {
+.product-information ul.select-options li {
   font-size: 18px;
   font-weight: 600;
   line-height: 20px;
@@ -2657,8 +2653,7 @@ variant-selects .product-form__input .select-arrow {
   color: #333333;
 }
 
-.product-information ul.select-options li:before,
-.product-add-to-cart-sticky ul.select-options li:before{ {
+.product-information ul.select-options li:before {
   content: '';
   background-image: url(https://cdn.shopify.com/s/files/1/2434/0841/files/check.svg?v=1694036142);
   width: 17px;
@@ -2669,14 +2664,14 @@ variant-selects .product-form__input .select-arrow {
   margin-right: 10px;
 }
 
-.product-information ul.select-options li:hover,.product-add-to-cart-sticky ul.select-options li:hover,
-.product-information ul.select-options li.is-selected,.product-add-to-cart-sticky ul.select-options li.is-selected {
+.product-information ul.select-options li:hover,
+.product-information ul.select-options li.is-selected {
   background: #A28D5B;
   color: #fff;
 }
 
-.product-information ul.select-options li:hover:before,.product-add-to-cart-sticky ul.select-options li:hover:before,
-.product-information ul.select-options li.is-selected:before,.product-add-to-cart-sticky ul.select-options li.is-selected:before {
+.product-information ul.select-options li:hover:before,
+.product-information ul.select-options li.is-selected:before {
   display: block;
 }
 
@@ -2700,67 +2695,6 @@ variant-selects .product-form__input .select-arrow {
   font-weight: 400;
   font-size: 13px;
   line-height: 26px;
-}
-
-.product-digitalgiftcard-form input,
-.product-digitalgiftcard-form textarea {
-  width: 100%;
-  margin: 0;
-}
-
-.product-digitalgiftcard-form textarea {
-  min-height: 147px;
-}
-
-.product-digitalgiftcard-form input:focus-visible,
-.product-digitalgiftcard-form textarea:focus-visible {
-  outline: none;
-}
-
-.product-digitalgiftcard-form {
-  display: none;
-}
-
-.product-digitalgiftcard-form label {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  font-family: Saa Series F D;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 15.6px;
-  letter-spacing: .10em;
-  color: #777779;
-}
-
-.product-digitalgiftcard-form.Email {
-  display: block;
-}
-
-.product-digitalgiftcard-form div {
-  margin-bottom: 30px;
-}
-
-.product-digitalgiftcard-form .digitalgiftcard__deliverytime {
-  font-size: 16px;
-  font-family: 'AGaramondPro';
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.32px;
-  color: #A28D5B;
-  text-transform: inherit;
-  margin-top: 10px;
-}
-
-.product-digitalgiftcard-form div:nth-last-child(3) {
-  margin: 0;
-}
-
-.product-add-to-cart-sticky textarea {
-  min-height: 90px;
-  resize: vertical;
 }
 
 @media only screen and (max-width: 1200px) {
