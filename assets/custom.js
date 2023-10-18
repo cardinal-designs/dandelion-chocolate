@@ -632,6 +632,13 @@ $(document).ready(function () {
       //   }
       // }
 
+
+      
+      
+      
+      
+      
+
       var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
       var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .variations select");
       
@@ -818,14 +825,12 @@ $(document).ready(function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const checkbox = document.querySelector("#gift__input");
-  if (checkbox) {
-    checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
-        const inputValue = checkbox.value;
-        console.log(inputValue);
-      }
-    });    
-  }
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      const inputValue = checkbox.value;
+      console.log(inputValue);
+    }
+  });
 });
 
 // Code For Gifiting Image Change
@@ -838,33 +843,31 @@ document.addEventListener("DOMContentLoaded", function() {
     GiftSelected = true;
   }
 
-  if(gift__input) {
-    gift__input.addEventListener("change", function() {
-      var GiftingSelect = document.querySelector("select.gifting-select"); 
-      var position_gift_image = document.getElementById('position_gift_image').value;
-      var carousel_main = document.querySelector('.carousel-main');
-      var flickityContainer = document.querySelector(".carousel-nav");
-  
-      if (gift__input.checked) {
-        GiftingSelect.value = "Yes"; 
-        GiftingSelect.dispatchEvent(new Event("change"));
-        var flkty2 = new Flickity(carousel_main);
-        if(GiftSelected) {
-          flkty2.select( 0 );
-        } else {
-          flkty2.select( position_gift_image - 1 );
-        }
-        
+  gift__input.addEventListener("change", function() {
+    var GiftingSelect = document.querySelector("select.gifting-select"); 
+    var position_gift_image = document.getElementById('position_gift_image').value;
+    var carousel_main = document.querySelector('.carousel-main');
+    var flickityContainer = document.querySelector(".carousel-nav");
+
+    if (gift__input.checked) {
+      GiftingSelect.value = "Yes"; 
+      GiftingSelect.dispatchEvent(new Event("change"));
+      var flkty2 = new Flickity(carousel_main);
+      if(GiftSelected) {
+        flkty2.select( 0 );
       } else {
-        GiftingSelect.value = "No";
-        GiftingSelect.dispatchEvent(new Event("change"));
-        var flkty2 = new Flickity(carousel_main);
-        if(GiftSelected) {
-          flkty2.select( 1 );
-        } else {
-          flkty2.select( 0 );
-        }
+        flkty2.select( position_gift_image - 1 );
       }
-    });
-  }
+      
+    } else {
+      GiftingSelect.value = "No";
+      GiftingSelect.dispatchEvent(new Event("change"));
+      var flkty2 = new Flickity(carousel_main);
+      if(GiftSelected) {
+        flkty2.select( 1 );
+      } else {
+        flkty2.select( 0 );
+      }
+    }
+  });
 });
