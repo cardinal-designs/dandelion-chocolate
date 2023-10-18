@@ -64,6 +64,16 @@
   {% endif %}
 {% endfor %}
 
+{% assign gift_option_image_id = product.metafields.custom.gift_option_image_id %}
+{% if gift_option_image_id != blank %}
+  {% assign gift_option_image_id = gift_option_image_id | plus: 0 %}
+  {% for image in product.images %}
+      {% if image.id == gift_option_image_id %}
+          {% assign position_gift_image = image.position %}
+      {% endif %}
+  {% endfor %}
+{% endif %}
+
 {%- if first_3d_model -%}
   <link
     id="ModelViewerStyle"
