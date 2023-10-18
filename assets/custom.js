@@ -599,7 +599,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   gift__input.addEventListener("change", function() {
     console.log('Changed');
-    var GiftingSelect = document.querySelector("select.gifting-select"); 
+    var GiftingSelect = document.querySelector("select.gifting-select.select-hidden"); 
     var position_gift_image = document.getElementById('position_gift_image').value;
     var carousel_main = document.querySelector('.carousel-main');
     var flickityContainer = document.querySelector(".carousel-nav");
