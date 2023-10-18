@@ -3164,6 +3164,16 @@ variant-selects .product-form__input .select-arrow {
   padding-bottom: 100%;
 }
 
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #94949C;
+  font-family: 'AGaramondPro';
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+}
+
 .product-add-to-cart-sticky.sticky--visible .product-digitalgiftcard-form {
   margin-bottom: 15px;
 }
