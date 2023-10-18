@@ -547,6 +547,10 @@
   margin-bottom: 20px;
 }
 
+.thb-product-detail .product-title-container .metafield-rich_text_field p {
+  color: #333333;
+}
+
 .thb-product-detail .product-title,
 .thb-product-detail .product-title * {
   font-family: 'CaslonSB-BoldCondensed' !important;
