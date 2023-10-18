@@ -577,6 +577,17 @@ function updateDigitalGiftCardForm() {
   }
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.querySelector("#gift__input");
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      const inputValue = checkbox.value;
+      console.log(inputValue);
+    }
+  });
+});
+
 // Code For Gifiting Image Change
 document.addEventListener("DOMContentLoaded", function() {
   const gift__input = document.querySelector("#gift__input");
@@ -612,17 +623,6 @@ document.addEventListener("DOMContentLoaded", function() {
       } else {
         flkty2.select( 0 );
       }
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const checkbox = document.querySelector("#gift__input");
-  checkbox.addEventListener("change", function () {
-    if (checkbox.checked) {
-      const inputValue = checkbox.value;
-      console.log(inputValue);
     }
   });
 });
