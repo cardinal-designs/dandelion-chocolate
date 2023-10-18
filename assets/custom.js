@@ -627,6 +627,5 @@ document.addEventListener("DOMContentLoaded", function() {
         flkty2.select( 0 );
       }
     }
-    console.log($('select.gifting-select.select-hidden').val());
   });
 });
