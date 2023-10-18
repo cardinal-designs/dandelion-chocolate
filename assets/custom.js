@@ -632,13 +632,6 @@ $(document).ready(function () {
       //   }
       // }
 
-
-      
-      
-      
-      
-      
-
       var digitalGiftCardInput = document.querySelectorAll(".product-information .variations select");
       var digitalGiftCardForm = document.querySelectorAll(".product-add-to-cart-sticky .variations select");
       
