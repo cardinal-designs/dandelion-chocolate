@@ -7,6 +7,7 @@
     },
     "shogun-above": {
       "type": "shogun-above",
+      "disabled": true,
       "settings": {
       }
     },
@@ -492,10 +493,9 @@
         "description": "<p>Combine your style with these products<\/p>",
         "full_width": true,
         "mobile_swipe": true,
+        "quickview_cartbutton": "quick_view",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false,
-        "show_collaborator": true,
-        "enable_treatment": true,
         "show_short_product_desc": true
       }
     },
