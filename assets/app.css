@@ -5189,6 +5189,11 @@ select.resize-select {
   letter-spacing: normal;
 }
 
+.cart-drawer--recommendations .product-cart-item .product-cart-item-image .cart-product-link {
+  height: 100px;
+  overflow: hidden;
+}
+
 .cart-drawer--recommendations .product-cart-item .cart-product-link .opti__fonts {
   text-transform: capitalize;
   color: #333;
