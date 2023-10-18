@@ -2721,10 +2721,6 @@ variant-selects .product-form__input .select-arrow {
   display: none;
 }
 
-.product-digitalgiftcard-form.Email {
-  display: block;
-}
-
 .product-digitalgiftcard-form label {
   display: flex;
   width: 100%;
@@ -2737,6 +2733,10 @@ variant-selects .product-form__input .select-arrow {
   line-height: 15.6px;
   letter-spacing: .10em;
   color: #777779;
+}
+
+.product-digitalgiftcard-form.Email {
+  display: block;
 }
 
 .product-digitalgiftcard-form div {
