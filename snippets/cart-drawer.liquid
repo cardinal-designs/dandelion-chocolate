@@ -86,6 +86,10 @@
                   {%- if item.product.metafields.info.tasting_notes != blank -%}
                     <div class="card__tasting-notes">{{ item.product.metafields.info.tasting_notes }}</div>
                   {%- endif -%}
+
+                  {%- if item.product.metafields.info.micro_info != blank -%}
+                    <div class="micro__copy">{{ item.product.metafields.info.micro_info }}</div>
+                  {%- endif -%}
                   
                   <span class="price">
                     {%- if item.original_line_price != item.final_line_price -%}
