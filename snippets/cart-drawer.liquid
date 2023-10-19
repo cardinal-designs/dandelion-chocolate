@@ -87,7 +87,8 @@
                     <div class="card__tasting-notes">{{ item.product.metafields.info.tasting_notes }}</div>
                   {%- endif -%}
 
-                  {%- if item.product.metafields.info.micro_info != blank -%}
+                  
+                  {%- if item.product.metafields.info.micro_info != blank and item.product.type == 'Chocolate Bar' -%}
                     <div class="micro__copy">{{ item.product.metafields.info.micro_info }}</div>
                   {%- endif -%}
                   
