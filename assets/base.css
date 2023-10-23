@@ -1138,7 +1138,7 @@ input[type=submit]:hover {
 }
 
 .cart-drawer .side-panel-footer {
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
 
 body.open-cart{
