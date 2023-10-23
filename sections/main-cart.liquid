@@ -549,6 +549,48 @@
   </div>
 </div>
 {{ 'cart.js' | asset_url | script_tag }}
+
+<script type="text/javascript">  
+(function() {
+  if (typeof Zapiet !== 'undefined' && typeof Zapiet.Cart !== 'undefined') {
+    Zapiet.Cart.updateLineItem = function(item, ZapietId) {
+      jQuery.ajax({
+        url: '/cart/change.js',
+        dataType: 'json',
+        data: Zapiet.Cart.getItemWithUpdatedProperties(item, ZapietId),
+        async: false
+      }).done(function(cart) {
+        return true;
+      });
+    }
+    
+    Zapiet.Cart.addZapietId = function(params, callback) {
+       Zapiet.Cart.getShoppingCart((shopping_cart) => {
+          const { items } = shopping_cart;
+
+          const ZapietId = Zapiet.Cart.getZapietId({
+              method: params.method,
+              location_id: (params.location) ? params.location.id : "",
+              date: params.date,
+              time: (params.method == 'delivery') ? params.start_time : params.time
+          });
+         
+
+          items.forEach(function(item, index) {
+            item.line_number = index + 1;
+            Zapiet.Cart.updateLineItem(item, ZapietId);
+          });
+         
+          callback(items);
+      });   
+    };
+  }
+})();
+</script>
+
+
+
+
 {% schema %}
   {
     "name": "Cart",
