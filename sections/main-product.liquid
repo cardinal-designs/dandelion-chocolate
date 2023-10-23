@@ -64,6 +64,16 @@
   {% endif %}
 {% endfor %}
 
+{% assign gift_option_image_id = product.metafields.custom.gift_option_image_id %}
+{% if gift_option_image_id != blank %}
+  {% assign gift_option_image_id = gift_option_image_id | plus: 0 %}
+  {% for image in product.images %}
+      {% if image.id == gift_option_image_id %}
+          {% assign position_gift_image = image.position %}
+      {% endif %}
+  {% endfor %}
+{% endif %}
+
 {%- if first_3d_model -%}
   <link
     id="ModelViewerStyle"
@@ -143,6 +153,7 @@
         {% endcomment %}
         
         <div class="media__gallery" id="MediaGallery-{{ section.id }}" data-position= "{{ position }}" data-offset="{{ offsetValue }}">
+          <input type="hidden" id="position_gift_image" value="{{ position_gift_image }}">
           <div class="product-image-container">
             <product-slider
               id="Product-Slider"
@@ -566,21 +577,20 @@
                       <h2 class="product__country h2">{{ product.metafields.info.origin_country }}</h2>
                     {%- endif -%}
 
-                   {% comment %}
-                    {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
-                      <div class="product__detail">
-                        {% if product.metafields.info.percentage %}
-                            <span class="product__percentage">{{product.metafields.info.percentage}}</span>
-                          {% endif %}
-                        {% if product.metafields.info.harvest_year %}
-                          <span class="product__harvest_year rrrr">{{ product.metafields.info.harvest_year }}</span>
-                        {% endif %}
-                        {% if product.metafields.info.batch_number %}
-                          <span class="product__batch_number">BATCH no. {{ product.metafields.info.batch_number }}</span>
-                        {% endif %}
+                    {%- if product.metafields.custom.gift_option -%}
+                      <div class="gift__option" id="gift__option-form-click">
+                        <span class="gift__option-form">
+                          {% assign price = product.metafields.custom.gift_option_price %}
+                          <input type="checkbox" id="gift__input" value={{ price }}>
+                          <label for="gift__input"><span class="gift__option-price">${{ price }}</span>{{ product.metafields.custom.gift_option_text }}</label>
+                        </span>
+                        {% if product.metafields.custom.gift_option_icon != blank %}
+                          <span class="gift__option-icon">
+                            <img src="{{ product.metafields.custom.gift_option_icon | img_url: '30x' }}">
+                          </span>
+                        {%- endif -%}                          
                       </div>
-                    {% endif %}
-                  {% endcomment %}
+                    {%- endif -%}
 
                     {% if product.metafields.info.percentage or product.metafields.info.harvest_year %}
                       <div class="product__detail--wrap">

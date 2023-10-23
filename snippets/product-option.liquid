@@ -5,7 +5,7 @@
 -%}
 {%- case option_type -%}
 {%- when 'dropdown' -%}
-	<fieldset class="product-form__input product-form__input--dropdown">
+	<fieldset class="product-form__input product-form__input--dropdown" {% if option.name == 'Gifting' %} style="display: none;" {% endif %}>
 		<div class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}{{ appended }}">
 		  {{ option.name }}{{ sizing_link }}
 		</div>
@@ -14,6 +14,7 @@
 				id="Option-{{ section.id }}-{{ forloop.index0 }}{{ appended }}"
 				name="options[{{ option.name | escape | append: appended }}]"
 				form="{{ product_form_id }}"
+                class="{% if option.name == 'Gifting' %}gifting-select {% endif %}select__variants" 
 			>
 		    {%- for value in option.values -%}
 		      <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>

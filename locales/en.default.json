@@ -146,13 +146,17 @@
       "xr_button_label": "View in your space, loads item in augmented reality window"
     },
     "giftcard": {
-      "email-immediate": "Email gift cards are delivered immediately upon checkout.",
-      "to": "To",
-      "to_placeholder": "Recipient email",
-      "note": "Message",
+      "email-immediate": "Virtual gift cards are emailed immediately upon checkout.",
+      "recipient_email": "Your Recipient’s Email",
+      "recipient_name": "Your Recipient’s Name",
+      "note": "GIFT MESSAGE",
       "note_placeholder": "Your gift message (500 character max)",
       "from": "From",
-      "from_placeholder": "Your name"
+      "your_name": "Your Name",
+      "recipient_name_placeholder": "e.g. Sarah",
+      "recipient_email_placeholder": "name@email.com",
+      "your_name_placeholder": "So your recipient knows who their gift is from ...",
+      "message_placeholder": "This will be displayed in the email to your recipient (500 character max)"
     },
     "facets": {
       "apply": "Apply",
