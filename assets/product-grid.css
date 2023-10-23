@@ -151,7 +151,8 @@
   padding-bottom: 100%;
 }
 
-.template-search .product-card .product-featured-image-link {
+.template-search .product-card .product-featured-image-link,
+.product-recommendations .product-card .product-featured-image-link {
   padding-bottom: 100% !important;
 }
 
