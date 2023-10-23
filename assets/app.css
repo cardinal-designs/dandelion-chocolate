@@ -2422,7 +2422,7 @@ table.no-borders tfoot td:first-child {
   padding: 0 30px 25px 30px;
   height: calc(100% - 72px);
   background: var(--bg-body, #fff);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 @media only screen and (min-width:1068px) {
