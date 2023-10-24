@@ -836,7 +836,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if(gift__input) {
     gift__input.addEventListener("change", function() {
       var GiftingSelect = document.querySelector("select.gifting-select"); 
-      var position_gift_image = document.getElementById('position_gift_image').value;
+      var position_gift_image = document.querySelectorAll('product-slider#Product-Slider-Thumbanils .product-images__slide').length;
       var carousel_main = document.querySelector('.carousel-main');
       var flickityContainer = document.querySelector(".carousel-nav");
   
