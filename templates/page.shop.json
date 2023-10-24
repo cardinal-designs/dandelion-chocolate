@@ -96,8 +96,8 @@
         "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Chocolatier, Häkan explores the bright, distinctive flavors of wild berries found in forests near his childhood home in southern Sweden, which he conveys in juicy, berried caramels, and both soft and firm ganaches - all paired with our fudgy 70% Camino Verde, Ecuador chocolate.<\/p>",
-            "description_size": "body-1",
+            "text": "<p><em>a Swedish bonbon collection<\/em><br\/><br\/>Chocolatier, Häkan explores the bright, distinctive flavors of wild berries found in forests near his childhood home in southern Sweden, which he conveys in juicy, berried caramels, and both soft and firm ganaches - all paired with our fudgy 70% Camino Verde, Ecuador chocolate.<\/p>",
+            "description_size": "body",
             "description_color": "#333333",
             "description_color_mobile": "#333"
           }
@@ -130,7 +130,7 @@
         "mobile_image": "shopify:\/\/shop_images\/Hakan_-_Pear_Bonbons_-_Dandelion_Chocolate_-_2023_1.jpg",
         "desktop_height": "desktop-height-450",
         "mobile_height": "mobile-height-500",
-        "content_width": "medium",
+        "content_width": "small",
         "content_position": "middle-left",
         "text_alignment": "left",
         "overlay_opacity": 0,
