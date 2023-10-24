@@ -5002,7 +5002,7 @@ select.resize-select {
 .cart-drawer .side-panel-inner {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100vh;
+  height: 100%;
   position: relative;
   z-index: 5;
   background-color: #ffffff;
