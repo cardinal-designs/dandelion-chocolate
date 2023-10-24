@@ -362,6 +362,19 @@ $('.sub__menu--navigation a[href^="#"]').click(function () {
   return false;
 });
 
+$('.sub__menu--navigation a').click(function () {
+  $('.mobile-toggle-wrapper').removeClass('active');
+  $('.mobile-toggle-wrapper').removeAttr('open');
+  $('body').removeClass('overflow-hidden');
+});
+
+$(function(){
+  var hash = window.location.hash;
+  $('html, body').animate({ 
+    scrollTop: $(hash).offset().top - 85
+  });
+});
+
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
   
