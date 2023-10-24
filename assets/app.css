@@ -2319,7 +2319,6 @@ table.no-borders tfoot td:first-child {
 }
 
 .side-panel {
-  height: 100dvh;
   position: fixed;
   top: 0;
   right: 0;
@@ -5002,7 +5001,7 @@ select.resize-select {
 .cart-drawer .side-panel-inner {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100%;
+  height: 100dvh;
   position: relative;
   z-index: 5;
   background-color: #ffffff;
