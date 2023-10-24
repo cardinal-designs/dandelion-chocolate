@@ -90,7 +90,7 @@
             "text": "PEARLS OF THE FOREST",
             "heading_size": "h1",
             "heading_color": "#333333",
-            "heading_color_mobile": "#333"
+            "heading_color_mobile": "#333333"
           }
         },
         "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-text-1": {
@@ -99,7 +99,7 @@
             "text": "<p><em>a Swedish bonbon collection<\/em><br\/><br\/>Chocolatier, Häkan explores the bright, distinctive flavors of wild berries found in forests near his childhood home in southern Sweden, which he conveys in juicy, berried caramels, and both soft and firm ganaches - all paired with our fudgy 70% Camino Verde, Ecuador chocolate.<\/p>",
             "description_size": "body",
             "description_color": "#333333",
-            "description_color_mobile": "#333"
+            "description_color_mobile": "#333333"
           }
         },
         "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-button-1": {
@@ -382,7 +382,7 @@
         "quote_enable": false,
         "mobile_swipe": true,
         "quickview_cartbutton": "addtocart",
-        "product_limit": "2",
+        "product_limit": "4",
         "show_progress_bar": true,
         "show_view_all": false,
         "quote": "",
