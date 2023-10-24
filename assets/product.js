@@ -594,6 +594,8 @@ if (!customElements.get('product-form')) {
             return;
           }
 
+          console.log(response);
+
           this.renderContents(response);
 
           dispatchCustomEvent('cart:item-added', {
