@@ -339,41 +339,45 @@ $(document).ready(function () {
   }
 });
 
-var $root = $('html, body');
-$('.mega-menu-container a[href^="#"]').click(function () {
-  $('.mega-menu-container').addClass('hidden');
-  setTimeout(function() { 
-    $('.mega-menu-container').removeClass('hidden');
-  }, 500);
+if(document.querySelector('.Sub_Menu-Columns')){
+  document.querySelector('.Sub_Menu-Columns').querySelectorAll('li a').forEach((ele)=>{
+    ele.addEventListener('click',function(el){
+      let Id = el.currentTarget.getAttribute('href'),
+          sectionId = document.querySelector(`[id="${Id}"]`);
+      window.scroll({
+        top: sectionId.offsetTop - 90,
+        behavior: "smooth",
+      });
+    });
+  
+    if(window.sessionStorage.getItem('scrolltosection')){
+      console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+      if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+        ele.click();
+        window.sessionStorage.removeItem("scrolltosection");
+      }
+    }
+  })
+}
 
-  $root.animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top - 85
-  }, 500);
-  return false;
-});
+document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
+  ele.addEventListener('click',function(el){
+    let Id = el.currentTarget.getAttribute('href'),
+        sectionId = document.querySelector(`[id="${Id}"]`);
+    window.scroll({
+      top: sectionId.offsetTop - 72,
+      behavior: "smooth",
+    });
+  })
 
-$('.sub__menu--navigation a[href^="#"]').click(function () {
-  $('.mobile-toggle-wrapper').removeClass('active');
-  $('.mobile-toggle-wrapper').removeAttr('open');
-  $('body').removeClass('overflow-hidden');
-  $root.animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top - 85
-  }, 500);
-  return false;
-});
-
-$('.sub__menu--navigation a').click(function () {
-  $('.mobile-toggle-wrapper').removeClass('active');
-  $('.mobile-toggle-wrapper').removeAttr('open');
-  $('body').removeClass('overflow-hidden');
-});
-
-$(function(){
-  var hash = window.location.hash;
-  $('html, body').animate({ 
-    scrollTop: $(hash).offset().top - 85
-  });
-});
+  if(window.sessionStorage.getItem('scrolltosection')){
+    console.log(ele.dataset.colId,window.sessionStorage.getItem('scrolltosection'))
+    if(ele.dataset.colId == window.sessionStorage.getItem('scrolltosection')){
+      ele.click();
+      window.sessionStorage.removeItem("scrolltosection");
+    }
+  }
+})
 
 $(document).ready(function() {
   var desc = $('.meta__product--description').html();
@@ -805,12 +809,12 @@ $(document).ready(function () {
     $('.facets__label').text(productsLength+ " Results")
   }
 
-$(document).on('input','.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea', function () {
-  var newValue = $(this).val();
-  var inputField = $(this).attr('name');
-  $('[name="' + inputField + '"]').val(newValue);
-});
-
+  $(document).on('input','.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea', function () {
+    var newValue = $(this).val();
+    var inputField = $(this).attr('name');
+    $('[name="' + inputField + '"]').val(newValue);
+  });
+})
 
 document.addEventListener("DOMContentLoaded", function () {
   const checkbox = document.querySelector("#gift__input");
