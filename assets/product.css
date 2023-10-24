@@ -3278,7 +3278,7 @@ textarea::placeholder {
 }
 
 .gift__option-price {
-  margin: 0 7px 0 10px;
+  margin: 0 0 0 5px;
 }
 
 .gift__option input:checked + label:before {
