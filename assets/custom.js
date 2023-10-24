@@ -200,7 +200,27 @@ function updateDigitalGiftCardForm() {
   }
 })
 
-    // Code For Gifiting Image Change
+
+$(document).on('input','.product-digitalgiftcard-form input,.product-digitalgiftcard-form textarea', function () {
+    var newValue = $(this).val();
+    var inputField = $(this).attr('name');
+    $('[name="' + inputField + '"]').val(newValue);
+  });
+})
+
+document.addEventListener("DOMContentLoaded", function () {
+  const checkbox = document.querySelector("#gift__input");
+  if (checkbox) {
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        const inputValue = checkbox.value;
+        console.log(inputValue);
+      }
+    });    
+  }
+});
+  
+// Code For Gifiting Image Change
 document.addEventListener("DOMContentLoaded", function() {
   const gift__input = document.querySelector("#gift__input");
   var GiftSelected = false;
