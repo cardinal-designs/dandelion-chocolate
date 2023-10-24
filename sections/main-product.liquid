@@ -582,7 +582,7 @@
                         <span class="gift__option-form">
                           {% assign price = product.metafields.custom.gift_option_price %}
                           <input type="checkbox" id="gift__input" value={{ price }}>
-                          <label for="gift__input">{{ product.metafields.custom.gift_option_text }} (+$<span class="gift__option-price">${{ price }}</span>)</label>
+                          <label for="gift__input">{{ product.metafields.custom.gift_option_text }} (+<span class="gift__option-price">${{ price }}</span>)</label>
                         </span>
                         {% if product.metafields.custom.gift_option_icon != blank %}
                           <span class="gift__option-icon">
