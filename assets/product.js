@@ -594,7 +594,7 @@ if (!customElements.get('product-form')) {
             return;
           }
 
-          console.log(response);
+          console.log('sdfsgfsfgsf ',response);
 
           this.renderContents(response);
 
