@@ -2319,6 +2319,7 @@ table.no-borders tfoot td:first-child {
 }
 
 .side-panel {
+  height: 100dvh;
   position: fixed;
   top: 0;
   right: 0;
