@@ -818,7 +818,6 @@ document.addEventListener("DOMContentLoaded", function () {
     checkbox.addEventListener("change", function () {
       if (checkbox.checked) {
         const inputValue = checkbox.value;
-        console.log(inputValue);
       }
     });    
   }
