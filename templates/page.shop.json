@@ -45,6 +45,7 @@
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-2",
         "template--15975894155404__2a732536-248e-4bfc-bf69-56eb0774b4df-1688415039998149ea-3"
       ],
+      "disabled": true,
       "custom_css": [
         ".image-with-text-overlay--content-inner .rte {margin-left: 0px;}",
         "@media (min-width: 768px) {.image-with-text-overlay--content {padding-left: 60px !important; }}",
@@ -79,8 +80,8 @@
           "type": "subheading",
           "settings": {
             "text": "a collab with håkan chocolatier",
-            "subheading_color": "#6b6b6b",
-            "subheading_color_mobile": "#333"
+            "subheading_color": "#a28d5b",
+            "subheading_color_mobile": "#a08e33"
           }
         },
         "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-heading-1": {
@@ -117,7 +118,6 @@
         "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-text-1",
         "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-button-1"
       ],
-      "disabled": true,
       "custom_css": [
         ".image-with-text-overlay--content-inner .rte {margin-left: 0px;}",
         "@media (min-width: 768px) {.image-with-text-overlay--content {padding-left: 60px !important; }}",
@@ -127,6 +127,7 @@
         "section_width": "full-width-row-full",
         "image_url": false,
         "image": "shopify:\/\/shop_images\/Banner_Image_5.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Hakan_-_Pear_Bonbons_-_Dandelion_Chocolate_-_2023_1.jpg",
         "desktop_height": "desktop-height-450",
         "mobile_height": "mobile-height-500",
         "content_width": "medium",
