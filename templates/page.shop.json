@@ -72,6 +72,78 @@
         "custom_class": ""
       }
     },
+    "e5e26ec1-1892-4708-beb1-85d0f5f91706": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": "a collab with håkan chocolatier",
+            "subheading_color": "#6b6b6b",
+            "subheading_color_mobile": "#333"
+          }
+        },
+        "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "PEARLS OF THE FOREST",
+            "heading_size": "h1",
+            "heading_color": "#333333",
+            "heading_color_mobile": "#333"
+          }
+        },
+        "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chocolatier, Häkan explores the bright, distinctive flavors of wild berries found in forests near his childhood home in southern Sweden, which he conveys in juicy, berried caramels, and both soft and firm ganaches - all paired with our fudgy 70% Camino Verde, Ecuador chocolate.<\/p>",
+            "description_size": "body-1",
+            "description_color": "#333333",
+            "description_color_mobile": "#333"
+          }
+        },
+        "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-button-1": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "button_link": "shopify:\/\/products\/pearls-of-the-forest",
+            "button_style": "btn--gold",
+            "mobile_button_style": "btn--gold"
+          }
+        }
+      },
+      "block_order": [
+        "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-subheading-1",
+        "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-heading-1",
+        "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-text-1",
+        "template--16011450613900__e5e26ec1-1892-4708-beb1-85d0f5f91706-button-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image-with-text-overlay--content-inner .rte {margin-left: 0px;}",
+        "@media (min-width: 768px) {.image-with-text-overlay--content {padding-left: 60px !important; }}",
+        "@media (max-width: 500px) {.image-with-text-overlay--content-inner {padding: 20px !important; } .mb-23 {width: 100% !important; }}"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image_url": false,
+        "image": "shopify:\/\/shop_images\/Banner_Image_5.jpg",
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "overlay_opacity": 0,
+        "show_caption_box": false,
+        "caption_over_banner": true,
+        "caption_bg": "",
+        "mobile_caption_bg": "",
+        "stack_on_mobile": false,
+        "content__bg": "#333333",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true,
+        "custom_class": ""
+      }
+    },
     "485c4745-3f2d-40d0-b235-4fb67da08280": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -715,6 +787,7 @@
   },
   "order": [
     "2a732536-248e-4bfc-bf69-56eb0774b4df",
+    "e5e26ec1-1892-4708-beb1-85d0f5f91706",
     "485c4745-3f2d-40d0-b235-4fb67da08280",
     "dcf58d18-7582-499d-bd3f-754d9d7ffd73",
     "156a4980-a379-4513-acbd-ad484c675407",
