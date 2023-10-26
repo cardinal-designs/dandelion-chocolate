@@ -151,10 +151,10 @@
   padding-bottom: 100%;
 }
 
-/* .template-search .product-card .product-featured-image-link,
+.template-search .product-card .product-featured-image-link,
 .product-recommendations .product-card .product-featured-image-link {
   padding-bottom: 100% !important;
-} */
+}
 
 .chocolate-bars .product-card .product-featured-image-link img {
   object-fit: contain;
