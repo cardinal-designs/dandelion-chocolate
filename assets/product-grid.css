@@ -156,7 +156,8 @@
   padding-bottom: 100% !important;
 }
 
-.template-search .product-card .product-featured-image-link img {
+.template-search .product-card .product-featured-image-link img,
+.product-recommendations .product-card .product-featured-image-link img {
   object-fit: contain;  
 }
 
