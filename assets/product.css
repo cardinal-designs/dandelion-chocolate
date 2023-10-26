@@ -2270,6 +2270,14 @@ quantity-selector.quantity .plus svg {
   letter-spacing: normal;
 }
 
+.product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title p {
+  text-transform: inherit;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: normal;
+  margin: 0;
+}
+
 .product-add-to-cart-sticky--info .new-percentage {
   margin-bottom: 5px;
   font-size: 10px;
