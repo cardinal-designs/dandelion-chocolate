@@ -519,12 +519,6 @@
       "block_order": [
         "5a4505da-256e-40c8-9f46-4ee03e22161a"
       ],
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "5ec55820-d0c0-4e62-950f-ab753153c93e": {
-      "type": "recommended",
       "settings": {
       }
     }
@@ -545,7 +539,6 @@
     "1662552569cce2536d",
     "product-recommendations",
     "shogun-below",
-    "1693215725f4a695df",
-    "5ec55820-d0c0-4e62-950f-ab753153c93e"
+    "1693215725f4a695df"
   ]
 }
