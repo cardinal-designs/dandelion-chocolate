@@ -4693,7 +4693,7 @@ select.resize-select {
   justify-content: center;
   background: transparent;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: normal;
   margin: 0;
   outline: 0;
 }
