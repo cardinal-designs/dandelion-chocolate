@@ -521,6 +521,11 @@
       ],
       "settings": {
       }
+    },
+    "5ec55820-d0c0-4e62-950f-ab753153c93e": {
+      "type": "recommended",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -539,6 +544,7 @@
     "1662552569cce2536d",
     "product-recommendations",
     "shogun-below",
-    "1693215725f4a695df"
+    "1693215725f4a695df",
+    "5ec55820-d0c0-4e62-950f-ab753153c93e"
   ]
 }
