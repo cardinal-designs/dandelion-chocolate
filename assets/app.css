@@ -5189,6 +5189,10 @@ select.resize-select {
   letter-spacing: normal;
 }
 
+.cart-drawer--recommendations .product-cart-item .cart-product-link .metafield-rich_text_field p {
+  line-height: 125%;
+}
+
 .cart-drawer--recommendations .product-cart-item .product-cart-item-image .cart-product-link {
   height: 100px;
   overflow: hidden;
