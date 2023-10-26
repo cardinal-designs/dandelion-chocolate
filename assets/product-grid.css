@@ -156,6 +156,10 @@
   padding-bottom: 100% !important;
 }
 
+.template-search .product-card .product-featured-image-link img {
+  object-fit: contain;  
+}
+
 .chocolate-bars .product-card .product-featured-image-link img {
   object-fit: contain;
 }
