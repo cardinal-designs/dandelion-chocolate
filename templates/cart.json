@@ -21,6 +21,7 @@
         "description": "",
         "full_width": true,
         "mobile_swipe": true,
+        "quickview_cartbutton": "addtocart",
         "disable_top_spacing": true,
         "disable_bottom_spacing": false,
         "show_short_product_desc": true
