@@ -16,6 +16,8 @@
       <div class="product-add-to-cart-sticky--title {% if product.type == 'Chocolate Bar' %}product__sticky-title{% endif %}">
         {% if product.metafields.info.cart_title != blank %}
           {{ product.metafields.info.cart_title | metafield_tag }}
+        {% else if %}
+          {{ product.metafields.info.title | metafield_tag }}
         {% else %}
           {{ product.title }}
         {% endif %}
