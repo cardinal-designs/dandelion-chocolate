@@ -549,6 +549,7 @@
 
 .thb-product-detail .product-title-container .metafield-rich_text_field p {
   color: #333333;
+  margin-bottom: 10px;
 }
 
 .thb-product-detail .product-title,
@@ -2269,6 +2270,14 @@ quantity-selector.quantity .plus svg {
   letter-spacing: normal;
 }
 
+.product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title p {
+  text-transform: inherit;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: normal;
+  margin: 0;
+}
+
 .product-add-to-cart-sticky--info .new-percentage {
   margin-bottom: 5px;
   font-size: 10px;
@@ -2555,7 +2564,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 }
 
 .template-product .rebuy-widget-content .primary-title {
-  font-family: OPTICaslonBold-Cond;
+  font-family: 'CaslonSB-BoldCondensed';
   font-weight: 500;
   margin-bottom: 30px;
   color: #333;

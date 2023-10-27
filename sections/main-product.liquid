@@ -582,14 +582,15 @@
                         {{ product.title }}       
                       {%- endif -%}
                     </h1>
-                    {% if product.metafields.info.below_title != blank %}
-                      <div class="below_title">
-                        {{ product.metafields.info.below_title | metafield_tag }}
-                      </div>
-                    {% endif %}
                     {% if product.metafields.info.subtitle != blank %}
                       <div class="subtitle">
                         {{ product.metafields.info.subtitle | metafield_tag }}
+                      </div>
+                    {% endif %}
+                    
+                    {% if product.metafields.info.below_title != blank %}
+                      <div class="below_title">
+                        {{ product.metafields.info.below_title | metafield_tag }}
                       </div>
                     {% endif %}
 
@@ -721,6 +722,8 @@
                             {% render 'icon-pickup' %}
                           {% elsif bar_icon_name == 'wholesale' %}
                             {% render 'icon-wholesale' %}
+                          {% elsif bar_icon_name == 'collaboration' %}
+                            {% render 'icon-collaboration' %}
                           {% endif %}
                         {% endcapture %}
                         <div>

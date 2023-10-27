@@ -4693,7 +4693,7 @@ select.resize-select {
   justify-content: center;
   background: transparent;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: normal;
   margin: 0;
   outline: 0;
 }
@@ -5187,6 +5187,10 @@ select.resize-select {
   margin-bottom: 5px;
   line-height: 21.6px;
   letter-spacing: normal;
+}
+
+.cart-drawer--recommendations .product-cart-item .cart-product-link .metafield-rich_text_field p {
+  line-height: 125%;
 }
 
 .cart-drawer--recommendations .product-cart-item .product-cart-item-image .cart-product-link {
@@ -5891,7 +5895,7 @@ input[type="radio"],
   width: auto;
   margin: 0 auto;
   border: 1px solid #A48B55;
-  padding: 8px 10px 3px;
+  padding: 7px 10px 2px;
   border-radius: 50px;
 }
 
