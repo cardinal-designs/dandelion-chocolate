@@ -1357,10 +1357,10 @@ input[type=search]::-ms-reveal {
   height: 0; 
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { 
+.collection-banner--content input[type="search"]::-webkit-search-decoration,
+.collection-banner--content input[type="search"]::-webkit-search-cancel-button,
+.collection-banner--content input[type="search"]::-webkit-search-results-button,
+.collection-banner--content input[type="search"]::-webkit-search-results-decoration { 
   display: none; 
 }
 
