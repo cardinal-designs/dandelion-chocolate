@@ -398,6 +398,7 @@
                         assign first_image = media.preview_image
                       endif
                     -%}
+                    {{ image_index }} {{ product.metafields.custom.gift_option_image_id }}
                     {% if product.metafields.custom.gift_image != blank and image_index == product.metafields.custom.gift_option_image_id %}
                       <div
                             id="Slide-{{ section.id }}-{{ media.id }}"
