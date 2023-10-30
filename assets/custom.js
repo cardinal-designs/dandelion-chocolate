@@ -907,7 +907,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
   const searchInputs = document.querySelectorAll(".search-field");
   searchInputs.forEach(function(searchInput) {
-    const clearSearchButton = searchInput.parentElement.querySelector(".close__search");
+    const clearSearchButton = searchInput.parentElement.querySelector("#close__search");
     clearSearchButton.addEventListener("click", function() {
       searchInput.value = ""; 
     });
