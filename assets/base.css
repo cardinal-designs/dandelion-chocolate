@@ -1376,32 +1376,6 @@ input[type="search"]::-webkit-search-cancel-button {
   cursor: pointer;
 }
 
-/* 
-.collection-banner--content input[type="search"]::-webkit-search-decoration,
-.collection-banner--content input[type="search"]::-webkit-search-cancel-button,
-.collection-banner--content input[type="search"]::-webkit-search-results-button,
-.collection-banner--content input[type="search"]::-webkit-search-results-decoration { 
-  display: none; 
-} */
-
-/* #close__search {
-  position: absolute;
-  right: 53px;
-  top: 13px;
-  z-index: 11;
-  display: none;
-  cursor: pointer;
-}
-
-#close__search svg {
-  width: 10px;
-}
-
-.searchform fieldset input:focus + input + #close__search,
-.searchform fieldset input:valid + input + #close__search {
-  display: block;  
-} */
-
 @media screen and (max-width: 1067px) { 
 
   .icon__row--wrap {
