@@ -1370,6 +1370,7 @@ input[type=search]::-ms-reveal {
   top: 13px;
   z-index: 11;
   display: none;
+  cursor: pointer;
 }
 
 .close__search svg {
