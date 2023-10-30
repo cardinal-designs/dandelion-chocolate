@@ -809,21 +809,21 @@ dropdownElements.forEach((dropdownElement) => {
   const selectElement = dropdownElement.querySelector('.select__variants');
   const liElements = dropdownElement.querySelectorAll('.select-options li');
 
-  liElements.forEach((li, index) => {
+ liElements.forEach((li, index) => {
     li.addEventListener('click', () => {
-      // Change the selected index of both li elements
-      liElements.forEach((element, i) => {
-        selectElement.selectedIndex = i;
+      // Synchronize the selected index for all select elements
+      dropdownElements.forEach((container) => {
+        const select = container.querySelector('.select__variants');
+        select.selectedIndex = index;
+        const changeEvent = new Event('change', {
+          bubbles: true,
+          cancelable: true
+        });
+        select.dispatchEvent(changeEvent);
       });
-
-      // Trigger the 'change' event on the select element
-      const changeEvent = new Event('change', {
-        bubbles: true,
-        cancelable: true
-      });
-      selectElement.dispatchEvent(changeEvent);
     });
   });
+  
 });
 
 
