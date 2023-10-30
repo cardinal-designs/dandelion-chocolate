@@ -1364,7 +1364,7 @@ input[type=search]::-ms-reveal {
   display: none; 
 }
 
-.close__search {
+#close__search {
   position: absolute;
   right: 53px;
   top: 13px;
@@ -1373,11 +1373,11 @@ input[type=search]::-ms-reveal {
   cursor: pointer;
 }
 
-.close__search svg {
+#close__search svg {
   width: 10px;
 }
 
-.searchform fieldset input:focus + input + .close__search {
+.searchform fieldset input:focus + input + #close__search  {
   display: block;  
 }
 
