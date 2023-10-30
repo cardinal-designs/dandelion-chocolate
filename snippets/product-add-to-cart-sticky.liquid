@@ -27,7 +27,7 @@
         </div>
       {% endif %}
 
-      {% if product.metafields.info.micro_info != blank %}
+      {% if product.metafields.info.micro_info != blank and product.type == 'Chocolate Bar' %}
         <div class="product__detail">
           <div class="product__tasting-note">{{ product.metafields.info.micro_info }}</div>
         </div>
