@@ -87,6 +87,7 @@
   position: absolute;
   right: 53px;
   top: 13px;
+  z-index: 11;
 }
 
 .close__search svg {
