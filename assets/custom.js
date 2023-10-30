@@ -510,8 +510,6 @@ document.querySelectorAll('.child__menu--image a').forEach((ele)=>{
 $(document).ready(function () {
 
     function updateDigitalGiftCardForm() {
-
-      console.log("Hello");
       
       function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
           var val = digitalGiftCardInput.val();
