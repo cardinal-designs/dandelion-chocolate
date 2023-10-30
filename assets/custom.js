@@ -885,6 +885,7 @@ document.addEventListener("DOMContentLoaded", function() {
         GiftingSelect.dispatchEvent(new Event("change"));
         var flkty2 = new Flickity(carousel_main);
         if(GiftSelected) {
+          console.log(GiftSelected,'GiftSelected');
           flkty2.select( parseInt(gift__input.value) );
         } else {
           flkty2.select( position_gift_image - 1 );
