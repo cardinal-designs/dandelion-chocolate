@@ -865,12 +865,12 @@ document.addEventListener("DOMContentLoaded", function () {
 // Code For Gifiting Image Change
 document.addEventListener("DOMContentLoaded", function() {
   const gift__input = document.querySelector("#gift__input");
-  // var GiftSelected = false;
+  var GiftSelected = false;
 
-  // if($('.gifting-select').val() == 'Yes') {
-  //   $( "#gift__input" ).prop( "checked", true );
-  //   GiftSelected = true;
-  // }
+  if($('.gifting-select').val() == 'Yes') {
+    $( "#gift__input" ).prop( "checked", true );
+    GiftSelected = true;
+  }
 
   if(gift__input) {
     gift__input.addEventListener("change", function() {
