@@ -542,7 +542,6 @@ $(document).ready(function () {
       initializeListener(".product-add-to-cart-sticky");
       
       function changeOtherForm(currentElements) {
-        console.log(currentElements[1].value, "Jdjskjd");
       
         const isEmail = currentElements[0].value === "Email";
         const modeClass = isEmail ? "Email" : "";
