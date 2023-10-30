@@ -906,7 +906,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   const searchInput = document.getElementById("searchInput");
-  const clearSearchButton = document.getElementById("clearSearchButton");
+  const clearSearchButton = document.getElementById("close__search");
 
   // Add a click event listener to the custom clear button
   clearSearchButton.addEventListener("click", function() {
