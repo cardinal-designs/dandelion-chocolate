@@ -19,7 +19,7 @@
         {% assign kind = option.selected_value | replace: " (physical card)", "" %}      
       {% endif %}
     {% endfor %}  
-  <div class="product-digitalgiftcard-form {{kind | replace: ' ', '-' }}">  
+  <div class="product-digitalgiftcard-form {{ kind | replace: ' ', '-' }}">  
     <div>
       <label for="name">{{'products.giftcard.your_name' | t}}</label>
       <input type="text" id="name" name="properties[name]" placeholder="{{'products.giftcard.your_name_placeholder' | t}}" maxlength="25" required form="{{ product_form_id }}">
