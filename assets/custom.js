@@ -777,6 +777,7 @@ $(document).ready(function () {
     });
     
     $listItems.click(function(e) {
+      console.log('called')
       e.stopPropagation();
       document.querySelector(".product-form .price .amount").classList.add('mandatory-hidden');
       $styledSelect.text($(this).text()).removeClass('active');
