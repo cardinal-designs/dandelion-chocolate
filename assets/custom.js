@@ -451,31 +451,31 @@ $(document).ready(function() {
     
      $listItems.click(function(e) {
         e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        var selectElement = $this[0];
-    selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
+    //     $styledSelect.text($(this).text()).removeClass('active');
+    //     var selectElement = $this[0];
+    // selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
     
-    // Dispatch the 'change' event on the select element
-    var changeEvent = new Event('change', { bubbles: true });
-    selectElement.dispatchEvent(changeEvent);
+    // // Dispatch the 'change' event on the select element
+    // var changeEvent = new Event('change', { bubbles: true });
+    // selectElement.dispatchEvent(changeEvent);
   
        
-        $list.find('li.is-selected').removeClass('is-selected');
-        $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
-        $list.hide();
+    //     $list.find('li.is-selected').removeClass('is-selected');
+    //     $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+    //     $list.hide();
 
-       var addtoCart = $('.product-information button[type="submit"]').text();
+    //    var addtoCart = $('.product-information button[type="submit"]').text();
        
-       setTimeout(function(){
-         console.log(addtoCart.trim())
-         if (addtoCart.includes("Sold out")){
-           $('.product-submit').text('SOLD OUT');
-           $('.product-submit').attr('disabled','disabled');
-         } else {
-           $('.product-submit').text('RESERVE YOUR SPOT');
-           $('.product-submit').removeAttr('disabled');
-         }
-       },3000)
+    //    setTimeout(function(){
+    //      console.log(addtoCart.trim())
+    //      if (addtoCart.includes("Sold out")){
+    //        $('.product-submit').text('SOLD OUT');
+    //        $('.product-submit').attr('disabled','disabled');
+    //      } else {
+    //        $('.product-submit').text('RESERVE YOUR SPOT');
+    //        $('.product-submit').removeAttr('disabled');
+    //      }
+    //    },3000)
       });
   
     
