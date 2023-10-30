@@ -21,7 +21,9 @@
                 {% if option.name == 'Size' %}
                   {{ value }} ({{ product.variants[forloop.index0].metafields.custom.variant_subtitle }})
                 {% else %}
-                  {{ value }}
+                  {% unless value == 'Email' %}
+                    {{ value }}
+                  {% endunless %}            
                 {% endif %}
                 {% if value == 'Email' %}
                   Virtual - Delivered immediately by Email
