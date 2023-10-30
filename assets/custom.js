@@ -801,20 +801,26 @@ $(document).ready(function () {
   
   });
 
-const selectElement = document.querySelector('.product-form__input--dropdown .select__variants');
-const liElements = document.querySelectorAll('.product-form__input--dropdown .select-options li');
-  console.log(liElements)
-liElements.forEach((li, index) => {
-  li.addEventListener('click', () => {
-    console.log(index);
-    selectElement.selectedIndex = index;
-    const changeEvent = new Event('change', {
-      bubbles: true,
-      cancelable: true
+// Get all elements with the class .product-form__input--dropdown
+const dropdownElements = document.querySelectorAll('.product-form__input--dropdown');
+
+dropdownElements.forEach((dropdownElement) => {
+  // Within each dropdown element, get the select and li elements
+  const selectElement = dropdownElement.querySelector('.select__variants');
+  const liElements = dropdownElement.querySelectorAll('.select-options li');
+
+  liElements.forEach((li, index) => {
+    li.addEventListener('click', () => {
+      selectElement.selectedIndex = index;
+      const changeEvent = new Event('change', {
+        bubbles: true,
+        cancelable: true
+      });
+      selectElement.dispatchEvent(changeEvent);
     });
-    selectElement.dispatchEvent(changeEvent);
   });
 });
+
 
   
     
