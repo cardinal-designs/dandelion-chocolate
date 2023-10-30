@@ -399,8 +399,8 @@
                       endif
                     -%}
                     {% assign giftImageposition = product.metafields.custom.gift_option_image_id | plus: 0 %}
-                    {{ media.position }}--{{ product.metafields.custom.gift_option_image_id }},
-                    {% if product.metafields.custom.gift_image != blank and media.position == product.metafields.custom.gift_option_image_id %}
+                    {{ media.position }}--{{ giftImageposition }},
+                    {% if product.metafields.custom.gift_image != blank and media.position == giftImageposition %}
                       <div
                             id="Slide-{{ section.id }}-{{ media.id }}"
                             class="product-images__slide{% if product.selected_or_first_available_variant.featured_media == null and forloop.index == 1 %} is-active{% endif %}{% if hide_variants and variant_images contains media.src %} product-images__slide-item--variant{% endif %}{% if media.media_type != 'image' %} product-images__slide--full{% endif %}"
