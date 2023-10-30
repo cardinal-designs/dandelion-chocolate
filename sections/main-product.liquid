@@ -399,7 +399,7 @@
                         assign first_image = media.preview_image
                       endif
                     -%}
-                    
+                   {% assign giftImageposition = product.metafields.custom.gift_option_image_id | plus: 0 %}
                     {% if product.metafields.custom.gift_image != blank and media.position == giftImageposition %}
                       <div
                             id="Slide-{{ section.id }}-{{ media.id }}"
