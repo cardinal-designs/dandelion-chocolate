@@ -523,8 +523,8 @@ $(document).ready(function () {
           }
   
           var formElements = digitalGiftCardForm.find("input, textarea");
-          formElements.prop("required", val == "Email");
-          formElements.prop("disabled", val != "Email");
+          formElements.prop("required", val == "Virtual - Delivered immediately by Email");
+          formElements.prop("disabled", val != "Virtual - Delivered immediately by Email");
       }
   
       function initializeListener(selector) {
@@ -545,12 +545,12 @@ $(document).ready(function () {
       function changeOtherForm(currentElements) {
         // console.log(currentElements[1].value);
       
-        const isEmail = currentElements[0].value === "Email";
-        const modeClass = isEmail ? "Email" : "";
+        const isEmail = currentElements[0].value === "Virtual - Delivered immediately by Email";
+        const modeClass = isEmail ? "Virtual - Delivered immediately by Email" : "";
       
         // Toggle class on elements
         document.querySelectorAll(".product-digitalgiftcard-form").forEach((el) => {
-          el.classList.remove("Email", "Shipped");
+          el.classList.remove("Virtual - Delivered immediately by Email", "Shipped");
           if(modeClass != "") {
             el.classList.add(modeClass);
           }
@@ -574,7 +574,7 @@ $(document).ready(function () {
         
       
         // // Dispatch a change event
-        // const changeEvent = new Event('change', {
+        // const changeEvent = new Event('change', {Virtual - Delivered immediately by Email
         //   bubbles: true,
         //   cancelable: true
         // });
@@ -647,7 +647,7 @@ $(document).ready(function () {
         document.querySelector(".gift-card-product-js-bind").addEventListener("click", function(e){
           e.preventDefault();
           var selectedDeliveryMethod = e.currentTarget.closest("product-add-to-cart-sticky").querySelector('.select__variants').value;
-          if(selectedDeliveryMethod == "Email"){
+          if(selectedDeliveryMethod == "Virtual - Delivered immediately by Email"){
             $("html, body").animate({ scrollTop: 0 }, "slow");
           }
           else{
