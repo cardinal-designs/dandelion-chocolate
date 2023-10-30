@@ -826,8 +826,6 @@ dropdownElements.forEach((dropdownElement) => {
   
 });
 
-
-  
     
   var productsLength = $('.template-search #product-grid .column:visible').length;
   var hiddenProducts = $('.hide-search').length;
