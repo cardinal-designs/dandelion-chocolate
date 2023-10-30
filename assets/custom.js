@@ -819,8 +819,6 @@ $(document).ready(function () {
     document.body.classList.add('open-cart');
     document.getElementById('Cart-Drawer').querySelector('.product-recommendations--full').classList.add('active');
     dispatchCustomEvent('cart-drawer:open');
-    const product = { /* define your product data here */ };
-    dispatchCustomEvent('cart:item-added', { product: event.detail.product });
 
   });
 
