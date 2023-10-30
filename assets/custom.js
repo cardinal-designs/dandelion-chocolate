@@ -777,18 +777,17 @@ $(document).ready(function () {
     });
     
     $listItems.click(function(e) {
-      console.log('called')
       e.stopPropagation();
       document.querySelector(".product-form .price .amount").classList.add('mandatory-hidden');
       $styledSelect.text($(this).text()).removeClass('active');
-      var selectElement = $this[0];
-      selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
+      // var selectElement = $this[0];
+      // selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
 
-      // Dispatch the 'change' event on the select element
-      console.log(selectElement,'selectElement')
-      var changeEvent = new Event('change', { bubbles: true });
-      selectElement.dispatchEvent(changeEvent);
-      console.log(selectElement.value);
+      // // Dispatch the 'change' event on the select element
+      // console.log(selectElement,'selectElement')
+      // var changeEvent = new Event('change', { bubbles: true });
+      // selectElement.dispatchEvent(changeEvent);
+      // console.log(selectElement.value);
   
       $list.find('li.is-selected').removeClass('is-selected');
       $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
