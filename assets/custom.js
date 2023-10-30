@@ -787,11 +787,11 @@ $(document).ready(function () {
       // Dispatch the 'change' event on the select element
       var changeEvent = new Event('change', { bubbles: true });
       selectElement.dispatchEvent(changeEvent);
+      console.log(selectElement);
   
       $list.find('li.is-selected').removeClass('is-selected');
       $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
       $list.hide();
-      console.log($this.find('option[value="'+$(this).attr('rel')+'"]'));
     });
 
     $(document).click(function() {
