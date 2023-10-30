@@ -820,14 +820,14 @@ $(document).ready(function () {
     document.getElementById('Cart-Drawer').querySelector('.product-recommendations--full').classList.add('active');
     dispatchCustomEvent('cart-drawer:open');
     const product = { /* define your product data here */ };
-    dispatchCustomEvent('cart:item-added', { product: event.detail });
+    dispatchCustomEvent('cart:item-added', { product: event.detail.product });
 
   });
   
-  document.addEventListener("cart:item-added", function (evt) {
-    console.log("Item added to the cart");
-    console.log(evt.detail.product);
-  });
+  // document.addEventListener("cart:item-added", function (evt) {
+  //   console.log("Item added to the cart");
+  //   console.log(evt.detail.product);
+  // });
 
 })
 
