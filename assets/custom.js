@@ -784,6 +784,7 @@ $(document).ready(function () {
       selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
 
       // Dispatch the 'change' event on the select element
+      console.log(selectElement,'selectElement')
       var changeEvent = new Event('change', { bubbles: true });
       selectElement.dispatchEvent(changeEvent);
       console.log(selectElement.value);
