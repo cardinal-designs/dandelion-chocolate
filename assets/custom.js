@@ -813,7 +813,7 @@ $(document).ready(function () {
   });
 
     document.addEventListener('rebuy.add', function(event){
-      console.log('called')
+    console.log('rebuy.add event', event.detail);
     });
 
 })
