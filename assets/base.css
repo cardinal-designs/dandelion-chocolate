@@ -1366,8 +1366,17 @@ input::-webkit-search-cancel-button:after{
   tranform: translate(-50%, -50%);
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+/* input[type="search"]::-webkit-search-cancel-button {
   filter: invert(100%) sepia(110%) saturate(510%) hue-rotate(10deg);
+}
+ */
+input::-webkit-search-cancel-button:after{
+  content: "✖️";
+  color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  tranform: translate(-50%, -50%);
 }
 
 /* 
