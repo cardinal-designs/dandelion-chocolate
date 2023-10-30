@@ -811,6 +811,11 @@ $(document).ready(function () {
     var inputField = $(this).attr('name');
     $('[name="' + inputField + '"]').val(newValue);
   });
+
+    document.addEventListener('rebuy.add', function(event){
+      $('body').trigger('added.ajaxProduct');
+    });
+
 })
 
 document.addEventListener("DOMContentLoaded", function () {
