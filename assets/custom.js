@@ -814,12 +814,13 @@ $(document).ready(function () {
   });
 
   document.addEventListener('rebuy.add', function(event){
+    console.log('event.detail',event.detail)
     document.getElementById('Cart-Drawer').classList.add('active');
     document.body.classList.add('open-cart');
     document.getElementById('Cart-Drawer').querySelector('.product-recommendations--full').classList.add('active');
     dispatchCustomEvent('cart-drawer:open');
     const product = { /* define your product data here */ };
-    dispatchCustomEvent('cart:item-added', { product: evt.detail.product });
+    dispatchCustomEvent('cart:item-added', { product: event.detail });
 
   });
   
