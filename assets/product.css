@@ -2007,7 +2007,7 @@ product-add-to-cart-sticky .variations fieldset {
   background-color: #ffffff;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1025px) {
 
   .product .add_to_cart_holder .button:hover {
     background-color: #a48b55 !important;
