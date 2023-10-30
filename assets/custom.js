@@ -867,8 +867,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const gift__input = document.querySelector("#gift__input");
   var GiftSelected = false;
 
-  console.log($('.gifting-select').val())
-
   if($('.gifting-select').val() == 'Yes') {
     $( "#gift__input" ).prop( "checked", true );
     GiftSelected = true;
@@ -887,9 +885,9 @@ document.addEventListener("DOMContentLoaded", function() {
         var flkty2 = new Flickity(carousel_main);
         if(GiftSelected) {
           console.log(GiftSelected,'GiftSelected');
-          flkty2.select( parseInt(gift__input.value) );
+          flkty2.select( 0 );
         } else {
-          flkty2.select( position_gift_image - 1 );
+          flkty2.select( parseInt(gift__input.value) );
         }
         
       } else {
