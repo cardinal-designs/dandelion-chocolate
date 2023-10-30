@@ -803,6 +803,7 @@ $(document).ready(function () {
 
 const selectElement = document.querySelector('.product-form__input--dropdown .select__variants');
 const liElements = document.querySelectorAll('.product-form__input--dropdown .select-options li');
+  console.log(liElements)
 liElements.forEach((li, index) => {
   li.addEventListener('click', () => {
     console.log(index);
