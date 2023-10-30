@@ -758,7 +758,7 @@ $(document).ready(function () {
       }).appendTo($list);
       if ($this.children('option').eq(i).is(':selected')){
         $styledSelect.text(($this.children('option').eq(i).val() == "Email") ? "Virtual - Delivered immediately by Email" : $this.children('option').eq(i).val());
-        $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected');
+        $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
         if ($styledSelect.text(($this.children('option').eq(i).val() == "Email")) {
           $('.product-digitalgiftcard-form').addClass('Email');
         }
