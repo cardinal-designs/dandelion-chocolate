@@ -302,6 +302,7 @@
 
 .mobile-menu-drawer .mobile-menu > li {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .mobile-menu-drawer .mobile-menu > li .parent-link {
