@@ -820,6 +820,11 @@ $(document).ready(function () {
       
     });
 
+  document.addEventListener("cart:updated", function (evt) {
+  console.log("Cart updated");
+  console.log(evt.detail.cart);
+});
+
 })
 
 document.addEventListener("DOMContentLoaded", function () {
