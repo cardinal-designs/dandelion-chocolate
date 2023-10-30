@@ -191,7 +191,8 @@ document.addEventListener("DOMContentLoaded", function() {
       pageDots: false, 
       wrapAround: false,
       cellAlign: 'left',
-      contain: true
+      contain: true,
+      groupCells: true
   });
 
 });
