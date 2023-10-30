@@ -911,6 +911,7 @@ document.addEventListener("DOMContentLoaded", function() {
   closeSearchButtons.forEach(function(closeSearchButton) {
     closeSearchButton.addEventListener("click", function() {
       const searchInput = closeSearchButton.parentElement.querySelector(".search-field");
+      console.log(searchInput)
       if (searchInput) {
         searchInput.value = ""; // Clear the related search input
       }
