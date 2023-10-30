@@ -549,6 +549,7 @@
 
 .thb-product-detail .product-title-container .metafield-rich_text_field p {
   color: #333333;
+  margin-bottom: 10px;
 }
 
 .thb-product-detail .product-title,
@@ -1866,11 +1867,6 @@ product-add-to-cart-sticky .variations fieldset {
   display: none;
 }
 
-.product .add_to_cart_holder .button:hover {
-  background-color: #a48b55 !important;
-  color: #fff !important;
-}
-
 .product .add_to_cart_holder .button:hover .product__price-main span.price .amount {
   color: #fff !important;
 }
@@ -2011,6 +2007,15 @@ product-add-to-cart-sticky .variations fieldset {
   background-color: #ffffff;
 }
 
+@media only screen and (min-width: 1025px) {
+
+  .product .add_to_cart_holder .button:hover {
+    background-color: #a48b55 !important;
+    color: #fff !important;
+  }
+
+}
+
 /*================ Accordion ================*/
 d.meta__accordion--list,
 dl.accordion-list {
@@ -2122,6 +2127,7 @@ dl.accordion-list dd {
 
 .thb-product-detail.product .product-single__media img {
   object-fit: contain;
+  cursor: pointer;
 }
 
 .thb-product-detail .product-short-description p:last-of-type {
@@ -2180,7 +2186,7 @@ quantity-selector.quantity .plus svg {
 }
 
 .product .quantity.buttons_added .qty {
-  font-family: SaaSeries, Saa Series FD, Open Sans, sans-serif;
+  font-family: Saa Series F D;
 }
 
 .product-short-description .tasting-notes {
@@ -2267,6 +2273,14 @@ quantity-selector.quantity .plus svg {
   font-size: 20px;
   line-height: 22px;
   letter-spacing: normal;
+}
+
+.product-title-uppercase-true .chocolate__bar-product .product-add-to-cart-sticky--title p {
+  text-transform: inherit;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: normal;
+  margin: 0;
 }
 
 .product-add-to-cart-sticky--info .new-percentage {
@@ -2555,7 +2569,7 @@ product-add-to-cart-sticky .variations .product-form__input--dropdown select {
 }
 
 .template-product .rebuy-widget-content .primary-title {
-  font-family: OPTICaslonBold-Cond;
+  font-family: 'CaslonSB-BoldCondensed';
   font-weight: 500;
   margin-bottom: 30px;
   color: #333;
@@ -2993,8 +3007,8 @@ variant-selects .product-form__input .select-arrow {
 .meta__bar--icons svg,
 .meta__bar--icons img {
   width: 40px;
-  filter: invert(60%) sepia(9%) saturate(1645%) hue-rotate(4deg) brightness(93%) contrast(82%);
   vertical-align: middle;
+  /* filter: invert(60%) sepia(9%) saturate(1645%) hue-rotate(4deg) brightness(93%) contrast(82%); */
 }
 
 .meta__bar--icons.bar-icons p {
@@ -3027,6 +3041,10 @@ variant-selects .product-form__input .select-arrow {
   color: #777779;
   text-transform: lowercase;
   margin-bottom: 14px;
+}
+
+.product-add-to-cart-sticky .product__tasting-note {
+  margin-bottom: 0;
 }
 
 .product-information--inner .new-percentage {

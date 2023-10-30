@@ -156,6 +156,11 @@
   padding-bottom: 100% !important;
 }
 
+.template-search .product-card .product-featured-image-link img,
+.product-recommendations .product-card .product-featured-image-link img {
+  object-fit: contain;  
+}
+
 .chocolate-bars .product-card .product-featured-image-link img {
   object-fit: contain;
 }
@@ -279,7 +284,7 @@
 
 .product-title-uppercase-true .product-card .product-card-title {
   text-transform: capitalize;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .product-title-uppercase-true .chocolate-bars .product-card .product-card-title {
@@ -720,9 +725,9 @@
   font-family: 'Saa Series F D';
   font-size: 12px;
   font-weight: 500;
-  line-height: 14.4px;
+  line-height: 15.36px;
   color: #855338;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   letter-spacing: .15em;
 }
 
@@ -855,6 +860,17 @@
 
   .product-card .product__description {
     font-size: 14px;
+  }
+
+  .product-card .product-form form .single-add-to-cart-button--text {
+    padding: 4px 5px 0;
+    font-size: 12px;
+  }
+
+  .product-card product-form.product-form {
+    width: calc(100% - 18px);
+    max-width: calc(100% - 18px);
+    margin: 0 9px;
   }
 
 }

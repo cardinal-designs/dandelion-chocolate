@@ -191,7 +191,8 @@ document.addEventListener("DOMContentLoaded", function() {
       pageDots: false, 
       wrapAround: false,
       cellAlign: 'left',
-      contain: true
+      contain: true,
+      groupCells: true
   });
 
 });
@@ -433,7 +434,7 @@ $(document).ready(function() {
               rel: $this.children('option').eq(i).val()
           }).appendTo($list);
           if ($this.children('option').eq(i).is(':selected')){
-            $styledSelect.text($this.children('option').eq(i).val());
+            $styledSelect.text(($this.children('option').eq(i).val() == "Email") ? "Virtual - Delivered immediately by Email" : $this.children('option').eq(i).val());
             $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
           }
       }
@@ -760,7 +761,7 @@ $(document).ready(function () {
         rel: $this.children('option').eq(i).val()
       }).appendTo($list);
       if ($this.children('option').eq(i).is(':selected')){
-        $styledSelect.text($this.children('option').eq(i).val());
+        $styledSelect.text(($this.children('option').eq(i).val() == "Email") ? "Virtual - Delivered immediately by Email" : $this.children('option').eq(i).val());
         $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
       }
     }
@@ -779,17 +780,18 @@ $(document).ready(function () {
       e.stopPropagation();
       document.querySelector(".product-form .price .amount").classList.add('mandatory-hidden');
       $styledSelect.text($(this).text()).removeClass('active');
-      var selectElement = $this[0];
-      selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
+      // var selectElement = $this[0];
+      // selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
 
-      // Dispatch the 'change' event on the select element
-      var changeEvent = new Event('change', { bubbles: true });
-      selectElement.dispatchEvent(changeEvent);
+      // // Dispatch the 'change' event on the select element
+      // console.log(selectElement,'selectElement')
+      // var changeEvent = new Event('change', { bubbles: true });
+      // selectElement.dispatchEvent(changeEvent);
+      // console.log(selectElement.value);
   
       $list.find('li.is-selected').removeClass('is-selected');
       $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
       $list.hide();
-      console.log($this.find('option[value="'+$(this).attr('rel')+'"]'));
     });
 
     $(document).click(function() {
@@ -799,6 +801,32 @@ $(document).ready(function () {
   
   });
 
+// Get all elements with the class .product-form__input--dropdown
+const dropdownElements = document.querySelectorAll('.product-form__input--dropdown');
+
+dropdownElements.forEach((dropdownElement) => {
+  // Within each dropdown element, get the select and li elements
+  const selectElement = dropdownElement.querySelector('.select__variants');
+  const liElements = dropdownElement.querySelectorAll('.select-options li');
+
+ liElements.forEach((li, index) => {
+    li.addEventListener('click', () => {
+      // Synchronize the selected index for all select elements
+      dropdownElements.forEach((container) => {
+        const select = container.querySelector('.select__variants');
+        select.selectedIndex = index;
+        const changeEvent = new Event('change', {
+          bubbles: true,
+          cancelable: true
+        });
+        select.dispatchEvent(changeEvent);
+      });
+    });
+  });
+  
+});
+
+    
   var productsLength = $('.template-search #product-grid .column:visible').length;
   var hiddenProducts = $('.hide-search').length;
   if(productsLength && hiddenProducts){
@@ -810,6 +838,17 @@ $(document).ready(function () {
     var inputField = $(this).attr('name');
     $('[name="' + inputField + '"]').val(newValue);
   });
+
+  document.addEventListener('rebuy.add', function(event){
+    console.log('event.detail',event.detail)
+    document.getElementById('Cart-Drawer').classList.add('active');
+    document.body.classList.add('open-cart');
+    document.getElementById('Cart-Drawer').querySelector('.product-recommendations--full').classList.add('active');
+    dispatchCustomEvent('cart-drawer:open');
+
+  });
+
+
 })
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -845,9 +884,10 @@ document.addEventListener("DOMContentLoaded", function() {
         GiftingSelect.dispatchEvent(new Event("change"));
         var flkty2 = new Flickity(carousel_main);
         if(GiftSelected) {
+          console.log(GiftSelected,'GiftSelected');
           flkty2.select( 0 );
         } else {
-          flkty2.select( position_gift_image - 1 );
+          flkty2.select( parseInt(gift__input.value) -1 );
         }
         
       } else {
@@ -862,4 +902,19 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  
+  const closeSearchButtons = document.querySelectorAll("#close__search");
+
+  closeSearchButtons.forEach(function(closeSearchButton) {
+    closeSearchButton.addEventListener("click", function() {
+      const searchInput = closeSearchButton.parentElement.querySelector(".search-field");
+      console.log(searchInput)
+      if (searchInput) {
+        searchInput.value = ""; // Clear the related search input
+      }
+    });
+  });
 });

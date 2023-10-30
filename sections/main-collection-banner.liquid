@@ -52,61 +52,61 @@
 {{ 'collection-banner.css' | asset_url | stylesheet_tag }}
 
 <div style="background-color: {{ section.settings.bg_color }}" class="collection-banner collection-banner--heading-uppercase-{{ make_heading_uppercase }}{% if show_collection_image and image %} collection-banner--has-bg{% endif %}" style="--overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
-	<div class="collection-banner--breadcrumbs">
-		{%- render 'breadcrumbs' -%}
-	</div>
-	<div class="row full-width-row">
-		<div class="small-12 columns">
-			{%- if show_collection_image and image -%}
-			<div class="collection-banner--image">
-				{%- render 'responsive-image', image: image, sizes: '0x350,0x700' -%}
-			</div>
-			{%- endif -%}
-			<div class="collection-banner--content">
-				<h1 class="collection-banner--title">{{ title }}</h1>
-				{% if template == 'search' %}
-                  <form role="search" method="get" class="searchform" action="{{ routes.search_url }}">
-                    <fieldset>
-                      <input type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
-                      <input type="hidden" name="type" value="product" />
-                      <button type="submit" class="thb-search-submit">{% render 'svg-icons' with 'search' %}</button>
-                    </fieldset>
-                  </form>
-				{% endif %}
-				{%- if show_collection_description and description != '' -%}
-				<div class="collection-banner--description">
-					<p>{{ description }}</p>
-				</div>
-				{%- endif -%}
-				{%- if show_subcollections -%}
-					{%- for link in linklists.main-menu.links -%}
-						{%- if link.url == collection.url -%}
-							{%- capture subcollection_links -%}
-								{%- for sub_link in link.links -%}
-									<a href="{{ sub_link.url }}" title="{{ sub_link.title | escape }}" class="text-button{% if show_collection_image and image %} white{% endif %}">{{ sub_link.title }}</a>
-								{%- endfor -%}
-							{%- endcapture -%}
-						{%- else -%}
-							{%- for sub_link in link.links -%}
-								{%- if sub_link.url == collection.url -%}
-									{%- capture subcollection_links -%}
-										{%- for sub_link_s in sub_link.links -%}
-											<a href="{{ sub_link_s.url }}" title="{{ sub_link_s.title | escape }}" class="text-button{% if show_collection_image and image %} white{% endif %}">{{ sub_link_s.title }}</a>
-										{%- endfor -%}
-									{%- endcapture -%}
-								{%- endif -%}
-							{%- endfor -%}
-						{%- endif -%}
-					{%- endfor -%}
-					{%- if subcollection_links != '' -%}
-					<div class="collection-banner--subcollections">
-						{{ subcollection_links }}
-					</div>
-					{%- endif -%}
-				{%- endif -%}
-			</div>
-		</div>
-	</div>
+  <div class="collection-banner--breadcrumbs">
+    {%- render 'breadcrumbs' -%}
+  </div>
+  <div class="row full-width-row">
+    <div class="small-12 columns">
+        {%- if show_collection_image and image -%}
+        <div class="collection-banner--image">
+            {%- render 'responsive-image', image: image, sizes: '0x350,0x700' -%}
+        </div>
+        {%- endif -%}
+        <div class="collection-banner--content">
+            <h1 class="collection-banner--title">{{ title }}</h1>
+            {% if template == 'search' %}
+              <form role="search" method="get" class="searchform" action="{{ routes.search_url }}">
+                <fieldset>
+                  <input type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
+                  <input type="hidden" name="type" value="product" />
+                  <button type="submit" class="thb-search-submit">{% render 'svg-icons' with 'search' %}</button>
+                </fieldset>
+              </form>
+            {% endif %}
+            {%- if show_collection_description and description != '' -%}
+            <div class="collection-banner--description">
+                <p>{{ description }}</p>
+            </div>
+            {%- endif -%}
+            {%- if show_subcollections -%}
+                {%- for link in linklists.main-menu.links -%}
+                    {%- if link.url == collection.url -%}
+                        {%- capture subcollection_links -%}
+                            {%- for sub_link in link.links -%}
+                                <a href="{{ sub_link.url }}" title="{{ sub_link.title | escape }}" class="text-button{% if show_collection_image and image %} white{% endif %}">{{ sub_link.title }}</a>
+                            {%- endfor -%}
+                        {%- endcapture -%}
+                    {%- else -%}
+                        {%- for sub_link in link.links -%}
+                            {%- if sub_link.url == collection.url -%}
+                                {%- capture subcollection_links -%}
+                                    {%- for sub_link_s in sub_link.links -%}
+                                        <a href="{{ sub_link_s.url }}" title="{{ sub_link_s.title | escape }}" class="text-button{% if show_collection_image and image %} white{% endif %}">{{ sub_link_s.title }}</a>
+                                    {%- endfor -%}
+                                {%- endcapture -%}
+                            {%- endif -%}
+                        {%- endfor -%}
+                    {%- endif -%}
+                {%- endfor -%}
+                {%- if subcollection_links != '' -%}
+                <div class="collection-banner--subcollections">
+                    {{ subcollection_links }}
+                </div>
+                {%- endif -%}
+            {%- endif -%}
+        </div>
+    </div>
+  </div>
 </div>
 
 {% schema %}

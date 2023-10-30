@@ -775,11 +775,11 @@ if (!customElements.get('product-add-to-cart-sticky')) {
               if (entry.intersectionRatio === 0 && window.scrollY > (boundingRect.top + boundingRect.height)) {
                 _this.formPassed = true;
                 _this.classList.add('sticky--visible');
-                document.querySelector('.default-product-input').value = document.querySelector('.sticky_product_id').value
+                // document.querySelector('.default-product-input').value = document.querySelector('.sticky_product_id').value
               } else if (entry.intersectionRatio === 1) {
                 _this.formPassed = false;
                 _this.classList.remove('sticky--visible');
-                 document.querySelector('.default-product-input').value = document.querySelector('.sticky_product_id_default').value
+                 // document.querySelector('.default-product-input').value = document.querySelector('.sticky_product_id_default').value
               }
             }
           });
