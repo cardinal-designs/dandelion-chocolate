@@ -24,9 +24,7 @@
                   {{ value }}
                 {% endif %}
                 {% if option.name == 'Email' %}
-                  {{ value }} ({{ product.variants[forloop.index0].metafields.custom.variant_subtitle }})
-                {% else %}
-                  {{ value }}
+                  Virtual - Delivered immediately by Email
                 {% endif %}              
 		      </option>
 		    {%- endfor -%}
