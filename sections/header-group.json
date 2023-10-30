@@ -73,7 +73,7 @@
           "type": "megamenu_image",
           "settings": {
             "image_title": "Treats",
-            "megamenu_image": "shopify:\/\/shop_images\/Treats_f596759e-b618-4391-a1a1-581d6354db8e.jpg"
+            "megamenu_image": "shopify:\/\/shop_images\/Image-6.jpg"
           }
         },
         "59fdebdd-45ed-474b-8605-4e3c015e3780": {
@@ -100,7 +100,14 @@
           "type": "megamenu_image",
           "settings": {
             "image_title": "Pastries for SF Pickup",
-            "megamenu_image": "shopify:\/\/shop_images\/Pastries-Pickup-Collection-Image.webp"
+            "megamenu_image": "shopify:\/\/shop_images\/Image_43b21e06-d6a9-4e9d-ab35-48e694678407.jpg"
+          }
+        },
+        "b83fdcc4-841b-4403-9a53-57eca4446627": {
+          "type": "megamenu_image",
+          "settings": {
+            "image_title": "Pantry & Baking",
+            "megamenu_image": "shopify:\/\/shop_images\/Image-5.jpg"
           }
         }
       },
@@ -114,7 +121,8 @@
         "59fdebdd-45ed-474b-8605-4e3c015e3780",
         "a881f3fe-2a90-4dfa-8a15-f50422777a0e",
         "915badcb-601a-4c4d-b20f-fe20c91ef08c",
-        "1e649e31-ff0a-4b4c-943f-70735fef3a11"
+        "1e649e31-ff0a-4b4c-943f-70735fef3a11",
+        "b83fdcc4-841b-4403-9a53-57eca4446627"
       ],
       "settings": {
         "bg_color": "#f9f7f2",
