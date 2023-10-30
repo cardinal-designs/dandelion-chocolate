@@ -817,7 +817,7 @@ $(document).ready(function () {
               document.body.classList.add('open-cart');
               document.getElementById('Cart-Drawer').querySelector('.product-recommendations--full').classList.add('active');
               dispatchCustomEvent('cart-drawer:open');
-      console.log('ProductForm',customElements)
+      
     });
 
 })
