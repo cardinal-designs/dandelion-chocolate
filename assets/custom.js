@@ -541,7 +541,6 @@ $(document).ready(function () {
       initializeListener(".product-information");
       initializeListener(".product-add-to-cart-sticky");
       
-
       function changeOtherForm(currentElements) {
         // console.log(currentElements[1].value);
       
@@ -580,8 +579,6 @@ $(document).ready(function () {
         // });
         // deliveryDateInput.dispatchEvent(changeEvent);
       }
-
-
 
       // function changeOtherForm(currentElements, toBeUpdated) {
       //   console.log(currentElements[1].value, toBeUpdated[1].value);
