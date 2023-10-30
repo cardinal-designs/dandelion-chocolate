@@ -1357,7 +1357,7 @@ input[type=search]::-ms-reveal {
   height: 0; 
 }
 
-.input::-webkit-search-cancel-button:after{
+input::-webkit-search-cancel-button:after{
   content: "✖️";
   color: green;
   position: absolute;
