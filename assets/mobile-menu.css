@@ -316,10 +316,6 @@
   top: -4px;
 }
 
-.mobile-menu > li {
-  cursor: pointer;  
-}
-
 .mobile-menu-drawer .mobile-menu>li .sh2 {
   margin: 0;
 }

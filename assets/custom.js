@@ -887,7 +887,7 @@ document.addEventListener("DOMContentLoaded", function() {
           console.log(GiftSelected,'GiftSelected');
           flkty2.select( 0 );
         } else {
-          flkty2.select( parseInt(gift__input.value) );
+          flkty2.select( parseInt(gift__input.value) -1 );
         }
         
       } else {
