@@ -512,7 +512,7 @@ $(document).ready(function () {
     function updateDigitalGiftCardForm() {
       function handleUpdate(digitalGiftCardInput, digitalGiftCardForm) {
           var val = digitalGiftCardInput.val();
-          if (val == "Email") {
+          if (val == "Virtual - Delivered immediately by Email") {
             digitalGiftCardForm.addClass("Email").removeClass("Shipped");
             $('#delivery-date').val('immediately').trigger('change');
           } else {
