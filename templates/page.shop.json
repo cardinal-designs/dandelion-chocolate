@@ -160,7 +160,7 @@
         "a3900c75-2989-470e-8780-e6951ed90bb3": {
           "type": "heading",
           "settings": {
-            "text": "Chocolate-Dipped Fig Truffles",
+            "text": "CHOCOLATE-COVERED JAPANESE CITRUS COLLECTION",
             "heading_size": "h2",
             "heading_color": "#333333",
             "heading_color_mobile": "#333333"
@@ -169,7 +169,7 @@
         "9dab5d34-c2e5-462d-9a1c-fed7fedd33f0": {
           "type": "text",
           "settings": {
-            "text": "<p>The figs are stuffed with creamy Camino Verde, Ecuador chocolate ganache infused with flavorful single-origin spices. Each dark-purplish, honey-flavored fig is then dipped in 70% Camino Verde, Ecuador chocolate, and garnished with edible gold leaf.<\/p>",
+            "text": "<p>This limited-edition collection introduces three distinctive Japanese citrus varieties. Each chocolate-covered baton and wedge is first hand-candied in sweet syrup to enhance its delicious, soft and juicy texture — then enrobed in Dandelion Chocolate Japan's 70% Zorzal Comunitario, Dominican Republic chocolate.<\/p>",
             "description_size": "body-1",
             "description_color": "#333333",
             "description_color_mobile": "#333333"
@@ -179,7 +179,7 @@
           "type": "button",
           "settings": {
             "button_text": "Learn More",
-            "button_link": "shopify:\/\/products\/chocolate-dipped-fig-truffles",
+            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/japanese-citrus-collection",
             "button_style": "btn--gold",
             "mobile_button_style": "btn--gold"
           }
