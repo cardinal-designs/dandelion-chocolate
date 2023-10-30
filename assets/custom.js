@@ -801,6 +801,21 @@ $(document).ready(function () {
   
   });
 
+const selectElement = document.querySelector('.product-form__input--dropdown .select__variants');
+const liElements = document.querySelectorAll('.product-form__input--dropdown .select-options li');
+liElements.forEach((li, index) => {
+  li.addEventListener('click', () => {
+    selectElement.selectedIndex = index;
+    const changeEvent = new Event('change', {
+      bubbles: true,
+      cancelable: true
+    });
+    selectElement.dispatchEvent(changeEvent);
+  });
+});
+
+  
+    
   var productsLength = $('.template-search #product-grid .column:visible').length;
   var hiddenProducts = $('.hide-search').length;
   if(productsLength && hiddenProducts){
