@@ -14,19 +14,24 @@
 				id="Option-{{ section.id }}-{{ forloop.index0 }}{{ appended }}"
 				name="options[{{ option.name | escape | append: appended }}]"
 				form="{{ product_form_id }}"
-                class="{% if option.name == 'Gifting' %}gifting-select {% endif %}select__variants" 
+                class="test {% if option.name == 'Gifting' %}gifting-select {% endif %}select__variants" 
 			>
 		    {%- for value in option.values -%}
-		      <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
+		      <option {% if value == 'Email' %} value="Virtual - Delivered immediately by Email" {% else %} value="{{ value | escape }}" {% endif %} {% if option.selected_value == value %}selected="selected"{% endif %}>
                 {% if option.name == 'Size' %}
                   {{ value }} ({{ product.variants[forloop.index0].metafields.custom.variant_subtitle }})
                 {% else %}
-                  {{ value }}
+                  {% unless value == 'Email' %}
+                    {{ value }}
+                  {% endunless %}            
                 {% endif %}
+                {% if value == 'Email' %}
+                  Virtual - <span>Delivered immediately by Email</span>
+                {% endif %}              
 		      </option>
 		    {%- endfor -%}
 		  </select>
-			<div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>
+		  <div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>
 		</div>
 	</fieldset>
 {%- when 'button' -%}
