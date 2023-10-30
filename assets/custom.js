@@ -805,7 +805,7 @@ const selectElement = document.querySelector('.product-form__input--dropdown .se
 const liElements = document.querySelectorAll('.product-form__input--dropdown .select-options li');
 liElements.forEach((li, index) => {
   li.addEventListener('click', () => {
-    console.log(selectElement);
+    console.log(selectElement,index);
     selectElement.selectedIndex = index;
     const changeEvent = new Event('change', {
       bubbles: true,
