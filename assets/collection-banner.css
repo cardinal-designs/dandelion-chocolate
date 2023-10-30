@@ -82,14 +82,3 @@
         margin-top: 35px; } }
     .collection-banner--subcollections .text-button {
       margin: 0 8px 10px; }
-
-.close__search {
-  position: absolute;
-  right: 53px;
-  top: 13px;
-  z-index: 11;
-}
-
-.close__search svg {
-  width: 10px;
-}
