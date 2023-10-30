@@ -15,7 +15,7 @@
 {% if product.id == 171066294299 or product.id == 1871046574150 %}         
     {% assign kind = 'Shipped' %}
     {% for option in product.options_with_values %}
-      {% if option.name == 'Delivery Method' %}
+      {% if option.name == 'TYPE OF CARD' %}
         {% assign kind = option.selected_value | replace: " (physical card)", "" %}      
       {% endif %}
     {% endfor %}  
