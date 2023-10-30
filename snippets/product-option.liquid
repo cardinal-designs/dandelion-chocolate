@@ -17,7 +17,7 @@
                 class="test {% if option.name == 'Gifting' %}gifting-select {% endif %}select__variants" 
 			>
 		    {%- for value in option.values -%}
-		      <option {% if value == 'Email' %} Virtual - Delivered immediately by Email {% else %} value="{{ value | escape }}" {% endif %} {% if option.selected_value == value %}selected="selected"{% endif %}>
+		      <option {% if value == 'Email' %} value="Virtual - Delivered immediately by Email" {% else %} value="{{ value | escape }}" {% endif %} {% if option.selected_value == value %}selected="selected"{% endif %}>
                 {% if option.name == 'Size' %}
                   {{ value }} ({{ product.variants[forloop.index0].metafields.custom.variant_subtitle }})
                 {% else %}
