@@ -192,11 +192,14 @@
         "88498ff6-7e62-4b55-b3e1-1da0541ded48"
       ],
       "disabled": true,
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {.caption-over--mobile .image-with-text-overlay--content .image-with-text-overlay--content-inner {padding: 5px 20px 30px;} }"
+      ],
       "settings": {
         "section_width": "full-width-row-full",
         "image_url": true,
-        "image": "shopify:\/\/shop_images\/figs_desktop.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/figs_mobile.jpg",
+        "image": "shopify:\/\/shop_images\/Banner_Image_7.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Banner_Image_8.jpg",
         "desktop_height": "desktop-height-500",
         "mobile_height": "mobile-height-635",
         "content_width": "medium",
