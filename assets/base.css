@@ -1369,10 +1369,15 @@ input[type=search]::-ms-reveal {
   right: 53px;
   top: 13px;
   z-index: 11;
+  display: none;
 }
 
 .close__search svg {
   width: 10px;
+}
+
+.searchform fieldset input:focus {
+  display: block;  
 }
 
 @media screen and (max-width: 1067px) { 
