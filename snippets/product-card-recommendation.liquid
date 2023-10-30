@@ -221,7 +221,7 @@
       <h2 class="product__country h2">{{ product_card_product.metafields.info.origin_country }}</h2>
     {% endif %}   
    
-    {% if product_card_product.metafields.info.tasting_notes != blank %}
+    {% if product_card_product.metafields.info.tasting_notes != blank and product_card_product.type == 'Chocolate Bar' %}
       <div class="product__tasting-note">{{ product_card_product.metafields.info.tasting_notes }}</div>
     {% endif %}
     
