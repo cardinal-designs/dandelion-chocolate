@@ -906,7 +906,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function() {
   
-  const closeSearchButtons = document.querySelectorAll(".close__search");
+  const closeSearchButtons = document.querySelectorAll("#close__search");
 
   closeSearchButtons.forEach(function(closeSearchButton) {
     closeSearchButton.addEventListener("click", function() {
