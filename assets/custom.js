@@ -757,6 +757,9 @@ $(document).ready(function () {
         rel: $this.children('option').eq(i).val()
       }).appendTo($list);
       if ($this.children('option').eq(i).is(':selected')){
+
+        console.log("This is the value !!", $this.children('option').eq(i).val());
+        
         $styledSelect.text($this.children('option').eq(i).val());
         $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
       }
