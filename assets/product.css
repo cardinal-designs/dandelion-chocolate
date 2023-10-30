@@ -1867,11 +1867,6 @@ product-add-to-cart-sticky .variations fieldset {
   display: none;
 }
 
-.product .add_to_cart_holder .button:hover {
-  background-color: #a48b55 !important;
-  color: #fff !important;
-}
-
 .product .add_to_cart_holder .button:hover .product__price-main span.price .amount {
   color: #fff !important;
 }
@@ -2010,6 +2005,15 @@ product-add-to-cart-sticky .variations fieldset {
 
 .template-product-hawaii #main-content {
   background-color: #ffffff;
+}
+
+@media only screen and (min-width: 767px) {
+
+  .product .add_to_cart_holder .button:hover {
+    background-color: #a48b55 !important;
+    color: #fff !important;
+  }
+
 }
 
 /*================ Accordion ================*/
