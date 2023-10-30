@@ -16,6 +16,7 @@
     {% assign kind = 'Shipped' %}
     {% for option in product.options_with_values %}
       {% if option.name == 'TYPE OF CARD' %}
+        {{ option.name }}
         {% assign kind = option.selected_value | replace: " (physical card)", "" %}      
       {% endif %}
     {% endfor %}  
