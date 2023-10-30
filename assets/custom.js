@@ -453,6 +453,7 @@ $(document).ready(function() {
         e.stopPropagation();
         $styledSelect.text($(this).text()).removeClass('active');
         var selectElement = $this[0];
+       console.log(selectElement);
     selectElement.querySelector('option[value="'+$(this).attr('rel')+'"]').selected = true;
     
     // Dispatch the 'change' event on the select element
