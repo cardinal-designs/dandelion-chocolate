@@ -25,9 +25,7 @@
                     {{ value }}
                   {% endunless %}            
                 {% endif %}
-                {% if value == 'Email' %}
-                  Virtual - <span>Delivered immediately by Email</span>
-                {% endif %}              
+                {% if value == 'Email' %} Virtual - Delivered immediately by Email {% endif %}              
 		      </option>
 		    {%- endfor -%}
 		  </select>
