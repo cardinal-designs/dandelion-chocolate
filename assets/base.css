@@ -1376,7 +1376,7 @@ input[type=search]::-ms-reveal {
   width: 10px;
 }
 
-.searchform fieldset input:focus .close__search {
+.searchform fieldset input:focus + input + .close__search {
   display: block;  
 }
 
