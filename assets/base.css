@@ -1366,6 +1366,10 @@ input::-webkit-search-cancel-button:after{
   tranform: translate(-50%, -50%);
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  filter: invert(100%) sepia(100%) saturate(500%) hue-rotate(90deg);
+}
+
 /* 
 .collection-banner--content input[type="search"]::-webkit-search-decoration,
 .collection-banner--content input[type="search"]::-webkit-search-cancel-button,
