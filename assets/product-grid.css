@@ -862,4 +862,8 @@
     font-size: 14px;
   }
 
+  .product-card .product-form form .single-add-to-cart-button--text {
+    padding-top: 4px;
+  }
+
 }
