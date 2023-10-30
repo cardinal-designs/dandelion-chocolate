@@ -21,7 +21,7 @@
               {% if option.name == 'Size' %}
                 {{ value }} ({{ product.variants[forloop.index0].metafields.custom.variant_subtitle }})
               {% elsif option.name == 'Email' %}
-                {{ Test }}
+                 Test
               {% else %}
                 {{ value }}                
               {% endif %}
@@ -29,7 +29,7 @@
             </option>
           {%- endfor -%}
         </select>
-          <div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>
+        <div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>
       </div>
   </fieldset>
 {%- when 'button' -%}
