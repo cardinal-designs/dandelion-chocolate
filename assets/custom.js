@@ -760,7 +760,7 @@ $(document).ready(function () {
 
         console.log("This is the value !!", $this.children('option').eq(i).val());
         
-        $styledSelect.text(($this.children('option').eq(i).val() == "Email") ? "Test123" : $this.children('option').eq(i).val());
+        $styledSelect.text(($this.children('option').eq(i).val() == "Email") ? "Virtual - Delivered immediately by Email" : $this.children('option').eq(i).val());
         $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
       }
     }
