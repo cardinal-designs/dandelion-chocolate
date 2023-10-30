@@ -761,9 +761,9 @@ $(document).ready(function () {
         $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
       }
 
-      if ($this.children('option').eq(i).is(':selected').val() == "Email"){
-        $('.product-digitalgiftcard-form').addClass("Email");
-      }
+      // if ($this.children('option').eq(i).is(':selected').val() == "Email"){
+      //   $('.product-digitalgiftcard-form').addClass("Email");
+      // }
     }
     
     var $listItems = $list.children('li');
