@@ -820,9 +820,9 @@ $(document).ready(function () {
       
     });
 
-  document.addEventListener("cart:updated", function (evt) {
-  console.log("Cart updated");
-  console.log(evt.detail.cart);
+  document.addEventListener("cart:item-added", function (evt) {
+  console.log("Item added to the cart");
+  console.log(evt.detail.product);
 });
 
 })
