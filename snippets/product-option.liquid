@@ -20,12 +20,12 @@
             <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
               {% if option.name == 'Size' %}
                 {{ value }} ({{ product.variants[forloop.index0].metafields.custom.variant_subtitle }})
-              {% elsif option.name == 'Email' %}
-                 Test
               {% else %}
-                {{ value }}                
+                {% unless value == 'Email' %}
+                  {{ value }}
+                {% endunless %}            
               {% endif %}
-            
+              {% if value == 'Email' %} Virtual - Delivered immediately by Email {% endif %}              
             </option>
           {%- endfor -%}
         </select>
