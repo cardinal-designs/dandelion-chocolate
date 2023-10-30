@@ -2127,6 +2127,7 @@ dl.accordion-list dd {
 
 .thb-product-detail.product .product-single__media img {
   object-fit: contain;
+  cursor: pointer;
 }
 
 .thb-product-detail .product-short-description p:last-of-type {
