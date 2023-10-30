@@ -811,7 +811,12 @@ dropdownElements.forEach((dropdownElement) => {
 
   liElements.forEach((li, index) => {
     li.addEventListener('click', () => {
-      selectElement.selectedIndex = index;
+      // Change the selected index of both li elements
+      liElements.forEach((element, i) => {
+        selectElement.selectedIndex = i;
+      });
+
+      // Trigger the 'change' event on the select element
       const changeEvent = new Event('change', {
         bubbles: true,
         cancelable: true
