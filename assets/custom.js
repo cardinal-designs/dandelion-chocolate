@@ -823,11 +823,7 @@ $(document).ready(function () {
     dispatchCustomEvent('cart:item-added', { product: event.detail.product });
 
   });
-  
-  // document.addEventListener("cart:item-added", function (evt) {
-  //   console.log("Item added to the cart");
-  //   console.log(evt.detail.product);
-  // });
+
 
 })
 
