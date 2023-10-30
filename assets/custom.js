@@ -815,7 +815,6 @@ dropdownElements.forEach((dropdownElement) => {
       dropdownElements.forEach((container) => {
         const select = container.querySelector('.select__variants');
         select.selectedIndex = index;
-        console.log('select',select)
         const changeEvent = new Event('change', {
           bubbles: true,
           cancelable: true
