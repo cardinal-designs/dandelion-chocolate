@@ -867,4 +867,10 @@
     font-size: 12px;
   }
 
+  .product-card product-form.product-form {
+    width: calc(100% - 18px);
+    max-width: calc(100% - 18px);
+    margin: 0 9px;
+  }
+
 }
