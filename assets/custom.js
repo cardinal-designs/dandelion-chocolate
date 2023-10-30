@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
       wrapAround: false,
       cellAlign: 'left',
       contain: true,
-      groupCells: true
+      groupCells: 2
   });
 
 });
