@@ -217,11 +217,12 @@
                   -%}
                    {% if hostile %}
                       {% assign giftImageposition = product.metafields.custom.gift_option_image_id | plus: 0 %}
-                      {% assign giftImageposition = giftImageposition | plus: 1 %}
+                      {% unless forloop.last %}
+                        {% assign giftImageposition = giftImageposition | plus: 1 %}
+                      {% endunless %}
                     {% else %}
                       {% assign giftImageposition = product.metafields.custom.gift_option_image_id | plus: 0 %}
                     {% endif %}
-                  {{ giftImageposition }} ---- {{ media.position }}
                   {% if product.metafields.custom.gift_image != blank and media.position == giftImageposition %}
                     <div
                         id="Slide-{{ section.id }}-{{ media.id }}"
@@ -407,7 +408,9 @@
                     -%}
                     {% if hostile %}
                       {% assign giftImageposition = product.metafields.custom.gift_option_image_id | plus: 0 %}
-                      {% assign giftImageposition = giftImageposition | plus: 1 %}
+                       {% unless forloop.last %}
+                        {% assign giftImageposition = giftImageposition | plus: 1 %}
+                      {% endunless %}
                     {% else %}
                       {% assign giftImageposition = product.metafields.custom.gift_option_image_id | plus: 0 %}
                     {% endif %}
