@@ -217,9 +217,6 @@
                   -%}
                    {% if hostile %}
                       {% assign giftImageposition = product.metafields.custom.gift_option_image_id | plus: 0 %}
-                     {% if forloop.last and media.position < giftImageposition %}
-                        {% assign giftImageposition = giftImageposition | minus: 1 %}
-                      {% endif %}
                         {% assign giftImageposition = giftImageposition | plus: 1 %}
                     {% else %}
                       {% assign giftImageposition = product.metafields.custom.gift_option_image_id | plus: 0 %}
