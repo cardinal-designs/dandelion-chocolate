@@ -890,8 +890,10 @@ document.addEventListener("DOMContentLoaded", function() {
         if(position_gift_image == '1') {
           final_position_gift_image = position_gift_image;
         } 
-        if(position_gift_image == '2') {
+        else if(position_gift_image == '2') {
           final_position_gift_image = position_gift_image - 1;
+        } else {
+          final_position_gift_image = position_gift_image - 2;
         }
         flkty2.select( final_position_gift_image );
         
