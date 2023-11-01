@@ -866,7 +866,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function() {
   const gift__input = document.querySelector("#gift__input");
   var GiftSelected = false;
-  console.log('wefrwfrwgf');
   if($('.gifting-select').val() == 'Yes') {
     $( "#gift__input" ).prop( "checked", true ).trigger('change');
     GiftSelected = true;
