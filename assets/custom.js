@@ -875,7 +875,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if(gift__input) {
     gift__input.addEventListener("change", function() {
       var GiftingSelect = document.querySelector("select.gifting-select"); 
-      var position_gift_image = document.querySelectorAll('product-slider#Product-Slider-Thumbanils .product-images__slide').length;
+      var position_gift_image = $('#position_gift_image').val();
       var carousel_main = document.querySelector('.carousel-main');
       var flickityContainer = document.querySelector(".carousel-nav");
   
@@ -887,7 +887,7 @@ document.addEventListener("DOMContentLoaded", function() {
           console.log(GiftSelected,'GiftSelected');
           flkty2.select( 0 );
         } else {
-          flkty2.select( position_gift_image - 3 );
+          flkty2.select( position_gift_image - 1 );
         }
         
       } else {
