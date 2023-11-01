@@ -872,7 +872,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   if(gift__input) {
-    console.log('8750');
     gift__input.addEventListener("change", function() {
       var GiftingSelect = document.querySelector("select.gifting-select"); 
       var position_gift_image = $('#position_gift_image').val();
