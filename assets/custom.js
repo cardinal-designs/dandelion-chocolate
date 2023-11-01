@@ -870,6 +870,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if($('.gifting-select').val() == 'Yes') {
     $( "#gift__input" ).prop( "checked", true );
     GiftSelected = true;
+   gift__input.dispatchEvent(new Event("change"));
   }
 
   if(gift__input) {
