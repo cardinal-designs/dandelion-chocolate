@@ -887,10 +887,11 @@ document.addEventListener("DOMContentLoaded", function() {
         GiftingSelect.value = "Yes"; 
         GiftingSelect.dispatchEvent(new Event("change"));
         var flkty2 = new Flickity(carousel_main);
-        if(position_gift_image < 3) {
+        if(position_gift_image == '1') {
           final_position_gift_image = position_gift_image;
-        } else {
-          final_position_gift_image = position_gift_image - 2;
+        } 
+        if(position_gift_image == '2') {
+          final_position_gift_image = position_gift_image - 1;
         }
         flkty2.select( final_position_gift_image );
         
