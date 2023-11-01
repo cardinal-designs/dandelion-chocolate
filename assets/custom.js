@@ -888,7 +888,7 @@ document.addEventListener("DOMContentLoaded", function() {
         GiftingSelect.dispatchEvent(new Event("change"));
         var flkty2 = new Flickity(carousel_main);
         if(position_gift_image == '1') {
-          final_position_gift_image = position_gift_image;
+          final_position_gift_image = position_gift_image - 1;
         } 
         else if(position_gift_image == '2') {
           final_position_gift_image = position_gift_image - 1;
