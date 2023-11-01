@@ -870,13 +870,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const gift__input = document.querySelector("#gift__input");
   var GiftSelected = false;
   if($('.gifting-select').val() == 'Yes') {
-    $( "#gift__input" ).prop( "checked", true ).trigger('change');
-    GiftSelected = true;
+    $( "#gift__input" ).prop( "checked", true );
+    setTimeout(() => {
+      gift__input.dispatchEvent(new Event("change"));
+    }, "10");
   }
 
   if(gift__input) {
     gift__input.addEventListener("change", function() {
-      console.log('879');
       var GiftingSelect = document.querySelector("select.gifting-select"); 
       var position_gift_image = $('#position_gift_image').val();
       var carousel_main = document.querySelector('.carousel-main');
