@@ -887,7 +887,7 @@ document.addEventListener("DOMContentLoaded", function() {
           console.log(GiftSelected,'GiftSelected');
           flkty2.select( 0 );
         } else {
-          flkty2.select( position_gift_image - 1 );
+          flkty2.select( position_gift_image - 2 );
         }
         
       } else {
