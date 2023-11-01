@@ -892,7 +892,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
           final_position_gift_image = position_gift_image - 2;
         }
-        console.log('position_gift_image ',position_gift_image);
         flkty2.select( final_position_gift_image );
         
       } else {
