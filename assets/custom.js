@@ -876,6 +876,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if(gift__input) {
     gift__input.addEventListener("change", function() {
+      console.log('879');
       var GiftingSelect = document.querySelector("select.gifting-select"); 
       var position_gift_image = $('#position_gift_image').val();
       var carousel_main = document.querySelector('.carousel-main');
