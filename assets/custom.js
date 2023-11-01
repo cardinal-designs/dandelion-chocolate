@@ -875,6 +875,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   if(gift__input) {
+    console.log('878');
     gift__input.addEventListener("change", function() {
       console.log('879');
       var GiftingSelect = document.querySelector("select.gifting-select"); 
