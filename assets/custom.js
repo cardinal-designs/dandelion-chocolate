@@ -921,6 +921,6 @@ var rebuyHeading = setInterval(function () {
     }
     clearInterval(rebuyHeading);
   }
-}, 1000);
+}, 100);
 
-setTimeout(function( ) { clearInterval( rebuyHeading ); }, 20000);
+setTimeout(function( ) { clearInterval( rebuyHeading ); }, 10000);
