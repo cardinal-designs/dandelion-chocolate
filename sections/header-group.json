@@ -83,20 +83,6 @@
             "megamenu_image": "shopify:\/\/shop_images\/Image_5.jpg"
           }
         },
-        "a881f3fe-2a90-4dfa-8a15-f50422777a0e": {
-          "type": "megamenu_image",
-          "settings": {
-            "image_title": "Virtual Experiences",
-            "megamenu_image": "shopify:\/\/shop_images\/Trips_Image.webp"
-          }
-        },
-        "915badcb-601a-4c4d-b20f-fe20c91ef08c": {
-          "type": "megamenu_image",
-          "settings": {
-            "image_title": "Merchandise",
-            "megamenu_image": "shopify:\/\/shop_images\/book-shadow_1.jpg"
-          }
-        },
         "1e649e31-ff0a-4b4c-943f-70735fef3a11": {
           "type": "megamenu_image",
           "settings": {
@@ -110,6 +96,20 @@
             "image_title": "Pantry and Baking",
             "megamenu_image": "shopify:\/\/shop_images\/Image-5.jpg"
           }
+        },
+        "a881f3fe-2a90-4dfa-8a15-f50422777a0e": {
+          "type": "megamenu_image",
+          "settings": {
+            "image_title": "Virtual Experiences",
+            "megamenu_image": "shopify:\/\/shop_images\/Trips_Image.webp"
+          }
+        },
+        "915badcb-601a-4c4d-b20f-fe20c91ef08c": {
+          "type": "megamenu_image",
+          "settings": {
+            "image_title": "Merchandise",
+            "megamenu_image": "shopify:\/\/shop_images\/book-shadow_1.jpg"
+          }
         }
       },
       "block_order": [
@@ -120,10 +120,10 @@
         "6ee67f33-b199-44d9-bf55-0c8452932828",
         "1a1ba8a7-488b-4730-bb49-25a77cd58426",
         "59fdebdd-45ed-474b-8605-4e3c015e3780",
-        "a881f3fe-2a90-4dfa-8a15-f50422777a0e",
-        "915badcb-601a-4c4d-b20f-fe20c91ef08c",
         "1e649e31-ff0a-4b4c-943f-70735fef3a11",
-        "b83fdcc4-841b-4403-9a53-57eca4446627"
+        "b83fdcc4-841b-4403-9a53-57eca4446627",
+        "a881f3fe-2a90-4dfa-8a15-f50422777a0e",
+        "915badcb-601a-4c4d-b20f-fe20c91ef08c"
       ],
       "settings": {
         "bg_color": "#f9f7f2",
