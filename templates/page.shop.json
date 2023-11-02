@@ -520,7 +520,7 @@
         "collection": "confections",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_all_products": true,
         "display_type": "grid",
         "mobile_display_type": "grid",
