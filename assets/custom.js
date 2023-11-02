@@ -915,6 +915,6 @@ document.addEventListener("DOMContentLoaded", function() {
 var rebuyHeading = setInterval(function () {
   if($('.rebuy-widget-content .primary-title').length > 0) {
     clearInterval(rebuyHeading);
-    $('.rebuy-widget-content .primary-title').addClass('h3');
+    $('.rebuy-widget-content .primary-title').addClass('h3').removeClass('primary-title');
   }
 }, 1000);
