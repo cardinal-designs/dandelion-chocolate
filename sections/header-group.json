@@ -41,18 +41,18 @@
             "position": "1"
           }
         },
+        "7b9f8e08-0482-4446-bf50-f4dd15f9bcc5": {
+          "type": "megamenu_image",
+          "settings": {
+            "image_title": "Gifts",
+            "megamenu_image": "shopify:\/\/shop_images\/Gifts_5c38c5af-54da-4a6c-a76a-1738f7b7385e.jpg"
+          }
+        },
         "5c5ce808-46ad-4223-a81d-0762127e6161": {
           "type": "megamenu_image",
           "settings": {
             "image_title": "Bars",
             "megamenu_image": "shopify:\/\/shop_images\/Bars.jpg"
-          }
-        },
-        "6ee67f33-b199-44d9-bf55-0c8452932828": {
-          "type": "megamenu_image",
-          "settings": {
-            "image_title": "Curations",
-            "megamenu_image": "shopify:\/\/shop_images\/curations.jpg"
           }
         },
         "54a554bd-76c9-438c-ab13-f4d640d5c31b": {
@@ -62,18 +62,18 @@
             "megamenu_image": "shopify:\/\/shop_images\/hot-chocolates.jpg"
           }
         },
-        "7b9f8e08-0482-4446-bf50-f4dd15f9bcc5": {
+        "6ee67f33-b199-44d9-bf55-0c8452932828": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Gifts",
-            "megamenu_image": "shopify:\/\/shop_images\/Gifts_5c38c5af-54da-4a6c-a76a-1738f7b7385e.jpg"
+            "image_title": "Curations",
+            "megamenu_image": "shopify:\/\/shop_images\/curations.jpg"
           }
         },
         "1a1ba8a7-488b-4730-bb49-25a77cd58426": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Treats",
-            "megamenu_image": "shopify:\/\/shop_images\/Image-6.jpg"
+            "image_title": "Confections",
+            "megamenu_image": "shopify:\/\/shop_images\/Image_6_f7d5009e-a136-4cfd-89a3-e930b147c902.jpg"
           }
         },
         "59fdebdd-45ed-474b-8605-4e3c015e3780": {
@@ -114,10 +114,10 @@
       },
       "block_order": [
         "a1434a36-0fab-4b76-86fd-8aaecb6f8f11",
-        "5c5ce808-46ad-4223-a81d-0762127e6161",
-        "6ee67f33-b199-44d9-bf55-0c8452932828",
-        "54a554bd-76c9-438c-ab13-f4d640d5c31b",
         "7b9f8e08-0482-4446-bf50-f4dd15f9bcc5",
+        "5c5ce808-46ad-4223-a81d-0762127e6161",
+        "54a554bd-76c9-438c-ab13-f4d640d5c31b",
+        "6ee67f33-b199-44d9-bf55-0c8452932828",
         "1a1ba8a7-488b-4730-bb49-25a77cd58426",
         "59fdebdd-45ed-474b-8605-4e3c015e3780",
         "a881f3fe-2a90-4dfa-8a15-f50422777a0e",
