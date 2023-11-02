@@ -917,7 +917,7 @@ var rebuyHeading = setInterval(function () {
     var micro_info = $('#micro_info').val();
     $('.rebuy-widget-content .primary-title').addClass('h3').removeClass('primary-title');
     if(micro_info != '') {
-      
+      $('<p>'+micro_info+'</p>').insertAfter('.rebuy-widget-content .h3');
     }
     clearInterval(rebuyHeading);
   }
