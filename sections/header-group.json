@@ -79,7 +79,8 @@
         "59fdebdd-45ed-474b-8605-4e3c015e3780": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Pantry & Baking"
+            "image_title": "Small Bites",
+            "megamenu_image": "shopify:\/\/shop_images\/Image_5.jpg"
           }
         },
         "a881f3fe-2a90-4dfa-8a15-f50422777a0e": {
