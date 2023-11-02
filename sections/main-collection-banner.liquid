@@ -19,7 +19,7 @@
   {% assign hideFromSearch = false %}
   {%- for item in search.results -%} 
   {% for tag in item.tags %}
-    {% if tag == 'hide_from_search' %}
+    {% if tag == 'hidden' %}
       {% assign hideCount = hideCount | plus: 1 %}
       {% assign hideFromSearch = true %}
     {% endif %}
