@@ -911,3 +911,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+var rebuyHeading = setInterval(function () {
+  if($('.rebuy-widget-content .primary-title').length > 0) {
+    console.log('found');
+  }
+}, 1000);
