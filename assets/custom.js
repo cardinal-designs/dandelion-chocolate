@@ -918,3 +918,5 @@ var rebuyHeading = setInterval(function () {
     $('.rebuy-widget-content .primary-title').addClass('h3').removeClass('primary-title');
   }
 }, 1000);
+
+setTimeout(function( ) { clearInterval( rebuyHeading ); }, 20000);
