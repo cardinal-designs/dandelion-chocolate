@@ -205,7 +205,7 @@
         "content_width": "medium",
         "content_position": "middle-left",
         "text_alignment": "left",
-        "overlay_opacity": 31,
+        "overlay_opacity": 0,
         "show_caption_box": true,
         "caption_over_banner": true,
         "caption_bg": "#FFFFFFF2",
@@ -537,7 +537,7 @@
         "quote_bg_color": "#a09b86",
         "quote_text_color": "#ffffff",
         "quote_border_color": "#a09b86",
-        "section_bg": "#FFFDF9",
+        "section_bg": "#fffdf9",
         "custom_class": ""
       }
     },
