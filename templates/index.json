@@ -593,7 +593,7 @@
         "heading_left": false,
         "description": "",
         "full_width": true,
-        "display_type": "carousel",
+        "display_type": "grid",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "text_alignment": "center",
