@@ -6,7 +6,8 @@
 					<fieldset>
 						<label for="side-panel-search-input visually-hidden">{{ 'sections.header.search' | t }}</label>
 						<input id="side-panel-search-input" type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
-					</fieldset>
+    					 <input type="hidden" name="type" value="product">
+                    </fieldset>
 				</form>
 				<side-panel-close class="side-panel-close">{%- render 'svg-icons' with 'close' -%}</side-panel-close>
 			</div>

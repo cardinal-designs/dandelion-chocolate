@@ -48,7 +48,7 @@
             "megamenu_image": "shopify:\/\/shop_images\/Gifts_5c38c5af-54da-4a6c-a76a-1738f7b7385e.jpg"
           }
         },
-        "5c5ce808-46ad-4223-a81d-0762127e6161": {
+        "6ee67f33-b199-44d9-bf55-0c8452932828": {
           "type": "megamenu_image",
           "settings": {
             "image_title": "Bars",
@@ -62,25 +62,25 @@
             "megamenu_image": "shopify:\/\/shop_images\/hot-chocolates.jpg"
           }
         },
-        "6ee67f33-b199-44d9-bf55-0c8452932828": {
+        "cf8a158e-3935-4d1a-a491-b7895a3635f8": {
           "type": "megamenu_image",
           "settings": {
             "image_title": "Curations",
-            "megamenu_image": "shopify:\/\/shop_images\/curations.jpg"
-          }
-        },
-        "1a1ba8a7-488b-4730-bb49-25a77cd58426": {
-          "type": "megamenu_image",
-          "settings": {
-            "image_title": "Confections",
-            "megamenu_image": "shopify:\/\/shop_images\/Image_6_f7d5009e-a136-4cfd-89a3-e930b147c902.jpg"
+            "megamenu_image": "shopify:\/\/shop_images\/curations_046925e5-ac99-4567-b2f8-d0fdda0eb5a9.jpg"
           }
         },
         "59fdebdd-45ed-474b-8605-4e3c015e3780": {
           "type": "megamenu_image",
           "settings": {
+            "image_title": "Confections",
+            "megamenu_image": "shopify:\/\/shop_images\/Image_6_610268d8-7c1e-4ca1-a0c5-38ec2865f936.jpg"
+          }
+        },
+        "1a1ba8a7-488b-4730-bb49-25a77cd58426": {
+          "type": "megamenu_image",
+          "settings": {
             "image_title": "Small Bites",
-            "megamenu_image": "shopify:\/\/shop_images\/Image_5.jpg"
+            "megamenu_image": "shopify:\/\/shop_images\/Image_5_2749973f-a57b-4d83-8f63-0dce1bb30fa3.jpg"
           }
         },
         "1e649e31-ff0a-4b4c-943f-70735fef3a11": {
@@ -97,33 +97,33 @@
             "megamenu_image": "shopify:\/\/shop_images\/Image-5.jpg"
           }
         },
-        "a881f3fe-2a90-4dfa-8a15-f50422777a0e": {
+        "5c5ce808-46ad-4223-a81d-0762127e6161": {
           "type": "megamenu_image",
           "settings": {
             "image_title": "Virtual Experiences",
-            "megamenu_image": "shopify:\/\/shop_images\/Trips_Image.webp"
+            "megamenu_image": "shopify:\/\/shop_images\/Trips_Image_b758e482-eb1b-4efd-a112-c589150997c1.webp"
           }
         },
-        "915badcb-601a-4c4d-b20f-fe20c91ef08c": {
+        "38fd6791-c9d1-47f2-bcdf-44f8ad801d74": {
           "type": "megamenu_image",
           "settings": {
             "image_title": "Merchandise",
-            "megamenu_image": "shopify:\/\/shop_images\/book-shadow_1.jpg"
+            "megamenu_image": "shopify:\/\/shop_images\/book-shadow_1_e141841e-bba9-49f4-91a8-a4af7f029cac.jpg"
           }
         }
       },
       "block_order": [
         "a1434a36-0fab-4b76-86fd-8aaecb6f8f11",
         "7b9f8e08-0482-4446-bf50-f4dd15f9bcc5",
-        "5c5ce808-46ad-4223-a81d-0762127e6161",
-        "54a554bd-76c9-438c-ab13-f4d640d5c31b",
         "6ee67f33-b199-44d9-bf55-0c8452932828",
-        "1a1ba8a7-488b-4730-bb49-25a77cd58426",
+        "54a554bd-76c9-438c-ab13-f4d640d5c31b",
+        "cf8a158e-3935-4d1a-a491-b7895a3635f8",
         "59fdebdd-45ed-474b-8605-4e3c015e3780",
+        "1a1ba8a7-488b-4730-bb49-25a77cd58426",
         "1e649e31-ff0a-4b4c-943f-70735fef3a11",
         "b83fdcc4-841b-4403-9a53-57eca4446627",
-        "a881f3fe-2a90-4dfa-8a15-f50422777a0e",
-        "915badcb-601a-4c4d-b20f-fe20c91ef08c"
+        "5c5ce808-46ad-4223-a81d-0762127e6161",
+        "38fd6791-c9d1-47f2-bcdf-44f8ad801d74"
       ],
       "settings": {
         "bg_color": "#f9f7f2",
