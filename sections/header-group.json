@@ -51,8 +51,8 @@
         "5c5ce808-46ad-4223-a81d-0762127e6161": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Bars",
-            "megamenu_image": "shopify:\/\/shop_images\/Bars.jpg"
+            "image_title": "Gifts",
+            "megamenu_image": "shopify:\/\/shop_images\/Gifts_5c38c5af-54da-4a6c-a76a-1738f7b7385e.jpg"
           }
         },
         "54a554bd-76c9-438c-ab13-f4d640d5c31b": {
@@ -65,8 +65,8 @@
         "6ee67f33-b199-44d9-bf55-0c8452932828": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Curations",
-            "megamenu_image": "shopify:\/\/shop_images\/curations.jpg"
+            "image_title": "Bars",
+            "megamenu_image": "shopify:\/\/shop_images\/Bars.jpg"
           }
         },
         "59fdebdd-45ed-474b-8605-4e3c015e3780": {
@@ -97,18 +97,18 @@
             "megamenu_image": "shopify:\/\/shop_images\/Image-5.jpg"
           }
         },
-        "a881f3fe-2a90-4dfa-8a15-f50422777a0e": {
+        "1e649e31-ff0a-4b4c-943f-70735fef3a11": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Virtual Experiences",
-            "megamenu_image": "shopify:\/\/shop_images\/Trips_Image.webp"
+            "image_title": "Pickups",
+            "megamenu_image": "shopify:\/\/shop_images\/Image_43b21e06-d6a9-4e9d-ab35-48e694678407.jpg"
           }
         },
-        "915badcb-601a-4c4d-b20f-fe20c91ef08c": {
+        "b83fdcc4-841b-4403-9a53-57eca4446627": {
           "type": "megamenu_image",
           "settings": {
-            "image_title": "Merchandise",
-            "megamenu_image": "shopify:\/\/shop_images\/book-shadow_1.jpg"
+            "image_title": "Pantry and Baking",
+            "megamenu_image": "shopify:\/\/shop_images\/Image-5.jpg"
           }
         }
       },
