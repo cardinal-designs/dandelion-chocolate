@@ -523,6 +523,87 @@
         "disable_bottom_spacing": false
       }
     },
+    "36faaa5d-b81a-43c4-865c-be39c3e87bc8": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16011450712204__36faaa5d-b81a-43c4-865c-be39c3e87bc8-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Larchmont_Village.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "Larchmont Village",
+            "text": "<h5>148 N. Larchmont Boulevard, Los Angeles, CA 90004<\/h5><h6>Monday - Wednesday: 7am - 7pm<br\/>Thursday - Sunday: 7am - 9pm<\/h6>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16011450712204__36faaa5d-b81a-43c4-865c-be39c3e87bc8-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Santa_Monica.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "Santa Monica",
+            "text": "<h5>2441 Main Street, Santa Monica, CA 90405<\/h5><h6>Monday - Thursday: 7am - 7pm<br\/>Friday - Sunday: 7am - 9pm<\/h6>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16011450712204__36faaa5d-b81a-43c4-865c-be39c3e87bc8-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bleeker_Street.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "Bleecker Street",
+            "text": "<h5>395 Bleecker Street, New York, NY 10014<\/h5><h6>Monday - Saturday: 11am - 7pm<br\/>Sunday: 12pm - 6pm<\/h6>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16011450712204__36faaa5d-b81a-43c4-865c-be39c3e87bc8-column-4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Enchanted_Christmas.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "Enchanted Christmas",
+            "text": "<h5>1650 S Pavilion Center Dr, Las Vegas, NV 89135<\/h5><h6>Thursday: 5:30pm - 10:30pm<br\/>Friday - Sunday: 4:30pm - 11pm<\/h6>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16011450712204__36faaa5d-b81a-43c4-865c-be39c3e87bc8-column-1",
+        "template--16011450712204__36faaa5d-b81a-43c4-865c-be39c3e87bc8-column-2",
+        "template--16011450712204__36faaa5d-b81a-43c4-865c-be39c3e87bc8-column-3",
+        "template--16011450712204__36faaa5d-b81a-43c4-865c-be39c3e87bc8-column-4"
+      ],
+      "custom_css": [
+        ".multicolumn__column {padding: 0px;}",
+        "h2 {color: #333; font-family: Saa Series F D; font-size: 20px; font-weight: 400; letter-spacing: 3px;}",
+        "h4 {color: #333; font-family: GaramondPremierPro; font-size: 32px; font-weight: 400;}",
+        "h5 {color: #53595c; font-family: GaramondItalic; font-size: 16px; line-height: 120%; letter-spacing: 0.64px;}",
+        "h6 {color: #333; font-family: GaramondPremierPro; font-size: 16px; line-height: 150%; letter-spacing: 0.32px;}"
+      ],
+      "settings": {
+        "heading": "Holiday Pop-ups",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "carousel",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "1627fb3e-f5c6-4d8c-8843-5b818899b71b": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -688,6 +769,7 @@
     "743a5db4-2467-4ba6-9d74-fe4b88728e47",
     "c13ec1ed-028d-49b9-840e-e227bcaad30a",
     "f2cb92da-bdb5-44fa-8b49-1b79e94a0b15",
+    "36faaa5d-b81a-43c4-865c-be39c3e87bc8",
     "1627fb3e-f5c6-4d8c-8843-5b818899b71b",
     "7cb08fd4-ad98-4437-8d49-49f6fe76311a",
     "0c97f2db-97cf-47e4-94e0-f1e6b3161d41"
