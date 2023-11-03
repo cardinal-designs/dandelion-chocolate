@@ -866,16 +866,17 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function() {
   const gift__input = document.querySelector("#gift__input");
   var GiftSelected = false;
-
   if($('.gifting-select').val() == 'Yes') {
     $( "#gift__input" ).prop( "checked", true );
-    GiftSelected = true;
+    setTimeout(() => {
+      gift__input.dispatchEvent(new Event("change"));
+    }, "10");
   }
 
   if(gift__input) {
     gift__input.addEventListener("change", function() {
       var GiftingSelect = document.querySelector("select.gifting-select"); 
-      var position_gift_image = document.querySelectorAll('product-slider#Product-Slider-Thumbanils .product-images__slide').length;
+      var position_gift_image = $('#position_gift_image').val();
       var carousel_main = document.querySelector('.carousel-main');
       var flickityContainer = document.querySelector(".carousel-nav");
   
@@ -883,22 +884,14 @@ document.addEventListener("DOMContentLoaded", function() {
         GiftingSelect.value = "Yes"; 
         GiftingSelect.dispatchEvent(new Event("change"));
         var flkty2 = new Flickity(carousel_main);
-        if(GiftSelected) {
-          console.log(GiftSelected,'GiftSelected');
-          flkty2.select( 0 );
-        } else {
-          flkty2.select( parseInt(gift__input.value) -1 );
-        }
+        final_position_gift_image = position_gift_image - 1;
+        flkty2.select( final_position_gift_image );
         
       } else {
         GiftingSelect.value = "No";
         GiftingSelect.dispatchEvent(new Event("change"));
         var flkty2 = new Flickity(carousel_main);
-        if(GiftSelected) {
-          flkty2.select( 1 );
-        } else {
-          flkty2.select( 0 );
-        }
+        flkty2.select( 0 );
       }
     });
   }
@@ -918,3 +911,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+var rebuyHeading = setInterval(function () {
+  if($('.rebuy-widget-content .primary-title').length > 0) {
+    $('.rebuy-widget-content .primary-title').addClass('h3').removeClass('primary-title');
+    clearInterval(rebuyHeading);
+  }
+}, 100);
+
+setTimeout(function( ) { clearInterval( rebuyHeading ); }, 10000);

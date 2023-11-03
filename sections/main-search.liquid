@@ -40,7 +40,7 @@
                               {%- for item in search.results -%}                                                  
                                 {% assign hideFromSearch = false %}
                                 {% for tag in item.tags %}
-                                  {% if tag == 'hide_from_search' %}
+                                  {% if tag == 'hidden' %}
                                     {% assign hideFromSearch = true %}
                                   {% endif %}
                                 {% endfor %}
