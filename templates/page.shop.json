@@ -577,6 +577,42 @@
         "custom_class": ""
       }
     },
+    "b489c90a-18dd-4ef0-a616-2a2dfd9808c2": {
+      "type": "featured-collection",
+      "settings": {
+        "section_id": "Pantry-and-Baking",
+        "heading": "Pantry and Baking",
+        "heading_desktop": 32,
+        "heading_mobile": 22,
+        "enable_mobile_heading": true,
+        "mobile_heading": "Baking",
+        "description": "<p>hot chocolate to brownies, pies to tarts, our large chips, ground chocolate, and crunchy cocoa nibs are kitchen-ready<\/p>",
+        "full_width": true,
+        "hide_cta_mobile": true,
+        "collection": "pantry-baking",
+        "show_short_product_desc": true,
+        "show_compare_at_price": false,
+        "show_vendor": true,
+        "show_all_products": true,
+        "display_type": "grid",
+        "mobile_display_type": "grid",
+        "columns_desktop": "4",
+        "different_column_grid_layout": "2\/4",
+        "quote_enable": false,
+        "mobile_swipe": true,
+        "quickview_cartbutton": "addtocart",
+        "product_limit": "2",
+        "show_progress_bar": true,
+        "show_view_all": false,
+        "quote": "",
+        "author": "",
+        "quote_bg_color": "#a09b86",
+        "quote_text_color": "#ffffff",
+        "quote_border_color": "#a09b86",
+        "section_bg": "#fffdf9",
+        "custom_class": ""
+      }
+    },
     "59319a80-6073-4db0-ade1-80b8b7f02126": {
       "type": "featured-collection",
       "settings": {
@@ -717,42 +753,6 @@
         "custom_class": ""
       }
     },
-    "b489c90a-18dd-4ef0-a616-2a2dfd9808c2": {
-      "type": "featured-collection",
-      "settings": {
-        "section_id": "Pantry-and-Baking",
-        "heading": "Pantry and Baking",
-        "heading_desktop": 32,
-        "heading_mobile": 22,
-        "enable_mobile_heading": true,
-        "mobile_heading": "Baking",
-        "description": "<p>hot chocolate to brownies, pies to tarts, our large chips, ground chocolate, and crunchy cocoa nibs are kitchen-ready<\/p>",
-        "full_width": true,
-        "hide_cta_mobile": true,
-        "collection": "pantry-baking",
-        "show_short_product_desc": true,
-        "show_compare_at_price": false,
-        "show_vendor": true,
-        "show_all_products": true,
-        "display_type": "grid",
-        "mobile_display_type": "grid",
-        "columns_desktop": "4",
-        "different_column_grid_layout": "2\/4",
-        "quote_enable": false,
-        "mobile_swipe": true,
-        "quickview_cartbutton": "addtocart",
-        "product_limit": "2",
-        "show_progress_bar": true,
-        "show_view_all": false,
-        "quote": "",
-        "author": "",
-        "quote_bg_color": "#a09b86",
-        "quote_text_color": "#ffffff",
-        "quote_border_color": "#a09b86",
-        "section_bg": "#fffdf9",
-        "custom_class": ""
-      }
-    },
     "c388cbc2-db72-46f1-9bdf-ad4e3473cbb7": {
       "type": "featured-collection",
       "settings": {
@@ -840,10 +840,10 @@
     "e96896ef-c364-4560-b177-b513b3ea7d26",
     "b13bcc91-8f42-4dc7-b535-ad1994ba46ec",
     "97bfe32d-7c59-4678-8f00-3603fa489856",
+    "b489c90a-18dd-4ef0-a616-2a2dfd9808c2",
     "59319a80-6073-4db0-ade1-80b8b7f02126",
     "61e7ed6e-a401-488d-a783-c69a92e40f52",
     "97c96ec7-6691-488b-82b9-e7c62955bda0",
-    "b489c90a-18dd-4ef0-a616-2a2dfd9808c2",
     "c388cbc2-db72-46f1-9bdf-ad4e3473cbb7",
     "f0d45032-0727-48aa-89da-d89577e0e0ab"
   ]
