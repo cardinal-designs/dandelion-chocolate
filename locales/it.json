@@ -412,11 +412,5 @@
       "message": "Messaggio",
       "max_characters": "Massimo {{ max_chars }} caratteri"
     }
-  },
-  "locksmith": {
-    "forms": {
-      "submit_button_text": "Continue",
-      "loading_text": "One moment..."
-    }
   }
 }
