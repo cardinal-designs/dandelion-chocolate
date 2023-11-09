@@ -111,14 +111,32 @@
         "border_separator": false,
         "border_separator_full": false
       }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "settings": {
+      }
+    },
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
     }
   },
   "order": [
+    "shogun-helper",
+    "shogun-above",
     "main-collection-banner",
     "product-grid",
     "166366972953e881f5",
     "16636704759cbf64c5",
     "166367231494317262",
-    "166367228131c52c01"
+    "166367228131c52c01",
+    "shogun-below"
   ]
 }
