@@ -210,7 +210,7 @@
         "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-subheading-1": {
           "type": "subheading",
           "settings": {
-            "caption_color": "#e2cc99",
+            "caption_color": "#e3cc99",
             "text": "HOLIDAY GIFTING"
           }
         },
@@ -245,14 +245,15 @@
         "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-text-1",
         "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-button-1"
       ],
-      "disabled": true,
       "custom_css": [
-        ".image__video--banner.image__overlay--banner .image-with-text-overlay--content.content-middle-left {background: rgba(21, 21, 21, 0.65);}"
+        "@media (min-width: 500px) {.image__video--banner.image__overlay--banner .image-with-text-overlay--content.content-middle-left {background: rgba(21, 21, 21, 0.65); }}",
+        ".caption {color: rgba(226, 204, 153, 1);}"
       ],
       "settings": {
         "section_width": "full-width-row",
         "image_url": false,
         "image": "shopify:\/\/shop_images\/Banner_3.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Image_8_74e03eb6-f892-4810-957b-3bc215f4525f.jpg",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
@@ -260,7 +261,7 @@
         "text_alignment": "left",
         "overlay_opacity": 0,
         "content_overlay_opacity": 0,
-        "content_bg": "#151515",
+        "content_bg": "#333333",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -306,6 +307,7 @@
         "template--15975893827724__4737d624-6ff1-4063-b2a4-b5fda54ad3ac-1689669062976517aa-2",
         "template--15975893827724__4737d624-6ff1-4063-b2a4-b5fda54ad3ac-1689669062976517aa-3"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "full-width-row",
         "image_url": true,
