@@ -229,7 +229,7 @@
         "description": "",
         "full_width": false,
         "hide_cta_mobile": true,
-        "collection": "gifts-1",
+        "collection": "gifts",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_vendor": false,
