@@ -204,6 +204,67 @@
         "disable_bottom_spacing": false
       }
     },
+    "226241e0-1d40-4d9b-8e3f-77d3872e27b6": {
+      "type": "image-text-hero",
+      "blocks": {
+        "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "caption_color": "#e2cc99",
+            "text": "HOLIDAY GIFTING"
+          }
+        },
+        "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading_color": "#fff",
+            "text": "SEASONAL GÂTEAU TRIO",
+            "heading_size": "h1"
+          }
+        },
+        "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-text-1": {
+          "type": "text",
+          "settings": {
+            "text_color": "#fff",
+            "text": "<p>Buttery, crisp, and fudgy festive flavors: classic chocolate, bright candied orange, and cardamom-scented almond.<\/p>"
+          }
+        },
+        "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-button-1": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "https:\/\/www.dandelionchocolate.com\/products\/gateau-trio",
+            "button_style": "btn--white",
+            "mobile_button_style": "btn--gold"
+          }
+        }
+      },
+      "block_order": [
+        "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-subheading-1",
+        "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-heading-1",
+        "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-text-1",
+        "template--16011450712204__226241e0-1d40-4d9b-8e3f-77d3872e27b6-button-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".image__video--banner.image__overlay--banner .image-with-text-overlay--content.content-middle-left {background: rgba(21, 21, 21, 0.65);}"
+      ],
+      "settings": {
+        "section_width": "full-width-row",
+        "image_url": false,
+        "image": "shopify:\/\/shop_images\/Banner_3.jpg",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "overlay_opacity": 0,
+        "content_overlay_opacity": 0,
+        "content_bg": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "4737d624-6ff1-4063-b2a4-b5fda54ad3ac": {
       "type": "image-text-hero",
       "blocks": {
@@ -764,6 +825,7 @@
     "7c963727-9f62-413e-a955-4c0272b66b19",
     "661bc818-e431-43fe-ae24-c15b73dd19e5",
     "e7b81b39-410c-479b-ba87-119e19b4bb29",
+    "226241e0-1d40-4d9b-8e3f-77d3872e27b6",
     "4737d624-6ff1-4063-b2a4-b5fda54ad3ac",
     "edf32bec-7a50-42f5-9c41-c298f2b0cdeb",
     "743a5db4-2467-4ba6-9d74-fe4b88728e47",
