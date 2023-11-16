@@ -10,28 +10,27 @@
   >
     <div class="rc-widget-injection-parent" style="display: initial;"></div>
     <div>
-      <p>Set the length of your subscription plan for monthly deliveries:</p>
+      <p>Choose Your Delivery Frequency:</p>
     </div>
     <div class="subscription__btn-wrapper">
-      <button 
-        type="button" 
-        class="recharge-button subscription__btn" 
-        data-subid="{{ product.variants.first.id }}" 
-        data-subinterval="1"
-      >
-        EVERY MONTH
-      </button>
-      <button 
-        type="button" 
-        class="recharge-button subscription__btn" 
-        data-subid="{{ product.variants.first.id }}" 
-        data-subinterval="3"
-      >
-        EVERY 3 MONTHS
-      </button>
+      {% for item in product.selling_plan_groups %}
+        {% for plan in item.selling_plans %}
+          <button 
+            type="button" 
+            class="recharge-button subscription__btn" 
+            data-selling-plan-id="{{ plan.id }}"
+            data-variant-id="{{ product.variants.first.id }}"
+          >
+            {% if plan.name == 'Delivery every 1 Month' %}
+              EVERY MONTH
+            {% endif %}
+            {% if plan.name == 'Delivery every 3 Months' %}
+              EVERY 3 MONTHS
+            {% endif %}
+          </button>
+        {% endfor %}
+      {% endfor %}
     </div>
-    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-    <input type="hidden" name="properties[_subscription_recharge]" id="Recharge" />
     <button 
       id="add-to-cart-button"
       type="submit" 
