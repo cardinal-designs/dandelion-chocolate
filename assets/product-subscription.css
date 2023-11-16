@@ -1,0 +1,54 @@
+.subscription .single-add-to-cart-button {
+  padding-top: 15px !important;
+  padding-bottom: 15px;
+  width: 100% !important;
+  border: 1px solid var(--charcoal-black);
+  background: #E2C465;
+  color: #333;
+}
+
+.subscription__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 18px;
+}
+
+.subscription__btn {
+  flex: 1;
+  white-space: nowrap;
+  background: none;
+  color: var(--charcoal-black);
+  font-family: 'Saa Series F D';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: 16px 45px 12px;
+  border: 1px solid var(--charcoal-black);
+  color: var(--charcoal-black);
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .subscription__btn {
+    padding: 16px 20px 12px;
+  }
+}
+
+.subscription__btn:hover {
+  background: var(--gray-2);
+  color: var(--white);
+}
+
+.subscription .add_to_cart_holder button {
+  margin-left: 0 !important;
+}
+
+.rc-container-wrapper {
+  display: none !important;
+}

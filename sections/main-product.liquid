@@ -928,13 +928,25 @@
                       <a class="btn btn--gold" href="{{ product.metafields.custom.alternative_add_to_cart_button_link }}"><span>{{ product.metafields.custom.alternative_add_to_cart_button_label }}</span></a>
                     </div>
                   {% else %}
-                    {% render 'product-add-to-cart',
-                      product: product,
-                      form: form,
-                      product_form_id: product_form_id,
-                      block: block,
-                      pickup: true
-                    %}
+                    {%- assign has_subscription = false -%}
+                    {%- for tag in product.tags -%}
+                      {%- if tag contains 'subscription' -%}
+                        {%- assign has_subscription = true -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+
+                    {%- if has_subscription -%}
+                      {% render 'product-subscription' , product: product %}
+                    {%- else -%}
+                      {% render 'product-add-to-cart',
+                        product: product,
+                        form: form,
+                        product_form_id: product_form_id,
+                        block: block,
+                        pickup: true
+                      %}
+                    {%- endif -%}
+
                   {% endif %}
                 {%- when 'share' -%}
                   {% render 'social-share',
