@@ -1,0 +1,55 @@
+{{- 'product-subscription.css' | asset_url | stylesheet_tag -}}
+<script src="{{ 'subscription-addtocart.js' | asset_url }}" defer></script>
+
+<div id="product-form-container" class="subscription">
+  <form 
+    id="add-item-form" 
+    action="/cart/add" 
+    method="post" 
+    data-productid="{{ product.id }}"
+  >
+    <div class="rc-widget-injection-parent" style="display: initial;"></div>
+    <div>
+      <p>Choose Your Delivery Frequency:</p>
+    </div>
+    <div class="subscription__btn-wrapper">
+      {% for item in product.selling_plan_groups %}
+        {% for plan in item.selling_plans %}
+          <button 
+            type="button" 
+            class="recharge-button subscription__btn" 
+            data-selling-plan-id="{{ plan.id }}"
+            data-variant-id="{{ product.variants.first.id }}"
+          >
+            {% if plan.name == 'Delivery every 1 Month' %}
+              EVERY MONTH
+            {% endif %}
+            {% if plan.name == 'Delivery every 3 Months' %}
+              EVERY 3 MONTHS
+            {% endif %}
+          </button>
+        {% endfor %}
+      {% endfor %}
+    </div>
+    <button 
+      id="add-to-cart-button"
+      type="submit" 
+      name="add" 
+      class="single-add-to-cart-button button outline"
+      form="{{ product_form_id }}"
+    >
+      <span class="single-add-to-cart-button--text">
+        {{ 'products.product.add_to_cart' | t }} 
+      </span>
+      <span class="loading-overlay">
+        {% render 'svg-icons' with 'thb-loading' %}
+      </span>
+      <span class="separator"> · </span>
+      <span class="product-price-container product__price-main">
+        <span class="no-js-hidden" id="price-{{ section.id }}">
+          {% render 'product-price', product: product, use_variant: true, show_badges: false %}
+        </span>
+      </span>
+    </button>
+  </form>
+</div>
