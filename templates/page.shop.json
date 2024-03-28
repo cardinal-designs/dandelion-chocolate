@@ -738,7 +738,7 @@
         "description": "<p>these items are baked to order and are available by pre-order for pickup at our 16th Street factory<\/p>",
         "full_width": true,
         "hide_cta_mobile": true,
-        "collection": "local-sf-delivery",
+        "collection": "sf-pickup",
         "show_short_product_desc": true,
         "show_compare_at_price": false,
         "show_all_products": true,
