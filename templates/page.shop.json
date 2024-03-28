@@ -550,7 +550,7 @@
         "description": "<p>the original hot chocolate recipes that put our café on San Francisco’s map<\/p>",
         "full_width": true,
         "hide_cta_mobile": true,
-        "collection": "hot-chocolates",
+        "collection": "hot-chocolate",
         "show_short_product_desc": false,
         "show_compare_at_price": false,
         "show_vendor": true,
