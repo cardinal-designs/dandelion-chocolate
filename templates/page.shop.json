@@ -720,7 +720,7 @@
         "description": "<p>small bites and nibble-able treats<\/p>",
         "full_width": true,
         "hide_cta_mobile": true,
-        "collection": "treats",
+        "collection": "small-bites",
         "show_short_product_desc": false,
         "show_compare_at_price": false,
         "show_vendor": true,
