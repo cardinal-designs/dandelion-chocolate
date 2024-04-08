@@ -127,7 +127,7 @@
           "type": "button",
           "settings": {
             "link_label": "CALL TO ACTION",
-            "link": "shopify:\/\/pages\/about-us",
+            "link": "shopify:\/\/pages\/about-us-old",
             "button_outline": true
           }
         }
